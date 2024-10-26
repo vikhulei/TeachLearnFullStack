@@ -1,7 +1,7 @@
 
 
 const loginUser = (req, res) => {
-    res.status(600).json({text: "using json now"})
+    res.status(400).json(req.body.ter)
 }
 
 module.exports = {
