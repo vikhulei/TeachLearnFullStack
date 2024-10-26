@@ -1,8 +1,7 @@
 const express = require("express")
 const router = express.Router()
+const { loginUser } = require("../controllers/userController")
 
-router.get("/", (req, res) => {
-    res.status(400).send("Received at api/users")
-})
+router.get("/", loginUser)
 
 module.exports = router
