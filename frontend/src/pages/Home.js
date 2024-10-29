@@ -1,7 +1,11 @@
+import { MainWrapper } from "../components/MainStyles"
+
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <MainWrapper>
+        <div>Home</div>
+    </MainWrapper>
   )
 }
 
