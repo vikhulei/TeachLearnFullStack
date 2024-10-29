@@ -1,6 +1,8 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css'
+import Home from './pages/Home';
+import Header from './components/Header';
 // import Header from './components/Header';
 // import Dashbord from './pages/Dashbord';
 // import Login from './pages/Login';
@@ -11,14 +13,14 @@ const App = () => {
     <>
       <Router>
         <div className='container'>
-          <h1>Hello I am here</h1>
-          {/* <Header />
+          {/* <Header /> */}
         <Routes>
-          <Route path='/' element={<Dashbord/>} />
+          <Route path="/" element={<Home/>} />
+          {/* <Route path='/' element={<Dashbord/>} />
           <Route path='/login' element={<Login/>} />
-          <Route path='/register' element={<Register/>} />
+          <Route path='/register' element={<Register/>} /> */}
         </Routes>
-<ToastContainer /> */}
+<ToastContainer />
         </div>
       </Router>
     </>
