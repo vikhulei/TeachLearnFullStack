@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css'
-import Home from './pages/Home';
+import Home from './pages/01_Home/Home';
 import Header from './components/Header';
 // import Header from './components/Header';
 // import Dashbord from './pages/Dashbord';
@@ -10,10 +10,10 @@ import Header from './components/Header';
 
 const App = () => {
   return (
-    <>
+    <div>
       <Router>
         <div className='container'>
-          <Header />
+          {/* <Header /> */}
         <Routes>
           <Route path="/" element={<Home/>} />
           {/* <Route path='/' element={<Dashbord/>} />
@@ -23,7 +23,7 @@ const App = () => {
 <ToastContainer />
         </div>
       </Router>
-    </>
+    </div>
   );
 }
 
