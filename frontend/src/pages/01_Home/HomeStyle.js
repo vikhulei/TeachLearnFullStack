@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 const FirstWrapper = styled.div`
     width: 100%;
-    height: 300px;
-    background-color: red;
+    height: 500px;
+    background-color: lightgreen;
 `
 
 const Heading = styled.h1`
