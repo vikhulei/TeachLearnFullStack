@@ -4,19 +4,19 @@ import { Wrapper, Logo, NavWrapper, User, MenuWrapper, MenuItem  } from "./Heade
 const Header = () => {
   return (
     <Wrapper>
-      <Logo>TeachLearn.co.uk</Logo>
+      <MenuItem to="/"><Logo>TeachLearn.co.uk</Logo></MenuItem>
       <NavWrapper>
         <MenuWrapper>
-          <MenuItem href="#">HOME</MenuItem>
-          <MenuItem href="#">MY PROGRESS</MenuItem>
-          <MenuItem href="#">VOCABULARY</MenuItem>
-          <MenuItem href="#">READING</MenuItem>
-          <MenuItem href="#">LISTENING</MenuItem>
-          <MenuItem href="#">SPEAKING</MenuItem>
-          <MenuItem href="#">GRAMMAR</MenuItem>
-          <MenuItem href="#">CONTACTS</MenuItem>
+          <MenuItem to="/">HOME</MenuItem>
+          <MenuItem to="/myprogress">MY PROGRESS</MenuItem>
+          <MenuItem to="/vocabulary">VOCABULARY</MenuItem>
+          <MenuItem to="/reading">READING</MenuItem>
+          <MenuItem to="/listening">LISTENING</MenuItem>
+          <MenuItem to="/speaking">SPEAKING</MenuItem>
+          <MenuItem to="/grammar">GRAMMAR</MenuItem>
+          <MenuItem to="/contacts">CONTACTS</MenuItem>
         </MenuWrapper>
-      <User/>
+      <User onClick={() => console.log("user clicked")}/>
       </NavWrapper>
     </Wrapper>
   )
