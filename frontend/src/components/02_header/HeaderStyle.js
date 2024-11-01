@@ -1,13 +1,11 @@
 import styled from "styled-components";
-import { FaSignInAlt, FaSignOutAlt, FaUser } from 'react-icons/fa';
 import { Link } from "react-router-dom";
 import { FaRegUser } from "react-icons/fa6";
 import { sizes } from "../01_config/Sizes";
 
 const Wrapper = styled.div`
-    height: 90px;
+    height: 110px;
     margin: 0 ${sizes.marginsides};
-    // background-color: lightgreen;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -40,12 +38,11 @@ const MenuWrapper = styled.div`
     justify-content: space-between;
     align-items: center;
     min-width: 700px;
-    // background-color: red;
 `
 
 const MenuItem = styled(Link)`
     font-weight: bold;
-    font-size: 0.76rem;
+    font-size: 0.8rem;
     text-decoration: none;
     color: black;
 `
