@@ -1,22 +1,40 @@
-import { FirstWrapper, Image, ColorLayer, SvgWrapper } from "./HomeStyle"
+import { FirstWrapper, ImageWrapper, Image, ColorLayer, SvgWrapper, NextBlock, ContentWrapper, } from "./HomeStyle"
 import layer from "../../assets/home/layer.png"
 import home from "../../assets/home/home.jpg"
 
 
 const Home = () => {
   return (
-    <FirstWrapper>
-<SvgWrapper>
-    <svg width="100%" height="100%" top="0" left="0">
-      <mask id="circle">
-        <circle fill="white" cx="33vw" cy="50vh" r="220"></circle>
-      </mask>
-      <image height="100%" width="100%" preserveAspectRatio="xMinYMin slice" xlinkHref={home} mask="url(#circle)"></image>
-    </svg>
+    <>
+      <FirstWrapper>
+        <ImageWrapper>
+          <Image src={home} />
+        </ImageWrapper>
+      </FirstWrapper>
+      <ContentWrapper>
+        <SvgWrapper>
+      <svg width="100%" height="100%">
+        <defs>
+          <mask id="mask">
 
-</SvgWrapper>
-    </FirstWrapper>
+            <rect x="0" y="0" width="100%" height="100%" />
+            <circle cx="35%" cy="42%" r="20%" />
+          </mask>
+        </defs>
+        <rect x="0" y="0" width="100%" height="100%" mask="url(#mask)" fill-opacity="0.55" />
+      </svg>
+    </SvgWrapper>
+
+    <NextBlock>
+
+    </NextBlock>
+
+      </ContentWrapper>
+    </>
   )
 }
 
+
 export default Home
+
+          {/* <mask id="mask" x="0" y="0" width="80" height="30"> */}

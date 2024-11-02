@@ -1,9 +1,12 @@
-import { Wrapper, Logo, NavWrapper, User, MenuWrapper, MenuItem  } from "./HeaderStyle"
+import { Wrapper, Logo, NavWrapper, User, MenuWrapper, MenuItem, TWrapper, TNav  } from "./HeaderStyle"
 
 
 const Header = () => {
   return (
-    <Wrapper>
+    // <TWrapper>
+    //   <TNav></TNav>
+    //   </TWrapper>
+        <Wrapper>
       <MenuItem to="/"><Logo>TeachLearn.co.uk</Logo></MenuItem>
       <NavWrapper>
         <MenuWrapper>

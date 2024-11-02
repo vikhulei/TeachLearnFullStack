@@ -2,41 +2,49 @@ import styled from "styled-components";
 import { sizes } from "../../components/01_config/Sizes";
 import home from "../../assets/home/home.jpg"
 
-const FirstWrapper = styled.div`
-    position: relative; 
-    width: 95vw;
-    height: 600px;
-    margin: auto;
-    // margin: 0 ${sizes.marginsides};
-    // background-color: rgba(7, 83, 91, 0.55);
-    // opacity: 55%;
-//     background-image: url(${home});
-//     background-size: cover;
-// `
 
-const Image = styled.img`
+
+const FirstWrapper = styled.div`
+    position: fixed; 
+    top: 115px;
+    width: 100vw;
+    height: 100vh;
+`
+
+const ImageWrapper = styled.div`
     position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 ${sizes.marginsides};
+    height: 100%;
+`
+   
+const Image = styled.img`
     width: 100%;
     height: 100%;
     object-fit: cover;
-    `
-const ColorLayer = styled.img`
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    opacity: 85%;
 `
 
+const ContentWrapper = styled.div`
+    position: relative;
+    top: 115px;
+    margin: 0 ${sizes.marginsides};
+`
+    
 const SvgWrapper = styled.div`
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: 100;
-    // background-color: red;
+    position: relative;
+    height: 700px;
+    z-index: 10;
+`
+
+const NextBlock = styled.div`
+    position: relative;
+    height: 1000px;
+    background-color: darkgreen;
 `
 
 
-export { FirstWrapper, Image, ColorLayer, SvgWrapper }
+export { FirstWrapper, Image, ContentWrapper, SvgWrapper, NextBlock, ImageWrapper }
 
 
 

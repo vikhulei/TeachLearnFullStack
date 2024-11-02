@@ -1,0 +1,9 @@
+
+
+.wrapper {
+    position: fixed;
+    /* padding: 0 50px; */
+    width: 950px;
+    height: 200vh;
+    background-color: darkblue;
+}
