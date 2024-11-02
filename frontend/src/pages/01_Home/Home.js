@@ -6,13 +6,15 @@ import home from "../../assets/home/home.jpg"
 const Home = () => {
   return (
     <FirstWrapper>
-      {/* <ColorLayer src={layer}/> */}
-      <SvgWrapper>
-      <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-        <rect width="100%" height="100%" fill="rgba(7, 83, 91, 0.55)" />
-      </svg>
-      </SvgWrapper>
-      <Image src={home} />
+<SvgWrapper>
+    <svg width="100%" height="100%" top="0" left="0">
+      <mask id="circle">
+        <circle fill="white" cx="33vw" cy="50vh" r="220"></circle>
+      </mask>
+      <image height="100%" width="100%" preserveAspectRatio="xMinYMin slice" xlinkHref={home} mask="url(#circle)"></image>
+    </svg>
+
+</SvgWrapper>
     </FirstWrapper>
   )
 }
