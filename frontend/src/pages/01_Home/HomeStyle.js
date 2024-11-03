@@ -40,11 +40,18 @@ const SvgWrapper = styled.div`
 const NextBlock = styled.div`
     position: relative;
     height: 1000px;
-    background-color: darkgreen;
+    background-color: #003300;
+    border: #003399 solid 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`
+const SecondImage = styled.img`
+    width: 30vw;
+
 `
 
-
-export { FirstWrapper, Image, ContentWrapper, SvgWrapper, NextBlock, ImageWrapper }
+export { FirstWrapper, Image, ContentWrapper, SvgWrapper, NextBlock, ImageWrapper, SecondImage }
 
 
 
