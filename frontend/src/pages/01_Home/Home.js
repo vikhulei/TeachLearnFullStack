@@ -1,4 +1,4 @@
-import { FirstWrapper, ImageWrapper, Image, ColorLayer, SvgWrapper, NextBlock, ContentWrapper, SecondImage, } from "./HomeStyle"
+import { FirstWrapper, Image, ContentWrapper, Header, Subheader, SignUp, LogIn,  NextBlock, ImageWrapper, SecondImage } from "./HomeStyle"
 import layer from "../../assets/home/layer.png"
 import home from "../../assets/home/home.jpg"
 import home2 from "../../assets/home/home2.jpg"
