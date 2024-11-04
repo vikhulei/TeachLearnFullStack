@@ -38,23 +38,43 @@ const SvgWrapper = styled.div`
 `
 
 const TextButtonsWrapper = styled.div`
-    top
+    position: absolute;
+    width: 600px;
+    top: 80px;
+    bottom: 80px;
+    right: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    text-align: right;
+    font-weight: 900;
+    z-index: 50;
 `
 
 const Header = styled.div`
-
+    font-size: 3rem;
 `
 
 const Subheader = styled.div`
+    font-size: 1rem;
+`
 
+const ButtonsWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 `
 
 const SignUp = styled.button`
-
+    width: 100px;
+    height: 50px;
+    border: red solid 3px;
+    border-radius: 20px;
 `
 
-const LogIn = styled.button`
-
+const LogIn = styled(SignUp)`
+    border: lightblue solid 3px;
 `
 
 const NextBlock = styled.div`
@@ -71,5 +91,5 @@ const SecondImage = styled.img`
 
 `
 
-export { FirstWrapper, Image, ContentWrapper, SvgWrapper, Header, Subheader, SignUp, LogIn,  NextBlock, ImageWrapper, SecondImage }
+export { FirstWrapper, Image, ContentWrapper, SvgWrapper, TextButtonsWrapper, Header, Subheader, ButtonsWrapper, SignUp, LogIn,  NextBlock, ImageWrapper, SecondImage }
 

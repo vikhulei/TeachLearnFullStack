@@ -1,4 +1,4 @@
-import { FirstWrapper, Image, ContentWrapper, Header, Subheader, SignUp, LogIn,  NextBlock, ImageWrapper, SecondImage } from "./HomeStyle"
+import { FirstWrapper, Image, ContentWrapper, TextButtonsWrapper, Header, Subheader, ButtonsWrapper, SignUp, LogIn,  NextBlock, ImageWrapper, SecondImage } from "./HomeStyle"
 import layer from "../../assets/home/layer.png"
 import home from "../../assets/home/home.jpg"
 import home2 from "../../assets/home/home2.jpg"
@@ -15,6 +15,14 @@ const Home = () => {
       </FirstWrapper>
       <ContentWrapper>
           <Svg />
+          <TextButtonsWrapper>
+            <Header>ARE YOU LOOKING FOR AN EFFECTIVE WAY TO LEARN ENGLISH?</Header>
+            <Subheader>We offer an efficient and user-friendly platform designed to support individual language learning</Subheader>
+            <ButtonsWrapper>
+              <SignUp>SIGN UP</SignUp>
+              <LogIn>LOG IN</LogIn>
+            </ButtonsWrapper>
+          </TextButtonsWrapper>
     <NextBlock>
         <SecondImage src={home2} />
     </NextBlock>
