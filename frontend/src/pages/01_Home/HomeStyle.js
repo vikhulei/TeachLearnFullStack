@@ -33,8 +33,12 @@ const ContentWrapper = styled.div`
     
 const SvgWrapper = styled.div`
     position: relative;
-    height: 700px;
+    height: 80vh;
     z-index: 10;
+`
+
+const TextButtonsWrapper = styled.div`
+    top
 `
 
 const Header = styled.div`
@@ -56,8 +60,8 @@ const LogIn = styled.button`
 const NextBlock = styled.div`
     position: relative;
     height: 1000px;
-    background-color: #003300;
-    border: #003399 solid 100px;
+    background-color: lightblue;
+    border: lightgray solid 100px;
     display: flex;
     justify-content: center;
     align-items: center;
