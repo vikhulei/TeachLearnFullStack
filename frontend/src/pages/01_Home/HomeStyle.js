@@ -31,50 +31,57 @@ const ContentWrapper = styled.div`
     margin: 0 ${sizes.marginsides};
 `
     
-const SvgWrapper = styled.div`
+const FirstBlock = styled.div`
     position: relative;
-    height: 80vh;
+    height: 700px;
+    max-height: 90vh;
     z-index: 10;
 `
 
 const TextButtonsWrapper = styled.div`
     position: absolute;
     width: 600px;
-    top: 80px;
-    bottom: 80px;
+    top: 7vh;
+    bottom: 7vh;
     right: 40px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: flex-end;;
     color: white;
     text-align: right;
-    font-weight: 900;
     z-index: 50;
 `
-
-const Header = styled.div`
+    
+    const Header = styled.div`
     font-size: 3rem;
+    font-weight: 900;
 `
 
 const Subheader = styled.div`
-    font-size: 1rem;
+    font-size: 1.4rem;
+    width: 400px;
+    line-height: 2rem;
 `
 
 const ButtonsWrapper = styled.div`
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
 `
 
 const SignUp = styled.button`
-    width: 100px;
-    height: 50px;
-    border: red solid 3px;
-    border-radius: 20px;
+    width: 240px;
+    height: 70px;
+    font-size: 1.1rem;
+    color: white;
+    border: #D34E4E solid 4px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0)
 `
 
 const LogIn = styled(SignUp)`
-    border: lightblue solid 3px;
+    border: #5B4ED3 solid 1px;
 `
 
 const NextBlock = styled.div`
@@ -91,5 +98,5 @@ const SecondImage = styled.img`
 
 `
 
-export { FirstWrapper, Image, ContentWrapper, SvgWrapper, TextButtonsWrapper, Header, Subheader, ButtonsWrapper, SignUp, LogIn,  NextBlock, ImageWrapper, SecondImage }
+export { FirstWrapper, Image, ContentWrapper, FirstBlock, TextButtonsWrapper, Header, Subheader, ButtonsWrapper, SignUp, LogIn,  NextBlock, ImageWrapper, SecondImage }
 
