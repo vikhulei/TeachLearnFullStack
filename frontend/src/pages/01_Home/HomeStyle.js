@@ -12,11 +12,13 @@ const FirstWrapper = styled.div`
 `
 
 const ImageWrapper = styled.div`
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: 0 ${sizes.marginsides};
-    height: 100%;
+    position: fixed;
+    top: 115px;
+    left: ${sizes.marginsides};
+    right: ${sizes.marginsides};
+    height: 700px;
+    z-index: -10;
+
 `
    
 const Image = styled.img`
@@ -84,19 +86,42 @@ const LogIn = styled(SignUp)`
     border: #5B4ED3 solid 1px;
 `
 
-const NextBlock = styled.div`
+const BlockTwoWrapper = styled.div`
     position: relative;
-    height: 1000px;
-    background-color: lightblue;
-    border: lightgray solid 100px;
+    height: 1500px;
+    background-color: #F5F5F5;
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 10;
 `
-const SecondImage = styled.img`
-    width: 30vw;
-
+const BlockTwoImageOne = styled.img`
+    width: 300px;
+    object-fit: cover;
 `
 
-export { FirstWrapper, Image, ContentWrapper, FirstBlock, TextButtonsWrapper, Header, Subheader, ButtonsWrapper, SignUp, LogIn,  NextBlock, ImageWrapper, SecondImage }
+const BlockTwoContentWrapper = styled.div`
+    display: flex;
+    justify-content: space-between;
+    background-color: yellow;
+    gap: 100px;
+`
+
+const BlockTwoGroupOne = styled.div`
+    width: 300px;
+    height: 500px;
+    background-color: darkblue;
+`
+const BlockTwoGroupTwo = styled.div`
+    width: 300px;
+    height: 500px;
+    background-color: darkgreen;
+`
+const BlockTwoGroupThree = styled.div`
+    width: 300px;
+    height: 500px;
+    background-color: darkred;
+`
+
+export { FirstWrapper, Image, ContentWrapper, FirstBlock, TextButtonsWrapper, Header, Subheader, ButtonsWrapper, SignUp, LogIn,  BlockTwoWrapper, ImageWrapper, BlockTwoContentWrapper, BlockTwoGroupOne, BlockTwoGroupTwo, BlockTwoGroupThree, BlockTwoImageOne,  }
 

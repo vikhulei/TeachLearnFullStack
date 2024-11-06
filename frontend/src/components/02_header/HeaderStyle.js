@@ -5,7 +5,7 @@ import { sizes } from "../01_config/Sizes";
 
 const Wrapper = styled.div`
     position: fixed;
-    height: 115px;
+    height: ${sizes.headerheight};
     width: 100%;
     display: flex;
     justify-content: space-between;
