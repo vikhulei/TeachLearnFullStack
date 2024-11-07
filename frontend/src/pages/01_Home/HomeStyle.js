@@ -88,40 +88,41 @@ const LogIn = styled(SignUp)`
 
 const BlockTwoWrapper = styled.div`
     position: relative;
-    height: 1500px;
+    padding: 100px;
     background-color: #F5F5F5;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     z-index: 10;
 `
-const BlockTwoImageOne = styled.img`
-    width: 300px;
+
+const BlockTwoGroup = styled.div`
+width: 300px;
+height: 500px;
+background-color: darkblue;
+`
+const BlockTwoImageWrapper = styled.div`
+    position: relative;
+    width: 100%;
+    height: 60%;
+    left: -20px;
+`
+
+const BlockTwoImage = styled.img`
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 `
 
-const BlockTwoContentWrapper = styled.div`
-    display: flex;
-    justify-content: space-between;
-    background-color: yellow;
-    gap: 100px;
-`
+export { FirstWrapper, Image, ContentWrapper, FirstBlock, TextButtonsWrapper, Header, Subheader, ButtonsWrapper, SignUp, LogIn,  BlockTwoWrapper, ImageWrapper, BlockTwoGroup, BlockTwoImageWrapper, BlockTwoImage,  }
 
-const BlockTwoGroupOne = styled.div`
-    width: 300px;
-    height: 500px;
-    background-color: darkblue;
-`
-const BlockTwoGroupTwo = styled.div`
-    width: 300px;
-    height: 500px;
-    background-color: darkgreen;
-`
-const BlockTwoGroupThree = styled.div`
-    width: 300px;
-    height: 500px;
-    background-color: darkred;
-`
 
-export { FirstWrapper, Image, ContentWrapper, FirstBlock, TextButtonsWrapper, Header, Subheader, ButtonsWrapper, SignUp, LogIn,  BlockTwoWrapper, ImageWrapper, BlockTwoContentWrapper, BlockTwoGroupOne, BlockTwoGroupTwo, BlockTwoGroupThree, BlockTwoImageOne,  }
-
+// const BlockTwoContentWrapper = styled.div`
+//     position: relative;
+//     display: flex;
+//     margin-left: 50px;
+//     margin-right: 50px;
+//     background-color: yellow;
+//     justify-content: space-between;
+//     gap: 100px;
+// `
