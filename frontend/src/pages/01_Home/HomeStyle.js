@@ -4,11 +4,19 @@ import home from "../../assets/home/home.jpg"
 
 
 
-const FirstWrapper = styled.div`
-    position: fixed; 
-    top: 115px;
-    width: 100vw;
-    height: 100vh;
+const ContentWrapper = styled.div`
+    position: relative;
+    margin-top: 115px;
+    margin: 0 ${sizes.marginsides};
+    z-index:100;
+    z-index:0;
+`
+    
+const BlockOneWrapper = styled.div`
+    position: relative;
+    height: 700px;
+    max-height: 90vh;
+    z-index: 10;
 `
 
 const ImageWrapper = styled.div`
@@ -18,26 +26,20 @@ const ImageWrapper = styled.div`
     right: ${sizes.marginsides};
     height: 700px;
     z-index: -10;
-
 `
-   
+
 const Image = styled.img`
     width: 100%;
     height: 100%;
     object-fit: cover;
 `
 
-const ContentWrapper = styled.div`
+const SvgWrapper = styled.div`
     position: relative;
     top: 115px;
-    margin: 0 ${sizes.marginsides};
-`
-    
-const FirstBlock = styled.div`
-    position: relative;
+    width: 100%;
     height: 700px;
     max-height: 90vh;
-    z-index: 10;
 `
 
 const TextButtonsWrapper = styled.div`
@@ -55,7 +57,7 @@ const TextButtonsWrapper = styled.div`
     z-index: 50;
 `
     
-    const Header = styled.div`
+const Header = styled.div`
     font-size: 3rem;
     font-weight: 900;
 `
@@ -114,15 +116,4 @@ const BlockTwoImage = styled.img`
     object-fit: cover;
 `
 
-export { FirstWrapper, Image, ContentWrapper, FirstBlock, TextButtonsWrapper, Header, Subheader, ButtonsWrapper, SignUp, LogIn,  BlockTwoWrapper, ImageWrapper, BlockTwoGroup, BlockTwoImageWrapper, BlockTwoImage,  }
-
-
-// const BlockTwoContentWrapper = styled.div`
-//     position: relative;
-//     display: flex;
-//     margin-left: 50px;
-//     margin-right: 50px;
-//     background-color: yellow;
-//     justify-content: space-between;
-//     gap: 100px;
-// `
+export { Image, ContentWrapper, BlockOneWrapper, TextButtonsWrapper, Header, Subheader, ButtonsWrapper, SignUp, LogIn,  BlockTwoWrapper, ImageWrapper, SvgWrapper, BlockTwoGroup, BlockTwoImageWrapper, BlockTwoImage,  }

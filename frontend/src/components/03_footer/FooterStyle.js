@@ -10,6 +10,7 @@ const Wrapper = styled.div`
     color: white;
     font-size: 1.3rem;
     text-align: center;
+    z-index: 99;
 `
 
 export { Wrapper }

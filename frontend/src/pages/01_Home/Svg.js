@@ -2,7 +2,7 @@ import { SvgWrapper } from "./HomeStyle"
 
 const Svg = () => {
     return (
-        <>
+        <SvgWrapper>
             <svg width="100%" height="100%">
                 <defs>7
                     <mask id="mask">
@@ -12,13 +12,8 @@ const Svg = () => {
                 </defs>
                 <rect x="0" y="0" width="100%" height="100%" mask="url(#mask)" fill="rgba(7, 83, 91, 0.65)" />
             </svg>
-
-        </>
+        </SvgWrapper>
     )
 }
 
 export default Svg
-
-{/* <rect x="0" y="0" width="100%" height="100%" mask="url(#mask)" fill="rgba(0, 100, 250, 0.55)" /> */}
-
-// mask="url(#mask)" fill="rgba(7, 83, 91, 0.65)"

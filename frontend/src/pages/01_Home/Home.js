@@ -1,4 +1,4 @@
-import { FirstWrapper, Image, ContentWrapper, FirstBlock, TextButtonsWrapper, Header, Subheader, ButtonsWrapper, SignUp, LogIn, BlockTwoWrapper, ImageWrapper, BlockTwoContentWrapper, BlockTwoGroup, BlockTwoImageWrapper,  BlockTwoImage } from "./HomeStyle"
+import { FirstWrapper, Image, ContentWrapper, BlockOneWrapper, TextButtonsWrapper, Header, Subheader, ButtonsWrapper, SignUp, LogIn, BlockTwoWrapper, ImageWrapper, BlockTwoContentWrapper, BlockTwoGroup, BlockTwoImageWrapper,  BlockTwoImage } from "./HomeStyle"
 import layer from "../../assets/home/layer.png"
 import home from "../../assets/home/home.jpg"
 import home2 from "../../assets/home/home2.jpg"
@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <>
       <ContentWrapper>
-        <FirstBlock>
+        <BlockOneWrapper>
         <ImageWrapper>
           <Image src={home} />
         </ImageWrapper>
@@ -22,7 +22,7 @@ const Home = () => {
               <LogIn>LOG IN</LogIn>
             </ButtonsWrapper>
           </TextButtonsWrapper>
-        </FirstBlock>
+        </BlockOneWrapper>
         <BlockTwoWrapper>
             <BlockTwoGroup>
               <BlockTwoImageWrapper>
