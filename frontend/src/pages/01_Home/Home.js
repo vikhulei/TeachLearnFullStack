@@ -1,5 +1,4 @@
 import { FirstWrapper, Image, ContentWrapper, BlockOneWrapper, TextButtonsWrapper, Header, Subheader, ButtonsWrapper, SignUp, LogIn, BlockTwoWrapper, ImageWrapper, BlockTwoContentWrapper, BlockTwoGroup, BlockTwoImageWrapper,  BlockTwoImage } from "./HomeStyle"
-import layer from "../../assets/home/layer.png"
 import home from "../../assets/home/home.jpg"
 import home2 from "../../assets/home/home2.jpg"
 import Svg from "./Svg"

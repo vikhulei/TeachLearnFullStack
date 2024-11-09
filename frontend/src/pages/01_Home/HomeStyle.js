@@ -2,13 +2,14 @@ import styled from "styled-components";
 import { sizes } from "../../components/01_config/Sizes";
 import home from "../../assets/home/home.jpg"
 
-const blockOneHeight = "700px"
+const blockOneHeight = "600px"
+const macBlockOneHeight = "80vh"
 
 
 
 const ContentWrapper = styled.div`
     position: relative;
-    margin-top: ${sizes.headerheight};
+    top: ${sizes.headerheight};
     margin: 0 ${sizes.marginsides};
     z-index:100;
     z-index:0;
@@ -17,8 +18,9 @@ const ContentWrapper = styled.div`
 const BlockOneWrapper = styled.div`
     position: relative;
     height: ${blockOneHeight};
-    max-height: 90vh;
-    z-index: 10;
+    // max-height: ${macBlockOneHeight};
+    // background-color: darkred;
+    // border: solid 5px black;
 `
 
 const ImageWrapper = styled.div`
@@ -37,19 +39,18 @@ const Image = styled.img`
 `
 
 const SvgWrapper = styled.div`
-    position: relative;
-    top: ${sizes.headerheight};
+    position: absolute;
     width: 100%;
     height: ${blockOneHeight};
-    max-height: 90vh;
 `
 
 const TextButtonsWrapper = styled.div`
     position: absolute;
     width: 600px;
-    top: 7vh;
-    bottom: 7vh;
+    padding: 30px 0;
     right: 40px;
+    top: 0;
+    bottom: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
