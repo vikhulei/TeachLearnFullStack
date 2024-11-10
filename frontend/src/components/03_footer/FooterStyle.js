@@ -1,5 +1,7 @@
-import styled from "styled-components";
-import { sizes } from "../01_config/Sizes";
+import styled from "styled-components"
+import { Link } from "react-router-dom"
+import { sizes } from "../01_config/Sizes"
+import { FaRegUser } from "react-icons/fa6"
 
 const Wrapper = styled.div`
     position: relative;
@@ -14,4 +16,43 @@ const Wrapper = styled.div`
     z-index: 99;
 `
 
-export { Wrapper }
+const TopBlock = styled.div`
+
+`
+
+const BottomBlock = styled.div`
+
+`
+
+const TextBlock = styled.div`
+
+`
+
+const Heading = styled.div`
+
+`
+
+const BodyText = styled.div`
+
+`
+
+const LinkText = styled(Link)`
+
+`
+const Instagram = styled(FaRegUser)`
+
+`
+
+const X = styled(FaRegUser)`
+
+`
+
+const Facebook = styled(FaRegUser)`
+
+`
+
+const TeachLearn = styled(Link)`
+
+`
+
+export { Wrapper, TopBlock, BottomBlock, TextBlock, Heading, BodyText, LinkText, Instagram, X, Facebook, TeachLearn  }
