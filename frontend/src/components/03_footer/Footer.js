@@ -16,10 +16,12 @@ const Footer = () => {
                     <LinkText to="#">Grammar and Style</LinkText>
                 </TextBlock>
                 <TextBlock>
+                    <Heading>ABOUT</Heading>
                     <LinkText to="#">About Us</LinkText>
                     <BodyText onClick={() => alert("hello")}>Send a Message</BodyText>
                 </TextBlock>
                 <TextBlock>
+                    <Heading>SOCIAL MEDIA</Heading>
                     <Instagram />
                     <X />
                     <Facebook />
