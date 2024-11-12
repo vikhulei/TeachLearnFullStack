@@ -1,4 +1,11 @@
-import { SvgWrapper } from "../../pages/01_home/HomeStyle"
+import styled from "styled-components"
+import { sizes } from "../../../components/01_config/Sizes"
+
+const SvgWrapper = styled.div`
+    position: absolute;
+    width: 100%;
+    height: ${sizes.blockOneHeight};
+`
 
 const Svg = () => {
     return (
