@@ -1,7 +1,11 @@
 import styled from "styled-components"
 import { Link } from "react-router-dom"
 import { sizes } from "../01_config/Sizes"
-import { FaRegUser } from "react-icons/fa6"
+import { FaInstagram } from "react-icons/fa";
+import { BsTwitterX } from "react-icons/bs";
+import { FaFacebook } from "react-icons/fa6";
+
+
 
 const Wrapper = styled.div`
     position: relative;
@@ -18,21 +22,22 @@ const Wrapper = styled.div`
 const TopBlock = styled.div`
     display: flex;
     justify-content: center;
-    gap: 70px;
+    gap: 10vw;
 
 `
     
 const BottomBlock = styled.div`
    margin: 30px auto 0; 
-   padding-top: 30px;
+   padding-top: 20px;
    border-top: solid white 2px;
-   width: 700px;
+   width: 70vw;
 `
     
 const TextBlock = styled.div`
     text-align: right;
     display: flex;
     flex-direction: column;
+    line-height: 1.5;
     &:last-of-type {
         display: block;
     }
@@ -41,7 +46,7 @@ const TextBlock = styled.div`
 const Heading = styled.div`
     font-size: 1rem;
     font-weight: 700;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 `
 
 const BodyText = styled.div`
@@ -53,19 +58,22 @@ const LinkText = styled(Link)`
     text-decoration: none;
     color: white;
 `
-const Instagram = styled(FaRegUser)`
+const Instagram = styled(FaInstagram)`
     
 `
 
-const X = styled(FaRegUser)`
-    margin: 0 10px;
+const X = styled(BsTwitterX)`
+    margin: 0 15px;
 `
 
-const Facebook = styled(FaRegUser)`
-
+const Facebook = styled(FaFacebook)`
+    
 `
 
 const TeachLearn = styled(Link)`
+    font-family: "Rammetto One";
+    font-weight: 300;
+    font-size: 1.3rem;
     text-decoration: none;
     color: white;
 `
