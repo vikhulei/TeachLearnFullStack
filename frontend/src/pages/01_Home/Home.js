@@ -1,7 +1,8 @@
 import { FirstWrapper, Image, ContentWrapper, BlockOneWrapper, TextButtonsWrapper, Header, Subheader, ButtonsWrapper, SignUp, LogIn, BlockTwoWrapper, ImageWrapper, BlockTwoContentWrapper, BlockTwoGroup, BlockTwoImageWrapper,  BlockTwoImage } from "./HomeStyle"
-import home from "../../assets/home/home.jpg"
-import home2 from "../../assets/home/home2.jpg"
-import Svg from "./Svg"
+import home from "../../assets/home/home1.jpg"
+import student from "../../assets/home/student.jpg"
+import tutor from "../../assets/home/tutor.jpg"
+import Svg from "../01_home/Svg"
 
 
 const Home = () => {
@@ -25,10 +26,15 @@ const Home = () => {
         <BlockTwoWrapper>
             <BlockTwoGroup>
               <BlockTwoImageWrapper>
-              <BlockTwoImage src={home2} />
+              <BlockTwoImage src={student} />
               </BlockTwoImageWrapper>
             </BlockTwoGroup>
-            <BlockTwoGroup>t</BlockTwoGroup>
+
+            <BlockTwoGroup>
+              <BlockTwoImageWrapper>
+              <BlockTwoImage src={tutor} />
+              </BlockTwoImageWrapper>
+            </BlockTwoGroup>
             <BlockTwoGroup>t</BlockTwoGroup>
         </BlockTwoWrapper>
       </ContentWrapper>

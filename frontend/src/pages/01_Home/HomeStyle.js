@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { sizes } from "../../components/01_config/Sizes";
-import home from "../../assets/home/home.jpg"
 
 const blockOneHeight = "600px"
 const macBlockOneHeight = "80vh"
@@ -103,13 +102,13 @@ const BlockTwoWrapper = styled.div`
 
 const BlockTwoGroup = styled.div`
 width: 300px;
-height: 500px;
+height: 700px;
 background-color: darkblue;
 `
 const BlockTwoImageWrapper = styled.div`
     position: relative;
     width: 100%;
-    height: 60%;
+    height: 70%;
     left: -20px;
 `
 

@@ -1,4 +1,4 @@
-import { SvgWrapper } from "./HomeStyle"
+import { SvgWrapper } from "../../pages/01_home/HomeStyle"
 
 const Svg = () => {
     return (
