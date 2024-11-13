@@ -1,4 +1,4 @@
-import { Wrapper, Group, ImageWrapper, Image, } from "./HomeBlock2Style"
+import { Wrapper, Block, LastBlock, ImageWrapper, Image, FirstTextBox, SecondTextBox, Header, BodyText, WhoWeAre, FindOutMore } from "./HomeBlock2Style"
 import student from "../../../assets/home/student.jpg"
 import tutor from "../../../assets/home/tutor.jpg"
 
@@ -6,17 +6,17 @@ import tutor from "../../../assets/home/tutor.jpg"
 const HomeBlock2 = () => {
   return (
     <Wrapper>
-      <Group>
+      <Block>
         <ImageWrapper>
           <Image src={student} />
         </ImageWrapper>
-      </Group>
-      <Group>
+      </Block>
+      <Block>
         <ImageWrapper>
           <Image src={tutor} />
         </ImageWrapper>
-      </Group>
-      <Group>t</Group>
+      </Block>
+      <LastBlock>t</LastBlock>
     </Wrapper>
   )
 }
