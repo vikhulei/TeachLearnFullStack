@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {  MainBodyText, MainHeading, MainHeadingCapital, } from "../../../components/01_config/MainStyles"
 
 const Wrapper = styled.div`
     position: relative;
@@ -11,9 +12,9 @@ const Wrapper = styled.div`
 `
 
 const Block = styled.div`
-    width: 300px;
-    height: 700px;
-    background-color: darkblue;
+    width: 20vw;
+    height: 40vw;
+    // background-color: darkblue;
 `
 const ImageWrapper = styled.div`
     position: relative;
@@ -29,17 +30,32 @@ const Image = styled.img`
 `
 
 const FirstTextBox = styled.div`
+    box-sizing: border-box;
+    width: 100%;
+    height: 30%;
+    margin-top: -20px;
+    padding: 40px 20px 0 20px;
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+    text-align: right;
+`
+
+const SecondTextBox = styled(FirstTextBox)`
+    background-color: darkgray;
+`
+
+const HeadingCapital = styled(MainHeadingCapital)`
+    // margin: 30px 20px 0 0;
+`
+
+
+const BodyText = styled(MainBodyText)`
 
 `
-const SecondTextBox = styled.div`
 
-`
-const Header = styled.div`
-
-`
-const BodyText = styled.div`
-
-`
 const LastBlock = styled.div`
     width: 600px;
     height: 700px;
@@ -48,9 +64,15 @@ const LastBlock = styled.div`
 const WhoWeAre = styled.div`
 
 `
+
+const Heading = styled(MainHeading)`
+
+`
+
+
 const FindOutMore = styled.div`
 
 `
 
 
-export { Wrapper, Block, LastBlock, ImageWrapper, Image, FirstTextBox, SecondTextBox, Header, BodyText, WhoWeAre, FindOutMore }
+export { Wrapper, Block, LastBlock, ImageWrapper, Image, FirstTextBox, SecondTextBox, Heading, BodyText, WhoWeAre, HeadingCapital, FindOutMore }
