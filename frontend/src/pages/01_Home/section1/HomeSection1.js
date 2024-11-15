@@ -1,9 +1,9 @@
-import { Image, Wrapper, TextButtonsWrapper, Header, Subheader, ButtonsWrapper, SignUp, LogIn, ImageWrapper } from "./HomeBlock1Style"
+import { Image, Wrapper, TextButtonsWrapper, Header, Subheader, ButtonsWrapper, SignUp, LogIn, ImageWrapper } from "./HomeSection1Style"
 import home from "../../../assets/home/home1.jpg"
 import Svg from "./Svg"
 
 
-const HomeBlock1 = () => {
+const HomeSection1 = () => {
   return (
     <Wrapper>
       <ImageWrapper>
@@ -23,4 +23,4 @@ const HomeBlock1 = () => {
 }
 
 
-export default HomeBlock1
+export default HomeSection1

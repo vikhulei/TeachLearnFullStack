@@ -1,9 +1,9 @@
-import { Wrapper, FirstBlock, SecondBlock, ThirdBlock, ImageWrapper, Image, FirstTextBox, SecondTextBox, Heading, BodyText, WhoWeAre, HeadingCapital, BodyTextLastBlock, FindOutMore } from "./HomeBlock2Style"
+import { Wrapper, FirstBlock, SecondBlock, ThirdBlock, ImageWrapper, Image, FirstTextBox, SecondTextBox, Heading, BodyText, WhoWeAre, HeadingCapital, BodyTextLastBlock, FindOutMore } from "./HomeSection2Style"
 import student from "../../../assets/home/student.jpg"
 import tutor from "../../../assets/home/tutor.jpg"
 
 
-const HomeBlock2 = () => {
+const HomeSection2 = () => {
   return (
     <Wrapper>
       <FirstBlock>
@@ -37,4 +37,4 @@ const HomeBlock2 = () => {
 }
 
 
-export default HomeBlock2
+export default HomeSection2
