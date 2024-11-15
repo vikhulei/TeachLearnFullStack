@@ -10,7 +10,7 @@ const MainBodyText = styled.div`
 `
 
 const MainHeading = styled.div`
-    fonst-size: 1.5rem;
+    font-size: 2.1rem;
     font-weight: bold;
     color: black;
 `

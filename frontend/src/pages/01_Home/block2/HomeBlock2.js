@@ -1,4 +1,4 @@
-import { Wrapper, Block, LastBlock, ImageWrapper, Image, FirstTextBox, SecondTextBox, Heading, BodyText, WhoWeAre, HeadingCapital, FindOutMore } from "./HomeBlock2Style"
+import { Wrapper, FirstBlock, SecondBlock, ThirdBlock, ImageWrapper, Image, FirstTextBox, SecondTextBox, Heading, BodyText, WhoWeAre, HeadingCapital, BodyTextLastBlock, FindOutMore } from "./HomeBlock2Style"
 import student from "../../../assets/home/student.jpg"
 import tutor from "../../../assets/home/tutor.jpg"
 
@@ -6,7 +6,7 @@ import tutor from "../../../assets/home/tutor.jpg"
 const HomeBlock2 = () => {
   return (
     <Wrapper>
-      <Block>
+      <FirstBlock>
         <ImageWrapper>
           <Image src={student} />
         </ImageWrapper>
@@ -14,16 +14,24 @@ const HomeBlock2 = () => {
           <HeadingCapital>For students</HeadingCapital>
           <BodyText>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet libero id nisi euismod</BodyText>
         </FirstTextBox>
-      </Block>
-      <Block>
+      </FirstBlock>
+      <SecondBlock>
         <ImageWrapper>
           <Image src={tutor} />
         </ImageWrapper>
         <SecondTextBox>
-          s
+        <HeadingCapital>For tutors</HeadingCapital>
+        <BodyText>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet libero id nisi euismod</BodyText>
         </SecondTextBox>
-      </Block>
-      <LastBlock>t</LastBlock>
+      </SecondBlock>
+      <ThirdBlock>
+        <WhoWeAre>Who we are</WhoWeAre>
+        <Heading>We focus on bringing value and solve business challenges through the delivery of modern IT services and solutions</Heading>
+        <BodyTextLastBlock>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet libero id nisi euismod, sed porta est consectetur. Vestibulum auctor felis eget orci semper vestibulum. Pellentesque ultricies nibh gravida, accumsan libero luctus, molestie nunc. In nibh ipsum, blandit id faucibus ac, finibus vitae dui.
+        </BodyTextLastBlock>
+        <FindOutMore>Find Out More...</FindOutMore>
+      </ThirdBlock>
     </Wrapper>
   )
 }

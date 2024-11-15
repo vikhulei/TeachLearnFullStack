@@ -7,15 +7,28 @@ const Wrapper = styled.div`
     background-color: #F5F5F5;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     z-index: 10;
 `
 
-const Block = styled.div`
+const FirstBlock = styled.div`
     width: 20vw;
     height: 40vw;
-    // background-color: darkblue;
+    margin-top: 30px;
 `
+
+const SecondBlock = styled(FirstBlock)`
+    margin-top: -30px;
+`
+
+const ThirdBlock = styled.div`
+    width: 600px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 30px;
+`
+
 const ImageWrapper = styled.div`
     position: relative;
     width: 100%;
@@ -32,10 +45,10 @@ const Image = styled.img`
 const FirstTextBox = styled.div`
     box-sizing: border-box;
     width: 100%;
-    height: 30%;
+    height: 200px;
     margin-top: -20px;
-    padding: 40px 20px 0 20px;
-    background-color: lightgray;
+    padding: 40px 20px 0px 20px;
+    background-color: #EBEBEB;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -44,11 +57,11 @@ const FirstTextBox = styled.div`
 `
 
 const SecondTextBox = styled(FirstTextBox)`
-    background-color: darkgray;
+    background-color: #D1D1D1;
 `
 
 const HeadingCapital = styled(MainHeadingCapital)`
-    // margin: 30px 20px 0 0;
+    
 `
 
 
@@ -56,23 +69,24 @@ const BodyText = styled(MainBodyText)`
 
 `
 
-const LastBlock = styled.div`
-    width: 600px;
-    height: 700px;
-    background-color: darkgreen;
-`
-const WhoWeAre = styled.div`
-
+const WhoWeAre = styled(HeadingCapital)`
+    color: grey;
 `
 
 const Heading = styled(MainHeading)`
 
 `
+const BodyTextLastBlock = styled(BodyText)`
+    line-height: 1.8;
+    font-size: 1.3rem;
+`
 
-
-const FindOutMore = styled.div`
-
+const FindOutMore = styled(Heading)`
+    color: #07535B;
+    font-size: 1.5rem;
+    font-weight: 900;
+    cursor: pointer;
 `
 
 
-export { Wrapper, Block, LastBlock, ImageWrapper, Image, FirstTextBox, SecondTextBox, Heading, BodyText, WhoWeAre, HeadingCapital, FindOutMore }
+export { Wrapper, FirstBlock, SecondBlock, ThirdBlock, ImageWrapper, Image, FirstTextBox, SecondTextBox, Heading, BodyText, WhoWeAre, HeadingCapital, BodyTextLastBlock, FindOutMore }
