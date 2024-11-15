@@ -1,5 +1,5 @@
-import HomeBlock1 from "./block1/HomeBlock1"
-import HomeBlock2 from "./block2/HomeBlock2"
+import HomeBlock1 from "./section1/HomeBlock1"
+import HomeBlock2 from "./section2/HomeBlock2"
 import { ContentWrapper } from "./HomeStyle"
 
 
