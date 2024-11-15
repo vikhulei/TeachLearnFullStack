@@ -4,8 +4,7 @@ import { sizes } from "../../components/01_config/Sizes";
 
 const ContentWrapper = styled.div`
     position: relative;
-    top: ${sizes.headerheight};
-    margin: 0 ${sizes.marginsides};
+    margin: ${sizes.headerheight} ${sizes.marginsides} 0;
     z-index:100;
     z-index:0;
 `

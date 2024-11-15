@@ -1,8 +1,8 @@
-
+import { Wrapper } from "./MyProgressStyle"
 
 const MyProgress = () => {
   return (
-    <div>MyProgress</div>
+    <Wrapper>MyProgress</Wrapper>
   )
 }
 
