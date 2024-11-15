@@ -66,6 +66,7 @@ const SignUp = styled.button`
     color: white;
     border: #D34E4E solid 4px;
     border-radius: 5px;
+    cursor: pointer;
     background-color: rgba(255, 255, 255, 0)
 `
 

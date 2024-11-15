@@ -59,15 +59,16 @@ const LinkText = styled(Link)`
     color: white;
 `
 const Instagram = styled(FaInstagram)`
-    
+    cursor: pointer;
 `
 
 const X = styled(BsTwitterX)`
     margin: 0 15px;
+    cursor: pointer;
 `
 
 const Facebook = styled(FaFacebook)`
-    
+    cursor: pointer;    
 `
 
 const TeachLearn = styled(Link)`

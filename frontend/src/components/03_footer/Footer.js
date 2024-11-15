@@ -18,7 +18,7 @@ const Footer = () => {
                 <TextBlock>
                     <Heading>ABOUT</Heading>
                     <LinkText to="#">About Us</LinkText>
-                    <BodyText onClick={() => alert("hello")}>Send a Message</BodyText>
+                    <LinkText onClick={() => alert("hello")}>Send a Message</LinkText>
                 </TextBlock>
                 <TextBlock>
                     <Heading>SOCIAL MEDIA</Heading>
