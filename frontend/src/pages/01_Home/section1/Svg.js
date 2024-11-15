@@ -5,6 +5,8 @@ const SvgWrapper = styled.div`
     position: absolute;
     width: 100%;
     height: ${sizes.blockOneHeight};
+    z-index: 50;
+    // background-color: darkblue;
 `
 
 const Svg = () => {

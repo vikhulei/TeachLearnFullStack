@@ -7,7 +7,8 @@ const macBlockOneHeight = "80vh"
 
 const Wrapper = styled.div`
     position: relative;
-    height: ${blockOneHeight};
+    height: ${sizes.blockOneHeight};
+    // z-index: 20;
 `
 
 const ImageWrapper = styled.div`
@@ -15,7 +16,7 @@ const ImageWrapper = styled.div`
     top: ${sizes.headerheight};
     left: ${sizes.marginsides};
     right: ${sizes.marginsides};
-    height: ${blockOneHeight};
+    height: ${sizes.blockOneHeight};
     z-index: -10;
 `
 
