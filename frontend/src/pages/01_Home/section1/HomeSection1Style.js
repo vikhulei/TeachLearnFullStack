@@ -1,14 +1,10 @@
 import styled from "styled-components";
 import { sizes } from "../../../components/01_config/Sizes";
 
-const blockOneHeight = "600px"
-const macBlockOneHeight = "80vh"
-
 
 const Wrapper = styled.div`
     position: relative;
     height: ${sizes.blockOneHeight};
-    // z-index: 20;
 `
 
 const ImageWrapper = styled.div`
