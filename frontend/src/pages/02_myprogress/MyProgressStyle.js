@@ -6,7 +6,7 @@ const Wrapper = styled.div`
     position: relative;
     margin: ${sizes.headerheight} ${sizes.marginsides} 0;
     height: 100vh;
-    border-bottom: black solid 3px;
+    border-bottom: white solid 2px;
 `
 
 const ImageWrapper = styled.div`

@@ -11,11 +11,11 @@ const Wrapper = styled.div`
     position: relative;
     background-color: rgba(7, 83, 91);
     margin: 0 ${sizes.marginsides};
-    // top: ${sizes.headerheight};
     padding: 20px;
     height: 200px;
     color: white;
     text-align: center;
+    border-bottom: white solid 2px;
     z-index: 99;
 `
 
