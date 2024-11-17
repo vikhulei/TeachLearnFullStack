@@ -8,7 +8,7 @@ const MyProgress = () => {
       <ImageWrapper>
         <Image src={home} />
       </ImageWrapper>
-      <Text>This page is under construction</Text>
+      <Text><u>My progress</u> page is under construction</Text>
     </Wrapper>
   )
 }
