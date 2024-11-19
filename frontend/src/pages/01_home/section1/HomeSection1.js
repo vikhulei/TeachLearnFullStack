@@ -1,5 +1,5 @@
 import { Image, Wrapper, TextButtonsWrapper, Header, Subheader, ButtonsWrapper, SignUp, LogIn, ImageWrapper } from "./HomeSection1Style"
-import home from "../../../assets/home/home1.jpg"
+import home from "../../../assets/01_home/home.jpg"
 import Svg from "./Svg"
 
 

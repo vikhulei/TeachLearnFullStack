@@ -1,5 +1,5 @@
 import { Wrapper, ImageWrapper, Image, ColorLayer, Text } from "./ListeningStyle"
-import home from "../../assets/home/home1.jpg"
+import home from "../../assets/01_home/home.jpg"
 
 const Listening = () => {
   return (
