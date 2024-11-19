@@ -10,6 +10,8 @@ const Wrapper = styled.div`
     background-size: cover;
     background-image: url(${vocabulary});
     border-bottom: solid 2px white;
+    display: flex;
+    flex-direction: column;
 `
     
 const ColorLayer = styled.div`

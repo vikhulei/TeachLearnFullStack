@@ -1,15 +1,28 @@
 import { Wrapper, ColorLayer,  TopWrapper, TopButton, BottomWrapper, LeftWrapper, LeftButton, CentralWrapper, InputsWrapper, Input, WordsWrapper, Word, RightWrapper, LargeButtonsWrapper, LargeButton, MarksWrapper, StudentWrapper, TutorWrapper, MarksText, MarksPercent, ImageWrapper, Image } from "./VocabularyStyle"
 
 const Vocabulary = () => {
+    let leftNumber = [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000]
+    let topNumber = []
+    for (let i = 1; i <= 10; i++ ) {
+        topNumber.push(i)
+    }
     return (
         <Wrapper>
             <ColorLayer />
             <TopWrapper>
-                <TopButton>510</TopButton>
+               {topNumber.map((value, index) => (
+                <TopButton key={index}>{value + 10}</TopButton>
+               ))
+            }
             </TopWrapper>
             <BottomWrapper>
                 <LeftWrapper>
-                    <LeftButton>100</LeftButton>
+                    {leftNumber.map((value, index) => (
+                        <LeftButton key={index}>{value}</LeftButton>
+                    ))
+
+                    }
+
                 </LeftWrapper>
                 <CentralWrapper>
                     <InputsWrapper>
