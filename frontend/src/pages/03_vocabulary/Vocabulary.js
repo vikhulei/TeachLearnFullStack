@@ -1,28 +1,43 @@
+import { useState } from "react"
 import { Wrapper, ColorLayer,  TopWrapper, TopButton, BottomWrapper, LeftWrapper, LeftButton, CentralWrapper, InputsWrapper, Input, WordsWrapper, Word, RightWrapper, LargeButtonsWrapper, LargeButton, MarksWrapper, StudentWrapper, TutorWrapper, MarksText, MarksPercent, ImageWrapper, Image } from "./VocabularyStyle"
 
 const Vocabulary = () => {
-    let leftNumber = [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000]
+
+    const [leftNumber, setLeftNumber] = useState(0)
+
+    let leftNumbers = [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000]
+
     let topNumber = []
+
     for (let i = 1; i <= 10; i++ ) {
-        topNumber.push(i)
+        topNumber.push(100 + i*10)
     }
+
+    const clickLeft = (e) => {
+        // console.log(Number(e.target.name) + 10)
+        // setLeftNumber(Number(e.target.name))
+        topNumber=[]
+        for (let i = 1; i <= 10; i++ ) {
+            topNumber.push(Number(e.target.name) + i*10)
+        }
+        console.log(topNumber)
+    }
+
     return (
         <Wrapper>
             <ColorLayer />
             <TopWrapper>
                {topNumber.map((value, index) => (
-                <TopButton key={index}>{value + 10}</TopButton>
+                <TopButton key={index}>{value}</TopButton>
                ))
             }
             </TopWrapper>
             <BottomWrapper>
                 <LeftWrapper>
-                    {leftNumber.map((value, index) => (
-                        <LeftButton key={index}>{value}</LeftButton>
+                    {leftNumbers.map((value, index) => (
+                        <LeftButton key={index} name={value} onClick={clickLeft}>{value}</LeftButton>
                     ))
-
                     }
-
                 </LeftWrapper>
                 <CentralWrapper>
                     <InputsWrapper>
