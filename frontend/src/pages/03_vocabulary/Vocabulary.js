@@ -3,31 +3,23 @@ import { Wrapper, ColorLayer,  TopWrapper, TopButton, BottomWrapper, LeftWrapper
 
 const Vocabulary = () => {
 
-    const [leftNumber, setLeftNumber] = useState(0)
+    const [topNumbers, setTopNumbers] = useState([10, 20, 30, 40, 50, 60, 70, 80, 90, 100])
 
     let leftNumbers = [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000]
 
-    let topNumber = []
-
-    for (let i = 1; i <= 10; i++ ) {
-        topNumber.push(100 + i*10)
-    }
-
     const clickLeft = (e) => {
-        // console.log(Number(e.target.name) + 10)
-        // setLeftNumber(Number(e.target.name))
-        topNumber=[]
+        let topNumber = []
         for (let i = 1; i <= 10; i++ ) {
-            topNumber.push(Number(e.target.name) + i*10)
+            topNumber.push((Number(e.target.name) + i*10) - 100)
         }
-        console.log(topNumber)
+        setTopNumbers(topNumber)
     }
 
     return (
         <Wrapper>
             <ColorLayer />
             <TopWrapper>
-               {topNumber.map((value, index) => (
+               {topNumbers.map((value, index) => (
                 <TopButton key={index}>{value}</TopButton>
                ))
             }
