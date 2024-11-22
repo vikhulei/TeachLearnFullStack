@@ -8,11 +8,10 @@ const Vocabulary = () => {
     let leftNumbers = [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000]
 
     const clickLeft = (e) => {
-        let topNumber = []
+        setTopNumbers([])
         for (let i = 1; i <= 10; i++ ) {
-            topNumber.push((Number(e.target.name) + i*10) - 100)
+            setTopNumbers(prev => [...prev, (Number(e.target.name) + i*10)])
         }
-        setTopNumbers(topNumber)
     }
 
     return (
