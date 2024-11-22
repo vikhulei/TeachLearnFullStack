@@ -2,6 +2,16 @@ import { useState } from "react"
 import { Wrapper, ColorLayer,  TopWrapper, TopButton, BottomWrapper, LeftWrapper, LeftButton, CentralWrapper, InputsWrapper, Input, WordsWrapper, Word, RightWrapper, LargeButtonsWrapper, LargeButton, MarksWrapper, StudentWrapper, TutorWrapper, MarksText, MarksPercent, ImageWrapper, Image } from "./VocabularyStyle"
 
 const Vocabulary = () => {
+    let thousand = "First Thousand"
+    const changeThousand = () => {
+        if(thousand === "First Thpusand") {
+            thousand = "Second THousand"
+        } else {
+            thousand = "First THousand"
+        }
+        return thousand
+        console.log(thousand)
+    }
 
     const [topNumbers, setTopNumbers] = useState([10, 20, 30, 40, 50, 60, 70, 80, 90, 100])
 
@@ -40,7 +50,7 @@ const Vocabulary = () => {
                 </CentralWrapper>
                 <RightWrapper>
                     <LargeButtonsWrapper>
-                        <LargeButton>First Thousand</LargeButton>
+                        <LargeButton onClick={changeThousand}>{thousand}</LargeButton>
                         <LargeButton>Ukrainian-English</LargeButton>
                     </LargeButtonsWrapper>
                     <MarksWrapper>
