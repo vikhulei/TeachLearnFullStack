@@ -1,37 +1,62 @@
-import { useState } from "react"
-import { Wrapper, ColorLayer,  TopWrapper, TopButton, BottomWrapper, LeftWrapper, LeftButton, CentralWrapper, InputsWrapper, Input, WordsWrapper, Word, RightWrapper, LargeButtonsWrapper, LargeButton, MarksWrapper, StudentWrapper, TutorWrapper, MarksText, MarksPercent, ImageWrapper, Image } from "./VocabularyStyle"
+import { useState, useEffect } from "react"
+import { Wrapper, ColorLayer, TopWrapper, TopButton, BottomWrapper, LeftWrapper, LeftButton, CentralWrapper, InputsWrapper, Input, WordsWrapper, Word, RightWrapper, LargeButtonsWrapper, LargeButton, MarksWrapper, StudentWrapper, TutorWrapper, MarksText, MarksPercent, ImageWrapper, Image } from "./VocabularyStyle"
 
 const Vocabulary = () => {
-    let thousand = "First Thousand"
-    const changeThousand = () => {
-        if(thousand === "First Thpusand") {
-            thousand = "Second THousand"
+
+    let savedThousand = localStorage.getItem("savedThousand") || "First Thousand"
+
+    const [thousand, setThousand] = useState(savedThousand)
+    const [leftNumbers, setLeftNumbers] = useState([])
+    const [topNumbers, setTopNumbers] = useState([])
+
+    const fillLetNumber = () => {
+        let arr = []
+        if (savedThousand === "First Thousand") {
+            for (let i = 1; i <= 10; i++) {
+                arr.push(i * 100)
+            }
         } else {
-            thousand = "First THousand"
+            for (let i = 1; i <= 10; i++) {
+                arr.push(i * 100 + 1000)
+            }
         }
-        return thousand
-        console.log(thousand)
+        setLeftNumbers(arr)
     }
 
-    const [topNumbers, setTopNumbers] = useState([10, 20, 30, 40, 50, 60, 70, 80, 90, 100])
 
-    let leftNumbers = [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000]
+    const changeThousand = () => {
+        if (thousand === "First Thousand") {
+            setThousand("Second Thousand")
+            localStorage.setItem("savedThousand", "Second Thousand")
+        } else {
+            setThousand("First Thousand")
+            localStorage.setItem("savedThousand", "First Thousand")
+        }
+        fillLetNumber()
+    }
+
+
+    // let leftNumbers = [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000]
 
     const clickLeft = (e) => {
         setTopNumbers([])
-        for (let i = 1; i <= 10; i++ ) {
-            setTopNumbers(prev => [...prev, (Number(e.target.name) + i*10)])
+        for (let i = 1; i <= 10; i++) {
+            setTopNumbers(prev => [...prev, (Number(e.target.name) + i * 10)])
         }
     }
+
+    useEffect(() => {
+        fillLetNumber()
+    }, [])
 
     return (
         <Wrapper>
             <ColorLayer />
             <TopWrapper>
-               {topNumbers.map((value, index) => (
-                <TopButton key={index}>{value}</TopButton>
-               ))
-            }
+                {topNumbers.map((value, index) => (
+                    <TopButton key={index}>{value}</TopButton>
+                ))
+                }
             </TopWrapper>
             <BottomWrapper>
                 <LeftWrapper>
@@ -55,12 +80,12 @@ const Vocabulary = () => {
                     </LargeButtonsWrapper>
                     <MarksWrapper>
                         <StudentWrapper>
-                        <MarksText>Student's MArk</MarksText>
-                        <MarksPercent>72%</MarksPercent>
+                            <MarksText>Student's MArk</MarksText>
+                            <MarksPercent>72%</MarksPercent>
                         </StudentWrapper>
                         <TutorWrapper>
-                        <MarksText>Tutor's MArk</MarksText>
-                        <MarksPercent>64%</MarksPercent>
+                            <MarksText>Tutor's MArk</MarksText>
+                            <MarksPercent>64%</MarksPercent>
                         </TutorWrapper>
                     </MarksWrapper>
                 </RightWrapper>
