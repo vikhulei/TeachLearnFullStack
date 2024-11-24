@@ -2,26 +2,9 @@ import { useState, useEffect } from "react"
 import { Wrapper, ColorLayer, TopWrapper, TopButton, BottomWrapper, LeftWrapper, LeftButton, CentralWrapper, InputsWrapper, Input, WordsWrapper, Word, RightWrapper, LargeButtonsWrapper, LargeButton, MarksWrapper, StudentWrapper, TutorWrapper, MarksText, MarksPercent, ImageWrapper, Image } from "./VocabularyStyle"
 
 const Vocabulary = () => {
-
-    let savedThousand = localStorage.getItem("savedThousand") || "First Thousand"
-
-    const [thousand, setThousand] = useState(savedThousand)
+    const [thousand, setThousand] = useState()
     const [leftNumbers, setLeftNumbers] = useState([])
     const [topNumbers, setTopNumbers] = useState([])
-
-    const fillLetNumber = () => {
-        let arr = []
-        if (savedThousand === "First Thousand") {
-            for (let i = 1; i <= 10; i++) {
-                arr.push(i * 100)
-            }
-        } else {
-            for (let i = 1; i <= 10; i++) {
-                arr.push(i * 100 + 1000)
-            }
-        }
-        setLeftNumbers(arr)
-    }
 
 
     const changeThousand = () => {
@@ -32,11 +15,24 @@ const Vocabulary = () => {
             setThousand("First Thousand")
             localStorage.setItem("savedThousand", "First Thousand")
         }
-        fillLetNumber()
     }
 
-
-    // let leftNumbers = [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000]
+    const fillLeftButtons = (checkThousand) => {
+        let arr = []
+        // setLeftNumbers([])
+        if (checkThousand === "First Thousand") {
+            for (let i = 1; i <= 10; i++) {
+                // setLeftNumbers(prev => [...prev, i * 100])
+                // console.log(leftNumbers)
+                arr.push(i * 100)
+            }
+        } else {
+            for (let i = 1; i <= 10; i++) {
+                arr.push(i * 100 + 1000)
+            }
+        }
+        setLeftNumbers(arr)
+    }
 
     const clickLeft = (e) => {
         setTopNumbers([])
@@ -46,8 +42,14 @@ const Vocabulary = () => {
     }
 
     useEffect(() => {
-        fillLetNumber()
+        let savedThousand = localStorage.getItem("savedThousand")  || "First Thousand"
+        setThousand(savedThousand)
+        fillLeftButtons(savedThousand)
     }, [])
+
+    useEffect(() => {
+        fillLeftButtons(thousand)
+    }, [thousand])
 
     return (
         <Wrapper>
@@ -75,7 +77,7 @@ const Vocabulary = () => {
                 </CentralWrapper>
                 <RightWrapper>
                     <LargeButtonsWrapper>
-                        <LargeButton onClick={changeThousand}>{thousand}</LargeButton>
+                        <LargeButton onClick={changeThousand}>{`Switch to ${thousand === "First Thousand" ? "Second Thosand" : "First Thousand"}`}</LargeButton>
                         <LargeButton>Ukrainian-English</LargeButton>
                     </LargeButtonsWrapper>
                     <MarksWrapper>
