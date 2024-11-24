@@ -18,20 +18,16 @@ const Vocabulary = () => {
     }
 
     const fillLeftButtons = (checkThousand) => {
-        let arr = []
-        // setLeftNumbers([])
+        setLeftNumbers([])
         if (checkThousand === "First Thousand") {
             for (let i = 1; i <= 10; i++) {
-                // setLeftNumbers(prev => [...prev, i * 100])
-                // console.log(leftNumbers)
-                arr.push(i * 100)
+                setLeftNumbers(prev => [...prev, i * 100])
             }
         } else {
             for (let i = 1; i <= 10; i++) {
-                arr.push(i * 100 + 1000)
+                setLeftNumbers(prev => [...prev, i * 100 + 1000])
             }
         }
-        setLeftNumbers(arr)
     }
 
     const clickLeft = (e) => {
