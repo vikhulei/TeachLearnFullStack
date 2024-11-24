@@ -6,7 +6,6 @@ const Vocabulary = () => {
     const [leftNumbers, setLeftNumbers] = useState([])
     const [topNumbers, setTopNumbers] = useState([])
 
-
     const changeThousand = () => {
         if (thousand === "First Thousand") {
             setThousand("Second Thousand")
