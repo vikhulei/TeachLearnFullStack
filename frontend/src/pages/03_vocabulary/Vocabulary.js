@@ -30,9 +30,10 @@ const Vocabulary = () => {
     }
 
     const clickLeft = (e) => {
+        localStorage.setItem("savedLeftNumber", Number(e.target.name))
         setTopNumbers([])
         for (let i = 1; i <= 10; i++) {
-            setTopNumbers(prev => [...prev, (Number(e.target.name) + i * 10)])
+            setTopNumbers(prev => [...prev, (Number(e.target.name) + i * 10 - 100)])
         }
     }
 
@@ -40,6 +41,8 @@ const Vocabulary = () => {
         let savedThousand = localStorage.getItem("savedThousand")  || "First Thousand"
         setThousand(savedThousand)
         fillLeftButtons(savedThousand)
+        let e = {target: {name: localStorage.getItem("savedLeftNumber") || 100}}
+        clickLeft(e)
     }, [])
 
     useEffect(() => {
