@@ -57,7 +57,7 @@ const Input = styled.input`
 `
 
 const WordsWrapper = styled.div`
-
+    color: white;
 `
 
 const Word = styled.div`

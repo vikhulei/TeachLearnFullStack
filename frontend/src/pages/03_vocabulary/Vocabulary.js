@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react"
 import { Wrapper, ColorLayer, TopWrapper, TopButton, BottomWrapper, LeftWrapper, LeftButton, CentralWrapper, InputsWrapper, Input, WordsWrapper, Word, RightWrapper, LargeButtonsWrapper, LargeButton, MarksWrapper, StudentWrapper, TutorWrapper, MarksText, MarksPercent, ImageWrapper, Image } from "./VocabularyStyle"
+import { TenWords } from "../../components/01_config/TenWords"
 
 const Vocabulary = () => {
     const [thousand, setThousand] = useState()
@@ -37,6 +38,10 @@ const Vocabulary = () => {
         }
     }
 
+    const clickInput = (e) => {
+        console.log(e.target.id)
+    }
+
     useEffect(() => {
         let savedThousand = localStorage.getItem("savedThousand")  || "First Thousand"
         setThousand(savedThousand)
@@ -70,7 +75,9 @@ const Vocabulary = () => {
                         <Input />
                     </InputsWrapper>
                     <WordsWrapper>
-                        <Word>World</Word>
+                        {TenWords.map((value, index) => (
+                            <Word key={index} ><Input />{value.id}. <span id={value.translat} onClick={clickInput}> {value.word} </span></Word>
+                        ))}
                     </WordsWrapper>
                 </CentralWrapper>
                 <RightWrapper>
