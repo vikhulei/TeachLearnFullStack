@@ -6,6 +6,7 @@ const Vocabulary = () => {
     const [thousand, setThousand] = useState()
     const [leftNumbers, setLeftNumbers] = useState([])
     const [topNumbers, setTopNumbers] = useState([])
+    const [language, setLanguage] = useState("Eng")
 
     const changeThousand = () => {
         if (thousand === "First Thousand") {
@@ -42,6 +43,23 @@ const Vocabulary = () => {
         console.log(e.target.id)
     }
 
+    const clickWord = (e) => {
+        if(language==="Eng") {
+            alert(e.currentTarget.getAttribute("ukr"))
+        } else {
+            alert(e.currentTarget.getAttribute("eng"))
+        }
+        console.log(e.currentTarget.getAttribute("ukr"))
+    }
+
+    const clickLanguage = () => {
+        if(language==="Eng") {
+            setLanguage("Ukr")
+        } else {
+            setLanguage("Eng")
+        }
+    }
+
     useEffect(() => {
         let savedThousand = localStorage.getItem("savedThousand")  || "First Thousand"
         setThousand(savedThousand)
@@ -76,14 +94,14 @@ const Vocabulary = () => {
                     </InputsWrapper>
                     <WordsWrapper>
                         {TenWords.map((value, index) => (
-                            <Word key={index} ><Input />{value.id}. <span id={value.translat} onClick={clickInput}> {value.word} </span></Word>
+                            <Word key={index} ><Input onClick={clickInput}/>{value.id}. <span eng={value.word} nonce={value.translat} ukr={value.translat} onClick={clickWord}> {language==="Eng" ? value.word : value.translat} </span></Word>
                         ))}
                     </WordsWrapper>
                 </CentralWrapper>
                 <RightWrapper>
                     <LargeButtonsWrapper>
                         <LargeButton onClick={changeThousand}>{`Switch to ${thousand === "First Thousand" ? "Second Thosand" : "First Thousand"}`}</LargeButton>
-                        <LargeButton>Ukrainian-English</LargeButton>
+                        <LargeButton onClick={clickLanguage}>Ukrainian-English</LargeButton>
                     </LargeButtonsWrapper>
                     <MarksWrapper>
                         <StudentWrapper>
