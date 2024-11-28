@@ -7,6 +7,7 @@ const Vocabulary = () => {
     const [leftNumbers, setLeftNumbers] = useState([])
     const [topNumbers, setTopNumbers] = useState([])
     const [language, setLanguage] = useState("Eng")
+    const [showTranslation, setShowTranslation] = useState(false)
 
     const changeThousand = () => {
         if (thousand === "First Thousand") {
@@ -49,7 +50,7 @@ const Vocabulary = () => {
         } else {
             alert(e.currentTarget.getAttribute("eng"))
         }
-        console.log(e.currentTarget.getAttribute("ukr"))
+        setShowTranslation(!showTranslation)
     }
 
     const clickLanguage = () => {
@@ -94,7 +95,7 @@ const Vocabulary = () => {
                     </InputsWrapper>
                     <WordsWrapper>
                         {TenWords.map((value, index) => (
-                            <Word key={index} ><Input onClick={clickInput}/>{value.id}. <span eng={value.word} nonce={value.translat} ukr={value.translat} onClick={clickWord}> {language==="Eng" ? value.word : value.translat} </span></Word>
+                            <Word key={index} ><Input onClick={clickInput}/>{value.id}. <span eng={value.word} ukr={value.translat} onClick={clickWord}> {language==="Eng" ? value.word : value.translat} </span><span style={{"visibility": value.visibility}}>{value.translat}</span></Word>
                         ))}
                     </WordsWrapper>
                 </CentralWrapper>
