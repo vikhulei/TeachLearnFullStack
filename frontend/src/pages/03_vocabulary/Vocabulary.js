@@ -8,6 +8,7 @@ const Vocabulary = () => {
     const [topNumbers, setTopNumbers] = useState([])
     const [language, setLanguage] = useState("Eng")
     const [showTranslation, setShowTranslation] = useState(false)
+    const [tenWords, setTenWords] = useState(TenWords)
 
     const changeThousand = () => {
         if (thousand === "First Thousand") {
@@ -45,12 +46,9 @@ const Vocabulary = () => {
     }
 
     const clickWord = (e) => {
-        if(language==="Eng") {
-            alert(e.currentTarget.getAttribute("ukr"))
-        } else {
-            alert(e.currentTarget.getAttribute("eng"))
-        }
-        setShowTranslation(!showTranslation)
+        setTenWords(tenWords.map(val => 
+            val.id === Number(e.target.id) ? {...val, visibility: val.visibility === "hidden" ? "visible" : "hidden"} : val
+        ))
     }
 
     const clickLanguage = () => {
@@ -94,8 +92,8 @@ const Vocabulary = () => {
                         <Input />
                     </InputsWrapper>
                     <WordsWrapper>
-                        {TenWords.map((value, index) => (
-                            <Word key={index} ><Input onClick={clickInput}/>{value.id}. <span eng={value.word} ukr={value.translat} onClick={clickWord}> {language==="Eng" ? value.word : value.translat} </span><span style={{"visibility": value.visibility}}>{value.translat}</span></Word>
+                        {tenWords.map((value, index) => (
+                            <Word key={index} ><Input onClick={clickInput}/>{value.id}. <span eng={value.word} ukr={value.translat} id= {value.id} onClick={clickWord}> {language==="Eng" ? value.word : value.translat} </span><span style={{"visibility": value.visibility}}>{value.translat}</span></Word>
                         ))}
                     </WordsWrapper>
                 </CentralWrapper>
