@@ -49,14 +49,19 @@ const TopButton = styled.button`
 const BottomWrapper = styled.div`
     position: relative;
     z-index: 10;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
 `
 
 const LeftWrapper = styled.div`
-
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 `
 
-const LeftButton = styled.button`
-
+const LeftButton = styled(TopButton)`
+    width: 150px;
 `
 
 const CentralWrapper = styled.div`
@@ -80,7 +85,7 @@ const Word = styled.div`
 `
 
 const WordSpan = styled.span`
-
+    cursor: pointer;
 `
 
 const TranslatSpan = styled.span`
@@ -89,15 +94,20 @@ const TranslatSpan = styled.span`
 `
 
 const RightWrapper = styled.div`
-
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
 `
 
 const LargeButtonsWrapper = styled.div`
-
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 `
 
-const LargeButton = styled.button`
-
+const LargeButton = styled(TopButton)`
+    width: 200px;
+    height: 50px;
 `
 
 const MarksWrapper = styled.div`
