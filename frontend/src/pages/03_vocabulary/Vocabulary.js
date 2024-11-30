@@ -93,7 +93,10 @@ const Vocabulary = () => {
                     </InputsWrapper>
                     <WordsWrapper>
                         {tenWords.map((value, index) => (
-                            <Word key={index} ><Input onClick={clickInput}/>{value.id}. <span eng={value.word} ukr={value.translat} id= {value.id} onClick={clickWord}> {language==="Eng" ? value.word : value.translat} </span><span style={{"visibility": value.visibility}}>{value.translat}</span></Word>
+                            <Word key={index} ><Input onClick={clickInput}/>{value.id}. <span eng={value.word} ukr={value.translat} id= {value.id} onClick={clickWord}> {language==="Eng" ? value.word : value.translat}</span> <span style={{"visibility": value.visibility}}>{language==="Eng" ? value.translat : value.word}</span>
+                            
+                            
+                            </Word>
                         ))}
                     </WordsWrapper>
                 </CentralWrapper>
