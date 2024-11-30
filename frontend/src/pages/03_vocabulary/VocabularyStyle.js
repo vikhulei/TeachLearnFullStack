@@ -6,7 +6,8 @@ import vocabulary from "../../assets/02_vocabulary/vocabulary.jpg"
 const Wrapper = styled.div`
     position: relative;
     margin: ${sizes.headerheight} ${sizes.marginsides} 0;
-    height: calc(100vh - ${sizes.headerheight});
+    // height: calc(100vh - ${sizes.headerheight});
+    padding: 3vw 10vw;;
     background-size: cover;
     background-image: url(${vocabulary});
     border-bottom: solid 2px white;
@@ -16,19 +17,33 @@ const Wrapper = styled.div`
     
 const ColorLayer = styled.div`
     position: absolute;
-    width: 100%;
-    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     opacity: 0.93;
     background-color: #976048;
 `
 
 const TopWrapper = styled.div`
     position: relative;
+    margin-bottom: 3vw;
     z-index: 10;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 `
 
 const TopButton = styled.button`
-
+    width: 85px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #604231;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
 `
 
 const BottomWrapper = styled.div`
@@ -62,6 +77,15 @@ const WordsWrapper = styled.div`
 
 const Word = styled.div`
 
+`
+
+const WordSpan = styled.span`
+
+`
+
+const TranslatSpan = styled.span`
+    color: black;
+    font-weight: 700;
 `
 
 const RightWrapper = styled.div`
@@ -109,4 +133,4 @@ const Image = styled.img`
 
    
 
-export { Wrapper, ColorLayer,  TopWrapper, TopButton, BottomWrapper, LeftWrapper, LeftButton, CentralWrapper, InputsWrapper, Input, WordsWrapper, Word, RightWrapper, LargeButtonsWrapper, LargeButton, MarksWrapper, StudentWrapper, TutorWrapper, MarksText, MarksPercent, ImageWrapper, Image }
+export { Wrapper, ColorLayer,  TopWrapper, TopButton, BottomWrapper, LeftWrapper, LeftButton, CentralWrapper, InputsWrapper, Input, WordsWrapper, Word, WordSpan, TranslatSpan, RightWrapper, LargeButtonsWrapper, LargeButton, MarksWrapper, StudentWrapper, TutorWrapper, MarksText, MarksPercent, ImageWrapper, Image }

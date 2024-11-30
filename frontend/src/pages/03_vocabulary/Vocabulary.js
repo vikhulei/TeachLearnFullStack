@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import { Wrapper, ColorLayer, TopWrapper, TopButton, BottomWrapper, LeftWrapper, LeftButton, CentralWrapper, InputsWrapper, Input, WordsWrapper, Word, RightWrapper, LargeButtonsWrapper, LargeButton, MarksWrapper, StudentWrapper, TutorWrapper, MarksText, MarksPercent, ImageWrapper, Image } from "./VocabularyStyle"
+import { Wrapper, ColorLayer, TopWrapper, TopButton, BottomWrapper, LeftWrapper, LeftButton, CentralWrapper, InputsWrapper, Input, WordsWrapper, Word, WordSpan, TranslatSpan, RightWrapper, LargeButtonsWrapper, LargeButton, MarksWrapper, StudentWrapper, TutorWrapper, MarksText, MarksPercent, ImageWrapper, Image } from "./VocabularyStyle"
 import { TenWords } from "../../components/01_config/TenWords"
 
 const Vocabulary = () => {
@@ -97,7 +97,7 @@ const Vocabulary = () => {
                     </InputsWrapper>
                     <WordsWrapper>
                         {tenWords.map((value, index) => (
-                            <Word key={index} ><Input onClick={clickInput}/>{value.id}. <span eng={value.word} ukr={value.translat} id= {value.id} onClick={clickWord}> {language==="Eng" ? value.word : value.translat}</span> <span style={{"visibility": value.visibility}}>{language==="Eng" ? value.translat : value.word}</span>
+                            <Word key={index} ><Input onClick={clickInput}/>{value.id}. <WordSpan eng={value.word} ukr={value.translat} id= {value.id} onClick={clickWord}> {language==="Eng" ? value.word : value.translat}</WordSpan> <TranslatSpan style={{"visibility": value.visibility}}>{language==="Eng" ? value.translat : value.word}</TranslatSpan>
                             
                             
                             </Word>
