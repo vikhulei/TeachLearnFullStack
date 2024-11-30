@@ -11,13 +11,17 @@ const Vocabulary = () => {
     const [tenWords, setTenWords] = useState(TenWords)
 
     const changeThousand = () => {
+        let e
         if (thousand === "First Thousand") {
             setThousand("Second Thousand")
             localStorage.setItem("savedThousand", "Second Thousand")
+            e = {target: {name: 1100}}
         } else {
             setThousand("First Thousand")
             localStorage.setItem("savedThousand", "First Thousand")
+            e = {target: {name: 100}}
         }
+        clickLeft(e)
     }
 
     const fillLeftButtons = (checkThousand) => {
