@@ -41,13 +41,14 @@ const TopButton = styled.button`
     justify-content: center;
     align-items: center;
     background-color: #604231;
-    color: white;
+    color: #FB6A5D;
     border-radius: 5px;
     cursor: pointer;
 `
 
 const BottomWrapper = styled.div`
     position: relative;
+    height: 400px;
     z-index: 10;
     display: flex;
     justify-content: center;
@@ -55,9 +56,10 @@ const BottomWrapper = styled.div`
 `
 
 const LeftWrapper = styled.div`
+    height: 100%;
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    justify-content: space-between;
 `
 
 const LeftButton = styled(TopButton)`
@@ -65,7 +67,15 @@ const LeftButton = styled(TopButton)`
 `
 
 const CentralWrapper = styled.div`
-
+    box-sizing: border-box;
+    height: 100%;
+    width: 430px;
+    padding: 20px 0 20px 40px;
+    background-color: #604231;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 `
 
 const InputsWrapper = styled.div`
@@ -73,15 +83,16 @@ const InputsWrapper = styled.div`
 `
 
 const Input = styled.input`
-
+    width: 120px;
+    margin-right: 25px;
 `
 
 const WordsWrapper = styled.div`
-    color: white;
+    color: #00C05F;
 `
 
 const Word = styled.div`
-
+    user-select: none;
 `
 
 const WordSpan = styled.span`
@@ -108,18 +119,25 @@ const LargeButtonsWrapper = styled.div`
 const LargeButton = styled(TopButton)`
     width: 200px;
     height: 50px;
+    color: white;
 `
 
 const MarksWrapper = styled.div`
-
+    color: white;
+    width: 200px;
 `
 
 const StudentWrapper = styled.div`
-
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
 `
-
+    
 const TutorWrapper = styled.div`
-
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 `
 
 const MarksText = styled.div`

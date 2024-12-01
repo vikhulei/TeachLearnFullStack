@@ -15,11 +15,11 @@ const Vocabulary = () => {
         if (thousand === "First Thousand") {
             setThousand("Second Thousand")
             localStorage.setItem("savedThousand", "Second Thousand")
-            e = {target: {name: 1100}}
+            e = { target: { name: 1100 } }
         } else {
             setThousand("First Thousand")
             localStorage.setItem("savedThousand", "First Thousand")
-            e = {target: {name: 100}}
+            e = { target: { name: 100 } }
         }
         clickLeft(e)
     }
@@ -50,13 +50,13 @@ const Vocabulary = () => {
     }
 
     const clickWord = (e) => {
-        setTenWords(tenWords.map(val => 
-            val.id === Number(e.target.id) ? {...val, visibility: val.visibility === "hidden" ? "visible" : "hidden"} : val
+        setTenWords(tenWords.map(val =>
+            val.id === Number(e.target.id) ? { ...val, visibility: val.visibility === "hidden" ? "visible" : "hidden" } : val
         ))
     }
 
     const clickLanguage = () => {
-        if(language==="Eng") {
+        if (language === "Eng") {
             setLanguage("Ukr")
         } else {
             setLanguage("Eng")
@@ -64,10 +64,10 @@ const Vocabulary = () => {
     }
 
     useEffect(() => {
-        let savedThousand = localStorage.getItem("savedThousand")  || "First Thousand"
+        let savedThousand = localStorage.getItem("savedThousand") || "First Thousand"
         setThousand(savedThousand)
         fillLeftButtons(savedThousand)
-        let e = {target: {name: localStorage.getItem("savedLeftNumber") || 100}}
+        let e = { target: { name: localStorage.getItem("savedLeftNumber") || 100 } }
         clickLeft(e)
     }, [])
 
@@ -92,17 +92,11 @@ const Vocabulary = () => {
                     }
                 </LeftWrapper>
                 <CentralWrapper>
-                    <InputsWrapper>
-                        <Input />
-                    </InputsWrapper>
-                    <WordsWrapper>
-                        {tenWords.map((value, index) => (
-                            <Word key={index} ><Input onClick={clickInput}/>{value.id}. <WordSpan eng={value.word} ukr={value.translat} id= {value.id} onClick={clickWord}> {language==="Eng" ? value.word : value.translat}</WordSpan> <TranslatSpan style={{"visibility": value.visibility}}>{language==="Eng" ? value.translat : value.word}</TranslatSpan>
-                            
-                            
-                            </Word>
-                        ))}
-                    </WordsWrapper>
+                    {tenWords.map((value, index) => (
+                        <Word key={index}>
+                            <Input onClick={clickInput} id={value.id} />{value.id}. <WordSpan style={{ color: value.color }} id={value.id} onClick={clickWord}> {language === "Eng" ? value.word : value.translat}</WordSpan> <TranslatSpan style={{ "visibility": value.visibility }}>{language === "Eng" ? value.translat : value.word}</TranslatSpan>
+                        </Word>
+                    ))}
                 </CentralWrapper>
                 <RightWrapper>
                     <LargeButtonsWrapper>
@@ -111,11 +105,11 @@ const Vocabulary = () => {
                     </LargeButtonsWrapper>
                     <MarksWrapper>
                         <StudentWrapper>
-                            <MarksText>Student's MArk</MarksText>
+                            <MarksText>Student's Mark</MarksText>
                             <MarksPercent>72%</MarksPercent>
                         </StudentWrapper>
                         <TutorWrapper>
-                            <MarksText>Tutor's MArk</MarksText>
+                            <MarksText>Tutor's Mark</MarksText>
                             <MarksPercent>64%</MarksPercent>
                         </TutorWrapper>
                     </MarksWrapper>
