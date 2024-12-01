@@ -66,22 +66,25 @@ const HeadingCapital = styled(MainHeadingCapital)`
 
 
 const BodyText = styled(MainBodyText)`
-
+    line-height: 2;
 `
 
 const WhoWeAre = styled(HeadingCapital)`
     color: grey;
+    margin-bottom: 15px;
 `
 
 const Heading = styled(MainHeading)`
-
+    margin-bottom: 10px;
 `
 const BodyTextLastBlock = styled(BodyText)`
     line-height: 1.8;
     font-size: 1.3rem;
+     margin-bottom: 10px;   
 `
 
 const FindOutMore = styled(Heading)`
+    margin-top: 15px;
     color: #07535B;
     font-size: 1.5rem;
     font-weight: 900;

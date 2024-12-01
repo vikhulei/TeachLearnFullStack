@@ -12,7 +12,7 @@ const HomeSection2 = () => {
         </ImageWrapper>
         <FirstTextBox>
           <HeadingCapital>For students</HeadingCapital>
-          <BodyText>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet libero id nisi euismod</BodyText>
+          <BodyText>Tool supports English learning through online sessions with a tutor or via self-study at their own pace</BodyText>
         </FirstTextBox>
       </FirstBlock>
       <SecondBlock>
@@ -20,15 +20,21 @@ const HomeSection2 = () => {
           <Image src={tutor} />
         </ImageWrapper>
         <SecondTextBox>
-        <HeadingCapital>For tutors</HeadingCapital>
-        <BodyText>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet libero id nisi euismod</BodyText>
+          <HeadingCapital>For tutors</HeadingCapital>
+          <BodyText>Application is featuring ready-made assignments, texts, dialogues, and various other resources.</BodyText>
         </SecondTextBox>
       </SecondBlock>
       <ThirdBlock>
         <WhoWeAre>Who we are</WhoWeAre>
-        <Heading>We focus on bringing value and solve business challenges through the delivery of modern IT services and solutions</Heading>
+        <Heading>We provide tutors and students with a powerful tool designed to facilitate effective English language learning.</Heading>
         <BodyTextLastBlock>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet libero id nisi euismod, sed porta est consectetur. Vestibulum auctor felis eget orci semper vestibulum. Pellentesque ultricies nibh gravida, accumsan libero luctus, molestie nunc. In nibh ipsum, blandit id faucibus ac, finibus vitae dui.
+          The program is centered on the 2,000 most commonly used English words, which, once mastered, equip individuals to understand and communicate effectively in everyday situations.
+        </BodyTextLastBlock>
+        <BodyTextLastBlock>
+          Tutors will gain access to an application featuring ready-made assignments, texts, dialogues, and various other resources.
+        </BodyTextLastBlock>
+        <BodyTextLastBlock>
+          Students will receive a versatile tool that supports English learning through online sessions with a tutor or via self-study at their own pace.
         </BodyTextLastBlock>
         <FindOutMore>Find Out More...</FindOutMore>
       </ThirdBlock>
