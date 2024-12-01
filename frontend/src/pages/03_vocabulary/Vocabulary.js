@@ -100,8 +100,8 @@ const Vocabulary = () => {
                 </CentralWrapper>
                 <RightWrapper>
                     <LargeButtonsWrapper>
-                        <LargeButton onClick={changeThousand}>{`Switch to ${thousand === "First Thousand" ? "Second Thosand" : "First Thousand"}`}</LargeButton>
-                        <LargeButton onClick={clickLanguage}>Ukrainian-English</LargeButton>
+                        <LargeButton onClick={changeThousand}>{`${thousand === "First Thousand" ? "Second Thosand" : "First Thousand"}`}</LargeButton>
+                        <LargeButton onClick={clickLanguage}>{language === "Ukr" ? "English" : "Ukrainian"}</LargeButton>
                     </LargeButtonsWrapper>
                     <MarksWrapper>
                         <StudentWrapper>

@@ -6,7 +6,6 @@ import vocabulary from "../../assets/02_vocabulary/vocabulary.jpg"
 const Wrapper = styled.div`
     position: relative;
     margin: ${sizes.headerheight} ${sizes.marginsides} 0;
-    // height: calc(100vh - ${sizes.headerheight});
     padding: 3vw 10vw;;
     background-size: cover;
     background-image: url(${vocabulary});
@@ -21,8 +20,8 @@ const ColorLayer = styled.div`
     bottom: 0;
     left: 0;
     right: 0;
-    opacity: 0.93;
-    background-color: #976048;
+    opacity: 0.75;
+    background-color: #8B6F56;
 `
 
 const TopWrapper = styled.div`
@@ -41,6 +40,7 @@ const TopButton = styled.button`
     justify-content: center;
     align-items: center;
     background-color: #604231;
+    font-size: 1.1rem;
     color: #FB6A5D;
     border-radius: 5px;
     cursor: pointer;
@@ -76,6 +76,8 @@ const CentralWrapper = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    border: 3px solid #48200E;
+    box-shadow: 0px 0px 3px #D6C9C9;
 `
 
 const InputsWrapper = styled.div`
@@ -85,18 +87,23 @@ const InputsWrapper = styled.div`
 const Input = styled.input`
     width: 120px;
     margin-right: 25px;
+    background-color: #D6C9C9;
 `
 
 const WordsWrapper = styled.div`
-    color: #00C05F;
+    
 `
 
 const Word = styled.div`
     user-select: none;
+    color: #D6C9C9;
+    font-weight: 600;
+    font-size: 1.2rem;
 `
 
 const WordSpan = styled.span`
     cursor: pointer;
+    margin-right: 5px;
 `
 
 const TranslatSpan = styled.span`
@@ -119,12 +126,16 @@ const LargeButtonsWrapper = styled.div`
 const LargeButton = styled(TopButton)`
     width: 200px;
     height: 50px;
-    color: white;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #D6C9C9;
 `
 
 const MarksWrapper = styled.div`
-    color: white;
+    color: #D6C9C9;
     width: 200px;
+    font-size: 1.1rem;
+    font-weight: bold;
 `
 
 const StudentWrapper = styled.div`
