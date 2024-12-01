@@ -28,13 +28,10 @@ const HomeSection2 = () => {
         <WhoWeAre>Who we are</WhoWeAre>
         <Heading>We provide tutors and students with a powerful tool designed to facilitate effective English language learning.</Heading>
         <BodyTextLastBlock>
-          The program is centered on the 2,000 most commonly used English words, which, once mastered, equip individuals to understand and communicate effectively in everyday situations.
+          The program is centered on the 2,000 most commonly used English words, which, once learned, equip individuals to understand and communicate effectively in everyday situations.
         </BodyTextLastBlock>
         <BodyTextLastBlock>
-          Tutors will gain access to an application featuring ready-made assignments, texts, dialogues, and various other resources.
-        </BodyTextLastBlock>
-        <BodyTextLastBlock>
-          Students will receive a versatile tool that supports English learning through online sessions with a tutor or via self-study at their own pace.
+          Mastering the basics of the language is achieved through a five-facet approach: learning vocabulary, reading texts, listening to speech, practicing speaking, and studying grammar. Each facet is built around the same core set of 2,000 most common words.
         </BodyTextLastBlock>
         <FindOutMore>Find Out More...</FindOutMore>
       </ThirdBlock>

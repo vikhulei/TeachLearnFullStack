@@ -7,7 +7,7 @@ const Footer = () => {
                 <TextBlock>
                     <Heading>OUR CONTACTS</Heading>
                     <BodyText>07706204681</BodyText>
-                    <LinkText to="#">teachlearn@gmail.com</LinkText>
+                    <LinkText to="#">contact@teachlearn.co.uk</LinkText>
                 </TextBlock>
                 <TextBlock>
                     <Heading>USEFUL LINKS</Heading>
@@ -18,7 +18,7 @@ const Footer = () => {
                 <TextBlock>
                     <Heading>ABOUT</Heading>
                     <LinkText to="#">About Us</LinkText>
-                    <LinkText onClick={() => alert("hello")}>Send a Message</LinkText>
+                    <LinkText>Send a Message</LinkText>
                 </TextBlock>
                 <TextBlock>
                     <Heading>SOCIAL MEDIA</Heading>
