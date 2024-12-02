@@ -20,8 +20,9 @@ const ColorLayer = styled.div`
     bottom: 0;
     left: 0;
     right: 0;
-    opacity: 0.75;
-    background-color: #8B6F56;
+    opacity: 0.33;
+    background-color: #828181;
+    background-color: #F5F5F5;
 `
 
 const TopWrapper = styled.div`
@@ -39,9 +40,10 @@ const TopButton = styled.button`
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #604231;
+    background-color: #413D3B;
     font-size: 1.1rem;
-    color: #FB6A5D;
+    // color: #FB6A5D;
+    color: #D76F66;
     border-radius: 5px;
     cursor: pointer;
 `
@@ -52,7 +54,7 @@ const BottomWrapper = styled.div`
     z-index: 10;
     display: flex;
     justify-content: center;
-    gap: 50px;
+    gap: 4vw;
 `
 
 const LeftWrapper = styled.div`
@@ -71,12 +73,12 @@ const CentralWrapper = styled.div`
     height: 100%;
     width: 430px;
     padding: 20px 0 20px 40px;
-    background-color: #604231;
+    background-color: #5B5856;
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border: 3px solid #48200E;
+    border: 3px solid #413D3B;
     box-shadow: 0px 0px 3px #D6C9C9;
 `
 
@@ -133,9 +135,11 @@ const LargeButton = styled(TopButton)`
 
 const MarksWrapper = styled.div`
     color: #D6C9C9;
+    color: black;
     width: 200px;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: bold;
+    text-shadow: white 0 0 6px ;
 `
 
 const StudentWrapper = styled.div`
