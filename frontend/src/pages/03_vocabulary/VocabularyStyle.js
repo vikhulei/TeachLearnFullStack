@@ -44,6 +44,8 @@ const TopButton = styled.button`
     font-size: 1.1rem;
     // color: #FB6A5D;
     color: #D76F66;
+    color: #E7BEBE;
+    color: #F4B8B8;
     border-radius: 5px;
     cursor: pointer;
 `
@@ -131,6 +133,7 @@ const LargeButton = styled(TopButton)`
     font-size: 0.9rem;
     font-weight: 600;
     color: #D6C9C9;
+    color: white;
 `
 
 const MarksWrapper = styled.div`
