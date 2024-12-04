@@ -8,7 +8,7 @@ const Wrapper = styled.div`
     margin: ${sizes.headerheight} ${sizes.marginsides} 0;
     padding: 3vw 10vw;;
     background-size: cover;
-    background-image: url(${vocabulary});
+    // background-image: url(${vocabulary});
     border-bottom: solid 2px white;
     display: flex;
     flex-direction: column;
@@ -27,11 +27,16 @@ const ColorLayer = styled.div`
 
 const TopWrapper = styled.div`
     position: relative;
+    height: 100px;
+    width: 80%;
     margin-bottom: 3vw;
+    margin: 0 auto 3vw;
     z-index: 10;
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 20px;
+    background-color: lightblue;
 `
 
 const TopButton = styled.button`
