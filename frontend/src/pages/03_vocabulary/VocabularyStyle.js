@@ -21,10 +21,12 @@ const ColorLayer = styled.div`
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(7, 83, 91);
     background-color: #F5F5F5;
+    background-color: rgba(7, 83, 91);
     background-color: #828181;
-    opacity: 0.85;
+    background-color: #8CAABC;
+    opacity: 0.68;
+    opacity: 0.4;
     // display: none;
 `
 
@@ -48,19 +50,20 @@ const TopButton = styled.button`
     justify-content: center;
     align-items: center;
     background-color: rgba(0,0,0,0);
-    background-color: rgba(255, 255, 255, 0.53);
+    background-color: rgba(223, 223, 223, 0.93);
     font-family: Raleway;
     font-size: 1.1rem;
-    font-weight: 500;
+    font-weight: 600;
     // color: #FB6A5D;
     color: #D76F66;
     color: #E7BEBE;
     color: #343434;
-    border: solid lightgray 1px;
+    border: solid lightgray 2px;
+    box-shadow: gray 1px 2px;
     // border-radius: 5px;
     cursor: pointer;
     &:hover {
-        font-weight: 700;
+        font-weight: 750;
     }
     &:active {
         transform: translate(1px, 1px);
@@ -94,6 +97,7 @@ const LeftWrapper = styled.div`
 
 const LeftButton = styled(TopButton)`
     width: 150px;
+    // height: 39px;
 `
 
 const CentralWrapper = styled.div`
@@ -105,10 +109,10 @@ const CentralWrapper = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    // border: 3px solid #413D3B;
+    border: 2px solid #929292;
     background-color: #5B5856;
-    background-color: rgba(255, 255, 255, 0.53);
-    box-shadow: 0px 0px 3px #D6C9C9;
+    background-color: rgba(223, 223, 223, 0.93);
+    box-shadow: 0px 0px 10px #D6C9C9;
 `
 
 const InputsWrapper = styled.div`
@@ -120,6 +124,7 @@ const Input = styled.input`
     height: 20px;
     margin-right: 25px;
     background-color: #F3F3F3;
+    background-color: #929292;
     border: none;
 `
 
@@ -136,8 +141,11 @@ const Word = styled.div`
 `
 
 const WordSpan = styled.span`
-    cursor: pointer;
     margin-right: 5px;
+    cursor: pointer;
+    &:hover {
+        font-weight: 750;
+    }
 `
 
 const TranslatSpan = styled.span`
@@ -173,11 +181,13 @@ const LargeButton = styled(TopButton)`
 
 const MarksWrapper = styled.div`
     color: #D6C9C9;
-    color: black;
+    color: white;
     width: 200px;
     font-size: 1.1rem;
     font-weight: bold;
-    text-shadow: white 0 0 6px;
+    text-shadow: black 2px 2px 10px,
+                 black -2px 2px 10px,
+                 black 2px -2px 10px;
 `
 
 const StudentWrapper = styled.div`
