@@ -9,11 +9,12 @@ const Wrapper = styled.div`
     padding: 3vw 10vw;;
     background-size: cover;
     // background-image: url(${vocabulary});
+    background-color: #E9ECED;
     border-bottom: solid 2px white;
     display: flex;
     flex-direction: column;
 `
-    
+
 const ColorLayer = styled.div`
     position: absolute;
     top: 0;
@@ -21,22 +22,23 @@ const ColorLayer = styled.div`
     left: 0;
     right: 0;
     opacity: 0.33;
-    background-color: #828181;
     background-color: #F5F5F5;
+    background-color: #828181;
+    background-color: rgba(7, 83, 91);
+    display: none;
 `
 
 const TopWrapper = styled.div`
     position: relative;
-    height: 100px;
-    width: 80%;
-    margin-bottom: 3vw;
-    margin: 0 auto 3vw;
+    height: 120px;
+    width: 60%;
+    margin: 0 auto 10px;
     z-index: 10;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
-    background-color: lightblue;
+    // background-color: rgba(7, 83, 91);
 `
 
 const TopButton = styled.button`
@@ -45,14 +47,21 @@ const TopButton = styled.button`
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #413D3B;
+    background-color: rgba(0,0,0,0);
+    font-family: Raleway;
     font-size: 1.1rem;
+    font-weight: bold;
     // color: #FB6A5D;
     color: #D76F66;
     color: #E7BEBE;
-    color: #F4B8B8;
+    color: #343434;
+    border: none;
     border-radius: 5px;
     cursor: pointer;
+    &:hover {
+        font-weight: 800;
+    }
+    
 `
 
 const BottomWrapper = styled.div`
@@ -156,7 +165,7 @@ const StudentWrapper = styled.div`
     justify-content: space-between;
     margin-bottom: 10px;
 `
-    
+
 const TutorWrapper = styled.div`
     width: 100%;
     display: flex;
@@ -182,6 +191,6 @@ const Image = styled.img`
 
 
 
-   
 
-export { Wrapper, ColorLayer,  TopWrapper, TopButton, BottomWrapper, LeftWrapper, LeftButton, CentralWrapper, InputsWrapper, Input, WordsWrapper, Word, WordSpan, TranslatSpan, RightWrapper, LargeButtonsWrapper, LargeButton, MarksWrapper, StudentWrapper, TutorWrapper, MarksText, MarksPercent, ImageWrapper, Image }
+
+export { Wrapper, ColorLayer, TopWrapper, TopButton, BottomWrapper, LeftWrapper, LeftButton, CentralWrapper, InputsWrapper, Input, WordsWrapper, Word, WordSpan, TranslatSpan, RightWrapper, LargeButtonsWrapper, LargeButton, MarksWrapper, StudentWrapper, TutorWrapper, MarksText, MarksPercent, ImageWrapper, Image }
