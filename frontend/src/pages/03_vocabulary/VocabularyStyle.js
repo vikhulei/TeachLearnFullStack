@@ -43,7 +43,7 @@ const TopWrapper = styled.div`
 
 const TopButton = styled.button`
     width: 85px;
-    height: 35px;
+    height: 33px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,13 +55,15 @@ const TopButton = styled.button`
     color: #D76F66;
     color: #E7BEBE;
     color: #343434;
-    border: none;
-    border-radius: 5px;
+    border: solid black 1px;
+    // border-radius: 5px;
     cursor: pointer;
     &:hover {
         font-weight: 800;
     }
-    
+    &:active {
+        transform: translate(1px, 1px);
+    }
 `
 
 const BottomWrapper = styled.div`
@@ -89,12 +91,13 @@ const CentralWrapper = styled.div`
     height: 100%;
     width: 430px;
     padding: 20px 0 20px 40px;
-    background-color: #5B5856;
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border: 3px solid #413D3B;
+    // border: 3px solid #413D3B;
+    background-color: #5B5856;
+    background-color: white;
     box-shadow: 0px 0px 3px #D6C9C9;
 `
 
@@ -104,8 +107,10 @@ const InputsWrapper = styled.div`
 
 const Input = styled.input`
     width: 120px;
+    height: 20px;
     margin-right: 25px;
-    background-color: #D6C9C9;
+    background-color: #E9ECED;
+    border: none;
 `
 
 const WordsWrapper = styled.div`
@@ -115,6 +120,7 @@ const WordsWrapper = styled.div`
 const Word = styled.div`
     user-select: none;
     color: #D6C9C9;
+    color: #343434;
     font-weight: 600;
     font-size: 1.2rem;
 `
@@ -138,32 +144,37 @@ const RightWrapper = styled.div`
 const LargeButtonsWrapper = styled.div`
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
 `
 
 const LargeButton = styled(TopButton)`
     width: 200px;
-    height: 50px;
-    font-size: 0.9rem;
+    height: 40px;
+    font-size: 0.85rem;
     font-weight: 600;
     color: #D6C9C9;
     color: white;
+    background-color: #07535B;
+    border-radius: 0;
+    &:hover {
+        font-weight: 600;
+    }
 `
 
 const MarksWrapper = styled.div`
     color: #D6C9C9;
     color: black;
     width: 200px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: bold;
-    text-shadow: white 0 0 6px ;
+    text-shadow: white 0 0 6px;
 `
 
 const StudentWrapper = styled.div`
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 `
 
 const TutorWrapper = styled.div`
@@ -177,7 +188,7 @@ const MarksText = styled.div`
 `
 
 const MarksPercent = styled.div`
-
+    font-weight: 800;
 `
 
 
