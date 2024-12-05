@@ -8,7 +8,7 @@ const Wrapper = styled.div`
     margin: ${sizes.headerheight} ${sizes.marginsides} 0;
     padding: 3vw 10vw;;
     background-size: cover;
-    // background-image: url(${vocabulary});
+    background-image: url(${vocabulary});
     background-color: #E9ECED;
     border-bottom: solid 2px white;
     display: flex;
@@ -21,17 +21,17 @@ const ColorLayer = styled.div`
     bottom: 0;
     left: 0;
     right: 0;
-    opacity: 0.33;
+    background-color: rgba(7, 83, 91);
     background-color: #F5F5F5;
     background-color: #828181;
-    background-color: rgba(7, 83, 91);
-    display: none;
+    opacity: 0.85;
+    // display: none;
 `
 
 const TopWrapper = styled.div`
     position: relative;
     height: 120px;
-    width: 60%;
+    width: 80%;
     margin: 0 auto 10px;
     z-index: 10;
     display: flex;
@@ -42,27 +42,37 @@ const TopWrapper = styled.div`
 `
 
 const TopButton = styled.button`
-    width: 85px;
+    width: 90px;
     height: 33px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgba(0,0,0,0);
+    background-color: rgba(255, 255, 255, 0.53);
     font-family: Raleway;
     font-size: 1.1rem;
-    font-weight: bold;
+    font-weight: 500;
     // color: #FB6A5D;
     color: #D76F66;
     color: #E7BEBE;
     color: #343434;
-    border: solid black 1px;
+    border: solid lightgray 1px;
     // border-radius: 5px;
     cursor: pointer;
     &:hover {
-        font-weight: 800;
+        font-weight: 700;
     }
     &:active {
         transform: translate(1px, 1px);
+    }
+    &:nth-of-type(4) {
+        color: #AB2121;
+    }
+    &:nth-of-type(6) {
+        color: #AB2121;
+    }
+    &:nth-of-type(9) {
+        color: #AB2121;
     }
 `
 
@@ -97,7 +107,7 @@ const CentralWrapper = styled.div`
     justify-content: space-between;
     // border: 3px solid #413D3B;
     background-color: #5B5856;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.53);
     box-shadow: 0px 0px 3px #D6C9C9;
 `
 
@@ -109,7 +119,7 @@ const Input = styled.input`
     width: 120px;
     height: 20px;
     margin-right: 25px;
-    background-color: #E9ECED;
+    background-color: #F3F3F3;
     border: none;
 `
 
