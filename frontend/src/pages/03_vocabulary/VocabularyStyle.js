@@ -6,7 +6,7 @@ import vocabulary from "../../assets/02_vocabulary/vocabulary.jpg"
 const Wrapper = styled.div`
     position: relative;
     margin: ${sizes.headerheight} ${sizes.marginsides} 0;
-    padding: 3vw 9vw;;
+    padding: 100px 6vw;
     background-size: cover;
     background-image: url(${vocabulary});
     // background-color: #E9ECED;
@@ -27,7 +27,7 @@ const ColorLayer = styled.div`
     background-color: #828181;
     background-color: #3FB4C9;
     opacity: 0.4;
-    opacity: 0.82;
+    opacity: 0.92;
     // display: none;
 `
 
