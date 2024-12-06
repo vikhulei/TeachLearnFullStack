@@ -37,6 +37,25 @@ const User = styled(FaRegUser)`
     cursor: pointer;
 `
 
+const UserWrapper = styled.div`
+    position: absolute;
+    width: 150px;
+    // height: 100px;
+    right: ${sizes.marginsides};
+    top: ${sizes.headerheight};
+`
+const UserItem = styled.div`
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+    border-bottom: gray solid 1px;
+    background-color: lightgray;
+    cursor: pointer;
+    user-select: none;
+`
+
 const MenuWrapper = styled.div`
     display: flex;
     justify-content: space-between;
@@ -65,4 +84,4 @@ const TNav = styled.div`
     background-color: coral;
 `
 
-export { Wrapper, Logo, NavWrapper, User, MenuWrapper, MenuItem, TWrapper, TNav }
+export { Wrapper, Logo, NavWrapper, User, UserWrapper, UserItem, MenuWrapper, MenuItem, TWrapper, TNav }
