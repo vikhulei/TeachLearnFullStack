@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react"
 import { Wrapper, ColorLayer, TopWrapper, TopButton, BottomWrapper, LeftWrapper, LeftButton, CentralWrapper, InputsWrapper, Input, WordsWrapper, Word, WordSpan, TranslatSpan, RightWrapper, LargeButtonsWrapper, LargeButton, MarksWrapper, StudentWrapper, TutorWrapper, MarksText, MarksPercent, ImageWrapper, Image } from "./VocabularyStyle"
 import { TenWords } from "../../components/01_config/TenWords"
+import girl from "../../assets/02_vocabulary/girl.png"
 
 const Vocabulary = () => {
     const [thousand, setThousand] = useState()
@@ -100,7 +101,7 @@ const Vocabulary = () => {
                 </CentralWrapper>
                 <RightWrapper>
                     <LargeButtonsWrapper>
-                        <LargeButton onClick={changeThousand}>{`${thousand === "First Thousand" ? "Second Thosand" : "First Thousand"}`}</LargeButton>
+                        <LargeButton onClick={changeThousand}>{`${thousand === "First Thousand" ? "Second Thousand" : "First Thousand"}`}</LargeButton>
                         <LargeButton onClick={clickLanguage}>{language === "Ukr" ? "English" : "Ukrainian"}</LargeButton>
                     </LargeButtonsWrapper>
                     <MarksWrapper>
@@ -113,6 +114,9 @@ const Vocabulary = () => {
                             <MarksPercent>64%</MarksPercent>
                         </TutorWrapper>
                     </MarksWrapper>
+                    <ImageWrapper>
+                        <Image src={girl}/>
+                    </ImageWrapper>
                 </RightWrapper>
             </BottomWrapper>
 

@@ -6,10 +6,11 @@ import vocabulary from "../../assets/02_vocabulary/vocabulary.jpg"
 const Wrapper = styled.div`
     position: relative;
     margin: ${sizes.headerheight} ${sizes.marginsides} 0;
-    padding: 3vw 10vw;;
+    padding: 3vw 9vw;;
     background-size: cover;
     background-image: url(${vocabulary});
-    background-color: #E9ECED;
+    // background-color: #E9ECED;
+    // background-color: #3FB4C9;
     border-bottom: solid 2px white;
     display: flex;
     flex-direction: column;
@@ -24,33 +25,34 @@ const ColorLayer = styled.div`
     background-color: #F5F5F5;
     background-color: rgba(7, 83, 91);
     background-color: #828181;
-    background-color: #8CAABC;
-    opacity: 0.68;
+    background-color: #3FB4C9;
     opacity: 0.4;
+    opacity: 0.82;
     // display: none;
 `
 
 const TopWrapper = styled.div`
     position: relative;
     height: 120px;
-    width: 80%;
+    width: 100%;
     margin: 0 auto 10px;
     z-index: 10;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 20px;
+    // gap: 20px;
     // background-color: rgba(7, 83, 91);
 `
 
 const TopButton = styled.button`
-    width: 90px;
+    width: 100px;
     height: 33px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgba(0,0,0,0);
     background-color: rgba(223, 223, 223, 0.93);
+    background-color: #D3D3D3;
     font-family: Raleway;
     font-size: 1.1rem;
     font-weight: 600;
@@ -58,9 +60,10 @@ const TopButton = styled.button`
     color: #D76F66;
     color: #E7BEBE;
     color: #343434;
-    border: solid lightgray 2px;
-    box-shadow: gray 1px 2px;
-    // border-radius: 5px;
+    color: black;
+    // border: solid lightgray 2px;
+    // box-shadow: gray 1px 2px;
+    border-radius: 5px;
     cursor: pointer;
     &:hover {
         font-weight: 750;
@@ -84,8 +87,8 @@ const BottomWrapper = styled.div`
     height: 400px;
     z-index: 10;
     display: flex;
-    justify-content: center;
-    gap: 4vw;
+    justify-content: space-between;
+    // gap: 4vw;
 `
 
 const LeftWrapper = styled.div`
@@ -97,21 +100,35 @@ const LeftWrapper = styled.div`
 
 const LeftButton = styled(TopButton)`
     width: 150px;
+    background-color: #858585;
+    // color: white;
+    // color: black;
+    &:nth-of-type(4) {
+        color: #AB2121;
+    }
+    &:nth-of-type(6) {
+        color: #AB2121;
+    }
+    &:nth-of-type(9) {
+        color: #AB2121;
+    }
     // height: 39px;
 `
 
 const CentralWrapper = styled.div`
     box-sizing: border-box;
     height: 100%;
-    width: 430px;
+    width: 530px;
     padding: 20px 0 20px 40px;
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border: 2px solid #929292;
-    background-color: #5B5856;
+    // border: 2px solid #929292;
     background-color: rgba(223, 223, 223, 0.93);
+    background-color: #5B5856;
+    background-color: #D3D3D3;
+    background-color: #07535B;
     box-shadow: 0px 0px 10px #D6C9C9;
 `
 
@@ -120,11 +137,11 @@ const InputsWrapper = styled.div`
 `
 
 const Input = styled.input`
-    width: 120px;
-    height: 20px;
-    margin-right: 25px;
-    background-color: #F3F3F3;
+    width: 150px;
+    height: 24px;
+    margin-right: 35px;
     background-color: #929292;
+    background-color: #F3F3F3;
     border: none;
 `
 
@@ -134,8 +151,8 @@ const WordsWrapper = styled.div`
 
 const Word = styled.div`
     user-select: none;
-    color: #D6C9C9;
-    color: #343434;
+    // color: #D6C9C9;
+    // color: #343434;
     font-weight: 600;
     font-size: 1.2rem;
 `
@@ -168,26 +185,28 @@ const LargeButtonsWrapper = styled.div`
 const LargeButton = styled(TopButton)`
     width: 200px;
     height: 40px;
-    font-size: 0.85rem;
+    // font-size: 0.95rem;
     font-weight: 600;
     color: #D6C9C9;
     color: white;
     background-color: #07535B;
-    border-radius: 0;
+    background-color: #858585;
+    border-radius: 6px;
     &:hover {
         font-weight: 600;
     }
 `
 
 const MarksWrapper = styled.div`
-    color: #D6C9C9;
     color: white;
+    color: #D6C9C9;
+    color: black;
     width: 200px;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: bold;
-    text-shadow: black 2px 2px 10px,
-                 black -2px 2px 10px,
-                 black 2px -2px 10px;
+    // text-shadow: black 2px 2px 10px,
+    //              black -2px 2px 10px,
+    //              black 2px -2px 10px;
 `
 
 const StudentWrapper = styled.div`
@@ -213,11 +232,13 @@ const MarksPercent = styled.div`
 
 
 const ImageWrapper = styled.div`
+    right: ${sizes.marginsides};
+    width: 200px;
 
 `
 
 const Image = styled.img`
-
+    width: 100%;
 `
 
 
