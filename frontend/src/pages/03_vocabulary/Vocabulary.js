@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import { Wrapper, ColorLayer, TopWrapper, TopButton, BottomWrapper, LeftWrapper, LeftButton, CentralWrapper, InputsWrapper, Input, WordsWrapper, Word, WordSpan, TranslatSpan, RightWrapper, LargeButtonsWrapper, LargeButton, MarksWrapper, StudentWrapper, TutorWrapper, MarksText, MarksPercent, ImageWrapper, Image } from "./VocabularyStyle"
+import { Wrapper, Header, HeaderText, ColorLayer, TopWrapper, TopButton, BottomWrapper, LeftWrapper, LeftButton, CentralWrapper, InputsWrapper, Input, WordsWrapper, Word, WordSpan, TranslatSpan, RightWrapper, LargeButtonsWrapper, LargeButton, MarksWrapper, StudentWrapper, TutorWrapper, MarksText, MarksPercent, ImageWrapper, Image } from "./VocabularyStyle"
 import { TenWords } from "../../components/01_config/TenWords"
 import girl from "../../assets/02_vocabulary/girl.png"
 
@@ -78,8 +78,11 @@ const Vocabulary = () => {
 
     return (
         <Wrapper>
-            <ColorLayer />
-            <TopWrapper>
+        <Header>
+            <HeaderText>Vocabulary</HeaderText>
+        </Header>
+            {/* <ColorLayer /> */}
+            {/* <TopWrapper>
                 {topNumbers.map((value, index) => (
                     <TopButton key={index}>{value}</TopButton>
                 ))
@@ -118,7 +121,7 @@ const Vocabulary = () => {
                         <Image src={girl}/>
                     </ImageWrapper>
                 </RightWrapper>
-            </BottomWrapper>
+            </BottomWrapper> */}
 
         </Wrapper>
     )
