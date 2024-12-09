@@ -6,29 +6,14 @@ import vocabulary from "../../assets/02_vocabulary/vocabulary.jpg"
 const Wrapper = styled.div`
     position: relative;
     margin: ${sizes.headerheight} ${sizes.marginsides} 0;
-    // padding: 100px 6vw;
-    // background-size: cover;
-    // background-image: url(${vocabulary});
+    padding: 100px 6vw;
+    background-size: cover;
+    background-image: url(${vocabulary});
+    // background-color: #E9ECED;
     // background-color: #3FB4C9;
-    background-color: #EBEBEB;
     border-bottom: solid 2px white;
     display: flex;
     flex-direction: column;
-    height: 800px;
-`
-
-const Header = styled.div`
-    right ${sizes.marginsides};
-    left: ${sizes.marginsides};
-    padding: 50px;
-    background-color: rgba(7, 83, 91);
-    color: white;
-`
-
-const HeaderText = styled.div`
-    font-size: 3rem;
-    font-weight: bold;
-    text-transform: uppercase;
 `
 
 const ColorLayer = styled.div`
@@ -260,4 +245,4 @@ const Image = styled.img`
 
 
 
-export { Wrapper, Header, HeaderText, ColorLayer, TopWrapper, TopButton, BottomWrapper, LeftWrapper, LeftButton, CentralWrapper, InputsWrapper, Input, WordsWrapper, Word, WordSpan, TranslatSpan, RightWrapper, LargeButtonsWrapper, LargeButton, MarksWrapper, StudentWrapper, TutorWrapper, MarksText, MarksPercent, ImageWrapper, Image }
+export { Wrapper, ColorLayer, TopWrapper, TopButton, BottomWrapper, LeftWrapper, LeftButton, CentralWrapper, InputsWrapper, Input, WordsWrapper, Word, WordSpan, TranslatSpan, RightWrapper, LargeButtonsWrapper, LargeButton, MarksWrapper, StudentWrapper, TutorWrapper, MarksText, MarksPercent, ImageWrapper, Image }
