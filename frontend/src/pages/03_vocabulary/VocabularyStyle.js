@@ -8,9 +8,9 @@ const Wrapper = styled.div`
     margin: ${sizes.headerheight} ${sizes.marginsides} 0;
     padding: 100px 6vw;
     background-size: cover;
-    background-image: url(${vocabulary});
-    // background-color: #E9ECED;
-    // background-color: #3FB4C9;
+    // background-image: url(${vocabulary});
+    background-color: #3FB4C9;
+    background-color: #E9ECED;
     border-bottom: solid 2px white;
     display: flex;
     flex-direction: column;
@@ -26,9 +26,10 @@ const ColorLayer = styled.div`
     background-color: rgba(7, 83, 91);
     background-color: #828181;
     background-color: #3FB4C9;
+    background-color: #349FB1;
     opacity: 0.4;
     opacity: 0.92;
-    // display: none;
+    display: none;
 `
 
 const TopWrapper = styled.div`
