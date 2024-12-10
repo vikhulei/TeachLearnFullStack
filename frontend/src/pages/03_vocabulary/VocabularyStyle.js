@@ -18,8 +18,7 @@ const Wrapper = styled.div`
 `
 
 const Header = styled.div`
-    right ${sizes.marginsides};
-    left: ${sizes.marginsides};
+    position: relative;
     padding: 50px;
     background-color: rgba(7, 83, 91);
     color: white;
@@ -30,6 +29,29 @@ const HeaderText = styled.div`
     font-weight: bold;
     text-transform: uppercase;
 `
+const Title = styled.div`
+    position: relative;
+    margin: 35px 0;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+`
+
+const MainText = styled.div`
+    position: relative;
+    padding: 0 10vw;
+    font-size: 1.1rem;
+    line-height: 1.7;
+`
+
+
+export { Wrapper, Header, HeaderText, Title, MainText, }
+
+
+
+
+
+
 
 const ColorLayer = styled.div`
     position: absolute;
@@ -256,9 +278,3 @@ const ImageWrapper = styled.div`
 const Image = styled.img`
     width: 100%;
 `
-
-
-
-
-
-export { Wrapper, Header, HeaderText, ColorLayer, TopWrapper, TopButton, BottomWrapper, LeftWrapper, LeftButton, CentralWrapper, InputsWrapper, Input, WordsWrapper, Word, WordSpan, TranslatSpan, RightWrapper, LargeButtonsWrapper, LargeButton, MarksWrapper, StudentWrapper, TutorWrapper, MarksText, MarksPercent, ImageWrapper, Image }
