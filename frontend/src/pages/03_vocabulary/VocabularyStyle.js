@@ -2,19 +2,19 @@ import styled from "styled-components";
 import { sizes } from "../../components/01_config/Sizes";
 import vocabulary from "../../assets/02_vocabulary/vocabulary.jpg"
 
+const paddingBetween = "50px"
+
 
 const Wrapper = styled.div`
     position: relative;
     margin: ${sizes.headerheight} ${sizes.marginsides} 0;
-    // padding: 100px 6vw;
-    // background-size: cover;
-    // background-image: url(${vocabulary});
-    // background-color: #3FB4C9;
     background-color: #EBEBEB;
     border-bottom: solid 2px white;
     display: flex;
     flex-direction: column;
-    height: 800px;
+    // height: 800px;
+    gap: 50px;
+    padding-bottom: 50px;
 `
 
 const Header = styled.div`
@@ -29,11 +29,12 @@ const HeaderText = styled.div`
     font-weight: bold;
     text-transform: uppercase;
 `
+
 const Title = styled.div`
     position: relative;
-    margin: 35px 0;
+    // margin: 35px 0;
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: bold;
 `
 
@@ -44,45 +45,29 @@ const MainText = styled.div`
     line-height: 1.7;
 `
 
-
-export { Wrapper, Header, HeaderText, Title, MainText, }
-
-
-
-
-
-
-
-const ColorLayer = styled.div`
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #F5F5F5;
-    background-color: rgba(7, 83, 91);
-    background-color: #828181;
-    background-color: #3FB4C9;
-    background-color: #349FB1;
-    opacity: 0.4;
-    opacity: 0.92;
-    display: none;
-`
-
-const TopWrapper = styled.div`
+const FramesWrapper = styled.div`
     position: relative;
-    height: 120px;
-    width: 100%;
-    margin: 0 auto 10px;
-    z-index: 10;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    // gap: 20px;
-    // background-color: rgba(7, 83, 91);
+    padding: 0 6vw;
 `
 
-const TopButton = styled.button`
+const Frame = styled.div`
+    box-sizing: border-box;
+    height: 100%;
+    width: 530px;
+    padding: 20px 20px 0px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:10px;
+    // border: 2px solid #929292;
+    background-color: white;
+    box-shadow: 0px 0px 10px #D6C9C9;
+`
+
+const Button = styled.button`
     width: 100px;
     height: 33px;
     display: flex;
@@ -119,6 +104,99 @@ const TopButton = styled.button`
         color: #AB2121;
     }
 `
+const LargeButtonsWrapper = styled.div`
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+    margin-bottom: 20px;
+`
+
+const LargeButton = styled(Button)`
+    width: 100px;
+    height: 30px;
+    // font-size: 0.95rem;
+    font-weight: 600;
+    color: #D6C9C9;
+    color: black;
+    background-color: transparent;
+    border-radius: 0;
+    border: none;
+    &:nth-of-type(1) {
+        border-bottom: solid black 1px;
+    }
+    &:hover {
+        font-weight: 600;
+    }
+`
+
+const Input = styled.input`
+    width: 150px;
+    height: 24px;
+    margin-right: 35px;
+    background-color: #929292;
+    background-color: #F3F3F3;
+    border: none;
+`
+
+const Word = styled.div`
+    user-select: none;
+    // color: #D6C9C9;
+    // color: #343434;
+    font-weight: 600;
+    font-size: 1.2rem;
+`
+
+const WordSpan = styled.span`
+    margin-right: 5px;
+    cursor: pointer;
+    &:hover {
+        font-weight: 750;
+    }
+`
+
+const TranslatSpan = styled.span`
+    color: black;
+    font-weight: 700;
+`
+
+export { Wrapper, Header, HeaderText, Title, MainText, FramesWrapper, Frame, Button, LargeButtonsWrapper, LargeButton, Input, Word, WordSpan, TranslatSpan }
+
+
+
+
+
+
+
+const ColorLayer = styled.div`
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #F5F5F5;
+    background-color: rgba(7, 83, 91);
+    background-color: #828181;
+    background-color: #3FB4C9;
+    background-color: #349FB1;
+    opacity: 0.4;
+    opacity: 0.92;
+    display: none;
+`
+
+const TopWrapper = styled.div`
+    position: relative;
+    height: 120px;
+    width: 100%;
+    margin: 0 auto 10px;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // gap: 20px;
+    // background-color: rgba(7, 83, 91);
+`
+
+
 
 const BottomWrapper = styled.div`
     position: relative;
@@ -136,7 +214,7 @@ const LeftWrapper = styled.div`
     justify-content: space-between;
 `
 
-const LeftButton = styled(TopButton)`
+const LeftButton = styled(Button)`
     width: 150px;
     background-color: #858585;
     // color: white;
@@ -174,65 +252,18 @@ const InputsWrapper = styled.div`
 
 `
 
-const Input = styled.input`
-    width: 150px;
-    height: 24px;
-    margin-right: 35px;
-    background-color: #929292;
-    background-color: #F3F3F3;
-    border: none;
-`
+
 
 const WordsWrapper = styled.div`
     
 `
 
-const Word = styled.div`
-    user-select: none;
-    // color: #D6C9C9;
-    // color: #343434;
-    font-weight: 600;
-    font-size: 1.2rem;
-`
 
-const WordSpan = styled.span`
-    margin-right: 5px;
-    cursor: pointer;
-    &:hover {
-        font-weight: 750;
-    }
-`
-
-const TranslatSpan = styled.span`
-    color: black;
-    font-weight: 700;
-`
 
 const RightWrapper = styled.div`
     display: flex;
     flex-direction: column;
     gap: 50px;
-`
-
-const LargeButtonsWrapper = styled.div`
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-`
-
-const LargeButton = styled(TopButton)`
-    width: 200px;
-    height: 40px;
-    // font-size: 0.95rem;
-    font-weight: 600;
-    color: #D6C9C9;
-    color: white;
-    background-color: #07535B;
-    background-color: #858585;
-    border-radius: 6px;
-    &:hover {
-        font-weight: 600;
-    }
 `
 
 const MarksWrapper = styled.div`
