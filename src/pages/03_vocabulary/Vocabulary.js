@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import { Wrapper, Header, HeaderText, Title, MainText, FramesWrapper, Frame, Button, LargeButtonsWrapper, LargeButton, Input, Word, WordSpan, TranslatSpan } from "./VocabularyStyle"
+import { Wrapper, Header, HeaderText, Title, MainText, FramesWrapper, Frame, Button, LanguageButtonsWrapper, LanguageButton, Input, Word, WordSpan, TranslatSpan } from "./VocabularyStyle"
 import { TenWords } from "../../components/01_config/TenWords"
 import girl from "../../assets/02_vocabulary/girl.png"
 
@@ -85,10 +85,10 @@ const Vocabulary = () => {
             <MainText>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet libero id nisi euismod, sed porta est consectetur. Vestibulum auctor felis eget orci semper vestibulum. Pellentesque ultricies nibh gravida, accumsan libero luctus, molestie nunc. In nibh ipsum, blandit id faucibus ac, finibus vitae dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet libero id nisi euismod, sed porta est consectetur. Vestibulum auctor felis eget orci semper vestibulum. Pellentesque ultricies nibh gravida, accumsan libero luctus, molestie nunc. In nibh ipsum, blandit id faucibus ac, finibus vitae dui.</MainText>
             <FramesWrapper>
                 <Frame>
-                    <LargeButtonsWrapper>
-                        <LargeButton onClick={clickLanguage}>English</LargeButton>
-                        <LargeButton onClick={clickLanguage}>Ukrainian</LargeButton>
-                    </LargeButtonsWrapper>
+                    <LanguageButtonsWrapper>
+                        <LanguageButton onClick={clickLanguage}>English</LanguageButton>
+                        <LanguageButton onClick={clickLanguage}>Ukrainian</LanguageButton>
+                    </LanguageButtonsWrapper>
                     {tenWords.map((value, index) => (
                         <Word key={index}>
                             <Input onClick={clickInput} id={value.id} /><WordSpan style={{ color: value.color }} id={value.id} onClick={clickWord}> {value.id}. {language === "Eng" ? value.word : value.translat}</WordSpan> <TranslatSpan style={{ "visibility": value.visibility }}>{language === "Eng" ? value.translat : value.word}</TranslatSpan>
