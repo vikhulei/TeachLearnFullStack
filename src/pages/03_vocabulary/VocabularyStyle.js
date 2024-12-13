@@ -133,7 +133,7 @@ const LargeButton = styled.button`
     width: 150px;
     height: 35px;
     background-color: transparent;
-    border: 2px solid grey;
+    border: 2px solid   grey;
     color: black;
     text-transform: uppercase;
     font-size: 0.75rem;
