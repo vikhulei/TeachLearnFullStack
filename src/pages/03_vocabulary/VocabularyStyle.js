@@ -54,7 +54,7 @@ const FramesWrapper = styled.div`
 const Frame = styled.div`
     box-sizing: border-box;
     width: 500px;
-    padding: 40px 30px;
+    padding: 15px 30px 40px;
     color: white;
     display: flex;
     flex-direction: column;
@@ -68,7 +68,7 @@ const LanguageButtonsWrapper = styled.div`
     display: flex;
     justify-content: space-between;
     padding: 0 40px;
-    margin-bottom: 20px;
+    margin-bottom: 00px;
 `
 
 const LanguageButton = styled.button`
