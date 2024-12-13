@@ -62,6 +62,9 @@ const Frame = styled.div`
     gap:15px;
     background-color: white;
     box-shadow: 0px 0px 10px #D6C9C9;
+    &:last-of-type {
+       padding: 15px 0 40px
+    }
 `
 
 const LanguageButtonsWrapper = styled.div`
@@ -123,15 +126,21 @@ const LargeButtonsWrapper = styled.div`
     padding-bottom: 20px;
     display: flex;
     justify-content: space-around;
-    border-bottom: solid gray 3px;
+    border-bottom: solid lightgrey 2px;
 `
 
 const LargeButton = styled.button`
     width: 150px;
-    height: 30px;
+    height: 35px;
     background-color: transparent;
-    border: 2px solid lightgrey;
+    border: 2px solid grey;
     color: black;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    font-weight: 600;
+    &:first-of-type {
+        background-color: lightgrey;
+    }
 `
 
 const NumberButtonWrapper = styled.div`
