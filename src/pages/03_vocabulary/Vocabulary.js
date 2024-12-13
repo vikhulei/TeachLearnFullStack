@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import { Wrapper, Header, HeaderText, Title, MainText, FramesWrapper, Frame, Button, LanguageButtonsWrapper, LanguageButton, Input, Word, WordSpan, TranslatSpan } from "./VocabularyStyle"
+import { Wrapper, Header, HeaderText, Title, MainText, FramesWrapper, Frame, LanguageButtonsWrapper, LanguageButton, Input, Word, WordSpan, TranslatSpan, LargeButtonsWrapper,LargeButton, NumberButtonWrapper, NumberButton, MarkButton, Mark, LargeCircle, MediumCircle, SmallCircle, ImageWrapper, Image, LineCircleTextWrapper, CircleTextWrapper, Circle, Line, SubHeading} from "./VocabularyStyle"
 import { TenWords } from "../../components/01_config/TenWords"
 import girl from "../../assets/02_vocabulary/girl.png"
 
@@ -96,22 +96,35 @@ const Vocabulary = () => {
                     ))}
                 </Frame>
                 <Frame>
-
+                    <LargeButtonsWrapper>
+                        <LargeButton>First Thousand</LargeButton>
+                        <LargeButton>Second Thousand</LargeButton>
+                    </LargeButtonsWrapper>
+                    <NumberButtonWrapper>
+                        {topNumbers.map((value, index) => (
+                            <NumberButton key={index}>{value}</NumberButton>
+                        ))
+                        }
+                    </NumberButtonWrapper>
+                    <NumberButtonWrapper>
+                        {leftNumbers.map((value, index) => (
+                            <NumberButton key={index} name={value} onClick={clickLeft}>{value}</NumberButton>
+                        ))
+                        }
+                    </NumberButtonWrapper>
+                    <LargeButtonsWrapper>
+                        <MarkButton> Student's mark <Mark>72%</Mark></MarkButton>
+                        <MarkButton> Tutor's mark <Mark>64%</Mark></MarkButton>
+                    </LargeButtonsWrapper>
                 </Frame>
             </FramesWrapper>
             {/* <ColorLayer /> */}
             {/* <TopWrapper>
-                {topNumbers.map((value, index) => (
-                    <TopButton key={index}>{value}</TopButton>
-                ))
-                }
+
             </TopWrapper>
             <BottomWrapper>
                 <LeftWrapper>
-                    {leftNumbers.map((value, index) => (
-                        <LeftButton key={index} name={value} onClick={clickLeft}>{value}</LeftButton>
-                    ))
-                    }
+
                 </LeftWrapper>
                 <CentralWrapper>
                     {tenWords.map((value, index) => (
