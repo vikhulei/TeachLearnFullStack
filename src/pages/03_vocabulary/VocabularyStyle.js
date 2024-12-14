@@ -101,8 +101,7 @@ const Input = styled.input`
     width: 150px;
     height: 24px;
     margin-right: 35px;
-    background-color: #F3F3F3;
-    background-color: #929292;
+    background-color: lightgrey;
     border: none;
     //z-index: 40;
 `
@@ -219,21 +218,78 @@ const SmallCircle = styled(LargeCircle)`
     left: 42vw;
 `
 
-const ImageWrapper = styled.div``
+const ImageWrapper = styled.div`
+    position: relative;
+    width: 100%;
+    height: 200px;
+`
 
-const Image = styled.image``
+const Image = styled.img`
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+`
 
-const LineCircleTextWrapper = styled.div``
+const LineCircleTextWrapper = styled.div`
+    position: relative;
+    padding: 0 7vw;
+    // width: 100%;
+    // height: 380px;
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+    // background-color: darkred;
+`
 
-const CircleTextWrapper = styled.div``
+const CircleTextWrapper = styled.div`
+    position: relative;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    &:nth-of-type(2) {
+        top: 40px;
+    }
+    z-index: 20;
+    // background-color: darkred;
+`
 
-const Circle = styled.div``
+const Circle = styled.div`
+    width: 120px;
+    height: 120px;
+    border-radius: 200px;
+    border: solid #B5B5B5 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    font-weight: bold;
+    background-color: #EBEBEB;
+`
 
-const Line = styled.div``
+const Line = styled.div`
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    border-bottom: solid #B5B5B5 3px;
+    z-index: 10;
+`
 
-const SubHeading = styled.div``
+const CircleHeading = styled.div`
+    margin: 20px 0;
+    font-size: 1.6rem;
+    font-weight: bold;
+`
 
-export { Wrapper, Header, HeaderText, Title, MainText, FramesWrapper, Frame, LanguageButtonsWrapper, LanguageButton, Input, Word, WordSpan, TranslatSpan, LargeButtonsWrapper,LargeButton, NumberButtonWrapper, NumberButton, MarkButton, Mark, LargeCircle, MediumCircle, SmallCircle, ImageWrapper, Image, LineCircleTextWrapper, CircleTextWrapper, Circle, Line, SubHeading }
+const CircleText = styled(MainText)`
+    padding: 0;
+`
+
+
+
+export { Wrapper, Header, HeaderText, Title, MainText, FramesWrapper, Frame, LanguageButtonsWrapper, LanguageButton, Input, Word, WordSpan, TranslatSpan, LargeButtonsWrapper,LargeButton, NumberButtonWrapper, NumberButton, MarkButton, Mark, LargeCircle, MediumCircle, SmallCircle, ImageWrapper, Image, LineCircleTextWrapper, CircleTextWrapper, Circle, Line, CircleHeading,CircleText  }
 
 
 

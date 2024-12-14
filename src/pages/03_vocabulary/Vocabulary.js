@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react"
-import { Wrapper, Header, HeaderText, Title, MainText, FramesWrapper, Frame, LanguageButtonsWrapper, LanguageButton, Input, Word, WordSpan, TranslatSpan, LargeButtonsWrapper, LargeButton, NumberButtonWrapper, NumberButton, MarkButton, Mark, LargeCircle, MediumCircle, SmallCircle, ImageWrapper, Image, LineCircleTextWrapper, CircleTextWrapper, Circle, Line, SubHeading } from "./VocabularyStyle"
+import { Wrapper, Header, HeaderText, Title, MainText, FramesWrapper, Frame, LanguageButtonsWrapper, LanguageButton, Input, Word, WordSpan, TranslatSpan, LargeButtonsWrapper, LargeButton, NumberButtonWrapper, NumberButton, MarkButton, Mark, LargeCircle, MediumCircle, SmallCircle, ImageWrapper, Image, LineCircleTextWrapper, CircleTextWrapper, Circle, Line, CircleHeading, CircleText } from "./VocabularyStyle"
 import { TenWords } from "../../components/01_config/TenWords"
 import girl from "../../assets/02_vocabulary/girl.png"
+import picture from "../../assets/01_home/home.jpg"
 
 const Vocabulary = () => {
     const [thousand, setThousand] = useState()
@@ -121,6 +122,28 @@ const Vocabulary = () => {
             <LargeCircle />
             <MediumCircle />
             <SmallCircle />
+            <ImageWrapper>
+                <Image src={picture} />
+            </ImageWrapper>
+            <Title>Memorizing Process</Title>
+            <LineCircleTextWrapper>
+                <CircleTextWrapper>
+                    <Circle>1</Circle>
+                    <CircleHeading>Record</CircleHeading>
+                    <CircleText>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet libero id nisi euismod, sed </CircleText>
+                </CircleTextWrapper>
+                <CircleTextWrapper>
+                    <Circle>2</Circle>
+                    <CircleHeading>Retain</CircleHeading>
+                    <CircleText>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet libero id nisi euismod, sed </CircleText>
+                </CircleTextWrapper>
+                <CircleTextWrapper>
+                    <Circle>3</Circle>
+                    <CircleHeading>Retrieve</CircleHeading>
+                    <CircleText>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet libero id nisi euismod, sed </CircleText>
+                </CircleTextWrapper>
+                <Line />
+            </LineCircleTextWrapper>
             {/* <ColorLayer /> */}
             {/* <TopWrapper>
 
