@@ -42,6 +42,7 @@ const MainText = styled.div`
     padding: 0 10vw;
     font-size: 1.1rem;
     line-height: 1.7;
+    z-index: 20;
 `
 
 const FramesWrapper = styled.div`
@@ -49,6 +50,7 @@ const FramesWrapper = styled.div`
     display: flex;
     justify-content: center;
     gap: 7vw;
+    z-index: 20;
 `
 
 const Frame = styled.div`
@@ -59,11 +61,13 @@ const Frame = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap:15px;
-    background-color: white;
+    gap: 15px;
+    background-color: rgba(255, 255, 255, 0.6);
     box-shadow: 0px 0px 10px #D6C9C9;
     &:last-of-type {
-       padding: 15px 0 40px
+       padding: 0px 0 0px;
+       gap: 0;
+       justify-items: stretch;
     }
 `
 
@@ -93,12 +97,14 @@ const LanguageButton = styled.button`
 `
 
 const Input = styled.input`
+    position: relative;
     width: 150px;
     height: 24px;
     margin-right: 35px;
-    background-color: #929292;
     background-color: #F3F3F3;
+    background-color: #929292;
     border: none;
+    //z-index: 40;
 `
 
 const Word = styled.div`
@@ -123,9 +129,12 @@ const TranslatSpan = styled.span`
 `
 
 const LargeButtonsWrapper = styled.div`
-    padding-bottom: 20px;
+    box-sizing: content-box;
+    padding: 20px 0;
+    // height: 40px;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     border-bottom: solid lightgrey 2px;
 `
 
@@ -133,7 +142,7 @@ const LargeButton = styled.button`
     width: 150px;
     height: 35px;
     background-color: transparent;
-    border: 2px solid   grey;
+    border: 2px solid grey;
     color: black;
     text-transform: uppercase;
     font-size: 0.75rem;
@@ -141,14 +150,40 @@ const LargeButton = styled.button`
     &:first-of-type {
         background-color: lightgrey;
     }
+    cursor: pointer;
+    &:hover {
+        font-size: 0.80rem;
+        border: 3px solid   grey;
+    }
+    &:active {
+        transform: translate(2px, 1px);
+    }
 `
 
 const NumberButtonWrapper = styled.div`
+    padding: 20px 0;
+    // height: 30%;
+    display: flex;
+    flex: 1;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid lightgrey 2px;
 
 `
 
 const NumberButton = styled(LargeButton)`
-
+    width: 100px;
+    &:nth-of-type(3) {
+        border: 2px solid #F58282;
+    }
+    &:nth-of-type(5) {
+        border: 2px solid #F58282;
+    }
+    &:nth-of-type(9) {
+        border: 2px solid #F58282;
+    }
 `
 
 const MarkButton = styled(LargeButton)`
@@ -159,11 +194,30 @@ const Mark = styled.span`
 
 `
 
-const LargeCircle = styled.div``
+const LargeCircle = styled.div`
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 300px;
+    top: 300px;
+    right: 10vw;
+    background-color: rgba(217, 217, 217, 0.6);
+    z-index: 10;
+`
 
-const MediumCircle = styled.div``
+const MediumCircle = styled(LargeCircle)`
+    width: 200px;
+    height: 200px;
+    top: 800px;
+    left: 47vw;
+`
 
-const SmallCircle = styled.div``
+const SmallCircle = styled(LargeCircle)`
+    width: 50px;
+    height: 50px;
+    top: 600px;
+    left: 42vw;
+`
 
 const ImageWrapper = styled.div``
 

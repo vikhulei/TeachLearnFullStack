@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import { Wrapper, Header, HeaderText, Title, MainText, FramesWrapper, Frame, LanguageButtonsWrapper, LanguageButton, Input, Word, WordSpan, TranslatSpan, LargeButtonsWrapper,LargeButton, NumberButtonWrapper, NumberButton, MarkButton, Mark, LargeCircle, MediumCircle, SmallCircle, ImageWrapper, Image, LineCircleTextWrapper, CircleTextWrapper, Circle, Line, SubHeading} from "./VocabularyStyle"
+import { Wrapper, Header, HeaderText, Title, MainText, FramesWrapper, Frame, LanguageButtonsWrapper, LanguageButton, Input, Word, WordSpan, TranslatSpan, LargeButtonsWrapper, LargeButton, NumberButtonWrapper, NumberButton, MarkButton, Mark, LargeCircle, MediumCircle, SmallCircle, ImageWrapper, Image, LineCircleTextWrapper, CircleTextWrapper, Circle, Line, SubHeading } from "./VocabularyStyle"
 import { TenWords } from "../../components/01_config/TenWords"
 import girl from "../../assets/02_vocabulary/girl.png"
 
@@ -101,14 +101,14 @@ const Vocabulary = () => {
                         <LargeButton>Second Thousand</LargeButton>
                     </LargeButtonsWrapper>
                     <NumberButtonWrapper>
-                        {topNumbers.map((value, index) => (
-                            <NumberButton key={index}>{value}</NumberButton>
+                        {leftNumbers.map((value, index) => (
+                            <NumberButton key={index} name={value} onClick={clickLeft}>{value}</NumberButton>
                         ))
                         }
                     </NumberButtonWrapper>
                     <NumberButtonWrapper>
-                        {leftNumbers.map((value, index) => (
-                            <NumberButton key={index} name={value} onClick={clickLeft}>{value}</NumberButton>
+                        {topNumbers.map((value, index) => (
+                            <NumberButton key={index}>{value}</NumberButton>
                         ))
                         }
                     </NumberButtonWrapper>
@@ -118,6 +118,9 @@ const Vocabulary = () => {
                     </LargeButtonsWrapper>
                 </Frame>
             </FramesWrapper>
+            <LargeCircle />
+            <MediumCircle />
+            <SmallCircle />
             {/* <ColorLayer /> */}
             {/* <TopWrapper>
 
