@@ -144,42 +144,6 @@ const Vocabulary = () => {
                 </CircleTextWrapper>
                 <Line />
             </LineCircleTextWrapper>
-            {/* <ColorLayer /> */}
-            {/* <TopWrapper>
-
-            </TopWrapper>
-            <BottomWrapper>
-                <LeftWrapper>
-
-                </LeftWrapper>
-                <CentralWrapper>
-                    {tenWords.map((value, index) => (
-                        <Word key={index}>
-                            <Input onClick={clickInput} id={value.id} /><WordSpan style={{ color: value.color }} id={value.id} onClick={clickWord}> {value.id}. {language === "Eng" ? value.word : value.translat}</WordSpan> <TranslatSpan style={{ "visibility": value.visibility }}>{language === "Eng" ? value.translat : value.word}</TranslatSpan>
-                        </Word>
-                    ))}
-                </CentralWrapper>
-                <RightWrapper>
-                    <LargeButtonsWrapper>
-                        <LargeButton onClick={changeThousand}>{`${thousand === "First Thousand" ? "Second Thousand" : "First Thousand"}`}</LargeButton>
-                        <LargeButton onClick={clickLanguage}>{language === "Ukr" ? "English" : "Ukrainian"}</LargeButton>
-                    </LargeButtonsWrapper>
-                    <MarksWrapper>
-                        <StudentWrapper>
-                            <MarksText>Student's Mark</MarksText>
-                            <MarksPercent>72%</MarksPercent>
-                        </StudentWrapper>
-                        <TutorWrapper>
-                            <MarksText>Tutor's Mark</MarksText>
-                            <MarksPercent>64%</MarksPercent>
-                        </TutorWrapper>
-                    </MarksWrapper>
-                    <ImageWrapper>
-                        <Image src={girl}/>
-                    </ImageWrapper>
-                </RightWrapper>
-            </BottomWrapper> */}
-
         </Wrapper>
     )
 }

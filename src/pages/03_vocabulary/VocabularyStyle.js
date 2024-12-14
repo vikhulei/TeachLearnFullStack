@@ -15,6 +15,9 @@ const Wrapper = styled.div`
     // height: 800px;
     gap: 50px;
     padding-bottom: 50px;
+    &:nth-of-type(4) {
+        margin-top: 200px;
+    }
 `
 
 const Header = styled.div`
@@ -221,7 +224,7 @@ const SmallCircle = styled(LargeCircle)`
 const ImageWrapper = styled.div`
     position: relative;
     width: 100%;
-    height: 200px;
+    height: 250px;
 `
 
 const Image = styled.img`
