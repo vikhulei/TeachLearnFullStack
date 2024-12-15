@@ -1,9 +1,10 @@
 import { useState } from "react"
-import { Wrapper, Logo, NavWrapper, User, UserWrapper, UserItem, MenuWrapper, MenuItem, TWrapper, TNav  } from "./HeaderStyle"
+import { Wrapper, Logo, NavWrapper, User, UserWrapper, UserItem, MenuWrapper, MenuItem, TWrapper, TNav, YouAreLogged  } from "./HeaderStyle"
 
 
 const Header = () => {
   const [userMenu, setUserMenu] = useState(false)
+  const [logged, setLogged] = useState("logged out")
 
   const showUserMenu = () => {
     setUserMenu(!userMenu)
@@ -11,8 +12,9 @@ const Header = () => {
 
   const showUserItem = (e) => {
     setUserMenu(false)
-    alert(e.target.id)
+    setLogged(e.target.id)
   }
+
 
   return (
     // <TWrapper>
@@ -33,12 +35,13 @@ const Header = () => {
         </MenuWrapper>
       <User onClick={showUserMenu}/>
         { userMenu && <UserWrapper>
-          <UserItem id="register" onClick={showUserItem}>Register</UserItem>
-          <UserItem id="login" onClick={showUserItem}>Login</UserItem>
-          <UserItem id="exit" onClick={showUserItem}>Exit</UserItem>
+          <UserItem id="now registered" onClick={showUserItem}>Register</UserItem>
+          <UserItem id="logged in" onClick={showUserItem}>Login</UserItem>
+          <UserItem id="logged out" onClick={showUserItem}>Exit</UserItem>
         </UserWrapper>
          }
       </NavWrapper>
+      <YouAreLogged logged={logged}>You are {logged}</YouAreLogged>
     </Wrapper>
   )
 }

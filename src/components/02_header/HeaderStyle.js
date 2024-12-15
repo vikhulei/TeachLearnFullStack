@@ -84,4 +84,12 @@ const TNav = styled.div`
     background-color: coral;
 `
 
-export { Wrapper, Logo, NavWrapper, User, UserWrapper, UserItem, MenuWrapper, MenuItem, TWrapper, TNav }
+const YouAreLogged = styled.div`
+    position: absolute;
+    bottom: 0;
+    right: ${sizes.marginsides};
+    color: red;
+    color: ${({logged}) => logged=="logged out" ? "red" : "green"}
+`
+
+export { Wrapper, Logo, NavWrapper, User, UserWrapper, UserItem, MenuWrapper, MenuItem, TWrapper, TNav, YouAreLogged }
