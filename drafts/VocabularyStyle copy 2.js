@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { sizes } from "../../components/01_config/Sizes";
+import { sizes } from "../src/components/01_config/Sizes";
 import vocabulary from "../../assets/02_vocabulary/vocabulary.jpg"
 
 
