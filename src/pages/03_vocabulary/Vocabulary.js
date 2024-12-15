@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import { Wrapper, Header, HeaderText, Title, MainText, FramesWrapper, Frame, LanguageButtonsWrapper, LanguageButton, Input, Word, WordSpan, TranslatSpan, LargeButtonsWrapper, LargeButton, NumberButtonWrapper, NumberButton, MarkButton, Mark, LargeCircle, MediumCircle, SmallCircle, ImageWrapper, Image, LineCircleTextWrapper, CircleTextWrapper, Circle, Line, CircleHeading, CircleText } from "./VocabularyStyle"
+import { Wrapper, Header, HeaderText, Title, MainText, FramesWrapper, Frame, LanguageButtonsWrapper, LanguageButton, Input, Word, WordSpan, TranslatSpan, LargeButtonsWrapper, LargeButton, NumberButtonWrapper, TopButton, BottomButton, MarkButton, Mark, LargeCircle, MediumCircle, SmallCircle, ImageWrapper, Image, LineCircleTextWrapper, CircleTextWrapper, Circle, Line, CircleHeading, CircleText } from "./VocabularyStyle"
 import { TenWords } from "../../components/01_config/TenWords"
 import girl from "../../assets/02_vocabulary/girl.png"
 import picture from "../../assets/01_home/home.jpg"
@@ -11,6 +11,8 @@ const Vocabulary = () => {
     const [language, setLanguage] = useState("Eng")
     const [showTranslation, setShowTranslation] = useState(false)
     const [tenWords, setTenWords] = useState(TenWords)
+    const [topNumber, setTopNumber] = useState(1)
+    const [bottomNumber, setBottomNumber] = useState(1)
 
     const changeThousand = () => {
         let e
@@ -23,7 +25,7 @@ const Vocabulary = () => {
             localStorage.setItem("savedThousand", "First Thousand")
             e = { target: { name: 100 } }
         }
-        clickLeft(e)
+        clickTopButton(e)
     }
 
     const fillLeftButtons = (checkThousand) => {
@@ -39,12 +41,17 @@ const Vocabulary = () => {
         }
     }
 
-    const clickLeft = (e) => {
+    const clickTopButton = (e) => {
+        setTopNumber(Number(e.target.id) + 1 || 1)
         localStorage.setItem("savedLeftNumber", Number(e.target.name))
         setTopNumbers([])
         for (let i = 1; i <= 10; i++) {
             setTopNumbers(prev => [...prev, (Number(e.target.name) + i * 10 - 100)])
         }
+    }
+
+    const clickBottomButton = (e) => {
+        setBottomNumber(Number(e.target.id) + 1 || 1)
     }
 
     const clickInput = (e) => {
@@ -57,11 +64,12 @@ const Vocabulary = () => {
         ))
     }
 
-    const clickLanguage = () => {
-        if (language === "Eng") {
-            setLanguage("Ukr")
-        } else {
+    const clickLanguage = (e) => {
+        console.log(e.target.id)
+        if (e.target.id === "Eng") {
             setLanguage("Eng")
+        } else {
+            setLanguage("Ukr")
         }
     }
 
@@ -70,7 +78,7 @@ const Vocabulary = () => {
         setThousand(savedThousand)
         fillLeftButtons(savedThousand)
         let e = { target: { name: localStorage.getItem("savedLeftNumber") || 100 } }
-        clickLeft(e)
+        clickTopButton(e)
     }, [])
 
     useEffect(() => {
@@ -87,8 +95,8 @@ const Vocabulary = () => {
             <FramesWrapper>
                 <Frame>
                     <LanguageButtonsWrapper>
-                        <LanguageButton onClick={clickLanguage}>English</LanguageButton>
-                        <LanguageButton onClick={clickLanguage}>Ukrainian</LanguageButton>
+                        <LanguageButton onClick={clickLanguage}language={language} id="Eng">English</LanguageButton>
+                        <LanguageButton onClick={clickLanguage}language={language} id="Ukr">Ukrainian</LanguageButton>
                     </LanguageButtonsWrapper>
                     {tenWords.map((value, index) => (
                         <Word key={index}>
@@ -98,18 +106,18 @@ const Vocabulary = () => {
                 </Frame>
                 <Frame>
                     <LargeButtonsWrapper>
-                        <LargeButton>First Thousand</LargeButton>
-                        <LargeButton>Second Thousand</LargeButton>
+                        <LargeButton onClick={changeThousand} thousand={thousand} id="first">First Thousand</LargeButton>
+                        <LargeButton onClick={changeThousand} thousand={thousand} id="second">Second Thousand</LargeButton>
                     </LargeButtonsWrapper>
                     <NumberButtonWrapper>
                         {leftNumbers.map((value, index) => (
-                            <NumberButton key={index} name={value} onClick={clickLeft}>{value}</NumberButton>
+                            <TopButton key={index} name={value} topNumber={topNumber} id={index} onClick={clickTopButton}>{value}</TopButton>
                         ))
                         }
                     </NumberButtonWrapper>
                     <NumberButtonWrapper>
                         {topNumbers.map((value, index) => (
-                            <NumberButton key={index}>{value}</NumberButton>
+                            <BottomButton key={index} id={index} bottomNumber={bottomNumber} onClick={clickBottomButton}>{value}</BottomButton>
                         ))
                         }
                     </NumberButtonWrapper>

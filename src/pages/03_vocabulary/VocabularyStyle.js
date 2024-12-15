@@ -91,7 +91,10 @@ const LanguageButton = styled.button`
     border: none;
     cursor: pointer;
     &:nth-of-type(1) {
-        border-bottom: solid black 1px;
+        border-bottom: ${({language}) => language == "Eng" ? "solid black 1px" : "none"};
+    }
+    &:nth-of-type(2) {
+        border-bottom: ${({language}) => language == "Ukr" ? "solid black 1px" : "none"};
     }
     &:hover {
         font-weight: 600;
@@ -133,14 +136,13 @@ const TranslatSpan = styled.span`
 const LargeButtonsWrapper = styled.div`
     box-sizing: content-box;
     padding: 20px 0;
-    // height: 40px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     border-bottom: solid lightgrey 2px;
 `
 
-const LargeButton = styled.button`
+const GenericButton = styled.button`
     width: 150px;
     height: 35px;
     background-color: transparent;
@@ -149,16 +151,22 @@ const LargeButton = styled.button`
     text-transform: uppercase;
     font-size: 0.75rem;
     font-weight: 600;
-    &:first-of-type {
-        background-color: lightgrey;
-    }
     cursor: pointer;
     &:hover {
-        font-size: 0.80rem;
+        font-size: 0.76rem;
         border: 3px solid   grey;
     }
     &:active {
         transform: translate(2px, 1px);
+    }
+`
+
+const LargeButton = styled(GenericButton)`
+    &:nth-of-type(1) {
+        background-color: ${({thousand}) => thousand=="First Thousand" ? "lightgrey" : "none"}
+    }
+    &:nth-of-type(2) {
+        background-color: ${({thousand}) => thousand=="Second Thousand" ? "lightgrey" : "none"}
     }
 `
 
@@ -175,8 +183,11 @@ const NumberButtonWrapper = styled.div`
 
 `
 
-const NumberButton = styled(LargeButton)`
+const TopButton = styled(GenericButton)`
     width: 100px;
+    &:nth-of-type(${({topNumber}) => topNumber ? topNumber : "1"}) {
+        background-color: lightgrey;
+    }
     &:nth-of-type(3) {
         border: 2px solid #F58282;
     }
@@ -185,6 +196,13 @@ const NumberButton = styled(LargeButton)`
     }
     &:nth-of-type(9) {
         border: 2px solid #F58282;
+    }
+`
+
+const BottomButton = styled(GenericButton)`
+    width: 100px;
+    &:nth-of-type(${({bottomNumber}) => bottomNumber ? bottomNumber : "1"}) {
+        background-color: lightgrey;
     }
 `
 
@@ -292,7 +310,7 @@ const CircleText = styled(MainText)`
 
 
 
-export { Wrapper, Header, HeaderText, Title, MainText, FramesWrapper, Frame, LanguageButtonsWrapper, LanguageButton, Input, Word, WordSpan, TranslatSpan, LargeButtonsWrapper,LargeButton, NumberButtonWrapper, NumberButton, MarkButton, Mark, LargeCircle, MediumCircle, SmallCircle, ImageWrapper, Image, LineCircleTextWrapper, CircleTextWrapper, Circle, Line, CircleHeading,CircleText  }
+export { Wrapper, Header, HeaderText, Title, MainText, FramesWrapper, Frame, LanguageButtonsWrapper, LanguageButton, Input, Word, WordSpan, TranslatSpan, LargeButtonsWrapper,LargeButton, NumberButtonWrapper, TopButton, BottomButton, MarkButton, Mark, LargeCircle, MediumCircle, SmallCircle, ImageWrapper, Image, LineCircleTextWrapper, CircleTextWrapper, Circle, Line, CircleHeading,CircleText  }
 
 
 
