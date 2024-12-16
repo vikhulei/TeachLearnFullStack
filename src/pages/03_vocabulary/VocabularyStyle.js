@@ -206,8 +206,8 @@ const BottomButton = styled(GenericButton)`
     }
 `
 
-const MarkButton = styled(LargeButton)`
-
+const MarkButton = styled(GenericButton)`
+    
 `
 
 const Mark = styled.span`
