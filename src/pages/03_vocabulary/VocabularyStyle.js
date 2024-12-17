@@ -154,7 +154,7 @@ const GenericButton = styled.button`
     cursor: pointer;
     &:hover {
         font-size: 0.76rem;
-        border: 3px solid   grey;
+        border-width: 3px;
     }
     &:active {
         transform: translate(2px, 1px);
@@ -188,15 +188,8 @@ const TopButton = styled(GenericButton)`
     &:nth-of-type(${({topNumber}) => topNumber ? topNumber : "1"}) {
         background-color: lightgrey;
     }
-    &:nth-of-type(3) {
-        border: 2px solid #F58282;
-    }
-    &:nth-of-type(5) {
-        border: 2px solid #F58282;
-    }
-    &:nth-of-type(9) {
-        border: 2px solid #F58282;
-    }
+
+    border-color: ${({color}) => color ? color : "red"}
 `
 
 const BottomButton = styled(GenericButton)`
@@ -207,7 +200,7 @@ const BottomButton = styled(GenericButton)`
 `
 
 const MarkButton = styled(GenericButton)`
-    
+
 `
 
 const Mark = styled.span`

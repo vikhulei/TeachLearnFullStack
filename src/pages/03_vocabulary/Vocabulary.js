@@ -3,6 +3,7 @@ import { Wrapper, Header, HeaderText, Title, MainText, FramesWrapper, Frame, Lan
 import { TenWords } from "../../components/01_config/TenWords"
 import girl from "../../assets/02_vocabulary/girl.png"
 import picture from "../../assets/01_home/home.jpg"
+import { hundredsFrames } from "../../components/01_config/RedFrames"
 
 const Vocabulary = () => {
     const [thousand, setThousand] = useState()
@@ -110,8 +111,8 @@ const Vocabulary = () => {
                         <LargeButton onClick={changeThousand} thousand={thousand} id="second">Second Thousand</LargeButton>
                     </LargeButtonsWrapper>
                     <NumberButtonWrapper>
-                        {leftNumbers.map((value, index) => (
-                            <TopButton key={index} name={value} topNumber={topNumber} id={index} onClick={clickTopButton}>{value}</TopButton>
+                        {hundredsFrames.map((value, index) => (
+                            <TopButton key={index} name={value.number} topNumber={topNumber} id={index} color={value.color} onClick={clickTopButton}>{value.number}</TopButton>
                         ))
                         }
                     </NumberButtonWrapper>
