@@ -7,8 +7,8 @@ import { hundredsFrames } from "../../components/01_config/RedFrames"
 
 const Vocabulary = () => {
     const [thousand, setThousand] = useState()
-    const [leftNumbers, setLeftNumbers] = useState([])
     const [topNumbers, setTopNumbers] = useState([])
+    const [bottomNumbers, setBottomNumbers] = useState([])
     const [language, setLanguage] = useState("Eng")
     const [showTranslation, setShowTranslation] = useState(false)
     const [tenWords, setTenWords] = useState(TenWords)
@@ -19,10 +19,13 @@ const Vocabulary = () => {
         let e
         if (thousand === "First Thousand") {
             setThousand("Second Thousand")
+            setTopNumbers(hundredsFrames.filter(val => val.number > 1000))
             localStorage.setItem("savedThousand", "Second Thousand")
             e = { target: { name: 1100 } }
         } else {
             setThousand("First Thousand")
+            setTopNumbers(hundredsFrames.filter(val => val.number <= 1000))
+            console.log(topNumbers)
             localStorage.setItem("savedThousand", "First Thousand")
             e = { target: { name: 100 } }
         }
@@ -30,14 +33,14 @@ const Vocabulary = () => {
     }
 
     const fillLeftButtons = (checkThousand) => {
-        setLeftNumbers([])
+        setTopNumbers([])
         if (checkThousand === "First Thousand") {
             for (let i = 1; i <= 10; i++) {
-                setLeftNumbers(prev => [...prev, i * 100])
+                setTopNumbers(prev => [...prev, i * 100])
             }
         } else {
             for (let i = 1; i <= 10; i++) {
-                setLeftNumbers(prev => [...prev, i * 100 + 1000])
+                setTopNumbers(prev => [...prev, i * 100 + 1000])
             }
         }
     }
@@ -45,9 +48,9 @@ const Vocabulary = () => {
     const clickTopButton = (e) => {
         setTopNumber(Number(e.target.id) + 1 || 1)
         localStorage.setItem("savedLeftNumber", Number(e.target.name))
-        setTopNumbers([])
+        setBottomNumbers([])
         for (let i = 1; i <= 10; i++) {
-            setTopNumbers(prev => [...prev, (Number(e.target.name) + i * 10 - 100)])
+            setBottomNumbers(prev => [...prev, (Number(e.target.name) + i * 10 - 100)])
         }
     }
 
@@ -82,9 +85,9 @@ const Vocabulary = () => {
         clickTopButton(e)
     }, [])
 
-    useEffect(() => {
-        fillLeftButtons(thousand)
-    }, [thousand])
+    // useEffect(() => {
+    //     fillLeftButtons(thousand)
+    // }, [thousand])
 
     return (
         <Wrapper>
@@ -111,13 +114,13 @@ const Vocabulary = () => {
                         <LargeButton onClick={changeThousand} thousand={thousand} id="second">Second Thousand</LargeButton>
                     </LargeButtonsWrapper>
                     <NumberButtonWrapper>
-                        {hundredsFrames.map((value, index) => (
+                        {topNumbers.map((value, index) => (
                             <TopButton key={index} name={value.number} topNumber={topNumber} id={index} color={value.color} onClick={clickTopButton}>{value.number}</TopButton>
                         ))
                         }
                     </NumberButtonWrapper>
                     <NumberButtonWrapper>
-                        {topNumbers.map((value, index) => (
+                        {bottomNumbers.map((value, index) => (
                             <BottomButton key={index} id={index} bottomNumber={bottomNumber} onClick={clickBottomButton}>{value}</BottomButton>
                         ))
                         }
