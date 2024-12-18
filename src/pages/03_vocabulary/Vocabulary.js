@@ -32,18 +32,26 @@ const Vocabulary = () => {
         clickTopButton(e)
     }
 
-    const fillLeftButtons = (checkThousand) => {
+    const fillTopButtons = (checkThousand) => {
         setTopNumbers([])
         if (checkThousand === "First Thousand") {
-            for (let i = 1; i <= 10; i++) {
-                setTopNumbers(prev => [...prev, i * 100])
-            }
+            setTopNumbers(hundredsFrames.filter(val => val.number <= 1000))
         } else {
-            for (let i = 1; i <= 10; i++) {
-                setTopNumbers(prev => [...prev, i * 100 + 1000])
-            }
+            setTopNumbers(hundredsFrames.filter(val => val.number > 1000))
         }
     }
+    // const fillTopButtons = (checkThousand) => {
+    //     setTopNumbers([])
+    //     if (checkThousand === "First Thousand") {
+    //         for (let i = 1; i <= 10; i++) {
+    //             setTopNumbers(prev => [...prev, i * 100])
+    //         }
+    //     } else {
+    //         for (let i = 1; i <= 10; i++) {
+    //             setTopNumbers(prev => [...prev, i * 100 + 1000])
+    //         }
+    //     }
+    // }
 
     const clickTopButton = (e) => {
         setTopNumber(Number(e.target.id) + 1 || 1)
@@ -80,13 +88,13 @@ const Vocabulary = () => {
     useEffect(() => {
         let savedThousand = localStorage.getItem("savedThousand") || "First Thousand"
         setThousand(savedThousand)
-        fillLeftButtons(savedThousand)
+        fillTopButtons(savedThousand)
         let e = { target: { name: localStorage.getItem("savedLeftNumber") || 100 } }
         clickTopButton(e)
     }, [])
 
     // useEffect(() => {
-    //     fillLeftButtons(thousand)
+    //     fillTopButtons(thousand)
     // }, [thousand])
 
     return (
