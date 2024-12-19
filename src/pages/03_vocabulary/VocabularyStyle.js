@@ -182,7 +182,8 @@ const TopButton = styled(GenericButton)`
         background-color: lightgrey;
     }
 
-    border-color: ${({color}) => color ? color : "red"}
+    border-color: ${({color}) => color ? color : "red"};
+    border-width: ${({color}) => color=="#3AA65E" ? "4px" : "2px"};
 `
 
 const BottomButton = styled(GenericButton)`
@@ -190,6 +191,8 @@ const BottomButton = styled(GenericButton)`
     &:nth-of-type(${({bottomNumber}) => bottomNumber ? bottomNumber : "1"}) {
         background-color: lightgrey;
     }
+    border-color: ${({color}) => color ? color : "red"};
+    border-width: ${({color}) => color=="#3AA65E" ? "4px" : "2px"};
 `
 
 const MarkButton = styled(GenericButton)`

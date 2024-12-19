@@ -4,6 +4,7 @@ import { TenWords } from "../../components/01_config/TenWords"
 import girl from "../../assets/02_vocabulary/girl.png"
 import picture from "../../assets/01_home/home.jpg"
 import { hundredsFrames } from "../../components/01_config/GreenFrames"
+import { tensFrames } from "../../components/01_config/GreenFrames"
 
 const Vocabulary = () => {
     const [thousand, setThousand] = useState("")
@@ -43,10 +44,11 @@ const Vocabulary = () => {
     const clickTopButton = (e) => {
         setTopNumber(Number(e.target.id) + 1 || 1)
         localStorage.setItem("savedLeftNumber", Number(e.target.name))
-        setBottomNumbers([])
-        for (let i = 1; i <= 10; i++) {
-            setBottomNumbers(prev => [...prev, (Number(e.target.name) + i * 10 - 100)])
-        }
+        setBottomNumbers(tensFrames.filter(val => (val.number <= Number(e.target.name) && val.number > (Number(e.target.name)-100))))
+
+        // for (let i = 1; i <= 10; i++) {
+        //     setBottomNumbers(prev => [...prev, (Number(e.target.name) + i * 10 - 100)])
+        // }
     }
 
     const clickBottomButton = (e) => {
@@ -113,7 +115,7 @@ const Vocabulary = () => {
                     </NumberButtonWrapper>
                     <NumberButtonWrapper>
                         {bottomNumbers.map((value, index) => (
-                            <BottomButton key={index} id={index} bottomNumber={bottomNumber} onClick={clickBottomButton}>{value}</BottomButton>
+                            <BottomButton key={index} id={index} name={value.number} bottomNumber={bottomNumber} color={value.color} onClick={clickBottomButton}>{value.number}</BottomButton>
                         ))
                         }
                     </NumberButtonWrapper>
