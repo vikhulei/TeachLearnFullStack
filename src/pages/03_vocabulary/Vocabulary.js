@@ -124,13 +124,13 @@ const Vocabulary = () => {
                     </LargeButtonsWrapper>
                     <NumberButtonWrapper>
                         {topNumbers.map((value, index) => (
-                            <TopButton key={index} name={value.number} topNumber={topNumber} id={index} color={value.color} onClick={clickTopButton}>{value.number}</TopButton>
+                            <TopButton key={index} name={value.number} top={topNumber} id={index} color={value.color} onClick={clickTopButton}>{value.number}</TopButton>
                         ))
                         }
                     </NumberButtonWrapper>
                     <NumberButtonWrapper>
                         {bottomNumbers.map((value, index) => (
-                            <BottomButton key={index} id={index} bottomNumber={bottomNumber} onClick={clickBottomButton}>{value}</BottomButton>
+                            <BottomButton key={index} id={index} bottom={bottomNumber} onClick={clickBottomButton}>{value}</BottomButton>
                         ))
                         }
                     </NumberButtonWrapper>

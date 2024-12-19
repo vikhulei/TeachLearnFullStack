@@ -185,7 +185,7 @@ const NumberButtonWrapper = styled.div`
 
 const TopButton = styled(GenericButton)`
     width: 100px;
-    &:nth-of-type(${({topNumber}) => topNumber ? topNumber : "1"}) {
+    &:nth-of-type(${({top}) => top ? top : "1"}) {
         background-color: lightgrey;
     }
 
@@ -194,7 +194,7 @@ const TopButton = styled(GenericButton)`
 
 const BottomButton = styled(GenericButton)`
     width: 100px;
-    &:nth-of-type(${({bottomNumber}) => bottomNumber ? bottomNumber : "1"}) {
+    &:nth-of-type(${({bottom}) => bottom ? bottom : "1"}) {
         background-color: lightgrey;
     }
 `
