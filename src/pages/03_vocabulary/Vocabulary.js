@@ -12,8 +12,8 @@ const Vocabulary = () => {
     const [language, setLanguage] = useState("Eng")
     const [showTranslation, setShowTranslation] = useState(false)
     const [tenWords, setTenWords] = useState(TenWords)
-    const [topNumber, setTopNumber] = useState(1)
-    const [bottomNumber, setBottomNumber] = useState(1)
+    const [topNumber, setTopNumber] = useState("1")
+    const [bottomNumber, setBottomNumber] = useState("1")
 
     const changeThousand = () => {
         let e
@@ -91,6 +91,7 @@ const Vocabulary = () => {
         fillTopButtons(savedThousand)
         let e = { target: { name: localStorage.getItem("savedLeftNumber") || 100 } }
         clickTopButton(e)
+        setTopNumber(1)
     }, [])
 
     // useEffect(() => {
