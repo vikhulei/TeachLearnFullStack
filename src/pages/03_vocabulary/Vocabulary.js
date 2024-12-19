@@ -3,7 +3,7 @@ import { Wrapper, Header, HeaderText, Title, MainText, FramesWrapper, Frame, Lan
 import { TenWords } from "../../components/01_config/TenWords"
 import girl from "../../assets/02_vocabulary/girl.png"
 import picture from "../../assets/01_home/home.jpg"
-import { hundredsFrames } from "../../components/01_config/RedFrames"
+import { hundredsFrames } from "../../components/01_config/GreenFrames"
 
 const Vocabulary = () => {
     const [thousand, setThousand] = useState("")
