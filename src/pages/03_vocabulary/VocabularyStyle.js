@@ -2,8 +2,6 @@ import styled from "styled-components";
 import { sizes } from "../../components/01_config/Sizes";
 import vocabulary from "../../assets/02_vocabulary/vocabulary.jpg"
 
-const paddingBetween = "50px"
-
 
 const Wrapper = styled.div`
     position: relative;
@@ -12,7 +10,6 @@ const Wrapper = styled.div`
     border-bottom: solid 2px white;
     display: flex;
     flex-direction: column;
-    // height: 800px;
     gap: 50px;
     padding-bottom: 50px;
     &:nth-of-type(4) {
@@ -91,10 +88,10 @@ const LanguageButton = styled.button`
     border: none;
     cursor: pointer;
     &:nth-of-type(1) {
-        border-bottom: ${({lang}) => lang == "Eng" ? "solid black 1px" : "none"};
+        border-bottom: ${({language}) => language == "Eng" ? "solid black 1px" : "none"};
     }
     &:nth-of-type(2) {
-        border-bottom: ${({lang}) => lang == "Ukr" ? "solid black 1px" : "none"};
+        border-bottom: ${({language}) => language == "Ukr" ? "solid black 1px" : "none"};
     }
     &:hover {
         font-weight: 600;
@@ -109,13 +106,10 @@ const Input = styled.input`
     margin-right: 35px;
     background-color: lightgrey;
     border: none;
-    //z-index: 40;
 `
 
 const Word = styled.div`
     user-select: none;
-    // color: #D6C9C9;
-    // color: #343434;
     font-weight: 600;
     font-size: 1.2rem;
 `
@@ -163,16 +157,15 @@ const GenericButton = styled.button`
 
 const LargeButton = styled(GenericButton)`
     &:nth-of-type(1) {
-        background-color: ${({thous}) => thous=="First Thousand" ? "lightgrey" : "none"}
+        background-color: ${({thousand}) => thousand=="First Thousand" ? "lightgrey" : "none"}
     }
     &:nth-of-type(2) {
-        background-color: ${({thous}) => thous=="Second Thousand" ? "lightgrey" : "none"}
+        background-color: ${({thousand}) => thousand=="Second Thousand" ? "lightgrey" : "none"}
     }
 `
 
 const NumberButtonWrapper = styled.div`
     padding: 20px 0;
-    // height: 30%;
     display: flex;
     flex: 1;
     gap: 10px;
@@ -185,7 +178,7 @@ const NumberButtonWrapper = styled.div`
 
 const TopButton = styled(GenericButton)`
     width: 100px;
-    &:nth-of-type(${({top}) => top ? top : "1"}) {
+    &:nth-of-type(${({topNumber}) => topNumber ? topNumber : "1"}) {
         background-color: lightgrey;
     }
 
@@ -194,7 +187,7 @@ const TopButton = styled(GenericButton)`
 
 const BottomButton = styled(GenericButton)`
     width: 100px;
-    &:nth-of-type(${({bottom}) => bottom ? bottom : "1"}) {
+    &:nth-of-type(${({bottomNumber}) => bottomNumber ? bottomNumber : "1"}) {
         background-color: lightgrey;
     }
 `
@@ -247,12 +240,9 @@ const Image = styled.img`
 const LineCircleTextWrapper = styled.div`
     position: relative;
     padding: 0 7vw;
-    // width: 100%;
-    // height: 380px;
     display: flex;
     justify-content: center;
     gap: 5vw;
-    // background-color: darkred;
 `
 
 const CircleTextWrapper = styled.div`
@@ -267,7 +257,6 @@ const CircleTextWrapper = styled.div`
         top: 40px;
     }
     z-index: 20;
-    // background-color: darkred;
 `
 
 const Circle = styled.div`
@@ -304,11 +293,3 @@ const CircleText = styled(MainText)`
 
 
 export { Wrapper, Header, HeaderText, Title, MainText, FramesWrapper, Frame, LanguageButtonsWrapper, LanguageButton, Input, Word, WordSpan, TranslatSpan, LargeButtonsWrapper,LargeButton, NumberButtonWrapper, TopButton, BottomButton, MarkButton, Mark, LargeCircle, MediumCircle, SmallCircle, ImageWrapper, Image, LineCircleTextWrapper, CircleTextWrapper, Circle, Line, CircleHeading,CircleText  }
-
-
-
-
-
-
-
-
