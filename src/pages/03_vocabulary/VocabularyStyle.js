@@ -91,10 +91,10 @@ const LanguageButton = styled.button`
     border: none;
     cursor: pointer;
     &:nth-of-type(1) {
-        border-bottom: ${({language}) => language == "Eng" ? "solid black 1px" : "none"};
+        border-bottom: ${({lang}) => lang == "Eng" ? "solid black 1px" : "none"};
     }
     &:nth-of-type(2) {
-        border-bottom: ${({language}) => language == "Ukr" ? "solid black 1px" : "none"};
+        border-bottom: ${({lang}) => lang == "Ukr" ? "solid black 1px" : "none"};
     }
     &:hover {
         font-weight: 600;
@@ -163,10 +163,10 @@ const GenericButton = styled.button`
 
 const LargeButton = styled(GenericButton)`
     &:nth-of-type(1) {
-        background-color: ${({thousand}) => thousand=="First Thousand" ? "lightgrey" : "none"}
+        background-color: ${({thous}) => thous=="First Thousand" ? "lightgrey" : "none"}
     }
     &:nth-of-type(2) {
-        background-color: ${({thousand}) => thousand=="Second Thousand" ? "lightgrey" : "none"}
+        background-color: ${({thous}) => thous=="Second Thousand" ? "lightgrey" : "none"}
     }
 `
 

@@ -6,7 +6,7 @@ import picture from "../../assets/01_home/home.jpg"
 import { hundredsFrames } from "../../components/01_config/RedFrames"
 
 const Vocabulary = () => {
-    const [thousand, setThousand] = useState()
+    const [thousand, setThousand] = useState("")
     const [topNumbers, setTopNumbers] = useState([])
     const [bottomNumbers, setBottomNumbers] = useState([])
     const [language, setLanguage] = useState("Eng")
@@ -108,8 +108,8 @@ const Vocabulary = () => {
             <FramesWrapper>
                 <Frame>
                     <LanguageButtonsWrapper>
-                        <LanguageButton onClick={clickLanguage}language={language} id="Eng">English</LanguageButton>
-                        <LanguageButton onClick={clickLanguage}language={language} id="Ukr">Ukrainian</LanguageButton>
+                        <LanguageButton onClick={clickLanguage}lang={language} id="Eng">English</LanguageButton>
+                        <LanguageButton onClick={clickLanguage}lang={language} id="Ukr">Ukrainian</LanguageButton>
                     </LanguageButtonsWrapper>
                     {tenWords.map((value, index) => (
                         <Word key={index}>
@@ -119,8 +119,8 @@ const Vocabulary = () => {
                 </Frame>
                 <Frame>
                     <LargeButtonsWrapper>
-                        <LargeButton onClick={changeThousand} thousand={thousand} id="first">First Thousand</LargeButton>
-                        <LargeButton onClick={changeThousand} thousand={thousand} id="second">Second Thousand</LargeButton>
+                        <LargeButton onClick={changeThousand} thous={thousand} id="first">First Thousand</LargeButton>
+                        <LargeButton onClick={changeThousand} thous={thousand} id="second">Second Thousand</LargeButton>
                     </LargeButtonsWrapper>
                     <NumberButtonWrapper>
                         {topNumbers.map((value, index) => (
