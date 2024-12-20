@@ -1,10 +1,13 @@
 import { useState, useEffect } from "react"
 import { Wrapper, Header, HeaderText, Title, MainText, FramesWrapper, Frame, LanguageButtonsWrapper, LanguageButton, Input, Word, WordSpan, TranslatSpan, LargeButtonsWrapper, LargeButton, NumberButtonWrapper, TopButton, BottomButton, MarkButton, Mark, LargeCircle, MediumCircle, SmallCircle, ImageWrapper, Image, LineCircleTextWrapper, CircleTextWrapper, Circle, Line, CircleHeading, CircleText } from "./VocabularyStyle"
-import { TenWords } from "../../components/01_config/TenWords"
+import { HundredWords } from "../../components/01_config/HundredWords"
 import girl from "../../assets/02_vocabulary/girl.png"
 import picture from "../../assets/01_home/home.jpg"
 import { hundredsFrames } from "../../components/01_config/GreenFrames"
 import { tensFrames } from "../../components/01_config/GreenFrames"
+
+const TenWords = HundredWords.filter(val => val.id > 510 && val.id <= 520)
+
 
 const Vocabulary = () => {
     const [thousand, setThousand] = useState("")
