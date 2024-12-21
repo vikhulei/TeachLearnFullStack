@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { sizes } from "../../components/01_config/Sizes";
 import vocabulary from "../../assets/02_vocabulary/vocabulary.jpg"
-
+import { colors } from "../../components/01_config/Colors"
 
 const Wrapper = styled.div`
     position: relative;
@@ -140,7 +140,7 @@ const GenericButton = styled.button`
     width: 150px;
     height: 35px;
     background-color: transparent;
-    border: 2px solid grey;
+    border: 2px solid ${colors.greyFrame};
     color: black;
     text-transform: uppercase;
     font-size: 0.75rem;
@@ -151,16 +151,16 @@ const GenericButton = styled.button`
         border-width: 3px;
     }
     &:active {
-        transform: translate(2px, 1px);
+        transform: translate(1px, 1px);
     }
 `
 
 const LargeButton = styled(GenericButton)`
     &:nth-of-type(1) {
-        background-color: ${({thousand}) => thousand=="First Thousand" ? "lightgrey" : "none"}
+        border: ${({thousand}) => thousand=="First Thousand" ? `${colors.greyBoldFrame} solid 3.5px` : ""}
     }
     &:nth-of-type(2) {
-        background-color: ${({thousand}) => thousand=="Second Thousand" ? "lightgrey" : "none"}
+        border: ${({thousand}) => thousand=="Second Thousand" ? `${colors.greyBoldFrame} solid 3.5px` : ""}
     }
 `
 
@@ -179,20 +179,17 @@ const NumberButtonWrapper = styled.div`
 const TopButton = styled(GenericButton)`
     width: 100px;
     &:nth-of-type(${({topNumber}) => topNumber ? topNumber : "1"}) {
-        background-color: lightgrey;
+        border: ${colors.greyBoldFrame} solid 3.5px;
     }
-
-    border-color: ${({color}) => color ? color : "red"};
-    border-width: ${({color}) => color=="#3AA65E" ? "4px" : "2px"};
+    background-color: ${({color}) => color==colors.green ? color : ""};
 `
 
 const BottomButton = styled(GenericButton)`
     width: 100px;
     &:nth-of-type(${({bottomNumber}) => bottomNumber ? bottomNumber : "1"}) {
-        background-color: lightgrey;
+        border: ${colors.greyBoldFrame} solid 3.5px;
     }
-    border-color: ${({color}) => color ? color : "red"};
-    border-width: ${({color}) => color=="#3AA65E" ? "4px" : "2px"};
+    background-color: ${({color}) => color==colors.green ? color : ""};
 `
 
 const MarkButton = styled(GenericButton)`

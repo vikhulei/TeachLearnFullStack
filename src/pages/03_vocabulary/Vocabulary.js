@@ -56,6 +56,7 @@ const Vocabulary = () => {
 
     const clickBottomButton = (e) => {
         setBottomNumber(Number(e.target.id) + 1 || 1)
+        setTenWords(HundredWords.filter(val => val.id > (Number(e.target.name) - 10) && val.id <= Number(e.target.name)))
     }
 
     const clickInput = (e) => {
