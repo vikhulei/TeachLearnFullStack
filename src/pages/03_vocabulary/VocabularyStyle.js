@@ -193,8 +193,16 @@ const BottomButton = styled(GenericButton)`
 `
 
 const MarkButton = styled(GenericButton)`
-
+    cursor: initial;
+    border: none;
+    &:hover {
+        font-size: 0.75rem;
+    }
+    &:active {
+        transform: translate(none);
+    }
 `
+
 
 const Mark = styled.span`
 
