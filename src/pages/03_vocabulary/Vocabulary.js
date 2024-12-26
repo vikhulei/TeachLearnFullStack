@@ -1,12 +1,13 @@
 import { useState, useEffect } from "react"
-import { Wrapper, Header, HeaderText, Title, MainText, FramesWrapper, Frame, LanguageButtonsWrapper, LanguageButton, Input, Word, WordSpan, TranslatSpan, LargeButtonsWrapper, LargeButton, NumberButtonWrapper, TopButton, BottomButton, MarkButton, Mark, LargeCircle, MediumCircle, SmallCircle, ImageWrapper, Image, LineCircleTextWrapper, CircleTextWrapper, Circle, Line, CircleHeading, CircleText } from "./VocabularyStyle"
+import { Wrapper, Header, HeaderText, Title, MainText, FramesWrapper, Frame, LanguageButtonsWrapper, LanguageButton, Input, Word, WordSpan, TranslatSpan, LargeButtonsWrapper, LargeButton, NumberButtonWrapper, TopButton, BottomButton, MarkButton, Mark, LargeCircle, MediumCircle, SmallCircle, ImageWrapper, Image, LineCircleTextWrapper, CircleTextWrapper, Circle, Line, CircleHeading, CircleText, CheckButton } from "./VocabularyStyle"
 import { HundredWords } from "../../components/01_config/HundredWords"
 import girl from "../../assets/02_vocabulary/girl.png"
 import picture from "../../assets/01_home/home.jpg"
 import { hundredsFrames } from "../../components/01_config/GreenFrames"
 import { tensFrames } from "../../components/01_config/GreenFrames"
+import { colors } from "../../components/01_config/Colors"
 
-const TenWords = HundredWords.filter(val => val.id > 510 && val.id <= 520)
+const TenWords = HundredWords.filter(val => val.id > 510 && val.id <= 520).map(val => val, {inp: ""})
 
 
 const Vocabulary = () => {
@@ -18,6 +19,9 @@ const Vocabulary = () => {
     const [tenWords, setTenWords] = useState(TenWords)
     const [topNumber, setTopNumber] = useState("1")
     const [bottomNumber, setBottomNumber] = useState("1")
+    const [frameGreen, setFrameGreen] = useState(false)
+    const [correctWord, setCorrectWord] = useState("")
+    const [greenInputButton, setGreenInputButton] = useState(false)
 
     const changeThousand = () => {
         let e
@@ -47,11 +51,7 @@ const Vocabulary = () => {
     const clickTopButton = (e) => {
         setTopNumber(Number(e.target.id) + 1 || 1)
         localStorage.setItem("savedLeftNumber", Number(e.target.name))
-        setBottomNumbers(tensFrames.filter(val => (val.number <= Number(e.target.name) && val.number > (Number(e.target.name)-100))))
-
-        // for (let i = 1; i <= 10; i++) {
-        //     setBottomNumbers(prev => [...prev, (Number(e.target.name) + i * 10 - 100)])
-        // }
+        setBottomNumbers(tensFrames.filter(val => (val.number <= Number(e.target.name) && val.number > (Number(e.target.name) - 100))))
     }
 
     const clickBottomButton = (e) => {
@@ -59,8 +59,35 @@ const Vocabulary = () => {
         setTenWords(HundredWords.filter(val => val.id > (Number(e.target.name) - 10) && val.id <= Number(e.target.name)))
     }
 
-    const clickInput = (e) => {
-        console.log(e.target.id)
+    const inputButtonColor = (e) => {
+    }
+
+    const clickInputButton = (e) => {
+        console.log(e.target.getAttribute("data-input"))
+        // let newArr = [...tenWords]
+        // if (language === "Eng" && e.target.getAttribute("data-input") === e.target.getAttribute("data-translat") || language === "Ukr" && e.target.getAttribute("data-input") === e.target.getAttribute("data-word")) {
+        //     newArr[e.target.id].buttonSign = "Y"
+        //     setTenWords(newArr)
+        // } else {
+        //     newArr[e.target.id].buttonSign = ""
+        //     setTenWords(newArr)
+        // }
+    }
+
+    const fillInput = (e) => {
+        let newArr = [...tenWords]
+        newArr[e.target.id].input = e.target.value
+        newArr[e.target.id].inp = e.target.value
+        setTenWords(newArr)
+        // if (language === "Eng" && e.target.getAttribute("data-input") === e.target.getAttribute("data-translat") || language === "Ukr" && e.target.getAttribute("data-input") === e.target.getAttribute("data-word")) {
+        //     newArr[e.target.id].correctWord = "Y"
+        //     setTenWords(newArr)
+        // } else {
+        //     newArr[e.target.id].correctWord = ""
+        //     setTenWords(newArr)
+        // }        
+        // setTenWords(newArr)
+        // setCorrectWord("Y")
     }
 
     const clickWord = (e) => {
@@ -68,6 +95,7 @@ const Vocabulary = () => {
             val.id === Number(e.target.id) ? { ...val, visibility: val.visibility === "hidden" ? "visible" : "hidden" } : val
         ))
     }
+
 
     const clickLanguage = (e) => {
         if (e.target.id === "Eng") {
@@ -97,12 +125,40 @@ const Vocabulary = () => {
             <FramesWrapper>
                 <Frame>
                     <LanguageButtonsWrapper>
-                        <LanguageButton onClick={clickLanguage}language={language} id="Eng">English</LanguageButton>
-                        <LanguageButton onClick={clickLanguage}language={language} id="Ukr">Ukrainian</LanguageButton>
+                        <LanguageButton onClick={clickLanguage} language={language} id="Eng">English</LanguageButton>
+                        <LanguageButton onClick={clickLanguage} language={language} id="Ukr">Ukrainian</LanguageButton>
                     </LanguageButtonsWrapper>
                     {tenWords.map((value, index) => (
-                        <Word key={index}>
-                            <Input onClick={clickInput} id={value.id} /><WordSpan style={{ color: value.color }} id={value.id} onClick={clickWord}> {value.id}. {language === "Eng" ? value.word : value.translat}</WordSpan> <TranslatSpan style={{ "visibility": value.visibility }}>{language === "Eng" ? value.translat : value.word}</TranslatSpan>
+                        <Word key={index} >
+
+                            <CheckButton
+                                onClick={clickInputButton}
+                                id={index}
+                                value={value.correctWord}
+                                data-input={value.inp}
+                                data-translat={value.translat}
+                                data-word={value.word}
+                                style={{ "backgroundColor": value.correctWord === "Y" ? colors.green : "" }}
+                            >
+                                {value.correctWord}
+                            </CheckButton>
+
+                            <Input
+                                type="text"
+                                data-input={value.input}
+                                data-translat={value.translat}
+                                data-word={value.word}
+                                autocomplete="off"
+                                id={index}
+
+                                style={{ "backgroundColor": language === "Ukr" && value.input === value.word || language === "Eng" && value.input === value.translat ? `${colors.green}` : "" }}
+                                value={value.input}
+
+                                onInput={fillInput}
+                            />
+
+
+                            <WordSpan style={{ color: value.color }} id={value.id} onClick={clickWord}> {value.id}. {language === "Eng" ? value.word : value.translat}</WordSpan> <TranslatSpan style={{ "visibility": value.visibility }}>{language === "Eng" ? value.translat : value.word}</TranslatSpan>
                         </Word>
                     ))}
                 </Frame>

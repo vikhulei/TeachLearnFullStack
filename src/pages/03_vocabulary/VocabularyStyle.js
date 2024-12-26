@@ -17,6 +17,25 @@ const Wrapper = styled.div`
     }
 `
 
+const GenericButton = styled.button`
+    width: 150px;
+    height: 35px;
+    background-color: transparent;
+    border: 2px solid ${colors.greyFrame};
+    color: black;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    font-weight: 600;
+    cursor: pointer;
+    &:hover {
+        font-size: 0.76rem;
+        border-width: 3px;
+    }
+    &:active {
+        transform: translate(1px, 1px);
+    }
+`
+
 const Header = styled.div`
     position: relative;
     padding: 50px;
@@ -99,32 +118,47 @@ const LanguageButton = styled.button`
     }
 `
 
+const CheckButton = styled(GenericButton)`
+    width: 24px;
+    height: 24px;
+    margin-right: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+`
+
 const Input = styled.input`
     position: relative;
     width: 150px;
     height: 24px;
-    margin-right: 35px;
+    margin-right: 25px;
     background-color: lightgrey;
-    border: none;
 `
 
 const Word = styled.div`
     user-select: none;
     font-weight: 600;
     font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    &:hover {
+        font-weight: 750;
+        color: red;
+    }
 `
 
 const WordSpan = styled.span`
     margin-right: 5px;
     cursor: pointer;
-    &:hover {
-        font-weight: 750;
-    }
+    color: red;
 `
 
 const TranslatSpan = styled.span`
-    color: black;
-    font-weight: 700;
+    color: red;
+    font-weight: 600;
+        &:hover {
+        font-weight: 750;
+    }
 `
 
 const LargeButtonsWrapper = styled.div`
@@ -134,25 +168,6 @@ const LargeButtonsWrapper = styled.div`
     justify-content: space-around;
     align-items: center;
     border-bottom: solid lightgrey 2px;
-`
-
-const GenericButton = styled.button`
-    width: 150px;
-    height: 35px;
-    background-color: transparent;
-    border: 2px solid ${colors.greyFrame};
-    color: black;
-    text-transform: uppercase;
-    font-size: 0.75rem;
-    font-weight: 600;
-    cursor: pointer;
-    &:hover {
-        font-size: 0.76rem;
-        border-width: 3px;
-    }
-    &:active {
-        transform: translate(1px, 1px);
-    }
 `
 
 const LargeButton = styled(GenericButton)`
@@ -300,4 +315,6 @@ const CircleText = styled(MainText)`
 
 
 
-export { Wrapper, Header, HeaderText, Title, MainText, FramesWrapper, Frame, LanguageButtonsWrapper, LanguageButton, Input, Word, WordSpan, TranslatSpan, LargeButtonsWrapper,LargeButton, NumberButtonWrapper, TopButton, BottomButton, MarkButton, Mark, LargeCircle, MediumCircle, SmallCircle, ImageWrapper, Image, LineCircleTextWrapper, CircleTextWrapper, Circle, Line, CircleHeading,CircleText  }
+
+
+export { Wrapper, Header, HeaderText, Title, MainText, FramesWrapper, Frame, LanguageButtonsWrapper, LanguageButton, Input, Word, WordSpan, TranslatSpan, LargeButtonsWrapper,LargeButton, NumberButtonWrapper, TopButton, BottomButton, MarkButton, Mark, LargeCircle, MediumCircle, SmallCircle, ImageWrapper, Image, LineCircleTextWrapper, CircleTextWrapper, Circle, Line, CircleHeading,CircleText, CheckButton  }

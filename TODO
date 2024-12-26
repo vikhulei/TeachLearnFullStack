@@ -1,0 +1,32 @@
+- - - - - - - - - -
+V O C A B U L A R Y
+
+FRONT-END
+Delete input
+Change color and correctWord to true/false
+Rename color to correctTutor and correctWord to correctStudent
+Turn button green for student
+Turn word green for tutor
+Show tutor's mark
+Create one more hundred
+Turn to green: words - tens - hundreds
+
+BACK-END
+Create db with 2000 words
+Create functionality:
+a. fetch
+b. update
+c. close
+
+FRONT-END
+Finish the text
+Replace the image
+Animation for Memorizing Process
+Popups for Memorizing Process - definitions
+Text for Memorizing Process - practical steps
+
+- - - - - - - - - - 
+
+H O M E / H E A D E R
+
+Add student/tutor reg number to db
