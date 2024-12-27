@@ -138,19 +138,17 @@ const Input = styled.input`
 const Word = styled.div`
     user-select: none;
     font-weight: 600;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     display: flex;
     align-items: center;
-    &:hover {
-        font-weight: 750;
-        color: red;
-    }
 `
 
 const WordSpan = styled.span`
     margin-right: 5px;
     cursor: pointer;
-    color: red;
+    &:hover {
+        font-weight: 750;
+    }
 `
 
 const TranslatSpan = styled.span`

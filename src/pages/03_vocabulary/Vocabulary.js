@@ -7,7 +7,7 @@ import { hundredsFrames } from "../../components/01_config/GreenFrames"
 import { tensFrames } from "../../components/01_config/GreenFrames"
 import { colors } from "../../components/01_config/Colors"
 
-const TenWords = HundredWords.filter(val => val.id > 510 && val.id <= 520).map(val => val, {inp: ""})
+const TenWords = HundredWords.filter(val => val.id > 510 && val.id <= 520)
 
 
 const Vocabulary = () => {
@@ -63,31 +63,15 @@ const Vocabulary = () => {
     }
 
     const clickInputButton = (e) => {
-        console.log(e.target.getAttribute("data-input"))
-        // let newArr = [...tenWords]
-        // if (language === "Eng" && e.target.getAttribute("data-input") === e.target.getAttribute("data-translat") || language === "Ukr" && e.target.getAttribute("data-input") === e.target.getAttribute("data-word")) {
-        //     newArr[e.target.id].buttonSign = "Y"
-        //     setTenWords(newArr)
-        // } else {
-        //     newArr[e.target.id].buttonSign = ""
-        //     setTenWords(newArr)
-        // }
+        let newArr = [...tenWords]
+        newArr[e.target.id].correctStudent = !newArr[e.target.id].correctStudent
+        setTenWords(newArr)
     }
 
     const fillInput = (e) => {
         let newArr = [...tenWords]
         newArr[e.target.id].input = e.target.value
-        newArr[e.target.id].inp = e.target.value
         setTenWords(newArr)
-        // if (language === "Eng" && e.target.getAttribute("data-input") === e.target.getAttribute("data-translat") || language === "Ukr" && e.target.getAttribute("data-input") === e.target.getAttribute("data-word")) {
-        //     newArr[e.target.id].correctWord = "Y"
-        //     setTenWords(newArr)
-        // } else {
-        //     newArr[e.target.id].correctWord = ""
-        //     setTenWords(newArr)
-        // }        
-        // setTenWords(newArr)
-        // setCorrectWord("Y")
     }
 
     const clickWord = (e) => {
@@ -134,13 +118,8 @@ const Vocabulary = () => {
                             <CheckButton
                                 onClick={clickInputButton}
                                 id={index}
-                                value={value.correctWord}
-                                data-input={value.inp}
-                                data-translat={value.translat}
-                                data-word={value.word}
-                                style={{ "backgroundColor": value.correctWord === "Y" ? colors.green : "" }}
+                                style={{ "backgroundColor": value.correctStudent ? colors.green : "" }}
                             >
-                                {value.correctWord}
                             </CheckButton>
 
                             <Input
@@ -157,8 +136,7 @@ const Vocabulary = () => {
                                 onInput={fillInput}
                             />
 
-
-                            <WordSpan style={{ color: value.color }} id={value.id} onClick={clickWord}> {value.id}. {language === "Eng" ? value.word : value.translat}</WordSpan> <TranslatSpan style={{ "visibility": value.visibility }}>{language === "Eng" ? value.translat : value.word}</TranslatSpan>
+                            <WordSpan style={{ color: value.correctTutor ? colors.greenWord : "black" }} id={value.id} onClick={clickWord}> {value.id}. {language === "Eng" ? value.word : value.translat}</WordSpan> <TranslatSpan style={{ "visibility": value.visibility }}>{language === "Eng" ? value.translat : value.word}</TranslatSpan>
                         </Word>
                     ))}
                 </Frame>
@@ -215,3 +193,5 @@ const Vocabulary = () => {
 }
 
 export default Vocabulary
+
+

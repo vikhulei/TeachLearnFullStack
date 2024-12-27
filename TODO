@@ -2,11 +2,7 @@
 V O C A B U L A R Y
 
 FRONT-END
-Delete input
-Change color and correctWord to true/false
-Rename color to correctTutor and correctWord to correctStudent
-Turn button green for student
-Turn word green for tutor
+Turn word green for tutor - separate screen
 Show tutor's mark
 Create one more hundred
 Turn to green: words - tens - hundreds
@@ -24,6 +20,8 @@ Replace the image
 Animation for Memorizing Process
 Popups for Memorizing Process - definitions
 Text for Memorizing Process - practical steps
+
+Adaptive design: tablet and mobile
 
 - - - - - - - - - - 
 
