@@ -81,13 +81,27 @@ const TestWrapper = styled.div`
     font-weight: bold;
 `
 
+const TestButton = styled.button`
+    position: relative;
+    margin-left: auto;
+    margin-right: 50px;
+    width: 150px;
+    height: 45px;
+    border: 2px solid black;
+    box-shadow: 0px 0px 5px black;
+    cursor: pointer;
+    &:active {
+        transform: translate(2px, 1px);
+    }
+`
+
 const FramesWrapper = styled.div`
     position: relative;
     display: flex;
     justify-content: center;
     gap: 7vw;
     z-index: 20;
-    opacity: 0.4;
+    opacity: ${({testMode}) => testMode ? "0.4" : "1"};
 `
 
 const Frame = styled.div`
@@ -333,4 +347,4 @@ const CircleText = styled(MainText)`
 
 
 
-export { Wrapper, Header, HeaderText, Title, MainText, FramesWrapper, Frame, TestWrapper, LanguageButtonsWrapper, LanguageButton, Input, Word, WordSpan, TranslatSpan, LargeButtonsWrapper,LargeButton, NumberButtonWrapper, TopButton, BottomButton, MarkButton, Mark, LargeCircle, MediumCircle, SmallCircle, ImageWrapper, Image, LineCircleTextWrapper, CircleTextWrapper, Circle, Line, CircleHeading,CircleText, CheckButton  }
+export { Wrapper, Header, HeaderText, Title, MainText, FramesWrapper, Frame, TestWrapper, TestButton, LanguageButtonsWrapper, LanguageButton, Input, Word, WordSpan, TranslatSpan, LargeButtonsWrapper,LargeButton, NumberButtonWrapper, TopButton, BottomButton, MarkButton, Mark, LargeCircle, MediumCircle, SmallCircle, ImageWrapper, Image, LineCircleTextWrapper, CircleTextWrapper, Circle, Line, CircleHeading,CircleText, CheckButton  }

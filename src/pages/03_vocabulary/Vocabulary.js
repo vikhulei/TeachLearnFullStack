@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import { Wrapper, Header, HeaderText, Title, MainText, FramesWrapper, Frame, TestWrapper, LanguageButtonsWrapper, LanguageButton, Input, Word, WordSpan, TranslatSpan, LargeButtonsWrapper, LargeButton, NumberButtonWrapper, TopButton, BottomButton, MarkButton, Mark, LargeCircle, MediumCircle, SmallCircle, ImageWrapper, Image, LineCircleTextWrapper, CircleTextWrapper, Circle, Line, CircleHeading, CircleText, CheckButton } from "./VocabularyStyle"
+import { Wrapper, Header, HeaderText, Title, MainText, FramesWrapper, Frame, TestWrapper, TestButton, LanguageButtonsWrapper, LanguageButton, Input, Word, WordSpan, TranslatSpan, LargeButtonsWrapper, LargeButton, NumberButtonWrapper, TopButton, BottomButton, MarkButton, Mark, LargeCircle, MediumCircle, SmallCircle, ImageWrapper, Image, LineCircleTextWrapper, CircleTextWrapper, Circle, Line, CircleHeading, CircleText, CheckButton } from "./VocabularyStyle"
 import { HundredWords } from "../../components/01_config/HundredWords"
 import girl from "../../assets/02_vocabulary/girl.png"
 import picture from "../../assets/01_home/home.jpg"
@@ -22,6 +22,7 @@ const Vocabulary = () => {
     const [frameGreen, setFrameGreen] = useState(false)
     const [correctWord, setCorrectWord] = useState("")
     const [greenInputButton, setGreenInputButton] = useState(false)
+    const [testMode, setTestMode] = useState(false)
 
     const changeThousand = () => {
         let e
@@ -91,6 +92,10 @@ const Vocabulary = () => {
         }
     }
 
+    const changeTestMode = () => {
+        setTestMode(!testMode)
+    }
+
     useEffect(() => {
         let savedThousand = localStorage.getItem("savedThousand") || "First Thousand"
         setThousand(savedThousand)
@@ -103,15 +108,16 @@ const Vocabulary = () => {
 
     return (
         <Wrapper>
-            <TestWrapper>World</TestWrapper>
+            {testMode && <TestWrapper>World</TestWrapper>}
             <Header>
                 <HeaderText>Vocabulary</HeaderText>
             </Header>
+            <TestButton onClick={changeTestMode}>Start Test</TestButton>
             <Title>World-Class solution for learning a language</Title>
             <MainText>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet libero id nisi euismod, sed porta est consectetur. Vestibulum auctor felis eget orci semper vestibulum. Pellentesque ultricies nibh gravida, accumsan libero luctus, molestie nunc. In nibh ipsum, blandit id faucibus ac, finibus vitae dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet libero id nisi euismod, sed porta est consectetur. Vestibulum auctor felis eget orci semper vestibulum. Pellentesque ultricies nibh gravida, accumsan libero luctus, molestie nunc. In nibh ipsum, blandit id faucibus ac, finibus vitae dui.
             </MainText>
-            <FramesWrapper>
+            <FramesWrapper testMode={testMode}>
                 <Frame>
                     <LanguageButtonsWrapper>
                         <LanguageButton onClick={clickLanguage} language={language} id="Eng">English</LanguageButton>
