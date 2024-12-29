@@ -59,7 +59,9 @@ const Vocabulary = () => {
         setTenWords(HundredWords.filter(val => val.id > (Number(e.target.name) - 10) && val.id <= Number(e.target.name)))
     }
 
-    const inputButtonColor = (e) => {
+    const rightClick = (e) => {
+        e.preventDefault()
+        alert("right click")
     }
 
     const clickInputButton = (e) => {
@@ -117,6 +119,7 @@ const Vocabulary = () => {
 
                             <CheckButton
                                 onClick={clickInputButton}
+                                onContextMenu={rightClick}
                                 id={index}
                                 style={{ "backgroundColor": value.correctStudent ? colors.green : "" }}
                             >
