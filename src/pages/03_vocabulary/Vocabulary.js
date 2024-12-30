@@ -8,7 +8,9 @@ import { tensFrames } from "../../components/01_config/GreenFrames"
 import { colors } from "../../components/01_config/Colors"
 
 const TenWords = HundredWords.filter(val => val.id > 500 && val.id <= 510)
-const CheckWords = TenWords.map(val => ({...val, engCorrect: false, ukrCorrect: false})).filter(val => val.correctStudent === true)
+const CheckWords = TenWords.filter(val => val.correctStudent === true)
+
+//.map(val => ({...val, engCorrect: false, ukrCorrect: false}))
 
 const Vocabulary = () => {
     const [thousand, setThousand] = useState("")
@@ -87,9 +89,9 @@ const Vocabulary = () => {
     }
 
     const clickCheckWords = () => {
-        console.log(checkWords)
-        // setStartTestMode(false)
-        // setCheckWordsMode(!checkWordsMode)
+        // console.log(checkWords)
+        setStartTestMode(false)
+        setCheckWordsMode(!checkWordsMode)
     }
 
     const selectCheckedWords = (e) => {
@@ -109,6 +111,7 @@ const Vocabulary = () => {
 
     const clickStartTest = () => {
         setCheckWordsMode(false)
+        // console.log(checkWords)
         setStartTestMode(!startTestMode)
         setShowTestWord("LET'S BEGIN")
     }
@@ -141,7 +144,7 @@ const Vocabulary = () => {
     }, [])
 
     useEffect(() => {
-        setCheckWords(CheckWords.filter(val => val.correctStudent === true))
+        setCheckWords(tenWords.filter(val => val.correctStudent === true))
     }, [tenWords])
 
     return (
