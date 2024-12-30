@@ -54,6 +54,7 @@ const Title = styled.div`
     text-align: center;
     font-size: 2rem;
     font-weight: bold;
+    z-index: 20;
 `
 
 const MainText = styled.div`
@@ -64,27 +65,37 @@ const MainText = styled.div`
     z-index: 20;
 `
 
-const TestWrapper = styled.div`
+const CheckWordWrapper = styled.div`
     position: fixed;
     top: 50%;
     left: 50%;
+    padding: 30px;
     transform: translate(-50%, -50%);
-    width: 500px;
-    height: 130px;
     background-color: white;
     border: 3px black solid;
     z-index: 30;
     display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 2rem;
+`
+
+const TestWordWrapper = styled(CheckWordWrapper)`
+    width: 300px;
     justify-content: center;
     align-items: center;
     font-size: 3rem;
     font-weight: bold;
 `
 
-const TestButton = styled.button`
+const TestButtonsWrapper = styled.div`
     position: relative;
-    margin-left: auto;
-    margin-right: 50px;
+    margin: 0 auto;
+    display: flex;
+    gap: 30px;
+`
+
+const TestButton = styled.button`
     width: 150px;
     height: 45px;
     border: 2px solid black;
@@ -101,14 +112,13 @@ const FramesWrapper = styled.div`
     justify-content: center;
     gap: 7vw;
     z-index: 20;
-    opacity: ${({testMode}) => testMode ? "0.4" : "1"};
+    opacity: ${({startTestMode, checkWordsMode}) => startTestMode || checkWordsMode ? "0.4" : "1"};
 `
 
 const Frame = styled.div`
     box-sizing: border-box;
     width: 500px;
     padding: 15px 30px 40px;
-    color: white;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -347,4 +357,4 @@ const CircleText = styled(MainText)`
 
 
 
-export { Wrapper, Header, HeaderText, Title, MainText, FramesWrapper, Frame, TestWrapper, TestButton, LanguageButtonsWrapper, LanguageButton, Input, Word, WordSpan, TranslatSpan, LargeButtonsWrapper,LargeButton, NumberButtonWrapper, TopButton, BottomButton, MarkButton, Mark, LargeCircle, MediumCircle, SmallCircle, ImageWrapper, Image, LineCircleTextWrapper, CircleTextWrapper, Circle, Line, CircleHeading,CircleText, CheckButton  }
+export { Wrapper, Header, HeaderText, Title, MainText, FramesWrapper, Frame, CheckWordWrapper, TestWordWrapper, TestButtonsWrapper, TestButton, LanguageButtonsWrapper, LanguageButton, Input, Word, WordSpan, TranslatSpan, LargeButtonsWrapper,LargeButton, NumberButtonWrapper, TopButton, BottomButton, MarkButton, Mark, LargeCircle, MediumCircle, SmallCircle, ImageWrapper, Image, LineCircleTextWrapper, CircleTextWrapper, Circle, Line, CircleHeading,CircleText, CheckButton  }

@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import { Wrapper, Header, HeaderText, Title, MainText, FramesWrapper, Frame, TestWrapper, TestButton, LanguageButtonsWrapper, LanguageButton, Input, Word, WordSpan, TranslatSpan, LargeButtonsWrapper, LargeButton, NumberButtonWrapper, TopButton, BottomButton, MarkButton, Mark, LargeCircle, MediumCircle, SmallCircle, ImageWrapper, Image, LineCircleTextWrapper, CircleTextWrapper, Circle, Line, CircleHeading, CircleText, CheckButton } from "./VocabularyStyle"
+import { Wrapper, Header, HeaderText, Title, MainText, FramesWrapper, Frame, CheckWordWrapper, TestWordWrapper, TestButtonsWrapper, TestButton, LanguageButtonsWrapper, LanguageButton, Input, Word, WordSpan, TranslatSpan, LargeButtonsWrapper, LargeButton, NumberButtonWrapper, TopButton, BottomButton, MarkButton, Mark, LargeCircle, MediumCircle, SmallCircle, ImageWrapper, Image, LineCircleTextWrapper, CircleTextWrapper, Circle, Line, CircleHeading, CircleText, CheckButton } from "./VocabularyStyle"
 import { HundredWords } from "../../components/01_config/HundredWords"
 import girl from "../../assets/02_vocabulary/girl.png"
 import picture from "../../assets/01_home/home.jpg"
@@ -7,7 +7,8 @@ import { hundredsFrames } from "../../components/01_config/GreenFrames"
 import { tensFrames } from "../../components/01_config/GreenFrames"
 import { colors } from "../../components/01_config/Colors"
 
-const TenWords = HundredWords.filter(val => val.id > 510 && val.id <= 520)
+const TenWords = HundredWords.filter(val => val.id > 500 && val.id <= 510)
+const CheckWords = TenWords.filter(val => val.correctStudent === true)
 
 
 const Vocabulary = () => {
@@ -17,12 +18,14 @@ const Vocabulary = () => {
     const [language, setLanguage] = useState("Eng")
     const [showTranslation, setShowTranslation] = useState(false)
     const [tenWords, setTenWords] = useState(TenWords)
+    const [checkWords, setCheckWords] = useState(CheckWords)
     const [topNumber, setTopNumber] = useState("1")
     const [bottomNumber, setBottomNumber] = useState("1")
     const [frameGreen, setFrameGreen] = useState(false)
     const [correctWord, setCorrectWord] = useState("")
     const [greenInputButton, setGreenInputButton] = useState(false)
-    const [testMode, setTestMode] = useState(false)
+    const [startTestMode, setStartTestMode] = useState(false)
+    const [checkWordsMode, setCheckWordsMode] = useState(false)
 
     const changeThousand = () => {
         let e
@@ -92,8 +95,21 @@ const Vocabulary = () => {
         }
     }
 
-    const changeTestMode = () => {
-        setTestMode(!testMode)
+    const clickStartTest = () => {
+        setCheckWordsMode(false)
+        setStartTestMode(!startTestMode)
+        console.log(checkWords[0].word)
+    }
+
+    const clickCheckWords = () => {
+        setStartTestMode(false)
+        setCheckWordsMode(!checkWordsMode)
+    }
+
+    const selectCheckedWords = (e) => {
+        let newArr = [...checkWords]
+        newArr[e.target.id].tobeChecked = !newArr[e.target.id].tobeChecked
+        setCheckWords(newArr)
     }
 
     useEffect(() => {
@@ -105,19 +121,41 @@ const Vocabulary = () => {
         setTopNumber(1)
     }, [])
 
+    useEffect(() => {
+        setCheckWords(tenWords.filter(val => val.correctStudent === true))
+    }, [tenWords])
 
     return (
         <Wrapper>
-            {testMode && <TestWrapper>World</TestWrapper>}
+            {startTestMode && <TestWordWrapper>
+                {checkWords[1].word}
+            </TestWordWrapper>}
+            {checkWordsMode && <CheckWordWrapper>
+                {checkWords.map((value, index) => (
+                    <Word key={index}>
+                        <CheckButton
+                        id={index}
+                        beChecked={value.tobeChecked}
+                        onClick={selectCheckedWords}
+                        style={{ "backgroundColor": value.tobeChecked ? colors.green : "" }}
+                        >
+                        </CheckButton>
+                        <WordSpan style={{fontSize: "1.5rem"}}> {value.word}</WordSpan>
+                    </Word>
+                ))}
+            </CheckWordWrapper>}
             <Header>
                 <HeaderText>Vocabulary</HeaderText>
             </Header>
-            <TestButton onClick={changeTestMode}>Start Test</TestButton>
             <Title>World-Class solution for learning a language</Title>
             <MainText>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet libero id nisi euismod, sed porta est consectetur. Vestibulum auctor felis eget orci semper vestibulum. Pellentesque ultricies nibh gravida, accumsan libero luctus, molestie nunc. In nibh ipsum, blandit id faucibus ac, finibus vitae dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet libero id nisi euismod, sed porta est consectetur. Vestibulum auctor felis eget orci semper vestibulum. Pellentesque ultricies nibh gravida, accumsan libero luctus, molestie nunc. In nibh ipsum, blandit id faucibus ac, finibus vitae dui.
             </MainText>
-            <FramesWrapper testMode={testMode}>
+            <TestButtonsWrapper>
+                <TestButton onClick={clickCheckWords}>Check Words</TestButton>
+                <TestButton onClick={clickStartTest}>Start Test</TestButton>
+            </TestButtonsWrapper>
+            <FramesWrapper startTestMode={startTestMode} checkWordsMode={checkWordsMode}>
                 <Frame>
                     <LanguageButtonsWrapper>
                         <LanguageButton onClick={clickLanguage} language={language} id="Eng">English</LanguageButton>
