@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import { Wrapper, Header, HeaderText, Title, MainText, FramesWrapper, Frame, CheckWordWrapper, TestWordWrapper, TestButtonsWrapper, TestButton, LanguageButtonsWrapper, LanguageButton, Input, Word, WordSpan, TranslatSpan, LargeButtonsWrapper, LargeButton, NumberButtonWrapper, TopButton, BottomButton, MarkButton, Mark, LargeCircle, MediumCircle, SmallCircle, ImageWrapper, Image, LineCircleTextWrapper, CircleTextWrapper, Circle, Line, CircleHeading, CircleText, CheckButton } from "./VocabularyStyle"
+import { Wrapper, Header, HeaderText, Title, MainText, FramesWrapper, Frame, CheckWordWrapper, TestWordWrapper, TestButtonsWrapper, TestButton, LanguageButtonsWrapper, LanguageButton, Input, Word, WordSpan, TranslatSpan, LargeButtonsWrapper, LargeButton, NumberButtonWrapper, TopButton, BottomButton, MarkButton, Mark, LargeCircle, MediumCircle, SmallCircle, ImageWrapper, Image, LineCircleTextWrapper, CircleTextWrapper, Circle, Line, CircleHeading, CircleText, CheckButton, BarTestWrapper, ClosedButton } from "./VocabularyStyle"
 import { HundredWords } from "../../components/01_config/HundredWords"
 import girl from "../../assets/02_vocabulary/girl.png"
 import picture from "../../assets/01_home/home.jpg"
@@ -117,7 +117,12 @@ const Vocabulary = () => {
     }
 
     const clickTestedWord = () => {
-        if(testWordsArr.length === 0) {
+        // setShowTestWord(testWordsArr[0])
+        // const tt = "ая"
+        // console.log(tt.charCodeAt(1))
+        // console.log(checkWords.map(val => val.translat).indexOf("якщо"))
+        // console.log(checkWords)
+        if (testWordsArr.length === 0) {
             // tenWords.filter(val => val.correctStudent === true)
             return setShowTestWord("end of game")
         }
@@ -127,6 +132,9 @@ const Vocabulary = () => {
         let ind = newTestWordsArr.indexOf(newTestWordsArr[n])
         newTestWordsArr.splice(ind, 1)
         setTestWordsArr(newTestWordsArr)
+        let checkIndexUkr = checkWords.map(val => val.translat).indexOf(testWordsArr[n])
+        let checkIndexEng = checkWords.map(val => val.word).indexOf(testWordsArr[n])
+        checkIndexUkr === -1 ? console.log(checkIndexEng) : console.log(checkIndexUkr)
     }
 
     const rightClick = (e) => {
@@ -149,12 +157,18 @@ const Vocabulary = () => {
 
     return (
         <Wrapper>
-            {startTestMode && <TestWordWrapper onClick={clickTestedWord}>
-                {showTestWord}
+            {startTestMode && <TestWordWrapper>
+                <BarTestWrapper>
+                    <ClosedButton onClick={() => setStartTestMode(false)}>X</ClosedButton>
+                </BarTestWrapper>
+                <div onClick={clickTestedWord}>{showTestWord}</div>
             </TestWordWrapper>}
             {checkWordsMode && <CheckWordWrapper>
+                <BarTestWrapper>
+                    <ClosedButton onClick={() => setCheckWordsMode(false)}>X</ClosedButton>
+                </BarTestWrapper>
                 {checkWords.map((value, index) => (
-                    <Word key={index}>
+                    <Word key={index} style={{marginRight: "30px"}}>
                         <CheckButton
                             id={index}
                             beChecked={value.tobeChecked}

@@ -1,6 +1,7 @@
 import styled from "styled-components"
 import { Link } from "react-router-dom"
 import { sizes } from "../01_config/Sizes"
+import { colors } from "../01_config/Colors";
 import { FaInstagram } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
 import { FaFacebook } from "react-icons/fa6";
@@ -9,7 +10,7 @@ import { FaFacebook } from "react-icons/fa6";
 
 const Wrapper = styled.div`
     position: relative;
-    background-color: rgba(7, 83, 91);
+    background-color: ${colors.mainDark};
     margin: 0 ${sizes.marginsides};
     padding: 20px;
     height: 200px;

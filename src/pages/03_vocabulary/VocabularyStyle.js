@@ -39,7 +39,7 @@ const GenericButton = styled.button`
 const Header = styled.div`
     position: relative;
     padding: 50px;
-    background-color: rgba(7, 83, 91);
+    background-color: ${colors.mainDark};
     color: white;
 `
 
@@ -69,7 +69,9 @@ const CheckWordWrapper = styled.div`
     position: fixed;
     top: 50%;
     left: 50%;
-    padding: 30px;
+    padding: 30px 0px 30px 30px;
+    width: 200px;
+    min-width: (fit-content);
     transform: translate(-50%, -50%);
     background-color: white;
     border: 3px black solid;
@@ -167,6 +169,35 @@ const CheckButton = styled(GenericButton)`
     display: flex;
     align-items: center;
     justify-content: center;
+`
+
+const BarTestWrapper = styled.div`
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 23px;
+    background-color: ${colors.mainDark};
+`
+
+const ClosedButton = styled.button`
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 23px;
+    height: 23px;
+    padding: 0;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    z-index: 100;
+    font-size: 1.5rem;
+    font-weight: 100;
+    line-height: 0.9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    cursor: pointer;
 `
 
 const Input = styled.input`
@@ -357,4 +388,4 @@ const CircleText = styled(MainText)`
 
 
 
-export { Wrapper, Header, HeaderText, Title, MainText, FramesWrapper, Frame, CheckWordWrapper, TestWordWrapper, TestButtonsWrapper, TestButton, LanguageButtonsWrapper, LanguageButton, Input, Word, WordSpan, TranslatSpan, LargeButtonsWrapper,LargeButton, NumberButtonWrapper, TopButton, BottomButton, MarkButton, Mark, LargeCircle, MediumCircle, SmallCircle, ImageWrapper, Image, LineCircleTextWrapper, CircleTextWrapper, Circle, Line, CircleHeading,CircleText, CheckButton  }
+export { Wrapper, Header, HeaderText, Title, MainText, FramesWrapper, Frame, CheckWordWrapper, TestWordWrapper, TestButtonsWrapper, TestButton, LanguageButtonsWrapper, LanguageButton, Input, Word, WordSpan, TranslatSpan, LargeButtonsWrapper,LargeButton, NumberButtonWrapper, TopButton, BottomButton, MarkButton, Mark, LargeCircle, MediumCircle, SmallCircle, ImageWrapper, Image, LineCircleTextWrapper, CircleTextWrapper, Circle, Line, CircleHeading,CircleText, CheckButton, BarTestWrapper, ClosedButton  }
