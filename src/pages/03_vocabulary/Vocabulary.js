@@ -1,14 +1,13 @@
 import { useState, useEffect } from "react"
 import { Wrapper, Header, HeaderText, Title, MainText, FramesWrapper, Frame, CheckWordWrapper, TestWordWrapper, TestButtonsWrapper, TestButton, CreateButton, LanguageButtonsWrapper, LanguageButton, Input, Word, WordCheck, WordSpan, WordSpanCheck, TranslatSpan, LargeButtonsWrapper, LargeButton, NumberButtonWrapper, TopButton, BottomButton, MarkButton, Mark, LargeCircle, MediumCircle, SmallCircle, ImageWrapper, Image, LineCircleTextWrapper, CircleTextWrapper, Circle, Line, CircleHeading, CircleText, CheckButton, BarTestWrapper, ClosedButton, TestedWord } from "./VocabularyStyle"
 import { HundredWords } from "../../components/01_config/HundredWords"
-import girl from "../../assets/02_vocabulary/girl.png"
 import picture from "../../assets/01_home/home.jpg"
 import { hundredsFrames } from "../../components/01_config/GreenFrames"
 import { tensFrames } from "../../components/01_config/GreenFrames"
 import { colors } from "../../components/01_config/Colors"
 
-const TenWords = HundredWords.filter(val => val.id > 500 && val.id <= 510)
-const CheckWords = TenWords.filter(val => val.correctStudent === true)
+// const TenWords = HundredWords.filter(val => val.id > 500 && val.id <= 510)
+// const CheckWords = TenWords.filter(val => val.correctStudent === true)
 
 //.map(val => ({...val, engCorrect: false, ukrCorrect: false}))
 
@@ -17,8 +16,10 @@ const Vocabulary = () => {
     const [topNumbers, setTopNumbers] = useState([])
     const [bottomNumbers, setBottomNumbers] = useState([])
     const [language, setLanguage] = useState("Eng")
-    const [tenWords, setTenWords] = useState(TenWords)
-    const [checkWords, setCheckWords] = useState(CheckWords)
+    const [tenWords, setTenWords] = useState(
+        HundredWords.filter(val => val.id > 500 && val.id <= 510)
+    )
+    const [checkWords, setCheckWords] = useState()
     const [topNumber, setTopNumber] = useState("1")
     const [bottomNumber, setBottomNumber] = useState("1")
     const [startTestMode, setStartTestMode] = useState(false)
@@ -106,22 +107,22 @@ const Vocabulary = () => {
             if (checkWords[i].tobeChecked === true) {
                 newTestWordsArr.push(checkWords[i].word, checkWords[i].translat)
                 setTestWordsArr(newTestWordsArr)
-            } else {
-                let ind = newTestWordsArr.indexOf(checkWords[i].word)
-                newTestWordsArr.splice(ind, 2)
-                setTestWordsArr(newTestWordsArr)
             }
         }
+        clickStartTest()
     }
 
     const clickStartTest = () => {
         setCheckWordsMode(false)
-        // console.log(checkWords)
-        setStartTestMode(!startTestMode)
+        setStartTestMode(true)
         setShowTestWord("LET'S BEGIN")
+        // clickTestedWord()
     }
 
     const clickTestedWord = () => {
+        if(showTestWord === "End, check results") {
+            clickCheckWords()
+        }
         // setShowTestWord(testWordsArr[0])
         // const tt = "ая"
         // console.log(tt.charCodeAt(1))
@@ -129,7 +130,7 @@ const Vocabulary = () => {
         // console.log(checkWords)
         if (testWordsArr.length === 0) {
             // tenWords.filter(val => val.correctStudent === true)
-            return setShowTestWord("end of game")
+            return setShowTestWord("end of test")
         }
         let n = Math.floor(Math.random() * testWordsArr.length)
         setShowTestWord(testWordsArr[n])
@@ -139,7 +140,7 @@ const Vocabulary = () => {
         setTestWordsArr(newTestWordsArr)
         let checkIndexUkr = checkWords.map(val => val.translat).indexOf(testWordsArr[n])
         let checkIndexEng = checkWords.map(val => val.word).indexOf(testWordsArr[n])
-        checkIndexUkr === -1 ? console.log(checkIndexEng) : console.log(checkIndexUkr)
+        // checkIndexUkr === -1 ? console.log(checkIndexEng) : console.log(checkIndexUkr)
 
     }
 
@@ -171,11 +172,12 @@ const Vocabulary = () => {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet libero id nisi euismod, sed porta est consectetur. Vestibulum auctor felis eget orci semper vestibulum. Pellentesque ultricies nibh gravida, accumsan libero luctus, molestie nunc. In nibh ipsum, blandit id faucibus ac, finibus vitae dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet libero id nisi euismod, sed porta est consectetur. Vestibulum auctor felis eget orci semper vestibulum. Pellentesque ultricies nibh gravida, accumsan libero luctus, molestie nunc. In nibh ipsum, blandit id faucibus ac, finibus vitae dui.
             </MainText>
             <TestButtonsWrapper>
-                <TestButton onClick={clickCheckWords}>Check Words</TestButton>
-                <TestButton onClick={clickStartTest}>Start Test</TestButton>
+                <TestButton onClick={clickCheckWords}>Start the Test</TestButton>
+                {/* <TestButton onClick={clickStartTest}>Start Test</TestButton> */}
             </TestButtonsWrapper>
             {checkWordsMode && <CheckWordWrapper>
                 <BarTestWrapper>
+                    List Of Words
                     <ClosedButton onClick={() => setCheckWordsMode(false)}>X</ClosedButton>
                 </BarTestWrapper>
                 {checkWords.map((value, index) => (
@@ -184,20 +186,22 @@ const Vocabulary = () => {
                             id={index}
                             beChecked={value.tobeChecked}
                             onClick={selectCheckedWords}
-                            style={{ "backgroundColor": value.tobeChecked ? colors.green : "" }}
+                            style={{ "backgroundColor": value.tobeChecked ? colors.green : ""}}
                         >
                         </CheckButton>
-                        <WordSpanCheck> {value.word}</WordSpanCheck>
-                        {/* <span>unchecked</span> */}
+                        <WordSpanCheck style={{cursor: "pointer"}}> {value.word}</WordSpanCheck>
+                        {/* <span>correct</span> */}
                     </WordCheck>
                 ))}
-                <CreateButton>Create Checking List</CreateButton>
+                <CreateButton onClick={createTestWordsArr}>START  TEST</CreateButton>
             </CheckWordWrapper>}
             {startTestMode && <TestWordWrapper>
                 <BarTestWrapper>
+                    Words Test
                     <ClosedButton onClick={() => setStartTestMode(false)}>X</ClosedButton>
                 </BarTestWrapper>
                 <TestedWord onClick={clickTestedWord}>{showTestWord}</TestedWord>
+                {showTestWord === "end of test" && <CreateButton onClick={clickCheckWords}>CHECK RESULTS</CreateButton>}
             </TestWordWrapper>}
             <FramesWrapper startTestMode={startTestMode} checkWordsMode={checkWordsMode}>
                 <Frame>

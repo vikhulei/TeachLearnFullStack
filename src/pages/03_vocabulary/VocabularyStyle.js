@@ -97,6 +97,7 @@ const TestedWord = styled.div`
     width: 100%;
     cursor: pointer;
     text-align: center;
+    font-size: 2rem;
 `
 
 const TestButtonsWrapper = styled.div`
@@ -119,10 +120,12 @@ const TestButton = styled.button`
 `
 
 const CreateButton = styled(TestButton)`
-    margin: 20px auto 10px;
+    height: 35px;
+    margin: 20px auto 0px;
     padding: 0 30px;
     width: fit-content;
     font-size: 1rem;
+    font-weight: bold;
     color: white;
     background-color: ${colors.mainDark};
 
@@ -196,19 +199,24 @@ const BarTestWrapper = styled.div`
     top: 0;
     right: 0;
     width: 100%;
-    height: 40px;
+    height: 35px;
     background-color: ${colors.mainDark};
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: bold;
+    line-height: 2.5;
+    color: white;
 `
 
 const ClosedButton = styled.button`
     position: absolute;
     top: 0;
     right: 0;
-    width: 40px;
-    height: 40px;
+    width: 34px;
+    height: 34px;
     padding: 0;
-    border-bottom: 2px solid black;
-    border-left: 2px solid black;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
     z-index: 100;
     font-size: 1.5rem;
     font-weight: 100;
@@ -238,8 +246,9 @@ const Word = styled.div`
 const WordCheck = styled(Word)`
     display: flex;
     justify-content: space-between;
-    gap: 30px;
+    gap: 10px;
     text-align: left;
+    height: 20px;
 `
 
 const WordSpan = styled.span`
@@ -251,7 +260,7 @@ const WordSpan = styled.span`
 `
 
 const WordSpanCheck = styled(WordSpan)`
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     cursor: default;
     flex: 1;
     &:hover {

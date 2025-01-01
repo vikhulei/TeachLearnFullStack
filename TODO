@@ -3,6 +3,11 @@ V O C A B U L A R Y
 
 FRONT-END
 Turn word green for tutor - separate screen
+tenWords - 10 words in the main frame (filtered from a thousand)
+checkWords - words selected by the students (array filtered from tenWord)
+testWordsArr - words selected by the tutor (array mapped from checkWords)
+
+
 Show tutor's mark
 Create one more hundred
 Turn to green: words - tens - hundreds
