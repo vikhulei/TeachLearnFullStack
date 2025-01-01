@@ -69,9 +69,8 @@ const CheckWordWrapper = styled.div`
     position: fixed;
     top: 50%;
     left: 50%;
-    padding: 30px 0px 30px 30px;
-    width: 200px;
-    min-width: (fit-content);
+    padding: 40px 00px 30px 30px;
+    width: 250px;
     transform: translate(-50%, -50%);
     background-color: white;
     border: 3px black solid;
@@ -80,6 +79,7 @@ const CheckWordWrapper = styled.div`
     flex-direction: column;
     gap: 15px;
     font-size: 2rem;
+    z-index: 99;
 `
 
 const TestWordWrapper = styled(CheckWordWrapper)`
@@ -88,13 +88,24 @@ const TestWordWrapper = styled(CheckWordWrapper)`
     align-items: center;
     font-size: 3rem;
     font-weight: bold;
+    padding-left: 30px;
+    padding-right: 30px;
+`
+
+const TestedWord = styled.div`
+    left: 0;
+    margin: 0;
+    width: 100%;
+    cursor: pointer;
+    text-align: center;
 `
 
 const TestButtonsWrapper = styled.div`
     position: relative;
     margin: 0 auto;
     display: flex;
-    gap: 30px;
+    gap: 35px;
+    z-index: 30;
 `
 
 const TestButton = styled.button`
@@ -388,4 +399,4 @@ const CircleText = styled(MainText)`
 
 
 
-export { Wrapper, Header, HeaderText, Title, MainText, FramesWrapper, Frame, CheckWordWrapper, TestWordWrapper, TestButtonsWrapper, TestButton, LanguageButtonsWrapper, LanguageButton, Input, Word, WordSpan, TranslatSpan, LargeButtonsWrapper,LargeButton, NumberButtonWrapper, TopButton, BottomButton, MarkButton, Mark, LargeCircle, MediumCircle, SmallCircle, ImageWrapper, Image, LineCircleTextWrapper, CircleTextWrapper, Circle, Line, CircleHeading,CircleText, CheckButton, BarTestWrapper, ClosedButton  }
+export { Wrapper, Header, HeaderText, Title, MainText, FramesWrapper, Frame, CheckWordWrapper, TestWordWrapper, TestButtonsWrapper, TestButton, LanguageButtonsWrapper, LanguageButton, Input, Word, WordSpan, TranslatSpan, LargeButtonsWrapper,LargeButton, NumberButtonWrapper, TopButton, BottomButton, MarkButton, Mark, LargeCircle, MediumCircle, SmallCircle, ImageWrapper, Image, LineCircleTextWrapper, CircleTextWrapper, Circle, Line, CircleHeading,CircleText, CheckButton, BarTestWrapper, ClosedButton, TestedWord  }
