@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import { Wrapper, Header, HeaderText, Title, MainText, FramesWrapper, Frame, CheckWordWrapper, TestWordWrapper, TestButtonsWrapper, TestButton, LanguageButtonsWrapper, LanguageButton, Input, Word, WordSpan, TranslatSpan, LargeButtonsWrapper, LargeButton, NumberButtonWrapper, TopButton, BottomButton, MarkButton, Mark, LargeCircle, MediumCircle, SmallCircle, ImageWrapper, Image, LineCircleTextWrapper, CircleTextWrapper, Circle, Line, CircleHeading, CircleText, CheckButton, BarTestWrapper, ClosedButton, TestedWord } from "./VocabularyStyle"
+import { Wrapper, Header, HeaderText, Title, MainText, FramesWrapper, Frame, CheckWordWrapper, TestWordWrapper, TestButtonsWrapper, TestButton, CreateButton, LanguageButtonsWrapper, LanguageButton, Input, Word, WordCheck, WordSpan, WordSpanCheck, TranslatSpan, LargeButtonsWrapper, LargeButton, NumberButtonWrapper, TopButton, BottomButton, MarkButton, Mark, LargeCircle, MediumCircle, SmallCircle, ImageWrapper, Image, LineCircleTextWrapper, CircleTextWrapper, Circle, Line, CircleHeading, CircleText, CheckButton, BarTestWrapper, ClosedButton, TestedWord } from "./VocabularyStyle"
 import { HundredWords } from "../../components/01_config/HundredWords"
 import girl from "../../assets/02_vocabulary/girl.png"
 import picture from "../../assets/01_home/home.jpg"
@@ -96,16 +96,21 @@ const Vocabulary = () => {
 
     const selectCheckedWords = (e) => {
         let newArr = [...checkWords]
-        let newTestWordsArr = [...testWordsArr]
         newArr[e.target.id].tobeChecked = !newArr[e.target.id].tobeChecked
         setCheckWords(newArr)
-        if (checkWords[e.target.id].tobeChecked === true) {
-            newTestWordsArr.push(checkWords[e.target.id].word, checkWords[e.target.id].translat)
-            setTestWordsArr(newTestWordsArr)
-        } else {
-            let ind = newTestWordsArr.indexOf(checkWords[e.target.id].word)
-            newTestWordsArr.splice(ind, 2)
-            setTestWordsArr(newTestWordsArr)
+    }
+
+    const createTestWordsArr = () => {
+        let newTestWordsArr = [...testWordsArr]
+        for (let i = 0; i < checkWords.length; i++) {
+            if (checkWords[i].tobeChecked === true) {
+                newTestWordsArr.push(checkWords[i].word, checkWords[i].translat)
+                setTestWordsArr(newTestWordsArr)
+            } else {
+                let ind = newTestWordsArr.indexOf(checkWords[i].word)
+                newTestWordsArr.splice(ind, 2)
+                setTestWordsArr(newTestWordsArr)
+            }
         }
     }
 
@@ -135,6 +140,7 @@ const Vocabulary = () => {
         let checkIndexUkr = checkWords.map(val => val.translat).indexOf(testWordsArr[n])
         let checkIndexEng = checkWords.map(val => val.word).indexOf(testWordsArr[n])
         checkIndexUkr === -1 ? console.log(checkIndexEng) : console.log(checkIndexUkr)
+
     }
 
     const rightClick = (e) => {
@@ -173,7 +179,7 @@ const Vocabulary = () => {
                     <ClosedButton onClick={() => setCheckWordsMode(false)}>X</ClosedButton>
                 </BarTestWrapper>
                 {checkWords.map((value, index) => (
-                    <Word key={index} style={{marginRight: "30px"}}>
+                    <WordCheck key={index}>
                         <CheckButton
                             id={index}
                             beChecked={value.tobeChecked}
@@ -181,9 +187,11 @@ const Vocabulary = () => {
                             style={{ "backgroundColor": value.tobeChecked ? colors.green : "" }}
                         >
                         </CheckButton>
-                        <WordSpan style={{ fontSize: "1.5rem" }}> {value.word}</WordSpan>
-                    </Word>
+                        <WordSpanCheck> {value.word}</WordSpanCheck>
+                        {/* <span>unchecked</span> */}
+                    </WordCheck>
                 ))}
+                <CreateButton>Create Checking List</CreateButton>
             </CheckWordWrapper>}
             {startTestMode && <TestWordWrapper>
                 <BarTestWrapper>
