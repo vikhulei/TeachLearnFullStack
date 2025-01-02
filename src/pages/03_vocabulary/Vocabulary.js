@@ -162,6 +162,12 @@ const Vocabulary = () => {
         setCheckWords(tenWords.filter(val => val.correctStudent === true))
     }, [tenWords])
 
+    useEffect(() => {
+        if(showTestWord === "LET'S BEGIN") {
+            clickTestedWord()
+        }
+    }, [showTestWord])
+
     return (
         <Wrapper>
             <Header>
