@@ -98,6 +98,7 @@ const TestedWord = styled.div`
     cursor: pointer;
     text-align: center;
     font-size: 2rem;
+    user-select: none;
 `
 
 const TestButtonsWrapper = styled.div`

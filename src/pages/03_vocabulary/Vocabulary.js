@@ -26,6 +26,7 @@ const Vocabulary = () => {
     const [checkWordsMode, setCheckWordsMode] = useState(false)
     const [testWordsArr, setTestWordsArr] = useState([])
     const [showTestWord, setShowTestWord] = useState()
+    const [showTick, setShowTick] = useState(false)
 
     const changeThousand = () => {
         let e
@@ -90,7 +91,6 @@ const Vocabulary = () => {
     }
 
     const clickCheckWords = () => {
-        // console.log(checkWords)
         setStartTestMode(false)
         setCheckWordsMode(!checkWordsMode)
     }
@@ -102,14 +102,20 @@ const Vocabulary = () => {
     }
 
     const createTestWordsArr = () => {
-        let newTestWordsArr = [...testWordsArr]
+        console.log("here")
+        setTestWordsArr([])
+        let newTestWordsArr = []
+        newTestWordsArr = [...testWordsArr]
         for (let i = 0; i < checkWords.length; i++) {
             if (checkWords[i].tobeChecked === true) {
                 newTestWordsArr.push(checkWords[i].word, checkWords[i].translat)
                 setTestWordsArr(newTestWordsArr)
             }
         }
-        clickStartTest()
+        
+        console.log(newTestWordsArr)
+        // clickStartTest()
+    
     }
 
     const clickStartTest = () => {
@@ -178,7 +184,7 @@ const Vocabulary = () => {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet libero id nisi euismod, sed porta est consectetur. Vestibulum auctor felis eget orci semper vestibulum. Pellentesque ultricies nibh gravida, accumsan libero luctus, molestie nunc. In nibh ipsum, blandit id faucibus ac, finibus vitae dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet libero id nisi euismod, sed porta est consectetur. Vestibulum auctor felis eget orci semper vestibulum. Pellentesque ultricies nibh gravida, accumsan libero luctus, molestie nunc. In nibh ipsum, blandit id faucibus ac, finibus vitae dui.
             </MainText>
             <TestButtonsWrapper>
-                <TestButton onClick={clickCheckWords}>Start the Test</TestButton>
+                <TestButton onClick={clickCheckWords}>Run the test</TestButton>
                 {/* <TestButton onClick={clickStartTest}>Start Test</TestButton> */}
             </TestButtonsWrapper>
             {checkWordsMode && <CheckWordWrapper>
@@ -195,11 +201,11 @@ const Vocabulary = () => {
                             style={{ "backgroundColor": value.tobeChecked ? colors.green : ""}}
                         >
                         </CheckButton>
-                        <WordSpanCheck style={{cursor: "pointer"}}> {value.word}</WordSpanCheck>
-                        {/* <span>correct</span> */}
+                        <WordSpanCheck> {value.word}</WordSpanCheck>
+                        <span style={{color: "green", marginLeft: "30px"}}>&#10004;</span>
                     </WordCheck>
                 ))}
-                <CreateButton onClick={createTestWordsArr}>START  TEST</CreateButton>
+                <CreateButton onClick={createTestWordsArr}>START</CreateButton>
             </CheckWordWrapper>}
             {startTestMode && <TestWordWrapper>
                 <BarTestWrapper>
