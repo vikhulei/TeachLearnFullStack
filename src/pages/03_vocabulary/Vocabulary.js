@@ -17,16 +17,17 @@ const Vocabulary = () => {
     const [bottomNumbers, setBottomNumbers] = useState([])
     const [language, setLanguage] = useState("Eng")
     const [tenWords, setTenWords] = useState(
-        HundredWords.filter(val => val.id > 500 && val.id <= 510).map(val => ({...val, engCorrect: false, ukrCorrect: false}))
+        HundredWords.filter(val => val.id > 500 && val.id <= 510).map(val => ({ ...val, engCorrect: false, ukrCorrect: false }))
     )
     const [checkWords, setCheckWords] = useState()
     const [topNumber, setTopNumber] = useState("1")
     const [bottomNumber, setBottomNumber] = useState("1")
+    const [framesInactive, setFramesInactive] = useState(false)
     const [startTestMode, setStartTestMode] = useState(false)
     const [checkWordsMode, setCheckWordsMode] = useState(false)
     const [testWordsArr, setTestWordsArr] = useState([])
     const [showTestWord, setShowTestWord] = useState()
-    const [showTick, setShowTick] = useState(false)
+    const [testResults, setTestResults] = useState(false)
 
     const changeThousand = () => {
         let e
@@ -122,7 +123,7 @@ const Vocabulary = () => {
     }
 
     const clickTestedWord = () => {
-        if(showTestWord === "End, check results") {
+        if (showTestWord === "End, check results") {
             clickCheckWords()
         }
         // setShowTestWord(testWordsArr[0])
@@ -143,7 +144,15 @@ const Vocabulary = () => {
         let checkIndexUkr = checkWords.map(val => val.translat).indexOf(testWordsArr[n])
         let checkIndexEng = checkWords.map(val => val.word).indexOf(testWordsArr[n])
         checkIndexUkr === -1 ? console.log(checkIndexEng) : console.log(checkIndexUkr)
+    }
 
+    const showTestResults = () => {
+        setTestResults(true)
+        setStartTestMode(false)
+    }
+
+    const recordResults = () => {
+        setTestResults(false)
     }
 
     const rightClick = (e) => {
@@ -165,7 +174,7 @@ const Vocabulary = () => {
     }, [tenWords])
 
     useEffect(() => {
-        if(showTestWord === "LET'S BEGIN") {
+        if (showTestWord === "LET'S BEGIN") {
             clickTestedWord()
         }
     }, [showTestWord])
@@ -194,11 +203,10 @@ const Vocabulary = () => {
                             id={index}
                             beChecked={value.tobeChecked}
                             onClick={selectCheckedWords}
-                            style={{ "backgroundColor": value.tobeChecked ? colors.green : ""}}
+                            style={{ "backgroundColor": value.tobeChecked ? colors.green : "" }}
                         >
                         </CheckButton>
                         <WordSpanCheck> {value.word}</WordSpanCheck>
-                        <span style={{color: "green", marginLeft: "30px"}}>&#10004;</span>
                     </WordCheck>
                 ))}
                 <CreateButton onClick={createTestWordsArr}>START</CreateButton>
@@ -209,8 +217,20 @@ const Vocabulary = () => {
                     <ClosedButton onClick={() => setStartTestMode(false)}>X</ClosedButton>
                 </BarTestWrapper>
                 <TestedWord onClick={clickTestedWord}>{showTestWord}</TestedWord>
-                {showTestWord === "end of test" && <CreateButton onClick={clickCheckWords}>CHECK RESULTS</CreateButton>}
+                {showTestWord === "end of test" && <CreateButton onClick={showTestResults}>CHECK RESULTS</CreateButton>}
             </TestWordWrapper>}
+            { testResults && <CheckWordWrapper> {/* This is the window with the results after the test */}
+                <BarTestWrapper>
+                    Test Results
+                    <ClosedButton onClick={() => setCheckWordsMode(false)}>X</ClosedButton>
+                </BarTestWrapper>
+                {tenWords.filter(val => val.tobeChecked === true).map((value, index) => (
+                    <WordCheck key={index} style={{textAlign: "center"}}>
+                        <WordSpanCheck> {value.word}</WordSpanCheck>
+                    </WordCheck>
+                ))}
+                <CreateButton onClick={recordResults}>RECORD RESULTS</CreateButton>
+            </CheckWordWrapper>}
             <FramesWrapper startTestMode={startTestMode} checkWordsMode={checkWordsMode}>
                 <Frame>
                     <LanguageButtonsWrapper>

@@ -13,7 +13,7 @@ checkWords - words selected by the students (array filtered from tenWord) - THE 
 
 
 testWordsArr - words selected by the tutor (array mapped from checkWords)
-
+checkWords[i].word, checkWords[i].translat
 
 
 
