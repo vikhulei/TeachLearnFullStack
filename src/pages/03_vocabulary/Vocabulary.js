@@ -17,7 +17,7 @@ const Vocabulary = () => {
     const [bottomNumbers, setBottomNumbers] = useState([])
     const [language, setLanguage] = useState("Eng")
     const [tenWords, setTenWords] = useState(
-        HundredWords.filter(val => val.id > 500 && val.id <= 510)
+        HundredWords.filter(val => val.id > 500 && val.id <= 510).map(val => ({...val, engCorrect: false, ukrCorrect: false}))
     )
     const [checkWords, setCheckWords] = useState()
     const [topNumber, setTopNumber] = useState("1")
@@ -102,26 +102,22 @@ const Vocabulary = () => {
     }
 
     const createTestWordsArr = () => {
-        console.log("here")
         setTestWordsArr([])
         let newTestWordsArr = []
-        newTestWordsArr = [...testWordsArr]
         for (let i = 0; i < checkWords.length; i++) {
             if (checkWords[i].tobeChecked === true) {
                 newTestWordsArr.push(checkWords[i].word, checkWords[i].translat)
                 setTestWordsArr(newTestWordsArr)
             }
         }
-        
-        console.log(newTestWordsArr)
-        // clickStartTest()
-    
+        clickStartTest()
     }
 
     const clickStartTest = () => {
         setCheckWordsMode(false)
         setStartTestMode(true)
         setShowTestWord("LET'S BEGIN")
+        console.log(checkWords)
         // clickTestedWord()
     }
 
@@ -146,7 +142,7 @@ const Vocabulary = () => {
         setTestWordsArr(newTestWordsArr)
         let checkIndexUkr = checkWords.map(val => val.translat).indexOf(testWordsArr[n])
         let checkIndexEng = checkWords.map(val => val.word).indexOf(testWordsArr[n])
-        // checkIndexUkr === -1 ? console.log(checkIndexEng) : console.log(checkIndexUkr)
+        checkIndexUkr === -1 ? console.log(checkIndexEng) : console.log(checkIndexUkr)
 
     }
 
@@ -237,7 +233,7 @@ const Vocabulary = () => {
                                 data-word={value.word}
                                 autocomplete="off"
                                 id={index}
-                                style={{ "backgroundColor": language === "Ukr" && value.input === value.word || language === "Eng" && value.input === value.translat ? `${colors.green}` : "" }}
+                                style={{ "backgroundColor": (language === "Ukr" && value.input === value.word) || (language === "Eng" && value.input === value.translat) ? `${colors.green}` : "" }}
                                 value={value.input}
                                 onInput={fillInput}
                             />
