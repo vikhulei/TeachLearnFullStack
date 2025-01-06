@@ -118,7 +118,7 @@ const Vocabulary = () => {
         setCheckWordsMode(false)
         setStartTestMode(true)
         setShowTestWord("LET'S BEGIN")
-        console.log(checkWords)
+        // console.log(checkWords)
         // clickTestedWord()
     }
 
@@ -141,9 +141,15 @@ const Vocabulary = () => {
         let ind = newTestWordsArr.indexOf(newTestWordsArr[n])
         newTestWordsArr.splice(ind, 1)
         setTestWordsArr(newTestWordsArr)
-        let checkIndexUkr = checkWords.map(val => val.translat).indexOf(testWordsArr[n])
-        let checkIndexEng = checkWords.map(val => val.word).indexOf(testWordsArr[n])
-        checkIndexUkr === -1 ? console.log(checkIndexEng) : console.log(checkIndexUkr)
+        let checkIndexUkr = tenWords.map(val => val.translat).indexOf(testWordsArr[n])
+        let checkIndexEng = tenWords.map(val => val.word).indexOf(testWordsArr[n])
+
+        let newArr = [...tenWords]
+
+        // checkIndexUkr === -1 ? console.log(checkIndexEng) : console.log(checkIndexUkr)
+        checkIndexUkr === -1 ? newArr[checkIndexEng].engCorrect = true : newArr[checkIndexUkr].ukrCorrect = true
+        setTenWords(newArr)
+        // checkIndexUkr === -1 ? console.log(checkIndexEng) : console.log(checkIndexUkr)
     }
 
     const showTestResults = () => {
@@ -226,7 +232,7 @@ const Vocabulary = () => {
                 </BarTestWrapper>
                 {tenWords.filter(val => val.tobeChecked === true).map((value, index) => (
                     <WordCheck key={index} style={{textAlign: "center"}}>
-                        <WordSpanCheck> {value.word}</WordSpanCheck>
+                        <WordSpanCheck style={{ color: (value.engCorrect === true && value.ukrCorrect == true) ? "green" : ""}}> {value.word}</WordSpanCheck>
                     </WordCheck>
                 ))}
                 <CreateButton onClick={recordResults}>RECORD RESULTS</CreateButton>
