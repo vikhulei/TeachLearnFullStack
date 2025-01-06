@@ -222,7 +222,7 @@ const Vocabulary = () => {
             { testResults && <CheckWordWrapper> {/* This is the window with the results after the test */}
                 <BarTestWrapper>
                     Test Results
-                    <ClosedButton onClick={() => setCheckWordsMode(false)}>X</ClosedButton>
+                    <ClosedButton onClick={() => setTestResults(false)}>X</ClosedButton>
                 </BarTestWrapper>
                 {tenWords.filter(val => val.tobeChecked === true).map((value, index) => (
                     <WordCheck key={index} style={{textAlign: "center"}}>
