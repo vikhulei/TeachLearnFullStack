@@ -94,7 +94,7 @@ const Vocabulary = () => {
 
     const clickCheckWords = () => {
         setStartTestMode(false)
-        setCheckWordsMode(!checkWordsMode)
+        setCheckWordsMode(true)
     }
 
     const selectCheckedWords = (e) => {
@@ -118,7 +118,7 @@ const Vocabulary = () => {
     const clickStartTest = () => {
         setCheckWordsMode(false)
         setStartTestMode(true)
-        setShowTestWord("LET'S BEGIN")
+        // setShowTestWord("LET'S BEGIN")
         // console.log(showTestWord)
         // console.log(checkWords)
         // clickTestedWord()
@@ -189,11 +189,11 @@ const Vocabulary = () => {
         setCheckWords(tenWords.filter(val => val.correctStudent === true))
     }, [tenWords])
 
-    useEffect(() => {
-        if (showTestWord === "LET'S BEGIN") {
-            clickTestedWord()
-        }
-    }, [showTestWord])
+    // useEffect(() => {
+    //     if (showTestWord === "LET'S BEGIN") {
+    //         clickTestedWord()
+    //     }
+    // }, [showTestWord])
 
     return (
         <Wrapper>
