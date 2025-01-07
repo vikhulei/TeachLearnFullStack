@@ -28,6 +28,7 @@ const Vocabulary = () => {
     const [testWordsArr, setTestWordsArr] = useState([])
     const [showTestWord, setShowTestWord] = useState()
     const [testResults, setTestResults] = useState(false)
+    const [randomNumber, setRandomNumber] = useState()
 
     const changeThousand = () => {
         let e
@@ -118,6 +119,7 @@ const Vocabulary = () => {
         setCheckWordsMode(false)
         setStartTestMode(true)
         setShowTestWord("LET'S BEGIN")
+        // console.log(showTestWord)
         // console.log(checkWords)
         // clickTestedWord()
     }
@@ -141,15 +143,23 @@ const Vocabulary = () => {
         let ind = newTestWordsArr.indexOf(newTestWordsArr[n])
         newTestWordsArr.splice(ind, 1)
         setTestWordsArr(newTestWordsArr)
-        let checkIndexUkr = tenWords.map(val => val.translat).indexOf(testWordsArr[n])
-        let checkIndexEng = tenWords.map(val => val.word).indexOf(testWordsArr[n])
+        let checkIndexUkr = tenWords.map(val => val.translat).indexOf(testWordsArr[randomNumber])
+        let checkIndexEng = tenWords.map(val => val.word).indexOf(testWordsArr[randomNumber])
+        return [checkIndexUkr, checkIndexEng]
+    }
 
-        let newArr = [...tenWords]
+    const leftClickTestedWord = () => {
 
-        // checkIndexUkr === -1 ? console.log(checkIndexEng) : console.log(checkIndexUkr)
-        checkIndexUkr === -1 ? newArr[checkIndexEng].engCorrect = true : newArr[checkIndexUkr].ukrCorrect = true
-        setTenWords(newArr)
-        // checkIndexUkr === -1 ? console.log(checkIndexEng) : console.log(checkIndexUkr)
+        let ind = clickTestedWord()
+
+        console.log(ind)
+
+
+        // console.log(randomNumber)
+
+        // let newArr = [...tenWords]
+        // checkIndexUkr === -1 ? newArr[checkIndexEng].engCorrect = true : newArr[checkIndexUkr].ukrCorrect = true
+        // setTenWords(newArr)
     }
 
     const showTestResults = () => {
@@ -222,7 +232,7 @@ const Vocabulary = () => {
                     Words Test
                     <ClosedButton onClick={() => setStartTestMode(false)}>X</ClosedButton>
                 </BarTestWrapper>
-                <TestedWord onClick={clickTestedWord}>{showTestWord}</TestedWord>
+                <TestedWord onClick={leftClickTestedWord}>{showTestWord}</TestedWord>
                 {showTestWord === "end of test" && <CreateButton onClick={showTestResults}>CHECK RESULTS</CreateButton>}
             </TestWordWrapper>}
             { testResults && <CheckWordWrapper> {/* This is the window with the results after the test */}
