@@ -23,6 +23,6 @@ RUN THE TEST
     Selected by pressing tens button.
     HundredWords.filter(val => val.id)
 3)  listOfWords - words, checked by student from tenWords
-    Selected with useEffect and by pressing the checkbox
+    Selected with useEffect and by pressing the checkboxes
     correctStudent === true
 4)  

@@ -124,7 +124,8 @@ const Vocabulary = () => {
         // clickTestedWord()
     }
 
-    const clickTestedWord = () => {
+    const clickTestedWord = (e) => {
+        // e.preventDefault()
         if (showTestWord === "End, check results") {
             runTheTest()
         }
@@ -143,23 +144,49 @@ const Vocabulary = () => {
         let ind = newTestWordsArr.indexOf(newTestWordsArr[n])
         newTestWordsArr.splice(ind, 1)
         setTestWordsArr(newTestWordsArr)
-        let checkIndexUkr = tenWords.map(val => val.translat).indexOf(testWordsArr[randomNumber])
-        let checkIndexEng = tenWords.map(val => val.word).indexOf(testWordsArr[randomNumber])
-        return [checkIndexUkr, checkIndexEng]
+        return [n]
+        // return [checkIndexUkr, checkIndexEng]
+
     }
 
-    const leftClickTestedWord = () => {
+    
+    const rightClick = (e) => {
+        e.preventDefault()
+        if (showTestWord === "End, check results") {
+            runTheTest()
+        }
+        if (testWordsArr.length === 0) {
+            return setShowTestWord("end of test")
+        }
+        let n = Math.floor(Math.random() * testWordsArr.length)
+        setShowTestWord(testWordsArr[n])
+        let newTestWordsArr = [...testWordsArr]
+        let ind = newTestWordsArr.indexOf(newTestWordsArr[n])
+        newTestWordsArr.splice(ind, 1)
+        setTestWordsArr(newTestWordsArr)
+        return [n]
+    }
 
-        let ind = clickTestedWord()
+    const leftClickTestedWord = (e) => {
 
-        console.log(ind)
+        let n = rightClick(e)
+
+        let checkIndexUkr = tenWords.map(val => val.translat).indexOf(testWordsArr[n])
+        let checkIndexEng = tenWords.map(val => val.word).indexOf(testWordsArr[n])
+        console.log(checkIndexUkr, checkIndexEng)
+        // if (checkIndexEng !== -1 || checkIndexUkr !== -1) {
+        //     checkIndexUkr === -1 ? console.log(tenWords[checkIndexEng].word) : console.log(tenWords[checkIndexEng].translat)
+        //     // let newArr = [...tenWords]
+        //     // checkIndexUkr === -1 ? newArr[checkIndexEng].engCorrect = true : newArr[checkIndexUkr].ukrCorrect = true
+        //     // setTenWords(newArr)
+        // }
+        // console.log(checkIndexUkr)
+        // console.log(checkIndexEng)
 
 
         // console.log(randomNumber)
 
-        // let newArr = [...tenWords]
-        // checkIndexUkr === -1 ? newArr[checkIndexEng].engCorrect = true : newArr[checkIndexUkr].ukrCorrect = true
-        // setTenWords(newArr)
+
     }
 
     const showTestResults = () => {
@@ -171,10 +198,6 @@ const Vocabulary = () => {
         setTestResults(false)
     }
 
-    const rightClick = (e) => {
-        e.preventDefault()
-        alert("right click")
-    }
 
     useEffect(() => {
         let savedThousand = localStorage.getItem("savedThousand") || "First Thousand"
@@ -211,7 +234,6 @@ const Vocabulary = () => {
                 <TestButton onClick={runTheTest}>Run the test</TestButton>
             </TestButtonsWrapper>
 
-
 {/* 2. LIST OF WORDS WINDOW */}
 
             {listOfWordsMode && <CheckWordWrapper>
@@ -241,13 +263,13 @@ const Vocabulary = () => {
                     Words Test
                     <ClosedButton onClick={() => setStartTestMode(false)}>X</ClosedButton>
                 </BarTestWrapper>
-                <TestedWord onClick={leftClickTestedWord}>{showTestWord}</TestedWord>
+                <TestedWord onClick={leftClickTestedWord} onContextMenu={rightClick}>{showTestWord}</TestedWord>
                 {showTestWord === "end of test" && <CreateButton onClick={showTestResults}>CHECK RESULTS</CreateButton>}
             </TestWordWrapper>}
 
 {/* 4. TEST RESULTS WINDOW */}
 
-            { testResults && <CheckWordWrapper> {/* This is the window with the results after the test */}
+            { testResults && <CheckWordWrapper>
                 <BarTestWrapper>
                     Test Results
                     <ClosedButton onClick={() => setTestResults(false)}>X</ClosedButton>
@@ -260,7 +282,7 @@ const Vocabulary = () => {
                 <CreateButton onClick={recordResults}>RECORD RESULTS</CreateButton>
             </CheckWordWrapper>}
     
-
+{/* --------------------------------- */}
 
             <FramesWrapper startTestMode={startTestMode} listOfWordsMode={listOfWordsMode}>
                 <Frame>
