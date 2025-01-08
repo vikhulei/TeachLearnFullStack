@@ -7,7 +7,7 @@ import { tensFrames } from "../../components/01_config/GreenFrames"
 import { colors } from "../../components/01_config/Colors"
 
 // const TenWords = HundredWords.filter(val => val.id > 500 && val.id <= 510)
-// const CheckWords = TenWords.filter(val => val.correctStudent === true)
+// const listOfWords = TenWords.filter(val => val.correctStudent === true)
 
 //.map(val => ({...val, engCorrect: false, ukrCorrect: false}))
 
@@ -19,12 +19,12 @@ const Vocabulary = () => {
     const [tenWords, setTenWords] = useState(
         HundredWords.filter(val => val.id > 500 && val.id <= 510).map(val => ({ ...val, engCorrect: false, ukrCorrect: false }))
     )
-    const [checkWords, setCheckWords] = useState()
+    const [listOfWords, setListOfWords] = useState([])
     const [topNumber, setTopNumber] = useState("1")
     const [bottomNumber, setBottomNumber] = useState("1")
     const [framesInactive, setFramesInactive] = useState(false)
     const [startTestMode, setStartTestMode] = useState(false)
-    const [checkWordsMode, setCheckWordsMode] = useState(false)
+    const [listOfWordsMode, setListOfWordsMode] = useState(false)
     const [testWordsArr, setTestWordsArr] = useState([])
     const [showTestWord, setShowTestWord] = useState()
     const [testResults, setTestResults] = useState(false)
@@ -92,23 +92,23 @@ const Vocabulary = () => {
         }
     }
 
-    const clickCheckWords = () => {
+    const runTheTest = () => {
         setStartTestMode(false)
-        setCheckWordsMode(true)
+        setListOfWordsMode(true)
     }
 
     const selectCheckedWords = (e) => {
-        let newArr = [...checkWords]
+        let newArr = [...listOfWords]
         newArr[e.target.id].tobeChecked = !newArr[e.target.id].tobeChecked
-        setCheckWords(newArr)
+        setListOfWords(newArr)
     }
 
     const createTestWordsArr = () => {
         setTestWordsArr([])
         let newTestWordsArr = []
-        for (let i = 0; i < checkWords.length; i++) {
-            if (checkWords[i].tobeChecked === true) {
-                newTestWordsArr.push(checkWords[i].word, checkWords[i].translat)
+        for (let i = 0; i < listOfWords.length; i++) {
+            if (listOfWords[i].tobeChecked === true) {
+                newTestWordsArr.push(listOfWords[i].word, listOfWords[i].translat)
                 setTestWordsArr(newTestWordsArr)
             }
         }
@@ -116,23 +116,23 @@ const Vocabulary = () => {
     }
 
     const clickStartTest = () => {
-        setCheckWordsMode(false)
+        setListOfWordsMode(false)
         setStartTestMode(true)
-        // setShowTestWord("LET'S BEGIN")
+        setShowTestWord("LET'S BEGIN")
         // console.log(showTestWord)
-        // console.log(checkWords)
+        // console.log(listOfWords)
         // clickTestedWord()
     }
 
     const clickTestedWord = () => {
         if (showTestWord === "End, check results") {
-            clickCheckWords()
+            runTheTest()
         }
         // setShowTestWord(testWordsArr[0])
         // const tt = "ая"
         // console.log(tt.charCodeAt(1))
-        // console.log(checkWords.map(val => val.translat).indexOf("якщо"))
-        // console.log(checkWords)
+        // console.log(listOfWords.map(val => val.translat).indexOf("якщо"))
+        // console.log(listOfWords)
         if (testWordsArr.length === 0) {
             // tenWords.filter(val => val.correctStudent === true)
             return setShowTestWord("end of test")
@@ -186,7 +186,7 @@ const Vocabulary = () => {
     }, [])
 
     useEffect(() => {
-        setCheckWords(tenWords.filter(val => val.correctStudent === true))
+        setListOfWords(tenWords.filter(val => val.correctStudent === true))
     }, [tenWords])
 
     // useEffect(() => {
@@ -204,16 +204,22 @@ const Vocabulary = () => {
             <MainText>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet libero id nisi euismod, sed porta est consectetur. Vestibulum auctor felis eget orci semper vestibulum. Pellentesque ultricies nibh gravida, accumsan libero luctus, molestie nunc. In nibh ipsum, blandit id faucibus ac, finibus vitae dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet libero id nisi euismod, sed porta est consectetur. Vestibulum auctor felis eget orci semper vestibulum. Pellentesque ultricies nibh gravida, accumsan libero luctus, molestie nunc. In nibh ipsum, blandit id faucibus ac, finibus vitae dui.
             </MainText>
+
+{/* 1. RUN THE TEST BUTTON */}
+
             <TestButtonsWrapper>
-                <TestButton onClick={clickCheckWords}>Run the test</TestButton>
-                {/* <TestButton onClick={clickStartTest}>Start Test</TestButton> */}
+                <TestButton onClick={runTheTest}>Run the test</TestButton>
             </TestButtonsWrapper>
-            {checkWordsMode && <CheckWordWrapper>
+
+
+{/* 2. LIST OF WORDS WINDOW */}
+
+            {listOfWordsMode && <CheckWordWrapper>
                 <BarTestWrapper>
                     List Of Words
-                    <ClosedButton onClick={() => setCheckWordsMode(false)}>X</ClosedButton>
+                    <ClosedButton onClick={() => setListOfWordsMode(false)}>X</ClosedButton>
                 </BarTestWrapper>
-                {checkWords.map((value, index) => (
+                {listOfWords.map((value, index) => (
                     <WordCheck key={index}>
                         <CheckButton
                             id={index}
@@ -227,6 +233,9 @@ const Vocabulary = () => {
                 ))}
                 <CreateButton onClick={createTestWordsArr}>START</CreateButton>
             </CheckWordWrapper>}
+
+{/* 3. WORDS TEST WINDOW */}
+
             {startTestMode && <TestWordWrapper>
                 <BarTestWrapper>
                     Words Test
@@ -235,6 +244,9 @@ const Vocabulary = () => {
                 <TestedWord onClick={leftClickTestedWord}>{showTestWord}</TestedWord>
                 {showTestWord === "end of test" && <CreateButton onClick={showTestResults}>CHECK RESULTS</CreateButton>}
             </TestWordWrapper>}
+
+{/* 4. TEST RESULTS WINDOW */}
+
             { testResults && <CheckWordWrapper> {/* This is the window with the results after the test */}
                 <BarTestWrapper>
                     Test Results
@@ -247,7 +259,10 @@ const Vocabulary = () => {
                 ))}
                 <CreateButton onClick={recordResults}>RECORD RESULTS</CreateButton>
             </CheckWordWrapper>}
-            <FramesWrapper startTestMode={startTestMode} checkWordsMode={checkWordsMode}>
+    
+
+
+            <FramesWrapper startTestMode={startTestMode} listOfWordsMode={listOfWordsMode}>
                 <Frame>
                     <LanguageButtonsWrapper>
                         <LanguageButton onClick={clickLanguage} language={language} id="Eng">English</LanguageButton>

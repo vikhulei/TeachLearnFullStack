@@ -1,0 +1,28 @@
+RUN THE TEST
+ -> button Run the test
+
+ -> button START
+
+ -> button x
+
+ -> div tested word
+
+ -> button x
+
+ ->  button CHECK RESULTS
+
+ -> button RECORD RESULTS
+
+ -> button x
+
+
+ PROGRESS WITH ARRAYS
+
+ 1) HundredWords - from the db
+ 2) tenWords - 10 words from HundredWords.
+    Selected by pressing tens button.
+    HundredWords.filter(val => val.id)
+3)  listOfWords - words, checked by student from tenWords
+    Selected with useEffect and by pressing the checkbox
+    correctStudent === true
+4)  
