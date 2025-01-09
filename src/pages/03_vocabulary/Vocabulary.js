@@ -104,7 +104,6 @@ const Vocabulary = () => {
     }
 
     const createTestWordsArr = () => {
-        setTestWordsArr([])
         let newTestWordsArr = []
         for (let i = 0; i < listOfWords.length; i++) {
             if (listOfWords[i].tobeChecked === true) {
@@ -119,73 +118,41 @@ const Vocabulary = () => {
         setListOfWordsMode(false)
         setStartTestMode(true)
         setShowTestWord("LET'S BEGIN")
-        // console.log(showTestWord)
-        // console.log(listOfWords)
-        // clickTestedWord()
     }
 
-    const clickTestedWord = (e) => {
-        // e.preventDefault()
-        if (showTestWord === "End, check results") {
-            runTheTest()
-        }
-        // setShowTestWord(testWordsArr[0])
-        // const tt = "ая"
-        // console.log(tt.charCodeAt(1))
-        // console.log(listOfWords.map(val => val.translat).indexOf("якщо"))
-        // console.log(listOfWords)
-        if (testWordsArr.length === 0) {
-            // tenWords.filter(val => val.correctStudent === true)
-            return setShowTestWord("end of test")
-        }
-        let n = Math.floor(Math.random() * testWordsArr.length)
-        setShowTestWord(testWordsArr[n])
-        let newTestWordsArr = [...testWordsArr]
-        let ind = newTestWordsArr.indexOf(newTestWordsArr[n])
-        newTestWordsArr.splice(ind, 1)
-        setTestWordsArr(newTestWordsArr)
-        return [n]
-        // return [checkIndexUkr, checkIndexEng]
+    const rightClickTestedWord = (e) => {
 
-    }
-
-    
-    const rightClick = (e) => {
         e.preventDefault()
-        if (showTestWord === "End, check results") {
-            runTheTest()
-        }
+
         if (testWordsArr.length === 0) {
             return setShowTestWord("end of test")
         }
+
         let n = Math.floor(Math.random() * testWordsArr.length)
         setShowTestWord(testWordsArr[n])
-        let newTestWordsArr = [...testWordsArr]
-        let ind = newTestWordsArr.indexOf(newTestWordsArr[n])
-        newTestWordsArr.splice(ind, 1)
-        setTestWordsArr(newTestWordsArr)
-        return [n]
+            let newTestWordsArr = [...testWordsArr]
+            let ind = newTestWordsArr.indexOf(newTestWordsArr[n])
+            newTestWordsArr.splice(ind, 1)
+            setTestWordsArr(newTestWordsArr)
+            let checkIndexUkr = tenWords.map(val => val.translat).indexOf(testWordsArr[n])
+            let checkIndexEng = tenWords.map(val => val.word).indexOf(testWordsArr[n])
+            
+        setRandomNumber([checkIndexUkr, checkIndexEng])
     }
 
     const leftClickTestedWord = (e) => {
 
-        let n = rightClick(e)
+        if (randomNumber) {
+            let checkIndexUkr = randomNumber[0]
+            let checkIndexEng = randomNumber[1]
 
-        let checkIndexUkr = tenWords.map(val => val.translat).indexOf(testWordsArr[n])
-        let checkIndexEng = tenWords.map(val => val.word).indexOf(testWordsArr[n])
-        console.log(checkIndexUkr, checkIndexEng)
-        // if (checkIndexEng !== -1 || checkIndexUkr !== -1) {
-        //     checkIndexUkr === -1 ? console.log(tenWords[checkIndexEng].word) : console.log(tenWords[checkIndexEng].translat)
-        //     // let newArr = [...tenWords]
-        //     // checkIndexUkr === -1 ? newArr[checkIndexEng].engCorrect = true : newArr[checkIndexUkr].ukrCorrect = true
-        //     // setTenWords(newArr)
-        // }
-        // console.log(checkIndexUkr)
-        // console.log(checkIndexEng)
+            let newArr = [...tenWords]
+            checkIndexUkr === -1 ? newArr[checkIndexEng].engCorrect = true : newArr[checkIndexUkr].ukrCorrect = true
+            setTenWords(newArr)
 
-
-        // console.log(randomNumber)
-
+    }
+            // console.log(checkIndexUkr, checkIndexEng)
+            // checkIndexUkr === -1 ? console.log(tenWords[checkIndexEng].word) : console.log(tenWords[checkIndexUkr].translat)
 
     }
 
@@ -263,8 +230,8 @@ const Vocabulary = () => {
                     Words Test
                     <ClosedButton onClick={() => setStartTestMode(false)}>X</ClosedButton>
                 </BarTestWrapper>
-                <TestedWord onClick={leftClickTestedWord} onContextMenu={rightClick}>{showTestWord}</TestedWord>
-                {showTestWord === "end of test" && <CreateButton onClick={showTestResults}>CHECK RESULTS</CreateButton>}
+                <TestedWord onClick={leftClickTestedWord} onContextMenu={rightClickTestedWord}>{showTestWord}</TestedWord>
+                {showTestWord === "end of test" && <CreateButton onClick={showTestResults}>TEST RESULTS</CreateButton>}
             </TestWordWrapper>}
 
 {/* 4. TEST RESULTS WINDOW */}
@@ -294,7 +261,6 @@ const Vocabulary = () => {
                         <Word key={index} >
                             <CheckButton
                                 onClick={clickInputButton}
-                                onContextMenu={rightClick}
                                 id={index}
                                 style={{ "backgroundColor": value.correctStudent ? colors.green : "" }}
                             >
