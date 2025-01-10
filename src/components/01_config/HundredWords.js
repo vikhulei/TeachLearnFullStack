@@ -2,10 +2,10 @@
 
 export const HundredWords = [
     {id: 501, word: "one", translat: "один", visibility: "hidden", tobeChecked: false, correctTutor : false, correctStudent: true},
-    {id: 502, word: "apple", translat: "яблуко", visibility: "hidden", tobeChecked: false, correctTutor : false, correctStudent: false},
-    {id: 503, word: "their", translat: "їх", visibility: "hidden", tobeChecked: false, correctTutor : true, correctStudent: true},
-    {id: 504, word: "also", translat: "також", visibility: "hidden", tobeChecked: false, correctTutor : true, correctStudent: true},
-    {id: 505, word: "if", translat: "якщо", visibility: "hidden", tobeChecked: false, correctTutor : false, correctStudent: false},
+    {id: 502, word: "apple", translat: "яблуко", visibility: "hidden", tobeChecked: false, correctTutor : false, correctStudent: true},
+    {id: 503, word: "their", translat: "їх", visibility: "hidden", tobeChecked: false, correctTutor : true, correctStudent: false},
+    {id: 504, word: "also", translat: "також", visibility: "hidden", tobeChecked: false, correctTutor : true, correctStudent: false},
+    {id: 505, word: "if", translat: "якщо", visibility: "hidden", tobeChecked: false, correctTutor : false, correctStudent: true},
     {id: 506, word: "that", translat: "це", visibility: "hidden", tobeChecked: false, correctTutor : true, correctStudent: false},
     {id: 507, word: "or", translat: "або", visibility: "hidden", tobeChecked: false, correctTutor : false, correctStudent: false},
     {id: 508, word: "people", translat: "люди", visibility: "hidden", tobeChecked: false, correctTutor : false, correctStudent: false},

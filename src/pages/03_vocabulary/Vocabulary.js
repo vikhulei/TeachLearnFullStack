@@ -163,6 +163,12 @@ const Vocabulary = () => {
 
     const recordResults = () => {
         setTestResults(false)
+        let newTenWords = [...tenWords]
+        for (let i = 0; i < newTenWords.length; i++) {
+            if(newTenWords[i].engCorrect && newTenWords[i].ukrCorrect ) {
+                newTenWords[i].correctTutor = true
+            }
+        }
     }
 
 
@@ -243,7 +249,7 @@ const Vocabulary = () => {
                 </BarTestWrapper>
                 {tenWords.filter(val => val.tobeChecked === true).map((value, index) => (
                     <WordCheck key={index} style={{ textAlign: "center" }}>
-                        <WordSpanCheck style={{ color: (value.engCorrect === true && value.ukrCorrect == true) ? "green" : "" }}> {value.word}</WordSpanCheck>
+                        <WordSpanCheck style={{ color: (value.engCorrect && value.ukrCorrect) ? "green" : "" }}> {value.word}</WordSpanCheck>
                     </WordCheck>
                 ))}
                 <CreateButton onClick={recordResults}>RECORD RESULTS</CreateButton>
