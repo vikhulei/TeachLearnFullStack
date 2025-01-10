@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { sizes } from "../../components/01_config/Sizes";
 import vocabulary from "../../assets/02_vocabulary/vocabulary.jpg"
 import { colors } from "../../components/01_config/Colors"
@@ -138,7 +138,7 @@ const FramesWrapper = styled.div`
     justify-content: center;
     gap: 7vw;
     z-index: 20;
-    opacity: ${({startTestMode, checkWordsMode}) => startTestMode || checkWordsMode ? "0.4" : "1"};
+    opacity: ${({ startTestMode, checkWordsMode }) => startTestMode || checkWordsMode ? "0.4" : "1"};
 `
 
 const Frame = styled.div`
@@ -175,10 +175,10 @@ const LanguageButton = styled.button`
     border: none;
     cursor: pointer;
     &:nth-of-type(1) {
-        border-bottom: ${({language}) => language == "Eng" ? "solid black 1px" : "none"};
+        border-bottom: ${({ language }) => language == "Eng" ? "solid black 1px" : "none"};
     }
     &:nth-of-type(2) {
-        border-bottom: ${({language}) => language == "Ukr" ? "solid black 1px" : "none"};
+        border-bottom: ${({ language }) => language == "Ukr" ? "solid black 1px" : "none"};
     }
     &:hover {
         font-weight: 600;
@@ -193,6 +193,25 @@ const CheckButton = styled(GenericButton)`
     display: flex;
     align-items: center;
     justify-content: center;
+`
+
+const disabledCheckButton = css`
+    pointer-events: none;
+    border-width: 0px;
+    &:hover {
+        font-size: 0.75rem;
+        border-width: 0px;
+        cursor: initial;
+    };
+    &:active {
+        transform: translate(0, 0);
+    };
+    background-color: #E3E3E3;
+`
+
+const CheckButtonFrame = styled(CheckButton)`
+    background-color: ${({ correctStudent }) => correctStudent ? colors.green : ""}
+    ${({ correctTutor }) => correctTutor ? disabledCheckButton : ""}
 `
 
 const BarTestWrapper = styled.div`
@@ -288,10 +307,10 @@ const LargeButtonsWrapper = styled.div`
 
 const LargeButton = styled(GenericButton)`
     &:nth-of-type(1) {
-        border: ${({thousand}) => thousand=="First Thousand" ? `${colors.greyBoldFrame} solid 3.5px` : ""}
+        border: ${({ thousand }) => thousand == "First Thousand" ? `${colors.greyBoldFrame} solid 3.5px` : ""}
     }
     &:nth-of-type(2) {
-        border: ${({thousand}) => thousand=="Second Thousand" ? `${colors.greyBoldFrame} solid 3.5px` : ""}
+        border: ${({ thousand }) => thousand == "Second Thousand" ? `${colors.greyBoldFrame} solid 3.5px` : ""}
     }
 `
 
@@ -309,18 +328,18 @@ const NumberButtonWrapper = styled.div`
 
 const TopButton = styled(GenericButton)`
     width: 100px;
-    &:nth-of-type(${({topNumber}) => topNumber ? topNumber : "1"}) {
+    &:nth-of-type(${({ topNumber }) => topNumber ? topNumber : "1"}) {
         border: ${colors.greyBoldFrame} solid 3.5px;
     }
-    background-color: ${({color}) => color==colors.green ? color : ""};
+    background-color: ${({ color }) => color == colors.green ? color : ""};
 `
 
 const BottomButton = styled(GenericButton)`
     width: 100px;
-    &:nth-of-type(${({bottomNumber}) => bottomNumber ? bottomNumber : "1"}) {
+    &:nth-of-type(${({ bottomNumber }) => bottomNumber ? bottomNumber : "1"}) {
         border: ${colors.greyBoldFrame} solid 3.5px;
     }
-    background-color: ${({color}) => color==colors.green ? color : ""};
+    background-color: ${({ color }) => color == colors.green ? color : ""};
 `
 
 const MarkButton = styled(GenericButton)`
@@ -333,7 +352,6 @@ const MarkButton = styled(GenericButton)`
         transform: translate(none);
     }
 `
-
 
 const Mark = styled.span`
 
@@ -433,4 +451,4 @@ const CircleText = styled(MainText)`
 
 
 
-export { Wrapper, Header, HeaderText, Title, MainText, FramesWrapper, Frame, CheckWordWrapper, TestWordWrapper, TestButtonsWrapper, TestButton, CreateButton, LanguageButtonsWrapper, LanguageButton, Input, Word, WordCheck, WordSpan, WordSpanCheck, TranslatSpan, LargeButtonsWrapper,LargeButton, NumberButtonWrapper, TopButton, BottomButton, MarkButton, Mark, LargeCircle, MediumCircle, SmallCircle, ImageWrapper, Image, LineCircleTextWrapper, CircleTextWrapper, Circle, Line, CircleHeading,CircleText, CheckButton, BarTestWrapper, ClosedButton, TestedWord  }
+export { Wrapper, Header, HeaderText, Title, MainText, FramesWrapper, Frame, CheckWordWrapper, TestWordWrapper, TestButtonsWrapper, TestButton, CreateButton, LanguageButtonsWrapper, LanguageButton, Input, Word, WordCheck, WordSpan, WordSpanCheck, TranslatSpan, LargeButtonsWrapper, LargeButton, NumberButtonWrapper, TopButton, BottomButton, MarkButton, Mark, LargeCircle, MediumCircle, SmallCircle, ImageWrapper, Image, LineCircleTextWrapper, CircleTextWrapper, Circle, Line, CircleHeading, CircleText, CheckButton, CheckButtonFrame, BarTestWrapper, ClosedButton, TestedWord }

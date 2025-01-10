@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import { Wrapper, Header, HeaderText, Title, MainText, FramesWrapper, Frame, CheckWordWrapper, TestWordWrapper, TestButtonsWrapper, TestButton, CreateButton, LanguageButtonsWrapper, LanguageButton, Input, Word, WordCheck, WordSpan, WordSpanCheck, TranslatSpan, LargeButtonsWrapper, LargeButton, NumberButtonWrapper, TopButton, BottomButton, MarkButton, Mark, LargeCircle, MediumCircle, SmallCircle, ImageWrapper, Image, LineCircleTextWrapper, CircleTextWrapper, Circle, Line, CircleHeading, CircleText, CheckButton, BarTestWrapper, ClosedButton, TestedWord } from "./VocabularyStyle"
+import { Wrapper, Header, HeaderText, Title, MainText, FramesWrapper, Frame, CheckWordWrapper, TestWordWrapper, TestButtonsWrapper, TestButton, CreateButton, LanguageButtonsWrapper, LanguageButton, Input, Word, WordCheck, WordSpan, WordSpanCheck, TranslatSpan, LargeButtonsWrapper, LargeButton, NumberButtonWrapper, TopButton, BottomButton, MarkButton, Mark, LargeCircle, MediumCircle, SmallCircle, ImageWrapper, Image, LineCircleTextWrapper, CircleTextWrapper, Circle, Line, CircleHeading, CircleText, CheckButton, BarTestWrapper, ClosedButton, TestedWord, CheckButtonFrame } from "./VocabularyStyle"
 import { HundredWords } from "../../components/01_config/HundredWords"
 import picture from "../../assets/01_home/home.jpg"
 import { hundredsFrames } from "../../components/01_config/GreenFrames"
@@ -265,12 +265,16 @@ const Vocabulary = () => {
                     </LanguageButtonsWrapper>
                     {tenWords.map((value, index) => (
                         <Word key={index} >
-                            <CheckButton
+                            <CheckButtonFrame
                                 onClick={clickInputButton}
+                                correctStudent = {value.correctStudent}
+                                correctTutor = {value.correctTutor}
                                 id={index}
-                                style={{ "backgroundColor": value.correctStudent ? colors.green : "" }}
+                                // style={{ "backgroundColor": value.correctStudent ? colors.green : "" ,
+                                 
+                                // }}
                             >
-                            </CheckButton>
+                            </CheckButtonFrame>
                             <Input
                                 type="text"
                                 data-input={value.input}
