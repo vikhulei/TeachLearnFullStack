@@ -125,7 +125,7 @@ const Vocabulary = () => {
 
     const rightClickTestedWord = (e) => {
 
-        e.preventDefault()
+        // e.preventDefault()
 
         if (testWordsArr.length === 0) {
             return setShowTestWord("end of test")
@@ -190,6 +190,27 @@ const Vocabulary = () => {
     //         clickTestedWord()
     //     }
     // }, [showTestWord])
+
+
+  useEffect(() => {
+    function handleKeyDown(e) {
+        if(startTestMode === true) {
+            if(e.keyCode === 89) {   //Yes pressed
+                leftClickTestedWord()
+            } else if (e.keyCode === 78) { //No pressed
+                rightClickTestedWord()
+            }
+        } else {
+        }
+    }
+
+    document.addEventListener('keydown', handleKeyDown);
+
+    return function cleanup() {
+      document.removeEventListener('keydown', handleKeyDown);
+    }
+  }, [startTestMode]);
+
 
     return (
         <Wrapper>
