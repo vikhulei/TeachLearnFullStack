@@ -123,9 +123,21 @@ const Vocabulary = () => {
         setShowTestWord("LET'S BEGIN")
     }
 
+
+    const keyPressed = (e) => {
+        if(e.key === "y") {
+            console.log("Y is pressed")
+        } else if(e.key === "n") {
+            console.log("N is pressed")
+        } else {
+            return
+        }
+    }
+
+
     const rightClickTestedWord = (e) => {
 
-        // e.preventDefault()
+        e.preventDefault()
 
         if (testWordsArr.length === 0) {
             return setShowTestWord("end of test")
@@ -144,10 +156,10 @@ const Vocabulary = () => {
 
     const leftClickTestedWord = (e) => {
 
+
         rightClickTestedWord(e)
 
         if (randomNumber.length !== 0) {
-            console.log(randomNumber[0], randomNumber[1])
             let checkIndexUkr = randomNumber[0]
             let checkIndexEng = randomNumber[1]
             let newArr = [...tenWords]
@@ -192,24 +204,25 @@ const Vocabulary = () => {
     // }, [showTestWord])
 
 
-  useEffect(() => {
-    function handleKeyDown(e) {
-        if(startTestMode === true) {
-            if(e.keyCode === 89) {   //Yes pressed
-                leftClickTestedWord()
-            } else if (e.keyCode === 78) { //No pressed
-                rightClickTestedWord()
-            }
-        } else {
-        }
-    }
+    // function handleKeyDown(e) {
+    //     if(startTestMode === true) {
+    //         if(e.keyCode === 89) {   //Yes pressed
+    //             leftClickTestedWord()
+    //         } else if (e.keyCode === 78) { //No pressed
+    //             rightClickTestedWord()
+    //         }
+    //     } else {
+    //     }
+    // }
 
-    document.addEventListener('keydown', handleKeyDown);
+//   useEffect(() => {
 
-    return function cleanup() {
-      document.removeEventListener('keydown', handleKeyDown);
-    }
-  }, [startTestMode]);
+//     document.addEventListener('keydown', handleKeyDown);
+
+//     return function cleanup() {
+//       document.removeEventListener('keydown', handleKeyDown);
+//     }
+//   }, [startTestMode]);
 
 
     return (
@@ -257,7 +270,14 @@ const Vocabulary = () => {
                     Words Test
                     <ClosedButton onClick={() => setStartTestMode(false)}>X</ClosedButton>
                 </BarTestWrapper>
-                <TestedWord onClick={leftClickTestedWord} onContextMenu={rightClickTestedWord}>{showTestWord}</TestedWord>
+                <TestedWord
+                onClick={leftClickTestedWord}
+                onContextMenu={rightClickTestedWord}
+                >
+                
+                    {showTestWord}
+                
+                </TestedWord>
                 {showTestWord === "end of test" && <CreateButton onClick={showTestResults}>TEST RESULTS</CreateButton>}
             </TestWordWrapper>}
 
