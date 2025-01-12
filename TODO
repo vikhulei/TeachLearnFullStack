@@ -4,19 +4,6 @@ V O C A B U L A R Y
 FRONT-END
 Turn word green for tutor - separate screen
 
-thousandWords - {id: 504, word: "also", translat: "також", visibility: "hidden", tobeChecked: false, correctTutor : true, correctStudent: true}
-
-tenWords - 10 words in the main frame (filtered from a thousand) - 
-...val, engCorrect: false, ukrCorrect: false 
-
-checkWords - words selected by the students (array filtered from tenWord) - THE SAME PROPERTIES
-
-
-testWordsArr - words selected by the tutor (array mapped from checkWords)
-checkWords[i].word, checkWords[i].translat
-
-
-
 Show tutor's mark
 Create one more hundred
 Turn to green: words - tens - hundreds

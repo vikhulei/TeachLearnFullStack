@@ -39,21 +39,21 @@ const Vocabulary = () => {
         setTopNumbers(hundredsFrames.filter(val => val.number > 1000))
     }
 
-    const changeThousand = () => {
-        let e
-        if (thousand === "First Thousand") {
-            setThousand("Second Thousand")
-            setTopNumbers(hundredsFrames.filter(val => val.number > 1000))
-            localStorage.setItem("savedThousand", "Second Thousand")
-            e = { target: { name: 1100 } }
-        } else {
-            setThousand("First Thousand")
-            setTopNumbers(hundredsFrames.filter(val => val.number <= 1000))
-            localStorage.setItem("savedThousand", "First Thousand")
-            e = { target: { name: 100 } }
-        }
-        clickTopButton(e)
-    }
+    // const changeThousand = () => {
+    //     let e
+    //     if (thousand === "First Thousand") {
+    //         setThousand("Second Thousand")
+    //         setTopNumbers(hundredsFrames.filter(val => val.number > 1000))
+    //         localStorage.setItem("savedThousand", "Second Thousand")
+    //         e = { target: { name: 1100 } }
+    //     } else {
+    //         setThousand("First Thousand")
+    //         setTopNumbers(hundredsFrames.filter(val => val.number <= 1000))
+    //         localStorage.setItem("savedThousand", "First Thousand")
+    //         e = { target: { name: 100 } }
+    //     }
+    //     clickTopButton(e)
+    // }
 
     const fillTopButtons = (checkThousand) => {
         setTopNumbers([])
@@ -133,15 +133,15 @@ const Vocabulary = () => {
     }
 
 
-    const keyPressed = (e) => {
-        if(e.key === "y") {
-            console.log("Y is pressed")
-        } else if(e.key === "n") {
-            console.log("N is pressed")
-        } else {
-            return
-        }
-    }
+    // const keyPressed = (e) => {
+    //     if(e.key === "y") {
+    //         console.log("Y is pressed")
+    //     } else if(e.key === "n") {
+    //         console.log("N is pressed")
+    //     } else {
+    //         return
+    //     }
+    // }
 
 
     const rightClickTestedWord = (e) => {
