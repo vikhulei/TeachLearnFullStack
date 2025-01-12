@@ -25,4 +25,17 @@ RUN THE TEST
 3)  listOfWords - words, checked by student from tenWords
     Selected with useEffect and by pressing the checkboxes
     correctStudent === true
-4)  
+4)  testWordsArr - an array with only elements word and translat
+    from listOfWords
+5)  showTestWord - randomly selected word from testWordsArr
+
+thousandWords - {id: 504, word: "also", translat: "також", visibility: "hidden", tobeChecked: false, correctTutor : true, correctStudent: true}
+
+tenWords - 10 words in the main frame (filtered from a thousand) - 
+...val, engCorrect: false, ukrCorrect: false 
+
+checkWords - words selected by the students (array filtered from tenWord) - THE SAME PROPERTIES
+
+
+testWordsArr - words selected by the tutor (array mapped from checkWords)
+checkWords[i].word, checkWords[i].translat
