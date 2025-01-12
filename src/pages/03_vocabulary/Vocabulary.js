@@ -30,6 +30,15 @@ const Vocabulary = () => {
     const [testResults, setTestResults] = useState(false)
     const [randomNumber, setRandomNumber] = useState()
 
+
+    const setFirstThousand = () => {
+        setTopNumbers(hundredsFrames.filter(val => val.number <= 1000))
+    }
+
+    const setSecondThousand = () => {
+        setTopNumbers(hundredsFrames.filter(val => val.number > 1000))
+    }
+
     const changeThousand = () => {
         let e
         if (thousand === "First Thousand") {
@@ -333,8 +342,15 @@ const Vocabulary = () => {
                 </Frame>
                 <Frame>
                     <LargeButtonsWrapper>
-                        <LargeButton onClick={changeThousand} thousand={thousand} id="first">First Thousand</LargeButton>
-                        <LargeButton onClick={changeThousand} thousand={thousand} id="second">Second Thousand</LargeButton>
+                        <LargeButton
+                        onClick={setFirstThousand}
+                        // onClick={changeThousand}
+                        // thousand={thousand}
+                        // id="first"
+                        >
+                            First Thousand
+                        </LargeButton>
+                        <LargeButton onClick={setSecondThousand}>Second Thousand</LargeButton>
                     </LargeButtonsWrapper>
                     <NumberButtonWrapper>
                         {topNumbers.map((value, index) => (
