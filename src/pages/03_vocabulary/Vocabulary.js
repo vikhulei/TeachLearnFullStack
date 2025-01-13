@@ -32,10 +32,12 @@ const Vocabulary = () => {
 
 
     const setFirstThousand = () => {
+        setThousand("First Thousand")
         setTopNumbers(hundredsFrames.filter(val => val.number <= 1000))
     }
 
     const setSecondThousand = () => {
+        setThousand("Second Thousand")
         setTopNumbers(hundredsFrames.filter(val => val.number > 1000))
     }
 
@@ -247,7 +249,7 @@ const Vocabulary = () => {
             {/* 1. RUN THE TEST BUTTON */}
 
             <TestButtonsWrapper>
-                <TestButton onClick={runTheTest}>Run the test</TestButton>
+                <TestButton onClick={runTheTest}>Start the Test</TestButton>
             </TestButtonsWrapper>
 
             {/* 2. LIST OF WORDS WINDOW */}
@@ -345,12 +347,17 @@ const Vocabulary = () => {
                         <LargeButton
                         onClick={setFirstThousand}
                         // onClick={changeThousand}
-                        // thousand={thousand}
+                        thousand={thousand}
                         // id="first"
                         >
                             First Thousand
                         </LargeButton>
-                        <LargeButton onClick={setSecondThousand}>Second Thousand</LargeButton>
+                        <LargeButton
+                        thousand={thousand}
+                        onClick={setSecondThousand}
+                        >
+                            Second Thousand
+                        </LargeButton>
                     </LargeButtonsWrapper>
                     <NumberButtonWrapper>
                         {topNumbers.map((value, index) => (

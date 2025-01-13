@@ -307,10 +307,10 @@ const LargeButtonsWrapper = styled.div`
 
 const LargeButton = styled(GenericButton)`
     &:nth-of-type(1) {
-        border: ${({ thousand }) => thousand == "First Thousand" ? `${colors.greyBoldFrame} solid 3.5px` : ""}
+        border: ${({ thousand }) => thousand == "First Thousand" ? `${colors.greyBoldFrame} solid 4px` : ""}
     }
     &:nth-of-type(2) {
-        border: ${({ thousand }) => thousand == "Second Thousand" ? `${colors.greyBoldFrame} solid 3.5px` : ""}
+        border: ${({ thousand }) => thousand == "Second Thousand" ? `${colors.greyBoldFrame} solid 4px` : ""}
     }
 `
 
@@ -329,7 +329,7 @@ const NumberButtonWrapper = styled.div`
 const TopButton = styled(GenericButton)`
     width: 100px;
     &:nth-of-type(${({ topNumber }) => topNumber ? topNumber : "1"}) {
-        border: ${colors.greyBoldFrame} solid 3.5px;
+        border: ${colors.greyBoldFrame} solid 4px;
     }
     background-color: ${({ color }) => color == colors.green ? color : ""};
 `
@@ -337,7 +337,7 @@ const TopButton = styled(GenericButton)`
 const BottomButton = styled(GenericButton)`
     width: 100px;
     &:nth-of-type(${({ bottomNumber }) => bottomNumber ? bottomNumber : "1"}) {
-        border: ${colors.greyBoldFrame} solid 3.5px;
+        border: ${colors.greyBoldFrame} solid 4px;
     }
     background-color: ${({ color }) => color == colors.green ? color : ""};
 `
