@@ -1,6 +1,6 @@
 
 
-export const HundredWords = [
+export const TwoThousands = [
 
     {id: 1, word: "one", translat: "один", visibility: "hidden", tobeChecked: false, correctTutor : false, correctStudent: true},
     {id: 2, word: "apple", translat: "яблуко", visibility: "hidden", tobeChecked: false, correctTutor : false, correctStudent: true},

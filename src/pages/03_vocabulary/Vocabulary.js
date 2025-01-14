@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react"
 import { Wrapper, Header, HeaderText, Title, MainText, FramesWrapper, Frame, CheckWordWrapper, TestWordWrapper, TestButtonsWrapper, TestButton, CreateButton, LanguageButtonsWrapper, LanguageButton, Input, Word, WordCheck, WordSpan, WordSpanCheck, TranslatSpan, LargeButtonsWrapper, LargeButton, NumberButtonWrapper, TopButton, BottomButton, MarkButton, Mark, LargeCircle, MediumCircle, SmallCircle, ImageWrapper, Image, LineCircleTextWrapper, CircleTextWrapper, Circle, Line, CircleHeading, CircleText, CheckButton, BarTestWrapper, ClosedButton, TestedWord, CheckButtonFrame } from "./VocabularyStyle"
-import { HundredWords } from "../../components/01_config/HundredWords"
+import { TwoThousands } from "../../components/01_config/HundredWords"
 import picture from "../../assets/01_home/home.jpg"
 import { hundredsFrames } from "../../components/01_config/GreenFrames"
 import { tensFrames } from "../../components/01_config/GreenFrames"
@@ -12,12 +12,13 @@ import { colors } from "../../components/01_config/Colors"
 //.map(val => ({...val, engCorrect: false, ukrCorrect: false}))
 
 const Vocabulary = () => {
+    const [twoThousands, setTwoThousands] = useState(TwoThousands)
     const [thousand, setThousand] = useState("")
     const [topNumbers, setTopNumbers] = useState([])
     const [bottomNumbers, setBottomNumbers] = useState([])
     const [language, setLanguage] = useState("Eng")
     const [tenWords, setTenWords] = useState(
-        HundredWords.filter(val => val.id > 500 && val.id <= 510).map(val => ({ ...val, engCorrect: false, ukrCorrect: false }))
+        TwoThousands.filter(val => val.id > 500 && val.id <= 510).map(val => ({ ...val, engCorrect: false, ukrCorrect: false }))
     )
     const [listOfWords, setListOfWords] = useState([])
     const [topNumber, setTopNumber] = useState("1")
@@ -74,7 +75,7 @@ const Vocabulary = () => {
 
     const clickBottomButton = (e) => {
         setBottomNumber(Number(e.target.id) + 1 || 1)
-        setTenWords(HundredWords.filter(val => val.id > (Number(e.target.name) - 10) && val.id <= Number(e.target.name)))
+        setTenWords(twoThousands.filter(val => val.id > (Number(e.target.name) - 10) && val.id <= Number(e.target.name)))
     }
 
     const clickInputButton = (e) => {
@@ -104,10 +105,15 @@ const Vocabulary = () => {
     }
 
     const runTheTest = () => {
-        setStartTestMode(false)
-        setListOfWordsMode(true)
-        let newTenWords = tenWords.map(val => ({ ...val, engCorrect: false, ukrCorrect: false }))
-        setTenWords(newTenWords)
+        let ind = twoThousands.findIndex(obj => obj.id === 2)
+        console.log(ind)
+        let twoThousandsArr = [...twoThousands]
+        twoThousandsArr[ind].word = "orange"
+        setTwoThousands(twoThousandsArr)
+        // setStartTestMode(false)
+        // setListOfWordsMode(true)
+        // let newTenWords = tenWords.map(val => ({ ...val, engCorrect: false, ukrCorrect: false }))
+        // setTenWords(newTenWords)
     }
 
     const selectCheckedWords = (e) => {
@@ -205,7 +211,7 @@ const Vocabulary = () => {
     }, [])
 
     useEffect(() => {
-        setListOfWords(tenWords.filter(val => val.correctStudent === true))
+        setListOfWords(TwoThousands.filter(val => val.correctStudent === true))
     }, [tenWords])
 
     // useEffect(() => {
