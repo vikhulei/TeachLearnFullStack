@@ -13,7 +13,7 @@ import { colors } from "../../components/01_config/Colors"
 
 const Vocabulary = () => {
     const [twoThousand, setTwoThousand] = useState(TwoThousand)
-    const [thousand, setThousand] = useState("")
+    const [thousand, setThousand] = useState("First Thousand")
     const [topNumbers, setTopNumbers] = useState([])
     const [bottomNumbers, setBottomNumbers] = useState([])
     const [language, setLanguage] = useState("Eng")
@@ -32,31 +32,15 @@ const Vocabulary = () => {
     const [randomNumber, setRandomNumber] = useState()
 
 
-    const setFirstThousand = () => {
-        setThousand("First Thousand")
-        setTopNumbers(hundredsFrames.filter(val => val.number <= 1000))
+    const setThousandButton = (e) => {
+        let id = e.target.id
+        setThousand(id === "first" ? "First Thousand" : "Second Thousand")
+        setTopNumbers(id === "first" ? hundredsFrames.filter(val => val.number <= 1000) : hundredsFrames.filter(val => val.number > 1000))
+        setBottomNumbers(id === "first" ? tensFrames.filter(val => (val.number <= 100)) : tensFrames.filter(val => (val.number > 1000 && val.number <= 1100)))
+        setTenWords(id === "first" ? TwoThousand.filter(val => val.id <= 10) : TwoThousand.filter(val => val.id > 1000 && val.id <= 1010))
+        setTopNumber(1)
+        setBottomNumber(1)
     }
-
-    const setSecondThousand = () => {
-        setThousand("Second Thousand")
-        setTopNumbers(hundredsFrames.filter(val => val.number > 1000))
-    }
-
-    // const changeThousand = () => {
-    //     let e
-    //     if (thousand === "First Thousand") {
-    //         setThousand("Second Thousand")
-    //         setTopNumbers(hundredsFrames.filter(val => val.number > 1000))
-    //         localStorage.setItem("savedThousand", "Second Thousand")
-    //         e = { target: { name: 1100 } }
-    //     } else {
-    //         setThousand("First Thousand")
-    //         setTopNumbers(hundredsFrames.filter(val => val.number <= 1000))
-    //         localStorage.setItem("savedThousand", "First Thousand")
-    //         e = { target: { name: 100 } }
-    //     }
-    //     clickTopButton(e)
-    // }
 
     const fillTopButtons = (checkThousand) => {
         setTopNumbers([])
@@ -202,12 +186,18 @@ const Vocabulary = () => {
 
 
     useEffect(() => {
-        let savedThousand = localStorage.getItem("savedThousand") || "First Thousand"
-        setThousand(savedThousand)
-        fillTopButtons(savedThousand)
-        let e = { target: { name: localStorage.getItem("savedLeftNumber") || 100 } }
-        clickTopButton(e)
-        setTopNumber(1)
+        let e = {target: {id: "first"}}
+        setThousandButton(e)
+        // let savedThousand = localStorage.getItem("savedThousand") || "First Thousand"
+        // setThousand(savedThousand)
+        // fillTopButtons(savedThousand)
+        // let e = { target: { name: localStorage.getItem("savedLeftNumber") || 100 } }
+        // clickTopButton(e)
+        // fillTopButtons(thousand)
+        // setBottomNumbers()
+        // fillBottomButtons(thousand)
+        // setTopNumber(1)
+
     }, [])
 
     useEffect(() => {
@@ -351,16 +341,17 @@ const Vocabulary = () => {
                 <Frame>
                     <LargeButtonsWrapper>
                         <LargeButton
-                        onClick={setFirstThousand}
+                        onClick={setThousandButton}
                         // onClick={changeThousand}
                         thousand={thousand}
-                        // id="first"
+                        id="first"
                         >
                             First Thousand
                         </LargeButton>
                         <LargeButton
                         thousand={thousand}
-                        onClick={setSecondThousand}
+                        id="second"
+                        onClick={setThousandButton}
                         >
                             Second Thousand
                         </LargeButton>
