@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react"
-import { Wrapper, Header, HeaderText, Title, MainText, CheckWordWrapper, TestWordWrapper, TestButtonsWrapper, TestButton, CreateButton, WordCheck, WordSpanCheck, LargeCircle, MediumCircle, SmallCircle, ImageWrapper, Image, LineCircleTextWrapper, CircleTextWrapper, Circle, Line, CircleHeading, CircleText, CheckButton, BarTestWrapper, ClosedButton, TestedWord, CheckButtonFrame } from "./VocabularyStyle"
+import { Wrapper, Header, HeaderText, Title, MainText, FramesWrapper, Frame, CheckWordWrapper, TestWordWrapper, TestButtonsWrapper, TestButton, CreateButton, LanguageButtonsWrapper, LanguageButton, Input, Word, WordCheck, WordSpan, WordSpanCheck, TranslatSpan, LargeButtonsWrapper, LargeButton, NumberButtonWrapper, TopButton, BottomButton, MarkButton, Mark, LargeCircle, MediumCircle, SmallCircle, ImageWrapper, Image, LineCircleTextWrapper, CircleTextWrapper, Circle, Line, CircleHeading, CircleText, CheckButton, BarTestWrapper, ClosedButton, TestedWord, CheckButtonFrame } from "./VocabularyStyle"
 import { TwoThousand } from "../../components/01_config/TwoThousand"
 import picture from "../../assets/01_home/home.jpg"
+import { hundredsFrames } from "../../components/01_config/GreenFrames"
+import { tensFrames } from "../../components/01_config/GreenFrames"
 import { colors } from "../../components/01_config/Colors"
 import FrameComponent from "./01_frames/Frame"
 
@@ -12,11 +14,17 @@ import FrameComponent from "./01_frames/Frame"
 
 const Vocabulary = () => {
     const [twoThousand, setTwoThousand] = useState(TwoThousand)
+    const [thousand, setThousand] = useState("First Thousand")
+    const [topNumbers, setTopNumbers] = useState([])
+    const [bottomNumbers, setBottomNumbers] = useState([])
+    const [language, setLanguage] = useState("Eng")
     const [tenWords, setTenWords] = useState(
         TwoThousand.filter(val => val.id > 500 && val.id <= 510).map(val => ({ ...val, engCorrect: false, ukrCorrect: false }))
     )
     const [listOfWords, setListOfWords] = useState([])
-    // const [framesInactive, setFramesInactive] = useState(false)
+    const [topNumber, setTopNumber] = useState("1")
+    const [bottomNumber, setBottomNumber] = useState("1")
+    const [framesInactive, setFramesInactive] = useState(false)
     const [startTestMode, setStartTestMode] = useState(false)
     const [listOfWordsMode, setListOfWordsMode] = useState(false)
     const [testWordsArr, setTestWordsArr] = useState([])
@@ -25,14 +33,61 @@ const Vocabulary = () => {
     const [randomNumber, setRandomNumber] = useState()
 
 
-    // const fillTopButtons = (checkThousand) => {
-    //     setTopNumbers([])
-    //     if (checkThousand === "First Thousand") {
-    //         setTopNumbers(hundredsFrames.filter(val => val.number <= 1000))
-    //     } else {
-    //         setTopNumbers(hundredsFrames.filter(val => val.number > 1000))
-    //     }
-    // }
+    const setThousandButton = (e) => {
+        let id = e.target.id
+        setThousand(id === "first" ? "First Thousand" : "Second Thousand")
+        setTopNumbers(id === "first" ? hundredsFrames.filter(val => val.number <= 1000) : hundredsFrames.filter(val => val.number > 1000))
+        setBottomNumbers(id === "first" ? tensFrames.filter(val => (val.number <= 100)) : tensFrames.filter(val => (val.number > 1000 && val.number <= 1100)))
+        setTenWords(id === "first" ? TwoThousand.filter(val => val.id <= 10) : TwoThousand.filter(val => val.id > 1000 && val.id <= 1010))
+        setTopNumber(1)
+        setBottomNumber(1)
+    }
+
+    const fillTopButtons = (checkThousand) => {
+        setTopNumbers([])
+        if (checkThousand === "First Thousand") {
+            setTopNumbers(hundredsFrames.filter(val => val.number <= 1000))
+        } else {
+            setTopNumbers(hundredsFrames.filter(val => val.number > 1000))
+        }
+    }
+
+    const clickTopButton = (e) => {
+        setTopNumber(Number(e.target.id) + 1 || 1)
+        localStorage.setItem("savedLeftNumber", Number(e.target.name))
+        setBottomNumbers(tensFrames.filter(val => (val.number <= Number(e.target.name) && val.number > (Number(e.target.name) - 100))))
+    }
+
+    const clickBottomButton = (e) => {
+        setBottomNumber(Number(e.target.id) + 1 || 1)
+        setTenWords(twoThousand.filter(val => val.id > (Number(e.target.name) - 10) && val.id <= Number(e.target.name)))
+    }
+
+    const clickInputButton = (e) => {
+        let newArr = [...tenWords]
+        newArr[e.target.id].correctStudent = !newArr[e.target.id].correctStudent
+        setTenWords(newArr)
+    }
+
+    const fillInput = (e) => {
+        let newArr = [...tenWords]
+        newArr[e.target.id].input = e.target.value
+        setTenWords(newArr)
+    }
+
+    const clickWord = (e) => {
+        setTenWords(tenWords.map(val =>
+            val.id === Number(e.target.id) ? { ...val, visibility: val.visibility === "hidden" ? "visible" : "hidden" } : val
+        ))
+    }
+
+    const clickLanguage = (e) => {
+        if (e.target.id === "Eng") {
+            setLanguage("Eng")
+        } else {
+            setLanguage("Ukr")
+        }
+    }
 
     const runTheTest = () => {
         let ind = twoThousand.findIndex(obj => obj.id === 2)
@@ -131,20 +186,20 @@ const Vocabulary = () => {
     }
 
 
-    // useEffect(() => {
-    //     let e = {target: {id: "first"}}
-    //     setThousandButton(e)
-    //     // let savedThousand = localStorage.getItem("savedThousand") || "First Thousand"
-    //     // setThousand(savedThousand)
-    //     // fillTopButtons(savedThousand)
-    //     // let e = { target: { name: localStorage.getItem("savedLeftNumber") || 100 } }
-    //     // clickTopButton(e)
-    //     // fillTopButtons(thousand)
-    //     // setBottomNumbers()
-    //     // fillBottomButtons(thousand)
-    //     // setTopNumber(1)
+    useEffect(() => {
+        let e = {target: {id: "first"}}
+        setThousandButton(e)
+        // let savedThousand = localStorage.getItem("savedThousand") || "First Thousand"
+        // setThousand(savedThousand)
+        // fillTopButtons(savedThousand)
+        // let e = { target: { name: localStorage.getItem("savedLeftNumber") || 100 } }
+        // clickTopButton(e)
+        // fillTopButtons(thousand)
+        // setBottomNumbers()
+        // fillBottomButtons(thousand)
+        // setTopNumber(1)
 
-    // }, [])
+    }, [])
 
     useEffect(() => {
         setListOfWords(TwoThousand.filter(val => val.correctStudent === true))
@@ -250,16 +305,8 @@ const Vocabulary = () => {
             </CheckWordWrapper>}
 
             {/* ------------------START OF FRAME--------------- */}
-            
-            <FrameComponent 
-                startTestMode={startTestMode}
-                listOfWordsMode={listOfWordsMode}
-                twoThousand={twoThousand}
-                tenWords={tenWords}
-                setTenWords={tenWords}
-            />
 
-            {/* <FramesWrapper startTestMode={startTestMode} listOfWordsMode={listOfWordsMode}>
+            <FramesWrapper startTestMode={startTestMode} listOfWordsMode={listOfWordsMode}>
                 <Frame>
                     <LanguageButtonsWrapper>
                         <LanguageButton onClick={clickLanguage} language={language} id="Eng">English</LanguageButton>
@@ -327,7 +374,7 @@ const Vocabulary = () => {
                         <MarkButton> Tutor's mark <Mark>64%</Mark></MarkButton>
                     </LargeButtonsWrapper>
                 </Frame>
-            </FramesWrapper> */}
+            </FramesWrapper>
 
             {/* ------------------END OF FRAME--------------- */}
 

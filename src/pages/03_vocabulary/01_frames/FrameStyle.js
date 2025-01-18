@@ -1,0 +1,199 @@
+import styled, { css } from "styled-components";
+import { GenericButton } from "../VocabularyStyle"
+import { colors } from "../../../components/01_config/Colors";
+
+const FramesWrapper = styled.div`
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 7vw;
+    z-index: 20;
+    opacity: ${({ startTestMode, checkWordsMode }) => startTestMode || checkWordsMode ? "0.4" : "1"};
+`
+
+const Frame = styled.div`
+    box-sizing: border-box;
+    width: 500px;
+    padding: 15px 30px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+    background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0px 0px 10px #D6C9C9;
+    &:last-of-type {
+       padding: 0px 0 0px;
+       gap: 0;
+       justify-items: stretch;
+    }
+`
+
+const CheckButton = styled(GenericButton)`
+    width: 24px;
+    height: 24px;
+    margin-right: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+`
+
+const disabledCheckButton = css`
+    pointer-events: none;
+    border-width: 0px;
+    &:hover {
+        font-size: 0.75rem;
+        border-width: 0px;
+        cursor: initial;
+    };
+    &:active {
+        transform: translate(0, 0);
+    };
+    background-color: #E3E3E3;
+`
+
+const CheckButtonFrame = styled(CheckButton)`
+    background-color: ${({ correctStudent }) => correctStudent ? colors.green : ""}
+    ${({ correctTutor }) => correctTutor ? disabledCheckButton : ""}
+`
+
+const LanguageButtonsWrapper = styled.div`
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+    margin-bottom: 00px;
+`
+
+const LanguageButton = styled.button`
+    width: 100px;
+    height: 30px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    &:nth-of-type(1) {
+        border-bottom: ${({ language }) => language == "Eng" ? "solid black 1px" : "none"};
+    }
+    &:nth-of-type(2) {
+        border-bottom: ${({ language }) => language == "Ukr" ? "solid black 1px" : "none"};
+    }
+    &:hover {
+        font-weight: 600;
+        border-width: 2px;
+    }
+`
+
+const Input = styled.input`
+    position: relative;
+    width: 150px;
+    height: 24px;
+    margin-right: 25px;
+    background-color: lightgrey;
+`
+
+const Word = styled.div`
+    user-select: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+`
+
+const WordCheck = styled(Word)`
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    text-align: left;
+    height: 20px;
+`
+
+const WordSpan = styled.span`
+    margin-right: 5px;
+    cursor: pointer;
+    &:hover {
+        font-weight: 750;
+    }
+`
+
+const WordSpanCheck = styled(WordSpan)`
+    font-size: 1.3rem;
+    cursor: default;
+    flex: 1;
+    &:hover {
+        font-weight: 600;
+    }
+`
+
+const TranslatSpan = styled.span`
+    color: red;
+    font-weight: 600;
+        &:hover {
+        font-weight: 750;
+    }
+`
+
+
+
+const LargeButtonsWrapper = styled.div`
+    box-sizing: content-box;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: solid lightgrey 2px;
+`
+
+const LargeButton = styled(GenericButton)`
+    &:nth-of-type(1) {
+        border: ${({ thousand }) => thousand == "First Thousand" ? `${colors.greyBoldFrame} solid 4px` : ""}
+    }
+    &:nth-of-type(2) {
+        border: ${({ thousand }) => thousand == "Second Thousand" ? `${colors.greyBoldFrame} solid 4px` : ""}
+    }
+`
+
+const NumberButtonWrapper = styled.div`
+    padding: 20px 0;
+    display: flex;
+    flex: 1;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid lightgrey 2px;
+
+`
+
+const TopButton = styled(GenericButton)`
+    width: 100px;
+    &:nth-of-type(${({ topNumber }) => topNumber ? topNumber : "1"}) {
+        border: ${colors.greyBoldFrame} solid 4px;
+    }
+    background-color: ${({ color }) => color == colors.green ? color : ""};
+`
+
+const BottomButton = styled(GenericButton)`
+    width: 100px;
+    &:nth-of-type(${({ bottomNumber }) => bottomNumber ? bottomNumber : "1"}) {
+        border: ${colors.greyBoldFrame} solid 4px;
+    }
+    background-color: ${({ color }) => color == colors.green ? color : ""};
+`
+
+const MarkButton = styled(GenericButton)`
+    cursor: initial;
+    border: none;
+    &:hover {
+        font-size: 0.75rem;
+    }
+    &:active {
+        transform: translate(none);
+    }
+`
+
+const Mark = styled.span`
+
+`
+
+export { FramesWrapper, Frame, CheckButton, CheckButtonFrame, LanguageButtonsWrapper, LanguageButton, Input, Word, WordCheck, WordSpan, WordSpanCheck, TranslatSpan, LargeButtonsWrapper, LargeButton, NumberButtonWrapper, TopButton, BottomButton, MarkButton, Mark }
