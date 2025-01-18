@@ -5,10 +5,6 @@ import picture from "../../assets/01_home/home.jpg"
 import { colors } from "../../components/01_config/Colors"
 import FrameComponent from "./01_frames/Frame"
 
-// const TenWords = HundredWords.filter(val => val.id > 500 && val.id <= 510)
-// const listOfWords = TenWords.filter(val => val.correctStudent === true)
-
-//.map(val => ({...val, engCorrect: false, ukrCorrect: false}))
 
 const Vocabulary = () => {
     const [twoThousand, setTwoThousand] = useState(TwoThousand)
@@ -16,7 +12,6 @@ const Vocabulary = () => {
         TwoThousand.filter(val => val.id > 500 && val.id <= 510).map(val => ({ ...val, engCorrect: false, ukrCorrect: false }))
     )
     const [listOfWords, setListOfWords] = useState([])
-    // const [framesInactive, setFramesInactive] = useState(false)
     const [startTestMode, setStartTestMode] = useState(false)
     const [listOfWordsMode, setListOfWordsMode] = useState(false)
     const [testWordsArr, setTestWordsArr] = useState([])
@@ -25,25 +20,12 @@ const Vocabulary = () => {
     const [randomNumber, setRandomNumber] = useState()
 
 
-    // const fillTopButtons = (checkThousand) => {
-    //     setTopNumbers([])
-    //     if (checkThousand === "First Thousand") {
-    //         setTopNumbers(hundredsFrames.filter(val => val.number <= 1000))
-    //     } else {
-    //         setTopNumbers(hundredsFrames.filter(val => val.number > 1000))
-    //     }
-    // }
-
     const runTheTest = () => {
         let ind = twoThousand.findIndex(obj => obj.id === 2)
         console.log(ind)
         let twoThousandArr = [...twoThousand]
         twoThousandArr[ind].word = "orange"
         setTwoThousand(twoThousandArr)
-        // setStartTestMode(false)
-        // setListOfWordsMode(true)
-        // let newTenWords = tenWords.map(val => ({ ...val, engCorrect: false, ukrCorrect: false }))
-        // setTenWords(newTenWords)
     }
 
     const selectCheckedWords = (e) => {
@@ -69,18 +51,6 @@ const Vocabulary = () => {
         setStartTestMode(true)
         setShowTestWord("LET'S BEGIN")
     }
-
-
-    // const keyPressed = (e) => {
-    //     if(e.key === "y") {
-    //         console.log("Y is pressed")
-    //     } else if(e.key === "n") {
-    //         console.log("N is pressed")
-    //     } else {
-    //         return
-    //     }
-    // }
-
 
     const rightClickTestedWord = (e) => {
 
@@ -131,52 +101,9 @@ const Vocabulary = () => {
     }
 
 
-    // useEffect(() => {
-    //     let e = {target: {id: "first"}}
-    //     setThousandButton(e)
-    //     // let savedThousand = localStorage.getItem("savedThousand") || "First Thousand"
-    //     // setThousand(savedThousand)
-    //     // fillTopButtons(savedThousand)
-    //     // let e = { target: { name: localStorage.getItem("savedLeftNumber") || 100 } }
-    //     // clickTopButton(e)
-    //     // fillTopButtons(thousand)
-    //     // setBottomNumbers()
-    //     // fillBottomButtons(thousand)
-    //     // setTopNumber(1)
-
-    // }, [])
-
     useEffect(() => {
         setListOfWords(TwoThousand.filter(val => val.correctStudent === true))
     }, [tenWords])
-
-    // useEffect(() => {
-    //     if (showTestWord === "LET'S BEGIN") {
-    //         clickTestedWord()
-    //     }
-    // }, [showTestWord])
-
-
-    // function handleKeyDown(e) {
-    //     if(startTestMode === true) {
-    //         if(e.keyCode === 89) {   //Yes pressed
-    //             leftClickTestedWord()
-    //         } else if (e.keyCode === 78) { //No pressed
-    //             rightClickTestedWord()
-    //         }
-    //     } else {
-    //     }
-    // }
-
-//   useEffect(() => {
-
-//     document.addEventListener('keydown', handleKeyDown);
-
-//     return function cleanup() {
-//       document.removeEventListener('keydown', handleKeyDown);
-//     }
-//   }, [startTestMode]);
-
 
     return (
         <Wrapper>
@@ -256,78 +183,9 @@ const Vocabulary = () => {
                 listOfWordsMode={listOfWordsMode}
                 twoThousand={twoThousand}
                 tenWords={tenWords}
-                setTenWords={tenWords}
+                setTenWords={setTenWords}
+                TwoThousand={TwoThousand}
             />
-
-            {/* <FramesWrapper startTestMode={startTestMode} listOfWordsMode={listOfWordsMode}>
-                <Frame>
-                    <LanguageButtonsWrapper>
-                        <LanguageButton onClick={clickLanguage} language={language} id="Eng">English</LanguageButton>
-                        <LanguageButton onClick={clickLanguage} language={language} id="Ukr">Ukrainian</LanguageButton>
-                    </LanguageButtonsWrapper>
-                    {tenWords.map((value, index) => (
-                        <Word key={index} >
-                            <CheckButtonFrame
-                                onClick={clickInputButton}
-                                correctStudent = {value.correctStudent}
-                                correctTutor = {value.correctTutor}
-                                id={index}
-                                // style={{ "backgroundColor": value.correctStudent ? colors.green : "" ,
-                                 
-                                // }}
-                            >
-                            </CheckButtonFrame>
-                            <Input
-                                type="text"
-                                data-input={value.input}
-                                data-translat={value.translat}
-                                data-word={value.word}
-                                autocomplete="off"
-                                id={index}
-                                style={{ "backgroundColor": (language === "Ukr" && value.input === value.word) || (language === "Eng" && value.input === value.translat) ? `${colors.green}` : "" }}
-                                value={value.input}
-                                onInput={fillInput}
-                            />
-                            <WordSpan style={{ color: value.correctTutor ? colors.greenWord : "black" }} id={value.id} onClick={clickWord}> {value.id}. {language === "Eng" ? value.word : value.translat}</WordSpan> <TranslatSpan style={{ "visibility": value.visibility }}>{language === "Eng" ? value.translat : value.word}</TranslatSpan>
-                        </Word>
-                    ))}
-                </Frame>
-                <Frame>
-                    <LargeButtonsWrapper>
-                        <LargeButton
-                        onClick={setThousandButton}
-                        // onClick={changeThousand}
-                        thousand={thousand}
-                        id="first"
-                        >
-                            First Thousand
-                        </LargeButton>
-                        <LargeButton
-                        thousand={thousand}
-                        id="second"
-                        onClick={setThousandButton}
-                        >
-                            Second Thousand
-                        </LargeButton>
-                    </LargeButtonsWrapper>
-                    <NumberButtonWrapper>
-                        {topNumbers.map((value, index) => (
-                            <TopButton key={index} name={value.number} topNumber={topNumber} id={index} color={value.color} onClick={clickTopButton}>{value.number}</TopButton>
-                        ))
-                        }
-                    </NumberButtonWrapper>
-                    <NumberButtonWrapper>
-                        {bottomNumbers.map((value, index) => (
-                            <BottomButton key={index} id={index} name={value.number} bottomNumber={bottomNumber} color={value.color} onClick={clickBottomButton}>{value.number}</BottomButton>
-                        ))
-                        }
-                    </NumberButtonWrapper>
-                    <LargeButtonsWrapper>
-                        <MarkButton> Student's mark <Mark>72%</Mark></MarkButton>
-                        <MarkButton> Tutor's mark <Mark>64%</Mark></MarkButton>
-                    </LargeButtonsWrapper>
-                </Frame>
-            </FramesWrapper> */}
 
             {/* ------------------END OF FRAME--------------- */}
 

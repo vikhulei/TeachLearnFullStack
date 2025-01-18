@@ -4,8 +4,7 @@ import { hundredsFrames } from "../../../components/01_config/GreenFrames"
 import { tensFrames } from "../../../components/01_config/GreenFrames"
 import { colors } from "../../../components/01_config/Colors"
 
-
-const FrameComponent = ({startTestMode, listOfWordsMode, twoThousand, tenWords, setTenWords }) => {
+const FrameComponent = ({TwoThousand, startTestMode, listOfWordsMode, twoThousand, tenWords, setTenWords }) => {
 
     const [thousand, setThousand] = useState("First Thousand")
     const [topNumbers, setTopNumbers] = useState([])
@@ -20,7 +19,7 @@ const FrameComponent = ({startTestMode, listOfWordsMode, twoThousand, tenWords, 
         setThousand(id === "first" ? "First Thousand" : "Second Thousand")
         setTopNumbers(id === "first" ? hundredsFrames.filter(val => val.number <= 1000) : hundredsFrames.filter(val => val.number > 1000))
         setBottomNumbers(id === "first" ? tensFrames.filter(val => (val.number <= 100)) : tensFrames.filter(val => (val.number > 1000 && val.number <= 1100)))
-        setTenWords(id === "first" ? twoThousand.filter(val => val.id <= 10) : twoThousand.filter(val => val.id > 1000 && val.id <= 1010))
+        setTenWords(id === "first" ? TwoThousand.filter(val => val.id <= 10) : TwoThousand.filter(val => val.id > 1000 && val.id <= 1010))
         setTopNumber(1)
         setBottomNumber(1)
     }
@@ -54,7 +53,6 @@ const FrameComponent = ({startTestMode, listOfWordsMode, twoThousand, tenWords, 
 
     const clickTopButton = (e) => {
         setTopNumber(Number(e.target.id) + 1 || 1)
-        // localStorage.setItem("savedLeftNumber", Number(e.target.name))
         setBottomNumbers(tensFrames.filter(val => (val.number <= Number(e.target.name) && val.number > (Number(e.target.name) - 100))))
     }
 
@@ -63,10 +61,10 @@ const FrameComponent = ({startTestMode, listOfWordsMode, twoThousand, tenWords, 
         setTenWords(twoThousand.filter(val => val.id > (Number(e.target.name) - 10) && val.id <= Number(e.target.name)))
     }
 
-    // useEffect(() => {
-    //     let e = {target: {id: "first"}}
-    //     setThousandButton(e)
-    // }, [])
+    useEffect(() => {
+        let e = {target: {id: "first"}}
+        setThousandButton(e)
+    }, [])
 
   return (
 <FramesWrapper startTestMode={startTestMode} listOfWordsMode={listOfWordsMode}>
@@ -82,9 +80,6 @@ const FrameComponent = ({startTestMode, listOfWordsMode, twoThousand, tenWords, 
                                 correctStudent = {value.correctStudent}
                                 correctTutor = {value.correctTutor}
                                 id={index}
-                                // style={{ "backgroundColor": value.correctStudent ? colors.green : "" ,
-                                 
-                                // }}
                             >
                             </CheckButtonFrame>
                             <Input
@@ -106,7 +101,6 @@ const FrameComponent = ({startTestMode, listOfWordsMode, twoThousand, tenWords, 
                     <LargeButtonsWrapper>
                         <LargeButton
                         onClick={setThousandButton}
-                        // onClick={changeThousand}
                         thousand={thousand}
                         id="first"
                         >
