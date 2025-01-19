@@ -11,11 +11,16 @@ const Test = ({ twoThousand, setTwoThousand, tenWords, setTenWords, startTestMod
     const [randomNumber, setRandomNumber] = useState()
 
     const runTheTest = () => {
-        let ind = twoThousand.findIndex(obj => obj.id === 2)
-        console.log(ind)
-        let twoThousandArr = [...twoThousand]
-        twoThousandArr[ind].word = "orange"
-        setTwoThousand(twoThousandArr)
+        // let ind = twoThousand.findIndex(obj => obj.id === 2)
+        // console.log(ind)
+        // let twoThousandArr = [...twoThousand]
+        // twoThousandArr[ind].word = "orange"
+        // setTwoThousand(twoThousandArr)
+
+        setStartTestMode(false)
+        setListOfWordsMode(true)
+        let newTenWords = tenWords.map(val => ({ ...val, engCorrect: false, ukrCorrect: false }))
+        setTenWords(newTenWords)
     }
 
     const selectCheckedWords = (e) => {
@@ -43,13 +48,10 @@ const Test = ({ twoThousand, setTwoThousand, tenWords, setTenWords, startTestMod
     }
 
     const rightClickTestedWord = (e) => {
-
         e.preventDefault()
-
         if (testWordsArr.length === 0) {
             return setShowTestWord("end of test")
         }
-
         let n = Math.floor(Math.random() * testWordsArr.length)
         let indexUkr = tenWords.map(val => val.translat).indexOf(testWordsArr[n])
         let indexEng = tenWords.map(val => val.word).indexOf(testWordsArr[n])
@@ -62,10 +64,7 @@ const Test = ({ twoThousand, setTwoThousand, tenWords, setTenWords, startTestMod
     }
 
     const leftClickTestedWord = (e) => {
-
-
         rightClickTestedWord(e)
-
         if (randomNumber.length !== 0) {
             let checkIndexUkr = randomNumber[0]
             let checkIndexEng = randomNumber[1]
@@ -101,7 +100,7 @@ const Test = ({ twoThousand, setTwoThousand, tenWords, setTenWords, startTestMod
             {/* 1. RUN THE TEST BUTTON */}
 
             <TestButtonsWrapper>
-                <TestButton onClick={clickStartTest}>Start the Test</TestButton>
+                <TestButton onClick={runTheTest}>Start the Test</TestButton>
             </TestButtonsWrapper>
 
             {/* 2. LIST OF WORDS WINDOW */}

@@ -4,7 +4,7 @@ import { hundredsFrames } from "../../../components/01_config/GreenFrames"
 import { tensFrames } from "../../../components/01_config/GreenFrames"
 import { colors } from "../../../components/01_config/Colors"
 
-const FrameComponent = ({ TwoThousand, startTestMode, listOfWordsMode, twoThousand, tenWords, setTenWords }) => {
+const FrameComponent = ({ TwoThousand, startTestMode, listOfWordsMode, twoThousand, setTwoThousand, tenWords, setTenWords }) => {
 
     const [thousand, setThousand] = useState("First Thousand")
     const [topNumbers, setTopNumbers] = useState([])
@@ -33,9 +33,9 @@ const FrameComponent = ({ TwoThousand, startTestMode, listOfWordsMode, twoThousa
     }
 
     const clickInputButton = (e) => {
-        let newArr = [...tenWords]
+        let newArr = [...twoThousand]
         newArr[e.target.id].correctStudent = !newArr[e.target.id].correctStudent
-        setTenWords(newArr)
+        setTwoThousand(newArr)
     }
 
     const fillInput = (e) => {

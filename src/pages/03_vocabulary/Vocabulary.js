@@ -40,6 +40,7 @@ const Vocabulary = () => {
                 startTestMode={startTestMode}
                 listOfWordsMode={listOfWordsMode}
                 twoThousand={twoThousand}
+                setTwoThousand={setTwoThousand}
                 tenWords={tenWords}
                 setTenWords={setTenWords}
                 TwoThousand={TwoThousand}
