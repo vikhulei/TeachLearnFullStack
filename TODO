@@ -3,9 +3,9 @@ V O C A B U L A R Y
 
 FRONT-END
 Re-code tenWords to twoThousand
-Add input field to Two Thousand
 Re-code tensFrames and hundredFrames
-Show percentage
+Code green shading of top and bottom buttons
+Show number of correct words + percentage
 Turn to green: words - tens - hundreds
 
 BACK-END

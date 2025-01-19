@@ -22,6 +22,7 @@ const FrameComponent = ({ TwoThousand, startTestMode, listOfWordsMode, twoThousa
         setTenWords(id === "first" ? TwoThousand.filter(val => val.id <= 10) : TwoThousand.filter(val => val.id > 1000 && val.id <= 1010))
         setTopNumber(1)
         setBottomNumber(1)
+        setBottomButtonValue(id === "first" ? 10 : 1010)
     }
 
     const clickLanguage = (e) => {
@@ -54,6 +55,8 @@ const FrameComponent = ({ TwoThousand, startTestMode, listOfWordsMode, twoThousa
     const clickTopButton = (e) => {
         setTopNumber(Number(e.target.id) + 1 || 1)
         setBottomNumbers(tensFrames.filter(val => (val.number <= Number(e.target.name) && val.number > (Number(e.target.name) - 100))))
+        setBottomButtonValue(Number(e.target.name) + 10)
+        setBottomNumber(1)
     }
 
     const clickBottomButton = (e) => {
