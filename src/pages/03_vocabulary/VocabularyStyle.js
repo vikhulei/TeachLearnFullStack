@@ -1,6 +1,5 @@
 import styled, { css } from "styled-components";
 import { sizes } from "../../components/01_config/Sizes";
-import vocabulary from "../../assets/02_vocabulary/vocabulary.jpg"
 import { colors } from "../../components/01_config/Colors"
 
 const Wrapper = styled.div`
@@ -129,7 +128,6 @@ const CreateButton = styled(TestButton)`
     font-weight: bold;
     color: white;
     background-color: ${colors.mainDark};
-
 `
 
 const FramesWrapper = styled.div`

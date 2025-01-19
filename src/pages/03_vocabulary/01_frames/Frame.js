@@ -1,17 +1,17 @@
 import { useState, useEffect } from "react"
-import { FramesWrapper, Frame, CheckButtonFrame,  LanguageButtonsWrapper, LanguageButton, Input, Word, WordSpan, TranslatSpan, LargeButtonsWrapper, LargeButton, NumberButtonWrapper, TopButton, BottomButton, MarkButton, Mark } from "./FrameStyle"
+import { FramesWrapper, Frame, CheckButtonFrame, LanguageButtonsWrapper, LanguageButton, Input, Word, WordSpan, TranslatSpan, LargeButtonsWrapper, LargeButton, NumberButtonWrapper, TopButton, BottomButton, MarkButton, Mark } from "./FrameStyle"
 import { hundredsFrames } from "../../../components/01_config/GreenFrames"
 import { tensFrames } from "../../../components/01_config/GreenFrames"
 import { colors } from "../../../components/01_config/Colors"
 
-const FrameComponent = ({TwoThousand, startTestMode, listOfWordsMode, twoThousand, tenWords, setTenWords }) => {
+const FrameComponent = ({ TwoThousand, startTestMode, listOfWordsMode, twoThousand, tenWords, setTenWords }) => {
 
     const [thousand, setThousand] = useState("First Thousand")
     const [topNumbers, setTopNumbers] = useState([])
     const [bottomNumbers, setBottomNumbers] = useState([])
     const [topNumber, setTopNumber] = useState("1")
     const [bottomNumber, setBottomNumber] = useState("1")
-    const [language, setLanguage] = useState("Eng")    
+    const [language, setLanguage] = useState("Eng")
 
 
     const setThousandButton = (e) => {
@@ -62,78 +62,78 @@ const FrameComponent = ({TwoThousand, startTestMode, listOfWordsMode, twoThousan
     }
 
     useEffect(() => {
-        let e = {target: {id: "first"}}
+        let e = { target: { id: "first" } }
         setThousandButton(e)
-        setTenWords(TwoThousand.filter(val => val.id <= 10).map(val => ({ ...val, engCorrect: false, ukrCorrect: false })))
     }, [])
 
-  return (
-<FramesWrapper startTestMode={startTestMode} listOfWordsMode={listOfWordsMode}>
-                <Frame>
-                    <LanguageButtonsWrapper>
-                        <LanguageButton onClick={clickLanguage} language={language} id="Eng">English</LanguageButton>
-                        <LanguageButton onClick={clickLanguage} language={language} id="Ukr">Ukrainian</LanguageButton>
-                    </LanguageButtonsWrapper>
-                    {tenWords.map((value, index) => (
-                        <Word key={index} >
-                            <CheckButtonFrame
-                                onClick={clickInputButton}
-                                correctStudent = {value.correctStudent}
-                                correctTutor = {value.correctTutor}
-                                id={index}
-                            >
-                            </CheckButtonFrame>
-                            <Input
-                                type="text"
-                                data-input={value.input}
-                                data-translat={value.translat}
-                                data-word={value.word}
-                                autocomplete="off"
-                                id={index}
-                                style={{ "backgroundColor": (language === "Ukr" && value.input === value.word) || (language === "Eng" && value.input === value.translat) ? `${colors.green}` : "" }}
-                                value={value.input}
-                                onInput={fillInput}
-                            />
-                            <WordSpan style={{ color: value.correctTutor ? colors.greenWord : "black" }} id={value.id} onClick={clickWord}> {value.id}. {language === "Eng" ? value.word : value.translat}</WordSpan> <TranslatSpan style={{ "visibility": value.visibility }}>{language === "Eng" ? value.translat : value.word}</TranslatSpan>
-                        </Word>
-                    ))}
-                </Frame>
-                <Frame>
-                    <LargeButtonsWrapper>
-                        <LargeButton
+    return (
+        <FramesWrapper startTestMode={startTestMode} listOfWordsMode={listOfWordsMode}>
+            <Frame>
+                <LanguageButtonsWrapper>
+                    <LanguageButton onClick={clickLanguage} language={language} id="Eng">English</LanguageButton>
+                    <LanguageButton onClick={clickLanguage} language={language} id="Ukr">Ukrainian</LanguageButton>
+                </LanguageButtonsWrapper>
+                {tenWords.map((value, index) => (
+                    <Word key={index} >
+                        <CheckButtonFrame
+                            onClick={clickInputButton}
+                            correctStudent={value.correctStudent}
+                            correctTutor={value.correctTutor}
+                            id={index}
+                        >
+                        </CheckButtonFrame>
+                        <Input
+                            type="text"
+                            data-input={value.input}
+                            data-translat={value.translat}
+                            data-word={value.word}
+                            autocomplete="off"
+                            id={index}
+                            style={{ "backgroundColor": (language === "Ukr" && value.input === value.word) || (language === "Eng" && value.input === value.translat) ? `${colors.green}` : "" }}
+                            value={value.input}
+                            onInput={fillInput}
+                        />
+                        <WordSpan style={{ color: value.correctTutor ? colors.greenWord : "black" }} id={value.id} onClick={clickWord}> {value.id}. {language === "Eng" ? value.word : value.translat}</WordSpan> <TranslatSpan style={{ "visibility": value.visibility }}>{language === "Eng" ? value.translat : value.word}</TranslatSpan>
+                    </Word>
+                ))}
+            </Frame>
+            <Frame>
+                <LargeButtonsWrapper>
+                    <LargeButton
                         onClick={setThousandButton}
                         thousand={thousand}
                         id="first"
-                        >
-                            First Thousand
-                        </LargeButton>
-                        <LargeButton
+                    >
+                        First Thousand
+                    </LargeButton>
+                    <LargeButton
                         thousand={thousand}
                         id="second"
                         onClick={setThousandButton}
-                        >
-                            Second Thousand
-                        </LargeButton>
-                    </LargeButtonsWrapper>
-                    <NumberButtonWrapper>
-                        {topNumbers.map((value, index) => (
-                            <TopButton key={index} name={value.number} topNumber={topNumber} id={index} color={value.color} onClick={clickTopButton}>{value.number}</TopButton>
-                        ))
-                        }
-                    </NumberButtonWrapper>
-                    <NumberButtonWrapper>
-                        {bottomNumbers.map((value, index) => (
-                            <BottomButton key={index} id={index} name={value.number} bottomNumber={bottomNumber} color={value.color} onClick={clickBottomButton}>{value.number}</BottomButton>
-                        ))
-                        }
-                    </NumberButtonWrapper>
-                    <LargeButtonsWrapper>
-                        <MarkButton> Student's mark <Mark>72%</Mark></MarkButton>
-                        <MarkButton> Tutor's mark <Mark>64%</Mark></MarkButton>
-                    </LargeButtonsWrapper>
-                </Frame>
-            </FramesWrapper>
-  )
+                    >
+                        Second Thousand
+                    </LargeButton>
+                </LargeButtonsWrapper>
+                <NumberButtonWrapper>
+                    {topNumbers.map((value, index) => (
+                        <TopButton key={index} name={value.number} topNumber={topNumber} id={index} color={value.color} onClick={clickTopButton}>{value.number}</TopButton>
+                    ))
+                    }
+                </NumberButtonWrapper>
+                <NumberButtonWrapper>
+                    {bottomNumbers.map((value, index) => (
+                        <BottomButton key={index} id={index} name={value.number} bottomNumber={bottomNumber} color={value.color} onClick={clickBottomButton}>{value.number}</BottomButton>
+                    ))
+                    }
+                </NumberButtonWrapper>
+                <LargeButtonsWrapper>
+                    <MarkButton> Student's mark <Mark>72%</Mark></MarkButton>
+                    <MarkButton> Tutor's mark <Mark>64%</Mark></MarkButton>
+                </LargeButtonsWrapper>
+            </Frame>
+        </FramesWrapper>
+    )
 }
 
 export default FrameComponent
+
