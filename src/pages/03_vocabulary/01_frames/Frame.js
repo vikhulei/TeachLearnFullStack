@@ -11,6 +11,7 @@ const FrameComponent = ({ TwoThousand, startTestMode, listOfWordsMode, twoThousa
     const [bottomNumbers, setBottomNumbers] = useState([])
     const [topNumber, setTopNumber] = useState("1")
     const [bottomNumber, setBottomNumber] = useState("1")
+    const [bottomButtonValue, setBottomButtonValue] = useState(10)
     const [language, setLanguage] = useState("Eng")
 
 
@@ -35,13 +36,14 @@ const FrameComponent = ({ TwoThousand, startTestMode, listOfWordsMode, twoThousa
     const clickInputButton = (e) => {
         let newArr = [...twoThousand]
         newArr[e.target.id].correctStudent = !newArr[e.target.id].correctStudent
+
         setTwoThousand(newArr)
     }
 
     const fillInput = (e) => {
-        let newArr = [...tenWords]
+        let newArr = [...twoThousand]
         newArr[e.target.id].input = e.target.value
-        setTenWords(newArr)
+        setTwoThousand(newArr)
     }
 
     const clickWord = (e) => {
@@ -59,6 +61,7 @@ const FrameComponent = ({ TwoThousand, startTestMode, listOfWordsMode, twoThousa
     const clickBottomButton = (e) => {
         setBottomNumber(Number(e.target.id) + 1 || 1)
         setTenWords(twoThousand.filter(val => val.id > (Number(e.target.name) - 10) && val.id <= Number(e.target.name)))
+        setBottomButtonValue(Number(e.target.name))
     }
 
     useEffect(() => {
@@ -73,13 +76,13 @@ const FrameComponent = ({ TwoThousand, startTestMode, listOfWordsMode, twoThousa
                     <LanguageButton onClick={clickLanguage} language={language} id="Eng">English</LanguageButton>
                     <LanguageButton onClick={clickLanguage} language={language} id="Ukr">Ukrainian</LanguageButton>
                 </LanguageButtonsWrapper>
-                {tenWords.map((value, index) => (
+                {twoThousand.filter(val => val.id <= bottomButtonValue && val.id > (bottomButtonValue-10)).map((value, index) => (
                     <Word key={index} >
                         <CheckButtonFrame
                             onClick={clickInputButton}
                             correctStudent={value.correctStudent}
                             correctTutor={value.correctTutor}
-                            id={index}
+                            id={value.id-1}
                         >
                         </CheckButtonFrame>
                         <Input
@@ -88,7 +91,7 @@ const FrameComponent = ({ TwoThousand, startTestMode, listOfWordsMode, twoThousa
                             data-translat={value.translat}
                             data-word={value.word}
                             autocomplete="off"
-                            id={index}
+                            id={value.id-1}
                             style={{ "backgroundColor": (language === "Ukr" && value.input === value.word) || (language === "Eng" && value.input === value.translat) ? `${colors.green}` : "" }}
                             value={value.input}
                             onInput={fillInput}
@@ -127,7 +130,7 @@ const FrameComponent = ({ TwoThousand, startTestMode, listOfWordsMode, twoThousa
                     }
                 </NumberButtonWrapper>
                 <LargeButtonsWrapper>
-                    <MarkButton> Student's mark <Mark>72%</Mark></MarkButton>
+                    <MarkButton> {bottomButtonValue} <Mark>%</Mark></MarkButton>
                     <MarkButton> Tutor's mark <Mark>64%</Mark></MarkButton>
                 </LargeButtonsWrapper>
             </Frame>
