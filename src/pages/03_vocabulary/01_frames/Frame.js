@@ -14,7 +14,6 @@ const FrameComponent = ({ TwoThousand, startTestMode, listOfWordsMode, twoThousa
     const [bottomButtonValue, setBottomButtonValue] = useState(10)
     const [language, setLanguage] = useState("Eng")
 
-
     const setThousandButton = (e) => {
         let id = e.target.id
         setThousand(id === "first" ? "First Thousand" : "Second Thousand")
@@ -36,7 +35,6 @@ const FrameComponent = ({ TwoThousand, startTestMode, listOfWordsMode, twoThousa
     const clickInputButton = (e) => {
         let newArr = [...twoThousand]
         newArr[e.target.id].correctStudent = !newArr[e.target.id].correctStudent
-
         setTwoThousand(newArr)
     }
 
@@ -76,13 +74,13 @@ const FrameComponent = ({ TwoThousand, startTestMode, listOfWordsMode, twoThousa
                     <LanguageButton onClick={clickLanguage} language={language} id="Eng">English</LanguageButton>
                     <LanguageButton onClick={clickLanguage} language={language} id="Ukr">Ukrainian</LanguageButton>
                 </LanguageButtonsWrapper>
-                {twoThousand.filter(val => val.id <= bottomButtonValue && val.id > (bottomButtonValue-10)).map((value, index) => (
+                {twoThousand.filter(val => val.id <= bottomButtonValue && val.id > (bottomButtonValue - 10)).map((value, index) => (
                     <Word key={index} >
                         <CheckButtonFrame
                             onClick={clickInputButton}
                             correctStudent={value.correctStudent}
                             correctTutor={value.correctTutor}
-                            id={value.id-1}
+                            id={value.id - 1}
                         >
                         </CheckButtonFrame>
                         <Input
@@ -91,7 +89,7 @@ const FrameComponent = ({ TwoThousand, startTestMode, listOfWordsMode, twoThousa
                             data-translat={value.translat}
                             data-word={value.word}
                             autocomplete="off"
-                            id={value.id-1}
+                            id={value.id - 1}
                             style={{ "backgroundColor": (language === "Ukr" && value.input === value.word) || (language === "Eng" && value.input === value.translat) ? `${colors.green}` : "" }}
                             value={value.input}
                             onInput={fillInput}
