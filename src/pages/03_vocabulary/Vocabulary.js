@@ -1,16 +1,15 @@
 import { useState, useEffect } from "react"
-import { Wrapper, Header, HeaderText, Title, MainText, CheckWordWrapper, TestWordWrapper, TestButtonsWrapper, TestButton, CreateButton, WordCheck, WordSpanCheck, LargeCircle, MediumCircle, SmallCircle, ImageWrapper, Image, LineCircleTextWrapper, CircleTextWrapper, Circle, Line, CircleHeading, CircleText, CheckButton, BarTestWrapper, ClosedButton, TestedWord, CheckButtonFrame } from "./VocabularyStyle"
+import { Wrapper, Header, HeaderText, Title, MainText, CheckWordWrapper, TestWordWrapper, TestButtonsWrapper, TestButton, CreateButton, WordCheck, WordSpanCheck, LargeCircle, MediumCircle, SmallCircle, ImageWrapper, Image, CheckButton, BarTestWrapper, ClosedButton, TestedWord } from "./VocabularyStyle"
 import { TwoThousand } from "../../components/01_config/TwoThousand"
 import picture from "../../assets/01_home/home.jpg"
 import { colors } from "../../components/01_config/Colors"
 import FrameComponent from "./01_frames/Frame"
+import Memorizing from "./03_memorizing/Memorizing"
 
 
 const Vocabulary = () => {
     const [twoThousand, setTwoThousand] = useState(TwoThousand)
-    const [tenWords, setTenWords] = useState(
-        TwoThousand.filter(val => val.id > 500 && val.id <= 510).map(val => ({ ...val, engCorrect: false, ukrCorrect: false }))
-    )
+    const [tenWords, setTenWords] = useState(TwoThousand.filter(val => val.id <= 10).map(val => ({ ...val, engCorrect: false, ukrCorrect: false })))
     const [listOfWords, setListOfWords] = useState([])
     const [startTestMode, setStartTestMode] = useState(false)
     const [listOfWordsMode, setListOfWordsMode] = useState(false)
@@ -174,10 +173,7 @@ const Vocabulary = () => {
                     </WordCheck>
                 ))}
                 <CreateButton onClick={recordResults}>RECORD RESULTS</CreateButton>
-            </CheckWordWrapper>}
-
-            {/* ------------------START OF FRAME--------------- */}
-            
+            </CheckWordWrapper>}            
             <FrameComponent 
                 startTestMode={startTestMode}
                 listOfWordsMode={listOfWordsMode}
@@ -186,10 +182,6 @@ const Vocabulary = () => {
                 setTenWords={setTenWords}
                 TwoThousand={TwoThousand}
             />
-
-            {/* ------------------END OF FRAME--------------- */}
-
-
             <LargeCircle />
             <MediumCircle />
             <SmallCircle />
@@ -197,24 +189,8 @@ const Vocabulary = () => {
                 <Image src={picture} />
             </ImageWrapper>
             <Title>Memorizing Process</Title>
-            <LineCircleTextWrapper>
-                <CircleTextWrapper>
-                    <Circle>1</Circle>
-                    <CircleHeading>Record</CircleHeading>
-                    <CircleText>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet libero id nisi euismod, sed </CircleText>
-                </CircleTextWrapper>
-                <CircleTextWrapper>
-                    <Circle>2</Circle>
-                    <CircleHeading>Retain</CircleHeading>
-                    <CircleText>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet libero id nisi euismod, sed </CircleText>
-                </CircleTextWrapper>
-                <CircleTextWrapper>
-                    <Circle>3</Circle>
-                    <CircleHeading>Retrieve</CircleHeading>
-                    <CircleText>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet libero id nisi euismod, sed </CircleText>
-                </CircleTextWrapper>
-                <Line />
-            </LineCircleTextWrapper>
+
+            <Memorizing />
         </Wrapper>
     )
 }

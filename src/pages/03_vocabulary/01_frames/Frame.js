@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import { FramesWrapper, Frame, CheckButton, CheckButtonFrame,  LanguageButtonsWrapper, LanguageButton, Input, Word, WordCheck, WordSpan, WordSpanCheck, TranslatSpan, LargeButtonsWrapper, LargeButton, NumberButtonWrapper, TopButton, BottomButton, MarkButton, Mark } from "./FrameStyle"
+import { FramesWrapper, Frame, CheckButtonFrame,  LanguageButtonsWrapper, LanguageButton, Input, Word, WordSpan, TranslatSpan, LargeButtonsWrapper, LargeButton, NumberButtonWrapper, TopButton, BottomButton, MarkButton, Mark } from "./FrameStyle"
 import { hundredsFrames } from "../../../components/01_config/GreenFrames"
 import { tensFrames } from "../../../components/01_config/GreenFrames"
 import { colors } from "../../../components/01_config/Colors"
@@ -64,6 +64,7 @@ const FrameComponent = ({TwoThousand, startTestMode, listOfWordsMode, twoThousan
     useEffect(() => {
         let e = {target: {id: "first"}}
         setThousandButton(e)
+        setTenWords(TwoThousand.filter(val => val.id <= 10).map(val => ({ ...val, engCorrect: false, ukrCorrect: false })))
     }, [])
 
   return (
