@@ -1,7 +1,5 @@
 import { useState, useEffect } from "react"
 import { FramesWrapper, Frame, CheckButtonFrame, LanguageButtonsWrapper, LanguageButton, Input, Word, WordSpan, TranslatSpan, LargeButtonsWrapper, LargeButton, NumberButtonWrapper, TopButton, BottomButton, MarkButton, Mark } from "./FrameStyle"
-import { hundredsFrames } from "../../../components/01_config/GreenFrames"
-import { tens } from "../../../components/01_config/GreenFrames"
 import { colors } from "../../../components/01_config/Colors"
 
 const FrameComponent = ({ startTestMode, listOfWordsMode, twoThousand, setTwoThousand }) => {
@@ -21,11 +19,10 @@ const FrameComponent = ({ startTestMode, listOfWordsMode, twoThousand, setTwoTho
         let id = e.target.id
         setThousand(id === "first" ? "First Thousand" : "Second Thousand")
         setTopNumbers(id === "first" ? hundreds.filter(val => val <= 1000) : hundreds.filter(val => val > 1000))
-        setBottomNumbers(id === "first" ? tens.filter(val => (val <= 100)) : tens.filter(val => (val > 1000 && val.number <= 1100)))
+        setBottomNumbers(id === "first" ? tens.filter(val => (val <= 100)) : tens.filter(val => (val > 1000 && val <= 1100)))
         setTopNumber(1)
         setBottomNumber(1)
         setBottomButtonValue(id === "first" ? 10 : 1010)
-        console.log(tens)
     }
 
     const clickLanguage = (e) => {
