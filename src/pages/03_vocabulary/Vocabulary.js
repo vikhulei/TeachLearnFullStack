@@ -41,9 +41,6 @@ const Vocabulary = () => {
                 listOfWordsMode={listOfWordsMode}
                 twoThousand={twoThousand}
                 setTwoThousand={setTwoThousand}
-                tenWords={tenWords}
-                setTenWords={setTenWords}
-                TwoThousand={TwoThousand}
             />
             <LargeCircle />
             <MediumCircle />

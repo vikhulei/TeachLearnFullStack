@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react"
 import { FramesWrapper, Frame, CheckButtonFrame, LanguageButtonsWrapper, LanguageButton, Input, Word, WordSpan, TranslatSpan, LargeButtonsWrapper, LargeButton, NumberButtonWrapper, TopButton, BottomButton, MarkButton, Mark } from "./FrameStyle"
 import { hundredsFrames } from "../../../components/01_config/GreenFrames"
-import { tensFrames } from "../../../components/01_config/GreenFrames"
+import { tens } from "../../../components/01_config/GreenFrames"
 import { colors } from "../../../components/01_config/Colors"
 
-const FrameComponent = ({ TwoThousand, startTestMode, listOfWordsMode, twoThousand, setTwoThousand, tenWords, setTenWords }) => {
+const FrameComponent = ({ startTestMode, listOfWordsMode, twoThousand, setTwoThousand }) => {
 
     const [thousand, setThousand] = useState("First Thousand")
     const [topNumbers, setTopNumbers] = useState([])
@@ -14,15 +14,18 @@ const FrameComponent = ({ TwoThousand, startTestMode, listOfWordsMode, twoThousa
     const [bottomButtonValue, setBottomButtonValue] = useState(10)
     const [language, setLanguage] = useState("Eng")
 
+    const hundreds = twoThousand.filter(val => val.id % 100 === 0).map(val => val.id)
+    const tens = twoThousand.filter(val => val.id % 10 === 0).map(val => val.id)
+
     const setThousandButton = (e) => {
         let id = e.target.id
         setThousand(id === "first" ? "First Thousand" : "Second Thousand")
-        setTopNumbers(id === "first" ? hundredsFrames.filter(val => val.number <= 1000) : hundredsFrames.filter(val => val.number > 1000))
-        setBottomNumbers(id === "first" ? tensFrames.filter(val => (val.number <= 100)) : tensFrames.filter(val => (val.number > 1000 && val.number <= 1100)))
-        setTenWords(id === "first" ? TwoThousand.filter(val => val.id <= 10) : TwoThousand.filter(val => val.id > 1000 && val.id <= 1010))
+        setTopNumbers(id === "first" ? hundreds.filter(val => val <= 1000) : hundreds.filter(val => val > 1000))
+        setBottomNumbers(id === "first" ? tens.filter(val => (val <= 100)) : tens.filter(val => (val > 1000 && val.number <= 1100)))
         setTopNumber(1)
         setBottomNumber(1)
         setBottomButtonValue(id === "first" ? 10 : 1010)
+        console.log(tens)
     }
 
     const clickLanguage = (e) => {
@@ -46,7 +49,7 @@ const FrameComponent = ({ TwoThousand, startTestMode, listOfWordsMode, twoThousa
     }
 
     const clickWord = (e) => {
-        setTenWords(tenWords.map(val =>
+        setTwoThousand(twoThousand.map(val =>
             val.id === Number(e.target.id) ? { ...val, visibility: val.visibility === "hidden" ? "visible" : "hidden" } : val
         ))
     }
@@ -54,14 +57,13 @@ const FrameComponent = ({ TwoThousand, startTestMode, listOfWordsMode, twoThousa
 
     const clickTopButton = (e) => {
         setTopNumber(Number(e.target.id) + 1 || 1)
-        setBottomNumbers(tensFrames.filter(val => (val.number <= Number(e.target.name) && val.number > (Number(e.target.name) - 100))))
-        setBottomButtonValue(Number(e.target.name) + 10)
+        setBottomNumbers(tens.filter(val => (val <= Number(e.target.name) && val > (Number(e.target.name) - 100))))
+        setBottomButtonValue(Number(e.target.name) - 10)
         setBottomNumber(1)
     }
 
     const clickBottomButton = (e) => {
         setBottomNumber(Number(e.target.id) + 1 || 1)
-        setTenWords(twoThousand.filter(val => val.id > (Number(e.target.name) - 10) && val.id <= Number(e.target.name)))
         setBottomButtonValue(Number(e.target.name))
     }
 
@@ -120,13 +122,13 @@ const FrameComponent = ({ TwoThousand, startTestMode, listOfWordsMode, twoThousa
                 </LargeButtonsWrapper>
                 <NumberButtonWrapper>
                     {topNumbers.map((value, index) => (
-                        <TopButton key={index} name={value.number} topNumber={topNumber} id={index} color={value.color} onClick={clickTopButton}>{value.number}</TopButton>
+                        <TopButton key={index} name={value} topNumber={topNumber} id={index} onClick={clickTopButton}>{value}</TopButton>
                     ))
                     }
                 </NumberButtonWrapper>
                 <NumberButtonWrapper>
                     {bottomNumbers.map((value, index) => (
-                        <BottomButton key={index} id={index} name={value.number} bottomNumber={bottomNumber} color={value.color} onClick={clickBottomButton}>{value.number}</BottomButton>
+                        <BottomButton key={index} id={index} name={value} bottomNumber={bottomNumber} onClick={clickBottomButton}>{value}</BottomButton>
                     ))
                     }
                 </NumberButtonWrapper>

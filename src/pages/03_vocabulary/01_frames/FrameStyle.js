@@ -133,8 +133,6 @@ const TranslatSpan = styled.span`
     }
 `
 
-
-
 const LargeButtonsWrapper = styled.div`
     box-sizing: content-box;
     padding: 20px 0;
