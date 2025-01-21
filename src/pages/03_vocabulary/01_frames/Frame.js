@@ -55,7 +55,7 @@ const FrameComponent = ({ startTestMode, listOfWordsMode, twoThousand, setTwoTho
     const clickTopButton = (e) => {
         setTopNumber(Number(e.target.id) + 1 || 1)
         setBottomNumbers(tens.filter(val => (val <= Number(e.target.name) && val > (Number(e.target.name) - 100))))
-        setBottomButtonValue(Number(e.target.name) - 10)
+        setBottomButtonValue(Number(e.target.name) - 90)
         setBottomNumber(1)
     }
 
