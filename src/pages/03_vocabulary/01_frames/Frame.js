@@ -20,6 +20,10 @@ const FrameComponent = ({ startTestMode, listOfWordsMode, twoThousand, setTwoTho
 
         console.log(testArr.length)
 
+        for (let i = 1; i <= testArr.length; i++) {
+            
+        }
+
         testArr.forEach(el => {
             if(el.id % 10 === 0) {
                 for(let i = el.id-10; i <= el.id; i++) {
