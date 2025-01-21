@@ -16,6 +16,12 @@ const FrameComponent = ({ startTestMode, listOfWordsMode, twoThousand, setTwoTho
     const tens = twoThousand.filter(val => val.id % 10 === 0).map(val => val.id)
 
     const setThousandButton = (e) => {
+        twoThousand.forEach(element => {
+            if(element.id % 100 === 0) {
+                console.log(element)
+            }
+        });
+
         let id = e.target.id
         setThousand(id === "first" ? "First Thousand" : "Second Thousand")
         setTopNumbers(id === "first" ? hundreds.filter(val => val <= 1000) : hundreds.filter(val => val > 1000))
@@ -50,7 +56,6 @@ const FrameComponent = ({ startTestMode, listOfWordsMode, twoThousand, setTwoTho
             val.id === Number(e.target.id) ? { ...val, visibility: val.visibility === "hidden" ? "visible" : "hidden" } : val
         ))
     }
-
 
     const clickTopButton = (e) => {
         setTopNumber(Number(e.target.id) + 1 || 1)
