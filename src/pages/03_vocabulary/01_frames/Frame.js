@@ -16,11 +16,30 @@ const FrameComponent = ({ startTestMode, listOfWordsMode, twoThousand, setTwoTho
     const tens = twoThousand.filter(val => val.id % 10 === 0).map(val => val.id)
 
     const setThousandButton = (e) => {
-        twoThousand.forEach(element => {
-            if(element.id % 100 === 0) {
-                console.log(element)
+        let testArr = twoThousand.filter(val => val.correctTutor === true)
+
+        console.log(testArr.length)
+
+        testArr.forEach(el => {
+            if(el.id % 10 === 0) {
+                for(let i = el.id-10; i <= el.id; i++) {
+                    // console.log(el.word)
+                    // if(el.correctTutor === true){
+                    //     console.log(i)
+                    // }
+                }
             }
-        });
+        })
+
+
+        // twoThousand.forEach(element => {
+
+        //     if(element.correctTutor) {
+        //         console.log(element.id)
+        //     }
+
+
+        // });
 
         let id = e.target.id
         setThousand(id === "first" ? "First Thousand" : "Second Thousand")

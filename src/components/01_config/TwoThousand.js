@@ -2020,7 +2020,7 @@ export const TwoThousand = [
     { id: 1997, word: "or", translat: "або", visibility: "hidden", tobeChecked: false, correctTutor: false, correctStudent: false, input: "" },
     { id: 1998, word: "people", translat: "люди", visibility: "hidden", tobeChecked: false, correctTutor: false, correctStudent: false, input: "" },
     { id: 1999, word: "as", translat: "як", visibility: "hidden", tobeChecked: false, correctTutor: false, correctStudent: false, input: "" },
-    { id: 2000, word: "hundred", translat: "сто", visibility: "hidden", tobeChecked: false, correctTutor: false, correctStudent: false, input: "" },
+    { id: 2000, word: "hundred", translat: "сто", visibility: "hidden", tobeChecked: false, correctTutor: true, correctStudent: false, input: "" },
 
 
 
