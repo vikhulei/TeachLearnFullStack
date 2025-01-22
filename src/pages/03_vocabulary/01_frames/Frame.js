@@ -28,7 +28,6 @@ const FrameComponent = ({ startTestMode, listOfWordsMode, twoThousand, setTwoTho
             }
         })
 
-
         let id = e.target.id
         setThousand(id === "first" ? "First Thousand" : "Second Thousand")
         setTopNumbers(id === "first" ? hundreds.filter(val => val <= 1000) : hundreds.filter(val => val > 1000))
