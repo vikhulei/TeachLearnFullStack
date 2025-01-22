@@ -13,25 +13,33 @@ const FrameComponent = ({ startTestMode, listOfWordsMode, twoThousand, setTwoTho
     const [language, setLanguage] = useState("Eng")
 
     const hundreds = twoThousand.filter(val => val.id % 100 === 0).map(val => val.id)
-    const tens = twoThousand.filter(val => val.id % 10 === 0).map(val => val.id)
+    const tens = twoThousand.filter(val => val.id % 10 === 0).map(val => ({id: val.id, color: "green"}))
+    const tensOld = twoThousand.filter(val => val.id % 10 === 0).map(val => val.id)
 
     const setThousandButton = (e) => {
 
-        twoThousand.forEach(el => {
-            if(el.id % 10 === 0 && el.correctTutor) {
-                for(let i = el.id-10; i < el.id; i++) {
-                    if(!twoThousand[i].correctTutor) {
-                        console.log(el.id)
-                        break
-                    }
-                }
-            }
-        })
+        // console.log(tens.filter(val => (val.id > 1000 && val.id <= 1100)).map(val => val.id))
+        // console.log(tensOld.filter(val => (val > 1000 && val <= 1100)))
+
+        // console.log(tens)
+        // console.log(bottomNumbers)
+
+
+        // twoThousand.forEach(el => {
+        //     if(el.id % 10 === 0 && el.correctTutor) {
+        //         for(let i = el.id-10; i < el.id; i++) {
+        //             if(!twoThousand[i].correctTutor) {
+        //                 console.log(el.id)
+        //                 break
+        //             }
+        //         }
+        //     }
+        // })
 
         let id = e.target.id
         setThousand(id === "first" ? "First Thousand" : "Second Thousand")
         setTopNumbers(id === "first" ? hundreds.filter(val => val <= 1000) : hundreds.filter(val => val > 1000))
-        setBottomNumbers(id === "first" ? tens.filter(val => (val <= 100)) : tens.filter(val => (val > 1000 && val <= 1100)))
+        setBottomNumbers(id === "first" ? tens.filter(val => (val.id <= 100)) : tens.filter(val => (val.id > 1000 && val.id <= 1100)))
         setTopNumber(1)
         setBottomNumber(1)
         setBottomButtonValue(id === "first" ? 10 : 1010)
@@ -65,7 +73,7 @@ const FrameComponent = ({ startTestMode, listOfWordsMode, twoThousand, setTwoTho
 
     const clickTopButton = (e) => {
         setTopNumber(Number(e.target.id) + 1 || 1)
-        setBottomNumbers(tens.filter(val => (val <= Number(e.target.name) && val > (Number(e.target.name) - 100))))
+        setBottomNumbers(tens.filter(val => (val.id <= Number(e.target.name) && val.id > (Number(e.target.name) - 100))))
         setBottomButtonValue(Number(e.target.name) - 90)
         setBottomNumber(1)
     }
@@ -136,7 +144,7 @@ const FrameComponent = ({ startTestMode, listOfWordsMode, twoThousand, setTwoTho
                 </NumberButtonWrapper>
                 <NumberButtonWrapper>
                     {bottomNumbers.map((value, index) => (
-                        <BottomButton key={index} id={index} name={value} bottomNumber={bottomNumber} onClick={clickBottomButton}>{value}</BottomButton>
+                        <BottomButton key={index} id={index} name={value.id} bottomNumber={bottomNumber} style={{backgroundColor: value.color}} onClick={clickBottomButton}>{value.id}</BottomButton>
                     ))
                     }
                 </NumberButtonWrapper>
