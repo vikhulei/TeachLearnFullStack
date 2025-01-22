@@ -5,16 +5,18 @@ import { colors } from "../../../components/01_config/Colors"
 const FrameComponent = ({ startTestMode, listOfWordsMode, twoThousand, setTwoThousand }) => {
 
     const [thousand, setThousand] = useState("First Thousand")
+    const [tens, setTens] = useState(
+        twoThousand.filter(val => val.id % 10 === 0).map(val => ({id: val.id, color: "green"}))
+    )
+    const [hundreds, setHundreds] = useState(
+        twoThousand.filter(val => val.id % 100 === 0).map(val => val.id)
+    )
     const [topNumbers, setTopNumbers] = useState([])
     const [bottomNumbers, setBottomNumbers] = useState([])
     const [topNumber, setTopNumber] = useState("1")
     const [bottomNumber, setBottomNumber] = useState("1")
     const [bottomButtonValue, setBottomButtonValue] = useState(10)
     const [language, setLanguage] = useState("Eng")
-
-    const hundreds = twoThousand.filter(val => val.id % 100 === 0).map(val => val.id)
-    const tens = twoThousand.filter(val => val.id % 10 === 0).map(val => ({id: val.id, color: "green"}))
-    const tensOld = twoThousand.filter(val => val.id % 10 === 0).map(val => val.id)
 
     const setThousandButton = (e) => {
 
@@ -25,16 +27,19 @@ const FrameComponent = ({ startTestMode, listOfWordsMode, twoThousand, setTwoTho
         // console.log(bottomNumbers)
 
 
-        // twoThousand.forEach(el => {
-        //     if(el.id % 10 === 0 && el.correctTutor) {
-        //         for(let i = el.id-10; i < el.id; i++) {
-        //             if(!twoThousand[i].correctTutor) {
-        //                 console.log(el.id)
-        //                 break
-        //             }
-        //         }
-        //     }
-        // })
+        twoThousand.forEach(el => {
+            if(el.id % 10 === 0) {
+                for(let i = el.id-10; i < el.id; i++) {
+                    if(!twoThousand[i].correctTutor) {
+                        // let newArr = [...tens]
+                        // newArr[el.id]
+                        // setTens()
+                        console.log(el)
+                        break
+                    }
+                }
+            }
+        })
 
         let id = e.target.id
         setThousand(id === "first" ? "First Thousand" : "Second Thousand")
@@ -84,6 +89,8 @@ const FrameComponent = ({ startTestMode, listOfWordsMode, twoThousand, setTwoTho
     }
 
     useEffect(() => {
+
+        // const tensOld = twoThousand.filter(val => val.id % 10 === 0).map(val => val.id)
         let e = { target: { id: "first" } }
         setThousandButton(e)
     }, [])
