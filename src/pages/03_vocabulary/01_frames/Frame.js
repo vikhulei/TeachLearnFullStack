@@ -6,7 +6,7 @@ const FrameComponent = ({ startTestMode, listOfWordsMode, twoThousand, setTwoTho
 
     const [thousand, setThousand] = useState("First Thousand")
     const [tens, setTens] = useState(
-        twoThousand.filter(val => val.id % 10 === 0).map(val => ({id: val.id, color: "green"}))
+        twoThousand.filter(val => val.id % 10 === 0).map(val => ({id: val.id, color: "blue"}))
     )
     const [hundreds, setHundreds] = useState(
         twoThousand.filter(val => val.id % 100 === 0).map(val => val.id)
@@ -26,15 +26,24 @@ const FrameComponent = ({ startTestMode, listOfWordsMode, twoThousand, setTwoTho
         // console.log(tens)
         // console.log(bottomNumbers)
 
+        let tenIndex
 
         twoThousand.forEach(el => {
-            if(el.id % 10 === 0) {
+            if(el.id % 100 === 0) {
                 for(let i = el.id-10; i < el.id; i++) {
                     if(!twoThousand[i].correctTutor) {
-                        // let newArr = [...tens]
-                        // newArr[el.id]
-                        // setTens()
-                        console.log(el)
+                        
+                        // console.log(tens.map(val => val.id).indexOf(el.id))
+                        tenIndex = tens.map(val => val.id).indexOf(el.id)
+                        let newArr = [...tens]
+                        console.log(newArr[tenIndex].color)
+                        if(newArr[tenIndex].color != "blue") {
+                            newArr[tenIndex].color="blue"
+                            setTens(newArr)
+                            console.log("here")
+                        }
+                        // newArr[tenIndex].color="red"
+                        // setTens(newArr)
                         break
                     }
                 }
