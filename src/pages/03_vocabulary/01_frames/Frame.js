@@ -4,9 +4,11 @@ import { colors } from "../../../components/01_config/Colors"
 
 const FrameComponent = ({ startTestMode, listOfWordsMode, twoThousand, setTwoThousand }) => {
 
+    let tenIndex
+
     const [thousand, setThousand] = useState("First Thousand")
     const [tens, setTens] = useState(
-        twoThousand.filter(val => val.id % 10 === 0).map(val => ({id: val.id, color: "blue"}))
+        twoThousand.filter(val => val.id % 10 === 0).map(val => ({id: val.id, color: colors.green}))
     )
     const [hundreds, setHundreds] = useState(
         twoThousand.filter(val => val.id % 100 === 0).map(val => val.id)
@@ -19,36 +21,6 @@ const FrameComponent = ({ startTestMode, listOfWordsMode, twoThousand, setTwoTho
     const [language, setLanguage] = useState("Eng")
 
     const setThousandButton = (e) => {
-
-        // console.log(tens.filter(val => (val.id > 1000 && val.id <= 1100)).map(val => val.id))
-        // console.log(tensOld.filter(val => (val > 1000 && val <= 1100)))
-
-        // console.log(tens)
-        // console.log(bottomNumbers)
-
-        let tenIndex
-
-        twoThousand.forEach(el => {
-            if(el.id % 100 === 0) {
-                for(let i = el.id-10; i < el.id; i++) {
-                    if(!twoThousand[i].correctTutor) {
-                        
-                        // console.log(tens.map(val => val.id).indexOf(el.id))
-                        tenIndex = tens.map(val => val.id).indexOf(el.id)
-                        let newArr = [...tens]
-                        console.log(newArr[tenIndex].color)
-                        if(newArr[tenIndex].color != "blue") {
-                            newArr[tenIndex].color="blue"
-                            setTens(newArr)
-                            console.log("here")
-                        }
-                        // newArr[tenIndex].color="red"
-                        // setTens(newArr)
-                        break
-                    }
-                }
-            }
-        })
 
         let id = e.target.id
         setThousand(id === "first" ? "First Thousand" : "Second Thousand")
@@ -103,6 +75,26 @@ const FrameComponent = ({ startTestMode, listOfWordsMode, twoThousand, setTwoTho
         let e = { target: { id: "first" } }
         setThousandButton(e)
     }, [])
+
+    useEffect(() => {
+        console.log("here")
+        twoThousand.forEach(el => {
+            if(el.id % 10 === 0) {
+                for(let i = el.id-10; i < el.id; i++) {
+                    if(!twoThousand[i].correctTutor) {
+                        tenIndex = tens.map(val => val.id).indexOf(el.id)
+                        let newArr = [...tens]
+                        if(newArr[tenIndex].color != "white") {
+                            newArr[tenIndex].color="white"
+                            setTens(newArr)
+                        }
+                        break
+                    }
+                }
+            }
+        })
+
+    }, [...twoThousand.map(val => val.correctTutor)])
 
     return (
         <FramesWrapper startTestMode={startTestMode} listOfWordsMode={listOfWordsMode}>
