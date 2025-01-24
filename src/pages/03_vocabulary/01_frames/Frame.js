@@ -4,14 +4,12 @@ import { colors } from "../../../components/01_config/Colors"
 
 const FrameComponent = ({ startTestMode, listOfWordsMode, twoThousand, setTwoThousand }) => {
 
-    let tenIndex
-
     const [thousand, setThousand] = useState("First Thousand")
     const [tens, setTens] = useState(
         twoThousand.filter(val => val.id % 10 === 0).map(val => ({id: val.id, color: colors.green}))
     )
     const [hundreds, setHundreds] = useState(
-        twoThousand.filter(val => val.id % 100 === 0).map(val => val.id)
+        twoThousand.filter(val => val.id % 100 === 0).map(val => ({id: val.id, color: colors.green}))
     )
     const [topNumbers, setTopNumbers] = useState([])
     const [bottomNumbers, setBottomNumbers] = useState([])
@@ -21,10 +19,10 @@ const FrameComponent = ({ startTestMode, listOfWordsMode, twoThousand, setTwoTho
     const [language, setLanguage] = useState("Eng")
 
     const setThousandButton = (e) => {
-
+        // console.log(tens)
         let id = e.target.id
         setThousand(id === "first" ? "First Thousand" : "Second Thousand")
-        setTopNumbers(id === "first" ? hundreds.filter(val => val <= 1000) : hundreds.filter(val => val > 1000))
+        setTopNumbers(id === "first" ? hundreds.filter(val => (val.id <= 1000)) : hundreds.filter(val => (val.id > 1000)))
         setBottomNumbers(id === "first" ? tens.filter(val => (val.id <= 100)) : tens.filter(val => (val.id > 1000 && val.id <= 1100)))
         setTopNumber(1)
         setBottomNumber(1)
@@ -78,22 +76,43 @@ const FrameComponent = ({ startTestMode, listOfWordsMode, twoThousand, setTwoTho
 
     useEffect(() => {
         console.log("here")
+        let tenIndex
+        let hundredIndex
+        let newTens
+        let newHundreds
         twoThousand.forEach(el => {
             if(el.id % 10 === 0) {
                 for(let i = el.id-10; i < el.id; i++) {
                     if(!twoThousand[i].correctTutor) {
                         tenIndex = tens.map(val => val.id).indexOf(el.id)
-                        let newArr = [...tens]
-                        if(newArr[tenIndex].color != "white") {
-                            newArr[tenIndex].color="white"
-                            setTens(newArr)
+                        newTens = [...tens]
+                        if(newTens[tenIndex].color != "white") {
+                            newTens[tenIndex].color="white"
+                            setTens(newTens)
                         }
                         break
                     }
                 }
             }
         })
-
+        tens.forEach(el => {
+            if(el.id % 100 === 0) {
+                for (let i = (el.id/10 - 10); i < el.id/10; i++) {
+                    if(tens[i].color === "white") {
+                        // console.log(tens[i].color)
+                        hundredIndex = hundreds.map(val => val.id).indexOf(el.id)
+                        newHundreds = [...hundreds]
+                        if(newHundreds[hundredIndex].color !== "white") {
+                            newHundreds[hundredIndex].color = "white"
+                            setHundreds(newHundreds)
+                        }
+                        // console.log(hundreds.map(val => val.id))
+                    }
+                }
+            }
+        })
+        console.log(tens)
+        console.log(hundreds)
     }, [...twoThousand.map(val => val.correctTutor)])
 
     return (
@@ -146,7 +165,7 @@ const FrameComponent = ({ startTestMode, listOfWordsMode, twoThousand, setTwoTho
                 </LargeButtonsWrapper>
                 <NumberButtonWrapper>
                     {topNumbers.map((value, index) => (
-                        <TopButton key={index} name={value} topNumber={topNumber} id={index} onClick={clickTopButton}>{value}</TopButton>
+                        <TopButton key={index} name={value.id} topNumber={topNumber} id={index} style={{backgroundColor: value.color}} onClick={clickTopButton}>{value.id}</TopButton>
                     ))
                     }
                 </NumberButtonWrapper>
