@@ -19,7 +19,6 @@ const FrameComponent = ({ startTestMode, listOfWordsMode, twoThousand, setTwoTho
     const [language, setLanguage] = useState("Eng")
 
     const setThousandButton = (e) => {
-        // console.log(tens)
         let id = e.target.id
         setThousand(id === "first" ? "First Thousand" : "Second Thousand")
         setTopNumbers(id === "first" ? hundreds.filter(val => (val.id <= 1000)) : hundreds.filter(val => (val.id > 1000)))
@@ -68,14 +67,11 @@ const FrameComponent = ({ startTestMode, listOfWordsMode, twoThousand, setTwoTho
     }
 
     useEffect(() => {
-
-        // const tensOld = twoThousand.filter(val => val.id % 10 === 0).map(val => val.id)
         let e = { target: { id: "first" } }
         setThousandButton(e)
     }, [])
 
     useEffect(() => {
-        console.log("here")
         let tenIndex
         let hundredIndex
         let newTens
@@ -99,20 +95,16 @@ const FrameComponent = ({ startTestMode, listOfWordsMode, twoThousand, setTwoTho
             if(el.id % 100 === 0) {
                 for (let i = (el.id/10 - 10); i < el.id/10; i++) {
                     if(tens[i].color === "white") {
-                        // console.log(tens[i].color)
                         hundredIndex = hundreds.map(val => val.id).indexOf(el.id)
                         newHundreds = [...hundreds]
                         if(newHundreds[hundredIndex].color !== "white") {
                             newHundreds[hundredIndex].color = "white"
                             setHundreds(newHundreds)
                         }
-                        // console.log(hundreds.map(val => val.id))
                     }
                 }
             }
         })
-        console.log(tens)
-        console.log(hundreds)
     }, [...twoThousand.map(val => val.correctTutor)])
 
     return (
