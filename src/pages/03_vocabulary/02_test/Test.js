@@ -53,8 +53,8 @@ const Test = ({ twoThousand, setTwoThousand, tenWords, setTenWords, startTestMod
             return setShowTestWord("end of test")
         }
         let n = Math.floor(Math.random() * testWordsArr.length)
-        let indexUkr = tenWords.map(val => val.translat).indexOf(testWordsArr[n])
-        let indexEng = tenWords.map(val => val.word).indexOf(testWordsArr[n])
+        let indexUkr = twoThousand.map(val => val.translat).indexOf(testWordsArr[n])
+        let indexEng = twoThousand.map(val => val.word).indexOf(testWordsArr[n])
         setRandomNumber([indexUkr, indexEng])
         setShowTestWord(testWordsArr[n])
         let newTestWordsArr = [...testWordsArr]
@@ -68,9 +68,9 @@ const Test = ({ twoThousand, setTwoThousand, tenWords, setTenWords, startTestMod
         if (randomNumber.length !== 0) {
             let checkIndexUkr = randomNumber[0]
             let checkIndexEng = randomNumber[1]
-            let newArr = [...tenWords]
+            let newArr = [...twoThousand]
             checkIndexUkr === -1 ? newArr[checkIndexEng].engCorrect = true : newArr[checkIndexUkr].ukrCorrect = true
-            setTenWords(newArr)
+            setTwoThousand(newArr)
         }
     }
 
@@ -150,7 +150,7 @@ const Test = ({ twoThousand, setTwoThousand, tenWords, setTenWords, startTestMod
                     Test Results
                     <ClosedButton onClick={() => setTestResults(false)}>X</ClosedButton>
                 </BarTestWrapper>
-                {tenWords.filter(val => val.tobeChecked === true).map((value, index) => (
+                {twoThousand.filter(val => val.tobeChecked === true).map((value, index) => (
                     <WordCheck key={index} style={{ textAlign: "center" }}>
                         <WordSpanCheck style={{ color: (value.engCorrect && value.ukrCorrect) ? "green" : "" }}> {value.word}</WordSpanCheck>
                     </WordCheck>

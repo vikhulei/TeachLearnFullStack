@@ -8,7 +8,7 @@ const FramesWrapper = styled.div`
     justify-content: center;
     gap: 7vw;
     z-index: 20;
-    opacity: ${({ startTestMode, checkWordsMode }) => startTestMode || checkWordsMode ? "0.4" : "1"};
+    opacity: ${({ startTestMode, listOfWordsMode }) => startTestMode || listOfWordsMode ? "0.4" : "1"};
 `
 
 const Frame = styled.div`
