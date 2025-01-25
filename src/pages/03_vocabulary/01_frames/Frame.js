@@ -19,6 +19,9 @@ const FrameComponent = ({ startTestMode, listOfWordsMode, twoThousand, setTwoTho
     const [language, setLanguage] = useState("Eng")
 
     const setThousandButton = (e) => {
+
+        console.log(Math.round((twoThousand.filter(val => val.correctTutor).length/twoThousand.length)*100))
+
         let id = e.target.id
         setThousand(id === "first" ? "First Thousand" : "Second Thousand")
         setTopNumbers(id === "first" ? hundreds.filter(val => (val.id <= 1000)) : hundreds.filter(val => (val.id > 1000)))
