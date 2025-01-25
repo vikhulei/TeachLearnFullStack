@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import { FramesWrapper, Frame, CheckButtonFrame, LanguageButtonsWrapper, LanguageButton, Input, Word, WordSpan, TranslatSpan, LargeButtonsWrapper, LargeButton, NumberButtonWrapper, TopButton, BottomButton, MarkButton, Mark } from "./FrameStyle"
+import { FramesWrapper, Frame, CheckButtonFrame, LanguageButtonsWrapper, LanguageButton, Input, Word, WordSpan, TranslatSpan, LargeButtonsWrapper, LargeButton, NumberButtonWrapper, TopButton, BottomButton, PercentButton, ProgressBar, Percent } from "./FrameStyle"
 import { colors } from "../../../components/01_config/Colors"
 
 const FrameComponent = ({ startTestMode, listOfWordsMode, twoThousand, setTwoThousand }) => {
@@ -17,11 +17,9 @@ const FrameComponent = ({ startTestMode, listOfWordsMode, twoThousand, setTwoTho
     const [bottomNumber, setBottomNumber] = useState("1")
     const [bottomButtonValue, setBottomButtonValue] = useState(10)
     const [language, setLanguage] = useState("Eng")
+    const [percent, setPercent] = useState()
 
     const setThousandButton = (e) => {
-
-        console.log(Math.round((twoThousand.filter(val => val.correctTutor).length/twoThousand.length)*100))
-
         let id = e.target.id
         setThousand(id === "first" ? "First Thousand" : "Second Thousand")
         setTopNumbers(id === "first" ? hundreds.filter(val => (val.id <= 1000)) : hundreds.filter(val => (val.id > 1000)))
@@ -108,6 +106,7 @@ const FrameComponent = ({ startTestMode, listOfWordsMode, twoThousand, setTwoTho
                 }
             }
         })
+        setPercent(Math.round((twoThousand.filter(val => val.correctTutor).length/twoThousand.length)*100))
     }, [...twoThousand.map(val => val.correctTutor)])
 
     return (
@@ -171,8 +170,7 @@ const FrameComponent = ({ startTestMode, listOfWordsMode, twoThousand, setTwoTho
                     }
                 </NumberButtonWrapper>
                 <LargeButtonsWrapper>
-                    <MarkButton> {bottomButtonValue} <Mark>%</Mark></MarkButton>
-                    <MarkButton> Tutor's mark <Mark>64%</Mark></MarkButton>
+                    <PercentButton> <ProgressBar percent={percent}/> <Percent> {percent} % </Percent> </PercentButton>
                 </LargeButtonsWrapper>
             </Frame>
         </FramesWrapper>

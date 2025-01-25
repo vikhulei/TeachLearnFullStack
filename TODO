@@ -4,14 +4,13 @@ V O C A B U L A R Y
 FRONT-END
 Code green shading of top and bottom buttons
 Show number of correct words + percentage
-Turn to green: words - tens - hundreds
 
 BACK-END
 Create db with 2000 words
-Create functionality:
-a. fetch
-b. update
-c. close
+Create functionality
+  a. fetch
+  b. update
+  c. close
 
 FRONT-END
 Finish the text
@@ -22,7 +21,7 @@ Text for Memorizing Process - practical steps
 
 - - - - - - - - - -
 
-Adaptive design: tablet and mobile
+Adaptive design - tablet and mobile
   - header
   - footer
   - home

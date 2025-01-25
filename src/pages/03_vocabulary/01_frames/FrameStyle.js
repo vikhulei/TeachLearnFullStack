@@ -179,19 +179,28 @@ const BottomButton = styled(GenericButton)`
     background-color: ${({ color }) => color == colors.green ? color : ""};
 `
 
-const MarkButton = styled(GenericButton)`
-    cursor: initial;
-    border: none;
-    &:hover {
-        font-size: 0.75rem;
-    }
-    &:active {
-        transform: translate(none);
-    }
+const PercentButton = styled.div`
+    position: relative;
+    width: 70%;
+    height: 35px;
+    border: 2px solid ${colors.greyFrame};
+    padding-left: 0;
+    font-size: 0.75rem;
+    font-weight: 600;
+    display: flex;
 `
 
-const Mark = styled.span`
-
+const ProgressBar = styled.div`
+    position: absolute;
+    height: 100%;
+    width: ${({percent}) => percent ? `${percent}%` : "0%"};
+    background-color: ${colors.green};
 `
 
-export { FramesWrapper, Frame, CheckButton, CheckButtonFrame, LanguageButtonsWrapper, LanguageButton, Input, Word, WordCheck, WordSpan, WordSpanCheck, TranslatSpan, LargeButtonsWrapper, LargeButton, NumberButtonWrapper, TopButton, BottomButton, MarkButton, Mark }
+const Percent = styled.div`
+    position: relative;
+    text-align: center;
+    margin: auto;
+`
+
+export { FramesWrapper, Frame, CheckButton, CheckButtonFrame, LanguageButtonsWrapper, LanguageButton, Input, Word, WordCheck, WordSpan, WordSpanCheck, TranslatSpan, LargeButtonsWrapper, LargeButton, NumberButtonWrapper, TopButton, BottomButton, PercentButton, ProgressBar, Percent }
