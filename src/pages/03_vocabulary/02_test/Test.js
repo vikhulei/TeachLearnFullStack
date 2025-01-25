@@ -61,6 +61,9 @@ const Test = ({ twoThousand, setTwoThousand, tenWords, setTenWords, startTestMod
         let ind = newTestWordsArr.indexOf(newTestWordsArr[n])
         newTestWordsArr.splice(ind, 1)
         setTestWordsArr(newTestWordsArr)
+        let newArr = [...twoThousand]
+        indexUkr === -1 ? newArr[indexEng].engCorrect = false : newArr[indexUkr].ukrCorrect = false
+        setTwoThousand(newArr)
     }
 
     const leftClickTestedWord = (e) => {

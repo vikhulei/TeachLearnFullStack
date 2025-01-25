@@ -11,7 +11,7 @@ export const TwoThousand = [
     { id: 7, word: "or", translat: "або", visibility: "hidden", tobeChecked: false, correctTutor: false, correctStudent: false, input: "" },
     { id: 8, word: "people", translat: "люди", visibility: "hidden", tobeChecked: false, correctTutor: false, correctStudent: false, input: "" },
     { id: 9, word: "as", translat: "як", visibility: "hidden", tobeChecked: false, correctTutor: false, correctStudent: false, input: "" },
-    { id: 10, word: "ten", translat: "десять", visibility: "hidden", tobeChecked: true, correctTutor: true, correctStudent: false, input: "" },
+    { id: 10, word: "ten", translat: "десять", visibility: "hidden", tobeChecked: false, correctTutor: true, correctStudent: false, input: "" },
     { id: 11, word: "world", translat: "світ", visibility: "hidden", tobeChecked: false, correctTutor: true, correctStudent: false, input: "" },
     { id: 12, word: "apple", translat: "яблуко", visibility: "hidden", tobeChecked: false, correctTutor: true, correctStudent: false, input: "" },
     { id: 13, word: "their", translat: "їх", visibility: "hidden", tobeChecked: false, correctTutor: true, correctStudent: false, input: "" },
