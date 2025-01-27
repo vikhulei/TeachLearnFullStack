@@ -2,7 +2,7 @@
 
 export const TwoThousand = [
 
-    { id: 1, word: "one", translat: "один", visibility: "hidden", tobeChecked: false, correctTutor: false, correctStudent: false, input: "" },
+    { id: 1, word: "one", translat: "один", visibility: "hidden", tobeChecked: true, correctTutor: false, correctStudent: true, input: "" },
     { id: 2, word: "apple", translat: "яблуко", visibility: "hidden", tobeChecked: false, correctTutor: false, correctStudent: false, input: "" },
     { id: 3, word: "their", translat: "їх", visibility: "hidden", tobeChecked: false, correctTutor: false, correctStudent: false, input: "" },
     { id: 4, word: "also", translat: "також", visibility: "hidden", tobeChecked: false, correctTutor: false, correctStudent: false, input: "" },
