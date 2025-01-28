@@ -71,9 +71,9 @@ const Test = ({ twoThousand, setTwoThousand, tenWords, setTenWords, startTestMod
         if (randomNumber.length !== 0) {
             let checkIndexUkr = randomNumber[0]
             let checkIndexEng = randomNumber[1]
-            let newArr = [...twoThousand]
-            checkIndexUkr === -1 ? newArr[checkIndexEng].engCorrect = true : newArr[checkIndexUkr].ukrCorrect = true
-            setTwoThousand(newArr)
+            let newTwoThousand = [...twoThousand]
+            checkIndexUkr === -1 ? newTwoThousand[checkIndexEng].engCorrect = true : newTwoThousand[checkIndexUkr].ukrCorrect = true
+            setTwoThousand(newTwoThousand)
         }
     }
 
@@ -84,12 +84,13 @@ const Test = ({ twoThousand, setTwoThousand, tenWords, setTenWords, startTestMod
 
     const recordResults = () => {
         setTestResults(false)
-        let newTenWords = [...tenWords]
-        for (let i = 0; i < newTenWords.length; i++) {
-            if (newTenWords[i].engCorrect && newTenWords[i].ukrCorrect) {
-                newTenWords[i].correctTutor = true
+        let newTwoThousand = [...twoThousand]
+        for (let i = 0; i < newTwoThousand.length; i++) {
+            if (newTwoThousand[i].engCorrect && newTwoThousand[i].ukrCorrect) {
+                newTwoThousand[i].correctTutor = true
             }
         }
+        setTwoThousand(newTwoThousand)
     }
 
     useEffect(() => {
