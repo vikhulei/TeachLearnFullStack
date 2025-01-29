@@ -1,29 +1,15 @@
-import { useState } from "react"
-import { Wrapper, Logo, NavWrapper, User, UserWrapper, UserItem, MenuWrapper, MenuItem, TWrapper, TNav, YouAreLogged  } from "./HeaderStyle"
+import { Wrapper, Logo, NavWrapper, MenuWrapper, MenuItem } from "./HeaderStyle"
 import Hamburger from "./hamburger/Hamburger"
+import User from "./user/User"
 
 
 const Header = () => {
-  const [userMenu, setUserMenu] = useState(false)
-  const [logged, setLogged] = useState("logged out")
-
-  const showUserMenu = () => {
-    setUserMenu(!userMenu)
-  }
-
-  const showUserItem = (e) => {
-    setUserMenu(false)
-    setLogged(e.target.id)
-  }
-
 
   return (
-    // <TWrapper>
-    //   <TNav></TNav>
-    //   </TWrapper>
         <Wrapper>
       <MenuItem to="/"><Logo>TeachLearn.co.uk</Logo></MenuItem>
       <NavWrapper>
+      <Hamburger />
         <MenuWrapper>
           <MenuItem to="/">HOME</MenuItem>
           <MenuItem to="/myprogress">MY PROGRESS</MenuItem>
@@ -34,16 +20,8 @@ const Header = () => {
           <MenuItem to="/grammar">GRAMMAR</MenuItem>
           <MenuItem to="/contacts">CONTACTS</MenuItem>
         </MenuWrapper>
-        <Hamburger />
-      <User onClick={showUserMenu}/>
-        { userMenu && <UserWrapper>
-          <UserItem id="now registered" onClick={showUserItem}>Register</UserItem>
-          <UserItem id="logged in" onClick={showUserItem}>Login</UserItem>
-          <UserItem id="logged out" onClick={showUserItem}>Exit</UserItem>
-        </UserWrapper>
-         }
+        <User />
       </NavWrapper>
-      <YouAreLogged logged={logged}>You are {logged}</YouAreLogged>
     </Wrapper>
   )
 }
