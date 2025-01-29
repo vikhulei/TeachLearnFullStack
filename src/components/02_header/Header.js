@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { Wrapper, Logo, NavWrapper, User, UserWrapper, UserItem, MenuWrapper, MenuItem, TWrapper, TNav, YouAreLogged  } from "./HeaderStyle"
+import Hamburger from "./hamburger/Hamburger"
 
 
 const Header = () => {
@@ -33,6 +34,7 @@ const Header = () => {
           <MenuItem to="/grammar">GRAMMAR</MenuItem>
           <MenuItem to="/contacts">CONTACTS</MenuItem>
         </MenuWrapper>
+        <Hamburger />
       <User onClick={showUserMenu}/>
         { userMenu && <UserWrapper>
           <UserItem id="now registered" onClick={showUserItem}>Register</UserItem>
