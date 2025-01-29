@@ -33,6 +33,14 @@ const MenuWrapper = styled.div`
     justify-content: space-between;
     align-items: center;
     width: 700px;
+    @media(max-width: 1300px) {
+        position: absolute;
+        top: ${sizes.headerheight};
+        right: ${sizes.marginsides};
+        width: 150px;
+        height: 250px;
+        flex-direction: column;
+    }
 `
 
 const MenuItem = styled(Link)`
@@ -40,6 +48,25 @@ const MenuItem = styled(Link)`
     font-size: 0.8rem;
     text-decoration: none;
     color: black;
+    @media(max-width: 1300px) {
+        width: 100%;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        padding-left: 5px;
+        border-bottom: gray solid 1px;
+        background-color: lightgray;
+        font-weight: 500;
+        cursor: pointer;
+        user-select: none;
+    }
+`
+
+const LogoItem = styled(MenuItem)`
+    @media(max-width: 1300px) {
+        background-color: white; 
+        border-bottom: none;
+    }
 `
 
 const HambWrapper = styled.div`
@@ -53,4 +80,4 @@ const HambWrapper = styled.div`
     }
 `
 
-export { Wrapper, Logo, NavWrapper, MenuWrapper, MenuItem, HambWrapper }
+export { Wrapper, LogoItem, Logo, NavWrapper, MenuWrapper, MenuItem, HambWrapper }

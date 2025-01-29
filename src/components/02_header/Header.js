@@ -1,4 +1,4 @@
-import { Wrapper, Logo, NavWrapper, MenuWrapper, MenuItem, HambWrapper } from "./HeaderStyle"
+import { Wrapper, LogoItem, Logo, NavWrapper, MenuWrapper, MenuItem, HambWrapper } from "./HeaderStyle"
 import { GiHamburgerMenu } from "react-icons/gi";
 import User from "./user/User"
 
@@ -7,7 +7,7 @@ const Header = () => {
 
   return (
     <Wrapper>
-      <MenuItem to="/"><Logo>TeachLearn.co.uk</Logo></MenuItem>
+      <LogoItem to="/"><Logo>TeachLearn.co.uk</Logo></LogoItem>
       <NavWrapper>
         <HambWrapper>
           <GiHamburgerMenu />
