@@ -34,11 +34,11 @@ const MenuWrapper = styled.div`
     align-items: center;
     width: 700px;
     @media(max-width: 1300px) {
+        display: ${({hambMenu}) => hambMenu ? "flex" : "none"};
         position: absolute;
         top: ${sizes.headerheight};
         right: ${sizes.marginsides};
         width: 150px;
-        height: 250px;
         flex-direction: column;
     }
 `
@@ -71,8 +71,9 @@ const LogoItem = styled(MenuItem)`
 
 const HambWrapper = styled.div`
     position: absolute;
+    cursor: pointer;
     right: 90px;
-    height: 100%;
+    height: fit-content;
     font-size: 30px;
     display: none;
     @media (max-width: 1300px) {

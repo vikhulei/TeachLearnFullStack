@@ -1,11 +1,11 @@
 import { useState } from "react"
 import { UserIcon, UserWrapper, UserItem, YouAreLogged } from "./UserStyle"
 
-const User = () => {
-    const [userMenu, setUserMenu] = useState(false)
+const User = ({ userMenu, setUserMenu, setHambMenu }) => {
     const [logged, setLogged] = useState("logged out")
 
     const showUserMenu = () => {
+        setHambMenu(false)
         setUserMenu(!userMenu)
       }
     

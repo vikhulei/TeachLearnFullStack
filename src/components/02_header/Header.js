@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Wrapper, LogoItem, Logo, NavWrapper, MenuWrapper, MenuItem, HambWrapper } from "./HeaderStyle"
 import { GiHamburgerMenu } from "react-icons/gi";
 import User from "./user/User"
@@ -5,14 +6,22 @@ import User from "./user/User"
 
 const Header = () => {
 
+  const [userMenu, setUserMenu] = useState(false)
+  const [hambMenu, setHambMenu] = useState(false)
+
+  const clickHambMenu = () => {
+    setUserMenu(false)
+    setHambMenu(!hambMenu)
+  }
+
   return (
     <Wrapper>
       <LogoItem to="/"><Logo>TeachLearn.co.uk</Logo></LogoItem>
       <NavWrapper>
-        <HambWrapper>
+        <HambWrapper onClick={clickHambMenu}>
           <GiHamburgerMenu />
         </HambWrapper>
-        <MenuWrapper>
+        <MenuWrapper hambMenu={hambMenu} onClick={clickHambMenu}>
           <MenuItem to="/">HOME</MenuItem>
           <MenuItem to="/myprogress">MY PROGRESS</MenuItem>
           <MenuItem to="/vocabulary">VOCABULARY</MenuItem>
@@ -22,7 +31,12 @@ const Header = () => {
           <MenuItem to="/grammar">GRAMMAR</MenuItem>
           <MenuItem to="/contacts">CONTACTS</MenuItem>
         </MenuWrapper>
-        <User />
+        <User 
+        userMenu={userMenu}
+        setUserMenu={setUserMenu}
+        hambMenu={hambMenu}
+        setHambMenu={setHambMenu}
+        />
       </NavWrapper>
     </Wrapper>
   )

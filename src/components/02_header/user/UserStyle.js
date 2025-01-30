@@ -33,7 +33,8 @@ const YouAreLogged = styled.div`
     bottom: 0;
     right: ${sizes.marginsides};
     color: red;
-    color: ${({logged}) => logged=="logged out" ? "red" : "green"}
+    color: ${({logged}) => logged=="logged out" ? "red" : "green"};
+    user-select: none;
 `
 
 export { UserIcon, UserWrapper, UserItem, YouAreLogged }
