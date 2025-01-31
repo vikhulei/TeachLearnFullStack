@@ -17,7 +17,8 @@ const Wrapper = styled.div`
 const Logo = styled.div`
     margin-left: ${sizes.marginsides};
     font-family: "Rammetto One";
-    font-size: 2.5rem;
+    font-size: 3vw;
+    font-size: calc(12px + 2vw);
     font-weight: 200;
     display: flex;
     align-items: center;
