@@ -18,8 +18,6 @@ const ImageWrapper = styled.div`
     right: ${sizes.marginsides};
     height: ${sizes.blockOneHeight};
     z-index: -10;
-    // background-color: red;
-    // z-index: 100;
     @media(max-width: 800px) {
         right: 0;
         left: 0;
@@ -27,9 +25,23 @@ const ImageWrapper = styled.div`
 `
 
 const Image = styled.img`
+    position: absolute;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    // z-index: 9;
+`
+
+const ColorLayer = styled.div`
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 1;
+    @media(max-width: 800px) {
+        display: block;
+        background-color: rgba(7, 83, 91, 0.65);
+    }
 `
 
 const TextButtonsWrapper = styled.div`
@@ -121,4 +133,4 @@ const BlockTwoImage = styled.img`
     object-fit: cover;
 `
 
-export { Image, Wrapper, TextButtonsWrapper, Header, Subheader, ButtonsWrapper, SignUp, LogIn,  BlockTwoWrapper, ImageWrapper, BlockTwoGroup, BlockTwoImageWrapper, BlockTwoImage,  }
+export { Image, Wrapper, TextButtonsWrapper, Header, Subheader, ButtonsWrapper, SignUp, LogIn,  BlockTwoWrapper, ImageWrapper, ColorLayer, BlockTwoGroup, BlockTwoImageWrapper, BlockTwoImage,  }

@@ -7,6 +7,7 @@ const SvgWrapper = styled.div`
     height: ${sizes.blockOneHeight};
     z-index: 50;
     @media(max-width: 800px) {
+        display: none;
         // background-color: darkblue;
         right: 0;
         left: 0;
