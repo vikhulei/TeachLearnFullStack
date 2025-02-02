@@ -5,8 +5,10 @@ import { sizes } from "../../../components/01_config/Sizes";
 const Wrapper = styled.div`
     position: relative;
     height: ${sizes.blockOneHeight};
-    // width: calc(100vw - ${sizes.marginsides};
-    width: 60vw;
+    width: calc(100vw - ${sizes.marginsides};
+    @media(max-width: 800px) {
+        width: 100vw;
+    }
 `
 
 const ImageWrapper = styled.div`
@@ -16,6 +18,12 @@ const ImageWrapper = styled.div`
     right: ${sizes.marginsides};
     height: ${sizes.blockOneHeight};
     z-index: -10;
+    // background-color: red;
+    // z-index: 100;
+    @media(max-width: 800px) {
+        right: 0;
+        left: 0;
+    }
 `
 
 const Image = styled.img`
@@ -25,6 +33,7 @@ const Image = styled.img`
 `
 
 const TextButtonsWrapper = styled.div`
+    display: none;
     position: absolute;
     width: 600px;
     padding: 30px 0;
@@ -32,17 +41,29 @@ const TextButtonsWrapper = styled.div`
     top: 0;
     bottom: 0;
     display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;;
     color: white;
     text-align: right;
     z-index: 50;
+    @media(max-width: 800px) {
+        width: 100%;
+        padding-right: ${sizes.marginsides};
+        right: 0;
+    }
 `
     
 const Header = styled.div`
-    font-size: 3rem;
+    width: 100%;
+    font-size: calc(12px + 2.5vw);
     font-weight: 900;
+    @media(max-width: 800px) {
+        // text-align: center;
+        font-size: calc(10px + 3vw);
+        // margin-right: ${sizes.marginsides}
+    }
 `
 
 const Subheader = styled.div`
