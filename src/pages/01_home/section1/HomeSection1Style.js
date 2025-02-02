@@ -5,6 +5,8 @@ import { sizes } from "../../../components/01_config/Sizes";
 const Wrapper = styled.div`
     position: relative;
     height: ${sizes.blockOneHeight};
+    // width: calc(100vw - ${sizes.marginsides};
+    width: 60vw;
 `
 
 const ImageWrapper = styled.div`
