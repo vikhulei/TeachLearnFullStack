@@ -6,6 +6,7 @@ const Wrapper = styled.div`
     position: relative;
     height: ${sizes.blockOneHeight};
     width: calc(100vw - ${sizes.marginsides};
+    background-color: blue;
     @media(max-width: 800px) {
         width: 100vw;
     }
@@ -29,7 +30,6 @@ const Image = styled.img`
     width: 100%;
     height: 100%;
     object-fit: cover;
-    // z-index: 9;
 `
 
 const ColorLayer = styled.div`
@@ -45,42 +45,46 @@ const ColorLayer = styled.div`
 `
 
 const TextButtonsWrapper = styled.div`
-    display: none;
-    position: absolute;
+    position: relative;
     width: 600px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: 0;
     padding: 30px 0;
-    right: 40px;
-    top: 0;
-    bottom: 0;
+
+    // right: 40px;
+    // top: 0;
+    // bottom: 0;
     display: flex;
-    display: none;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;;
     color: white;
     text-align: right;
     z-index: 50;
+    background-color: red;
     @media(max-width: 800px) {
         width: 100%;
-        padding-right: ${sizes.marginsides};
+        padding: 30px 20px;
         right: 0;
+        // left: 20px;
+        text-align: center;
     }
 `
     
 const Header = styled.div`
+    position: relative;
     width: 100%;
     font-size: calc(12px + 2.5vw);
     font-weight: 900;
     @media(max-width: 800px) {
-        // text-align: center;
-        font-size: calc(10px + 3vw);
-        // margin-right: ${sizes.marginsides}
+        font-size: calc(12px + 3vw);
     }
 `
 
 const Subheader = styled.div`
     font-size: 1.4rem;
-    width: 400px;
+    // width: 400px;
     line-height: 2rem;
 `
 
@@ -88,6 +92,10 @@ const ButtonsWrapper = styled.div`
     display: flex;
     flex-direction: column;
     gap: 10px;
+    @media(max-width: 800px) {
+        width: 100%;
+        align-items: center;
+    }
 `
 
 const SignUp = styled.button`
