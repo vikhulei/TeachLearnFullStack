@@ -5,11 +5,11 @@ import { sizes } from "../../../components/01_config/Sizes";
 const Wrapper = styled.div`
     position: relative;
     height: ${sizes.blockOneHeight};
-    width: calc(100vw - ${sizes.marginsides};
-    background-color: blue;
-    @media(max-width: 800px) {
-        width: 100vw;
-    }
+    width: 100%;
+    // width: calc(100vw - ${sizes.marginsides};
+    // @media(max-width: 800px) {
+    //     width: 100vw;
+    // }
 `
 
 const ImageWrapper = styled.div`
@@ -51,10 +51,6 @@ const TextButtonsWrapper = styled.div`
     margin-left: auto;
     margin-right: 0;
     padding: 30px 0;
-
-    // right: 40px;
-    // top: 0;
-    // bottom: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -62,7 +58,7 @@ const TextButtonsWrapper = styled.div`
     color: white;
     text-align: right;
     z-index: 50;
-    background-color: red;
+    // background-color: red;
     @media(max-width: 800px) {
         width: 100%;
         padding: 30px 20px;
