@@ -73,7 +73,7 @@ const Header = styled.div`
     font-size: calc(12px + 2.5vw);
     font-weight: 900;
     @media(max-width: 800px) {
-        font-size: calc(12px + 3vw);
+        font-size: calc(20px + 3vw);
     }
 `
 
