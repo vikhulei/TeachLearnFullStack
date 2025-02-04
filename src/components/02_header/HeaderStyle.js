@@ -12,10 +12,14 @@ const Wrapper = styled.div`
     align-items: center;
     background-color: white;
     z-index: 100;
+    padding: 0 ${sizes.marginsides};
+    @media(max-width: 800px) {
+        padding: 0 ${sizes.marginmobile};
+    }
 `
 
 const Logo = styled.div`
-    margin-left: ${sizes.marginsides};
+    // margin-left: ${sizes.marginsides};
     font-family: "Rammetto One";
     font-size: 3vw;
     font-size: calc(12px + 2vw);
@@ -38,7 +42,7 @@ const MenuWrapper = styled.div`
         display: ${({hambMenu}) => hambMenu ? "flex" : "none"};
         position: absolute;
         top: ${sizes.headerheight};
-        right: ${sizes.marginsides};
+        right: ${sizes.marginmobile};
         width: 150px;
         flex-direction: column;
     }
@@ -61,6 +65,11 @@ const MenuItem = styled(Link)`
         cursor: pointer;
         user-select: none;
     }
+    @media(max-width: 800px) {
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
 `
 
 const LogoItem = styled(MenuItem)`
@@ -73,12 +82,18 @@ const LogoItem = styled(MenuItem)`
 const HambWrapper = styled.div`
     position: absolute;
     cursor: pointer;
-    right: 90px;
+    top: 0;
     height: fit-content;
     font-size: 30px;
     display: none;
     @media (max-width: 1300px) {
-        display: block;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        right: calc(40px + ${sizes.marginsides})
+    }
+    @media(max-width: 800px) {
+            right: calc(20px + ${sizes.marginsides})
     }
 `
 

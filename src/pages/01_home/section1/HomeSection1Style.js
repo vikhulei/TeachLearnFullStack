@@ -6,10 +6,10 @@ const Wrapper = styled.div`
     position: relative;
     height: ${sizes.blockOneHeight};
     width: 100%;
-    // width: calc(100vw - ${sizes.marginsides};
-    // @media(max-width: 800px) {
-    //     width: 100vw;
-    // }
+    width: calc(100vw - ${sizes.marginsides};
+    @media(max-width: 800px) {
+        width: 100vw;
+    }
 `
 
 const ImageWrapper = styled.div`
@@ -46,11 +46,10 @@ const ColorLayer = styled.div`
 
 const TextButtonsWrapper = styled.div`
     position: relative;
-    width: 600px;
+    width: 700px;
     height: 100%;
     margin-left: auto;
-    margin-right: 0;
-    padding: 30px 0;
+    padding: 30px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
