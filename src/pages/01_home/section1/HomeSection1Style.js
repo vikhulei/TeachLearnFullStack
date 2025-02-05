@@ -57,12 +57,10 @@ const TextButtonsWrapper = styled.div`
     color: white;
     text-align: right;
     z-index: 50;
-    // background-color: red;
     @media(max-width: 800px) {
         width: 100%;
-        padding: 30px 20px;
+        padding: 8vh 10vw;
         right: 0;
-        // left: 20px;
         text-align: center;
     }
 `
@@ -73,7 +71,7 @@ const Header = styled.div`
     font-size: calc(12px + 2.5vw);
     font-weight: 900;
     @media(max-width: 800px) {
-        font-size: calc(20px + 3vw);
+        font-size: calc(20px + 3.5vw);
     }
 `
 
