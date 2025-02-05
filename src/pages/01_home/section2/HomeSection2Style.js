@@ -8,12 +8,18 @@ const Wrapper = styled.div`
     background-color: #F5F5F5;
     display: flex;
     justify-content: space-between;
+    gap: 5vw;
     z-index: 10;
+    @media(max-width: 800px) {
+        flex-direction: column;
+        // padding: 0;
+    }
 
 `
 
 const FirstBlock = styled.div`
-    width: 20vw;
+    // width: 20vw;
+    flex: 1;
     height: 40vw;
     margin-top: 30px;
 `
@@ -23,8 +29,8 @@ const SecondBlock = styled(FirstBlock)`
 `
 
 const ThirdBlock = styled.div`
-    width: 35vw;
-    // height: 500px;
+    // width: 35vw;
+    flex: 1.5;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -47,9 +53,9 @@ const Image = styled.img`
 const FirstTextBox = styled.div`
     box-sizing: border-box;
     width: 100%;
-    height: 200px;
+    // height: 200px;
     margin-top: -20px;
-    padding: 40px 20px 0px 20px;
+    padding: 40px 20px 20px 20px;
     background-color: #EBEBEB;
     display: flex;
     flex-direction: column;
