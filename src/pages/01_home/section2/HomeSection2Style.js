@@ -3,11 +3,13 @@ import {  MainBodyText, MainHeading, MainHeadingCapital, } from "../../../compon
 
 const Wrapper = styled.div`
     position: relative;
+    height: fit-content;
     padding: 100px 5vw;
     background-color: #F5F5F5;
     display: flex;
     justify-content: space-between;
     z-index: 10;
+
 `
 
 const FirstBlock = styled.div`
@@ -21,8 +23,8 @@ const SecondBlock = styled(FirstBlock)`
 `
 
 const ThirdBlock = styled.div`
-    width: 600px;
-    height: 500px;
+    width: 35vw;
+    // height: 500px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <ContentWrapper>
       <HomeSection1 />
-      {/* <HomeBlock2 /> */}
+      <HomeBlock2 />
     </ContentWrapper>
   )
 }
