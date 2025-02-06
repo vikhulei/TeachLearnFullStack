@@ -4,8 +4,7 @@ export const sizes = {
     marginsections: "100px",
     headerheight: "90px",
     home1_desk_height: "75vh",
-    home1_mob_height: "calc(80vh - ${header_height})",
+    home1_mob_height: "calc(90vh - 90px)",  //minus headerheight
     colorgreenalpha: "green",
     blockOneHeight: "75vh",
-
 }

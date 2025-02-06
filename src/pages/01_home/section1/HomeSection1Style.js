@@ -4,9 +4,9 @@ import { sizes } from "../../../components/01_config/Sizes";
 
 const Wrapper = styled.div`
     position: relative;
-    height: ${sizes.blockOneHeight};
+    height: ${sizes.home1_desk_height};
     @media(max-width: 800px) {
-        height: calc(100vh - ${sizes.headerheight});
+        height: ${sizes.home1_mob_height};
     }
 `
 
@@ -15,10 +15,10 @@ const ImageWrapper = styled.div`
     top: ${sizes.headerheight};
     left: ${sizes.margins_desk};
     right: ${sizes.margins_desk};
-    height: ${sizes.blockOneHeight};
+    height: ${sizes.home1_desk_height};
     z-index: -10;
     @media(max-width: 800px) {
-        height: calc(100vh - ${sizes.headerheight});
+        height: ${sizes.home1_mob_height};
         right: 0;
         left: 0;
     }
@@ -55,7 +55,7 @@ const TextButtonsWrapper = styled.div`
     text-align: right;
     z-index: 50;
     @media(max-width: 800px) {
-        height: calc(100vh - ${sizes.headerheight});
+        height: ${sizes.home1_mob_height};
         width: 100%;
         padding: 6vh 10vw;
         right: 0;
