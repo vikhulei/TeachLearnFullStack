@@ -13,8 +13,8 @@ const Wrapper = styled.div`
 const ImageWrapper = styled.div`
     position: fixed;
     top: ${sizes.headerheight};
-    left: ${sizes.marginsides};
-    right: ${sizes.marginsides};
+    left: ${sizes.margins_desk};
+    right: ${sizes.margins_desk};
     height: ${sizes.blockOneHeight};
     z-index: -10;
     @media(max-width: 800px) {

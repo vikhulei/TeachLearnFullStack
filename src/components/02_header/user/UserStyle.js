@@ -8,7 +8,7 @@ const UserIcon = styled(FaRegUser)`
     font-size: 1.6rem;
     border: 3.5px solid black;
     border-radius: 5px;
-    margin-left: ${sizes.marginsides};
+    margin-left: ${sizes.margins_desk};
     cursor: pointer;
 `
 
@@ -40,7 +40,7 @@ const UserItem = styled.div`
 const YouAreLogged = styled.div`
     position: absolute;
     bottom: 0;
-    right: ${sizes.marginsides};
+    right: ${sizes.margins_desk};
     color: red;
     color: ${({logged}) => logged=="logged out" ? "red" : "green"};
     user-select: none;

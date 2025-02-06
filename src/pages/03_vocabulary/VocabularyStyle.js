@@ -4,7 +4,7 @@ import { colors } from "../../components/01_config/Colors"
 
 const Wrapper = styled.div`
     position: relative;
-    margin: ${sizes.headerheight} ${sizes.marginsides} 0;
+    margin: ${sizes.headerheight} ${sizes.margins_desk} 0;
     background-color: #EBEBEB;
     border-bottom: solid 2px white;
     display: flex;

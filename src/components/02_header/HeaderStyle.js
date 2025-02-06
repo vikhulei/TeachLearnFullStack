@@ -12,14 +12,14 @@ const Wrapper = styled.div`
     align-items: center;
     background-color: white;
     z-index: 100;
-    padding: 0 ${sizes.marginsides};
+    padding: 0 ${sizes.margins_desk};
     @media(max-width: 800px) {
         padding: 0 ${sizes.marginmobile};
     }
 `
 
 const Logo = styled.div`
-    // margin-left: ${sizes.marginsides};
+    // margin-left: ${sizes.margins_desk};
     font-family: "Rammetto One";
     font-size: 3vw;
     font-size: calc(12px + 2vw);
@@ -93,7 +93,7 @@ const HambWrapper = styled.div`
         right: calc(40px + ${sizes.marginsides})
     }
     @media(max-width: 800px) {
-            right: calc(20px + ${sizes.marginsides})
+            right: calc(20px + ${sizes.margins_desk})
     }
 `
 
