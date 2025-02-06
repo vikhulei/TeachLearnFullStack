@@ -11,7 +11,7 @@ import { FaFacebook } from "react-icons/fa6";
 const Wrapper = styled.div`
     position: relative;
     background-color: ${colors.mainDark};
-    margin: 0 ${sizes.marginsides};
+    margin: 0 ${sizes.margins_desk};
     padding: 20px;
     height: 200px;
     color: white;

@@ -12,7 +12,9 @@ const Wrapper = styled.div`
     z-index: 10;
     @media(max-width: 800px) {
         flex-direction: column;
-        padding: ${sizes.marginmobile} 25vw;
+        padding: ${sizes.marginmobile} 15vw;
+        // padding: 0 15vw;
+        gap: 50px;
     }
 
 `
@@ -22,20 +24,15 @@ const FirstBlock = styled.div`
     height: 40vw;
     margin-top: 30px;
     @media(max-width: 800px) {
-
+           margin-top: 0px; 
     }
 `
 
 const SecondBlock = styled(FirstBlock)`
     margin-top: -30px;
-`
-
-const ThirdBlock = styled.div`
-    flex: 1.5;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-top: 30px;
+    @media(max-width: 800px) {
+           margin-top: 0px; 
+    }
 `
 
 const ImageWrapper = styled.div`
@@ -71,6 +68,19 @@ const SecondTextBox = styled(FirstTextBox)`
     background-color: #D1D1D1;
 `
 
+const ThirdBlock = styled.div`
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 30px;
+    @media(max-width: 800px) {
+        margin-top: 0px;
+        
+    }
+`
+
 const HeadingCapital = styled(MainHeadingCapital)`
     
 `
@@ -86,12 +96,12 @@ const WhoWeAre = styled(HeadingCapital)`
 `
 
 const Heading = styled(MainHeading)`
-    margin-bottom: 10px;
+    // margin-bottom: 10px;
 `
 const BodyTextLastBlock = styled(BodyText)`
     line-height: 1.8;
     font-size: 1.3rem;
-     margin-bottom: 10px;   
+    // margin-bottom: 10px;   
 `
 
 const FindOutMore = styled(Heading)`
@@ -100,6 +110,7 @@ const FindOutMore = styled(Heading)`
     font-size: 1.5rem;
     font-weight: 900;
     cursor: pointer;
+    margin
 `
 
 
