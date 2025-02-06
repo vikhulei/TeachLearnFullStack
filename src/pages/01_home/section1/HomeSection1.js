@@ -7,9 +7,9 @@ const HomeSection1 = () => {
   return (
     <Wrapper>
       <ImageWrapper>
-        <ColorLayer />
         <Image src={home} />
       </ImageWrapper>
+      <ColorLayer />
       <Svg />
       <TextButtonsWrapper>
         <Header>ARE YOU LOOKING FOR AN EFFECTIVE WAY TO LEARN ENGLISH?</Header>

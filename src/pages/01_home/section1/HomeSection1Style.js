@@ -5,10 +5,8 @@ import { sizes } from "../../../components/01_config/Sizes";
 const Wrapper = styled.div`
     position: relative;
     height: ${sizes.blockOneHeight};
-    width: 100%;
-    width: calc(100vw - ${sizes.marginsides};
     @media(max-width: 800px) {
-        width: 100vw;
+        height: calc(100vh - ${sizes.headerheight});
     }
 `
 
@@ -20,13 +18,13 @@ const ImageWrapper = styled.div`
     height: ${sizes.blockOneHeight};
     z-index: -10;
     @media(max-width: 800px) {
+        height: calc(100vh - ${sizes.headerheight});
         right: 0;
         left: 0;
     }
 `
 
 const Image = styled.img`
-    position: absolute;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -34,12 +32,11 @@ const Image = styled.img`
 
 const ColorLayer = styled.div`
     position: absolute;
-    width: 100%;
-    height: 100%;
     display: none;
-    z-index: 1;
     @media(max-width: 800px) {
         display: block;
+        width: 100%;
+        height: 100%;
         background-color: rgba(7, 83, 91, 0.65);
     }
 `
@@ -58,8 +55,9 @@ const TextButtonsWrapper = styled.div`
     text-align: right;
     z-index: 50;
     @media(max-width: 800px) {
+        height: calc(100vh - ${sizes.headerheight});
         width: 100%;
-        padding: 8vh 10vw;
+        padding: 6vh 10vw;
         right: 0;
         text-align: center;
     }
@@ -67,7 +65,6 @@ const TextButtonsWrapper = styled.div`
     
 const Header = styled.div`
     position: relative;
-    width: 100%;
     font-size: calc(12px + 2.5vw);
     font-weight: 900;
     @media(max-width: 800px) {
@@ -76,15 +73,14 @@ const Header = styled.div`
 `
 
 const Subheader = styled.div`
-    font-size: 1.4rem;
-    // width: 400px;
+    font-size: calc(10px + 1.5vh);
     line-height: 2rem;
 `
 
 const ButtonsWrapper = styled.div`
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 2vh;
     @media(max-width: 800px) {
         width: 100%;
         align-items: center;
@@ -99,7 +95,12 @@ const SignUp = styled.button`
     border: #D34E4E solid 4px;
     border-radius: 5px;
     cursor: pointer;
-    background-color: rgba(255, 255, 255, 0)
+    background-color: rgba(255, 255, 255, 0);
+    @media(max-width: 800px) {
+        width: calc(30px + 60vw);
+        height: 8vh;
+    }
+    
 `
 
 const LogIn = styled(SignUp)`

@@ -1,11 +1,13 @@
 import styled from "styled-components";
 import {  MainBodyText, MainHeading, MainHeadingCapital, } from "../../../components/01_config/MainStyles"
+import { sizes } from "../../../components/01_config/Sizes";
 
 const Wrapper = styled.div`
     position: relative;
-    height: fit-content;
-    padding: 100px 5vw;
+    // height: fit-content;
+    padding: ${sizes.marginsections} 5vw;
     background-color: #F5F5F5;
+    background-color: red;
     display: flex;
     justify-content: space-between;
     gap: 5vw;
