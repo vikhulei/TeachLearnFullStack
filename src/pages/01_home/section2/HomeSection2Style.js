@@ -4,26 +4,26 @@ import { sizes } from "../../../components/01_config/Sizes";
 
 const Wrapper = styled.div`
     position: relative;
-    // height: fit-content;
     padding: ${sizes.marginsections} 5vw;
     background-color: #F5F5F5;
-    background-color: red;
     display: flex;
     justify-content: space-between;
     gap: 5vw;
     z-index: 10;
     @media(max-width: 800px) {
         flex-direction: column;
-        // padding: 0;
+        padding: ${sizes.marginmobile} 25vw;
     }
 
 `
 
 const FirstBlock = styled.div`
-    // width: 20vw;
     flex: 1;
     height: 40vw;
     margin-top: 30px;
+    @media(max-width: 800px) {
+
+    }
 `
 
 const SecondBlock = styled(FirstBlock)`
@@ -31,7 +31,6 @@ const SecondBlock = styled(FirstBlock)`
 `
 
 const ThirdBlock = styled.div`
-    // width: 35vw;
     flex: 1.5;
     display: flex;
     flex-direction: column;
@@ -43,7 +42,7 @@ const ImageWrapper = styled.div`
     position: relative;
     width: 100%;
     height: 70%;
-    left: -20px;
+    left: -10px;
 `
 
 const Image = styled.img`
@@ -53,17 +52,19 @@ const Image = styled.img`
 `
 
 const FirstTextBox = styled.div`
+    position: relative;
     box-sizing: border-box;
     width: 100%;
-    // height: 200px;
     margin-top: -20px;
     padding: 40px 20px 20px 20px;
+    right: -10px;
     background-color: #EBEBEB;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     gap: 10px;
     text-align: right;
+    z-index: -10;
 `
 
 const SecondTextBox = styled(FirstTextBox)`
