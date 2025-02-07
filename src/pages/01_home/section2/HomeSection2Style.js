@@ -11,7 +11,7 @@ const Wrapper = styled.div`
     gap: 5vw;
     z-index: 10;
     @media(max-width: 800px) {
-        flex-direction: column;
+        flex-direction: column-reverse;
         padding: ${sizes.marginmobile} 15vw;
         // padding: 0 15vw;
         gap: 50px;
@@ -93,6 +93,9 @@ const BodyText = styled(MainBodyText)`
 const WhoWeAre = styled(HeadingCapital)`
     color: grey;
     margin-bottom: 15px;
+    @media(max-width: 800px) {
+        font-size: calc(12px + 1.5vw);
+    }
 `
 
 const Heading = styled(MainHeading)`
