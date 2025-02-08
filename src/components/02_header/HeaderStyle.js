@@ -42,7 +42,6 @@ const MenuWrapper = styled.div`
         display: ${({hambMenu}) => hambMenu ? "flex" : "none"};
         position: absolute;
         top: ${sizes.headerheight};
-        right: ${sizes.marginmobile};
         right: 0;
         width: 150px;
         flex-direction: column;
@@ -68,8 +67,7 @@ const MenuItem = styled(Link)`
     }
     @media(max-width: 800px) {
         display: flex;
-        align-items: center;
-        text-align: center;
+        justify-content: center;
     }
 `
 

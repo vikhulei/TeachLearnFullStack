@@ -19,7 +19,6 @@ const UserWrapper = styled.div`
     right: ${sizes.marginsides};
     top: ${sizes.headerheight};
     @media(max-width: 800px) {
-        right: ${sizes.marginmobile};
         right: 0;
     }
 `
