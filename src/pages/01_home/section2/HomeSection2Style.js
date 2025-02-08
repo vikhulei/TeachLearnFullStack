@@ -22,14 +22,14 @@ const Wrapper = styled.div`
 const FirstBlock = styled.div`
     flex: 1;
     height: 40vw;
-    margin-top: 30px;
+    margin-top: 60px;
     @media(max-width: 800px) {
            margin-top: 0px; 
     }
 `
 
 const SecondBlock = styled(FirstBlock)`
-    margin-top: -30px;
+    margin-top: 0px;
     @media(max-width: 800px) {
            margin-top: 0px; 
     }
@@ -74,7 +74,7 @@ const ThirdBlock = styled.div`
     flex-direction: column;
     justify-content: space-between;
     gap: 15px;
-    margin-top: 30px;
+    margin-top: 60px;
     @media(max-width: 800px) {
         margin-top: 0px;
         gap: ${sizes.text_mob_gap}

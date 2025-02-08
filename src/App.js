@@ -29,7 +29,7 @@ const App = () => {
           <Route path="/grammar" element={<Grammar />} />
           <Route path="/contacts" element={<Contacts />} />
         </Routes>
-        {/* <Footer /> */}
+        <Footer />
       </Router>
     </div>
   );

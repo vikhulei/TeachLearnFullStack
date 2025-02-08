@@ -12,8 +12,7 @@ const Wrapper = styled.div`
     position: relative;
     background-color: ${colors.mainDark};
     margin: 0 ${sizes.margins_desk};
-    padding: 20px;
-    height: 200px;
+    // padding: 20px;
     color: white;
     text-align: center;
     border-bottom: white solid 2px;
@@ -24,14 +23,14 @@ const TopBlock = styled.div`
     display: flex;
     justify-content: center;
     gap: 10vw;
-
+    padding: 20px 0;
 `
     
 const BottomBlock = styled.div`
-   margin: 30px auto 0; 
-   padding-top: 20px;
-   border-top: solid white 2px;
-   width: 70vw;
+    margin: 0px auto; 
+    padding: 20px 0;
+    border-top: solid white 2px;
+    width: 70vw;
 `
     
 const TextBlock = styled.div`

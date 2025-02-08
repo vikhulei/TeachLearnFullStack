@@ -1,7 +1,7 @@
 export const sizes = {
     margins_desk: "40px",
     marginmobile: "10px",
-    marginsections: "100px",
+    marginsections: "60px",
     sections_mob_margintop: "40px",
     sections_mob_marginsides: "10vw",
     text_mob_gap: "20px",
