@@ -1,6 +1,6 @@
 export const sizes = {
     margins_desk: "40px",
-    marginmobile: "50px",
+    marginmobile: "10px",
     marginsections: "100px",
     headerheight: "90px",
     home1_desk_height: "75vh",

@@ -43,6 +43,7 @@ const MenuWrapper = styled.div`
         position: absolute;
         top: ${sizes.headerheight};
         right: ${sizes.marginmobile};
+        right: 0;
         width: 150px;
         flex-direction: column;
     }
