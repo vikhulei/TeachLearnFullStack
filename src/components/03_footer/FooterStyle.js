@@ -12,11 +12,13 @@ const Wrapper = styled.div`
     position: relative;
     background-color: ${colors.mainDark};
     margin: 0 ${sizes.margins_desk};
-    // padding: 20px;
     color: white;
     text-align: center;
     border-bottom: white solid 2px;
     z-index: 99;
+    @media(max-width: 800px) {
+        margin: 0;
+    }
 `
 
 const TopBlock = styled.div`
@@ -24,6 +26,11 @@ const TopBlock = styled.div`
     justify-content: center;
     gap: 10vw;
     padding: 20px 0;
+    background-color: red;
+    @media(max-width: 800px) {
+        flex-direction: column;
+        align-items: center;
+    }
 `
     
 const BottomBlock = styled.div`
@@ -38,8 +45,12 @@ const TextBlock = styled.div`
     display: flex;
     flex-direction: column;
     line-height: 1.5;
+    background-color: green;
     &:last-of-type {
         display: block;
+    }
+    @media(max-width: 800px) {
+        text-align: center;
     }
 `
 

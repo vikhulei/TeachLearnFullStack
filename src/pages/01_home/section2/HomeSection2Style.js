@@ -24,7 +24,7 @@ const FirstBlock = styled.div`
     height: 40vw;
     margin-top: 60px;
     @media(max-width: 800px) {
-           margin-top: 0px; 
+        margin-top: 0px;
     }
 `
 
