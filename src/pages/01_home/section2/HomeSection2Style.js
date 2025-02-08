@@ -13,8 +13,8 @@ const Wrapper = styled.div`
     @media(max-width: 800px) {
         flex-direction: column-reverse;
         padding: ${sizes.marginmobile} 15vw;
-        // padding: 0 15vw;
-        gap: 50px;
+        padding: ${sizes.sections_mob_margintop} ${sizes.sections_mob_marginsides};
+        gap: ${sizes.sections_mob_margintop};
     }
 
 `
@@ -77,7 +77,7 @@ const ThirdBlock = styled.div`
     margin-top: 30px;
     @media(max-width: 800px) {
         margin-top: 0px;
-        
+        gap: ${sizes.text_mob_gap}
     }
 `
 
@@ -92,28 +92,23 @@ const BodyText = styled(MainBodyText)`
 
 const WhoWeAre = styled(HeadingCapital)`
     color: grey;
-    margin-bottom: 15px;
     @media(max-width: 800px) {
         font-size: calc(12px + 1.5vw);
     }
 `
 
 const Heading = styled(MainHeading)`
-    // margin-bottom: 10px;
 `
 const BodyTextLastBlock = styled(BodyText)`
     line-height: 1.8;
     font-size: 1.3rem;
-    // margin-bottom: 10px;   
 `
 
 const FindOutMore = styled(Heading)`
-    margin-top: 15px;
     color: #07535B;
     font-size: 1.5rem;
     font-weight: 900;
     cursor: pointer;
-    margin
 `
 
 
