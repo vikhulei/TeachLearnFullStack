@@ -76,6 +76,9 @@ const LogoItem = styled(MenuItem)`
         background-color: white; 
         border-bottom: none;
     }
+    @media(max-width: 800px) {
+        justify-content: left;
+    }
 `
 
 const HambWrapper = styled.div`
