@@ -7,6 +7,10 @@ const Wrapper = styled.div`
     margin: ${sizes.headerheight} ${sizes.margins_desk} 0;
     height: 100vh;
     border-bottom: white solid 2px;
+    @media(max-width: 800px) {
+        height: calc(100vh - ${sizes.headerheight});
+        margin: ${sizes.headerheight} 0 0;
+    }
 `
 
 const ImageWrapper = styled.div`
@@ -40,6 +44,10 @@ const Text = styled.div`
     text-align: center;
     color: white;
     z-index: 20;
+    @media(max-width: 800px) {
+        font-size: 2rem;
+        line-height: 2;
+    }
 `
 
 
