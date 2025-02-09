@@ -5,7 +5,8 @@ const MainWrapper = styled.div`
 `
 
 const MainBodyText = styled.div`
-    font-size: 1rem;
+    font-size: 1.3rem;
+    line-height: 1.8;    
     color: black;
 `
 

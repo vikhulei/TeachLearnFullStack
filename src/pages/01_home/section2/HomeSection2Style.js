@@ -87,7 +87,7 @@ const HeadingCapital = styled(MainHeadingCapital)`
 
 
 const BodyText = styled(MainBodyText)`
-    line-height: 2;
+    font-size: 1rem;
 `
 
 const WhoWeAre = styled(HeadingCapital)`
@@ -99,9 +99,7 @@ const WhoWeAre = styled(HeadingCapital)`
 
 const Heading = styled(MainHeading)`
 `
-const BodyTextLastBlock = styled(BodyText)`
-    line-height: 1.8;
-    font-size: 1.3rem;
+const BodyTextLastBlock = styled(MainBodyText)`
 `
 
 const FindOutMore = styled(Heading)`

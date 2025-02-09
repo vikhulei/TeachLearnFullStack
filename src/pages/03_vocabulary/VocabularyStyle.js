@@ -1,18 +1,21 @@
 import styled, { css } from "styled-components";
 import { sizes } from "../../components/01_config/Sizes";
 import { colors } from "../../components/01_config/Colors"
+// import { Heading } from "../01_home/section2/HomeSection2Style";
+import { MainHeading, MainBodyText } from "../../components/01_config/MainStyles";
 
 const Wrapper = styled.div`
     position: relative;
     margin: ${sizes.headerheight} ${sizes.margins_desk} 0;
     background-color: #EBEBEB;
+    background-colr: red;
     border-bottom: solid 2px white;
     display: flex;
     flex-direction: column;
-    gap: 50px;
-    padding-bottom: 50px;
-    &:nth-of-type(4) {
-        margin-top: 200px;
+    gap: ${sizes.marginsections};
+    padding-bottom: ${sizes.marginsections};
+    @media(max-width: 800px) {
+        margin: ${sizes.headerheight} 0;
     }
 `
 
@@ -40,27 +43,38 @@ const Header = styled.div`
     padding: 50px;
     background-color: ${colors.mainDark};
     color: white;
-`
-
-const HeaderText = styled.div`
     font-size: 3rem;
     font-weight: bold;
     text-transform: uppercase;
+    @media(max-width: 800px) {
+        padding: 30px 0;
+        text-align: center;
+        font-size: 2rem
+    }
 `
 
-const Title = styled.div`
-    position: relative;
+// const Title = styled.div`
+//     position: relative;
+//     text-align: center;
+//     font-size: 2rem;
+//     font-weight: bold;
+//     z-index: 20;
+// `
+
+const Title = styled(MainHeading)`
     text-align: center;
-    font-size: 2rem;
-    font-weight: bold;
-    z-index: 20;
 `
 
-const MainText = styled.div`
-    position: relative;
+// const MainText = styled.div`
+//     position: relative;
+//     padding: 0 10vw;
+//     font-size: 1.1rem;
+//     line-height: 1.7;
+//     z-index: 20;
+// `
+
+const MainText = styled(MainBodyText)`
     padding: 0 10vw;
-    font-size: 1.1rem;
-    line-height: 1.7;
     z-index: 20;
 `
 
@@ -118,4 +132,4 @@ const Image = styled.img`
 `
 
 
-export { Wrapper, Header, HeaderText, Title, MainText, LargeCircle, MediumCircle, SmallCircle, ImageWrapper, Image, GenericButton, Word, WordSpan }
+export { Wrapper, Header, Title, MainText, LargeCircle, MediumCircle, SmallCircle, ImageWrapper, Image, GenericButton, Word, WordSpan }

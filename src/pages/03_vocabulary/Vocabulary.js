@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { Wrapper, Header, HeaderText, Title, MainText, LargeCircle, MediumCircle, SmallCircle, ImageWrapper, Image } from "./VocabularyStyle"
+import { Wrapper, Header, Title, MainText, LargeCircle, MediumCircle, SmallCircle, ImageWrapper, Image } from "./VocabularyStyle"
 import { TwoThousand } from "../../components/01_config/TwoThousand"
 import picture from "../../assets/01_home/home.jpg"
 import FrameComponent from "./01_frames/Frame"
@@ -17,7 +17,7 @@ const Vocabulary = () => {
     return (
         <Wrapper>
             <Header>
-                <HeaderText>Vocabulary</HeaderText>
+                Vocabulary
             </Header>
             <Title>World-Class solution for learning a language</Title>
             <MainText>
