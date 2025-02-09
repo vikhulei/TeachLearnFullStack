@@ -26,7 +26,7 @@ const TopBlock = styled.div`
     justify-content: center;
     gap: 10vw;
     padding: 20px 0;
-    background-color: red;
+    // background-color: red;
     @media(max-width: 800px) {
         flex-direction: column;
         align-items: center;
@@ -45,7 +45,7 @@ const TextBlock = styled.div`
     display: flex;
     flex-direction: column;
     line-height: 1.5;
-    background-color: green;
+    // background-color: green;
     &:last-of-type {
         display: block;
     }
@@ -88,6 +88,9 @@ const TeachLearn = styled(Link)`
     font-size: 1.3rem;
     text-decoration: none;
     color: white;
+    @media(max-width: 800px) {
+        font-size: 1rem;
+    }
 `
 
 export { Wrapper, TopBlock, BottomBlock, TextBlock, Heading, BodyText, LinkText, Instagram, X, Facebook, TeachLearn  }
