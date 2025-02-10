@@ -12,7 +12,6 @@ const Wrapper = styled.div`
     z-index: 10;
     @media(max-width: 800px) {
         flex-direction: column-reverse;
-        padding: ${sizes.marginmobile} 15vw;
         padding: ${sizes.sections_mob_margintop} ${sizes.sections_mob_marginsides};
         gap: ${sizes.sections_mob_margintop};
     }

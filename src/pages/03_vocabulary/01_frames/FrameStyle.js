@@ -9,6 +9,10 @@ const FramesWrapper = styled.div`
     gap: 7vw;
     z-index: 20;
     opacity: ${({ startTestMode, listOfWordsMode }) => startTestMode || listOfWordsMode ? "0.4" : "1"};
+    @media(max-width: 800px) {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
 `
 
 const Frame = styled.div`
@@ -18,13 +22,17 @@ const Frame = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 15px;
+    // gap: 15px;
     background-color: rgba(255, 255, 255, 0.6);
     box-shadow: 0px 0px 10px #D6C9C9;
     &:last-of-type {
        padding: 0px 0 0px;
        gap: 0;
        justify-items: stretch;
+    }
+    @media(max-width: 800px) {
+        width: 90vw;
+        max-width: 500px;
     }
 `
 
@@ -60,7 +68,6 @@ const LanguageButtonsWrapper = styled.div`
     display: flex;
     justify-content: space-between;
     padding: 0 40px;
-    margin-bottom: 00px;
 `
 
 const LanguageButton = styled.button`
@@ -140,9 +147,14 @@ const LargeButtonsWrapper = styled.div`
     justify-content: space-around;
     align-items: center;
     border-bottom: solid lightgrey 2px;
+    @media(max-width: 800px) {
+        justify
+        padding: 20px 5px;
+    }
 `
 
 const LargeButton = styled(GenericButton)`
+    // background-color: red;
     &:nth-of-type(1) {
         border: ${({ thousand }) => thousand == "First Thousand" ? `${colors.greyBoldFrame} solid 4px` : ""}
     }

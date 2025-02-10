@@ -62,20 +62,14 @@ const Header = styled.div`
 // `
 
 const Title = styled(MainHeading)`
-    text-align: center;
+    // text-align: center;
+    padding: 0 ${sizes.sections_mob_marginsides};
 `
 
-// const MainText = styled.div`
-//     position: relative;
-//     padding: 0 10vw;
-//     font-size: 1.1rem;
-//     line-height: 1.7;
-//     z-index: 20;
-// `
-
 const MainText = styled(MainBodyText)`
-    padding: 0 10vw;
+    padding: 0 ${sizes.sections_mob_marginsides};
     z-index: 20;
+    text-align: justify;
 `
 
 const Word = styled.div`
