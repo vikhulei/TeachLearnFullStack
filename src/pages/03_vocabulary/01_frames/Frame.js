@@ -118,11 +118,13 @@ const FrameComponent = ({ startTestMode, listOfWordsMode, twoThousand, setTwoTho
                 </LanguageButtonsWrapper>
                 {twoThousand.filter(val => val.id <= bottomButtonValue && val.id > (bottomButtonValue - 10)).map((value, index) => (
                     <Word key={index} >
+                        <div>
                         <CheckButtonFrame
                             onClick={clickInputButton}
                             correctStudent={value.correctStudent}
                             correctTutor={value.correctTutor}
                             id={value.id - 1}
+                            style={{display: "inline"}}
                         >
                         </CheckButtonFrame>
                         <Input
@@ -136,7 +138,10 @@ const FrameComponent = ({ startTestMode, listOfWordsMode, twoThousand, setTwoTho
                             value={value.input}
                             onInput={fillInput}
                         />
+                        </div>
+                        <div style={{display: "flex"}}>
                         <WordSpan style={{ color: value.correctTutor ? colors.greenWord : "black" }} id={value.id} onClick={clickWord}> {value.id}. {language === "Eng" ? value.word : value.translat}</WordSpan> <TranslatSpan style={{ "visibility": value.visibility }}>{language === "Eng" ? value.translat : value.word}</TranslatSpan>
+                        </div>
                     </Word>
                 ))}
             </Frame>

@@ -105,6 +105,9 @@ const Word = styled.div`
     font-size: 1.1rem;
     display: flex;
     align-items: center;
+    // flex-wrap: wrap;
+    flex-direction: column;
+    align-items: start;
 `
 
 const WordCheck = styled(Word)`
@@ -115,12 +118,14 @@ const WordCheck = styled(Word)`
     height: 20px;
 `
 
-const WordSpan = styled.span`
+const WordSpan = styled.div`
     margin-right: 5px;
     cursor: pointer;
     &:hover {
         font-weight: 750;
     }
+    // display: block;
+    // display: inline-block;
 `
 
 const WordSpanCheck = styled(WordSpan)`
