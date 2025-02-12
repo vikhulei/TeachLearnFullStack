@@ -105,9 +105,11 @@ const Word = styled.div`
     font-size: 1.1rem;
     display: flex;
     align-items: center;
-    // flex-wrap: wrap;
-    flex-direction: column;
-    align-items: start;
+    @media(max-width: 800px) {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    // align-items: start;
 `
 
 const WordCheck = styled(Word)`
