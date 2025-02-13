@@ -8,9 +8,9 @@ const MemorizingWrapper = styled.div`
     display: flex;
     justify-content: center;
     gap: 5vw;
-    @media(max-width: 800px) {
+    @media(max-width: 900px) {
         flex-direction: column;
-        gap: 5vh;
+        gap: 0;
         // background-color: red;
     }
 `
@@ -26,23 +26,25 @@ const CircleTextWrapper = styled.div`
     &:nth-of-type(2) {
         top: 40px;
     }
-    @media(max-width: 800px) {
+    @media(max-width: 900px) {
+        gap: 20px;
         justify-content: start;
-        align-items: center;
+        flex-direction: row;
+        align-items: start;
         // background-color: green;
-        padding: 30px 0 30px 30px;
+        padding: 30px 10px;
         // padding-left: 30px;
         &:nth-of-type(2) {
             top: 0px;
-            padding-right: 60px;
+            // padding-right: 60px;
         }
     }
     z-index: 20;
 `
 
 const Circle = styled.div`
-    width: 120px;
-    height: 120px;
+    min-width: 120px;
+    min-height: 120px;
     border-radius: 200px;
     border: solid #B5B5B5 3px;
     display: flex;
@@ -59,8 +61,8 @@ const Line = styled.div`
     height: 80px;
     border-bottom: solid #B5B5B5 3px;
     z-index: 10;
-    @media(max-width: 800px) {
-        width: calc(50% - 7vw);
+    @media(max-width: 900px) {
+        width: 50px;
         height: 100%;
         border-bottom: none;
         border-right: solid #B5B5B5 3px;
@@ -69,16 +71,31 @@ const Line = styled.div`
     // display: none;
 `
 
+const TextWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    @media(max-width: 900px) {
+    align-items: start;
+        gap: 15px;
+    }
+`
+
 const CircleHeading = styled.div`
     margin: 20px 0;
     font-size: 1.6rem;
     font-weight: bold;
-    display: none;
+    // background-color: red;
+    // display: none;
+    @media(max-width: 900px) {
+        margin: 0;
+    }
 `
 
 const CircleText = styled(MainText)`
     padding: 0;
-    display: none;
+    @media(max-width: 900px) {
+        text-align: left;
+    }
 `
 
-export { MemorizingWrapper, CircleTextWrapper, Circle, Line, CircleHeading, CircleText }
+export { MemorizingWrapper, CircleTextWrapper, Circle, Line, TextWrapper, CircleHeading, CircleText }
