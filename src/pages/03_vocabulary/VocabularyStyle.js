@@ -15,7 +15,8 @@ const Wrapper = styled.div`
     gap: ${sizes.marginsections};
     padding-bottom: ${sizes.marginsections};
     @media(max-width: 800px) {
-        margin: ${sizes.headerheight} 0;
+        margin: ${sizes.headerheight} 0 0;
+        
     }
 `
 
@@ -117,6 +118,9 @@ const ImageWrapper = styled.div`
     position: relative;
     width: 100%;
     height: 250px;
+    @media(max-width: 800px) {
+        height: 15vh;
+    }
 `
 
 const Image = styled.img`
