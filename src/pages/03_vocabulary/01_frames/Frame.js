@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import { FramesWrapper, Frame, CheckButtonFrame, LanguageButtonsWrapper, LanguageButton, InputWrapper, WordWrapper, Input, Word, WordSpan, TranslatSpan, LargeButtonsWrapper, LargeButton, NumberButtonWrapper, TopButton, BottomButton, PercentButton, ProgressBar, Percent } from "./FrameStyle"
+import { FramesWrapper, Frame, CheckButtonFrame, LanguageButtonsWrapper, LanguageButton, InputWordWrapper, WordWrapper, Input, Word, WordSpan, TranslatSpan, LargeButtonsWrapper, LargeButton, NumberButtonWrapper, TopButton, BottomButton, PercentButton, ProgressBar, Percent } from "./FrameStyle"
 import { colors } from "../../../components/01_config/Colors"
 
 const FrameComponent = ({ startTestMode, listOfWordsMode, twoThousand, setTwoThousand }) => {
@@ -118,7 +118,7 @@ const FrameComponent = ({ startTestMode, listOfWordsMode, twoThousand, setTwoTho
                 </LanguageButtonsWrapper>
                 {twoThousand.filter(val => val.id <= bottomButtonValue && val.id > (bottomButtonValue - 10)).map((value, index) => (
                     <Word key={index}>
-                        <InputWrapper>
+                        {/* <InputWrapper> */}
                         <CheckButtonFrame
                             onClick={clickInputButton}
                             correctStudent={value.correctStudent}
@@ -127,8 +127,8 @@ const FrameComponent = ({ startTestMode, listOfWordsMode, twoThousand, setTwoTho
                             style={{display: "inline"}}
                         >
                         </CheckButtonFrame>
-                        </InputWrapper>
-                        <WordWrapper>
+                        {/* </InputWrapper> */}
+                        <InputWordWrapper>
                         <Input
                             type="text"
                             data-input={value.input}
@@ -141,10 +141,10 @@ const FrameComponent = ({ startTestMode, listOfWordsMode, twoThousand, setTwoTho
                             onInput={fillInput}
                         />
   
-                        <div style = {{display: "inline-block"}}>
+                        <WordWrapper>
                         <WordSpan style={{ color: value.correctTutor ? colors.greenWord : "black" }} id={value.id} onClick={clickWord}> {value.id}. {language === "Eng" ? value.word : value.translat}</WordSpan> <TranslatSpan style={{ "visibility": value.visibility }}>{language === "Eng" ? value.translat : value.word}</TranslatSpan>
-                        </div>
                         </WordWrapper>
+                        </InputWordWrapper>
                     </Word>
                 ))}
             </Frame>

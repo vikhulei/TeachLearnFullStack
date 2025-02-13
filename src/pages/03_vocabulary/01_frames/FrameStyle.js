@@ -92,19 +92,15 @@ const LanguageButton = styled.button`
     }
 `
 
-const InputWrapper = styled.div`
+const InputWordWrapper = styled.div`
     display: flex;
-    align-items: center;
+    @media(max-width: 800px) {
+        flex-direction: column;
+    }
 `
 
 const WordWrapper = styled.div`
     display: flex;
-    @media(max-width: 800px) {
-    flex-direction: column;
-    }
-    // justify-content: right;
-    // text-align: left;
-
 `
 
 const Input = styled.input`
@@ -113,6 +109,9 @@ const Input = styled.input`
     height: 24px;
     margin-right: 25px;
     background-color: lightgrey;
+    @media(max-width: 800px) {
+        width: 55vw;
+    }
 `
 
 const Word = styled.div`
@@ -120,12 +119,9 @@ const Word = styled.div`
     font-weight: 600;
     font-size: 1.1rem;
     display: flex;
-    align-items: center;
+    align-items: start;
     @media(max-width: 800px) {
-        flex-wrap: wrap;
-        // flex-direction: column;
-        align-items: start;
-        margin-bottom: 15px;
+        margin-top: 15px;
     }
 
 `
@@ -238,4 +234,4 @@ const Percent = styled.div`
     margin: auto;
 `
 
-export { FramesWrapper, Frame, CheckButton, CheckButtonFrame, LanguageButtonsWrapper, LanguageButton, InputWrapper, WordWrapper, Input, Word, WordCheck, WordSpan, WordSpanCheck, TranslatSpan, LargeButtonsWrapper, LargeButton, NumberButtonWrapper, TopButton, BottomButton, PercentButton, ProgressBar, Percent }
+export { FramesWrapper, Frame, CheckButton, CheckButtonFrame, LanguageButtonsWrapper, LanguageButton, InputWordWrapper, WordWrapper, Input, Word, WordCheck, WordSpan, WordSpanCheck, TranslatSpan, LargeButtonsWrapper, LargeButton, NumberButtonWrapper, TopButton, BottomButton, PercentButton, ProgressBar, Percent }
