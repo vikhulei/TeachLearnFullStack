@@ -17,7 +17,7 @@ const FramesWrapper = styled.div`
 
 const Frame = styled.div`
     box-sizing: border-box;
-    width: 500px;
+    width: 480px;
     padding: 15px 30px 40px;
     display: flex;
     flex-direction: column;
@@ -32,7 +32,7 @@ const Frame = styled.div`
     }
     @media(max-width: 800px) {
         width: 90vw;
-        max-width: 500px;
+        max-width: 480px;
     }
 `
 
@@ -68,6 +68,7 @@ const LanguageButtonsWrapper = styled.div`
     display: flex;
     justify-content: space-between;
     padding: 0 40px;
+    margin-bottom: 10px;
 `
 
 const LanguageButton = styled.button`
@@ -80,15 +81,30 @@ const LanguageButton = styled.button`
     border: none;
     cursor: pointer;
     &:nth-of-type(1) {
-        border-bottom: ${({ language }) => language == "Eng" ? "solid black 1px" : "none"};
+        border-bottom: ${({ language }) => language === "Eng" ? "solid black 1px" : "none"};
     }
     &:nth-of-type(2) {
-        border-bottom: ${({ language }) => language == "Ukr" ? "solid black 1px" : "none"};
+        border-bottom: ${({ language }) => language === "Ukr" ? "solid black 1px" : "none"};
     }
     &:hover {
         font-weight: 600;
         border-width: 2px;
     }
+`
+
+const InputWrapper = styled.div`
+    display: flex;
+    align-items: center;
+`
+
+const WordWrapper = styled.div`
+    display: flex;
+    @media(max-width: 800px) {
+    flex-direction: column;
+    }
+    // justify-content: right;
+    // text-align: left;
+
 `
 
 const Input = styled.input`
@@ -107,9 +123,11 @@ const Word = styled.div`
     align-items: center;
     @media(max-width: 800px) {
         flex-wrap: wrap;
-        flex-direction: column;
+        // flex-direction: column;
+        align-items: start;
+        margin-bottom: 15px;
     }
-    // align-items: start;
+
 `
 
 const WordCheck = styled(Word)`
@@ -126,8 +144,6 @@ const WordSpan = styled.div`
     &:hover {
         font-weight: 750;
     }
-    // display: block;
-    // display: inline-block;
 `
 
 const WordSpanCheck = styled(WordSpan)`
@@ -142,7 +158,7 @@ const WordSpanCheck = styled(WordSpan)`
 const TranslatSpan = styled.span`
     color: red;
     font-weight: 600;
-        &:hover {
+    &:hover {
         font-weight: 750;
     }
 `
@@ -163,10 +179,10 @@ const LargeButtonsWrapper = styled.div`
 const LargeButton = styled(GenericButton)`
     // background-color: red;
     &:nth-of-type(1) {
-        border: ${({ thousand }) => thousand == "First Thousand" ? `${colors.greyBoldFrame} solid 4px` : ""}
+        border: ${({ thousand }) => thousand === "First Thousand" ? `${colors.greyBoldFrame} solid 4px` : ""}
     }
     &:nth-of-type(2) {
-        border: ${({ thousand }) => thousand == "Second Thousand" ? `${colors.greyBoldFrame} solid 4px` : ""}
+        border: ${({ thousand }) => thousand === "Second Thousand" ? `${colors.greyBoldFrame} solid 4px` : ""}
     }
 `
 
@@ -187,7 +203,7 @@ const TopButton = styled(GenericButton)`
     &:nth-of-type(${({ topNumber }) => topNumber ? topNumber : "1"}) {
         border: ${colors.greyBoldFrame} solid 4px;
     }
-    background-color: ${({ color }) => color == colors.green ? color : ""};
+    background-color: ${({ color }) => color === colors.green ? color : ""};
 `
 
 const BottomButton = styled(GenericButton)`
@@ -195,7 +211,7 @@ const BottomButton = styled(GenericButton)`
     &:nth-of-type(${({ bottomNumber }) => bottomNumber ? bottomNumber : "1"}) {
         border: ${colors.greyBoldFrame} solid 4px;
     }
-    background-color: ${({ color }) => color == colors.green ? color : ""};
+    background-color: ${({ color }) => color === colors.green ? color : ""};
 `
 
 const PercentButton = styled.div`
@@ -222,4 +238,4 @@ const Percent = styled.div`
     margin: auto;
 `
 
-export { FramesWrapper, Frame, CheckButton, CheckButtonFrame, LanguageButtonsWrapper, LanguageButton, Input, Word, WordCheck, WordSpan, WordSpanCheck, TranslatSpan, LargeButtonsWrapper, LargeButton, NumberButtonWrapper, TopButton, BottomButton, PercentButton, ProgressBar, Percent }
+export { FramesWrapper, Frame, CheckButton, CheckButtonFrame, LanguageButtonsWrapper, LanguageButton, InputWrapper, WordWrapper, Input, Word, WordCheck, WordSpan, WordSpanCheck, TranslatSpan, LargeButtonsWrapper, LargeButton, NumberButtonWrapper, TopButton, BottomButton, PercentButton, ProgressBar, Percent }
