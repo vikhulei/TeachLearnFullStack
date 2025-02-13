@@ -9,7 +9,7 @@ const FramesWrapper = styled.div`
     gap: 7vw;
     z-index: 20;
     opacity: ${({ startTestMode, listOfWordsMode }) => startTestMode || listOfWordsMode ? "0.4" : "1"};
-    @media(max-width: 800px) {
+    @media(max-width: 1200px) {
         flex-direction: column-reverse;
         align-items: center;
     }
@@ -17,7 +17,8 @@ const FramesWrapper = styled.div`
 
 const Frame = styled.div`
     box-sizing: border-box;
-    width: 480px;
+    width: 40vw;
+    max-width: 480px;
     padding: 15px 30px 40px;
     display: flex;
     flex-direction: column;
@@ -30,7 +31,7 @@ const Frame = styled.div`
        gap: 0;
        justify-items: stretch;
     }
-    @media(max-width: 800px) {
+    @media(max-width: 1200px) {
         width: 90vw;
         max-width: 480px;
     }
@@ -94,7 +95,7 @@ const LanguageButton = styled.button`
 
 const InputWordWrapper = styled.div`
     display: flex;
-    @media(max-width: 800px) {
+    @media(max-width: 1200px) {
         flex-direction: column;
     }
 `
@@ -109,18 +110,21 @@ const Input = styled.input`
     height: 24px;
     margin-right: 25px;
     background-color: lightgrey;
-    @media(max-width: 800px) {
-        width: 55vw;
+    @media(max-width: 1200px) {
+        max-width: 300px;
+        width: calc(120px + 15vw);
     }
 `
 
 const Word = styled.div`
+    position: relative;
+    margin 0 auto;
     user-select: none;
     font-weight: 600;
     font-size: 1.1rem;
     display: flex;
     align-items: start;
-    @media(max-width: 800px) {
+    @media(max-width: 1200px) {
         margin-top: 15px;
     }
 
@@ -166,7 +170,7 @@ const LargeButtonsWrapper = styled.div`
     justify-content: space-around;
     align-items: center;
     border-bottom: solid lightgrey 2px;
-    @media(max-width: 800px) {
+    @media(max-width: 1200px) {
         justify
         padding: 20px 5px;
     }
