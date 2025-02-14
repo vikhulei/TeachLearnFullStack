@@ -6,6 +6,7 @@ export const sizes = {
     sections_mob_marginsides: "10vw",
     text_mob_gap: "20px",
     headerheight: "90px",
+    headerhight_mobile: "70px",
     home1_desk_height: "75vh",
     home1_mob_height: "calc(90vh - 90px)",  //minus headerheight
     colorgreenalpha: "green",

@@ -15,6 +15,7 @@ const Wrapper = styled.div`
     padding: 0 ${sizes.margins_desk};
     @media(max-width: 800px) {
         padding: 0 ${sizes.marginmobile};
+        height: ${sizes.headerhight_mobile}
     }
 `
 

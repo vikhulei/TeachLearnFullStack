@@ -15,7 +15,7 @@ const Wrapper = styled.div`
     gap: ${sizes.marginsections};
     padding-bottom: ${sizes.marginsections};
     @media(max-width: 800px) {
-        margin: ${sizes.headerheight} 0 0;
+        margin: ${sizes.headerhight_mobile} 0 0;
         
     }
 `
