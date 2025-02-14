@@ -2,10 +2,11 @@
 V O C A B U L A R Y
 
 FRONT-END
-Code green shading of top and bottom buttons
+Loading non-home pages on netlfy site
 Show number of correct words + percentage
 
 BACK-END
+2000 words correction
 Create db with 2000 words
 Create functionality
   a. fetch
