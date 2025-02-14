@@ -88,6 +88,7 @@ const Test = ({ twoThousand, setTwoThousand, tenWords, setTenWords, startTestMod
         for (let i = 0; i < newTwoThousand.length; i++) {
             if (newTwoThousand[i].engCorrect && newTwoThousand[i].ukrCorrect) {
                 newTwoThousand[i].correctTutor = true
+                newTwoThousand[i].correctStudent = false
             }
         }
         setTwoThousand(newTwoThousand)
