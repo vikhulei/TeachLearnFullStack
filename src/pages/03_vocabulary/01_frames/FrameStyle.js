@@ -118,13 +118,13 @@ const Input = styled.input`
 
 const Word = styled.div`
     position: relative;
-    margin 0 auto;
     user-select: none;
     font-weight: 600;
     font-size: 1.1rem;
     display: flex;
     align-items: start;
     @media(max-width: 1200px) {
+        margin 0 auto;
         margin-top: 15px;
     }
 
