@@ -17,6 +17,7 @@ const Wrapper = styled.div`
     border-bottom: white solid 2px;
     z-index: 99;
     @media(max-width: 800px) {
+        padding: 30px 0;
         margin: 0;
     }
 `
@@ -30,6 +31,8 @@ const TopBlock = styled.div`
     @media(max-width: 800px) {
         flex-direction: column;
         align-items: center;
+        gap: 30px;
+        padding: 0 0 20px;
     }
 `
     
@@ -38,6 +41,9 @@ const BottomBlock = styled.div`
     padding: 20px 0;
     border-top: solid white 2px;
     width: 70vw;
+    @media(max-width: 800px) {
+        padding: 20px 0 0;
+    }
 `
     
 const TextBlock = styled.div`
