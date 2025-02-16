@@ -63,7 +63,7 @@ const TextBlock = styled.div`
 const Heading = styled.div`
     font-size: 1rem;
     font-weight: 700;
-    margin-bottom: 10px;
+    margin-bottom: 10px; 
 `
 
 const BodyText = styled.div`
@@ -74,6 +74,9 @@ const LinkText = styled(Link)`
     font-size: 0.9rem;
     text-decoration: none;
     color: white;
+    @media(max-width: 800px) {
+        text-decoration: underline;
+    }   
 `
 const Instagram = styled(FaInstagram)`
     cursor: pointer;
