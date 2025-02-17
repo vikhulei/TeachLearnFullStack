@@ -4,4 +4,5 @@ export const colors = {
     greyBoldFrame: "#3D3D3D",
     green: "#B3F8CA",
     greenWord: "#119B3F",
+    grammar: "#5B0807"
 }

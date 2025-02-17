@@ -1,14 +1,12 @@
-import { Wrapper, ImageWrapper, Image, ColorLayer, Text } from "./GrammarStyle"
-import home from "../../assets/01_home/home.jpg"
+import { Wrapper, Header } from "./GrammarStyle"
+
 
 const Grammar = () => {
   return (
     <Wrapper>
-      <ColorLayer></ColorLayer>
-      <ImageWrapper>
-        <Image src={home} />
-      </ImageWrapper>
-      <Text><u>Grammar</u> page is under construction</Text>
+      <Header>
+        Grammar
+      </Header>
     </Wrapper>
   )
 }
