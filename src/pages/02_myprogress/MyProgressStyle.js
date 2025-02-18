@@ -1,54 +1,36 @@
 import styled from "styled-components";
 import { sizes } from "../../components/01_config/Sizes";
+import { colors } from "../../components/01_config/Colors";
 
 
 const Wrapper = styled.div`
     position: relative;
     margin: ${sizes.headerheight} ${sizes.margins_desk} 0;
-    height: 100vh;
-    border-bottom: white solid 2px;
+    background-color: #EBEBEB;
+    background-colr: red;
+    border-bottom: solid 2px white;
+    display: flex;
+    flex-direction: column;
+    gap: ${sizes.marginsections};
+    padding-bottom: ${sizes.marginsections};
     @media(max-width: 800px) {
-        height: calc(100vh - ${sizes.headerheight});
-        margin: ${sizes.headerheight} 0 0;
+        margin: ${sizes.headerhight_mobile} 0 0;
+        
     }
 `
-
-const ImageWrapper = styled.div`
+const Header = styled.div`
     position: relative;
-    height: 100%;
-    width: 100%;
-`
-
-const Image = styled.img`
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-`
-
-const ColorLayer = styled.div`
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(7, 43, 91, 0.87);
-    z-index: 10;
-`
-
-const Text = styled.div`
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 4rem;
-    font-weight: 900;
-    text-transform: uppercase;
-    text-align: center;
+    padding: 50px;
+    background-color: ${colors.myprogress};
     color: white;
-    z-index: 20;
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
     @media(max-width: 800px) {
-        font-size: 2rem;
-        line-height: 2;
+        padding: 30px 0;
+        text-align: center;
+        font-size: 2rem
     }
 `
 
-
-export { Wrapper, ImageWrapper, Image, ColorLayer, Text }
+export { Wrapper, Header }
