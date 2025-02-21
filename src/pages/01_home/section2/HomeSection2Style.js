@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {  MainBodyText, MainHeading, MainHeadingCapital, } from "../../../components/01_config/MainStyles"
+import {  MainBodyText, MainBodyTextColumn, MainHeadingCapital, MainHeadingColumn, } from "../../../components/01_config/MainStyles"
 import { sizes } from "../../../components/01_config/Sizes";
 
 const Wrapper = styled.div`
@@ -85,7 +85,7 @@ const HeadingCapital = styled(MainHeadingCapital)`
 `
 
 
-const BodyText = styled(MainBodyText)`
+const BodyText = styled(MainBodyTextColumn)`
     font-size: 1rem;
 `
 
@@ -96,9 +96,9 @@ const WhoWeAre = styled(HeadingCapital)`
     }
 `
 
-const Heading = styled(MainHeading)`
+const Heading = styled(MainHeadingColumn)`
 `
-const BodyTextLastBlock = styled(MainBodyText)`
+const BodyTextLastBlock = styled(MainBodyTextColumn)`
 `
 
 const FindOutMore = styled(Heading)`

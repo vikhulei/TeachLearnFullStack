@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { MainHeading, MainBodyText } from "../../components/01_config/MainStyles";
 import { sizes } from "../../components/01_config/Sizes";
 import { colors } from "../../components/01_config/Colors";
 
@@ -33,4 +34,13 @@ const Header = styled.div`
     }
 `
 
-export { Wrapper, Header }
+const Title = styled(MainHeading)`
+`
+
+const MainText = styled(MainBodyText)`
+    padding: 0 ${sizes.sections_mob_marginsides};
+    z-index: 20;
+    text-align: justify;
+`
+
+export { Wrapper, Header, Title, MainText }
