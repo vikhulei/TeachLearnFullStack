@@ -20,6 +20,7 @@ const UserWrapper = styled.div`
     top: ${sizes.headerheight};
     @media(max-width: 800px) {
         right: 0;
+        top: ${sizes.headerhight_mobile}
     }
 `
 const UserItem = styled.div`

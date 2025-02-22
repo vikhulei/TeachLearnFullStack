@@ -47,6 +47,9 @@ const MenuWrapper = styled.div`
         width: 150px;
         flex-direction: column;
     }
+    @media(max-width: 800px) {
+        top: ${sizes.headerhight_mobile}
+    }
 `
 
 const MenuItem = styled(Link)`
