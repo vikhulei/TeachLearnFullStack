@@ -25,10 +25,10 @@ const Header = () => {
           <MenuItem to="/">HOME</MenuItem>
           <MenuItem to="/myprogress">MY PROGRESS</MenuItem>
           <MenuItem to="/vocabulary">VOCABULARY</MenuItem>
+          <MenuItem to="/grammar">GRAMMAR</MenuItem>
           <MenuItem to="/reading">READING</MenuItem>
           <MenuItem to="/listening">LISTENING</MenuItem>
           <MenuItem to="/speaking">SPEAKING</MenuItem>
-          <MenuItem to="/grammar">GRAMMAR</MenuItem>
           <MenuItem to="/contacts">CONTACTS</MenuItem>
         </MenuWrapper>
         <User 
