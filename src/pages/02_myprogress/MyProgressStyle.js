@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { MainHeading, MainBodyText } from "../../components/01_config/MainStyles";
+import { MainHeading, MainBodyText, OutlineButton } from "../../components/01_config/MainStyles";
 import { sizes } from "../../components/01_config/Sizes";
 import { colors } from "../../components/01_config/Colors";
 
@@ -7,8 +7,8 @@ import { colors } from "../../components/01_config/Colors";
 const Wrapper = styled.div`
     position: relative;
     margin: ${sizes.headerheight} ${sizes.margins_desk} 0;
-    background-color: #EBEBEB;
-    background-colr: red;
+    // background-color:rgb(81, 47, 47);
+    // background-colr: red;
     border-bottom: solid 2px white;
     display: flex;
     flex-direction: column;
@@ -34,6 +34,20 @@ const Header = styled.div`
     }
 `
 
+const MyRoadmapWrapper = styled.div`
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: ${sizes.marginsections}; 
+    // background-color: red;   
+`
+
+const CurrentLessonButton = styled(OutlineButton)`
+    color: black;
+    position: absolute;
+    right: ${sizes.sections_mob_marginsides};
+`
+
 const Title = styled(MainHeading)`
 `
 
@@ -43,4 +57,4 @@ const MainText = styled(MainBodyText)`
     text-align: justify;
 `
 
-export { Wrapper, Header, Title, MainText }
+export { Wrapper, MyRoadmapWrapper, Header, CurrentLessonButton, Title, MainText }

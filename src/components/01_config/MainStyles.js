@@ -35,4 +35,20 @@ const MainHeadingCapital = styled.div`
     font-weight: bold;
 `
 
-export { MainWrapper, MainBodyText, MainBodyTextColumn, MainHeading, MainHeadingColumn, MainHeadingCapital  }
+const OutlineButton = styled.button`
+    width: 240px;
+    height: 70px;
+    font-size: 1.1rem;
+    color: white;
+    border: #D34E4E solid 4px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0);
+    @media(max-width: 800px) {
+        width: calc(30px + 60vw);
+        height: 8vh;
+    }
+    
+`
+
+export { MainWrapper, MainBodyText, MainBodyTextColumn, MainHeading, MainHeadingColumn, MainHeadingCapital, OutlineButton  }

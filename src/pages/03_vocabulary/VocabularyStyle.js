@@ -54,14 +54,6 @@ const Header = styled.div`
     }
 `
 
-// const Title = styled.div`
-//     position: relative;
-//     text-align: center;
-//     font-size: 2rem;
-//     font-weight: bold;
-//     z-index: 20;
-// `
-
 const Title = styled(MainHeading)`
 `
 

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { OutlineButton } from "../../../components/01_config/MainStyles";
 import { sizes } from "../../../components/01_config/Sizes";
 
 
@@ -87,7 +88,7 @@ const ButtonsWrapper = styled.div`
     }
 `
 
-const SignUp = styled.button`
+const SignUp = styled(OutlineButton)`
     width: 240px;
     height: 70px;
     font-size: 1.1rem;
@@ -103,7 +104,7 @@ const SignUp = styled.button`
     
 `
 
-const LogIn = styled(SignUp)`
+const LogIn = styled(OutlineButton)`
     border: #5B4ED3 solid 1px;
 `
 
