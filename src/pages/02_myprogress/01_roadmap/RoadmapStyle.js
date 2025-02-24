@@ -1,56 +1,75 @@
 import styled from "styled-components";
 
 const RoadmapContainer = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 100%;
-  padding: 40px;
   position: relative;
-`;
-
-const StepContainer = styled.div`
-  position: relative;
-  width: 120px;
-  text-align: center;
-  margin: 20px;
-  transform: ${({ index }) => (index % 2 === 0 ? "translateY(20px)" : "translateY(-20px)")};
-
-  &:before {
-    content: "";
-    position: absolute;
-    width: 50px;
-    height: 4px;
-    background: #3498db;
-    top: 50%;
-    left: -60px;
-    transform: translateY(-50%);
-  }
-
-  &:first-child:before {
-    display: none;
-  }
-`;
-
-const StepIndicator = styled.div`
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: #3498db;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  margin: auto;
-`;
-
-const StepContent = styled.div`
-  background: #f1f1f1;
-  padding: 10px;
-  border-radius: 8px;
-  margin-top: 10px;
-  font-size: 12px;
+  height: 500px;
+  width: 870px;
+  margin: 0 auto;
+  // background-color: green;
 `
 
-export { RoadmapContainer, StepContainer, StepIndicator, StepContent }
+const CurveLineRightOne = styled.div`
+  position: absolute;
+  width: 800px;
+  height: 100px;
+  transform: translateX(70px);
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border: solid darkgrey 15px; 
+  border-left: none;
+`
+
+const CurveLineLeftOne = styled.div`
+  position: absolute;
+  width: 800px;
+  height: 100px;
+  top: 85px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border: solid darkgrey 15px; 
+  border-right: none;
+`
+
+const CurveLineRightTwo = styled.div`
+  position: absolute;
+  width: 800px;
+  height: 100px;
+  top: 170px;
+  transform: translateX(70px);
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border: solid darkgrey 15px; 
+  border-left: none;
+`
+
+const CurveLineLeftTwo = styled.div`
+  position: absolute;
+  width: 800px;
+  height: 100px;
+  top: 255px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border: solid darkgrey 15px; 
+  border-right: none;
+`
+
+const Start = styled.div`
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  top: -40px;
+  left: 0;
+  background-color: blue;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 0.5;
+  font-weight: bold;
+  color: white;
+`
+
+const Heading = styled.div
+
+export { RoadmapContainer, CurveLineRightOne, CurveLineLeftOne, CurveLineRightTwo, CurveLineLeftTwo, Start }
