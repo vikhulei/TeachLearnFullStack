@@ -1,5 +1,5 @@
 import { Wrapper, MyRoadmapWrapper, Header, CurrentLessonButton, Title, MainText } from "./MyProgressStyle"
-import home from "../../assets/01_home/home.jpg"
+import Roadmap from "./01_roadmap/Roadmap"
 
 const MyProgress = () => {
   return (
@@ -14,6 +14,7 @@ const MyProgress = () => {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet libero id nisi euismod, sed porta est consectetur. Vestibulum auctor felis eget orci semper vestibulum. Pellentesque ultricies nibh gravida, accumsan libero luctus, molestie nunc. In nibh ipsum, blandit id faucibus ac, finibus vitae dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet libero id nisi euismod, sed porta est consectetur. Vestibulum auctor felis eget orci semper vestibulum. Pellentesque ultricies nibh gravida, accumsan libero luctus, molestie nunc. In nibh ipsum, blandit id faucibus ac, finibus vitae dui.
         </MainText>
       </MyRoadmapWrapper>
+      <Roadmap />
     </Wrapper>
   )
 }
