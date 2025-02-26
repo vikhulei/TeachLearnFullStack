@@ -1,6 +1,6 @@
-import { RoadmapContainer, CurveLineRightOne, CurveLineLeftOne, CurveLineRightTwo, CurveLineLeftTwo, Start, Finish } from "./RoadmapStyle"
+import { RoadmapContainer, CurveLineRightOne, CurveLineLeftOne, CurveLineRightTwo, CurveLineLeftTwo, Circle, Step, Start, Finish } from "./RoadmapStyle"
 
-const arr = [1,2,3,4,5]
+const arr = [1,2,3,4,5,6,7,8]
 
 const Roadmap = () => {
     const steps = Array.from({ length: 40 }, (_, i) => ({
@@ -17,7 +17,17 @@ const Roadmap = () => {
         <Finish>
           Finish
         </Finish>
-        <CurveLineRightOne />
+        <CurveLineRightOne>
+          
+            <Step />
+            <Step />
+            <Step />
+            <Step />
+            <Step />
+            <Step />
+            <Step />
+            <Step />
+          </CurveLineRightOne>
         <CurveLineLeftOne />
         <CurveLineRightTwo />
         <CurveLineLeftTwo />

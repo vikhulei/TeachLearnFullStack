@@ -3,7 +3,7 @@ import { colors } from "../../../components/01_config/Colors";
 
 const RoadmapContainer = styled.div`
   position: relative;
-  height: 415px;
+  height: 390px;
   width: 870px;
   margin: 0 auto;
   display: grid;
@@ -11,7 +11,7 @@ const RoadmapContainer = styled.div`
 `
 
 const CurveLine = styled.div`
-  margin-top: 30px;
+  margin-top: 18px;
   position: absolute;
   width: 800px;
   height: 100px;
@@ -23,6 +23,10 @@ const CurveLineRightOne = styled(CurveLine)`
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
   border-left: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 35px;
+  
 `
 
 const CurveLineLeftOne = styled(CurveLine)`
@@ -41,8 +45,8 @@ const CurveLineLeftTwo = styled(CurveLineLeftOne)`
 `
 
 const Circle = styled.div`
-  width: 75px;
-  height: 75px;
+  width: 50px;
+  height: 50px;
   border-radius: 100px;
   background-color: ${colors.mainDark};
   z-index: 10;
@@ -57,21 +61,23 @@ const Circle = styled.div`
 const Start = styled(Circle)`
   position: absolute;
   top: 0px;
-  left: 20px;
+  left: 22px;
 `
 
 const Finish = styled(Circle)`
   position: absolute;
   bottom: 0px;
-  right: 20px;
+  right: 22px;
 `
 
 const CirclesWrapper = styled.div`
   display: grid;
+`
 
-
+const Step = styled(Circle)`
+  margin-top: -32px;
 `
 
 
 
-export { RoadmapContainer, CurveLineRightOne, CurveLineLeftOne, CurveLineRightTwo, CurveLineLeftTwo, Start, Finish }
+export { RoadmapContainer, CurveLineRightOne, CurveLineLeftOne, CurveLineRightTwo, CurveLineLeftTwo, Circle, Step, Start, Finish }
