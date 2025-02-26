@@ -1,8 +1,9 @@
 import styled from "styled-components";
+import { colors } from "../../../components/01_config/Colors";
 
 const RoadmapContainer = styled.div`
   position: relative;
-  height: 500px;
+  height: 415px;
   width: 870px;
   margin: 0 auto;
   display: grid;
@@ -10,6 +11,7 @@ const RoadmapContainer = styled.div`
 `
 
 const CurveLine = styled.div`
+  margin-top: 30px;
   position: absolute;
   width: 800px;
   height: 100px;
@@ -39,10 +41,10 @@ const CurveLineLeftTwo = styled(CurveLineLeftOne)`
 `
 
 const Circle = styled.div`
-  width: 100px;
-  height: 100px;
+  width: 75px;
+  height: 75px;
   border-radius: 100px;
-  background-color: blue;
+  background-color: ${colors.mainDark};
   z-index: 10;
   display: flex;
   justify-content: center;
@@ -54,14 +56,14 @@ const Circle = styled.div`
 
 const Start = styled(Circle)`
   position: absolute;
-  top: -40px;
-  left: 0;
+  top: 0px;
+  left: 20px;
 `
 
 const Finish = styled(Circle)`
   position: absolute;
-  bottom: -40px;
-  right: 0;
+  bottom: 0px;
+  right: 20px;
 `
 
 const CirclesWrapper = styled.div`
@@ -72,4 +74,4 @@ const CirclesWrapper = styled.div`
 
 
 
-export { RoadmapContainer, CurveLineRightOne, CurveLineLeftOne, CurveLineRightTwo, CurveLineLeftTwo, Start }
+export { RoadmapContainer, CurveLineRightOne, CurveLineLeftOne, CurveLineRightTwo, CurveLineLeftTwo, Start, Finish }
