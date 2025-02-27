@@ -3,19 +3,21 @@ import { colors } from "../../../components/01_config/Colors";
 
 const RoadmapContainer = styled.div`
   position: relative;
-  height: 390px;
+  height: 440px;
   width: 870px;
   margin: 0 auto;
-  display: grid;
   // background-color: green;
 `
 
 const CurveLine = styled.div`
-  margin-top: 18px;
   position: absolute;
+  margin-top: 24px;
   width: 800px;
   height: 100px;
   border: solid darkgrey 15px; 
+  display: flex;
+  justify-content: space-between;
+  padding: 0 35px;
 `
 
 const CurveLineRightOne = styled(CurveLine)`
@@ -23,10 +25,6 @@ const CurveLineRightOne = styled(CurveLine)`
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
   border-left: none;
-  display: flex;
-  justify-content: space-between;
-  padding: 0 35px;
-  
 `
 
 const CurveLineLeftOne = styled(CurveLine)`
@@ -44,18 +42,26 @@ const CurveLineLeftTwo = styled(CurveLineLeftOne)`
   top: 255px;
 `
 
-const Circle = styled.div`
-  width: 50px;
+const CurveLineLast = styled(CurveLineRightOne)`
+  top: 340px;
   height: 50px;
+  border-bottom: none;
+
+`
+
+
+const Circle = styled.div`
+  width: 60px;
+  height: 60px;
   border-radius: 100px;
   background-color: ${colors.mainDark};
   z-index: 10;
   display: flex;
   justify-content: center;
   align-items: center;
-  line-height: 0.5;
   font-weight: bold;
   color: white;
+  cursor: pointer;
 `
 
 const Start = styled(Circle)`
@@ -67,17 +73,13 @@ const Start = styled(Circle)`
 const Finish = styled(Circle)`
   position: absolute;
   bottom: 0px;
-  right: 22px;
-`
-
-const CirclesWrapper = styled.div`
-  display: grid;
+  right: -20px;
 `
 
 const Step = styled(Circle)`
-  margin-top: -32px;
+  margin-top: -38px;
 `
 
 
 
-export { RoadmapContainer, CurveLineRightOne, CurveLineLeftOne, CurveLineRightTwo, CurveLineLeftTwo, Circle, Step, Start, Finish }
+export { RoadmapContainer, CurveLineRightOne, CurveLineLeftOne, CurveLineRightTwo, CurveLineLeftTwo, CurveLineLast, Circle, Step, Start, Finish }
