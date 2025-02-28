@@ -34,7 +34,7 @@ const MainHeadingCapital = styled.div`
     text-transform: uppercase;
     font-weight: bold;
 `
-
+    
 const OutlineButton = styled.button`
     width: 240px;
     height: 70px;
