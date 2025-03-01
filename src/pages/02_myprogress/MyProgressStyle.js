@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { MainHeading, MainBodyText, OutlineButton, MainWrapper } from "../../components/01_config/MainStyles";
+import { MainWrapper, MainHeader, MainHeading, MainBodyText, OutlineButton,  } from "../../components/01_config/MainStyles";
 import { sizes } from "../../components/01_config/Sizes";
 import { colors } from "../../components/01_config/Colors";
 
@@ -17,19 +17,7 @@ const Wrapper = styled(MainWrapper)`
         
     // }
 `
-const Header = styled.div`
-    position: relative;
-    padding: 50px;
-    background-color: ${colors.myprogress};
-    color: white;
-    font-size: 3rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    @media(max-width: 800px) {
-        padding: 30px 0;
-        text-align: center;
-        font-size: 2rem
-    }
+const Header = styled(MainHeader)`
 `
 
 const MyRoadmapWrapper = styled.div`

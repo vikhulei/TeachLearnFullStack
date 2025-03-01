@@ -5,6 +5,7 @@ import 'react-toastify/dist/ReactToastify.css'
 import Header from './components/02_header/Header';
 import Home from './pages/01_home/Home';
 import MyProgress from "./pages/02_myprogress/MyProgress"
+import Lesson from './pages/02_myprogress/03_lessonPage/Lesson';
 import Vocabulary from './pages/03_vocabulary/Vocabulary';
 import Reading from "./pages/04_reading/Reading"
 import Listening from "./pages/05_listening/Listening"
@@ -21,7 +22,10 @@ const App = () => {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/myprogress" element={<MyProgress />} />
+          <Route path="/myprogress">
+            <Route path="" element={<MyProgress />} />
+            <Route path="lesson" element={<Lesson />} />
+          </Route>
           <Route path="/vocabulary" element={<Vocabulary />} />
           <Route path="/grammar" element={<Grammar />} />
           <Route path="/reading" element={<Reading />} />

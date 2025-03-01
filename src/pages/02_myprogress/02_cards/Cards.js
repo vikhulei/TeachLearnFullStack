@@ -6,7 +6,10 @@ const Cards = () => {
   return (
     <Wrapper>
         {cardsNames.map((value, index) => (
-            <Card key={index}>
+            <Card
+            key={index}
+            to="/myprogress/lesson"
+            >
                 <Image src={value.image} index={index}/>
                 <Lesson>{value.title}</Lesson>
             </Card>

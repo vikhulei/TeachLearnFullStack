@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import { sizes } from "./Sizes"
+import { colors } from "./Colors"
 
 const MainWrapper = styled.div`
     position: relative;
@@ -12,6 +13,21 @@ const MainWrapper = styled.div`
     @media(max-width: 800px) {
         margin: ${sizes.headerhight_mobile} 0 0;
         
+    }
+`
+
+const MainHeader = styled.div`
+    position: relative;
+    padding: 50px;
+    background-color: ${colors.myprogress};
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    @media(max-width: 800px) {
+        padding: 30px 0;
+        text-align: center;
+        font-size: 2rem
     }
 `
 
@@ -61,4 +77,4 @@ const OutlineButton = styled.button`
     
 `
 
-export { MainWrapper, MainBodyText, MainBodyTextColumn, MainHeading, MainHeadingColumn, MainHeadingCapital, OutlineButton  }
+export { MainWrapper, MainHeader, MainBodyText, MainBodyTextColumn, MainHeading, MainHeadingColumn, MainHeadingCapital, OutlineButton  }

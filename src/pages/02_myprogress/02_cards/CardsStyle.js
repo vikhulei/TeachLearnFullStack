@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 import { colors } from "../../../components/01_config/Colors";
 
 const Wrapper = styled.div`
@@ -10,7 +11,7 @@ const Wrapper = styled.div`
     flex-wrap: wrap;
 `
 
-const Card = styled.div`
+const Card = styled(Link)`
     position: relative;
     width: 200px;
     height: 200px;
@@ -22,6 +23,7 @@ const Card = styled.div`
     align-items: center;
     gap: 20px;
     cursor: pointer;
+    text-decoration: none;
     &:active {
         transform: translate(2px, 2px);
     }
@@ -32,6 +34,7 @@ const Image = styled.img`
 `
 
 const Lesson = styled.div`
+    color: black;
     font-size: 20px;
     font-weight: bold;
 `
