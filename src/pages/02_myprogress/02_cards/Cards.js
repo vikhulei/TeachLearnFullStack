@@ -1,19 +1,16 @@
 import { Wrapper, Card, Image, Lesson  } from "./CardsStyle"
-import progress1 from "../../../assets/02_myprogress/progress1.jpg"
+import { cardsNames } from "./CardsNames"
+
 
 const Cards = () => {
   return (
     <Wrapper>
-        <Card>
-            {/* <Image src={progress1} /> */}
-            <Lesson>
-                Lessons 1-8
-            </Lesson>
-        </Card>
-        <Card></Card>
-        <Card></Card>
-        <Card></Card>
-        <Card></Card>
+        {cardsNames.map((value, index) => (
+            <Card key={index}>
+                <Image src={value.image} index={index}/>
+                <Lesson>{value.title}</Lesson>
+            </Card>
+        ))}
     </Wrapper>
   )
 }

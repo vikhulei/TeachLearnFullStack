@@ -1,21 +1,21 @@
 import styled from "styled-components";
-import { MainHeading, MainBodyText, OutlineButton } from "../../components/01_config/MainStyles";
+import { MainHeading, MainBodyText, OutlineButton, MainWrapper } from "../../components/01_config/MainStyles";
 import { sizes } from "../../components/01_config/Sizes";
 import { colors } from "../../components/01_config/Colors";
 
 
-const Wrapper = styled.div`
-    position: relative;
-    margin: ${sizes.headerheight} ${sizes.margins_desk} 0;
-    border-bottom: solid 2px white;
-    display: flex;
-    flex-direction: column;
-    gap: ${sizes.marginsections};
-    padding-bottom: ${sizes.marginsections};
-    @media(max-width: 800px) {
-        margin: ${sizes.headerhight_mobile} 0 0;
+const Wrapper = styled(MainWrapper)`
+    // position: relative;
+    // margin: ${sizes.headerheight} ${sizes.margins_desk} 0;
+    // border-bottom: solid 2px white;
+    // display: flex;
+    // flex-direction: column;
+    // gap: ${sizes.marginsections};
+    // padding-bottom: ${sizes.marginsections};
+    // @media(max-width: 800px) {
+    //     margin: ${sizes.headerhight_mobile} 0 0;
         
-    }
+    // }
 `
 const Header = styled.div`
     position: relative;
