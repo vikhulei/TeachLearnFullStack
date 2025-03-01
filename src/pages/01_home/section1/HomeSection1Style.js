@@ -17,7 +17,7 @@ const ImageWrapper = styled.div`
     left: ${sizes.margins_desk};
     right: ${sizes.margins_desk};
     height: ${sizes.home1_desk_height};
-    z-index: -10;
+    // z-index: 0;
     @media(max-width: 800px) {
         height: ${sizes.home1_mob_height};
         right: 0;

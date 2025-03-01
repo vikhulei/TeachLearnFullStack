@@ -7,8 +7,6 @@ import { colors } from "../../components/01_config/Colors";
 const Wrapper = styled.div`
     position: relative;
     margin: ${sizes.headerheight} ${sizes.margins_desk} 0;
-    // background-color:rgb(81, 47, 47);
-    // background-colr: red;
     border-bottom: solid 2px white;
     display: flex;
     flex-direction: column;

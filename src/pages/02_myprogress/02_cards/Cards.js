@@ -5,7 +5,7 @@ const Cards = () => {
   return (
     <Wrapper>
         <Card>
-            <Image src={progress1} />
+            {/* <Image src={progress1} /> */}
             <Lesson>
                 Lessons 1-8
             </Lesson>

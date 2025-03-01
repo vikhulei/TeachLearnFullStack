@@ -2,7 +2,17 @@ import styled from "styled-components"
 import { sizes } from "./Sizes"
 
 const MainWrapper = styled.div`
-    width: 100vw
+    position: relative;
+    margin: ${sizes.headerheight} ${sizes.margins_desk} 0;
+    background-color: #EBEBEB;
+    display: flex;
+    flex-direction: column;
+    gap: ${sizes.marginsections};
+    padding-bottom: ${sizes.marginsections};
+    @media(max-width: 800px) {
+        margin: ${sizes.headerhight_mobile} 0 0;
+        
+    }
 `
 
 const MainBodyText = styled.div`
@@ -34,7 +44,7 @@ const MainHeadingCapital = styled.div`
     text-transform: uppercase;
     font-weight: bold;
 `
-    
+
 const OutlineButton = styled.button`
     width: 240px;
     height: 70px;

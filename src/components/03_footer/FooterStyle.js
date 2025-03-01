@@ -14,6 +14,7 @@ const Wrapper = styled.div`
     margin: 0 ${sizes.margins_desk};
     color: white;
     text-align: center;
+    border-top: solid 2px white;
     border-bottom: white solid 2px;
     z-index: 99;
     @media(max-width: 800px) {
