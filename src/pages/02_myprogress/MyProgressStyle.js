@@ -32,6 +32,10 @@ const CurrentLessonButton = styled(OutlineButton)`
     color: black;
     position: absolute;
     right: ${sizes.sections_mob_marginsides};
+    cursor: pointer;
+    &:active {
+        transform: translate(2px, 2px)
+    }
 `
 
 const Title = styled(MainHeading)`

@@ -3,7 +3,7 @@ import lessonReducer from "../features/lessons/lessonSlice"
 
 const store = configureStore({
     reducer: {
-        lessons: lessonReducer
+        lesson: lessonReducer
      }
 })
 

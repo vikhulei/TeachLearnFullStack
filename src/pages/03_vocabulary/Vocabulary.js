@@ -5,9 +5,13 @@ import picture from "../../assets/01_home/home.jpg"
 import FrameComponent from "./01_frames/Frame"
 import Memorizing from "./03_memorizing/Memorizing"
 import Test from "./02_test/Test"
+import { useSelector } from "react-redux"
 
 
 const Vocabulary = () => {
+
+    const testText = useSelector((state) => state.lesson.value)
+
     const [twoThousand, setTwoThousand] = useState(TwoThousand)
     const [tenWords, setTenWords] = useState(TwoThousand.filter(val => val.id <= 10).map(val => ({ ...val, engCorrect: false, ukrCorrect: false })))
 
@@ -19,7 +23,7 @@ const Vocabulary = () => {
             <Header>
                 Vocabulary
             </Header>
-            <Title>World-Class solution for learning a language</Title>
+            <Title>World-Class solution for learning a language {testText}</Title>
             <MainText>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet libero id nisi euismod, sed porta est consectetur. Vestibulum auctor felis eget orci semper vestibulum. Pellentesque ultricies nibh gravida, accumsan libero luctus, molestie nunc. In nibh ipsum, blandit id faucibus ac, finibus vitae dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet libero id nisi euismod, sed porta est consectetur. Vestibulum auctor felis eget orci semper vestibulum. Pellentesque ultricies nibh gravida, accumsan libero luctus, molestie nunc. In nibh ipsum, blandit id faucibus ac, finibus vitae dui.
             </MainText>
