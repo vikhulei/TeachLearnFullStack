@@ -17,7 +17,7 @@ const CurveLine = styled.div`
   border: solid darkgrey 15px; 
   display: flex;
   justify-content: space-between;
-  padding: 0 35px;
+  padding: 0 60px;
 `
 
 const CurveLineRightOne = styled(CurveLine)`

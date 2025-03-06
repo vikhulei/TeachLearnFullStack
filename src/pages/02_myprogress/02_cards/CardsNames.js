@@ -7,23 +7,23 @@ import progress5 from "../../../assets/02_myprogress/progress5.png"
 
 export const cardsNames = [
     {
-    title: "Lessons 1 - 8",
+    title: "Lessons 1 - 6",
     image: progress1
 },
 {
-    title: "Lessons 9 - 16",
+    title: "Lessons 7 - 12",
     image: progress2
 },
 {
-    title: "Lessons 17 - 24",
+    title: "Lessons 13 - 18",
     image: progress3
 },
 {
-    title: "Lessons 25 - 32",
+    title: "Lessons 19 - 24",
     image: progress4
 },
 {
-    title: "Lessons 33 - 40",
+    title: "Lessons 25 - 30",
     image: progress5
 }
 ]
