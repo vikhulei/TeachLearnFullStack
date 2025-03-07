@@ -23,7 +23,7 @@ const Lesson = () => {
                 Vocabulary
             </SubheadingCapital>
             <VocabularyWrapper>
-            {TwoThousand.filter(val => val.id <= 30 ).map((value, index) => (
+            {TwoThousand.filter(val => val.id <= 50 ).map((value, index) => (
                 <Word key={index}>
                     {value.word}
                 </Word>

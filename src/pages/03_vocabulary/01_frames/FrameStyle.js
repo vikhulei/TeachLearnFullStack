@@ -1,6 +1,7 @@
 import styled, { css } from "styled-components";
 import { GenericButton } from "../VocabularyStyle"
 import { colors } from "../../../components/01_config/Colors";
+import { MainFrame } from "../../../components/01_config/MainStyles";
 
 const FramesWrapper = styled.div`
     position: relative;
@@ -15,26 +16,7 @@ const FramesWrapper = styled.div`
     }
 `
 
-const Frame = styled.div`
-    box-sizing: border-box;
-    width: 40vw;
-    max-width: 480px;
-    padding: 15px 30px 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    // gap: 15px;
-    background-color: rgba(255, 255, 255, 0.6);
-    box-shadow: 0px 0px 10px #D6C9C9;
-    &:last-of-type {
-       padding: 0px 0 0px;
-       gap: 0;
-       justify-items: stretch;
-    }
-    @media(max-width: 1200px) {
-        width: 90vw;
-        max-width: 480px;
-    }
+const Frame = styled(MainFrame)`
 `
 
 const CheckButton = styled(GenericButton)`
