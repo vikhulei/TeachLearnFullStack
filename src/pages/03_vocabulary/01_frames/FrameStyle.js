@@ -17,6 +17,20 @@ const FramesWrapper = styled.div`
 `
 
 const Frame = styled(MainFrame)`
+    width: 40vw;
+    max-width: 480px;
+    padding: 15px 30px 40px;
+    flex-direction: column;
+    justify-content: space-between;
+    &:last-of-type {
+       padding: 0px 0px 0px;
+       gap: 0;
+       justify-items: stretch;
+    }
+    @media(max-width: 1200px) {
+        width: 90vw;
+        max-width: 480px;
+    }
 `
 
 const CheckButton = styled(GenericButton)`

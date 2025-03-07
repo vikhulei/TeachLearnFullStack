@@ -79,23 +79,9 @@ const OutlineButton = styled.button`
 
 const MainFrame = styled.div`
     box-sizing: border-box;
-    width: 40vw;
-    max-width: 480px;
-    padding: 15px 30px 40px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     background-color: rgba(255, 255, 255, 0.6);
     box-shadow: 0px 0px 10px #D6C9C9;
-    &:last-of-type {
-       padding: 0px 0 0px;
-       gap: 0;
-       justify-items: stretch;
-    }
-    @media(max-width: 1200px) {
-        width: 90vw;
-        max-width: 480px;
-    }
 `
 
 

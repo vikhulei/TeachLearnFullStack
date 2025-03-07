@@ -20,22 +20,23 @@ const SubheadingCapital = styled(MainHeadingCapital)`
     // font-size: 2rem;
 `
 
-const VocabularyWrapper = styled(MainFrame)`
+const FrameWrapper = styled.div`
     display: flex;
+    justify content: center;
+    gap: 50px;
+`
+
+const Frame = styled(MainFrame)`
     margin: 0 auto;
-    padding: 50px 50px 50px;
-    max-width: 70%;
+    padding: 50px;
+    // width: 80%;
+    max-width: 80%;
     flex-direction: row;
     align-items: end;
-    gap: 15px;
-    // justify-content: space-between;
+    gap: 20px;
+    justify-content: center;
     flex-wrap: wrap;
-    padding: 0 20px;
-    &:last-of-type {
-        padding: 50px;
-        gap: 0;
-        // justify-items: stretch;
-    }
+    // background-color: red;
 `
 
 const Word = styled.span`
@@ -60,4 +61,4 @@ const Word = styled.span`
     }
 `
 
-export { Wrapper, Header, Heading, SubheadingCapital, VocabularyWrapper, Word }
+export { Wrapper, Header, Heading, SubheadingCapital, FrameWrapper, Frame, Word }
