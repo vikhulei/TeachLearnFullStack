@@ -22,13 +22,14 @@ const SubheadingCapital = styled(MainHeadingCapital)`
 
 const FrameWrapper = styled.div`
     display: flex;
-    justify content: center;
+    justify-content: center;
     gap: 50px;
 `
 
 const Frame = styled(MainFrame)`
+    height: fit-content;
     margin: 0 auto;
-    padding: 50px;
+    padding: 20px;
     // width: 80%;
     max-width: 80%;
     flex-direction: row;
@@ -37,6 +38,22 @@ const Frame = styled(MainFrame)`
     justify-content: center;
     flex-wrap: wrap;
     // background-color: red;
+`
+
+const FrameGrammar = styled(Frame)`
+    margin: 0;
+`
+
+const FrameBoldWord = styled(FrameGrammar)`
+    background-color: grey;
+`
+
+const FrameFillIn = styled(FrameGrammar)`
+    background-color: lightgrey;
+`
+
+const FrameModify = styled(FrameGrammar)`
+    background-color: darkgrey;
 `
 
 const Word = styled.span`
@@ -61,4 +78,8 @@ const Word = styled.span`
     }
 `
 
-export { Wrapper, Header, Heading, SubheadingCapital, FrameWrapper, Frame, Word }
+const Image = styled.img`
+    width: 400px;
+`
+
+export { Wrapper, Header, Heading, SubheadingCapital, FrameWrapper, Frame, FrameGrammar, FrameBoldWord, FrameFillIn, FrameModify, Word, Image }

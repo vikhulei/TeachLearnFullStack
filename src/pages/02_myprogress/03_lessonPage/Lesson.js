@@ -1,5 +1,8 @@
-import { Wrapper, Header, Heading, SubheadingCapital, FrameWrapper, Frame, Word } from "./LessonStyle"
+import { Wrapper, Header, Heading, SubheadingCapital, FrameWrapper, Frame, Word, Image, FrameGrammar, FrameBoldWord, FrameFillIn, FrameModify, } from "./LessonStyle"
 import { TwoThousand } from "../../../components/01_config/TwoThousand"
+import tobe from "../../../assets/02_myprogress/lessons/01/tobe.jpg"
+import rules from "../../../assets/02_myprogress/lessons/01/reading_rules.jpg"
+
 
 const lessonParts = ["Vocabulary", "Grammar", "Reading", "Listening", "Speaking"]
 
@@ -33,12 +36,12 @@ const Lesson = () => {
                 Grammar
             </SubheadingCapital>
             <FrameWrapper>
-                <Frame>
-                    THEME 1
-                </Frame>
-                <Frame>
-                    THEME 1
-                </Frame>
+                <FrameGrammar>
+                    <Image src={tobe} />
+                </FrameGrammar>
+                <FrameGrammar>
+                    <Image src={rules} />
+                </FrameGrammar>
                 </FrameWrapper>
             <SubheadingCapital>
                 Reading
