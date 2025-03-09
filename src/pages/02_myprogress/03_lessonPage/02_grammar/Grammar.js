@@ -5,7 +5,9 @@ import rules from "../../../../assets/02_myprogress/lessons/01/reading_rules.jpg
 const Grammar = () => {
     return (
         <Wrapper>
-            <SubheadingCapital>Grammar</SubheadingCapital>
+            <SubheadingCapital>
+                Grammar
+            </SubheadingCapital>
             <FrameWrapper>
                 <FrameGrammar>
                     <Image src={tobe} />
@@ -14,6 +16,7 @@ const Grammar = () => {
                     <Image src={rules} />
                 </FrameGrammar>
             </FrameWrapper>
+
         </Wrapper>
     )
 }
