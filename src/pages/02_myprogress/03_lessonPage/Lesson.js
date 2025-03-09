@@ -43,6 +43,9 @@ const Lesson = () => {
                     <Image src={rules} />
                 </FrameGrammar>
                 </FrameWrapper>
+                <FrameBoldWord>
+                    Hello
+                </FrameBoldWord>
             <SubheadingCapital>
                 Reading
             </SubheadingCapital>
