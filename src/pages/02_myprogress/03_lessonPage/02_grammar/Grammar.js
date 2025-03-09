@@ -1,6 +1,7 @@
-import { Wrapper, SubheadingCapital, FrameWrapper, Frame, FrameGrammar, FrameBoldWord, FrameFillIn, FrameModify, Image, Text, BoldWord } from "./GrammarStyle"
+import { Wrapper, SubheadingCapital, FrameWrapper, Frame, FrameGrammar, FrameBoldWord, FrameFillIn, FrameModify, Image, SentenceWrapper, Text, BoldWord } from "./GrammarStyle"
 import tobe from "../../../../assets/02_myprogress/lessons/01/tobe.jpg"
 import rules from "../../../../assets/02_myprogress/lessons/01/reading_rules.jpg"
+import { BoldWords } from "../00_exercises/BoldWords"
 
 const Grammar = () => {
     return (
@@ -16,7 +17,15 @@ const Grammar = () => {
                     <Image src={rules} />
                 </FrameGrammar>
             </FrameWrapper>
-
+            <FrameBoldWord>
+                {BoldWords.map((value, index) => (
+                    <SentenceWrapper key={index}>
+                        <Text>{value.beginning}</Text>
+                        <BoldWord>{value.word}</BoldWord>
+                        <Text>{value.ending}</Text>
+                    </SentenceWrapper>
+                ))}
+            </FrameBoldWord>
         </Wrapper>
     )
 }

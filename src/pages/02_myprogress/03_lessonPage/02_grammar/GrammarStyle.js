@@ -54,7 +54,10 @@ const Image = styled.img`
     width: 400px;
 `
 
-const Text = styled(MainBodyText)`
+const SentenceWrapper = styled.div`
+`
+
+const Text = styled.span`
 
 `
 
@@ -62,4 +65,4 @@ const BoldWord = styled(Text)`
     font-weight: bold;
 `
 
-export { Wrapper, SubheadingCapital, FrameWrapper, Frame, FrameGrammar, FrameBoldWord, FrameFillIn, FrameModify, Image, Text, BoldWord }
+export { Wrapper, SubheadingCapital, FrameWrapper, Frame, FrameGrammar, FrameBoldWord, FrameFillIn, FrameModify, Image, SentenceWrapper, Text, BoldWord }
