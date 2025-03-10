@@ -23,7 +23,7 @@ const FrameWrapper = styled.div`
 const Frame = styled(MainFrame)`
     height: fit-content;
     margin: 0 auto;
-    padding: 20px;
+    padding: 30px;
     // width: 80%;
     max-width: 80%;
     flex-direction: row;
@@ -39,7 +39,11 @@ const FrameGrammar = styled(Frame)`
 `
 
 const FrameBoldWord = styled(FrameGrammar)`
-    background-color: grey;
+    padding-right: 120px;
+    background-color: #403E3E;
+    flex-direction: column;
+    align-items: start;
+    color: white;
 `
 
 const FrameFillIn = styled(FrameGrammar)`
@@ -63,6 +67,7 @@ const Text = styled.span`
 
 const BoldWord = styled(Text)`
     font-weight: bold;
+    cursor: pointer;
 `
 
 export { Wrapper, SubheadingCapital, FrameWrapper, Frame, FrameGrammar, FrameBoldWord, FrameFillIn, FrameModify, Image, SentenceWrapper, Text, BoldWord }

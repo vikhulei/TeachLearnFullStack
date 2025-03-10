@@ -17,8 +17,9 @@ const Grammar = () => {
                     <Image src={rules} />
                 </FrameGrammar>
             </FrameWrapper>
+            <FrameWrapper>
             <FrameBoldWord>
-                {BoldWords.map((value, index) => (
+                {BoldWords.filter(val => val.lesson === 1).map((value, index) => (
                     <SentenceWrapper key={index}>
                         <Text>{value.beginning}</Text>
                         <BoldWord>{value.word}</BoldWord>
@@ -26,6 +27,25 @@ const Grammar = () => {
                     </SentenceWrapper>
                 ))}
             </FrameBoldWord>
+            <FrameBoldWord>
+                {BoldWords.filter(val => val.lesson === 1).map((value, index) => (
+                    <SentenceWrapper key={index}>
+                        <Text>{value.beginning}</Text>
+                        <BoldWord>{value.word}</BoldWord>
+                        <Text>{value.ending}</Text>
+                    </SentenceWrapper>
+                ))}
+            </FrameBoldWord>
+            <FrameBoldWord>
+                {BoldWords.filter(val => val.lesson === 1).map((value, index) => (
+                    <SentenceWrapper key={index}>
+                        <Text>{value.beginning}</Text>
+                        <BoldWord>{value.word}</BoldWord>
+                        <Text>{value.ending}</Text>
+                    </SentenceWrapper>
+                ))}
+            </FrameBoldWord>
+            </FrameWrapper>
         </Wrapper>
     )
 }
