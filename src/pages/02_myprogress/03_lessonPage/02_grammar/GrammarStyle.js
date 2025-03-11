@@ -1,16 +1,21 @@
 import styled from "styled-components";
-import { MainBodyText, MainFrame, MainHeadingCapital } from "../../../../components/01_config/MainStyles";
+import { MainBodyText, MainFrame, MainHeadingCapital, MainWrapper } from "../../../../components/01_config/MainStyles";
 import { colors } from "../../../../components/01_config/Colors";
 import { sizes } from "../../../../components/01_config/Sizes";
 
-const Wrapper = styled.div`
+const Wrapper = styled(MainWrapper)`
     display: flex;
     flex-direction: column;
-    gap: ${sizes.margins_desk}
+    gap: ${sizes.margins_desk};
+    background-color: lightgrey;
+    margin: 0;
 `
 
 const SubheadingCapital = styled(MainHeadingCapital)`
+    padding-top: 30px;
     color: ${colors.myprogress};
+    text-align: center;
+    font-size: 2rem;
 `
 
 const FrameWrapper = styled.div`

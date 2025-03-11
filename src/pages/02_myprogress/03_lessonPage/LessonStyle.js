@@ -4,6 +4,7 @@ import { MainWrapper, MainHeader, MainHeading, MainHeadingCapital, MainBodyText,
 
 const Wrapper = styled(MainWrapper)`
     gap: 30px;
+    margin-bottom: 100px;
 `
 
 const Header = styled(MainHeader)`
@@ -15,8 +16,10 @@ const Heading = styled(MainHeading)`
     // font-size: 2.5rem;
 `
 
-const SubheadingCapital = styled(MainHeadingCapital)`
-    color: ${colors.myprogress};
+const SubheadingCapital = styled(MainHeading)`
+    // color: ${colors.myprogress};
+    text-align: center;
+    // background-color: red;
     // font-size: 2rem;
 `
 
@@ -30,14 +33,14 @@ const Frame = styled(MainFrame)`
     height: fit-content;
     margin: 0 auto;
     padding: 20px;
-    // width: 80%;
+    width: 60%;
     max-width: 80%;
     flex-direction: row;
     align-items: end;
     gap: 20px;
     justify-content: center;
     flex-wrap: wrap;
-    // background-color: red;
+    background-color: rgba(0,0,0,0);
 `
 
 const FrameGrammar = styled(Frame)`
