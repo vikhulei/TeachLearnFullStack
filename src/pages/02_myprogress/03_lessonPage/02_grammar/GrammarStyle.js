@@ -7,7 +7,7 @@ const Wrapper = styled(MainWrapper)`
     display: flex;
     flex-direction: column;
     gap: ${sizes.margins_desk};
-    background-color: lightgrey;
+    background-color: #FCFCFC;
     margin: 0;
 `
 

@@ -5,7 +5,7 @@ import { colors } from "./Colors"
 const MainWrapper = styled.div`
     position: relative;
     margin: ${sizes.headerheight} ${sizes.margins_desk} 0;
-    background-color: #EBEBEB;
+    background-color: #F6F6FB;
     display: flex;
     flex-direction: column;
     gap: ${sizes.marginsections};
