@@ -13,25 +13,24 @@ const Heading = styled(MainHeading)`
 const FrameWrapper = styled(MainFrameWrapper)`
 `
 
-const Frame = styled(MainFrame)`
-    max-width: 80%;
-    flex-direction: row;
-    align-items: end;
-    gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
-`
-
-const FrameGrammar = styled(Frame)`
+const FrameGrammar = styled(MainFrame)`
     margin: 0;
 `
 
 const FrameBoldWord = styled(FrameGrammar)`
-    padding-right: 120px;
-    background-color: #403E3E;
+    width: 400px;
     flex-direction: column;
     align-items: start;
-    color: white;
+    gap: 15px;
+    // padding: 0;
+`
+
+const FrameHeading = styled(MainHeadingCapital)`
+    margin: 0 auto;
+    color: ${colors.myprogress};
+    color: #044AEF;
+    font-weight: bold;
+    font-size: 1.4rem;
 `
 
 const FrameFillIn = styled(FrameGrammar)`
@@ -46,11 +45,17 @@ const Image = styled.img`
     width: 400px;
 `
 
+const Icon = styled.img`
+    width: 40px;
+    margin: 10px auto;
+`
+
 const SentenceWrapper = styled.div`
+    margin: 0 auto;
 `
 
 const Text = styled.span`
-
+    font-size: 1.3rem;
 `
 
 const BoldWord = styled(Text)`
@@ -58,4 +63,4 @@ const BoldWord = styled(Text)`
     cursor: pointer;
 `
 
-export { Wrapper, Heading, FrameWrapper, Frame, FrameGrammar, FrameBoldWord, FrameFillIn, FrameModify, Image, SentenceWrapper, Text, BoldWord }
+export { Wrapper, Heading, FrameWrapper, FrameGrammar, FrameBoldWord, FrameHeading, FrameFillIn, FrameModify, Image, Icon, SentenceWrapper, Text, BoldWord }
