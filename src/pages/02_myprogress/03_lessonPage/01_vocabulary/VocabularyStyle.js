@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import { MainFrame, MainHeading } from "../../../../components/01_config/MainStyles";
+import { MainFrame, MainHeading, SectionWrapper } from "../../../../components/01_config/MainStyles";
 import { colors } from "../../../../components/01_config/Colors";
 
-const Wrapper = styled.div`
+const Wrapper = styled(SectionWrapper)`
 `
 
 const Heading = styled(MainHeading)`
@@ -10,12 +10,8 @@ const Heading = styled(MainHeading)`
 `
 
 const Frame = styled(MainFrame)`
-    height: fit-content;
-    margin: 0 auto;
-    padding: 20px;
     width: 60%;
     max-width: 80%;
-    flex-direction: row;
     align-items: end;
     gap: 20px;
     justify-content: center;
@@ -25,10 +21,6 @@ const Frame = styled(MainFrame)`
 
 const Word = styled.span`
     font-size: 1.3rem;
-    &:after {
-        // content: ",";
-        // white-space: pre;
-    }
     &:nth-of-type(14n+2) {
         font-size: 1.8rem;
         font-weight: bold;
@@ -37,10 +29,6 @@ const Word = styled.span`
     &:nth-of-type(8n+5) {
         font-size: 1.8rem;
         font-style: italic;
-    }
-    &:last-of-type {
-        &:after {
-        content: ""
     }
     }
 `

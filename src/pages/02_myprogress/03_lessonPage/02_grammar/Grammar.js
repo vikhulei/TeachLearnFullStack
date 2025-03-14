@@ -1,4 +1,4 @@
-import { Wrapper, SubheadingCapital, FrameWrapper, Frame, FrameGrammar, FrameBoldWord, FrameFillIn, FrameModify, Image, SentenceWrapper, Text, BoldWord } from "./GrammarStyle"
+import { Wrapper, Heading, FrameWrapper, Frame, FrameGrammar, FrameBoldWord, FrameFillIn, FrameModify, Image, SentenceWrapper, Text, BoldWord } from "./GrammarStyle"
 import tobe from "../../../../assets/02_myprogress/lessons/01/tobe.jpg"
 import rules from "../../../../assets/02_myprogress/lessons/01/reading_rules.jpg"
 import { BoldWords } from "../00_exercises/BoldWords"
@@ -6,9 +6,9 @@ import { BoldWords } from "../00_exercises/BoldWords"
 const Grammar = () => {
     return (
         <Wrapper>
-            <SubheadingCapital>
+            <Heading>
                 Grammar
-            </SubheadingCapital>
+            </Heading>
             <FrameWrapper>
                 <FrameGrammar>
                     <Image src={tobe} />

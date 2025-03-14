@@ -1,42 +1,25 @@
 import styled from "styled-components";
-import { MainBodyText, MainFrame, MainHeadingCapital, MainWrapper } from "../../../../components/01_config/MainStyles";
+import { MainBodyText, MainFrame, MainFrameWrapper, MainHeading, MainHeadingCapital, MainWrapper, SectionWrapper } from "../../../../components/01_config/MainStyles";
 import { colors } from "../../../../components/01_config/Colors";
 import { sizes } from "../../../../components/01_config/Sizes";
 
-const Wrapper = styled(MainWrapper)`
-    display: flex;
-    flex-direction: column;
-    gap: ${sizes.margins_desk};
-    background-color: #FCFCFC;
-    margin: 0;
+const Wrapper = styled(SectionWrapper)`
 `
 
-const SubheadingCapital = styled(MainHeadingCapital)`
-    padding-top: 30px;
-    color: ${colors.myprogress};
+const Heading = styled(MainHeading)`
     text-align: center;
-    font-size: 2rem;
 `
 
-const FrameWrapper = styled.div`
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 50px;
+const FrameWrapper = styled(MainFrameWrapper)`
 `
 
 const Frame = styled(MainFrame)`
-    height: fit-content;
-    margin: 0 auto;
-    padding: 30px;
-    // width: 80%;
     max-width: 80%;
     flex-direction: row;
     align-items: end;
     gap: 20px;
     justify-content: center;
     flex-wrap: wrap;
-    // background-color: red;
 `
 
 const FrameGrammar = styled(Frame)`
@@ -75,4 +58,4 @@ const BoldWord = styled(Text)`
     cursor: pointer;
 `
 
-export { Wrapper, SubheadingCapital, FrameWrapper, Frame, FrameGrammar, FrameBoldWord, FrameFillIn, FrameModify, Image, SentenceWrapper, Text, BoldWord }
+export { Wrapper, Heading, FrameWrapper, Frame, FrameGrammar, FrameBoldWord, FrameFillIn, FrameModify, Image, SentenceWrapper, Text, BoldWord }

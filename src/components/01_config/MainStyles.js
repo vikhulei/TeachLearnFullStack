@@ -16,6 +16,13 @@ const MainWrapper = styled.div`
     }
 `
 
+const SectionWrapper = styled.div`
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: ${sizes.marginsections};
+`
+
 const MainHeader = styled.div`
     position: relative;
     padding: 50px;
@@ -74,10 +81,19 @@ const OutlineButton = styled.button`
         width: calc(30px + 60vw);
         height: 8vh;
     }
-    
+`
+
+const MainFrameWrapper = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
 `
 
 const MainFrame = styled.div`
+    margin: 0 auto;
+    padding: 30px;
+    height: fit-content;
     box-sizing: border-box;
     display: flex;
     background-color: rgba(255, 255, 255, 0.6);
@@ -85,4 +101,4 @@ const MainFrame = styled.div`
 `
 
 
-export { MainWrapper, MainHeader, MainBodyText, MainBodyTextColumn, MainHeading, MainHeadingColumn, MainHeadingCapital, OutlineButton, MainFrame  }
+export { MainWrapper, SectionWrapper, MainHeader, MainBodyText, MainBodyTextColumn, MainHeading, MainHeadingColumn, MainHeadingCapital, OutlineButton, MainFrameWrapper, MainFrame  }
