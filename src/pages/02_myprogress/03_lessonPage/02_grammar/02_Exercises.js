@@ -5,7 +5,7 @@ import fillin from "../../../../assets/02_myprogress/lessons/fillin.png"
 import fixit from "../../../../assets/02_myprogress/lessons/fixit.png"
 
 
-import { BoldWords } from "../00_exercises/BoldWords"
+import { GrammarTranslate } from "../00_exercises/GrammarTranslate"
 
 const Exercises = () => {
   return (
@@ -13,7 +13,7 @@ const Exercises = () => {
       <Frame>
         <FrameHeading>replace it</FrameHeading>
         <Icon src={replace} />
-        {BoldWords.filter(val => val.lesson === 1).map((value, index) => (
+        {GrammarTranslate.filter(val => val.lesson === 1).map((value, index) => (
           <SentenceWrapper key={index}>
             <Text>{value.beginning}</Text>
             <BoldWord>{value.word}</BoldWord>
@@ -24,7 +24,7 @@ const Exercises = () => {
       <Frame>
         <FrameHeading>fill it in</FrameHeading>
         <Icon src={fillin} />
-        {BoldWords.filter(val => val.lesson === 1).map((value, index) => (
+        {GrammarTranslate.filter(val => val.lesson === 1).map((value, index) => (
           <SentenceWrapper key={index}>
             <Text>{value.beginning}</Text>
             <BoldWord>{value.word}</BoldWord>
@@ -35,7 +35,7 @@ const Exercises = () => {
       <Frame>
         <FrameHeading>fix it</FrameHeading>
         <Icon src={fixit} />
-        {BoldWords.filter(val => val.lesson === 1).map((value, index) => (
+        {GrammarTranslate.filter(val => val.lesson === 1).map((value, index) => (
           <SentenceWrapper key={index}>
             <Text>{value.beginning}</Text>
             <BoldWord>{value.word}</BoldWord>
