@@ -48,11 +48,12 @@ const FillInWrapper = styled.div`
 `
 
 const FillInSentence = styled.div`
-text-align: center;
+    text-align: center;
 `
 
 const FillInInput = styled(MainInput)`
     margin: 0 auto;
+    width: 250px;
 `
 
 export { FrameWrapper, Frame, FrameHeading, Icon, SentenceWrapper, Text, BoldWord, FillInSentence, FillInInput }
