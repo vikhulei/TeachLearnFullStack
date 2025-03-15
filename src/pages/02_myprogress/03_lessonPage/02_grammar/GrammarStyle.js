@@ -13,16 +13,11 @@ const Heading = styled(MainHeading)`
 const FrameWrapper = styled(MainFrameWrapper)`
 `
 
-const FrameGrammar = styled(MainFrame)`
-    margin: 0;
-`
-
-const FrameBoldWord = styled(FrameGrammar)`
+const FrameBoldWord = styled(MainFrame)`
     width: 400px;
     flex-direction: column;
     align-items: start;
     gap: 15px;
-    // padding: 0;
 `
 
 const FrameHeading = styled(MainHeadingCapital)`
@@ -33,17 +28,14 @@ const FrameHeading = styled(MainHeadingCapital)`
     font-size: 1.4rem;
 `
 
-const FrameFillIn = styled(FrameGrammar)`
-    background-color: lightgrey;
-`
+// const FrameFillIn = styled(FrameGrammar)`
+//     background-color: lightgrey;
+// `
 
-const FrameModify = styled(FrameGrammar)`
-    background-color: darkgrey;
-`
+// const FrameModify = styled(FrameGrammar)`
+//     background-color: darkgrey;
+// `
 
-const Image = styled.img`
-    width: 400px;
-`
 
 const Icon = styled.img`
     width: 40px;
@@ -63,4 +55,4 @@ const BoldWord = styled(Text)`
     cursor: pointer;
 `
 
-export { Wrapper, Heading, FrameWrapper, FrameGrammar, FrameBoldWord, FrameHeading, FrameFillIn, FrameModify, Image, Icon, SentenceWrapper, Text, BoldWord }
+export { Wrapper, Heading, FrameWrapper, FrameBoldWord, FrameHeading, Icon, SentenceWrapper, Text, BoldWord }

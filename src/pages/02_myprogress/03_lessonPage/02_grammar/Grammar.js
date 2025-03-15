@@ -1,8 +1,7 @@
-import { Wrapper, Heading, FrameWrapper, FrameGrammar, FrameBoldWord, FrameHeading, FrameFillIn, FrameModify, Image, Icon, SentenceWrapper, Text, BoldWord } from "./GrammarStyle"
-import tobe from "../../../../assets/02_myprogress/lessons/01/tobe.jpg"
-import rules from "../../../../assets/02_myprogress/lessons/01/reading_rules.jpg"
+import { Wrapper, Heading, FrameWrapper, FrameBoldWord, FrameHeading, Icon, SentenceWrapper, Text, BoldWord } from "./GrammarStyle"
 import bold_words from "../../../../assets/02_myprogress/lessons/bold_words_blue.png"
 import { BoldWords } from "../00_exercises/BoldWords"
+import Rules from "./01_Rules"
 
 const Grammar = () => {
     return (
@@ -10,14 +9,7 @@ const Grammar = () => {
             <Heading>
                 Grammar
             </Heading>
-            <FrameWrapper>
-                <FrameGrammar>
-                    <Image src={tobe} />
-                </FrameGrammar>
-                <FrameGrammar>
-                    <Image src={rules} />
-                </FrameGrammar>
-            </FrameWrapper>
+            <Rules />
             <FrameWrapper>
                 <FrameBoldWord>
                     <FrameHeading>translate</FrameHeading>
