@@ -1,6 +1,10 @@
 import { } from "./02_ExercisesStyle"
 import { FrameWrapper, Frame, FrameHeading, Icon, SentenceWrapper, Text, BoldWord } from "./02_ExercisesStyle"
-import bold_words from "../../../../assets/02_myprogress/lessons/bold_words_blue.png"
+import replace from "../../../../assets/02_myprogress/lessons/replace.png"
+import fillin from "../../../../assets/02_myprogress/lessons/fillin.png"
+import fixit from "../../../../assets/02_myprogress/lessons/fixit.png"
+
+
 import { BoldWords } from "../00_exercises/BoldWords"
 
 const Exercises = () => {
@@ -8,7 +12,7 @@ const Exercises = () => {
     <FrameWrapper>
       <Frame>
         <FrameHeading>replace it</FrameHeading>
-        <Icon src={bold_words} />
+        <Icon src={replace} />
         {BoldWords.filter(val => val.lesson === 1).map((value, index) => (
           <SentenceWrapper key={index}>
             <Text>{value.beginning}</Text>
@@ -19,7 +23,7 @@ const Exercises = () => {
       </Frame>
       <Frame>
         <FrameHeading>fill it in</FrameHeading>
-        <Icon src={bold_words} />
+        <Icon src={fillin} />
         {BoldWords.filter(val => val.lesson === 1).map((value, index) => (
           <SentenceWrapper key={index}>
             <Text>{value.beginning}</Text>
@@ -30,7 +34,7 @@ const Exercises = () => {
       </Frame>
       <Frame>
         <FrameHeading>fix it</FrameHeading>
-        <Icon src={bold_words} />
+        <Icon src={fixit} />
         {BoldWords.filter(val => val.lesson === 1).map((value, index) => (
           <SentenceWrapper key={index}>
             <Text>{value.beginning}</Text>

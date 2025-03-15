@@ -22,7 +22,7 @@ const FrameHeading = styled(MainHeadingCapital)`
 `
 
 const Icon = styled.img`
-    width: 40px;
+    height: 40px;
     margin: 10px auto;
 `
 
