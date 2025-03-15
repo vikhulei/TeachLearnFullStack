@@ -93,12 +93,22 @@ const MainFrameWrapper = styled.div`
 const MainFrame = styled.div`
     margin: 0 auto;
     padding: 30px;
-    height: fit-content;
     box-sizing: border-box;
     display: flex;
     background-color: rgba(255, 255, 255, 0.6);
     box-shadow: 0px 0px 10px #D6C9C9;
 `
 
+const MainInput = styled.input`
+    position: relative;
+    width: 150px;
+    height: 24px;
+    margin-right: 25px;
+    background-color: lightgrey;
+    @media(max-width: 1200px) {
+        max-width: 300px;
+        width: calc(120px + 15vw);
+    }
+`
 
-export { MainWrapper, SectionWrapper, MainHeader, MainBodyText, MainBodyTextColumn, MainHeading, MainHeadingColumn, MainHeadingCapital, OutlineButton, MainFrameWrapper, MainFrame  }
+export { MainWrapper, SectionWrapper, MainHeader, MainBodyText, MainBodyTextColumn, MainHeading, MainHeadingColumn, MainHeadingCapital, OutlineButton, MainFrameWrapper, MainFrame, MainInput  }

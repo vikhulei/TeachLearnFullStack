@@ -9,6 +9,7 @@ const FrameWrapper = styled(MainFrameWrapper)`
 
 const FrameGrammar = styled(MainFrame)`
     margin: 0;
+    height: fit-content;
 `
 
 const Image = styled.img`

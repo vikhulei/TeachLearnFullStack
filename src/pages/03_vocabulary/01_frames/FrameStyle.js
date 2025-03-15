@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
 import { GenericButton } from "../VocabularyStyle"
 import { colors } from "../../../components/01_config/Colors";
-import { MainFrame } from "../../../components/01_config/MainStyles";
+import { MainFrame, MainInput } from "../../../components/01_config/MainStyles";
 
 const FramesWrapper = styled.div`
     position: relative;
@@ -100,16 +100,7 @@ const WordWrapper = styled.div`
     display: flex;
 `
 
-const Input = styled.input`
-    position: relative;
-    width: 150px;
-    height: 24px;
-    margin-right: 25px;
-    background-color: lightgrey;
-    @media(max-width: 1200px) {
-        max-width: 300px;
-        width: calc(120px + 15vw);
-    }
+const Input = styled(MainInput)`
 `
 
 const Word = styled.div`
