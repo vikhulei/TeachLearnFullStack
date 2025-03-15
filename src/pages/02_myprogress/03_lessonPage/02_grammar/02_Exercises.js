@@ -1,11 +1,11 @@
-import { } from "./02_ExercisesStyle"
-import { FrameWrapper, Frame, FrameHeading, Icon, SentenceWrapper, Text, BoldWord } from "./02_ExercisesStyle"
+import { FrameWrapper, Frame, FrameHeading, Icon, SentenceWrapper, Text, BoldWord, FillInSentence, FillInInput } from "./02_ExercisesStyle"
 import replace from "../../../../assets/02_myprogress/lessons/replace.png"
 import fillin from "../../../../assets/02_myprogress/lessons/fillin.png"
 import fixit from "../../../../assets/02_myprogress/lessons/fixit.png"
 
 
 import { GrammarTranslate } from "../00_exercises/GrammarTranslate"
+import { GrammarFillit } from "../00_exercises/GrammarFillit"
 
 const Exercises = () => {
   return (
@@ -24,11 +24,10 @@ const Exercises = () => {
       <Frame>
         <FrameHeading>fill it in</FrameHeading>
         <Icon src={fillin} />
-        {GrammarTranslate.filter(val => val.lesson === 1).map((value, index) => (
+        {GrammarFillit.filter(val => val.lesson === 1).map((value, index) => (
           <SentenceWrapper key={index}>
-            <Text>{value.beginning}</Text>
-            <BoldWord>{value.word}</BoldWord>
-            <Text>{value.ending}</Text>
+            <FillInSentence>{value.sentence}</FillInSentence>
+            <FillInInput />
           </SentenceWrapper>
         ))}
       </Frame>
