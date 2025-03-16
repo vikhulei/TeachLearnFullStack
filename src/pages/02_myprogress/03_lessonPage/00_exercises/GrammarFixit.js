@@ -1,15 +1,8 @@
 export const GrammarFixit = [
-    {id: 1, lesson: 1, beginning: "", word: "Я ", translat: "I", ending: "love Ukraine"},
-    {id: 2, lesson: 1, beginning: "", word: "Вони ", translat: "I", ending: "love Kyiv"},
-    {id: 3, lesson: 1, beginning: "Today ", word: "він ", translat: "he", ending: "loves USA"},
-    {id: 1, lesson: 1, beginning: "", word: "Я ", translat: "I", ending: "love Ukraine"},
-    {id: 2, lesson: 1, beginning: "", word: "Вони ", translat: "I", ending: "love Kyiv"},
-    {id: 3, lesson: 1, beginning: "Today ", word: "він ", translat: "he", ending: "loves USA"},
-    {id: 1, lesson: 1, beginning: "", word: "Я ", translat: "I", ending: "love Ukraine"},
-    {id: 2, lesson: 1, beginning: "", word: "Вони ", translat: "I", ending: "love Kyiv"},
-    {id: 3, lesson: 1, beginning: "Today ", word: "він ", translat: "he", ending: "loves USA"},
-    {id: 3, lesson: 1, beginning: "Today ", word: "він ", translat: "he", ending: "loves USA"},
-    {id: 4, lesson: 2, beginning: "", word: "Вона ", translat: "she", ending: "loves England"},
-    {id: 5, lesson: 2, beginning: "Of course ", word: "ми ", translat: "we", ending: "love London"},
+    {id: 1, lesson: 1, beginning: "I ", bold: "to be ", correct: "am", ending: " a student (зараз)"},
+    {id: 2, lesson: 1, beginning: "You ", bold: "to be ", correct: "are", ending: " a worker (в минулому)"},
+    {id: 3, lesson: 1, beginning: "He ", bold: "to be ", correct: "am", ending: " in school (завтра)"},
+    {id: 4, lesson: 2, beginning: "She ", bold: "to be ", correct: "is", ending: " happy (сьогодні)"},
+    {id: 5, lesson: 2, beginning: "We ", bold: "to be ", correct: "were", ending: " at home (вчора)"},
     
 ]

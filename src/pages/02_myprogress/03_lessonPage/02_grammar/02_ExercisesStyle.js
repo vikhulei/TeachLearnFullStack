@@ -24,7 +24,7 @@ const FrameHeading = styled(MainHeadingCapital)`
 
 const Icon = styled.img`
     height: 40px;
-    margin: 10px auto;
+    margin: 10px auto 20px;
 `
 
 const SentenceWrapper = styled.div`
@@ -49,6 +49,7 @@ const FillInWrapper = styled.div`
 
 const FillInSentence = styled.div`
     text-align: center;
+    cursor: pointer;
 `
 
 const FillInInput = styled(MainInput)`
@@ -56,4 +57,11 @@ const FillInInput = styled(MainInput)`
     width: 250px;
 `
 
-export { FrameWrapper, Frame, FrameHeading, Icon, SentenceWrapper, Text, BoldWord, FillInSentence, FillInInput }
+const FixitInput = styled(MainInput)`
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+    border-bottom: solid 1px black;
+`
+
+export { FrameWrapper, Frame, FrameHeading, Icon, SentenceWrapper, Text, BoldWord, FillInSentence, FillInInput, FixitInput }
