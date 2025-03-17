@@ -25,8 +25,9 @@ const Frame = styled(MainFrame)`
 
 const Word = styled.div`
     position: relative;
+    height: 45px;
+    cursor: pointer;
     font-size: 1.3rem;
-    cursor:pointer;
     &:nth-of-type(12n+2) {
         font-size: 1.8rem;
         font-weight: bold;
@@ -36,7 +37,6 @@ const Word = styled.div`
         font-size: 1.8rem;
         font-style: italic;
     }
-    }
 `
 
 const EngWord = styled.div`
@@ -45,6 +45,18 @@ const EngWord = styled.div`
 
 const UkrWord = styled.div`
     position: relative;
+    width: 2px;
+    color: red;
+    overflow: visible;
+        &:nth-of-type(12n+2) {
+        font-size: 1.3rem;
+        font-weight: normal;
+        color: red;
+    }
+    &:nth-of-type(6n+5) {
+        font-size: 1.3rem;
+        font-style: normal;
+    }
 `
 
 export { Wrapper, Heading, Frame, Word, EngWord, UkrWord }

@@ -11,8 +11,9 @@ const Vocabulary = () => {
   )
 
   const clickWord = (e) => {
+    console.log(e.target.id)
     setSelectedWords(selectedWords.map(val =>
-        val.id === Number(e.target.id) ? { ...val, visibility: val.visibility === "hidden" ? "visible" : "hidden" } : val
+        val.id === Number(e.target.id) ? { ...val, display_translat: val.display_translat === "none" ? "block" : "none" } : val
     ))
 }
 
@@ -24,19 +25,12 @@ const Vocabulary = () => {
         <Frame>
         {selectedWords.map((value, index) => (
                     <Word key={index} onClick={clickWord}>
-                      <EngWord>
+                      <EngWord id={value.id}>
                       {value.word}
                       </EngWord>
-                      <UkrWord style={{visibility: value.visibility}}>
+                      <UkrWord style={{display: value.display_translat}}>
                         {value.translat}
                       </UkrWord>
-
-                      {/* <EngWord>
-                        {value.word}
-                      </EngWord>
-                      <UkrWord>
-                        {value.translat}
-                      </UkrWord> */}
                     </Word>
                 ))}
         </Frame>
