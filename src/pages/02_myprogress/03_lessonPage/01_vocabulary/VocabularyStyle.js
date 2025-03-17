@@ -29,9 +29,7 @@ const Word = styled.div`
     cursor: pointer;
     user-select: none;
     font-size: 1.3rem;
-    &:active{
-        background-color: red;
-    }
+    -webkit-tap-highlight-color: transparent;
     &:nth-of-type(12n+2) {
         font-size: 1.8rem;
         font-weight: bold;
