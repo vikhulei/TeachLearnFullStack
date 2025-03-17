@@ -51,7 +51,7 @@ const FrameComponent = ({ startTestMode, listOfWordsMode, twoThousand, setTwoTho
 
     const clickWord = (e) => {
         setTwoThousand(twoThousand.map(val =>
-            val.id === Number(e.target.id) ? { ...val, visibility: val.visibility === "hidden" ? "visible" : "hidden" } : val
+            val.id === Number(e.target.id) ? { ...val, display_translat: val.display_translat === "none" ? "block" : "none" } : val
         ))
     }
 
@@ -140,7 +140,10 @@ const FrameComponent = ({ startTestMode, listOfWordsMode, twoThousand, setTwoTho
                         />
   
                         <WordWrapper>
-                        <WordSpan style={{ color: value.correctTutor ? colors.greenWord : "black" }} id={value.id} onClick={clickWord}> {value.id}. {language === "Eng" ? value.word : value.translat}</WordSpan> <TranslatSpan style={{ "visibility": value.visibility }}>{language === "Eng" ? value.translat : value.word}</TranslatSpan>
+                        <WordSpan style={{ color: value.correctTutor ? colors.greenWord : "black" }} id={value.id} onClick={clickWord}> {value.id}. {language === "Eng" ? value.word : value.translat}</WordSpan> 
+
+                        <TranslatSpan style={{ display: value.display_translat }}>{language === "Eng" ? value.translat : value.word}</TranslatSpan>
+
                         </WordWrapper>
                         </InputWordWrapper>
                     </Word>

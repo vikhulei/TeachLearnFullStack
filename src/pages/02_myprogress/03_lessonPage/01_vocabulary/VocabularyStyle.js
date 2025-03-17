@@ -23,18 +23,28 @@ const Frame = styled(MainFrame)`
     }
 `
 
-const Word = styled.span`
+const Word = styled.div`
+    position: relative;
     font-size: 1.3rem;
-    &:nth-of-type(14n+2) {
+    cursor:pointer;
+    &:nth-of-type(12n+2) {
         font-size: 1.8rem;
         font-weight: bold;
         color: ${colors.myprogress};
     }
-    &:nth-of-type(8n+5) {
+    &:nth-of-type(6n+5) {
         font-size: 1.8rem;
         font-style: italic;
     }
     }
 `
 
-export { Wrapper, Heading, Frame, Word }
+const EngWord = styled.div`
+    position: relative;
+`
+
+const UkrWord = styled.div`
+    position: relative;
+`
+
+export { Wrapper, Heading, Frame, Word, EngWord, UkrWord }
