@@ -11,7 +11,6 @@ const Vocabulary = () => {
   )
 
   const clickWord = (e) => {
-    console.log(e.target.id)
     setSelectedWords(selectedWords.map(val =>
         val.id === Number(e.target.id) ? { ...val, display_translat: val.display_translat === "none" ? "block" : "none" } : val
     ))
