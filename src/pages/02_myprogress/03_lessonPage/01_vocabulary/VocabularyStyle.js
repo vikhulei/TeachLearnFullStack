@@ -27,6 +27,7 @@ const Word = styled.div`
     position: relative;
     height: 45px;
     cursor: pointer;
+    user-select: none;
     font-size: 1.3rem;
     &:nth-of-type(12n+2) {
         font-size: 1.8rem;
