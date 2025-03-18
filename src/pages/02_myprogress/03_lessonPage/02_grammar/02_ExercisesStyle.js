@@ -28,17 +28,28 @@ const Icon = styled.img`
 `
 
 const SentenceWrapper = styled.div`
+    display: flex;
     margin: 0 auto;
     text-align: center;
 `
 
-const Text = styled.span`
+const Text = styled.div`
     font-size: 1.3rem;
 `
 
 const BoldWord = styled(Text)`
+    position: relative;
+    display: flex;
     font-weight: bold;
     cursor: pointer;
+`
+
+const EngWord = styled.div`
+    position: relative;
+`
+
+const UkrWord = styled.div`
+    position: relative;
 `
 
 const FillInWrapper = styled.div`
@@ -64,4 +75,4 @@ const FixitInput = styled(MainInput)`
     border-bottom: solid 1px black;
 `
 
-export { FrameWrapper, Frame, FrameHeading, Icon, SentenceWrapper, Text, BoldWord, FillInSentence, FillInInput, FixitInput }
+export { FrameWrapper, Frame, FrameHeading, Icon, SentenceWrapper, Text, BoldWord, EngWord, UkrWord, FillInSentence, FillInInput, FixitInput }
