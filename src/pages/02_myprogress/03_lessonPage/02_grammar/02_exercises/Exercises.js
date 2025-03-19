@@ -3,14 +3,14 @@ import { FrameWrapper, Frame, FrameHeading, Icon, SentenceWrapper, Text, BoldWor
 import replace from "../../../../../assets/02_myprogress/lessons/replace.png"
 import fillin from "../../../../../assets/02_myprogress/lessons/fillin.png"
 import fixit from "../../../../../assets/02_myprogress/lessons/fixit.png"
-import { GrammarTranslate } from "../../00_exercises/GrammarTranslate"
+import { GrammarReplace } from "../../00_exercises/GrammarReplace"
 import { GrammarFillit } from "../../00_exercises/GrammarFillit"
 import Fixit from "./02_fixit/Fixit"
 
 const Exercises = () => {
 
     const [grammarTranslate, setGrammarTranslate] = useState(
-      GrammarTranslate.filter(val => val.id <= 35)
+      GrammarReplace.filter(val => val.id <= 35)
     )
 
   const clickReplaceWord = (e) => {
