@@ -1,6 +1,6 @@
 import { Wrapper, Heading } from "./GrammarStyle"
 import Rules from "./01_Rules"
-import Exercises from "./02_Exercises"
+import Exercises from "./02_exercises/Exercises"
 
 const Grammar = () => {
     return (
