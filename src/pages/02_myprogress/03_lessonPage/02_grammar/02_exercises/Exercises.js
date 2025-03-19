@@ -5,7 +5,6 @@ import fillin from "../../../../../assets/02_myprogress/lessons/fillin.png"
 import fixit from "../../../../../assets/02_myprogress/lessons/fixit.png"
 import { GrammarTranslate } from "../../00_exercises/GrammarTranslate"
 import { GrammarFillit } from "../../00_exercises/GrammarFillit"
-import { GrammarFixit} from "../../00_exercises/GrammarFixit"
 import Fixit from "./02_fixit/Fixit"
 
 const Exercises = () => {
@@ -18,10 +17,6 @@ const Exercises = () => {
     setGrammarTranslate(grammarTranslate.map(val =>
         val.id === Number(e.currentTarget.id) ? { ...val, display_translat: val.display_translat === "none" ? "block" : "none", display_word: val.display_word === "block" ? "none" : "block"} : val
     ))
-}
-
-const clickFixitWord = (e) => {
-  
 }
 
   return (
@@ -47,19 +42,6 @@ const clickFixitWord = (e) => {
         ))}
       </Frame>
       <Fixit />
-      {/* <Frame>
-        <FrameHeading>fix it</FrameHeading>
-        <Icon src={fixit} />
-        {GrammarFixit.filter(val => val.lesson === 1).map((value, index) => (
-          <SentenceWrapper key={index}>
-            <Text>{value.beginning}&nbsp;</Text>
-            <BoldWord>{value.bold}&nbsp;</BoldWord>
-            <FixitInput/>
-            <span>&nbsp;{value.correct}</span>
-            <Text>&nbsp;{value.ending}</Text>
-          </SentenceWrapper>
-        ))}
-      </Frame> */}
       <Frame>
         <FrameHeading>fill it in</FrameHeading>
         <Icon src={fillin} />
