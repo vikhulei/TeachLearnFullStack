@@ -29,17 +29,22 @@ const Icon = styled.img`
 
 const SentenceWrapper = styled.div`
     display: flex;
+    max-width: 400px;
     margin: 0 auto;
+    justify-content: center;
     text-align: center;
+    flex-wrap: wrap;
 `
 
 const Text = styled.div`
     font-size: 1.3rem;
+    text-wrap: nowrap;
 `
 
 const BoldWord = styled(Text)`
     position: relative;
     display: flex;
+    text-wrap: nowrap;
     font-weight: bold;
     cursor: pointer;
 `
@@ -69,10 +74,14 @@ const FillInInput = styled(MainInput)`
 `
 
 const FixitInput = styled(MainInput)`
-    margin: 0 auto;
     background-color: rgba(0, 0, 0, 0);
     border: 0;
     border-bottom: solid 1px black;
+    text-align: center;
+    font-size: 1.2rem;
+    &::placeholder {
+        color: red
+    }
 `
 
 export { FrameWrapper, Frame, FrameHeading, Icon, SentenceWrapper, Text, BoldWord, EngWord, UkrWord, FillInSentence, FillInInput, FixitInput }

@@ -101,6 +101,7 @@ const WordWrapper = styled.div`
 `
 
 const Input = styled(MainInput)`
+    margin-right: 25px;
 `
 
 const Word = styled.div`

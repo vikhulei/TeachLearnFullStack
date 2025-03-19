@@ -46,10 +46,10 @@ const Exercises = () => {
         <Icon src={fixit} />
         {GrammarFixit.filter(val => val.lesson === 1).map((value, index) => (
           <SentenceWrapper key={index}>
-            <Text>{value.beginning}</Text>
-            <BoldWord>{value.bold}</BoldWord>
-            <FixitInput />
-            <Text>{value.ending}</Text>
+            <Text>{value.beginning}&nbsp;</Text>
+            <BoldWord>{value.bold}&nbsp;</BoldWord>
+            <FixitInput placeholder={value.correct}/>
+            <Text>&nbsp;{value.ending}</Text>
           </SentenceWrapper>
         ))}
       </Frame>

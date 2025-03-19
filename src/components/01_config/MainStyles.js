@@ -103,7 +103,6 @@ const MainInput = styled.input`
     position: relative;
     width: 150px;
     height: 24px;
-    margin-right: 25px;
     background-color: lightgrey;
     @media(max-width: 1200px) {
         max-width: 300px;
