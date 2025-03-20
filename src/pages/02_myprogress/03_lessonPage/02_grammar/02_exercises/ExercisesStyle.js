@@ -35,7 +35,6 @@ const SentenceWrapper = styled.div`
     text-align: center;
     flex-wrap: wrap;
     line-height: 1;
-    // background-color: green;
 `
 
 const Text = styled.div`
@@ -89,4 +88,11 @@ const FixitInput = styled(MainInput)`
     }
 `
 
-export { FrameWrapper, Frame, FrameHeading, Icon, SentenceWrapper, Text, BoldWord, EngWord, UkrWord, FillInSentence, FillInInput, FixitInput }
+const Correct = styled.div`
+    flex-basis: 100%;
+    color: red;
+    font-size: 0.8rem;
+    line-height: 0.8;
+`
+
+export { FrameWrapper, Frame, FrameHeading, Icon, SentenceWrapper, Text, BoldWord, EngWord, UkrWord, FillInSentence, FillInInput, FixitInput, Correct }

@@ -1,6 +1,6 @@
 import { useState } from "react"
-import { BoldWord, Frame, FrameHeading, Icon, SentenceWrapper, Text } from "../ExercisesStyle"
-import { SentenceWrapperFixit, FixitInput, Correct } from "./FixitStyle"
+import { BoldWord, Frame, FrameHeading, Icon, SentenceWrapper, Text, Correct } from "../ExercisesStyle"
+import { FixitInput } from "./FixitStyle"
 import fixit from "../../../../../../assets/02_myprogress/lessons/fixit.png"
 import { GrammarFixit } from "../../../00_exercises/GrammarFixit"
 
