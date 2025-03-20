@@ -11,7 +11,7 @@ const Frame = styled(MainFrame)`
     max-width: 90vw;
     flex-direction: column;
     align-items: start;
-    gap: 15px;
+    gap: 35px;
 `
 
 const FrameHeading = styled(MainHeadingCapital)`
@@ -34,6 +34,7 @@ const SentenceWrapper = styled.div`
     justify-content: center;
     text-align: center;
     flex-wrap: wrap;
+    line-height: 1;
 `
 
 const Text = styled.div`

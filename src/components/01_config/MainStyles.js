@@ -102,6 +102,7 @@ const MainFrame = styled.div`
 const MainInput = styled.input`
     position: relative;
     width: 150px;
+    // max-width: 150px;
     height: 24px;
     background-color: lightgrey;
     @media(max-width: 1200px) {

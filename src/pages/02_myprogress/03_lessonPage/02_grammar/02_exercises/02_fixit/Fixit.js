@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { BoldWord, Frame, FrameHeading, Icon, SentenceWrapper, Text } from "../ExercisesStyle"
-import { FixitInput } from "./FixitStyle"
+import { SentenceWrapperFixit, FixitInput, Correct } from "./FixitStyle"
 import fixit from "../../../../../../assets/02_myprogress/lessons/fixit.png"
 import { GrammarFixit } from "../../../00_exercises/GrammarFixit"
 
@@ -26,7 +26,7 @@ const Fixit = () => {
                     <Text>{value.beginning}&nbsp;</Text>
                     <BoldWord id={value.id} onClick={clickFixitWord}>{value.bold}&nbsp;</BoldWord>
                     <FixitInput />
-                    <span style={{visibility: value.visibility, color: "red"}}>&nbsp;{value.correct}</span>
+                    <Correct style={{visibility: value.visibility}}>&nbsp;{value.correct}</Correct>
                     <Text>&nbsp;{value.ending}</Text>
                 </SentenceWrapper>
             ))}
