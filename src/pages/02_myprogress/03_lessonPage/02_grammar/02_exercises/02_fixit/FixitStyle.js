@@ -10,6 +10,7 @@ const SentenceWrapperFixit = styled(SentenceWrapper)`
 const FixitInput = styled(MainInput)`
     background-color: rgba(0, 0, 0, 0);
     height: 18px;
+    max-width: 200px;
     border: 0;
     border-bottom: solid 1px black;
     text-align: center;
@@ -20,7 +21,7 @@ const FixitInput = styled(MainInput)`
         color: red
     }
     flex-basis: 100%;
-    margin: 0 100px;
+    margin: 0 50px;
 `
 
 const Correct = styled.div`

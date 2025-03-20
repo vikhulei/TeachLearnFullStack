@@ -35,6 +35,7 @@ const SentenceWrapper = styled.div`
     text-align: center;
     flex-wrap: wrap;
     line-height: 1;
+    // background-color: green;
 `
 
 const Text = styled.div`
