@@ -58,22 +58,6 @@ const UkrWord = styled.div`
     position: relative;
 `
 
-const FillInWrapper = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-`
-
-const FillInSentence = styled.div`
-    text-align: center;
-    cursor: pointer;
-`
-
-const FillInInput = styled(MainInput)`
-    margin: 0 auto;
-    width: 250px;
-`
-
 const FixitInput = styled(MainInput)`
     background-color: rgba(0, 0, 0, 0);
     border: 0;
@@ -95,4 +79,4 @@ const Correct = styled.div`
     line-height: 0.8;
 `
 
-export { FrameWrapper, Frame, FrameHeading, Icon, SentenceWrapper, Text, BoldWord, EngWord, UkrWord, FillInSentence, FillInInput, FixitInput, Correct }
+export { FrameWrapper, Frame, FrameHeading, Icon, SentenceWrapper, Text, BoldWord, EngWord, UkrWord, FixitInput, Correct }
