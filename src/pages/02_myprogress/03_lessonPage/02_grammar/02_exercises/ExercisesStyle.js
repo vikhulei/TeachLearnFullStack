@@ -40,6 +40,7 @@ const SentenceWrapper = styled.div`
 const Text = styled.div`
     font-size: 1.3rem;
     text-wrap: nowrap;
+    -webkit-tap-highlight-color: transparent;
 `
 
 const BoldWord = styled(Text)`
@@ -48,14 +49,17 @@ const BoldWord = styled(Text)`
     text-wrap: nowrap;
     font-weight: bold;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
 `
 
 const EngWord = styled.div`
     position: relative;
+    -webkit-tap-highlight-color: transparent;
 `
 
 const UkrWord = styled.div`
     position: relative;
+    -webkit-tap-highlight-color: transparent;
 `
 
 const FixitInput = styled(MainInput)`
