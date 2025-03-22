@@ -3,6 +3,7 @@ import { BoldWord, FrameHeading, Icon, SentenceWrapper, Text, Correct } from "..
 import { FrameFixit, FixitInput } from "./FixitStyle"
 import fixit from "../../../../../../assets/02_myprogress/lessons/fixit.png"
 import { GrammarFixit } from "../../../00_exercises/GrammarFixit"
+import { colors } from "../../../../../../components/01_config/Colors"
 
 const Fixit = () => {
 
@@ -12,8 +13,14 @@ const Fixit = () => {
 
     const clickFixitWord = (e) => {
         setGrammarFixit(grammarFixit.map(val =>
-            val.id === Number(e.currentTarget.id) ? { ...val, visibility: val.visibility === "hidden" ? "visible" : "hidden"} : val
+            val.id === Number(e.currentTarget.id) ? { ...val, visibility: val.visibility === "hidden" ? "visible" : "hidden" } : val
         ))
+    }
+
+    const fillInput = (e) => {
+        let newGRammarFixit = [...grammarFixit]
+        newGRammarFixit[e.currentTarget.id].input = e.currentTarget.value
+        setGrammarFixit(newGRammarFixit)
     }
 
     return (
@@ -25,8 +32,13 @@ const Fixit = () => {
                 <SentenceWrapper key={index}>
                     <Text>{value.beginning}&nbsp;</Text>
                     <BoldWord id={value.id} onClick={clickFixitWord}>{value.bold}&nbsp;</BoldWord>
-                    <FixitInput />
-                    <Correct style={{visibility: value.visibility}}>&nbsp;{value.correct}</Correct>
+                    <FixitInput
+                        style={{color: value.input === value.correct ? `${colors.greenWord}` : ""}}
+                        value={value.input}
+                        id={value.id - 1}
+                        onInput={fillInput}
+                    />
+                    <Correct style={{ visibility: value.visibility }}>&nbsp;{value.correct}</Correct>
                     <Text>&nbsp;{value.ending}</Text>
                 </SentenceWrapper>
             ))}

@@ -33,12 +33,7 @@ const FixitInput = styled(MainInput)`
     margin: 0 50px;
 `
 
-// const Correct = styled.div`
-//     flex-basis: 100%;
-//     color: red;
-//     font-size: 1rem;
-//     line-height: 0.8;
-// `
+
 
 
 export { FrameFixit, SentenceWrapperFixit, FixitInput }

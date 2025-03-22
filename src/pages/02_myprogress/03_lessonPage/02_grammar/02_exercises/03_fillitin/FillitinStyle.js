@@ -12,7 +12,8 @@ const FillInInput = styled(MainInput)`
     text-align: center;
     height: 30px;
     margin: 0 auto;
-    width: 250px;
+    width: 300px;
+    max-width: 95vw;
 `
 
 export { FillInSentence, FillInInput }

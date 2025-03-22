@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { MainFrame, MainFrameWrapper, MainHeadingCapital, MainInput } from "../../../../../components/01_config/MainStyles";
+import { MainFrame, MainFrameWrapper, MainHeadingCapital } from "../../../../../components/01_config/MainStyles";
 import { colors } from "../../../../../components/01_config/Colors";
 
 const FrameWrapper = styled(MainFrameWrapper)`
@@ -61,21 +61,6 @@ const UkrWord = styled.div`
     position: relative;
     -webkit-tap-highlight-color: transparent;
 `
-
-// const FixitInput = styled(MainInput)`
-//     height: 40px;
-//     background-color: rgba(0, 0, 0, 0);
-//     border: 0;
-//     border-bottom: solid 1px black;
-//     text-align: center;
-//     font-size: 1.5rem;
-//     &::placeholder {
-//         color: red
-//     }
-//     &:after {
-//         content: "test";
-//     }
-// `
 
 const Correct = styled.div`
     flex-basis: 100%;
