@@ -18,12 +18,12 @@ const SentenceWrapperFixit = styled(SentenceWrapper)`
 
 const FixitInput = styled(MainInput)`
     background-color: rgba(0, 0, 0, 0);
-    height: 18px;
+    height: 25px;
     max-width: 200px;
     border: 0;
     border-bottom: solid 1px black;
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.3rem;
     font-style: italic;
     outline: none;
     &::placeholder {
@@ -33,12 +33,12 @@ const FixitInput = styled(MainInput)`
     margin: 0 50px;
 `
 
-const Correct = styled.div`
-    flex-basis: 100%;
-    color: red;
-    font-size: 0.8rem;
-    line-height: 0.8;
-`
+// const Correct = styled.div`
+//     flex-basis: 100%;
+//     color: red;
+//     font-size: 1rem;
+//     line-height: 0.8;
+// `
 
 
-export { FrameFixit, SentenceWrapperFixit, FixitInput, Correct }
+export { FrameFixit, SentenceWrapperFixit, FixitInput }

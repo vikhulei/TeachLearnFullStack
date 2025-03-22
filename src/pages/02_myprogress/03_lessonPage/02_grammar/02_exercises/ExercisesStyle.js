@@ -38,7 +38,7 @@ const SentenceWrapper = styled.div`
 `
 
 const Text = styled.div`
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     text-wrap: nowrap;
     -webkit-tap-highlight-color: transparent;
 `
@@ -62,25 +62,26 @@ const UkrWord = styled.div`
     -webkit-tap-highlight-color: transparent;
 `
 
-const FixitInput = styled(MainInput)`
-    background-color: rgba(0, 0, 0, 0);
-    border: 0;
-    border-bottom: solid 1px black;
-    text-align: center;
-    font-size: 1.2rem;
-    &::placeholder {
-        color: red
-    }
-    &:after {
-        content: "test";
-    }
-`
+// const FixitInput = styled(MainInput)`
+//     height: 40px;
+//     background-color: rgba(0, 0, 0, 0);
+//     border: 0;
+//     border-bottom: solid 1px black;
+//     text-align: center;
+//     font-size: 1.5rem;
+//     &::placeholder {
+//         color: red
+//     }
+//     &:after {
+//         content: "test";
+//     }
+// `
 
 const Correct = styled.div`
     flex-basis: 100%;
     color: red;
-    font-size: 0.8rem;
+    font-size: 1rem;
     line-height: 1.2;
 `
 
-export { FrameWrapper, Frame, FrameHeading, Icon, SentenceWrapper, Text, BoldWord, EngWord, UkrWord, FixitInput, Correct }
+export { FrameWrapper, Frame, FrameHeading, Icon, SentenceWrapper, Text, BoldWord, EngWord, UkrWord, Correct }
