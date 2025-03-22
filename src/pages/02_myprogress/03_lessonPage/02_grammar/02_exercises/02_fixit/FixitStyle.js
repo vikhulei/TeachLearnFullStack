@@ -1,6 +1,15 @@
 import styled from "styled-components";
-import { MainInput } from "../../../../../../components/01_config/MainStyles";
-import { SentenceWrapper } from "../ExercisesStyle";
+import { MainFrame, MainInput } from "../../../../../../components/01_config/MainStyles";
+import { Frame, SentenceWrapper } from "../ExercisesStyle";
+
+const FrameFixit = styled(MainFrame)`
+    margin: 0;
+    width: 400px;
+    max-width: 90vw;
+    flex-direction: column;
+    align-items: start;
+    gap: 40px;
+`
 
 const SentenceWrapperFixit = styled(SentenceWrapper)`
     flex-direction: column;
@@ -32,4 +41,4 @@ const Correct = styled.div`
 `
 
 
-export { SentenceWrapperFixit, FixitInput, Correct }
+export { FrameFixit, SentenceWrapperFixit, FixitInput, Correct }

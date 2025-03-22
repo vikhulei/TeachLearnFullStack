@@ -11,7 +11,7 @@ const Frame = styled(MainFrame)`
     max-width: 90vw;
     flex-direction: column;
     align-items: start;
-    gap: 35px;
+    gap: 20px;
 `
 
 const FrameHeading = styled(MainHeadingCapital)`
@@ -76,7 +76,7 @@ const Correct = styled.div`
     flex-basis: 100%;
     color: red;
     font-size: 0.8rem;
-    line-height: 0.8;
+    line-height: 1.2;
 `
 
 export { FrameWrapper, Frame, FrameHeading, Icon, SentenceWrapper, Text, BoldWord, EngWord, UkrWord, FixitInput, Correct }
