@@ -4,6 +4,7 @@ import replace from "../../../../../assets/02_myprogress/lessons/replace.png"
 import { GrammarReplace } from "../../00_exercises/GrammarReplace"
 import Fixit from "./02_fixit/Fixit"
 import Fillitin from "./03_fillitin/Fillitin"
+import { ReadingText } from "../../00_exercises/ReadingText"
 
 const Exercises = () => {
 
@@ -41,6 +42,11 @@ const Exercises = () => {
       </Frame>
       <Fixit />
       <Fillitin />
+      <Frame>
+        <Text style={{whiteSpace: "pre-wrap", lineHeight: "2"}}>
+          {ReadingText[0].text}
+        </Text>
+      </Frame>
     </FrameWrapper>
   )
 }

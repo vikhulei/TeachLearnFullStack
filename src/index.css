@@ -6,9 +6,6 @@
 	box-sizing: border-box;
 	overscroll-behavior: none;
 	font-family: Raleway;
-	/* ::-webkit-scrollbar {
-		display: none;
-	} */
 	scroll-behavior: smooth;
 }
 

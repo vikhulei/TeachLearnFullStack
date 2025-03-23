@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { BoldWord, FrameHeading, Icon, SentenceWrapper, Text, Correct } from "../ExercisesStyle"
+import { Frame, BoldWord, FrameHeading, Icon, SentenceWrapper, Text, Correct } from "../ExercisesStyle"
 import { FrameFixit, FixitInput } from "./FixitStyle"
 import fixit from "../../../../../../assets/02_myprogress/lessons/fixit.png"
 import { GrammarFixit } from "../../../00_exercises/GrammarFixit"
@@ -25,7 +25,7 @@ const Fixit = () => {
 
     return (
 
-        <FrameFixit>
+        <Frame>
             <FrameHeading>fix it</FrameHeading>
             <Icon src={fixit} />
             {grammarFixit.map((value, index) => (
@@ -42,7 +42,7 @@ const Fixit = () => {
                     <Text>&nbsp;{value.ending}</Text>
                 </SentenceWrapper>
             ))}
-        </FrameFixit>
+        </Frame>
 
     )
 }

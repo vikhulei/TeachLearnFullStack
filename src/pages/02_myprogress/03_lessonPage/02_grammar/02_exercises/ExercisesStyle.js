@@ -8,6 +8,7 @@ const FrameWrapper = styled(MainFrameWrapper)`
 const Frame = styled(MainFrame)`
     margin: 0;
     width: 400px;
+    height: fit-content;
     max-width: 90vw;
     flex-direction: column;
     align-items: start;
