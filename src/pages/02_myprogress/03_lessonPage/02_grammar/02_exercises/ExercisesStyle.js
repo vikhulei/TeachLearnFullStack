@@ -70,4 +70,8 @@ const Correct = styled.div`
     line-height: 1.2;
 `
 
-export { FrameWrapper, Frame, FrameHeading, Icon, SentenceWrapper, Text, BoldWord, EngWord, UkrWord, Correct }
+const Image = styled.img`
+    width: 300px;
+`
+
+export { FrameWrapper, Frame, FrameHeading, Icon, SentenceWrapper, Text, BoldWord, EngWord, UkrWord, Correct, Image }
