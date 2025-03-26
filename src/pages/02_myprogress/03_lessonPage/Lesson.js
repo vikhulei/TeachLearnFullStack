@@ -2,6 +2,8 @@ import { Wrapper, Header } from "./LessonStyle"
 import Vocabulary from "./01_vocabulary/Vocabulary"
 import Grammar from "./02_grammar/Grammar"
 import Reading from "./03_reading/Reading"
+import Listening from "./04_listening/Listening"
+import Speaking from "./05_speaking/Speaking"
 
 
 const Lesson = () => {
@@ -13,7 +15,8 @@ const Lesson = () => {
             <Vocabulary />
             <Grammar />
             <Reading />
-
+            <Listening />
+            <Speaking />
         </Wrapper>
     )
 }
