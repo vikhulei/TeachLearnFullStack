@@ -25,12 +25,9 @@ export const ReadingImages = images.map((image, index) => (
     {
         id: index+1,
         image,
-        description: description[index]
+        description: description[index],
+        lesson: Math.floor(index/5) + 1
     }
 ))
 
-// export const ReadingImages = [
-//     { id: 1, lesson: 1, image: image1, description: "cup" },
-//     { id: 2, lesson: 1, image: image2, description: "plate" },
-//     { id: 3, lesson: 1, image: image3, description: "table" },
-// ]
+

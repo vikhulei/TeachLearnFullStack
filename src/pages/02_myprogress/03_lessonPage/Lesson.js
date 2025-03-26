@@ -3,7 +3,7 @@ import Vocabulary from "./01_vocabulary/Vocabulary"
 import Grammar from "./02_grammar/Grammar"
 import { FrameWrapper } from "./02_grammar/01_RulesStyle"
 import { Image } from "./02_grammar/02_exercises/ExercisesStyle"
-import { ReadingImages } from "./00_exercises/01_reading_images/ReadingImages"
+import { ReadingImages } from "./00_exercises/01_reading_texts/ReadingTexts"
 
 const Images = Array.from({ length: 3 }, (_, i) => require(`./00_exercises/01_reading_images/image${i + 1}.jpg`));
 

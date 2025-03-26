@@ -5,7 +5,7 @@ import { GrammarReplace } from "../../00_exercises/GrammarReplace"
 import Fixit from "./02_fixit/Fixit"
 import Fillitin from "./03_fillitin/Fillitin"
 import { ReadingText } from "../../00_exercises/ReadingText"
-import { ReadingImages } from "../../00_exercises/01_reading_images/ReadingImages"
+import { ReadingImages } from "../../00_exercises/01_reading_texts/ReadingTexts"
 
 const Exercises = () => {
 
