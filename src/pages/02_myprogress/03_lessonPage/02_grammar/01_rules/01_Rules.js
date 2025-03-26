@@ -1,6 +1,6 @@
 import { Wrapper, FrameWrapper, FrameGrammar, Image} from "./01_RulesStyle"
-import tobe from "../../../../assets/02_myprogress/lessons/01/tobe.jpg"
-import rules from "../../../../assets/02_myprogress/lessons/01/reading_rules.jpg"
+import tobe from "../../../../../assets/02_myprogress/lessons/01/tobe.jpg"
+import rules from "../../../../../assets/02_myprogress/lessons/01/reading_rules.jpg"
 
 const Rules = () => {
     return (

@@ -2,9 +2,9 @@ import home from "./image3.jpg"
 
 // export const Images = Array.from({ length: 3 }, (_, i) => require(`./00_exercises/01_reading_images/image${i + 1}.jpg`));
 
-import image1 from "./image1.jpg"
-import image2 from "./image2.jpg"
-import image3 from "./image3.jpg"
+// import image1 from "./image1.jpg"
+// import image2 from "./image2.jpg"
+// import image3 from "./image3.jpg"
 
 
 const images = importAll(

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { MainFrame, MainFrameWrapper } from "../../../../components/01_config/MainStyles";
+import { MainFrame, MainFrameWrapper } from "../../../../../components/01_config/MainStyles";
 
 const Wrapper = styled.div`
 `
