@@ -1,6 +1,7 @@
 import { Wrapper, Header } from "./LessonStyle"
 import Vocabulary from "./01_vocabulary/Vocabulary"
 import Grammar from "./02_grammar/Grammar"
+import Reading from "./03_reading/Reading"
 
 
 const Lesson = () => {
@@ -11,6 +12,7 @@ const Lesson = () => {
             </Header>
             <Vocabulary />
             <Grammar />
+            <Reading />
 
         </Wrapper>
     )

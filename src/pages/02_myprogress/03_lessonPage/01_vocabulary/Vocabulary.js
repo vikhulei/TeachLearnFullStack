@@ -1,6 +1,7 @@
 import { useState } from "react"
-import { Wrapper, Heading, Frame, Word, EngWord, UkrWord } from "./VocabularyStyle"
+import { Frame, Word, EngWord, UkrWord } from "./VocabularyStyle"
 import { TwoThousand } from "../../../../components/01_config/TwoThousand"
+import { HeadingSection, WrapperSection } from "../LessonStyle"
 // import Word from "./01_Word"
 
 
@@ -17,10 +18,10 @@ const Vocabulary = () => {
 }
 
   return (
-    <Wrapper>
-        <Heading>
+    <WrapperSection>
+        <HeadingSection>
         Vocabulary
-        </Heading>
+        </HeadingSection>
         <Frame>
         {selectedWords.map((value, index) => (
                     <Word key={index} onClick={clickWord}>
@@ -33,7 +34,7 @@ const Vocabulary = () => {
                     </Word>
                 ))}
         </Frame>
-    </Wrapper>
+    </WrapperSection>
   )
 }
 
