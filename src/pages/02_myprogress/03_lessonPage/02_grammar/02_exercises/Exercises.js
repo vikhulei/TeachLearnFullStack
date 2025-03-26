@@ -43,11 +43,6 @@ const Exercises = () => {
       </Frame>
       <Fixit />
       <Fillitin />
-      <Frame>
-        <Text style={{whiteSpace: "pre-wrap", lineHeight: "2"}}>
-          {ReadingText[0].text}
-        </Text>
-      </Frame>
     </FrameWrapper>
   )
 }
