@@ -1,33 +1,29 @@
-import home from "./image3.jpg"
+function importAll(r) {
+    return r.keys().map(r);
+}
 
-// export const Images = Array.from({ length: 3 }, (_, i) => require(`./00_exercises/01_reading_images/image${i + 1}.jpg`));
-
-// import image1 from "./image1.jpg"
-// import image2 from "./image2.jpg"
-// import image3 from "./image3.jpg"
-
+const text = [
+    'Liam and Emma love to explore the world. One day, they found an old map in their grandfather\’s attic. “We need to find out where this leads!” Emma said excitedly. The information on the map was faded, but it showed a big red "X" in the middle of a forest. "How much treasure do you think is buried there?" Liam asked. \n \n "Let\'s take the map and go on an adventure!" Emma said. The two of them packed their bags and set off. They didn\'t know what they would find, but they knew one thing for sure—they want an adventure over anything else! The two of them packed their bags and set off. They didn\'t know what they would find, but they knew one thing for sure—they want an adventure over anything else!',
+    "text 2",
+    "text 3",
+]
 
 const images = importAll(
     require.context("./", false, /\.jpg$/)
 );
 
 const description = [
-    "teacher",
-    "student",
-    "home"
+    "desc image 1",
+    "desc image 2",
+    "desc image 3",
 ]
 
-function importAll(r) {
-    return r.keys().map(r);
-}
-
-export const ReadingImages = images.map((image, index) => (
+export const ReadingText = images.map((image, index) => (
     {
         id: index+1,
+        lesson: index+1,
+        text: text[index],
         image,
-        description: description[index],
-        lesson: Math.floor(index/5) + 1
+        description: description[index]
     }
 ))
-
-

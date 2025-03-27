@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { MainWrapper, MainHeader, SectionWrapper, MainHeading } from "../../../components/01_config/MainStyles";
+import { MainWrapper, MainHeader, SectionWrapper, MainHeading, MainFrameWrapper, MainFrame } from "../../../components/01_config/MainStyles";
 
 const Wrapper = styled(MainWrapper)`
 `
@@ -15,4 +15,23 @@ const HeadingSection = styled(MainHeading)`
     text-align: center;
 `
 
-export { Wrapper, Header, WrapperSection, HeadingSection }
+const FrameWrapper = styled(MainFrameWrapper)`
+`
+
+const Frame = styled(MainFrame)`
+    margin: 0;
+    width: 400px;
+    height: fit-content;
+    max-width: 90vw;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+`
+
+const Text = styled.div`
+    font-size: 1.4rem;
+    text-wrap: nowrap;
+    -webkit-tap-highlight-color: transparent;
+`
+
+export { Wrapper, Header, WrapperSection, HeadingSection, FrameWrapper, Frame, Text  }
