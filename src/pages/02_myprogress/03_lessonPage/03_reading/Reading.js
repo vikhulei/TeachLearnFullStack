@@ -5,7 +5,7 @@ import { RightFrameWrapper, Image, FrameReadingLeft, FrameReadingRight, TextRead
 import { MainFrameWrapper } from "../../../../components/01_config/MainStyles"
 
 const Reading = () => {
-    const [readingText, setReadingText] = useState(ReadingText.filter(value => value.lesson === 1))
+    const [readingText, setReadingText] = useState(ReadingText.filter(value => value.lesson === 3))
     return (
         <WrapperSection>
             <HeadingSection>

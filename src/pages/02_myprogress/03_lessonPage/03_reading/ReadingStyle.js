@@ -10,10 +10,13 @@ const FrameReadingLeft = styled(MainFrame)`
 
 const FrameReadingRight = styled(MainFrame)`
     margin: 0;
+    padding: 0;
     width: 400px;
     flex: 1;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
 `
 
 const RightFrameWrapper = styled.div`
@@ -26,10 +29,10 @@ const RightFrameWrapper = styled.div`
 `
 
 const Image = styled.img`
-    max-height: 350px;
-    max-width: 300px;
+    height: 400px;
+    // max-width: 300px;
     object-fit: cover;
-    margin: 0 auto;
+    margin: 15px;
     
 `
 
