@@ -16,6 +16,8 @@ const HeadingSection = styled(MainHeading)`
 `
 
 const FrameWrapper = styled(MainFrameWrapper)`
+    background-color: green;
+    height: 800px;
 `
 
 const Frame = styled(MainFrame)`

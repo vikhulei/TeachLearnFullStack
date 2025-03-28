@@ -13,9 +13,44 @@ const images = importAll(
 );
 
 const description = [
-    "desc image 1",
-    "desc image 2",
-    "desc image 3",
+
+    [
+        {question: "What is the boy’s1 name?",
+        answer: "Boy1"},
+        {question: "What is the boy’s2 name?",
+        answer: "Boy2"},
+        {question: "What is the boy’s3 name?",
+        answer: "Boy3"},
+        {question: "What is the boy’s4 name?",
+        answer: "Boy4"},
+        {question: "What is the boy’s5 name?",
+        answer: "Boy5"},
+    ],
+    [
+        {question: "What is the girl’s1 name?",
+        answer: "BGirl1"},
+        {question: "What is the girl’s2 name?",
+        answer: "BGirl2"},
+        {question: "What is the girl’s3 name?",
+        answer: "BGirl3"},
+        {question: "What is the girl’s4 name?",
+        answer: "BGirl4"},
+        {question: "What is the girl’s5 name?",
+        answer: "BGirl5"},
+    ],
+    [
+        {question: "What is the man’s1 name?",
+        answer: "Human1"},
+        {question: "What is the man’s2 name?",
+        answer: "Human2"},
+        {question: "What is the man’s3 name?",
+        answer: "Human3"},
+        {question: "What is the man’s4 name?",
+        answer: "Human4"},
+        {question: "What is the man’s5 name?",
+        answer: "Human5"},
+    ],
+
 ]
 
 export const ReadingText = images.map((image, index) => (
