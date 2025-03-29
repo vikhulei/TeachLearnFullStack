@@ -12,43 +12,43 @@ const images = importAll(
     require.context("./", false, /\.jpg$/)
 );
 
-const description = [
+const questions = [
 
     [
         {question: "What is the boy’s1 name?",
-        answer: "Boy1"},
+        input: "", visibility: "hidden", answer: "Boy1"},
         {question: "What is the boy’s2 name?",
-        answer: "Boy2"},
+        input: "", visibility: "hidden", answer: "Boy2"},
         {question: "What is the boy’s3 name?",
-        answer: "Boy3"},
+        input: "", visibility: "hidden", answer: "Boy3"},
         {question: "What is the boy’s4 name?",
-        answer: "Boy4"},
+        input: "", visibility: "hidden", answer: "Boy4"},
         {question: "What is the boy’s5 name?",
-        answer: "Boy5"},
+        input: "", visibility: "hidden", answer: "Boy5"},
     ],
     [
         {question: "What is the girl’s1 name?",
-        answer: "BGirl1"},
+        input: "", visibility: "hidden", answer: "BGirl1"},
         {question: "What is the girl’s2 name?",
-        answer: "BGirl2"},
+        input: "", visibility: "hidden", answer: "BGirl2"},
         {question: "What is the girl’s3 name?",
-        answer: "BGirl3"},
+        input: "", visibility: "hidden", answer: "BGirl3"},
         {question: "What is the girl’s4 name?",
-        answer: "BGirl4"},
+        input: "", visibility: "hidden", answer: "BGirl4"},
         {question: "What is the girl’s5 name?",
-        answer: "BGirl5"},
+        input: "", visibility: "hidden", answer: "BGirl5"},
     ],
     [
         {question: "What is the man’s1 name?",
-        answer: "Human1"},
+        input: "", visibility: "hidden", answer: "Human1"},
         {question: "What is the man’s2 name?",
-        answer: "Human2"},
+        input: "", visibility: "hidden", answer: "Human2"},
         {question: "What is the man’s3 name?",
-        answer: "Human3"},
+        input: "", visibility: "hidden", answer: "Human3"},
         {question: "What is the man’s4 name?",
-        answer: "Human4"},
+        input: "", visibility: "hidden", answer: "Human4"},
         {question: "What is the man’s5 name?",
-        answer: "Human5"},
+        input: "", visibility: "hidden", answer: "Human5"},
     ],
 
 ]
@@ -59,6 +59,6 @@ export const ReadingText = images.map((image, index) => (
         lesson: index+1,
         text: text[index],
         image,
-        description: description[index]
+        questions: questions[index]
     }
 ))
