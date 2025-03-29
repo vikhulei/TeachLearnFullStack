@@ -68,6 +68,7 @@ const Correct = styled.div`
     color: red;
     font-size: 1rem;
     line-height: 1.2;
+    justify-self: right;
 `
 
 const Image = styled.img`

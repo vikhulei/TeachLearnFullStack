@@ -1,27 +1,28 @@
 import styled from "styled-components";
-import { Frame, Text } from "../LessonStyle";
-import { MainBodyText, MainFrame, MainInput } from "../../../../components/01_config/MainStyles";
+import { Text } from "../LessonStyle";
+import { MainFrame } from "../../../../components/01_config/MainStyles";
+
 
 const FrameReadingLeft = styled(MainFrame)`
     margin: 0;
-    height: 100%;
+    min-height: 100%;
     width: 400px;
 `
 
 const FrameReadingRight = styled(MainFrame)`
     margin: 0;
-    padding: 15px;
+    padding: 20px;
     width: 400px;
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 20px;
+    gap: 10px;
 `
 
 const RightFrameWrapper = styled.div`
     width: 400px;
-    max-height: 50%;
+    max-height: fit-content;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -35,6 +36,7 @@ const Image = styled.img`
 `
 
 const TextReading = styled(Text)`
+    height: 100%;
     white-space: pre-wrap;
     font-size: 1.2rem;
     line-height: 1.5;
@@ -42,35 +44,35 @@ const TextReading = styled(Text)`
 
 const SentenceWrapper = styled.div`
     display: flex;
+    flex-direction: column; 
     flex-wrap: wrap;
     max-width: 400px;
-    gap: 10px;
-    line-height: 1;
+    // gap: 1px;
+    line-height: 0.7;
 `
 
 const Question = styled.div`
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     text-wrap: nowrap;
     -webkit-tap-highlight-color: transparent;
+    cursor: pointer;
 `
 
 const ReadingInput = styled.input`
     background-color: rgba(0, 0, 0, 0);
-    height: 25px;
-    max-width: 120px;
+    height: 15px;
+    max-width: 300px;
     border: 0;
-    border-bottom: solid 1px black;
-    font-size: 1.2rem;
+    border-bottom: dashed 2px black;
+    font-size: 1.1rem;
     font-style: italic;
-    text-align: center;
     outline: none;
 `
 
 const Correct = styled.div`
-    // flex-basis: 100%;
     color: red;
     font-size: 1rem;
-    line-height: 1.2;
+    line-height: 1;
 `
 
 export { FrameReadingLeft, FrameReadingRight, RightFrameWrapper, Image, TextReading, SentenceWrapper, Question, Correct, ReadingInput }

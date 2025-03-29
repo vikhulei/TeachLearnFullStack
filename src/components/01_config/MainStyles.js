@@ -88,7 +88,7 @@ const MainFrameWrapper = styled.div`
     flex-wrap: wrap;
     justify-content: center;
     gap: 50px;
-    // background-color: blue;
+    align-items: stretch;
 `
 
 const MainFrame = styled.div`
