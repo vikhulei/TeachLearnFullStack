@@ -100,6 +100,17 @@ const MainFrame = styled.div`
     box-shadow: 0px 0px 10px #D6C9C9;
 `
 
+const MainFrameImage = styled(MainFrame)`
+    margin: 0;
+    padding: 20px;
+    width: 400px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+`
+
 const MainInput = styled.input`
     position: relative;
     width: 150px;
@@ -112,4 +123,10 @@ const MainInput = styled.input`
     }
 `
 
-export { MainWrapper, SectionWrapper, MainHeader, MainBodyText, MainBodyTextColumn, MainHeading, MainHeadingColumn, MainHeadingCapital, OutlineButton, MainFrameWrapper, MainFrame, MainInput  }
+const MainCorrect = styled.div`
+    color: red;
+    font-size: 1rem;
+    line-height: 1;
+`
+
+export { MainWrapper, SectionWrapper, MainHeader, MainBodyText, MainBodyTextColumn, MainHeading, MainHeadingColumn, MainHeadingCapital, OutlineButton, MainFrameWrapper, MainFrame, MainFrameImage, MainInput, MainCorrect  }

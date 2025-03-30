@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Text } from "../LessonStyle";
-import { MainFrame } from "../../../../components/01_config/MainStyles";
+import { MainCorrect, MainFrame, MainFrameImage } from "../../../../components/01_config/MainStyles";
 
 
 const FrameReadingLeft = styled(MainFrame)`
@@ -9,15 +9,7 @@ const FrameReadingLeft = styled(MainFrame)`
     width: 400px;
 `
 
-const FrameReadingRight = styled(MainFrame)`
-    margin: 0;
-    padding: 20px;
-    width: 400px;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 10px;
+const FrameReadingRight = styled(MainFrameImage)`
 `
 
 const RightFrameWrapper = styled.div`
@@ -32,7 +24,6 @@ const Image = styled.img`
     height: 300px;
     object-fit: cover;
     margin: 15px;
-    
 `
 
 const TextReading = styled(Text)`
@@ -60,16 +51,17 @@ const Question = styled.div`
 
 const ReadingInput = styled.input`
     background-color: rgba(0, 0, 0, 0);
-    height: 15px;
+    height: 20px;
     max-width: 300px;
     border: 0;
     border-bottom: dashed 2px black;
     font-size: 1.1rem;
     font-style: italic;
+    line-height: 0.5;
     outline: none;
 `
 
-const Correct = styled.div`
+const Correct = styled(MainCorrect)`
     color: red;
     font-size: 1rem;
     line-height: 1;
