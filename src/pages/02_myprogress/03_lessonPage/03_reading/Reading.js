@@ -5,6 +5,7 @@ import { useState } from "react"
 import { RightFrameWrapper, Image, FrameReadingLeft, FrameReadingRight, TextReading } from "./ReadingStyle"
 import { MainFrameWrapper } from "../../../../components/01_config/MainStyles"
 import { colors } from "../../../../components/01_config/Colors"
+import Signs from "./02_signs/Signs"
 
 
 const Reading = () => {
@@ -59,8 +60,8 @@ const Reading = () => {
                         ))}
                     </FrameReadingRight>
                 </RightFrameWrapper>
-
             </MainFrameWrapper>
+            <Signs />
         </WrapperSection>
     )
 }
