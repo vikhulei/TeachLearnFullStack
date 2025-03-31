@@ -47,7 +47,7 @@ const questions = [
 
 ]
 
-export const SignsData = images.map((image, index) => (
+export const ListeningData = images.map((image, index) => (
     {
         id: index+1,
         lesson: Math.floor(index / 2) + 1,
