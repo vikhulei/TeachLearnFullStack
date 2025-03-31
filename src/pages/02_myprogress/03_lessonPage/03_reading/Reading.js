@@ -9,7 +9,7 @@ import Signs from "./02_signs/Signs"
 
 
 const Reading = () => {
-    const [readingText, setReadingText] = useState(ReadingText.filter(value => value.lesson === 3))
+    const [readingText, setReadingText] = useState(ReadingText.filter(value => value.lesson === 1))
 
     const clickQuestion = (e) => {
         e.preventDefault();
