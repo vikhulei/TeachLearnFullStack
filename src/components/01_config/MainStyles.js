@@ -16,7 +16,7 @@ const MainWrapper = styled.div`
     }
 `
 
-const SectionWrapper = styled.div`
+const MainSectionWrapper = styled.div`
     position: relative;
     display: flex;
     flex-direction: column;
@@ -129,4 +129,31 @@ const MainCorrect = styled.div`
     line-height: 1;
 `
 
-export { MainWrapper, SectionWrapper, MainHeader, MainBodyText, MainBodyTextColumn, MainHeading, MainHeadingColumn, MainHeadingCapital, OutlineButton, MainFrameWrapper, MainFrame, MainFrameImage, MainInput, MainCorrect  }
+const MainSentenceWrapper = styled.div`
+    display: flex;
+    flex-direction: column; 
+    flex-wrap: wrap;
+    max-width: 400px;
+    line-height: 0.7;
+`
+
+const MainQuestion = styled.div`
+    font-size: 1.1rem;
+    text-wrap: nowrap;
+    -webkit-tap-highlight-color: transparent;
+    cursor: pointer;
+`
+
+const MainDashedInput = styled.input`
+    background-color: rgba(0, 0, 0, 0);
+    height: 20px;
+    max-width: 300px;
+    border: 0;
+    border-bottom: dashed 2px black;
+    font-size: 1.1rem;
+    font-style: italic;
+    line-height: 0.5;
+    outline: none;
+`
+
+export { MainWrapper, MainSectionWrapper, MainHeader, MainBodyText, MainBodyTextColumn, MainHeading, MainHeadingColumn, MainHeadingCapital, OutlineButton, MainFrameWrapper, MainFrame, MainFrameImage, MainInput, MainCorrect, MainSentenceWrapper, MainQuestion, MainDashedInput }

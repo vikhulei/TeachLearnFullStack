@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { MainWrapper, MainHeader, SectionWrapper, MainHeading, MainFrameWrapper, MainFrame } from "../../../components/01_config/MainStyles";
+import { MainWrapper, MainHeader, MainSectionWrapper, MainHeading, MainFrameWrapper, MainFrame } from "../../../components/01_config/MainStyles";
 
 const Wrapper = styled(MainWrapper)`
 `
@@ -8,7 +8,7 @@ const Header = styled(MainHeader)`
 
 `
 
-const WrapperSection = styled(SectionWrapper)`
+const WrapperSection = styled(MainSectionWrapper)`
 `
 
 const HeadingSection = styled(MainHeading)`

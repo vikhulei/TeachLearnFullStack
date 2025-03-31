@@ -5,7 +5,7 @@ import { SignsData } from "./SignsData"
 const Signs = () => {
 
     const [signData, setSignData] = useState(
-        SignsData.filter(val => val.lesson === 3)
+        SignsData.filter(val => val.lesson === 1)
     )
 
     const showCaption = (e) => {

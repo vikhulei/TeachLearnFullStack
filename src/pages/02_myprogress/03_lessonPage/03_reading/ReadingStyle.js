@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Text } from "../LessonStyle";
-import { MainCorrect, MainFrame, MainFrameImage } from "../../../../components/01_config/MainStyles";
+import { MainCorrect, MainDashedInput, MainFrame, MainFrameImage, MainQuestion, MainSentenceWrapper } from "../../../../components/01_config/MainStyles";
 
 
 const FrameReadingLeft = styled(MainFrame)`
@@ -33,32 +33,13 @@ const TextReading = styled(Text)`
     line-height: 1.5;
 `
 
-const SentenceWrapper = styled.div`
-    display: flex;
-    flex-direction: column; 
-    flex-wrap: wrap;
-    max-width: 400px;
-    // gap: 1px;
-    line-height: 0.7;
+const SentenceWrapper = styled(MainSentenceWrapper)`
 `
 
-const Question = styled.div`
-    font-size: 1.1rem;
-    text-wrap: nowrap;
-    -webkit-tap-highlight-color: transparent;
-    cursor: pointer;
+const Question = styled(MainQuestion)`
 `
 
-const ReadingInput = styled.input`
-    background-color: rgba(0, 0, 0, 0);
-    height: 20px;
-    max-width: 300px;
-    border: 0;
-    border-bottom: dashed 2px black;
-    font-size: 1.1rem;
-    font-style: italic;
-    line-height: 0.5;
-    outline: none;
+const ReadingInput = styled(MainDashedInput)`
 `
 
 const Correct = styled(MainCorrect)`
