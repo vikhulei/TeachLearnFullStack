@@ -49,6 +49,7 @@ const questions = [
 
 export const ListeningData = images.map((image, index) => (
     {
+        index,
         id: index+1,
         lesson: Math.floor(index / 2) + 1,
         image,

@@ -13,11 +13,15 @@ const FrameWrapper = styled(MainFrameWrapper)`
 `
 
 const Frame = styled(MainFrame)`
-
+    display: flex;
+    flex-direction: column;
 `
 
 const Image = styled.img`
-
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    margin: 0 auto;
 `
 
 const SentenceWrapper = styled(MainSentenceWrapper)`
