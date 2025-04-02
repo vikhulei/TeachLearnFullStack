@@ -9,22 +9,25 @@ const Listening = () => {
     ListeningData.filter(value => value.lesson === 1)
   )
 
-  const fillInput = (e, indexData, indexQuestion) => {
-    // e.preventDefault()
-    let newListeningData = [...listeningData]
-     newListeningData.map((value, index) => (
-          index === indexData ? {...value, questions: value.questions.map((val, ind) => (
-            ind === indexQuestion ? {...val, input: e.currentTarget.value} : val
-          ))} : value
-    ))
-    // newListeningData.map((value, index) => (
-    //       index === indexData ? {...value, questions: value.questions.map((val, ind) => (
-    //         ind === indexQuestion ? {...val, input: e.currentTarget.value} : val
-    //       ))} : value
-    // ))
+  const clickQuestion = (e) => {
+    e.preventDefault();
+    const indexData =  Number(e.target.getAttribute("data-inData"))
+    const indexQuestion = Number(e.target.getAttribute("data-inQuestion"))
+    setListeningData(prevListeningData => prevListeningData.map((value, index) => (
+      index === indexData ? {...value, questions: value.questions.map((val, ind) => 
+        ind === indexQuestion ? {...val, visibility: val.visibility === "visible" ? "hidden" : "visible"} : val
+      )} : value
+    )))
+  }
+  
 
-    // setListeningData(newListeningData)
-    // newListeningData[0].questions[e.currentTarget.id].input = e.currentTarget.value
+  const fillInput = (e) => {
+    e.preventDefault();
+    const indexData =  e.target.getAttribute("data-indata")
+    const indexQuestion = e.target.getAttribute("data-inquestion")
+    let newListeningData = [...listeningData]
+    newListeningData[indexData].questions[indexQuestion].input = e.currentTarget.value
+    setListeningData(newListeningData)
 }
 
   return (
@@ -40,7 +43,9 @@ const Listening = () => {
               <SentenceWrapper key={indexQuestion}>
                 <Question
                   id={indexQuestion}
-                  // onClick={clickQuestion}
+                  data-indata={indexData}
+                  data-inquestion={indexQuestion}
+                  onClick={clickQuestion}
                 >
                   {valueQuestion.question}
                 </Question>
@@ -49,7 +54,9 @@ const Listening = () => {
                   style={{ color: valueQuestion.input === valueQuestion.answer ? `${colors.greenWord}` : "" }}
                   value={valueQuestion.input}
                   id={indexQuestion}
-                  onInput={fillInput(indexData, indexQuestion)}
+                  data-indata={indexData}
+                  data-inquestion={indexQuestion}
+                  onInput={fillInput}
                 />
                 <Correct style={{ visibility: valueQuestion.visibility }}>{valueQuestion.answer}</Correct>
               </SentenceWrapper>
