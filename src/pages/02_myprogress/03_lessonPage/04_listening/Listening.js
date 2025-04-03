@@ -6,7 +6,7 @@ import { colors } from "../../../../components/01_config/Colors"
 
 const Listening = () => {
   const [listeningData, setListeningData] = useState(
-    ListeningData.filter(value => value.lesson === 1)
+    ListeningData.filter(value => value.lesson === 2)
   )
 
   const clickQuestion = (e) => {
