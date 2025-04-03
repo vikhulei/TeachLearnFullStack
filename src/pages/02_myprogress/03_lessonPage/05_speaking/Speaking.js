@@ -1,4 +1,6 @@
 import { WrapperSection, HeadingSection } from "../LessonStyle"
+import Dialog from "./01_dialog/Dialog"
+import Story from "./02_story/Story"
 
 const Speaking = () => {
   return (
@@ -6,6 +8,8 @@ const Speaking = () => {
     <HeadingSection>
         Speaking
     </HeadingSection>
+    <Dialog />
+    <Story />
 </WrapperSection>
   )
 }
