@@ -11,6 +11,6 @@ export const TopicData = topics.map((topic, index) => (
         index,
         id: index+1,
         lesson: index+1,
-        topic: topic
+        topic
     }
 ))

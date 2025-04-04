@@ -1,70 +1,85 @@
-function importAll(r) {
-    return r.keys().map(r);
-}
-
-const images = importAll(
-    require.context("./images", false, /\.jpg$/)
-);
-
-const questions = [
+const dialogs = [
 
     [
         {id: 1, question: "What is the boy’s1 name?",
-        input: "", visibility: "hidden", answer: "Boy1"},
+        visibility: "hidden", answer: "Boy1"},
         {id: 2, question: "What is the boy’s2 name?",
-        input: "", visibility: "hidden", answer: "Boy2"},
+        visibility: "hidden", answer: "Boy2"},
         {id: 3, question: "What is the boy’s3 name?",
-        input: "", visibility: "hidden", answer: "Boy3"},
+        visibility: "hidden", answer: "Boy3"},
         {id: 4, question: "What is the boy’s4 name?",
-        input: "", visibility: "hidden", answer: "Boy4"},
+        visibility: "hidden", answer: "Boy4"},
         {id: 5, question: "What is the boy’s5 name?",
-        input: "", visibility: "hidden", answer: "Boy5"},
+        visibility: "hidden", answer: "Boy5"},
+        {id: 6, question: "What is the boy’s6 name?",
+        visibility: "hidden", answer: "Boy6"},
+        {id: 7, question: "What is the boy’s7 name?",
+        visibility: "hidden", answer: "Boy7"},
+        {id: 8, question: "What is the boy’s8 name?",
+        visibility: "hidden", answer: "Boy8"},
     ],
     [
         {id: 1, question: "What is the girl’s1 name?",
-        input: "", visibility: "hidden", answer: "BGirl1"},
+        visibility: "hidden", answer: "BGirl1"},
         {id: 2, question: "What is the girl’s2 name?",
-        input: "", visibility: "hidden", answer: "BGirl2"},
+        visibility: "hidden", answer: "BGirl2"},
         {id: 3, question: "What is the girl’s3 name?",
-        input: "", visibility: "hidden", answer: "BGirl3"},
+        visibility: "hidden", answer: "BGirl3"},
         {id: 4, question: "What is the girl’s4 name?",
-        input: "", visibility: "hidden", answer: "BGirl4"},
+        visibility: "hidden", answer: "BGirl4"},
         {id: 5, question: "What is the girl’s5 name?",
-        input: "", visibility: "hidden", answer: "BGirl5"},
+        visibility: "hidden", answer: "BGirl5"},
+        {id: 6, question: "What is the girl’s6 name?",
+        visibility: "hidden", answer: "BGirl6"},
+        {id: 7, question: "What is the girl’s7 name?",
+        visibility: "hidden", answer: "BGirl7"},
+        {id: 8, question: "What is the girl’s8 name?",
+        visibility: "hidden", answer: "BGirl8"},
     ],
     [
         {id: 1, question: "What is the man’s1 name?",
-        input: "", visibility: "hidden", answer: "Human1"},
+        visibility: "hidden", answer: "Human1"},
         {id: 2, question: "What is the man’s2 name?",
-        input: "", visibility: "hidden", answer: "Human2"},
+        visibility: "hidden", answer: "Human2"},
         {id: 3, question: "What is the man’s3 name?",
-        input: "", visibility: "hidden", answer: "Human3"},
+        visibility: "hidden", answer: "Human3"},
         {id: 4, question: "Which  symbol was on the map?",
-        input: "", visibility: "hidden", answer: "Human4"},
+        visibility: "hidden", answer: "Human4"},
         {id: 5, question: "What is the man’s5 name?",
-        input: "", visibility: "hidden", answer: "Human5"},
+        visibility: "hidden", answer: "Human5"},
+        {id: 6, question: "What is the man’s6 name?",
+        visibility: "hidden", answer: "Human6"},
+        {id: 7, question: "What is the man’s7 name?",
+        visibility: "hidden", answer: "Human7"},
+        {id: 8, question: "What is the man’s8 name?",
+        visibility: "hidden", answer: "Human8"},
     ],
     [
         {id: 1, question: "What is the man’s1 name?",
-        input: "", visibility: "hidden", answer: "Human1"},
+        visibility: "hidden", answer: "Human1"},
         {id: 2, question: "What is the man’s2 name?",
-        input: "", visibility: "hidden", answer: "Human2"},
+        visibility: "hidden", answer: "Human2"},
         {id: 3, question: "What is the man’s3 name?",
-        input: "", visibility: "hidden", answer: "Human3"},
+        visibility: "hidden", answer: "Human3"},
         {id: 4, question: "Which  symbol was on the map?",
-        input: "", visibility: "hidden", answer: "Human4"},
+        visibility: "hidden", answer: "Human4"},
         {id: 5, question: "What is the man’s5 name?",
-        input: "", visibility: "hidden", answer: "Human5"},
+        visibility: "hidden", answer: "Human5"},
+        {id: 6, question: "What is the man’s6 name?",
+        visibility: "hidden", answer: "Human6"},
+        {id: 7, question: "What is the man’s7 name?",
+        visibility: "hidden", answer: "Human7"},
+        {id: 8, question: "What is the man’s8 name?",
+        visibility: "hidden", answer: "Human8"},
     ],
 
 ]
 
-export const ListeningData = images.map((image, index) => (
+export const DialogData = dialogs.map((dialog, index) => (
     {
         index,
         id: index+1,
-        lesson: Math.floor(index / 2) + 1,
-        image,
-        questions: questions[index],
+        lesson: index+1,
+        dialog,
     }
 ))

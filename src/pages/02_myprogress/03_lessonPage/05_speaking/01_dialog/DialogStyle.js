@@ -1,25 +1,7 @@
 import styled from "styled-components";
-import { MainCorrect, MainDashedInput, MainFrame, MainFrameWrapper, MainHeading, MainHeadingCapital, MainQuestion, MainSectionWrapper, MainSentenceWrapper } from "../../../../components/01_config/MainStyles";
+import { MainCorrect, MainFrame, MainFrameWrapper, MainHeadingCapital, MainQuestion, MainSentenceWrapper } from "../../../../../components/01_config/MainStyles";
 import { colors } from "../../../../../components/01_config/Colors";
 
-const Wrapper = styled(MainSectionWrapper)`
-`
-
-const HeadingSection = styled(MainHeading)`
-    text-align: center;
-`
-
-const TopicWrapper = styled.div`
-    display: flex;
-`
-
-const TopicLabel = styled.div`
-    font-weight: bold;
-`
-
-const Topic = styled.div`
-    text-decoration: underline
-`
 
 const FrameWrapper = styled(MainFrameWrapper)`
 
@@ -59,4 +41,4 @@ const Correct = styled(MainCorrect)`
 `
 
 
-export { Wrapper, HeadingSection, FrameWrapper, Frame, FrameHeading, SentenceWrapper, DialogName, DialogLine, Correct }
+export { FrameWrapper, Frame, FrameHeading, SentenceWrapper, DialogName, DialogLine, Correct }
