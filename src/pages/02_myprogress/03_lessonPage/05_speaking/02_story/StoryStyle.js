@@ -1,24 +1,13 @@
 import styled from "styled-components";
-import { MainCorrect, MainDashedInput, MainFrame, MainFrameWrapper, MainHeading, MainHeadingCapital, MainQuestion, MainSectionWrapper, MainSentenceWrapper } from "../../../../components/01_config/MainStyles";
+// import { MainCorrect, MainFrame, MainFrameWrapper, MainHeading, MainHeadingCapital, MainSectionWrapper, MainText } from "../../../../components/01_config/MainStyles";
 import { colors } from "../../../../../components/01_config/Colors";
+import { MainCorrect, MainFrame, MainFrameWrapper, MainHeading, MainHeadingCapital, MainSectionWrapper, MainText } from "../../../../../components/01_config/MainStyles";
 
 const Wrapper = styled(MainSectionWrapper)`
 `
 
 const HeadingSection = styled(MainHeading)`
     text-align: center;
-`
-
-const TopicWrapper = styled.div`
-    display: flex;
-`
-
-const TopicLabel = styled.div`
-    font-weight: bold;
-`
-
-const Topic = styled.div`
-    text-decoration: underline
 `
 
 const FrameWrapper = styled(MainFrameWrapper)`
@@ -38,25 +27,22 @@ const FrameHeading = styled(MainHeadingCapital)`
     font-size: 1.4rem;
 `
 
-
-const SentenceWrapper = styled(MainSentenceWrapper)`
-
+const StoryWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 `
 
-const DialogName = styled.div`
-    font-weight: bold;
-`
+const Text = styled(MainText)`
 
-const DialogLine = styled(MainQuestion)`
-    font-style: italic;
 `
-
 
 const Correct = styled(MainCorrect)`
     color: red;
+    font-style: italic;
     font-size: 1rem;
     line-height: 1;
 `
 
 
-export { Wrapper, HeadingSection, FrameWrapper, Frame, FrameHeading, SentenceWrapper, DialogName, DialogLine, Correct }
+export { FrameWrapper, Frame, FrameHeading, StoryWrapper, Text, Correct }

@@ -111,6 +111,12 @@ const MainFrameImage = styled(MainFrame)`
     gap: 10px;
 `
 
+const MainText = styled.div`
+    font-size: 1.4rem;
+    text-wrap: nowrap;
+    -webkit-tap-highlight-color: transparent;
+`
+
 const MainInput = styled.input`
     position: relative;
     width: 150px;
@@ -156,4 +162,4 @@ const MainDashedInput = styled.input`
     outline: none;
 `
 
-export { MainWrapper, MainSectionWrapper, MainHeader, MainBodyText, MainBodyTextColumn, MainHeading, MainHeadingColumn, MainHeadingCapital, OutlineButton, MainFrameWrapper, MainFrame, MainFrameImage, MainInput, MainCorrect, MainSentenceWrapper, MainQuestion, MainDashedInput }
+export { MainWrapper, MainSectionWrapper, MainHeader, MainBodyText, MainBodyTextColumn, MainHeading, MainHeadingColumn, MainHeadingCapital, OutlineButton, MainFrameWrapper, MainFrame, MainFrameImage, MainText, MainInput, MainCorrect, MainSentenceWrapper, MainQuestion, MainDashedInput }

@@ -22,6 +22,9 @@ const FrameHeading = styled(MainHeadingCapital)`
 `
 
 const DialogWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 `
 
 const SentenceWrapper = styled(MainSentenceWrapper)`
@@ -40,9 +43,7 @@ const DialogLine = styled(MainQuestion)`
 
 const Correct = styled(MainCorrect)`
     display: block;
-    color: red;
-    font-size: 1rem;
-    line-height: 1;
+    line-height: 0.9;
 `
 
 
