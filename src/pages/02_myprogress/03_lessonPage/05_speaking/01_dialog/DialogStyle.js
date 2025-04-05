@@ -8,8 +8,9 @@ const FrameWrapper = styled(MainFrameWrapper)`
 `
 
 const Frame = styled(MainFrame)`
-    display: flex;
     flex-direction: column;
+    gap: 20px;
+    
 `
 
 const FrameHeading = styled(MainHeadingCapital)`
@@ -20,9 +21,12 @@ const FrameHeading = styled(MainHeadingCapital)`
     font-size: 1.4rem;
 `
 
+const DialogWrapper = styled.div`
+`
 
 const SentenceWrapper = styled(MainSentenceWrapper)`
-
+    flex-direction: row;
+    max-width: fit-content;
 `
 
 const DialogName = styled.div`
@@ -35,10 +39,11 @@ const DialogLine = styled(MainQuestion)`
 
 
 const Correct = styled(MainCorrect)`
+    display: block;
     color: red;
     font-size: 1rem;
     line-height: 1;
 `
 
 
-export { FrameWrapper, Frame, FrameHeading, SentenceWrapper, DialogName, DialogLine, Correct }
+export { FrameWrapper, Frame, FrameHeading, DialogWrapper, SentenceWrapper, DialogName, DialogLine, Correct }
