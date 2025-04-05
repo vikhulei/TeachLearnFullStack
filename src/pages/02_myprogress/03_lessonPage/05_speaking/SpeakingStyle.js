@@ -11,6 +11,7 @@ const HeadingSection = styled(MainHeading)`
 
 const TopicWrapper = styled.div`
     display: flex;
+    justify-content: center;
 `
 
 const TopicLabel = styled.div`

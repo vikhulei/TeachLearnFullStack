@@ -1,5 +1,5 @@
 const topics = [
-    "topic 1",
+    "Introductions & Personal Information",
     "topic 2",
     "topic 3",
     "topic 4",
