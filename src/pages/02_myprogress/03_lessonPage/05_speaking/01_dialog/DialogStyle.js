@@ -9,8 +9,9 @@ const FrameWrapper = styled(MainFrameWrapper)`
 
 const Frame = styled(MainFrame)`
     flex-direction: column;
-    gap: 20px;
-    
+    gap: 30px;
+    max-width: 70vw;
+    width: 800px;
 `
 
 const FrameHeading = styled(MainHeadingCapital)`
@@ -29,7 +30,8 @@ const DialogWrapper = styled.div`
 
 const SentenceWrapper = styled(MainSentenceWrapper)`
     flex-direction: row;
-    max-width: fit-content;
+    max-width: none;
+    flex-wrap: wrap;
 `
 
 const DialogName = styled.div`
