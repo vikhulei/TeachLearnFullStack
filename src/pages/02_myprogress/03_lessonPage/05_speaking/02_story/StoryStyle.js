@@ -1,14 +1,7 @@
 import styled from "styled-components";
-// import { MainCorrect, MainFrame, MainFrameWrapper, MainHeading, MainHeadingCapital, MainSectionWrapper, MainText } from "../../../../components/01_config/MainStyles";
 import { colors } from "../../../../../components/01_config/Colors";
-import { MainCorrect, MainFrame, MainFrameWrapper, MainHeading, MainHeadingCapital, MainSectionWrapper, MainText } from "../../../../../components/01_config/MainStyles";
+import { MainCorrect, MainFrame, MainFrameWrapper, MainHeadingCapital,  MainText } from "../../../../../components/01_config/MainStyles";
 
-const Wrapper = styled(MainSectionWrapper)`
-`
-
-const HeadingSection = styled(MainHeading)`
-    text-align: center;
-`
 
 const FrameWrapper = styled(MainFrameWrapper)`
 

@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { MainCorrect, MainDashedInput, MainFrame, MainFrameWrapper, MainHeading, MainHeadingCapital, MainQuestion, MainSectionWrapper, MainSentenceWrapper } from "../../../../components/01_config/MainStyles";
-import { colors } from "../../../../components/01_config/Colors";
+import { MainHeading, MainSectionWrapper } from "../../../../components/01_config/MainStyles";
+
 
 const Wrapper = styled(MainSectionWrapper)`
 `

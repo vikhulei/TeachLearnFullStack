@@ -22,10 +22,3 @@ const Lesson = () => {
 }
 
 export default Lesson
-
-
-                // <FrameWrapper>
-                //     {ReadingImages.map((value, index) => (
-                //         <Image key={index} src={value.image} id={index} data-description={value.description} onClick={clickImage}/>
-                //     ))}
-                // </FrameWrapper>

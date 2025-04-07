@@ -3,6 +3,7 @@ import { MainFrame, MainHeading, MainSectionWrapper } from "../../../../componen
 import { colors } from "../../../../components/01_config/Colors";
 
 const Wrapper = styled(MainSectionWrapper)`
+
 `
 
 const Heading = styled(MainHeading)`
@@ -11,16 +12,6 @@ const Heading = styled(MainHeading)`
 
 const Frame = styled(MainFrame)`
     width: 60%;
-    max-width: 90vw;
-    align-items: end;
-    gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
-    background-color: rgba(0,0,0,0);
-    @media(max-width: 800px) {
-        padding: 5px;
-        width: 90vw;
-    }
 `
 
 const Word = styled.div`
@@ -60,5 +51,6 @@ const UkrWord = styled.div`
         font-style: normal;
     }
 `
+
 
 export { Wrapper, Heading, Frame, Word, EngWord, UkrWord }

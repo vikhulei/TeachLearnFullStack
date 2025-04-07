@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { colors } from "../../../../components/01_config/Colors";
+import { colors } from "../../src/components/01_config/Colors";
 
 const WordCard = styled.div`
 

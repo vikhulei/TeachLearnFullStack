@@ -1,21 +1,15 @@
 import styled from "styled-components";
-import { MainFrame, MainFrameWrapper } from "../../../../../components/01_config/MainStyles";
+import { MainFrame, MainFrameWrapper, MainImage } from "../../../../../components/01_config/MainStyles";
 
-const Wrapper = styled.div`
-`
 
 const FrameWrapper = styled(MainFrameWrapper)`
 `
 
-const FrameGrammar = styled(MainFrame)`
-    margin: 0;
+const Frame = styled(MainFrame)`
     height: fit-content;
-    width: 500px;
-    max-width: 90vw;
 `
 
-const Image = styled.img`
-    width: 100%;
+const Image = styled(MainImage)`
 `
 
-export { Wrapper, FrameWrapper, FrameGrammar, Image }
+export { FrameWrapper, Frame, Image }

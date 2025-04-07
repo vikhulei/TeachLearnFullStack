@@ -21,6 +21,7 @@ const MainSectionWrapper = styled.div`
     display: flex;
     flex-direction: column;
     gap: ${sizes.marginsections};
+    align-items: center;
 `
 
 const MainHeader = styled.div`
@@ -92,12 +93,20 @@ const MainFrameWrapper = styled.div`
 `
 
 const MainFrame = styled.div`
-    margin: 0 auto;
+    width: 400px;
+    max-width: 90vw;
+    height: fit-content;
     padding: 30px;
-    box-sizing: border-box;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
     background-color: rgba(255, 255, 255, 0.6);
     box-shadow: 0px 0px 10px #D6C9C9;
+    @media(max-width: 800px) {
+        width: 90vw;
+    }
 `
 
 const MainFrameImage = styled(MainFrame)`
@@ -109,6 +118,10 @@ const MainFrameImage = styled(MainFrame)`
     flex-direction: column;
     justify-content: center;
     gap: 10px;
+`
+
+const MainImage = styled.img`
+    width: 100%;
 `
 
 const MainText = styled.div`
@@ -162,4 +175,4 @@ const MainDashedInput = styled.input`
     outline: none;
 `
 
-export { MainWrapper, MainSectionWrapper, MainHeader, MainBodyText, MainBodyTextColumn, MainHeading, MainHeadingColumn, MainHeadingCapital, OutlineButton, MainFrameWrapper, MainFrame, MainFrameImage, MainText, MainInput, MainCorrect, MainSentenceWrapper, MainQuestion, MainDashedInput }
+export { MainWrapper, MainSectionWrapper, MainHeader, MainBodyText, MainBodyTextColumn, MainHeading, MainHeadingColumn, MainHeadingCapital, OutlineButton, MainFrameWrapper, MainFrame, MainFrameImage, MainText, MainImage, MainInput, MainCorrect, MainSentenceWrapper, MainQuestion, MainDashedInput }

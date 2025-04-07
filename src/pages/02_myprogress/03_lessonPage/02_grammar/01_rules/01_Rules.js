@@ -1,19 +1,15 @@
-import { Wrapper, FrameWrapper, FrameGrammar, Image} from "./01_RulesStyle"
-import tobe from "../../../../../assets/02_myprogress/lessons/01/tobe.jpg"
-import rules from "../../../../../assets/02_myprogress/lessons/01/reading_rules.jpg"
+import { FrameWrapper, Frame, Image} from "./01_RulesStyle"
+import { RulesData } from "./RulesData"
 
 const Rules = () => {
     return (
-        <Wrapper>
             <FrameWrapper>
-                <FrameGrammar>
-                    <Image src={tobe} />
-                </FrameGrammar>
-                <FrameGrammar>
-                    <Image src={rules} />
-                </FrameGrammar>
+                {RulesData.filter(val => val.lesson === 1).map((value, index) => (
+                    <Frame key={index}>
+                        <Image src={value.image} />
+                    </Frame>
+                ))}
             </FrameWrapper>
-        </Wrapper>
     )
 }
 
