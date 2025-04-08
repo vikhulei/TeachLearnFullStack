@@ -1,4 +1,4 @@
-export const GrammarReplace = [
+export const ReplaceitExerciseData = [
     {id: 1, lesson: 1, beginning: "", word: "Я", translat: "I", display_word: "block", display_translat: "none", ending: "love Ukraine"},
     {id: 2, lesson: 1, beginning: "", word: "Вони", translat: "They", display_word: "block", display_translat: "none", ending: "love Kyiv"},
     {id: 3, lesson: 1, beginning: "Today", word: "він", translat: "he", display_word: "block", display_translat: "none", ending: "loves USA"},

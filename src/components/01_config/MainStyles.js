@@ -69,6 +69,11 @@ const MainHeadingCapital = styled.div`
     font-weight: bold;
 `
 
+const MainHeadingColor = styled(MainHeadingCapital)`
+    color: #044AEF;
+    font-size: 1.4rem;
+`
+
 const OutlineButton = styled.button`
     width: 240px;
     height: 70px;
@@ -175,4 +180,4 @@ const MainDashedInput = styled.input`
     outline: none;
 `
 
-export { MainWrapper, MainSectionWrapper, MainHeader, MainBodyText, MainBodyTextColumn, MainHeading, MainHeadingColumn, MainHeadingCapital, OutlineButton, MainFrameWrapper, MainFrame, MainFrameImage, MainText, MainImage, MainInput, MainCorrect, MainSentenceWrapper, MainQuestion, MainDashedInput }
+export { MainWrapper, MainSectionWrapper, MainHeader, MainBodyText, MainBodyTextColumn, MainHeading, MainHeadingColumn, MainHeadingCapital, MainHeadingColor, OutlineButton, MainFrameWrapper, MainFrame, MainFrameImage, MainText, MainImage, MainInput, MainCorrect, MainSentenceWrapper, MainQuestion, MainDashedInput }
