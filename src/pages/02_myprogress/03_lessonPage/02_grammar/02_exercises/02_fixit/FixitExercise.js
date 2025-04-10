@@ -1,26 +1,25 @@
 import { useState } from "react"
-import { Frame, BoldWord, FrameHeading, Icon, SentenceWrapper, Text, Correct } from "../ExercisesStyle"
-import { FrameFixit, FixitInput } from "./FixitStyle"
+import { Frame, FrameHeading, Icon, SentenceWrapper, Text, Correct, BoldWord, FixitInput  } from "./FixitExerciseStyle"
 import fixit from "../../../../../../assets/02_myprogress/lessons/fixit.png"
-import { GrammarFixit } from "../../../00_exercises/GrammarFixit"
+import { FixitExerciseData } from "./FixitExerciseData"
 import { colors } from "../../../../../../components/01_config/Colors"
 
-const Fixit = () => {
+const FixitExercise = () => {
 
-    const [grammarFixit, setGrammarFixit] = useState(
-        GrammarFixit.filter(val => val.lesson === 1)
+    const [grammarFixit, setFixitExerciseData] = useState(
+        FixitExerciseData.filter(val => val.lesson === 1)
     )
 
     const clickFixitWord = (e) => {
-        setGrammarFixit(grammarFixit.map(val =>
+        setFixitExerciseData(grammarFixit.map(val =>
             val.id === Number(e.currentTarget.id) ? { ...val, visibility: val.visibility === "hidden" ? "visible" : "hidden" } : val
         ))
     }
 
     const fillInput = (e) => {
-        let newGRammarFixit = [...grammarFixit]
-        newGRammarFixit[e.currentTarget.id].input = e.currentTarget.value
-        setGrammarFixit(newGRammarFixit)
+        let newGrammarFixit = [...grammarFixit]
+        newGrammarFixit[e.currentTarget.id].input = e.currentTarget.value
+        setFixitExerciseData(newGrammarFixit)
     }
 
     return (
@@ -47,4 +46,4 @@ const Fixit = () => {
     )
 }
 
-export default Fixit
+export default FixitExercise
