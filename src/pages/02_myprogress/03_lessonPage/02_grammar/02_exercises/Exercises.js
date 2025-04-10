@@ -1,6 +1,6 @@
 import { FrameWrapper } from "./ExercisesStyle"
 import FixitExercise from "./02_fixit/FixitExercise"
-import Fillitin from "./03_fillitin/Fillitin"
+import FillitinExercise from "./03_fillitin/FillitinExercise"
 import ReplaceitExercise from "./01_replaceit/ReplaceitExercise"
 
 const Exercises = () => {
@@ -9,7 +9,7 @@ const Exercises = () => {
     <FrameWrapper>
       <ReplaceitExercise />
       <FixitExercise />
-      <Fillitin />
+      <FillitinExercise />
     </FrameWrapper>
   )
 }

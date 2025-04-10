@@ -1,4 +1,4 @@
-export const GrammarFillit = [
+export const FillitinExerciseData = [
     {id: 1, lesson: 1, sentence: "Я люблю Україну", translat: "I love Ukraine", visibility: "hidden", input: ""},
     {id: 2, lesson: 1, sentence: "Сьогодні гарна погода", translat: "The weather is great today", visibility: "hidden", input: ""},
     {id: 3, lesson: 1, sentence: "Ви дивилися цей фільм?", translat: "Have you watched that movie?", visibility: "hidden", input: ""},

@@ -1,28 +1,27 @@
 import { useState } from "react"
-import { FillInSentence, FillInInput } from "./FillitinStyle"
-import { Frame, FrameHeading, Icon, SentenceWrapper, Correct } from "../ExercisesStyle"
-import { GrammarFillit } from "../../../00_exercises/GrammarFillit"
+import { FillInInput, Frame, FrameHeading, Icon, SentenceWrapper, Text, Correct } from "./FillitinExerciseStyle"
+import { FillitinExerciseData } from "./FillitinExerciseData"
 import fillin from "../../../../../../assets/02_myprogress/lessons/fillin.png"
 import { colors } from "../../../../../../components/01_config/Colors"
 
 
-const Fillitin = () => {
+const FillitinExercise = () => {
 
-    const [grammarFillit, setGrammarFillit] = useState(
-        GrammarFillit.filter(val => val.lesson === 1)
+    const [fillitinExerciseData, setFillitinExerciseData] = useState(
+        FillitinExerciseData.filter(val => val.lesson === 1)
     )
     const [inputValue, setInputValue] = useState("")
 
     const clickFillit = (e) => {
-        setGrammarFillit(grammarFillit.map(val =>
+        setFillitinExerciseData(fillitinExerciseData.map(val =>
             val.id === Number(e.currentTarget.id) ? { ...val, visibility: val.visibility === "hidden" ? "visible" : "hidden" } : val
         ))
     }
 
     const fillInput = (e) => {
-        let newGrammarFillit = [...grammarFillit]
-        newGrammarFillit[e.target.id].input = e.currentTarget.value
-        setGrammarFillit(newGrammarFillit)
+        let newFillitinExerciseData = [...fillitinExerciseData]
+        newFillitinExerciseData[e.target.id].input = e.currentTarget.value
+        setFillitinExerciseData(newFillitinExerciseData)
     }
 
     return (
@@ -33,16 +32,16 @@ const Fillitin = () => {
             <Icon
                 src={fillin}
             />
-            {grammarFillit.map((value, index) => (
+            {fillitinExerciseData.map((value, index) => (
                 <SentenceWrapper
                     key={index}
                 >
-                    <FillInSentence
+                    <Text
                         onClick={clickFillit}
                         id={value.id}
                     >
                         {value.sentence}
-                    </FillInSentence>
+                    </Text>
                     <FillInInput
                         style={{backgroundColor: value.input === value.translat ? `${colors.green}` : ""}}
                         id={value.id - 1}
@@ -60,4 +59,4 @@ const Fillitin = () => {
     )
 }
 
-export default Fillitin
+export default FillitinExercise
