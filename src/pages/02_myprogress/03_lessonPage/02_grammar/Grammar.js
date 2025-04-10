@@ -1,16 +1,16 @@
-import { WrapperSection, HeadingSection } from "../LessonStyle"
+import { Wrapper, Heading } from "./GrammarStyle"
 import Rules from "./01_rules/01_Rules"
 import Exercises from "./02_exercises/Exercises"
 
 const Grammar = () => {
     return (
-        <WrapperSection>
-            <HeadingSection>
+        <Wrapper>
+            <Heading>
                 Grammar
-            </HeadingSection>
+            </Heading>
             <Rules />
             <Exercises />
-        </WrapperSection>
+        </Wrapper>
     )
 }
 
