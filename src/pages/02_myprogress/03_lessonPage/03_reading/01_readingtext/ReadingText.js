@@ -1,8 +1,27 @@
-import { } from "./ReadingTextStyle"
+import { useState } from "react"
+import { FrameWrapper, FrameReadingLeft, FrameReadingRight, RightFrameWrapper, Image, TextReading, SentenceWrapper, Question, Correct, ReadingInput } from "./ReadingTextStyle"
+import { ReadingTextData } from "./ReadingTextsData"
+import { colors } from "../../../../../components/01_config/Colors"
 
 const ReadingText = () => {
+    const [readingText, setReadingText] = useState(ReadingTextData.filter(value => value.lesson === 2))
+
+    const clickQuestion = (e) => {
+        e.preventDefault();
+        let currentId = Number(e.currentTarget.id) 
+        setReadingText((prevReadingText) => prevReadingText.map(value =>
+            ({ ...value, questions: value.questions.map((val, ind) => ind === currentId ? {...val, visibility: val.visibility === "visible" ? "hidden" : "visible"} : val) })
+        ))
+    }
+
+    const fillInput = (e) => {
+        e.preventDefault();
+        let newReadingText = [...readingText]
+        newReadingText[0].questions[e.currentTarget.id].input = e.currentTarget.value
+        setReadingText(newReadingText)
+    }
     return (
-        <MainFrameWrapper>
+        <FrameWrapper>
             <FrameReadingLeft>
                 <TextReading>{readingText[0].text}</TextReading>
             </FrameReadingLeft>
@@ -31,7 +50,7 @@ const ReadingText = () => {
                     ))}
                 </FrameReadingRight>
             </RightFrameWrapper>
-        </MainFrameWrapper>
+        </FrameWrapper>
     )
 }
 

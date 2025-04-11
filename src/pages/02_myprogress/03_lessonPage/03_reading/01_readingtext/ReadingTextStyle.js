@@ -1,5 +1,8 @@
 import styled from "styled-components";
-import { MainFrame, MainFrameImage } from "../../../../../components/01_config/MainStyles";
+import { MainCorrect, MainDashedInput, MainFrame, MainFrameImage, MainFrameWrapper, MainQuestion, MainSentenceWrapper } from "../../../../../components/01_config/MainStyles";
+
+const FrameWrapper = styled(MainFrameWrapper)`
+`
 
 const FrameReadingLeft = styled(MainFrame)`
     margin: 0;
@@ -52,4 +55,4 @@ const Correct = styled(MainCorrect)`
     line-height: 1;
 `
 
-export { FrameReadingLeft, FrameReadingRight, RightFrameWrapper, Image, TextReading, SentenceWrapper, Question, Correct, ReadingInput }
+export { FrameWrapper, FrameReadingLeft, FrameReadingRight, RightFrameWrapper, Image, TextReading, SentenceWrapper, Question, Correct, ReadingInput }

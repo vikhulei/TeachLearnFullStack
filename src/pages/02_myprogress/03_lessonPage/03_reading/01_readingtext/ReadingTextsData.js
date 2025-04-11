@@ -9,7 +9,7 @@ const text = [
 ]
 
 const images = importAll(
-    require.context("./", false, /\.jpg$/)
+    require.context("./01_images", false, /\.jpg$/)
 );
 
 const questions = [
@@ -53,7 +53,7 @@ const questions = [
 
 ]
 
-export const ReadingText = images.map((image, index) => (
+export const ReadingTextData = images.map((image, index) => (
     {
         id: index+1,
         lesson: index+1,

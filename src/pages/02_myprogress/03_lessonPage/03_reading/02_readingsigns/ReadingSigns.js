@@ -1,11 +1,11 @@
 import { useState } from "react"
-import { FrameWrapper, Frame, SignImage, Correct } from "./SignsStyle"
-import { SignsData } from "./SignsData"
+import { FrameWrapper, Frame, SignImage, Correct } from "./ReadingSignsStyle"
+import { ReadingSignsData } from "./ReadingSignsData"
 
 const Signs = () => {
 
     const [signData, setSignData] = useState(
-        SignsData.filter(val => val.lesson === 1)
+        ReadingSignsData.filter(val => val.lesson === 1)
     )
 
     const showCaption = (e) => {

@@ -3,7 +3,7 @@ function importAll(r) {
 }
 
 const images = importAll(
-    require.context("./images", false, /\.jpg$/)
+    require.context("./01_images", false, /\.jpg$/)
 );
 
 const caption = [
@@ -14,7 +14,7 @@ const caption = [
     "No pass through"
 ]
 
-export const SignsData = images.map((image, index) => (
+export const ReadingSignsData = images.map((image, index) => (
     {
         id: index+1,
         lesson: Math.floor(index / 5) + 1,
