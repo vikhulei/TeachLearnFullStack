@@ -3,7 +3,7 @@ function importAll(r) {
 }
 
 const images = importAll(
-    require.context("./images", false, /\.jpg$/)
+    require.context("./01_images", false, /\.jpg$/)
 );
 
 export const RulesData = images.map((image, index) => (
