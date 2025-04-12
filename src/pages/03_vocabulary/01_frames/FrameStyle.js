@@ -19,9 +19,11 @@ const FramesWrapper = styled.div`
 const Frame = styled(MainFrame)`
     width: 40vw;
     max-width: 480px;
+    height: 550px;
     padding: 15px 30px 40px;
     flex-direction: column;
     justify-content: space-between;
+    align-items: start;
     &:last-of-type {
        padding: 0px 0px 0px;
        gap: 0;
@@ -65,7 +67,9 @@ const LanguageButtonsWrapper = styled.div`
     display: flex;
     justify-content: space-between;
     padding: 0 40px;
-    margin-bottom: 10px;
+    margin: 0 auto 10px;
+    gap: 50px;
+    // margin-bottom: 10px;
 `
 
 const LanguageButton = styled.button`
@@ -153,13 +157,14 @@ const TranslatSpan = styled.span`
 
 const LargeButtonsWrapper = styled.div`
     box-sizing: content-box;
-    padding: 20px 0;
+    padding: 20px 40px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    gap: 50px;
     border-bottom: solid lightgrey 2px;
     @media(max-width: 1200px) {
-        justify
         padding: 20px 5px;
     }
 `
@@ -204,7 +209,7 @@ const BottomButton = styled(GenericButton)`
 
 const PercentButton = styled.div`
     position: relative;
-    width: 70%;
+    width: 100px;
     height: 35px;
     border: 2px solid ${colors.greyFrame};
     padding-left: 0;
