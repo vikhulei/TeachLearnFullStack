@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { Frame, FrameHeading, Icon, SentenceWrapper, Text, Correct, BoldWord, FixitInput  } from "./FixitExerciseStyle"
-import fixit from "../../../../../../assets/02_myprogress/lessons/fixit.png"
+import fixit from "./fixit.png"
 import { FixitExerciseData } from "./FixitExerciseData"
 import { colors } from "../../../../../../components/01_config/Colors"
 

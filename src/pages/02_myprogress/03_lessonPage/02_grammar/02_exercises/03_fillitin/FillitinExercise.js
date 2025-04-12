@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { FillInInput, Frame, FrameHeading, Icon, SentenceWrapper, Text, Correct } from "./FillitinExerciseStyle"
 import { FillitinExerciseData } from "./FillitinExerciseData"
-import fillin from "../../../../../../assets/02_myprogress/lessons/fillin.png"
+import fillin from "./fillin.png"
 import { colors } from "../../../../../../components/01_config/Colors"
 
 

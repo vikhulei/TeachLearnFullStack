@@ -1,11 +1,11 @@
 import { Wrapper, Card, Image, Lesson  } from "./CardsStyle"
-import { cardsNames } from "./CardsNames"
+import { CardsData } from "./CardsNames"
 
 
 const Cards = () => {
   return (
     <Wrapper>
-        {cardsNames.map((value, index) => (
+        {CardsData.map((value, index) => (
             <Card
             key={index}
             to="/myprogress/lesson"
