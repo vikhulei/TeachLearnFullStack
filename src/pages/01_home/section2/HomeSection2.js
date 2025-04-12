@@ -1,6 +1,6 @@
 import { Wrapper, FirstBlock, SecondBlock, ThirdBlock, ImageWrapper, Image, FirstTextBox, SecondTextBox, Heading, BodyText, WhoWeAre, HeadingCapital, BodyTextLastBlock, FindOutMore } from "./HomeSection2Style"
-import student from "../../../assets/01_home/student.jpg"
-import tutor from "../../../assets/01_home/tutor.jpg"
+import student from "./01_images/student.jpg"
+import tutor from "./01_images/tutor.jpg"
 
 
 const HomeSection2 = () => {

@@ -1,5 +1,5 @@
 import { Wrapper, ImageWrapper, Image, ColorLayer, Text } from "./SpeakingStyle"
-import home from "../../assets/01_home/home.jpg"
+import home from "./home.jpg"
 
 const Speaking = () => {
   return (
