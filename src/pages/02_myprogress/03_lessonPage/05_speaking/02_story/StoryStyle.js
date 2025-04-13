@@ -10,8 +10,8 @@ const FrameWrapper = styled(MainFrameWrapper)`
 const Frame = styled(MainFrame)`
     display: flex;
     flex-direction: column;
-    max-width: 70vw;
-    width: 800px;
+    // max-width: 70vw;
+    // width: 800px;
     gap: 15px;
 `
 

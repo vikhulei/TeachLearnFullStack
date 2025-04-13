@@ -18,6 +18,7 @@ const RightFrameWrapper = styled.div`
     max-height: fit-content;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 20px;
 `
 

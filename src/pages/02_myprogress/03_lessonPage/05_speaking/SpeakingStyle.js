@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { MainHeading, MainSectionWrapper } from "../../../../components/01_config/MainStyles";
+import { MainFrameWrapper, MainHeading, MainSectionWrapper } from "../../../../components/01_config/MainStyles";
 
 
 const Wrapper = styled(MainSectionWrapper)`
@@ -22,5 +22,9 @@ const Topic = styled.div`
     text-decoration: underline
 `
 
+const FrameWrapper = styled(MainFrameWrapper)`
 
-export { Wrapper, HeadingSection, TopicWrapper, TopicLabel, Topic }
+`
+
+
+export { Wrapper, HeadingSection, TopicWrapper, TopicLabel, Topic, FrameWrapper }
