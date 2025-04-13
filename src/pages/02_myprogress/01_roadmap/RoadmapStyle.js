@@ -12,7 +12,7 @@ const RoadmapContainer = styled.div`
     margin: 0 auto;
     // background-color: green;
     @media(max-width: 1000px) {
-        width: 470px;
+        width: 390px;
         // height: 440px;
     }
 `
@@ -27,17 +27,30 @@ const CurveLine = styled.div`
   justify-content: space-between;
   padding: 0 60px;
   @media(max-width: 1000px) {
-    width: 400px;
-    padding: 0 20px;
+    width: 330px;
+    padding: 0 10px;
   }
 `
 
 const CurveLineRightOne = styled(CurveLine)`
   transform: translateX(70px);
-  // transform: translateX(50px);
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
   border-left: none;
+  @media(max-width: 1000px) {
+    transform: translateX(50px);
+  }
+`
+
+const LineZero = styled(CurveLine)`
+  display: none;
+  @media(max-width: 1000px) {
+    display: flex;
+    width: 50px;
+    border: none;
+    border-top: solid darkgrey 15px;
+    transform: translateX(10px);
+  }
 `
 
 const CurveLineLeftOne = styled(CurveLine)`
@@ -76,8 +89,8 @@ const Circle = styled.div`
   color: white;
   cursor: pointer;
   @media(max-width: 1000px) {
-    width: 48px;
-    height: 48px;
+    width: 40px;
+    height: 40px;
   }
 `
 
@@ -87,7 +100,7 @@ const Start = styled(Circle)`
   left: 22px;
   @media(max-width: 1000px) {
     top: 8px;
-    left: 25px;
+    left: 8px;
   }
 `
 
@@ -97,6 +110,7 @@ const Finish = styled(Circle)`
   right: -20px;
   @media(max-width: 1000px) {
     bottom: 8px;
+    right: 0px;
   }
 `
 
@@ -109,4 +123,4 @@ const Step = styled(Circle)`
 
 
 
-export { RoadmapContainer, CurveLineWrapper, CurveLineRightOne, CurveLineLeftOne, CurveLineRightTwo, CurveLineLeftTwo, CurveLineLast, Circle, Step, Start, Finish }
+export { LineZero, RoadmapContainer, CurveLineWrapper, CurveLineRightOne, CurveLineLeftOne, CurveLineRightTwo, CurveLineLeftTwo, CurveLineLast, Circle, Step, Start, Finish }

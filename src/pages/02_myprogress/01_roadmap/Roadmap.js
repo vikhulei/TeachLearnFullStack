@@ -1,4 +1,4 @@
-import { RoadmapContainer, CurveLineWrapper, CurveLineRightOne, CurveLineLeftOne, CurveLineRightTwo, CurveLineLeftTwo, CurveLineLast, Step, Start, Finish } from "./RoadmapStyle"
+import { RoadmapContainer, CurveLineWrapper, LineZero, CurveLineRightOne, CurveLineLeftOne, CurveLineRightTwo, CurveLineLeftTwo, CurveLineLast, Step, Start, Finish } from "./RoadmapStyle"
 
 const arr1 = [1,2,3,4,5,6]
 const arr2 = [12,11,10,9,8,7]
@@ -22,6 +22,7 @@ const Roadmap = () => {
         <Finish>
           Finish
         </Finish>
+        <LineZero></LineZero>
         <CurveLineRightOne>
           {arr1.map((value, index) => (
             <Step key={index}>{value}</Step>
