@@ -1,8 +1,6 @@
 import styled from "styled-components";
-import { MainWrapper, MainHeader, MainHeading, MainBodyText, OutlineButton,  } from "../../components/01_config/MainStyles";
+import { MainWrapper, MainHeader, MainHeading, MainBodyText, OutlineButton, } from "../../components/01_config/MainStyles";
 import { sizes } from "../../components/01_config/Sizes";
-import { colors } from "../../components/01_config/Colors";
-
 
 const Wrapper = styled(MainWrapper)`
 
@@ -11,6 +9,37 @@ const Wrapper = styled(MainWrapper)`
 const Header = styled(MainHeader)`
 `
 
+const TitleWrapper = styled.div`
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    @media(max-width: 800px) {
+        justify-content: center;
+    }
+`
+
+const Title = styled(MainHeading)`
+
+`
+
+const CurrentLessonButton = styled(OutlineButton)`
+    color: black;
+    // position: absolute;
+    margin-right: ${sizes.sections_mob_marginsides};
+    // padding: 0 ${sizes.sections_mob_marginsides};
+    cursor: pointer;
+    &:active {
+        transform: translate(2px, 2px)
+    }
+    @media(max-width: 800px) {
+        width: 240px;
+        height: 70px;
+        margin-right: 0;
+    }
+`
+
+
 const MyRoadmapWrapper = styled.div`
     position: relative;
     display: flex;
@@ -18,18 +47,6 @@ const MyRoadmapWrapper = styled.div`
     gap: ${sizes.marginsections}; 
 `
 
-const CurrentLessonButton = styled(OutlineButton)`
-    color: black;
-    position: absolute;
-    right: ${sizes.sections_mob_marginsides};
-    cursor: pointer;
-    &:active {
-        transform: translate(2px, 2px)
-    }
-`
-
-const Title = styled(MainHeading)`
-`
 
 const MainText = styled(MainBodyText)`
     padding: 0 ${sizes.sections_mob_marginsides};
@@ -37,4 +54,4 @@ const MainText = styled(MainBodyText)`
     text-align: justify;
 `
 
-export { Wrapper, MyRoadmapWrapper, Header, CurrentLessonButton, Title, MainText }
+export { Wrapper, MyRoadmapWrapper, Header, CurrentLessonButton, TitleWrapper, Title, MainText }
