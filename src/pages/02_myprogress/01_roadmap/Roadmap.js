@@ -1,4 +1,4 @@
-import { RoadmapContainer, CurveLineRightOne, CurveLineLeftOne, CurveLineRightTwo, CurveLineLeftTwo, CurveLineLast, Step, Start, Finish } from "./RoadmapStyle"
+import { RoadmapContainer, CurveLineWrapper, CurveLineRightOne, CurveLineLeftOne, CurveLineRightTwo, CurveLineLeftTwo, CurveLineLast, Step, Start, Finish } from "./RoadmapStyle"
 
 const arr1 = [1,2,3,4,5,6]
 const arr2 = [12,11,10,9,8,7]
@@ -7,14 +7,15 @@ const arr4 = [24,23,22,21,20,19]
 const arr5 = [25,26,27,28,29,30]
 
 const Roadmap = () => {
-    const steps = Array.from({ length: 40 }, (_, i) => ({
-      id: i + 1,
-      title: `Step ${i + 1}`,
-      description: `Description for step ${i + 1}`,
-    }));
+    // const steps = Array.from({ length: 40 }, (_, i) => ({
+    //   id: i + 1,
+    //   title: `Step ${i + 1}`,
+    //   description: `Description for step ${i + 1}`,
+    // }));
 
     return (
       <RoadmapContainer>
+        <CurveLineWrapper>
         <Start>
           Start
         </Start>
@@ -46,6 +47,7 @@ const Roadmap = () => {
             <Step key={index}>{value}</Step>
           ))}
         </CurveLineLast>
+        </CurveLineWrapper>
       </RoadmapContainer>
     );
   };
