@@ -32,6 +32,7 @@ const Frame = styled(MainFrame)`
     @media(max-width: 1200px) {
         width: 90vw;
         max-width: 480px;
+        height: fit-content;
     }
 `
 
@@ -116,8 +117,8 @@ const Word = styled.div`
     display: flex;
     align-items: start;
     @media(max-width: 1200px) {
-        margin 0 auto;
-        margin-top: 15px;
+        // margin 0 auto;
+        margin-top: 0px;
     }
 
 `
