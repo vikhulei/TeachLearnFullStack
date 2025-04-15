@@ -19,9 +19,9 @@ const ReplaceitExercise = () => {
         <Frame>
             <FrameHeading>replace it</FrameHeading>
             <Icon src={replace} />
-            {replaceitExerciseData.filter(val => val.lesson === 1).map((value, index) => (
+            {/* {replaceitExerciseData.filter(val => val.lesson === 1).map((value, index) => (
                 <SentenceWrapper key={index}>
-                    <Text>{value.beginning}&nbsp;</Text>
+                    <Text>{value.sentence.beginning}&nbsp;</Text>
                     <BoldWordWrapper id={value.id} onClick={clickReplaceWord}>
 
                         <BoldWord name={value.display_word} style={{ display: value.display_word }}>
@@ -33,7 +33,7 @@ const ReplaceitExercise = () => {
                     </BoldWordWrapper>
                     <Text>&nbsp;{value.ending}</Text>
                 </SentenceWrapper>
-            ))}
+            ))} */}
         </Frame>
     )
 }
