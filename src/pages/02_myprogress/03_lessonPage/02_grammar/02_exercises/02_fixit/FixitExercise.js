@@ -29,16 +29,16 @@ const FixitExercise = () => {
             <Icon src={fixit} />
             {grammarFixit.map((value, index) => (
                 <SentenceWrapper key={index}>
-                    <Text>{value.beginning}&nbsp;</Text>
-                    <BoldWord id={value.id} onClick={clickFixitWord}>{value.bold}&nbsp;</BoldWord>
+                    <Text id={value.id} onClick={clickFixitWord}>{value.sentence.beginning}&nbsp;</Text>
+                    <BoldWord id={value.id} onClick={clickFixitWord}>{value.sentence.bold}&nbsp;</BoldWord>
                     <FixitInput
-                        style={{color: value.input === value.correct ? `${colors.greenWord}` : ""}}
+                        style={{color: value.input === value.sentence.correct ? `${colors.greenWord}` : ""}}
                         value={value.input}
                         id={value.id - 1}
                         onInput={fillInput}
                     />
-                    <Correct style={{ visibility: value.visibility }}>&nbsp;{value.correct}</Correct>
-                    <Text>&nbsp;{value.ending}</Text>
+                    <Correct style={{ visibility: value.visibility }}>&nbsp;{value.sentence.correct}</Correct>
+                    <Text>&nbsp;{value.sentence.ending}</Text>
                 </SentenceWrapper>
             ))}
         </Frame>
