@@ -40,7 +40,7 @@ const FillitinExercise = () => {
                         onClick={clickFillit}
                         id={value.id}
                     >
-                        {value.sentence}
+                        {value.sentence.sentence}
                     </Text>
                     <FillInInput
                         style={{backgroundColor: value.input === value.translat ? `${colors.green}` : ""}}
@@ -51,7 +51,7 @@ const FillitinExercise = () => {
                     <Correct
                         style={{ visibility: value.visibility }}
                     >
-                        {value.translat}
+                        {value.sentence.translat}
                     </Correct>
                 </SentenceWrapper>
             ))}
