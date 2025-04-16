@@ -10,11 +10,12 @@ const sentences = [
     {beginning: "", word: "Вони", translat: "They", ending: "love Kyiv"},
     {beginning: "Today", word: "він", translat: "he", ending: "loves USA"},
     {beginning: "Today", word: "він", translat: "he", ending: "loves USA"},
+
     //lesson 2
 ]
 
 
-const ReplaceitExerciseData = sentences.map((value, index) => (
+export const ReplaceitExerciseData = sentences.map((value, index) => (
     {
         id: index+1,
         lesson: Math.floor(index/10) + 1,

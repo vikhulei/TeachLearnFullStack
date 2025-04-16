@@ -15,25 +15,27 @@ const ReplaceitExercise = () => {
     ))
 }
 
+console.log(replaceitExerciseData[0].sentence.word)
+
     return (
         <Frame>
             <FrameHeading>replace it</FrameHeading>
             <Icon src={replace} />
-            {/* {replaceitExerciseData.filter(val => val.lesson === 1).map((value, index) => (
+            {replaceitExerciseData.filter(val => val.lesson === 1).map((value, index) => (
                 <SentenceWrapper key={index}>
                     <Text>{value.sentence.beginning}&nbsp;</Text>
                     <BoldWordWrapper id={value.id} onClick={clickReplaceWord}>
 
                         <BoldWord name={value.display_word} style={{ display: value.display_word }}>
-                            {value.word}
+                            {value.sentence.word}
                         </BoldWord>
                         <BoldWord style={{ display: value.display_translat }}>
-                            {value.translat}
+                            {value.sentence.translat}
                         </BoldWord>
                     </BoldWordWrapper>
-                    <Text>&nbsp;{value.ending}</Text>
+                    <Text>&nbsp;{value.sentence.ending}</Text>
                 </SentenceWrapper>
-            ))} */}
+            ))}
         </Frame>
     )
 }
