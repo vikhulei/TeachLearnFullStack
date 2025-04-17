@@ -4,7 +4,7 @@ import { ReadingTextData } from "./ReadingTextsData"
 import { colors } from "../../../../../components/01_config/Colors"
 
 const ReadingText = () => {
-    const [readingText, setReadingText] = useState(ReadingTextData.filter(value => value.lesson === 2))
+    const [readingText, setReadingText] = useState(ReadingTextData.filter(value => value.lesson === 1))
 
     const clickQuestion = (e) => {
         e.preventDefault();
