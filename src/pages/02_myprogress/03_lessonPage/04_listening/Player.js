@@ -1,5 +1,4 @@
 import React, { useRef, useState } from 'react';
-import audio1 from "./audio/audio1.mp3"
 
 const Player = ({audio}) => {
   const audioRef = useRef(null);
