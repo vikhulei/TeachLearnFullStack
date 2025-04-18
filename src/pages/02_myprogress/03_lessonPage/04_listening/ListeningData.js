@@ -6,6 +6,10 @@ const images = importAll(
     require.context("./images", false, /\.jpg$/)
 );
 
+const audios = importAll(
+    require.context("./audio", false, /\.mp3$/)
+);
+
 const questions = [
 
     [
@@ -65,6 +69,7 @@ export const ListeningData = images.map((image, index) => (
         id: index+1,
         lesson: Math.floor(index / 2) + 1,
         image,
+        audio: audios[index],
         questions: questions[index],
     }
 ))

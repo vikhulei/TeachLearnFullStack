@@ -2,11 +2,12 @@ import { useState } from "react"
 import { Wrapper, HeadingSection, FrameWrapper, Frame, Image, SentenceWrapper, Question, ListeningInput, Correct } from "./ListeningStyle"
 import { ListeningData } from "./ListeningData"
 import { colors } from "../../../../components/01_config/Colors"
+import Player from "./Player"
 
 
 const Listening = () => {
   const [listeningData, setListeningData] = useState(
-    ListeningData.filter(value => value.lesson === 2)
+    ListeningData.filter(value => value.lesson === 1)
   )
 
   const clickQuestion = (e) => {
@@ -30,6 +31,8 @@ const Listening = () => {
     setListeningData(newListeningData)
 }
 
+console.log(listeningData)
+
   return (
     <Wrapper>
       <HeadingSection>
@@ -39,6 +42,7 @@ const Listening = () => {
         {listeningData.map((valueData, indexData) => (
           <Frame key={indexData}>
             <Image src={valueData.image} />
+            <Player audio={valueData.audio}/>
             {valueData.questions.map((valueQuestion, indexQuestion) => (
               <SentenceWrapper key={indexQuestion}>
                 <Question
