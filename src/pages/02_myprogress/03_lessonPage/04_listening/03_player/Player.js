@@ -1,6 +1,7 @@
-import React, { useRef, useState } from 'react';
+import { useRef, useState } from 'react';
+import { Wrapper, Button } from "./PlayerStyle"
 
-const Player = ({audio}) => {
+const Player = ({ audio }) => {
   const audioRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(false);
 
@@ -21,26 +22,24 @@ const Player = ({audio}) => {
   };
 
   return (
-    <div>
+    <Wrapper>
       <audio ref={audioRef} src={audio} />
-      <div>
-        <button
+        <Button
           onClick={handlePlay}
         >
           Play
-        </button>
-        <button
+        </Button>
+        <Button
           onClick={handlePause}
         >
           Pause
-        </button>
-        <button
+        </Button>
+        <Button
           onClick={handleStop}
         >
           Stop
-        </button>
-      </div>
-    </div>
+        </Button>
+    </Wrapper>
   );
 };
 

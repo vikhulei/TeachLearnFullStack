@@ -74,6 +74,25 @@ const MainHeadingColor = styled(MainHeadingCapital)`
     font-size: 1.4rem;
 `
 
+const MainButton = styled.button`
+    width: 150px;
+    height: 35px;
+    background-color: transparent;
+    border: 2px solid ${colors.greyFrame};
+    color: black;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    font-weight: 600;
+    cursor: pointer;
+    &:hover {
+        font-size: 0.76rem;
+        border-width: 3px;
+    }
+    &:active {
+        transform: translate(1px, 1px);
+    }
+`
+
 const OutlineButton = styled.button`
     width: 240px;
     height: 70px;
@@ -179,4 +198,4 @@ const MainDashedInput = styled.input`
     outline: none;
 `
 
-export { MainWrapper, MainSectionWrapper, MainHeader, MainBodyText, MainBodyTextColumn, MainHeading, MainHeadingColumn, MainHeadingCapital, MainHeadingColor, OutlineButton, MainFrameWrapper, MainFrame, MainFrameImage, MainText, MainImage, MainInput, MainCorrect, MainSentenceWrapper, MainQuestion, MainDashedInput }
+export { MainWrapper, MainSectionWrapper, MainHeader, MainBodyText, MainBodyTextColumn, MainHeading, MainHeadingColumn, MainHeadingCapital, MainHeadingColor, MainButton, OutlineButton, MainFrameWrapper, MainFrame, MainFrameImage, MainText, MainImage, MainInput, MainCorrect, MainSentenceWrapper, MainQuestion, MainDashedInput }

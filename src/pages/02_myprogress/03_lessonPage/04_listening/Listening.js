@@ -1,8 +1,8 @@
 import { useState } from "react"
-import { Wrapper, HeadingSection, FrameWrapper, Frame, Image, SentenceWrapper, Question, ListeningInput, Correct } from "./ListeningStyle"
+import { Wrapper, HeadingSection, FrameWrapper, Frame, ImageAudioWrapper, Image, SentenceWrapper, Question, ListeningInput, Correct } from "./ListeningStyle"
 import { ListeningData } from "./ListeningData"
 import { colors } from "../../../../components/01_config/Colors"
-import Player from "./Player"
+import Player from "./03_player/Player"
 
 
 const Listening = () => {
@@ -12,26 +12,28 @@ const Listening = () => {
 
   const clickQuestion = (e) => {
     e.preventDefault();
-    const indexData =  Number(e.target.getAttribute("data-inData"))
+    const indexData = Number(e.target.getAttribute("data-inData"))
     const indexQuestion = Number(e.target.getAttribute("data-inQuestion"))
     setListeningData(prevListeningData => prevListeningData.map((value, index) => (
-      index === indexData ? {...value, questions: value.questions.map((val, ind) => 
-        ind === indexQuestion ? {...val, visibility: val.visibility === "visible" ? "hidden" : "visible"} : val
-      )} : value
+      index === indexData ? {
+        ...value, questions: value.questions.map((val, ind) =>
+          ind === indexQuestion ? { ...val, visibility: val.visibility === "visible" ? "hidden" : "visible" } : val
+        )
+      } : value
     )))
   }
-  
+
 
   const fillInput = (e) => {
     e.preventDefault();
-    const indexData =  e.target.getAttribute("data-indata")
+    const indexData = e.target.getAttribute("data-indata")
     const indexQuestion = e.target.getAttribute("data-inquestion")
     let newListeningData = [...listeningData]
     newListeningData[indexData].questions[indexQuestion].input = e.currentTarget.value
     setListeningData(newListeningData)
-}
+  }
 
-console.log(listeningData)
+  console.log(listeningData)
 
   return (
     <Wrapper>
@@ -41,8 +43,10 @@ console.log(listeningData)
       <FrameWrapper>
         {listeningData.map((valueData, indexData) => (
           <Frame key={indexData}>
-            <Image src={valueData.image} />
-            <Player audio={valueData.audio}/>
+            <ImageAudioWrapper>
+              <Image src={valueData.image} />
+              <Player audio={valueData.audio} />
+            </ImageAudioWrapper>
             {valueData.questions.map((valueQuestion, indexQuestion) => (
               <SentenceWrapper key={indexQuestion}>
                 <Question

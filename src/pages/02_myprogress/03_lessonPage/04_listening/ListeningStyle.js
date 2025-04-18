@@ -17,6 +17,9 @@ const Frame = styled(MainFrame)`
     flex-direction: column;
 `
 
+const ImageAudioWrapper = styled.div`
+`
+
 const Image = styled.img`
     height: 200px;
     width: 200px;
@@ -43,4 +46,4 @@ const Correct = styled(MainCorrect)`
 `
 
 
-export { Wrapper, HeadingSection, FrameWrapper, Frame, Image, SentenceWrapper, Question, ListeningInput, Correct }
+export { Wrapper, HeadingSection, FrameWrapper, Frame, ImageAudioWrapper, Image, SentenceWrapper, Question, ListeningInput, Correct }

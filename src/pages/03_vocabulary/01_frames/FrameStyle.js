@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
 import { GenericButton } from "../VocabularyStyle"
 import { colors } from "../../../components/01_config/Colors";
-import { MainFrame, MainInput } from "../../../components/01_config/MainStyles";
+import { MainButton, MainFrame, MainInput } from "../../../components/01_config/MainStyles";
 
 const FramesWrapper = styled.div`
     position: relative;
@@ -36,7 +36,7 @@ const Frame = styled(MainFrame)`
     }
 `
 
-const CheckButton = styled(GenericButton)`
+const CheckButton = styled(MainButton)`
     width: 24px;
     height: 24px;
     margin-right: 25px;
