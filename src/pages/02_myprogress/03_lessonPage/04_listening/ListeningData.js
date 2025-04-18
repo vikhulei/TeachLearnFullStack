@@ -3,11 +3,11 @@ function importAll(r) {
 }
 
 const images = importAll(
-    require.context("./images", false, /\.jpg$/)
+    require.context("./01_images", false, /\.jpg$/)
 );
 
 const audios = importAll(
-    require.context("./audio", false, /\.mp3$/)
+    require.context("./02_audio", false, /\.mp3$/)
 );
 
 const questions = [

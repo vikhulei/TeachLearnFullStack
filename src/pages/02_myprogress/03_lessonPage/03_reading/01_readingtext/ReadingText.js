@@ -20,6 +20,9 @@ const ReadingText = () => {
         newReadingText[0].questions[e.currentTarget.id].input = e.currentTarget.value
         setReadingText(newReadingText)
     }
+
+    console.log(readingText)
+
     return (
         <FrameWrapper>
             <FrameReadingLeft>
