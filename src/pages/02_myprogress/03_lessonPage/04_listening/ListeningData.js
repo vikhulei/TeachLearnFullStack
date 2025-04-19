@@ -14,19 +14,19 @@ const rawQuestions = [
     //LESSON 1
     //first question
     [
-        { question: "", answer: "" },
-        { question: "", answer: "" },
-        { question: "", answer: "" },
-        { question: "", answer: "" },
-        { question: "", answer: "" },
+        { question: "quest1", answer: "answer11" },
+        { question: "quest12", answer: "answer12" },
+        { question: "quest13", answer: "answer13" },
+        { question: "quest14", answer: "answer14" },
+        { question: "quest15", answer: "answer15" },
     ],
     //second question
     [
-        { question: "", answer: "" },
-        { question: "", answer: "" },
-        { question: "", answer: "" },
-        { question: "", answer: "" },
-        { question: "", answer: "" },
+        { question: "quest21", answer: "answer21" },
+        { question: "quest22", answer: "answer22" },
+        { question: "quest23", answer: "answer23" },
+        { question: "quest24", answer: "answer24" },
+        { question: "quest25", answer: "answer25" },
     ],
 
     //LESSON 2
