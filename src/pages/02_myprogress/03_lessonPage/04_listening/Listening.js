@@ -4,7 +4,6 @@ import { ListeningData } from "./ListeningData"
 import { colors } from "../../../../components/01_config/Colors"
 import Player from "./03_player/Player"
 
-
 const Listening = () => {
   const [listeningData, setListeningData] = useState(
     ListeningData.filter(value => value.lesson === 1)
@@ -22,7 +21,6 @@ const Listening = () => {
       } : value
     )))
   }
-
 
   const fillInput = (e) => {
     e.preventDefault();
