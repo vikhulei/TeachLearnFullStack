@@ -10,66 +10,85 @@ const audios = importAll(
     require.context("./02_audio", false, /\.mp3$/)
 );
 
-const questions = [
-
+const rawQuestions = [
+    //LESSON 1
+    //first question
     [
-        {id: 1, question: "What is the boy’s1 name?",
-        input: "", visibility: "hidden", answer: "Boy1"},
-        {id: 2, question: "What is the boy’s2 name?",
-        input: "", visibility: "hidden", answer: "Boy2"},
-        {id: 3, question: "What is the boy’s3 name?",
-        input: "", visibility: "hidden", answer: "Boy3"},
-        {id: 4, question: "What is the boy’s4 name?",
-        input: "", visibility: "hidden", answer: "Boy4"},
-        {id: 5, question: "What is the boy’s5 name?",
-        input: "", visibility: "hidden", answer: "Boy5"},
+        { question: "", answer: "" },
+        { question: "", answer: "" },
+        { question: "", answer: "" },
+        { question: "", answer: "" },
+        { question: "", answer: "" },
     ],
+    //second question
     [
-        {id: 1, question: "What is the girl’s1 name?",
-        input: "", visibility: "hidden", answer: "BGirl1"},
-        {id: 2, question: "What is the girl’s2 name?",
-        input: "", visibility: "hidden", answer: "BGirl2"},
-        {id: 3, question: "What is the girl’s3 name?",
-        input: "", visibility: "hidden", answer: "BGirl3"},
-        {id: 4, question: "What is the girl’s4 name?",
-        input: "", visibility: "hidden", answer: "BGirl4"},
-        {id: 5, question: "What is the girl’s5 name?",
-        input: "", visibility: "hidden", answer: "BGirl5"},
-    ],
-    [
-        {id: 1, question: "What is the man’s1 name?",
-        input: "", visibility: "hidden", answer: "Human1"},
-        {id: 2, question: "What is the man’s2 name?",
-        input: "", visibility: "hidden", answer: "Human2"},
-        {id: 3, question: "What is the man’s3 name?",
-        input: "", visibility: "hidden", answer: "Human3"},
-        {id: 4, question: "Which  symbol was on the map?",
-        input: "", visibility: "hidden", answer: "Human4"},
-        {id: 5, question: "What is the man’s5 name?",
-        input: "", visibility: "hidden", answer: "Human5"},
-    ],
-    [
-        {id: 1, question: "What is the man’s1 name?",
-        input: "", visibility: "hidden", answer: "Human1"},
-        {id: 2, question: "What is the man’s2 name?",
-        input: "", visibility: "hidden", answer: "Human2"},
-        {id: 3, question: "What is the man’s3 name?",
-        input: "", visibility: "hidden", answer: "Human3"},
-        {id: 4, question: "Which  symbol was on the map?",
-        input: "", visibility: "hidden", answer: "Human4"},
-        {id: 5, question: "What is the man’s5 name?",
-        input: "", visibility: "hidden", answer: "Human5"},
+        { question: "", answer: "" },
+        { question: "", answer: "" },
+        { question: "", answer: "" },
+        { question: "", answer: "" },
+        { question: "", answer: "" },
     ],
 
+    //LESSON 2
+    //first question
+    [
+        { question: "", answer: "" },
+        { question: "", answer: "" },
+        { question: "", answer: "" },
+        { question: "", answer: "" },
+        { question: "", answer: "" },
+    ],
+    //second question
+    [
+        { question: "", answer: "" },
+        { question: "", answer: "" },
+        { question: "", answer: "" },
+        { question: "", answer: "" },
+        { question: "", answer: "" },
+    ],
+
+    [
+        { question: "Quest #1", answer: "Я" },
+        { question: "beginning text", answer: "word text2" },
+        { question: "beginning text", answer: "word text3" },
+        { question: "beginning text", answer: "word text4" },
+        { question: "beginning text", answer: "word text5" },
+    ],
+    [
+        { question: "Quest #2", answer: "BGirl1" },
+        { question: "What is the girl’s2 name?", answer: "BGirl2" },
+        { question: "What is the girl’s3 name?", answer: "BGirl3" },
+        { question: "What is the girl’s4 name?", answer: "BGirl4" },
+        { question: "What is the girl’s5 name?", answer: "BGirl5" },
+    ],
+    [
+        { question: "What is the man’s1 name?", answer: "Human1" },
+        { question: "What is the man’s2 name?", answer: "Human2" },
+        { question: "What is the man’s3 name?", answer: "Human3" },
+        { question: "Which  symbol was on the map?", answer: "Human4" },
+        { question: "What is the man’s5 name?", answer: "Human5" },
+    ],
 ]
+
+const questionsArray = rawQuestions.map((value, index) => (
+    value.map((val, ind) => (
+        {
+            id: ind + 1,
+            question: val.question,
+            input: "",
+            visibility: "hidden",
+            answer: val.answer,
+        }
+    ))
+))
 
 export const ListeningData = images.map((image, index) => (
     {
         index,
-        id: index+1,
+        id: index + 1,
         lesson: Math.floor(index / 2) + 1,
         image,
         audio: audios[index],
-        questions: questions[index],
+        questions: questionsArray[index],
     }
 ))
