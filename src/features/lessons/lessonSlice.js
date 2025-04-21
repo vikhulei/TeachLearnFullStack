@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const lessonSlice = createSlice({
     name: "lesson",
-    initialState: {value: "test"},
+    initialState: {value: "1"},
     reducers: {
         updateLessonNumber: (state, action) => {
             state.value = action.payload

@@ -1,8 +1,10 @@
+import { useSelector } from "react-redux"
 import { Wrapper, Circle } from "./LessonsRangeStyle"
 
 const LessonsRange = () => {
-    let i = 7
-    const lessonsNumber = Array.from({ length: 6 }, (_, i=7) => i + 1)
+    const start = Number(useSelector((state) => state.lesson.value))
+
+    const lessonsNumber = Array.from({ length: 6 }, (_, i) => start + i)
 
     return (
         <Wrapper>
