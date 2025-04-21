@@ -1,10 +1,14 @@
 import { FrameWrapper, Frame, Image} from "./RulesStyle"
 import { RulesData } from "./RulesData"
+import { useSelector } from "react-redux"
 
 const Rules = () => {
+
+    const currentLesson = useSelector(state => state.lesson.currentLesson)
+
     return (
             <FrameWrapper>
-                {RulesData.filter(val => val.lesson === 1).map((value, index) => (
+                {RulesData.filter(val => val.lesson === currentLesson).map((value, index) => (
                     <Frame key={index}>
                         <Image src={value.image} />
                     </Frame>

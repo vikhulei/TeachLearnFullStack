@@ -1,7 +1,7 @@
 import { useDispatch } from "react-redux"
 import { Wrapper, Card, Image, Lesson  } from "./CardsStyle"
 import { CardsData } from "./CardsNames"
-import { updateLessonNumber } from "../../../features/lessons/lessonSlice"
+import { updateLessonsRange } from "../../../features/lessons/lessonSlice"
 
 
 const Cards = () => {
@@ -9,7 +9,7 @@ const Cards = () => {
   const dispatch = useDispatch()
 
   const assignLesson = (e) => {
-    dispatch(updateLessonNumber(e.currentTarget.id))
+    dispatch(updateLessonsRange(e.currentTarget.id))
   }
   
   return (

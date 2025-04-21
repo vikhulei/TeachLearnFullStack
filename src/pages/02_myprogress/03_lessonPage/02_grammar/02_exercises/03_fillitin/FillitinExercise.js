@@ -1,4 +1,5 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
+import { useSelector } from "react-redux"
 import { FillInInput, Frame, FrameHeading, Icon, SentenceWrapper, Text, Correct } from "./FillitinExerciseStyle"
 import { FillitinExerciseData } from "./FillitinExerciseData"
 import fillin from "./fillin.png"
@@ -7,8 +8,10 @@ import { colors } from "../../../../../../components/01_config/Colors"
 
 const FillitinExercise = () => {
 
+    const currentLesson = useSelector(state => state.lesson.currentLesson)
+
     const [fillitinExerciseData, setFillitinExerciseData] = useState(
-        FillitinExerciseData.filter(val => val.lesson === 1)
+        FillitinExerciseData.filter(val => val.lesson === currentLesson)
     )
     const [inputValue, setInputValue] = useState("")
 
@@ -23,6 +26,10 @@ const FillitinExercise = () => {
         newFillitinExerciseData[e.target.id].input = e.currentTarget.value
         setFillitinExerciseData(newFillitinExerciseData)
     }
+
+    useEffect(() => {
+        setFillitinExerciseData(FillitinExerciseData.filter(val => val.lesson === currentLesson))
+    }, [currentLesson])
 
     return (
         <Frame>

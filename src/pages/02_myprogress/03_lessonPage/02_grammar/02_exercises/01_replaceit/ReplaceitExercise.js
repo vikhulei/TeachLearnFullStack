@@ -1,12 +1,15 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
+import { useSelector } from "react-redux"
 import { Frame, FrameHeading, Icon, SentenceWrapper, Text, BoldWord, EngWord, UkrWord, BoldWordWrapper  } from "./ReplaceitExerciseStyle"
 import replace from "./replace.png"
 import { ReplaceitExerciseData } from "./ReplaceitExerciseData"
 
 const ReplaceitExercise = () => {
 
+    const currentLesson = useSelector(state => state.lesson.currentLesson)
+
     const [replaceitExerciseData, setReplaceitExerciseData] = useState(
-      ReplaceitExerciseData.filter(val => val.id <= 35)
+      ReplaceitExerciseData.filter(val => val.lesson === currentLesson)
     )
 
   const clickReplaceWord = (e) => {
@@ -15,7 +18,10 @@ const ReplaceitExercise = () => {
     ))
 }
 
-console.log(replaceitExerciseData[0].sentence.word)
+useEffect(() => {
+    setReplaceitExerciseData(ReplaceitExerciseData.filter(val => val.lesson === currentLesson))
+}, [currentLesson])
+
 
     return (
         <Frame>

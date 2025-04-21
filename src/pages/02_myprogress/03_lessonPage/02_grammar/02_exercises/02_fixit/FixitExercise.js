@@ -1,4 +1,5 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
+import { useSelector } from "react-redux"
 import { Frame, FrameHeading, Icon, SentenceWrapper, Text, Correct, BoldWord, FixitInput  } from "./FixitExerciseStyle"
 import fixit from "./fixit.png"
 import { FixitExerciseData } from "./FixitExerciseData"
@@ -6,8 +7,10 @@ import { colors } from "../../../../../../components/01_config/Colors"
 
 const FixitExercise = () => {
 
+    const currentLesson = useSelector(state => state.lesson.currentLesson)
+
     const [grammarFixit, setFixitExerciseData] = useState(
-        FixitExerciseData.filter(val => val.lesson === 1)
+        FixitExerciseData.filter(val => val.lesson === currentLesson)
     )
 
     const clickFixitWord = (e) => {
@@ -21,6 +24,10 @@ const FixitExercise = () => {
         newGrammarFixit[e.currentTarget.id].input = e.currentTarget.value
         setFixitExerciseData(newGrammarFixit)
     }
+
+    useEffect(() => {
+        setFixitExerciseData(FixitExerciseData.filter(val => val.lesson === currentLesson))
+    }, [currentLesson])
 
     return (
 

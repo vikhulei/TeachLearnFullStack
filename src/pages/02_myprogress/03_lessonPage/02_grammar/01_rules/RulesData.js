@@ -6,18 +6,19 @@ const images = importAll(
     require.context("./01_images", false, /\.jpg$/)
 );
 
-const titles = [
-    "Alphabet",
-    "Reading rules",
-    "To be"
+const lessons = [
+    {lesson: 1, title: "Alphabet"},
+    {lesson: 1, title: "Reading rules"},
+    {lesson: 2, title: "To be"}
 
 ]
 
 export const RulesData = images.map((image, index) => (
     {
         id: index+1,
-        lesson: Math.floor(index / 3) + 1,
         image,
-        title: titles[index]
+        title: lessons[index].title,
+        lesson: lessons[index].lesson,
+        // lesson: Math.floor(index / 3) + 1
     }
 ))

@@ -1,3 +1,4 @@
+import { useSelector } from "react-redux"
 import { Wrapper, Header } from "./LessonStyle"
 import LessonsRange from "./00_lessons_range/LessonsRange"
 import Vocabulary from "./01_vocabulary/Vocabulary"
@@ -8,17 +9,20 @@ import Speaking from "./05_speaking/Speaking"
 
 
 const Lesson = () => {
+
+    const currentLesson = useSelector(state => state.lesson.currentLesson)
+
     return (
         <Wrapper>
             <Header>
-                Lesson 3
+                Lesson {currentLesson}
             </Header>
             <LessonsRange />
-            <Vocabulary />
-            <Grammar />
-            <Reading />
-            <Listening />
-            <Speaking />
+            <Vocabulary/>
+            <Grammar/>
+            <Reading/>
+            <Listening/>
+            <Speaking/>
         </Wrapper>
     )
 }

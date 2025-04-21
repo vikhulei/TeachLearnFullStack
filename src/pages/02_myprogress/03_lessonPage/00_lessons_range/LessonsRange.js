@@ -1,8 +1,13 @@
-import { useSelector } from "react-redux"
+import { useSelector, useDispatch } from "react-redux"
 import { Wrapper, Circle } from "./LessonsRangeStyle"
+import { updateCurrentLesson } from "../../../../features/lessons/lessonSlice"
+
 
 const LessonsRange = () => {
-    const start = Number(useSelector((state) => state.lesson.value))
+
+    const dispatch = useDispatch()
+
+    const start = Number(useSelector((state) => state.lesson.lessonsRange))
 
     const lessonsNumber = Array.from({ length: 6 }, (_, i) => start + i)
 
@@ -10,7 +15,12 @@ const LessonsRange = () => {
         <Wrapper>
             {lessonsNumber.map((value) => (
                 <div key={value}>
-                    <Circle>{value}</Circle>
+                    <Circle
+                        id={value}
+                        onClick={() => dispatch(updateCurrentLesson(Number(value)))}
+                    >
+                        {value}
+                    </Circle>
                 </div>
             ))}
         </Wrapper>

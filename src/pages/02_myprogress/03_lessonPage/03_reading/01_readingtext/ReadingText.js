@@ -21,8 +21,6 @@ const ReadingText = () => {
         setReadingText(newReadingText)
     }
 
-    console.log(readingText)
-
     return (
         <FrameWrapper>
             <FrameReadingLeft>

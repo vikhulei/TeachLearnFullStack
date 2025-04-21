@@ -1,7 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import "./App.css"
 import ScrollToTop from './components/01_config/ScrollToTop';
-// import 'react-toastify/dist/ReactToastify.css'
 import Header from './components/02_header/Header';
 import Home from './pages/01_home/Home';
 import MyProgress from "./pages/02_myprogress/MyProgress"

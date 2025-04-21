@@ -31,8 +31,6 @@ const Listening = () => {
     setListeningData(newListeningData)
   }
 
-  console.log(listeningData)
-
   return (
     <Wrapper>
       <HeadingSection>

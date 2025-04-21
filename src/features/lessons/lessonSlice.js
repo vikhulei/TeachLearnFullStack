@@ -2,14 +2,20 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const lessonSlice = createSlice({
     name: "lesson",
-    initialState: {value: "1"},
+    initialState: {
+        lessonsRange: 1,
+        currentLesson: 1
+    },
     reducers: {
-        updateLessonNumber: (state, action) => {
-            state.value = action.payload
+        updateLessonsRange: (state, action) => {
+            state.lessonsRange = action.payload
+        },
+        updateCurrentLesson: (state, action) => {
+            state.currentLesson = action.payload
         }
     }
 })
 
-export const { updateLessonNumber } = lessonSlice.actions
+export const { updateLessonsRange, updateCurrentLesson } = lessonSlice.actions
 
 export default lessonSlice.reducer

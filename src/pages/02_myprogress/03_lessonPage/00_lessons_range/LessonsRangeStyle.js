@@ -25,6 +25,9 @@ const Circle = styled.div`
     width: 40px;
     height: 40px;
   }
+  &:active {
+    transform: translate(1px, 1px);
+  }
 `
 
 export { Wrapper, Circle }
