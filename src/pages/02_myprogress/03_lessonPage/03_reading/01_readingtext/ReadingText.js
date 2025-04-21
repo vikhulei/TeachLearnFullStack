@@ -1,10 +1,16 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { FrameWrapper, FrameReadingLeft, FrameReadingRight, RightFrameWrapper, Image, TextReading, SentenceWrapper, Question, Correct, ReadingInput } from "./ReadingTextStyle"
 import { ReadingTextData } from "./ReadingTextsData"
 import { colors } from "../../../../../components/01_config/Colors"
+import { useSelector } from "react-redux"
 
 const ReadingText = () => {
-    const [readingText, setReadingText] = useState(ReadingTextData.filter(value => value.lesson === 1))
+
+    const currentLesson = useSelector(state => state.lesson.currentLesson)
+
+    const [readingText, setReadingText] = useState(
+        ReadingTextData.filter(value => value.lesson === currentLesson)
+    )
 
     const clickQuestion = (e) => {
         e.preventDefault();
@@ -20,6 +26,10 @@ const ReadingText = () => {
         newReadingText[0].questions[e.currentTarget.id].input = e.currentTarget.value
         setReadingText(newReadingText)
     }
+
+    useEffect(() => {
+        setReadingText(ReadingTextData.filter(value => value.lesson === currentLesson))
+    }, [currentLesson])
 
     return (
         <FrameWrapper>

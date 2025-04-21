@@ -1,11 +1,14 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { FrameWrapper, Frame, SignImage, Correct } from "./ReadingSignsStyle"
 import { ReadingSignsData } from "./ReadingSignsData"
+import { useSelector } from "react-redux"
 
 const Signs = () => {
 
+    const currentLesson = useSelector(state => state.lesson.currentLesson)
+
     const [signData, setSignData] = useState(
-        ReadingSignsData.filter(val => val.lesson === 1)
+        ReadingSignsData.filter(val => val.lesson === currentLesson)
     )
 
     const showCaption = (e) => {
@@ -14,6 +17,10 @@ const Signs = () => {
             value.id === Number(e.currentTarget.id) ? {...value, visibility: value.visibility === "hidden" ? "visible" : "hidden"} : value
         ))
     }
+
+    useEffect(() => {
+        setSignData(ReadingSignsData.filter(val => val.lesson === currentLesson))
+    }, [currentLesson])
 
   return (
     <FrameWrapper>
