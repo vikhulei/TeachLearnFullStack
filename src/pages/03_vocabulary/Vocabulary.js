@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { Wrapper, Header, Title, MainText, LargeCircle, MediumCircle, SmallCircle, ImageWrapper, Image } from "./VocabularyStyle"
-import { TwoThousand } from "../../components/01_config/TwoThousand"
+// import { TwoThousand } from "../../components/01_config/TwoThousand"
+import { TwoThousand } from "./TwoThousand"
 import picture from "./home.jpg"
 import FrameComponent from "./01_frames/Frame"
 import Memorizing from "./03_memorizing/Memorizing"

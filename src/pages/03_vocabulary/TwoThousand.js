@@ -1,6 +1,19 @@
+import { TwoThousandActualWords } from "./TwoThousandActualWords"
+
+export const TwoThousand = TwoThousandActualWords.map((value, index) => ({
+    id: index + 1,
+    word: value.word,
+    translat: value.translat,
+    display_translat: "none",
+    display_word: "block",
+    tobeChecked: false,
+    correctTutor: false,
+    correctStudent: false,
+    input: "",
+}))
 
 
-export const TwoThousand = [
+const TwoThousandDel = [
 
     { id: 1, word: "one", translat: "один", display_translat: "none", display_word: "block", tobeChecked: true, correctTutor: false, correctStudent: true, input: "" },
     { id: 2, word: "apple", translat: "яблуко", display_translat: "none", display_word: "block", tobeChecked: false, correctTutor: false, correctStudent: false, input: "" },

@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { Wrapper, Heading, Frame, Word, EngWord, UkrWord } from "./VocabularyStyle"
-import { TwoThousand } from "../../../../components/01_config/TwoThousand"
+import { TwoThousand } from "../../../03_vocabulary/TwoThousand"
 
 
 const Vocabulary = () => {
