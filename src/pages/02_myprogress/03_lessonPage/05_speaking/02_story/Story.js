@@ -1,10 +1,14 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { FrameWrapper, Frame, FrameHeading, StoryWrapper, Text, Correct, TranslateLink } from "./StoryStyle"
 import { StoryData } from "./StoryData"
+import { useSelector } from "react-redux"
 
 const Story = () => {
+
+  const currentLesson = useSelector(state => state.lesson.currentLesson)
+
   const [storyData, setStoryData] = useState(
-    StoryData.filter(val => val.lesson === 1)
+    StoryData.filter(val => val.lesson === currentLesson)
   )
 
   const clickTranslate = (e) => {
@@ -13,6 +17,10 @@ const Story = () => {
     prevStoryData[0].display = prevStoryData[0].display === "none" ? "block" : "none"
     setStoryData(prevStoryData)
   }
+
+  useEffect(() => {
+    setStoryData(StoryData.filter(val => val.lesson === currentLesson))
+  }, [currentLesson])
 
   return (
 

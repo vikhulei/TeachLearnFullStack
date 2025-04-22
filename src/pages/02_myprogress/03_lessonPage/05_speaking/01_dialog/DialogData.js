@@ -13,7 +13,7 @@ const rawDialogs = [
     
     //LESSON 2
     [
-    {question: "", q_translate: "", answer: "", a_translate: ""},
+    {question: "What is the boy’s2 name?", q_translate: "Як звати хлопця №2", answer: "Boy2", a_translate: "Хлопець 2"},
     {question: "", q_translate: "", answer: "", a_translate: ""},
     {question: "", q_translate: "", answer: "", a_translate: ""},
     {question: "", q_translate: "", answer: "", a_translate: ""},

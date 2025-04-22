@@ -1,10 +1,14 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { FrameWrapper, Frame, FrameHeading, SentenceWrapper, DialogName, DialogLine, Correct, DialogWrapper } from "./DialogStyle"
 import { DialogData } from "./DialogData"
+import { useSelector } from "react-redux"
 
 const Dialog = () => {
+
+    const currentLesson = useSelector(state => state.lesson.currentLesson)
+
     const [dialogData, setDialogData] = useState(
-        DialogData.filter(val => val.lesson === 1)
+        DialogData.filter(val => val.lesson === currentLesson)
     )
 
     const clickQuestion = (e) => {
@@ -23,6 +27,9 @@ const Dialog = () => {
         ))
     }
 
+    useEffect(() => {
+        setDialogData(DialogData.filter(val => val.lesson === currentLesson))
+    }, [currentLesson])
 
     return (
 
