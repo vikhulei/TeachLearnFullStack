@@ -1,12 +1,16 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { Wrapper, HeadingSection, FrameWrapper, Frame, ImageAudioWrapper, Image, SentenceWrapper, Question, ListeningInput, Correct } from "./ListeningStyle"
 import { ListeningData } from "./ListeningData"
 import { colors } from "../../../../components/01_config/Colors"
 import Player from "./03_player/Player"
+import { useSelector } from "react-redux"
 
 const Listening = () => {
+
+  const currentLesson = useSelector(state => state.lesson.currentLesson)
+
   const [listeningData, setListeningData] = useState(
-    ListeningData.filter(value => value.lesson === 1)
+    ListeningData.filter(value => value.lesson === currentLesson)
   )
 
   const clickQuestion = (e) => {
@@ -30,6 +34,10 @@ const Listening = () => {
     newListeningData[indexData].questions[indexQuestion].input = e.currentTarget.value
     setListeningData(newListeningData)
   }
+
+  useEffect(() => {
+    setListeningData(ListeningData.filter(value => value.lesson === currentLesson))
+  }, [currentLesson])
 
   return (
     <Wrapper>
