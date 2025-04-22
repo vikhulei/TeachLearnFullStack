@@ -27,13 +27,11 @@ const Story = () => {
     <FrameWrapper>
       <Frame>
         <FrameHeading>Story</FrameHeading>
-        {/* <StoryWrapper> */}
           <Text>{storyData[0].story}</Text>
           <TranslateLink onClick={clickTranslate}>Переклад</TranslateLink>
           <Correct style={{ display: storyData[0].display }}>
             {storyData[0].translation}
           </Correct>
-        {/* </StoryWrapper> */}
       </Frame>
 
     </FrameWrapper>
