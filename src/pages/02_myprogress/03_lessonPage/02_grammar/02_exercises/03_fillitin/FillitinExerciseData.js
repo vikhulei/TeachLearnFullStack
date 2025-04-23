@@ -1,8 +1,29 @@
 const sentences = [
-    {sentence: "Я люблю Україну", translat: "I love Ukraine"},
-    {sentence: "Сьогодні гарна погода", translat: "The weather is great today"},
-    {sentence: "Ви дивилися цей фільм?", translat: "Have you watched that movie?"},
-    {sentence: "В понеділок вихідний", translat: "Monday is a holiday"},
+    // LESSON 1
+    {sentence: "M-A-K-E", translat: ""},
+    {sentence: "W-O-R-K", translat: ""},
+    {sentence: "G-O-O-D", translat: ""},
+    {sentence: "U-S-E-D", translat: ""},
+    {sentence: "O-N-L-Y", translat: ""},
+    {sentence: "L-I-K-E", translat: ""},
+    {sentence: "U-S-E-D", translat: ""},
+    {sentence: "W-A-T-E-R", translat: ""},
+    {sentence: "T-I-M-E", translat: ""},
+    {sentence: "your name", translat: ""},
+
+    // LESSON 2
+
+    {sentence: "M-A-K-E", translat: ""},
+    {sentence: "W-O-R-K", translat: ""},
+    {sentence: "G-O-O-D", translat: ""},
+    {sentence: "U-S-E-D", translat: ""},
+    {sentence: "O-N-L-Y", translat: ""},
+    {sentence: "L-I-K-E", translat: ""},
+    {sentence: "U-S-E-D", translat: ""},
+    {sentence: "W-A-T-E-R", translat: ""},
+    {sentence: "T-I-M-E", translat: ""},
+    {sentence: "your name", translat: ""},
+
 ]
 
 export const FillitinExerciseData = sentences.map((value, index) => (

@@ -1,5 +1,18 @@
 const sentences = [
     //lesson 1
+    {beginning: "", word: "date", translat: "[deit]", ending: ""},
+    {beginning: "", word: "man", translat: "[mæn]", ending: ""},
+    {beginning: "", word: "home", translat: "[houm]", ending: ""},
+    {beginning: "", word: "shop", translat: "[ʃop]", ending: ""},
+    {beginning: "", word: "he", translat: "[hі:]", ending: ""},
+    {beginning: "", word: "pencil", translat: "[pensl]", ending: ""},
+    {beginning: "", word: "student", translat: "[stjudənt]", ending: ""},
+    {beginning: "", word: "cup", translat: "[kʌp]", ending: ""},
+    {beginning: "", word: "time", translat: "[taim]", ending: ""},
+    {beginning: "", word: "cry", translat: "[krai]", ending: ""},
+
+    //lesson 2
+
     {beginning: "", word: "Я", translat: "I", ending: "love Ukraine"},
     {beginning: "", word: "Вони", translat: "They", ending: "love Kyiv"},
     {beginning: "Today", word: "він", translat: "he", ending: "loves USA"},
@@ -11,7 +24,6 @@ const sentences = [
     {beginning: "Today", word: "він", translat: "he", ending: "loves USA"},
     {beginning: "Today", word: "він", translat: "he", ending: "loves USA"},
 
-    //lesson 2
 ]
 
 
@@ -29,19 +41,3 @@ export const ReplaceitExerciseData = sentences.map((value, index) => (
         }
     }
 ))
-
-// export const ReplaceitExerciseData = [
-//     {id: 1, lesson: 1, beginning: "", word: "Я", translat: "I", display_word: "block", display_translat: "none", ending: "love Ukraine"},
-//     {id: 2, lesson: 1, beginning: "", word: "Вони", translat: "They", display_word: "block", display_translat: "none", ending: "love Kyiv"},
-//     {id: 3, lesson: 1, beginning: "Today", word: "він", translat: "he", display_word: "block", display_translat: "none", ending: "loves USA"},
-//     {id: 4, lesson: 1, beginning: "", word: "Я", translat: "I", display_word: "block", display_translat: "none", ending: "love Ukraine"},
-//     {id: 5, lesson: 1, beginning: "", word: "Вони", translat: "They", display_word: "block", display_translat: "none", ending: "love Kyiv"},
-//     {id: 6, lesson: 1, beginning: "Today", word: "він", translat: "he", display_word: "block", display_translat: "none", ending: "loves USA"},
-//     {id: 7, lesson: 1, beginning: "", word: "Я", translat: "I", display_word: "block", display_translat: "none", ending: "love Ukraine"},
-//     {id: 8, lesson: 1, beginning: "", word: "Вони", translat: "They", display_word: "block", display_translat: "none", ending: "love Kyiv"},
-//     {id: 9, lesson: 1, beginning: "Today", word: "він", translat: "he", display_word: "block", display_translat: "none", ending: "loves USA"},
-//     {id: 10, lesson: 1, beginning: "Today", word: "він", translat: "he", display_word: "block", display_translat: "none", ending: "loves USA"},
-//     {id: 11, lesson: 2, beginning: "", word: "Вона", translat: "she", display_word: "block", display_translat: "none", ending: "loves England"},
-//     {id: 12, lesson: 2, beginning: "Of course", word: "ми", translat: "we", display_word: "block", display_translat: "none", ending: "love London"},
-    
-// ]
