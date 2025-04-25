@@ -7,6 +7,8 @@ const FrameWrapper = styled(MainFrameWrapper)`
 `
 
 const Frame = styled(MainFrame)`
+    position: relative;
+    max-width: 300px;
     padding: 0;
     display: flex;
     flex-direction: column;
@@ -15,7 +17,8 @@ const Frame = styled(MainFrame)`
 `
 
 const SignImage = styled.img`
-    width: 250px;
+    position: relative;
+    width: 100%;
     object-fit: cover;
     margin: 0;
 `

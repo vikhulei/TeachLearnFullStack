@@ -8,7 +8,7 @@ const images = importAll(
 
 const caption = [
     //LESSON 1
-    "Wait for another bus",
+    "Особлива пропозиція - знижка до 60%",
     "Do not touch",
     "Go another way",
     "Mind you step",
