@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { FrameWrapper, Frame, FrameHeading, SentenceWrapper, DialogName, DialogLine, Correct, DialogWrapper } from "./DialogStyle"
+import { Frame, FrameHeading, SentenceWrapper, DialogName, DialogLine, Correct, DialogWrapper } from "./DialogStyle"
 import { DialogData } from "./DialogData"
 import { useSelector } from "react-redux"
 
@@ -64,12 +64,7 @@ const Dialog = () => {
                         </SentenceWrapper>
                         </DialogWrapper>
                     ))}
-                </Frame>
-
-            // </FrameWrapper>
-        
-
-        
+                </Frame>        
     )
 }
 

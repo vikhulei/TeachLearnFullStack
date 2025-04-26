@@ -24,7 +24,6 @@ const Story = () => {
 
   return (
 
-    <FrameWrapper>
       <Frame>
         <FrameHeading>Story</FrameHeading>
           <Text>{storyData[0].story}</Text>
@@ -34,7 +33,6 @@ const Story = () => {
           </Correct>
       </Frame>
 
-    </FrameWrapper>
   )
 }
 

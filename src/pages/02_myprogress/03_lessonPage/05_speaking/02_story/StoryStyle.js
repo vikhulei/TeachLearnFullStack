@@ -37,6 +37,7 @@ const Text = styled(MainText)`
 `
 
 const Correct = styled(MainCorrect)`
+    white-space: pre-wrap;
     color: red;
     font-style: italic;
     font-size: 1rem;
