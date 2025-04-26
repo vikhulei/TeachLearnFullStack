@@ -1,15 +1,16 @@
 const rawDialogs = [
-    //LESSON 1
+//LESSON 1
 [
-    {question: "What is the boy’s1 name?", q_translate: "Як звати хлопця №1", answer: "Boy1", a_translate: "Хлопець 1"},
-    {question: "", q_translate: "", answer: "", a_translate: ""},
-    {question: "", q_translate: "", answer: "", a_translate: ""},
-    {question: "", q_translate: "", answer: "", a_translate: ""},
-    {question: "", q_translate: "", answer: "", a_translate: ""},
-    {question: "", q_translate: "", answer: "", a_translate: ""},
-    {question: "", q_translate: "", answer: "", a_translate: ""},
-    {question: "", q_translate: "", answer: "", a_translate: ""},
+    {question: "Привіт, як тебе звати?", q_translate: "Hi, what is your name?", answer: "Мене звати Девід.", a_translate: "My name is David."},
+    {question: "Звідки ти?", q_translate: "Where are you from?", answer: "Я з Англії.", a_translate: "I am from England."},
+    {question: "Скільки тобі років?", q_translate: "How old are you?", answer: "Мені 30 років.", a_translate: "I am 30 years old."},
+    {question: "Де ти живеш?", q_translate: "Where do you live?", answer: "Я живу в Лондоні.", a_translate: "I live in London."},
+    {question: "Ким ти працюєш?", q_translate: "What do you do?", answer: "Я інженер.", a_translate: "I am an engineer."},
+    {question: "Тобі подобається твоя робота?", q_translate: "Do you like your job?", answer: "Так, мені вона дуже подобається.", a_translate: "Yes, I like it very much."},
+    {question: "Які в тебе хобі?", q_translate: "What are your hobbies?", answer: "Мені подобається грати у футбол і дивитися фільми.", a_translate: "I like playing football and watching films."},
+    {question: "Радий з тобою познайомитись, Девіде!", q_translate: "Nice to meet you, David!", answer: "Також радий познайомитись з тобою, Анно!", a_translate: "Nice to meet you too, Anna!"},
     ],
+    
     
     //LESSON 2
     [

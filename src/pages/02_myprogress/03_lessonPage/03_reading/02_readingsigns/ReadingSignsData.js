@@ -9,10 +9,10 @@ const images = importAll(
 const caption = [
     //LESSON 1
     "Особлива пропозиція - знижка до 60%",
-    "Do not touch",
-    "Go another way",
-    "Mind you step",
-    "No pass through",
+    "Заходьте, відкрито, вибачте, закрито",
+    "Розпродаж, знижка до 50%",
+    "Вхід. Вихід",
+    "Тільки картки, без готівки",
     //LESSON 2
     "",
     "",

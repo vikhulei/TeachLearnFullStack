@@ -31,14 +31,16 @@ const Image = styled.img`
 const Text = styled.div`
     font-size: 1.4rem;
     text-wrap: nowrap;
+    line-height: 1.6;
     -webkit-tap-highlight-color: transparent;
 `
 
-const TextReading = styled(Text)`
+const TextReading = styled.div`
     height: 100%;
     white-space: pre-wrap;
     font-size: 1.2rem;
-    line-height: 1.5;
+    line-height: 2;
+    -webkit-tap-highlight-color: transparent;
 `
 
 const SentenceWrapper = styled(MainSentenceWrapper)`

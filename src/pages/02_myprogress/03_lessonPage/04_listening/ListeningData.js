@@ -14,19 +14,19 @@ const rawQuestions = [
     //LESSON 1
     //first question
     [
-        { question: "quest1", answer: "answer11" },
-        { question: "quest12", answer: "answer12" },
-        { question: "quest13", answer: "answer13" },
-        { question: "quest14", answer: "answer14" },
-        { question: "quest15", answer: "answer15" },
+        { question: "Як її звати?", answer: "Anna" },
+        { question: "Звідки вона приїхала?", answer: "Spain" },
+        { question: "Що її подобається робити?", answer: "read" },
+        { question: "Скільки їй років?", answer: "25" },
+        { question: "Поблизу чого вона живе?", answer: "sea" },
     ],
     //second question
     [
-        { question: "quest21", answer: "answer21" },
-        { question: "quest22", answer: "answer22" },
-        { question: "quest23", answer: "answer23" },
-        { question: "quest24", answer: "answer24" },
-        { question: "quest25", answer: "answer25" },
+        { question: "Звідки він приїхав?", answer: "Canada" },
+        { question: "Як його звати?", answer: "David" },
+        { question: "У що йому подобається грати?", answer: "soccer" },
+        { question: "З ким він живе?", answer: "family" },
+        { question: "Що йому подобається дивитися?", answer: "movies" },
     ],
 
     //LESSON 2

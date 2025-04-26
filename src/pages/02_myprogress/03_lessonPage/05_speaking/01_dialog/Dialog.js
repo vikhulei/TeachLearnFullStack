@@ -41,7 +41,7 @@ const Dialog = () => {
 
                         <SentenceWrapper>
                             <DialogName>
-                                Viktor:  &nbsp;
+                                Person 1:  &nbsp;
                             </DialogName>
                             <DialogLine id={index} onClick={clickQuestion}>
                                 {value.question} &nbsp;
@@ -53,7 +53,7 @@ const Dialog = () => {
 
                         <SentenceWrapper>
                             <DialogName>
-                                Natasha:  &nbsp;
+                                Person 2:  &nbsp;
                             </DialogName>
                             <DialogLine id={index} onClick={clickAnswer}>
                                 {value.answer} &nbsp;
