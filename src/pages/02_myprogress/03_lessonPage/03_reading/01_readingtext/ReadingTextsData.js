@@ -4,7 +4,7 @@ function importAll(r) {
 
 const text = [
     //TEXT 1
-    'Many people need water every day to live. \n \nSome places don’t have enough, so they must find new ways to get it. \n \nThere are different tools that people can use to clean water. \n \nMost of these tools are good, but some are only used in big cities. \n \nOther tools are also made for small towns. \n \nAll of this work is about helping people stay healthy. \n \nEven kids can learn what to do to get water. \n \nIt took a long time, but things are just starting to improve. \n \nPeople like to see progress, because it gives them hope.',
+    'Many <b>people</b> need water every day to live. \n \nSome places don’t have enough, so they must find new ways to get it. \n \nThere are different tools that people can use to clean water. \n \nMost of these tools are good, but some are only used in big cities. \n \nOther tools are also made for small towns. \n \nAll of this work is about helping people stay healthy. \n \nEven kids can learn what to do to get water. \n \nIt took a long time, but things are just starting to improve. \n \nPeople like to see progress, because it gives them hope.',
     //TEXT 2
     'TEXT 2 Liam and Emma love to explore the world. One day, they found an old map in their grandfather\’s attic. “We need to find out where this leads!” Emma said excitedly. The information on the map was faded, but it showed a big red "X" in the middle of a forest. "How much treasure do you think is buried there?" Liam asked. \n \n "Let\'s take the map and go on an adventure!" Emma said. The two of them packed their bags and set off. They didn\'t know what they would find, but they knew one thing for sure—they want an adventure over anything else! ',
     //TEXT 3

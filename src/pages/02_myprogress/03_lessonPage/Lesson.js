@@ -18,8 +18,8 @@ const Lesson = () => {
                 Lesson {currentLesson}
             </Header>
             <LessonsRange />
-            <Vocabulary/>
             <Grammar/>
+            <Vocabulary/>
             <Reading/>
             <Listening/>
             <Speaking/>
