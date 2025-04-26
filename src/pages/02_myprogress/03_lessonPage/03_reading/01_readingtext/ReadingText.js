@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import parse from 'html-react-parser'
 import { FrameWrapper, FrameReadingLeft, FrameReadingRight, RightFrameWrapper, Image, TextReading, SentenceWrapper, Question, Correct, ReadingInput } from "./ReadingTextStyle"
 import { ReadingTextData } from "./ReadingTextsData"
 import { colors } from "../../../../../components/01_config/Colors"
@@ -34,7 +35,7 @@ const ReadingText = () => {
     return (
         <FrameWrapper>
             <FrameReadingLeft>
-                <TextReading>{readingText[0].text}</TextReading>
+                <TextReading>{parse(readingText[0].text)}</TextReading>
             </FrameReadingLeft>
             <RightFrameWrapper>
                 <FrameReadingRight>
