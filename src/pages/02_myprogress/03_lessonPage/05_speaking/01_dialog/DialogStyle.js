@@ -10,6 +10,7 @@ const FrameWrapper = styled(MainFrameWrapper)`
 const Frame = styled(MainFrame)`
     flex-direction: column;
     gap: 30px;
+    align-items: start;
     // max-width: 70vw;
     // width: 800px;
 `
@@ -29,9 +30,10 @@ const DialogWrapper = styled.div`
 `
 
 const SentenceWrapper = styled(MainSentenceWrapper)`
-    flex-direction: row;
+    // flex-direction: row;
     max-width: none;
     flex-wrap: wrap;
+    line-height: 1;
 `
 
 const DialogName = styled.div`
@@ -40,6 +42,8 @@ const DialogName = styled.div`
 
 const DialogLine = styled(MainQuestion)`
     font-style: italic;
+    word-wrap: wrap;
+    text-wrap: wrap;
 `
 
 

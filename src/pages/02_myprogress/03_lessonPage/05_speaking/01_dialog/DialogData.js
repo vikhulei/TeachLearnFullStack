@@ -33,13 +33,26 @@ const dialogs = rawDialogs.map((value, index) => (
             id: ind+1,
             question: val.question,
             q_translate: val.q_translate,
-            q_visibility: "hidden",
+            q_display: "none",
             answer: val.answer,
             a_translate: val.a_translate,
-            a_visibility: "hidden"
+            a_display: "none"
         }
     ))
 ))
+// const dialogs = rawDialogs.map((value, index) => (
+//     value.map((val, ind) => (
+//         {
+//             id: ind+1,
+//             question: val.question,
+//             q_translate: val.q_translate,
+//             q_visibility: "hidden",
+//             answer: val.answer,
+//             a_translate: val.a_translate,
+//             a_visibility: "hidden"
+//         }
+//     ))
+// ))
 
 export const DialogData = dialogs.map((dialog, index) => (
     {

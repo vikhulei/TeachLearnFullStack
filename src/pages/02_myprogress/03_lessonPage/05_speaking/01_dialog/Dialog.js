@@ -15,7 +15,7 @@ const Dialog = () => {
         e.preventDefault();
         let currentId = Number(e.currentTarget.id) 
         setDialogData((prevDialogData) => prevDialogData.map(value =>
-            ({ ...value, dialog: value.dialog.map((val, ind) => ind === currentId ? {...val, q_visibility: val.q_visibility === "visible" ? "hidden" : "visible"} : val) })
+            ({ ...value, dialog: value.dialog.map((val, ind) => ind === currentId ? {...val, q_display: val.q_display === "block" ? "none" : "block"} : val) })
         ))
     }
 
@@ -23,7 +23,7 @@ const Dialog = () => {
         e.preventDefault();
         let currentId = Number(e.currentTarget.id) 
         setDialogData((prevDialogData) => prevDialogData.map(value =>
-            ({ ...value, dialog: value.dialog.map((val, ind) => ind === currentId ? {...val, a_visibility: val.a_visibility === "visible" ? "hidden" : "visible"} : val) })
+            ({ ...value, dialog: value.dialog.map((val, ind) => ind === currentId ? {...val, a_display: val.a_display === "block" ? "none" : "block"} : val) })
         ))
     }
 
@@ -33,7 +33,7 @@ const Dialog = () => {
 
     return (
 
-            <FrameWrapper>
+            // <FrameWrapper>
                 <Frame>
                     <FrameHeading>Dialog</FrameHeading>
                     {dialogData[0].dialog.map((value, index) => (
@@ -46,7 +46,7 @@ const Dialog = () => {
                             <DialogLine id={index} onClick={clickQuestion}>
                                 {value.question} &nbsp;
                             </DialogLine>
-                            <Correct style={{visibility: value.q_visibility}}>
+                            <Correct style={{display: value.q_display}}>
                                 {value.q_translate}
                             </Correct>
                         </SentenceWrapper>
@@ -58,7 +58,7 @@ const Dialog = () => {
                             <DialogLine id={index} onClick={clickAnswer}>
                                 {value.answer} &nbsp;
                             </DialogLine>
-                            <Correct style={{visibility: value.a_visibility}}>
+                            <Correct style={{display: value.a_display}}>
                                 {value.a_translate}
                             </Correct>
                         </SentenceWrapper>
@@ -66,7 +66,7 @@ const Dialog = () => {
                     ))}
                 </Frame>
 
-            </FrameWrapper>
+            // </FrameWrapper>
         
 
         
