@@ -28,7 +28,7 @@ const Image = styled.img`
 `
 
 const SentenceWrapper = styled(MainSentenceWrapper)`
-
+    text-align: center;
 `
 
 const Question = styled(MainQuestion)`
