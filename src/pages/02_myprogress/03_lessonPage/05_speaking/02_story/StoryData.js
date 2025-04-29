@@ -1,7 +1,7 @@
 const stories = [
     {
         story:
-            'Привіт, мене звати Лєна. \nЯ з України. \nЯ нещодавно приїхала до Великої Британії. \nЯ живу в Стратфорді. \nПрацюю в кавярні Coffee #1. \nЗараз я вивчаю англійську мову. \nМені подобається знайомитися з новими людьми. \nУ вільний час я люблю читати і гуляти вздовж каналу. \nЯ рада бути тут!',
+            'Привіт, мене звати Лєна. \nЯ з України. \nЯ приїхала до Великої Британії в лютому 2023р. \nЯ живу в Стратфорді. \nПрацюю в кавярні Coffee #1 в центрі міста. \nЗараз я вивчаю англійську мову. \nМені подобається знайомитися з новими людьми. \nУ вільний час я люблю читати і гуляти вздовж каналу. \nЯ рада бути тут!',
         translation:
             'Hello, my name is Lena. \nI am from Ukraine.\nI arrived in the UK in February 2023. \nI live in Stratford-upon-Avon. \nI work in Coffee #1 in the the center of the town. \nI am learning English now. \nI like meeting new people. \nIn my free time, I enjoy reading, walking along the canal. \nI am happy to be here!'
     },
