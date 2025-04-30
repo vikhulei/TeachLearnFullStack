@@ -3,6 +3,7 @@ import { colors } from "../../../../components/01_config/Colors";
 
 const Wrapper = styled.div`
     width: 70vw;
+    max-width: 800px;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
