@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { sizes } from "../../components/01_config/Sizes";
 import { colors } from "../../components/01_config/Colors";
+import { MainFrame, MainText } from "../../components/01_config/MainStyles"
 
 
 const Wrapper = styled.div`
@@ -32,5 +33,7 @@ const Header = styled.div`
         font-size: 2rem
     }
 `
+
+
 
 export { Wrapper, Header }

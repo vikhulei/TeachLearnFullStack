@@ -1,4 +1,5 @@
-import { Wrapper, Header } from "./GrammarStyle"
+import Content from "./01_content/Content"
+import { Wrapper, Header  } from "./GrammarStyle"
 
 
 const Grammar = () => {
@@ -7,6 +8,7 @@ const Grammar = () => {
       <Header>
         Grammar
       </Header>
+      <Content />
     </Wrapper>
   )
 }
