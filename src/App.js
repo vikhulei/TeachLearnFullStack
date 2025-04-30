@@ -6,10 +6,10 @@ import Home from './pages/01_home/Home';
 import MyProgress from "./pages/02_myprogress/MyProgress"
 import Lesson from './pages/02_myprogress/03_lessonPage/Lesson';
 import Vocabulary from './pages/03_vocabulary/Vocabulary';
-import Reading from "./pages/04_reading/Reading"
-import Listening from "./pages/05_listening/Listening"
-import Speaking from "./pages/06_speaking/Speaking"
-import Grammar from "./pages/07_grammar/Grammar"
+import Grammar from "./pages/04_grammar/Grammar"
+import Reading from "./pages/05_reading/Reading"
+import Listening from "./pages/06_listening/Listening"
+import Speaking from "./pages/07_speaking/Speaking"
 import Contacts from "./pages/08_contacts/Contacts"
 import Footer from './components/03_footer/Footer';
 
