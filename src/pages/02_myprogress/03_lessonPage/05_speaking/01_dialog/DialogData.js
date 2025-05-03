@@ -25,6 +25,118 @@ const rawDialogs = [
     ],
     
     
+    
+    //LESSON 3
+    [
+    {question: "What is the boy’s2 name?", q_translate: "Як звати хлопця №2", answer: "Boy2", a_translate: "Хлопець 2"},
+    {question: "", q_translate: "", answer: "", a_translate: ""},
+    {question: "", q_translate: "", answer: "", a_translate: ""},
+    {question: "", q_translate: "", answer: "", a_translate: ""},
+    {question: "", q_translate: "", answer: "", a_translate: ""},
+    {question: "", q_translate: "", answer: "", a_translate: ""},
+    {question: "", q_translate: "", answer: "", a_translate: ""},
+    {question: "", q_translate: "", answer: "", a_translate: ""},
+    ],
+    
+    
+    
+    //LESSON 4
+    [
+    {question: "What is the boy’s2 name?", q_translate: "Як звати хлопця №2", answer: "Boy2", a_translate: "Хлопець 2"},
+    {question: "", q_translate: "", answer: "", a_translate: ""},
+    {question: "", q_translate: "", answer: "", a_translate: ""},
+    {question: "", q_translate: "", answer: "", a_translate: ""},
+    {question: "", q_translate: "", answer: "", a_translate: ""},
+    {question: "", q_translate: "", answer: "", a_translate: ""},
+    {question: "", q_translate: "", answer: "", a_translate: ""},
+    {question: "", q_translate: "", answer: "", a_translate: ""},
+    ],
+    
+    
+    
+    //LESSON 5
+    [
+    {question: "What is the boy’s2 name?", q_translate: "Як звати хлопця №2", answer: "Boy2", a_translate: "Хлопець 2"},
+    {question: "", q_translate: "", answer: "", a_translate: ""},
+    {question: "", q_translate: "", answer: "", a_translate: ""},
+    {question: "", q_translate: "", answer: "", a_translate: ""},
+    {question: "", q_translate: "", answer: "", a_translate: ""},
+    {question: "", q_translate: "", answer: "", a_translate: ""},
+    {question: "", q_translate: "", answer: "", a_translate: ""},
+    {question: "", q_translate: "", answer: "", a_translate: ""},
+    ],
+    
+    
+    
+    //LESSON 6
+    [
+    {question: "What is the boy’s2 name?", q_translate: "Як звати хлопця №2", answer: "Boy2", a_translate: "Хлопець 2"},
+    {question: "", q_translate: "", answer: "", a_translate: ""},
+    {question: "", q_translate: "", answer: "", a_translate: ""},
+    {question: "", q_translate: "", answer: "", a_translate: ""},
+    {question: "", q_translate: "", answer: "", a_translate: ""},
+    {question: "", q_translate: "", answer: "", a_translate: ""},
+    {question: "", q_translate: "", answer: "", a_translate: ""},
+    {question: "", q_translate: "", answer: "", a_translate: ""},
+    ],
+    
+    
+    
+    //LESSON 7
+    [
+    {question: "What is the boy’s2 name?", q_translate: "Як звати хлопця №2", answer: "Boy2", a_translate: "Хлопець 2"},
+    {question: "", q_translate: "", answer: "", a_translate: ""},
+    {question: "", q_translate: "", answer: "", a_translate: ""},
+    {question: "", q_translate: "", answer: "", a_translate: ""},
+    {question: "", q_translate: "", answer: "", a_translate: ""},
+    {question: "", q_translate: "", answer: "", a_translate: ""},
+    {question: "", q_translate: "", answer: "", a_translate: ""},
+    {question: "", q_translate: "", answer: "", a_translate: ""},
+    ],
+    
+    
+    
+    //LESSON 8
+    [
+    {question: "What is the boy’s2 name?", q_translate: "Як звати хлопця №2", answer: "Boy2", a_translate: "Хлопець 2"},
+    {question: "", q_translate: "", answer: "", a_translate: ""},
+    {question: "", q_translate: "", answer: "", a_translate: ""},
+    {question: "", q_translate: "", answer: "", a_translate: ""},
+    {question: "", q_translate: "", answer: "", a_translate: ""},
+    {question: "", q_translate: "", answer: "", a_translate: ""},
+    {question: "", q_translate: "", answer: "", a_translate: ""},
+    {question: "", q_translate: "", answer: "", a_translate: ""},
+    ],
+    
+    
+    
+    //LESSON 9
+    [
+    {question: "What is the boy’s2 name?", q_translate: "Як звати хлопця №2", answer: "Boy2", a_translate: "Хлопець 2"},
+    {question: "", q_translate: "", answer: "", a_translate: ""},
+    {question: "", q_translate: "", answer: "", a_translate: ""},
+    {question: "", q_translate: "", answer: "", a_translate: ""},
+    {question: "", q_translate: "", answer: "", a_translate: ""},
+    {question: "", q_translate: "", answer: "", a_translate: ""},
+    {question: "", q_translate: "", answer: "", a_translate: ""},
+    {question: "", q_translate: "", answer: "", a_translate: ""},
+    ],
+    
+    
+    
+    //LESSON 10
+    [
+    {question: "What is the boy’s2 name?", q_translate: "Як звати хлопця №2", answer: "Boy2", a_translate: "Хлопець 2"},
+    {question: "", q_translate: "", answer: "", a_translate: ""},
+    {question: "", q_translate: "", answer: "", a_translate: ""},
+    {question: "", q_translate: "", answer: "", a_translate: ""},
+    {question: "", q_translate: "", answer: "", a_translate: ""},
+    {question: "", q_translate: "", answer: "", a_translate: ""},
+    {question: "", q_translate: "", answer: "", a_translate: ""},
+    {question: "", q_translate: "", answer: "", a_translate: ""},
+    ],
+    
+    
 ]
 
 const dialogs = rawDialogs.map((value, index) => (

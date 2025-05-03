@@ -1,12 +1,13 @@
-import { FrameContent, Text } from "./ContentStyle"
+import { FrameContent, FrameHeading, Text } from "./ContentStyle"
 import { ContentData } from "./ContentData"
 
 const Content = () => {
   return (
     <FrameContent>
+        <FrameHeading>List of Topics</FrameHeading>
         {ContentData.map((value, index) => (
             <Text key={index}>
-                {value}
+                {index+1}. {value}
             </Text>
         ))}
     </FrameContent>
