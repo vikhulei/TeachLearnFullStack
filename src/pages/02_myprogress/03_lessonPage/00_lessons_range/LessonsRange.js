@@ -1,5 +1,5 @@
 import { useSelector, useDispatch } from "react-redux"
-import { Wrapper, Circle } from "./LessonsRangeStyle"
+import { Wrapper, Circle, Back } from "./LessonsRangeStyle"
 import { updateCurrentLesson } from "../../../../features/lessons/lessonSlice"
 
 
@@ -23,6 +23,11 @@ const LessonsRange = () => {
                     </Circle>
                 </div>
             ))}
+            <Back
+                to="/myprogress/"
+            >
+                BACK
+            </Back>
         </Wrapper>
     )
 }
