@@ -18,6 +18,7 @@ const Icon = styled.img`
 const SentenceWrapper = styled(MainSentenceWrapper)`
     flex-direction: row;
     line-height: 1;
+    justify-content: center;
 `
 
 const Text = styled(MainText)`

@@ -6,6 +6,9 @@ import { ReplaceitExerciseData } from "./ReplaceitExerciseData"
 
 const ReplaceitExercise = () => {
 
+    console.log(ReplaceitExerciseData)
+
+    // const currentLesson = 2
     const currentLesson = useSelector(state => state.lesson.currentLesson)
 
     const [replaceitExerciseData, setReplaceitExerciseData] = useState(
@@ -27,7 +30,7 @@ useEffect(() => {
         <Frame>
             <FrameHeading>replace it</FrameHeading>
             <Icon src={replace} />
-            {replaceitExerciseData.filter(val => val.lesson === 1).map((value, index) => (
+            {replaceitExerciseData.map((value, index) => (
                 <SentenceWrapper key={index}>
                     <Text>{value.sentence.beginning}&nbsp;</Text>
                     <BoldWordWrapper id={value.id} onClick={clickReplaceWord}>
