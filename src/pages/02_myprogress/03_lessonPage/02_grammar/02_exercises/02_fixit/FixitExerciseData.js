@@ -12,14 +12,14 @@ const sentences = [
 
     //LESSON 2
 
-    {beginning: "I", bold: "to be ", correct: "am", ending: "a student (зараз)"},
-    {beginning: "You", bold: "to be ", correct: "were", ending: "a worker (в минулому)"},
-    {beginning: "He", bold: "to be ", correct: "will be", ending: "in school (завтра)"},
-    {beginning: "She", bold: "to be ", correct: "is", ending: "happy (сьогодні)"},
-    {beginning: "We", bold: "to be ", correct: "were", ending: "at home (вчора)"},
-    {beginning: "beginning text", bold: "word text2", correct: "translate text", ending: "ending text"},
-    {beginning: "beginning text", bold: "word text3", correct: "translate text", ending: "ending text"},
-    {beginning: "beginning text", bold: "word text3", correct: "translate text", ending: "ending text"},
+    {beginning: "I", bold: "to be (зараз)", correct: "am", ending: "a student "},
+    {beginning: "You", bold: "to be (в минулому)", correct: "were", ending: "a worker"},
+    {beginning: "He", bold: "to be (завтра)", correct: "will be", ending: "at school"},
+    {beginning: "She", bold: "to be (зараз)", correct: "is", ending: "happy"},
+    {beginning: "We", bold: "to be (вчора)", correct: "were", ending: "at home"},
+    {beginning: "Students", bold: "to be not (зараз)", correct: "are not", ending: "in the class"},
+    {beginning: "The boy", bold: "to be not (завтра)", correct: "will not be", ending: "at work"},
+    {beginning: "We", bold: "to be (зараз)", correct: "are", ending: "friends"},
 ]
 
 export const FixitExerciseData = sentences.map((value, index) => (
