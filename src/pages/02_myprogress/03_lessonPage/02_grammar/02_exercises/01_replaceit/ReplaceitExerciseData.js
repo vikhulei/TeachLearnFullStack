@@ -90,7 +90,28 @@ const sentences = [
     { beginning: "We", word: "говоримо", translat: "are talking", ending: "about something important" },
     { beginning: "My family", word: "обідає", translat: "is having", ending: "dinner" },
     //lesson 9
-
+    {beginning: "She", word: "читає", translat: "is not reading", ending: "a new book"},
+    {beginning: "They", word: "не тримали", translat: "were not keeping", ending: "the door open"},
+    {beginning: "We", word: "приєднаємося", translat: "will be joining", ending: "this project"},
+    {beginning: "He", word: "починає", translat: "is starting", ending: "a new job"},
+    {beginning: "I", word: "вивчав", translat: "was learning", ending: "a lot last year"},
+    {beginning: "The teacher", word: "допомагатиме", translat: "will be helping", ending: "every student"},
+    {beginning: "They", word: "працюють", translat: "are working", ending: "in the field now"},
+    {beginning: "We", word: "будемо будувати", translat: "will be building", ending: "a large house"},
+    {beginning: "She", word: "кликала", translat: "was calling", ending: "us"},
+    {beginning: "He", word: "робив", translat: "was making", ending: "the files available"},
+    //lesson 10
+    {beginning: "I", word: "Я", translat: "have lived", ending: "here for 10 years"},
+    {beginning: "We both", word: "word text2", translat: "have worked", ending: "here since Summer"},
+    {beginning: "They", word: "word text3", translat: "have given", ending: "us the keys"},
+    {beginning: "Scientists", word: "word text4", translat: "have studied", ending: "human behaviour for centuries"},
+    {beginning: "Both teams", word: "word text5", translat: "have played", ending: "well"},
+    {beginning: "She", word: "word text6", translat: "has searched", ending: "for it since last week"},
+    {beginning: "We", word: "word text7", translat: "have lived", ending: "without the car for a month"},
+    {beginning: "She", word: "word text8", translat: "has found", ending: "something interesting"},
+    {beginning: "They", word: "word text9", translat: "have come", ending: "to visit us"},
+    {beginning: "We", word: "word text10", translat: "have met", ending: "the local guide"},
+    
 ]
 
 
