@@ -20,6 +20,19 @@ const sentences = [
     {beginning: "Students", bold: "to be not (зараз)", correct: "are not", ending: "in the class"},
     {beginning: "The boy", bold: "to be not (завтра)", correct: "will not be", ending: "at work"},
     {beginning: "We", bold: "to be (зараз)", correct: "are", ending: "friends"},
+
+    //LESSON 3
+    {beginning: "I", bold: "find", correct: "find", ending: "this book interesting"},
+    {beginning: "She", bold: "eat", correct: "eats", ending: "too much sugar"},
+    {beginning: "It", bold: "take", correct: "takes", ending: "a lot of time"},
+    {beginning: "I", bold: "want", correct: "want", ending: "a new phone"},
+    {beginning: "This message", bold: "sound", correct: "sounds", ending: "very important"},
+    {beginning: "My family", bold: "live", correct: "lives", ending: "in the city"},
+    {beginning: "He", bold: "give", correct: "gives", ending: "a good example"},
+    {beginning: "I", bold: "listen", correct: "listen", ending: "to the music"},
+    //LESSON 4
+    
+       
 ]
 
 export const FixitExerciseData = sentences.map((value, index) => (

@@ -6,8 +6,6 @@ import { ReplaceitExerciseData } from "./ReplaceitExerciseData"
 
 const ReplaceitExercise = () => {
 
-    console.log(ReplaceitExerciseData)
-
     // const currentLesson = 2
     const currentLesson = useSelector(state => state.lesson.currentLesson)
 

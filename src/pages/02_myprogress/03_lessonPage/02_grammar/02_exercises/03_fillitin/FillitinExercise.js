@@ -50,8 +50,8 @@ const FillitinExercise = () => {
                         {value.sentence.sentence}
                     </Text>
                     <FillInInput
-                        style={{backgroundColor: value.input === value.translat ? `${colors.green}` : ""}}
-                        id={value.id - 1}
+                        style={{backgroundColor: value.input === value.sentence.translat ? `${colors.green}` : ""}}
+                        id={index}
                         value={value.input}
                         onInput={fillInput}
                     />

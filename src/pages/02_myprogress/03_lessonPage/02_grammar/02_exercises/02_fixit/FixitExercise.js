@@ -21,6 +21,7 @@ const FixitExercise = () => {
 
     const fillInput = (e) => {
         let newGrammarFixit = [...grammarFixit]
+        newGrammarFixit[e.currentTarget.id].input = 22
         newGrammarFixit[e.currentTarget.id].input = e.currentTarget.value
         setFixitExerciseData(newGrammarFixit)
     }
@@ -41,7 +42,8 @@ const FixitExercise = () => {
                     <FixitInput
                         style={{color: value.input === value.sentence.correct ? `${colors.greenWord}` : ""}}
                         value={value.input}
-                        id={value.id - 1}
+                        id={index}
+                        // id={value.id - 1}
                         onInput={fillInput}
                     />
                     <Correct style={{ visibility: value.visibility }}>&nbsp;{value.sentence.correct}</Correct>

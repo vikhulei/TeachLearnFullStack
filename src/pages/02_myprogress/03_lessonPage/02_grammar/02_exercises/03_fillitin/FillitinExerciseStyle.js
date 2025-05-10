@@ -1,14 +1,8 @@
 import styled from "styled-components";
 import { MainCorrect, MainFrame, MainHeadingColor, MainInput, MainSentenceWrapper, MainText } from "../../../../../../components/01_config/MainStyles";
 
-// const FillInSentence = styled.div`
-//     font-size: 1.4rem;
-//     text-align: center;
-//     cursor: pointer;
-// `
-
 const FillInInput = styled(MainInput)`
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     text-align: center;
     height: 30px;
     margin: 0 auto;
@@ -35,6 +29,7 @@ const SentenceWrapper = styled(MainSentenceWrapper)`
 `
 
 const Text = styled(MainText)`
+    font-size: 1.1rem;
     cursor: pointer;
     -webkit-tap-highlight-color: transparent;
 `
