@@ -109,6 +109,16 @@ const sentences = [
 
 
     // LESSON 10
+    { sentence: "Чи впала темперетура?", translat: "Has the temperature dropped?" },
+    { sentence: "Вони об'єдналися з іншою командою?", translat: "Have they united with another team?" },
+    { sentence: "Ви чули це слово раніше?", translat: "Have you heard this word before?" },
+    { sentence: "Вона додала ваги?", translat: "Has she gained weight?" },
+    { sentence: "Чи використовував він силу?", translat: "Has he used force?" },
+    { sentence: "Ти загубив ключ від моєї комірки?", translat: "Have you lost the key to my locker?" },
+    { sentence: "Чи бачили ми світло?", translat: "Have we seen the light?" },
+    { sentence: "Вони проігнорували всі попередження?", translat: "Have they ignored all warnings?" },
+    { sentence: "Чи зробив я багато за сьогодні?", translat: "Have I done a lot today?" },
+    { sentence: "Вона закінчила навчання (тренінг)?", translat: "Has she completed the training?" },
 
 ]
 
