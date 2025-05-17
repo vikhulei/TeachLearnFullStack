@@ -22,7 +22,7 @@ She woke up early. Her job didn’t start for hours. At home, she liked to read 
     //LESSON 7
     '<b>A DAY OF LEARNING</b> \n It is possible to learn something new every day. Gail visited the library to read about various topics. One card gave her access to all the books. Some ideas were difficult to understand. But she liked to consider different views. The beauty of nature always inspired her. In fact, she often wrote poems about it. She found a product that helped her study better. She met a small group of students every week. Together, they shared thoughts and helped each other grow.',
     //LESSON 8
-    '<b>THE WAY FORWARD</b> \nToday, she focused on her training. It made sense to practice every day. She stayed in school until late. The current lesson was difficult, but she kept trying. A small amount of progress felt big to her. Simply showing up was part of the work. National tests were coming soon. Until then, she would keep learning. Her training gave her purpose. And slowly, it all began to make sense.',
+    '<b>THE WAY FORWARD</b> \nToday, Kelly focused on her training. It made sense to practice every day. She stayed in school until late. The current lesson was difficult, but she kept trying. A small amount of progress felt big to her. Simply showing up was part of the work. National tests were coming soon. Until then, she would keep learning. Her training gave her purpose. And slowly, it all began to make sense.',
     //LESSON 9
     '<b>THE DIGITAL MOVE</b>\nThe web is a useful tool today. Many people develop new ideas online. Every page tells a story. The media industry grows fast. Activity on the internet never stops. One thing is clear: we must move forward. To use technology well is important. It helps us connect and learn. The digital world is always changing. We all take part in this new story.',
     //LESSON 10
@@ -92,11 +92,11 @@ const rawQuestions = [
     ],
     //lesson 8
     [
-        { question: "What is the man’s1 name?", answer: "Human1" },
-        { question: "What is the man’s2 name?", answer: "Human2" },
-        { question: "What is the man’s3 name?", answer: "Human3" },
-        { question: "Which  symbol was on the map?", answer: "Human4" },
-        { question: "What is the man’s5 name?", answer: "Human5" },
+        { question: "На чому зосередилася Келлі сьогодні?", answer: "training" },
+        { question: "Що потрібно було робити кожного дня?", answer: "practice" },
+        { question: "Яким був поточний урок?", answer: "difficult" },
+        { question: "Коли мав відбутися національний екзамен?", answer: "soon" },
+        { question: "Що їй давало навчання?", answer: "purpose" },
     ],
     //lesson 9
     [
