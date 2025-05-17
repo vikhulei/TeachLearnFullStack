@@ -196,6 +196,7 @@ const MainDashedInput = styled.input`
     font-style: italic;
     line-height: 0.5;
     outline: none;
+    text-align: center;
 `
 
 export { MainWrapper, MainSectionWrapper, MainHeader, MainBodyText, MainBodyTextColumn, MainHeading, MainHeadingColumn, MainHeadingCapital, MainHeadingColor, MainButton, OutlineButton, MainFrameWrapper, MainFrame, MainFrameImage, MainText, MainImage, MainInput, MainCorrect, MainSentenceWrapper, MainQuestion, MainDashedInput }

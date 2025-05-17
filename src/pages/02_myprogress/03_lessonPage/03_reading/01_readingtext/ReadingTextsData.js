@@ -20,7 +20,7 @@ She woke up early. Her job didn’t start for hours. At home, she liked to read 
     //LESSON 6
     '<b>TWO IN LOVE</b> \nThey walked to the market together. A bird sang from a nearby tree. Sometimes, small things bring joy. He tried to create a simple life. She was his quiet guide. They would say little, but understand much. Change didn\’t scare them anymore. Their interest was in each day, not just the future. They stayed close, even in silence. And that was enough. ',
     //LESSON 7
-    '<b>A DAY OF LEARNING</b> \n It was possible to learn something new every day. She visited the library to read about various topics. One card gave her access to all the books. Some ideas were difficult to understand. But she liked to consider different views. The beauty of nature always inspired her. In fact, she often wrote poems about it. She found a product that helped her study better. A small group of students met every week. Together, they shared thoughts and helped each other grow.',
+    '<b>A DAY OF LEARNING</b> \n It is possible to learn something new every day. Gail visited the library to read about various topics. One card gave her access to all the books. Some ideas were difficult to understand. But she liked to consider different views. The beauty of nature always inspired her. In fact, she often wrote poems about it. She found a product that helped her study better. She met a small group of students every week. Together, they shared thoughts and helped each other grow.',
     //LESSON 8
     '<b>THE WAY FORWARD</b> \nToday, she focused on her training. It made sense to practice every day. She stayed in school until late. The current lesson was difficult, but she kept trying. A small amount of progress felt big to her. Simply showing up was part of the work. National tests were coming soon. Until then, she would keep learning. Her training gave her purpose. And slowly, it all began to make sense.',
     //LESSON 9
@@ -84,11 +84,11 @@ const rawQuestions = [
     ],
     //lesson 7
     [
-        { question: "What is the man’s1 name?", answer: "Human1" },
-        { question: "What is the man’s2 name?", answer: "Human2" },
-        { question: "What is the man’s3 name?", answer: "Human3" },
-        { question: "Which  symbol was on the map?", answer: "Human4" },
-        { question: "What is the man’s5 name?", answer: "Human5" },
+        { question: "Що відвідувала Гейл?", answer: "library" },
+        { question: "Що давало їй доступ до всіх книг?", answer: "card" },
+        { question: "Краса чого її надихала?", answer: "nature" },
+        { question: "Що допомагало їй вчитися краще?", answer: "product" },
+        { question: "Як часто вона зустрічалася зі студентами (два слова)?", answer: "every week" },
     ],
     //lesson 8
     [

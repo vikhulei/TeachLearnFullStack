@@ -44,12 +44,15 @@ const TextReading = styled.div`
 `
 
 const SentenceWrapper = styled(MainSentenceWrapper)`
+    text-align: center;
 `
 
 const Question = styled(MainQuestion)`
+    white-space: pre-wrap;
 `
 
 const ReadingInput = styled(MainDashedInput)`
+    margin: 0 auto;
 `
 
 const Correct = styled(MainCorrect)`
