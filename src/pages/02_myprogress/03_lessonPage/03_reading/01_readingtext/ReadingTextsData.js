@@ -11,7 +11,7 @@ const text = [
     //TEXT 3
     `A SIMPLE DAY\n \nA few birds sang. I think they were happy. The sky was free of clouds. It was warm too. After breakfast, I used my computer. It was the best part of the day. Life felt calm and slow. I smiled all morning. The day was quiet. It was a good day.`,
     //LESSON 4
-    `1. The best part was over. \n2. She walked across the field. \n3. Help was not available right away. \n4. He sat down to wait. \n5. A local man passed by. \n6. Something felt strange. \n7. In general, things were quiet. \n8. The process took time. \n9. The heat was rising fast. \n10 They had enough for now.`,
+    `1. The best part was over. \n2. She walked across the field. \n3. Help was not available right away. \n4. He sat down to wait. \n5. A local man passed by. \n6. They felt strange. \n7. In general, things were quiet. \n8. The process took time. \n9. The heat was rising fast. \n10 They had enough for now.`,
 
     //LESSON 5
     `<b>A QUIET MORNING</b>
@@ -52,19 +52,19 @@ const rawQuestions = [
     ],
     //lesson 3
     [
-        { question: "What is the man’s1 name?", answer: "Human1" },
-        { question: "What is the man’s2 name?", answer: "Human2" },
-        { question: "What is the man’s3 name?", answer: "Human3" },
-        { question: "Which  symbol was on the map?", answer: "Human4" },
-        { question: "What is the man’s5 name?", answer: "Human5" },
+        { question: "Що робили пташки?", answer: "sang" },
+        { question: "Чого не було на небі?", answer: "clouds" },
+        { question: "Після чого я працювала на комп'ютері?", answer: "breakfast" },
+        { question: "Що я робила весь ранок?", answer: "smiled" },
+        { question: "Яким був день?", answer: "quiet" },
     ],
     //lesson 4
     [
-        { question: "What is the man’s1 name?", answer: "Human1" },
-        { question: "What is the man’s2 name?", answer: "Human2" },
-        { question: "What is the man’s3 name?", answer: "Human3" },
-        { question: "Which  symbol was on the map?", answer: "Human4" },
-        { question: "What is the man’s5 name?", answer: "Human5" },
+        { question: "2 - Через що вона йшла?", answer: "field" },
+        { question: "4 - Для чого він сів?", answer: "wait" },
+        { question: "6 - Як вони себе почували?", answer: "strange" },
+        { question: "8 - Що забирало час?", answer: "process" },
+        { question: "9 - Що швидко піднімалося?", answer: "heat" },
     ],
     //lesson 5
     [
