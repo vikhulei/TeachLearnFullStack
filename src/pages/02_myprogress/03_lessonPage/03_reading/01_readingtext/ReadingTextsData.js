@@ -34,6 +34,7 @@ const images = importAll(
 );
 
 const rawQuestions = [
+    //lesson 1
     [
         { question: "2 - Що їй подобається робити?", answer: "paint" },
         { question: "4 - Чого у мене немає сьогодні?", answer: "time" },
@@ -41,20 +42,15 @@ const rawQuestions = [
         { question: "6 - Що ми можемо зробити разом?", answer: "cake" },
         { question: "9 - Що нове я купив вчора?", answer: "jacket" },
     ],
+    //lesson 2
     [
-        { question: "What is the girl’s1 name?", answer: "BGirl1" },
-        { question: "What is the girl’s2 name?", answer: "BGirl2" },
-        { question: "What is the girl’s3 name?", answer: "BGirl3" },
-        { question: "What is the girl’s4 name?", answer: "BGirl4" },
-        { question: "What is the girl’s5 name?", answer: "BGirl5" },
+        { question: "Що мені подобається?", answer: "history" },
+        { question: "Чого у людей не було колись?", answer: "maps" },
+        { question: "Яким був світ для людей?", answer: "big" },
+        { question: "Яка карта у людей є зараз (2 слова)?", answer: "whole world" },
+        { question: "Як зараз людям знаходити різні місця?", answer: "easy" },
     ],
-    [
-        { question: "What is the man’s1 name?", answer: "Human1" },
-        { question: "What is the man’s2 name?", answer: "Human2" },
-        { question: "What is the man’s3 name?", answer: "Human3" },
-        { question: "Which  symbol was on the map?", answer: "Human4" },
-        { question: "What is the man’s5 name?", answer: "Human5" },
-    ],
+    //lesson 3
     [
         { question: "What is the man’s1 name?", answer: "Human1" },
         { question: "What is the man’s2 name?", answer: "Human2" },
@@ -62,6 +58,7 @@ const rawQuestions = [
         { question: "Which  symbol was on the map?", answer: "Human4" },
         { question: "What is the man’s5 name?", answer: "Human5" },
     ],
+    //lesson 4
     [
         { question: "What is the man’s1 name?", answer: "Human1" },
         { question: "What is the man’s2 name?", answer: "Human2" },
@@ -69,6 +66,7 @@ const rawQuestions = [
         { question: "Which  symbol was on the map?", answer: "Human4" },
         { question: "What is the man’s5 name?", answer: "Human5" },
     ],
+    //lesson 5
     [
         { question: "What is the man’s1 name?", answer: "Human1" },
         { question: "What is the man’s2 name?", answer: "Human2" },
@@ -76,6 +74,7 @@ const rawQuestions = [
         { question: "Which  symbol was on the map?", answer: "Human4" },
         { question: "What is the man’s5 name?", answer: "Human5" },
     ],
+    //lesson 6
     [
         { question: "What is the man’s1 name?", answer: "Human1" },
         { question: "What is the man’s2 name?", answer: "Human2" },
@@ -83,6 +82,7 @@ const rawQuestions = [
         { question: "Which  symbol was on the map?", answer: "Human4" },
         { question: "What is the man’s5 name?", answer: "Human5" },
     ],
+    //lesson 7
     [
         { question: "What is the man’s1 name?", answer: "Human1" },
         { question: "What is the man’s2 name?", answer: "Human2" },
@@ -90,6 +90,7 @@ const rawQuestions = [
         { question: "Which  symbol was on the map?", answer: "Human4" },
         { question: "What is the man’s5 name?", answer: "Human5" },
     ],
+    //lesson 8
     [
         { question: "What is the man’s1 name?", answer: "Human1" },
         { question: "What is the man’s2 name?", answer: "Human2" },
@@ -97,6 +98,15 @@ const rawQuestions = [
         { question: "Which  symbol was on the map?", answer: "Human4" },
         { question: "What is the man’s5 name?", answer: "Human5" },
     ],
+    //lesson 9
+    [
+        { question: "What is the man’s1 name?", answer: "Human1" },
+        { question: "What is the man’s2 name?", answer: "Human2" },
+        { question: "What is the man’s3 name?", answer: "Human3" },
+        { question: "Which  symbol was on the map?", answer: "Human4" },
+        { question: "What is the man’s5 name?", answer: "Human5" },
+    ],
+    //lesson 10
     [
         { question: "What is the man’s1 name?", answer: "Human1" },
         { question: "What is the man’s2 name?", answer: "Human2" },
