@@ -68,19 +68,19 @@ const rawQuestions = [
     ],
     //lesson 5
     [
-        { question: "What is the man’s1 name?", answer: "Human1" },
-        { question: "What is the man’s2 name?", answer: "Human2" },
-        { question: "What is the man’s3 name?", answer: "Human3" },
-        { question: "Which  symbol was on the map?", answer: "Human4" },
-        { question: "What is the man’s5 name?", answer: "Human5" },
+        { question: "Коли вона прокинулася?", answer: "early" },
+        { question: "Що їй подобалося робити вдома?", answer: "read" },
+        { question: "Їжа була простою і якою ще?", answer: "warm" },
+        { question: "Що вона ніколи не пропускала?", answer: "breakfast" },
+        { question: "Якою вона почувалася (останнє речення)?", answer: "ready" },
     ],
     //lesson 6
     [
-        { question: "What is the man’s1 name?", answer: "Human1" },
-        { question: "What is the man’s2 name?", answer: "Human2" },
-        { question: "What is the man’s3 name?", answer: "Human3" },
-        { question: "Which  symbol was on the map?", answer: "Human4" },
-        { question: "What is the man’s5 name?", answer: "Human5" },
+        { question: "Куди вони пішли разом?", answer: "market" },
+        { question: "На чому сиділа пташка?", answer: "tree" },
+        { question: "Яким гідом вона була для нього?", answer: "quiet" },
+        { question: "Як вони розуміли один одного?", answer: "much" },
+        { question: "Вони були близькими навіть у чому?", answer: "silence" },
     ],
     //lesson 7
     [
