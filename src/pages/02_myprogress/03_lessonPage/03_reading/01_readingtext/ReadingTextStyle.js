@@ -10,6 +10,11 @@ const FrameReadingLeft = styled(MainFrame)`
     width: 400px;
 `
 
+const ImageWrapper = styled.div`
+    width: 100%;
+    height: 100%;
+    // background-color: red;
+`
 const FrameReadingRight = styled(MainFrameImage)`
 `
 
@@ -25,7 +30,9 @@ const RightFrameWrapper = styled.div`
 const Image = styled.img`
     height: 300px;
     object-fit: cover;
-    margin: 15px;
+    width: 100%;
+    // margin: 15px;
+    // margin-right: 15px;
 `
 
 const Text = styled.div`
@@ -61,4 +68,4 @@ const Correct = styled(MainCorrect)`
     line-height: 1;
 `
 
-export { FrameWrapper, FrameReadingLeft, FrameReadingRight, RightFrameWrapper, Image, TextReading, SentenceWrapper, Question, Correct, ReadingInput }
+export { FrameWrapper, FrameReadingLeft, FrameReadingRight, RightFrameWrapper, ImageWrapper, Image, TextReading, SentenceWrapper, Question, Correct, ReadingInput }

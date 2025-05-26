@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import parse from 'html-react-parser'
-import { FrameWrapper, FrameReadingLeft, FrameReadingRight, RightFrameWrapper, Image, TextReading, SentenceWrapper, Question, Correct, ReadingInput } from "./ReadingTextStyle"
+import { FrameWrapper, FrameReadingLeft, FrameReadingRight, RightFrameWrapper, ImageWrapper, Image, TextReading, SentenceWrapper, Question, Correct, ReadingInput } from "./ReadingTextStyle"
 import { ReadingTextData } from "./ReadingTextsData"
 import { colors } from "../../../../../components/01_config/Colors"
 import { useSelector } from "react-redux"
@@ -15,9 +15,9 @@ const ReadingText = () => {
 
     const clickQuestion = (e) => {
         e.preventDefault();
-        let currentId = Number(e.currentTarget.id) 
+        let currentId = Number(e.currentTarget.id)
         setReadingText((prevReadingText) => prevReadingText.map(value =>
-            ({ ...value, questions: value.questions.map((val, ind) => ind === currentId ? {...val, visibility: val.visibility === "visible" ? "hidden" : "visible"} : val) })
+            ({ ...value, questions: value.questions.map((val, ind) => ind === currentId ? { ...val, visibility: val.visibility === "visible" ? "hidden" : "visible" } : val) })
         ))
     }
 
@@ -39,7 +39,9 @@ const ReadingText = () => {
             </FrameReadingLeft>
             <RightFrameWrapper>
                 <FrameReadingRight>
-                    <Image src={readingText[0].image} />
+                    <ImageWrapper>
+                        <Image src={readingText[0].image} />
+                    </ImageWrapper>
                 </FrameReadingRight>
                 <FrameReadingRight>
                     {readingText[0].questions.map((value, index) => (
