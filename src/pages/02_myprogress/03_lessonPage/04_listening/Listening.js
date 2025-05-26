@@ -42,7 +42,7 @@ const Listening = () => {
 
   return (
     <Wrapper>
-      <HeadingSection>
+      <HeadingSection onClick={(() => console.log(listeningData))}>
         Listening
       </HeadingSection>
       <FrameWrapper>
@@ -82,6 +82,25 @@ const Listening = () => {
 }
 
 export default Listening
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

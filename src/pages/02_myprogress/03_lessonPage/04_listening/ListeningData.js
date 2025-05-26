@@ -46,28 +46,151 @@ const rawQuestions = [
         { question: "", answer: "" },
         { question: "", answer: "" },
     ],
+    //LESSON 3
+    //first question
+    [
+        { question: "", answer: "" },
+        { question: "", answer: "" },
+        { question: "", answer: "" },
+        { question: "", answer: "" },
+        { question: "", answer: "" },
+    ],
+    //second question
+    [
+        { question: "", answer: "" },
+        { question: "", answer: "" },
+        { question: "", answer: "" },
+        { question: "", answer: "" },
+        { question: "", answer: "" },
+    ],
 
+    //LESSON 4
+    //first question
     [
-        { question: "Quest #1", answer: "Я" },
-        { question: "beginning text", answer: "word text2" },
-        { question: "beginning text", answer: "word text3" },
-        { question: "beginning text", answer: "word text4" },
-        { question: "beginning text", answer: "word text5" },
+        { question: "", answer: "" },
+        { question: "", answer: "" },
+        { question: "", answer: "" },
+        { question: "", answer: "" },
+        { question: "", answer: "" },
     ],
+    //second question
     [
-        { question: "Quest #2", answer: "BGirl1" },
-        { question: "What is the girl’s2 name?", answer: "BGirl2" },
-        { question: "What is the girl’s3 name?", answer: "BGirl3" },
-        { question: "What is the girl’s4 name?", answer: "BGirl4" },
-        { question: "What is the girl’s5 name?", answer: "BGirl5" },
+        { question: "", answer: "" },
+        { question: "", answer: "" },
+        { question: "", answer: "" },
+        { question: "", answer: "" },
+        { question: "", answer: "" },
     ],
+
+    //LESSON 5
+    //first question
     [
-        { question: "What is the man’s1 name?", answer: "Human1" },
-        { question: "What is the man’s2 name?", answer: "Human2" },
-        { question: "What is the man’s3 name?", answer: "Human3" },
-        { question: "Which  symbol was on the map?", answer: "Human4" },
-        { question: "What is the man’s5 name?", answer: "Human5" },
+        { question: "", answer: "" },
+        { question: "", answer: "" },
+        { question: "", answer: "" },
+        { question: "", answer: "" },
+        { question: "", answer: "" },
     ],
+    //second question
+    [
+        { question: "", answer: "" },
+        { question: "", answer: "" },
+        { question: "", answer: "" },
+        { question: "", answer: "" },
+        { question: "", answer: "" },
+    ],
+
+    //LESSON 6
+    //first question
+    [
+        { question: "", answer: "" },
+        { question: "", answer: "" },
+        { question: "", answer: "" },
+        { question: "", answer: "" },
+        { question: "", answer: "" },
+    ],
+    //second question
+    [
+        { question: "", answer: "" },
+        { question: "", answer: "" },
+        { question: "", answer: "" },
+        { question: "", answer: "" },
+        { question: "", answer: "" },
+    ],
+
+    //LESSON 7
+    //first question
+    [
+        { question: "", answer: "" },
+        { question: "", answer: "" },
+        { question: "", answer: "" },
+        { question: "", answer: "" },
+        { question: "", answer: "" },
+    ],
+    //second question
+    [
+        { question: "", answer: "" },
+        { question: "", answer: "" },
+        { question: "", answer: "" },
+        { question: "", answer: "" },
+        { question: "", answer: "" },
+    ],
+
+    //LESSON 8
+    //first question
+    [
+        { question: "", answer: "" },
+        { question: "", answer: "" },
+        { question: "", answer: "" },
+        { question: "", answer: "" },
+        { question: "", answer: "" },
+    ],
+    //second question
+    [
+        { question: "", answer: "" },
+        { question: "", answer: "" },
+        { question: "", answer: "" },
+        { question: "", answer: "" },
+        { question: "", answer: "" },
+    ],
+
+    //LESSON 9
+    //first question
+    [
+        { question: "", answer: "" },
+        { question: "", answer: "" },
+        { question: "", answer: "" },
+        { question: "", answer: "" },
+        { question: "", answer: "" },
+    ],
+    //second question
+    [
+        { question: "", answer: "" },
+        { question: "", answer: "" },
+        { question: "", answer: "" },
+        { question: "", answer: "" },
+        { question: "", answer: "" },
+    ],
+
+    //LESSON 10
+    //first question
+    [
+        { question: "", answer: "" },
+        { question: "", answer: "" },
+        { question: "", answer: "" },
+        { question: "", answer: "" },
+        { question: "", answer: "" },
+    ],
+    //second question
+    [
+        { question: "", answer: "" },
+        { question: "", answer: "" },
+        { question: "", answer: "" },
+        { question: "", answer: "" },
+        { question: "", answer: "" },
+    ],
+
+
 ]
 
 const questionsArray = rawQuestions.map((value, index) => (
