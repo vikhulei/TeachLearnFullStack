@@ -36,7 +36,6 @@ const Listening = () => {
   }
 
   useEffect(() => {
-    // setListeningData(ListeningData.filter(value => value.lesson === 3))
     setListeningData(ListeningData.filter(value => value.lesson === currentLesson))
   }, [currentLesson])
 
