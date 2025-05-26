@@ -31,8 +31,6 @@ const Image = styled.img`
     height: 300px;
     object-fit: cover;
     width: 100%;
-    // margin: 15px;
-    // margin-right: 15px;
 `
 
 const Text = styled.div`
@@ -56,6 +54,7 @@ const SentenceWrapper = styled(MainSentenceWrapper)`
 
 const Question = styled(MainQuestion)`
     white-space: pre-wrap;
+    line-height: 1.1;
 `
 
 const ReadingInput = styled(MainDashedInput)`
