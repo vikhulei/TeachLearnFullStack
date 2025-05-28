@@ -32,7 +32,8 @@ const SentenceWrapper = styled(MainSentenceWrapper)`
 `
 
 const Question = styled(MainQuestion)`
-
+    white-space: pre-wrap;
+    line-height: 1.1;
 `
 
 const ListeningInput = styled(MainDashedInput)`
