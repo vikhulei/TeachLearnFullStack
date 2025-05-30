@@ -5,13 +5,12 @@ const stories = [
         translation:
             'Hello, my name is Lena. \nI am from Ukraine.\nI arrived in the UK in February 2023. \nI live in Stratford-upon-Avon. \nI work in Coffee #1 in the the center of the town. \nI am learning English now. \nI like meeting new people. \nIn my free time, I enjoy reading, walking along the canal. \nI am happy to be here!'
     },
-    {
-        story:
-            'ЦЕ ІСТОРІЯ №2!! \n Так! Але щоб дізнатися більше, нам потрібно взяти (take) цю карту та вирушити в подорож.. Так! Але щоб дізнатися більше, нам потрібно взяти (take) цю карту та вирушити в подорож.. Так! Але щоб дізнатися більше, нам потрібно взяти (take) цю карту та вирушити в подорож.. Так! Але щоб дізнатися більше, нам потрібно взяти (take) цю карту та вирушити в подорож.. Так! Але щоб дізнатися більше, нам потрібно взяти (take) цю карту та вирушити в подорож.. Так! Але щоб дізнатися більше, нам потрібно взяти (take) цю карту та вирушити в подорож. Так! Але щоб дізнатися більше, нам потрібно взяти (take) цю карту та вирушити в подорож',
-        translation:
-            `222 \n 
-            Liam and Emma love to explore the world. One day, they found an old map in their grandfather\’s attic. “We need to find out where this leads!” Emma said excitedly. The information on the map was faded, but it showed a big red "X" in the middle of a forest. "How much treasure do you think is buried there?" Liam asked. \n \n "Let\'s take the map and go on an adventure!" Emma said. The two of them packed their bags and set off. They didn\'t know what they would find, but they knew one thing for sure—they want an adventure over anything else! The two of them packed their bags and set off. They didn\'t know what they would find, but they knew one thing for sure—they want an adventure over anything else!`
-    },
+{
+    story:
+        'Я прокидаюся о шостій годині ранку. \nЯ роблю зарядку і приймаю душ. \nПотім я готую сніданок і п’ю каву. \nЯ йду на роботу або працюю вдома. \nВдень я зустрічаюся з колегами і працюю над проектами. \nОбідаю приблизно о дванадцятій годині. \nПісля роботи я ходжу в спортзал або гуляю на вулиці. \nВечеряю з родиною або друзями. \nВечорами я дивлюся новини або читаю книгу. \nЛягаю спати близько десятої години вечора.',
+    translation:
+        'I wake up at six o’clock in the morning. \nI do exercises and take a shower. \nThen I prepare breakfast and drink coffee. \nI go to work or work from home. \nDuring the day, I meet with colleagues and work on projects. \nI have lunch around twelve o’clock. \nAfter work, I go to the gym or take a walk outside. \nI have dinner with my family or friends. \nIn the evenings, I watch the news or read a book. \nI go to bed around ten o’clock at night.'
+},
     {
         story:
             'ЦЕ ІСТОРІЯ №13! Так! Але щоб дізнатися більше, нам потрібно взяти (take) цю карту та вирушити в подорож.. Так! Але щоб дізнатися більше, нам потрібно взяти (take) цю карту та вирушити в подорож.. Так! Але щоб дізнатися більше, нам потрібно взяти (take) цю карту та вирушити в подорож.. Так! Але щоб дізнатися більше, нам потрібно взяти (take) цю карту та вирушити в подорож.. Так! Але щоб дізнатися більше, нам потрібно взяти (take) цю карту та вирушити в подорож.. Так! Але щоб дізнатися більше, нам потрібно взяти (take) цю карту та вирушити в подорож. Так! Але щоб дізнатися більше, нам потрібно взяти (take) цю карту та вирушити в подорож',
