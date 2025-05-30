@@ -13,16 +13,57 @@ const rawDialogs = [
     
     
     //LESSON 2
-    [
-    {question: "What is the boy’s2 name?", q_translate: "Як звати хлопця №2", answer: "Boy2", a_translate: "Хлопець 2"},
-    {question: "", q_translate: "", answer: "", a_translate: ""},
-    {question: "", q_translate: "", answer: "", a_translate: ""},
-    {question: "", q_translate: "", answer: "", a_translate: ""},
-    {question: "", q_translate: "", answer: "", a_translate: ""},
-    {question: "", q_translate: "", answer: "", a_translate: ""},
-    {question: "", q_translate: "", answer: "", a_translate: ""},
-    {question: "", q_translate: "", answer: "", a_translate: ""},
-    ],
+[
+  {
+    question: "О котрій ти прокидаєшся?",
+    q_translate: "What time do you wake up?",
+    answer: "Я прокидаюся о 7-й ранку.",
+    a_translate: "I wake up at 7 a.m."
+  },
+  {
+    question: "Ти снідаєш щодня?",
+    q_translate: "Do you eat breakfast every day?",
+    answer: "Так, я завжди снідаю.",
+    a_translate: "Yes, I always eat breakfast."
+  },
+  {
+    question: "Що ти зазвичай їси на сніданок?",
+    q_translate: "What do you usually have for breakfast?",
+    answer: "Зазвичай я їм пластівці з молоком.",
+    a_translate: "I usually have cereal and milk."
+  },
+  {
+    question: "Як ти добираєшся до школи?",
+    q_translate: "How do you go to school?",
+    answer: "Я їду до школи автобусом.",
+    a_translate: "I go to school by bus."
+  },
+  {
+    question: "О котрій починається твоя школа?",
+    q_translate: "What time does your school start?",
+    answer: "Вона починається о 8:30 ранку.",
+    a_translate: "It starts at 8:30 a.m."
+  },
+  {
+    question: "Що ти робиш після школи?",
+    q_translate: "What do you do after school?",
+    answer: "Я роблю домашнє завдання.",
+    a_translate: "I do my homework."
+  },
+  {
+    question: "Ти допомагаєш вдома?",
+    q_translate: "Do you help at home?",
+    answer: "Так, я допомагаю мамі готувати вечерю.",
+    a_translate: "Yes, I help my mom with dinner."
+  },
+  {
+    question: "О котрій ти лягаєш спати?",
+    q_translate: "What time do you go to bed?",
+    answer: "Я лягаю спати о 9-й вечора.",
+    a_translate: "I go to bed at 9 p.m."
+  }
+],
+
     
     
     
