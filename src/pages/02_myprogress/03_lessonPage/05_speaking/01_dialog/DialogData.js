@@ -496,6 +496,290 @@ const rawDialogs = [
   }
 ],
     
+/// LESSON 11
+/// Movies & TV Shows
+
+[
+  {"question": "Який твій улюблений фільм?", "q_translate": "What is your favorite movie?", "answer": "Мій улюблений фільм — 'Втеча з Шоушенка'.", "a_translate": "My favorite movie is 'The Shawshank Redemption'."},
+  {"question": "Ти дивишся серіали?", "q_translate": "Do you watch TV series?", "answer": "Так, я люблю серіал 'Коронa'.", "a_translate": "Yes, I enjoy the series 'The Crown'."},
+  {"question": "Ти ходиш у кінотеатр?", "q_translate": "Do you go to the cinema?", "answer": "Так, кілька разів на місяць.", "a_translate": "Yes, a few times a month."},
+  {"question": "Хто твій улюблений актор?", "q_translate": "Who is your favorite actor?", "answer": "Мені подобається Том Хенкс.", "a_translate": "I like Tom Hanks."},
+  {"question": "Ти любиш драми чи комедії?", "q_translate": "Do you prefer dramas or comedies?", "answer": "Я віддаю перевагу драмам.", "a_translate": "I prefer dramas."},
+  {"question": "Ти дивився останній блокбастер?", "q_translate": "Did you watch the latest blockbuster?", "answer": "Так, це було цікаво.", "a_translate": "Yes, it was interesting."},
+  {"question": "Ти дивишся фільми з субтитрами?", "q_translate": "Do you watch movies with subtitles?", "answer": "Іноді, коли це іноземний фільм.", "a_translate": "Sometimes, if it's a foreign film."},
+  {"question": "Як часто ти дивишся телевізор?", "q_translate": "How often do you watch TV?", "answer": "Зазвичай увечері після роботи.", "a_translate": "Usually in the evenings after work."}
+],
+
+/// LESSON 12
+/// Music & Entertainment
+
+
+[
+  {"question": "Яку музику ти слухаєш?", "q_translate": "What kind of music do you listen to?", "answer": "Я слухаю рок і джаз.", "a_translate": "I listen to rock and jazz."},
+  {"question": "У тебе є улюблений гурт?", "q_translate": "Do you have a favorite band?", "answer": "Так, мені подобається Coldplay.", "a_translate": "Yes, I like Coldplay."},
+  {"question": "Ти коли-небудь був(-ла) на концерті?", "q_translate": "Have you ever been to a concert?", "answer": "Так, кілька разів.", "a_translate": "Yes, a few times."},
+  {"question": "Який концерт тобі найбільше сподобався?", "q_translate": "What concert did you enjoy the most?", "answer": "Концерт U2 був неймовірним.", "a_translate": "The U2 concert was incredible."},
+  {"question": "Ти слухаєш музику вдома чи в дорозі?", "q_translate": "Do you listen to music at home or on the go?", "answer": "Здебільшого в дорозі.", "a_translate": "Mostly on the go."},
+  {"question": "Чи подобається тобі класична музика?", "q_translate": "Do you like classical music?", "answer": "Так, вона дуже розслабляє.", "a_translate": "Yes, it's very relaxing."},
+  {"question": "Ти користуєшся стрімінговими сервісами?", "q_translate": "Do you use streaming services?", "answer": "Так, я слухаю Spotify.", "a_translate": "Yes, I use Spotify."},
+  {"question": "Що тебе розважає у вільний час?", "q_translate": "What entertains you in your free time?", "answer": "Фільми, музика і книги.", "a_translate": "Movies, music, and books."}
+],
+
+/// LESSON 13
+/// Sports & Exercise
+
+[
+  {"question": "Ти займаєшся спортом регулярно?", "q_translate": "Do you exercise regularly?", "answer": "Так, я тренуюсь тричі на тиждень.", "a_translate": "Yes, I work out three times a week."},
+  {"question": "Який твій улюблений вид спорту?", "q_translate": "What is your favorite sport?", "answer": "Мені подобається футбол.", "a_translate": "I like football."},
+  {"question": "Ти любиш командні чи індивідуальні види спорту?", "q_translate": "Do you prefer team or individual sports?", "answer": "Командні, вони більш динамічні.", "a_translate": "Team sports, they’re more dynamic."},
+  {"question": "Як ти підтримуєш фізичну форму?", "q_translate": "How do you stay in shape?", "answer": "Я ходжу у спортзал.", "a_translate": "I go to the gym."},
+  {"question": "Ти дотримуєшся здорового способу життя?", "q_translate": "Do you follow a healthy lifestyle?", "answer": "Так, стараюся правильно харчуватися та багато рухатися.", "a_translate": "Yes, I try to eat well and stay active."},
+  {"question": "Який вид фізичної активності тобі не подобається?", "q_translate": "What kind of physical activity do you dislike?", "answer": "Біг — це не моє.", "a_translate": "Running is not for me."},
+  {"question": "Ти слідкуєш за спортивними подіями?", "q_translate": "Do you follow sports events?", "answer": "Так, особливо чемпіонати з футболу.", "a_translate": "Yes, especially football championships."},
+  {"question": "Ти граєш у якісь ігри з друзями?", "q_translate": "Do you play any games with friends?", "answer": "Іноді граємо в волейбол на вихідних.", "a_translate": "We sometimes play volleyball on weekends."}
+],
+
+/// LESSON 14
+/// News & Current Events
+
+[
+  {"question": "Ти читаєш новини щодня?", "q_translate": "Do you read the news every day?", "answer": "Так, зазвичай вранці.", "a_translate": "Yes, usually in the morning."},
+  {"question": "Яке джерело новин ти використовуєш?", "q_translate": "What news source do you use?", "answer": "BBC та місцеві новини онлайн.", "a_translate": "BBC and local online news."},
+  {"question": "Тебе цікавить політика?", "q_translate": "Are you interested in politics?", "answer": "Так, але іноді це втомлює.", "a_translate": "Yes, but sometimes it’s exhausting."},
+  {"question": "Яка остання новина тебе вразила?", "q_translate": "What recent news surprised you?", "answer": "Новини про кліматичні зміни.", "a_translate": "News about climate change."},
+  {"question": "Чи обговорюєш ти новини з друзями?", "q_translate": "Do you discuss news with friends?", "answer": "Так, ми часто ділимося думками.", "a_translate": "Yes, we often share opinions."},
+  {"question": "Ти дивишся новини по телевізору?", "q_translate": "Do you watch the news on TV?", "answer": "Іноді, якщо є час.", "a_translate": "Sometimes, if I have time."},
+  {"question": "Які теми тебе цікавлять найбільше?", "q_translate": "What topics interest you the most?", "answer": "Наука, економіка і здоров’я.", "a_translate": "Science, economy, and health."},
+  {"question": "Чи перевіряєш ти факти перед тим, як поширити новини?", "q_translate": "Do you fact-check before sharing news?", "answer": "Так, це дуже важливо.", "a_translate": "Yes, it’s very important."}
+],
+
+/// LESSON 15
+/// Dreams & Future Plans
+
+[
+  {"question": "Яка твоя найбільша мрія?", "q_translate": "What is your biggest dream?", "answer": "Моя мрія — подорожувати світом.", "a_translate": "My dream is to travel the world."},
+  {"question": "Які в тебе плани на майбутнє?", "q_translate": "What are your future plans?", "answer": "Я хочу відкрити власний бізнес.", "a_translate": "I want to start my own business."},
+  {"question": "Ти ставиш перед собою цілі?", "q_translate": "Do you set goals for yourself?", "answer": "Так, це допомагає зосередитись.", "a_translate": "Yes, it helps me stay focused."},
+  {"question": "Чим ти мрієш займатися через 5 років?", "q_translate": "What do you dream of doing in 5 years?", "answer": "Я хочу працювати в сфері технологій.", "a_translate": "I want to work in tech."},
+  {"question": "Ти боїшся змін?", "q_translate": "Are you afraid of change?", "answer": "Ні, я вважаю їх шансом для росту.", "a_translate": "No, I see them as a chance for growth."},
+  {"question": "Які у тебе професійні амбіції?", "q_translate": "What are your career ambitions?", "answer": "Я прагну стати менеджером проєктів.", "a_translate": "I aim to become a project manager."},
+  {"question": "Ти віриш у досягнення своїх мрій?", "q_translate": "Do you believe in achieving your dreams?", "answer": "Так, якщо наполегливо працювати.", "a_translate": "Yes, with hard work."},
+  {"question": "Що тебе мотивує?", "q_translate": "What motivates you?", "answer": "Моя сім’я і бажання самореалізації.", "a_translate": "My family and the desire for self-realization."}
+],
+
+//LESSON 16
+///Cultural Differences – Discuss traditions, customs, and cultural experiences.
+
+[
+  {"question": "Яке твоє улюблене свято?", "q_translate": "What is your favorite holiday?", "answer": "Я люблю Різдво.", "a_translate": "I love Christmas."},
+  {"question": "Чи був ти в іншій країні?", "q_translate": "Have you been to another country?", "answer": "Так, я був у Польщі.", "a_translate": "Yes, I’ve been to Poland."},
+  {"question": "Чи у вас є традиції в родині?", "q_translate": "Do you have family traditions?", "answer": "Так, ми разом святкуємо Пасху.", "a_translate": "Yes, we celebrate Easter together."},
+  {"question": "Яку культуру ти хочеш дізнатися?", "q_translate": "What culture do you want to learn about?", "answer": "Мені цікава японська культура.", "a_translate": "I’m interested in Japanese culture."},
+  {"question": "Чи пробував ти іншу кухню?", "q_translate": "Have you tried other food?", "answer": "Так, я люблю італійську їжу.", "a_translate": "Yes, I love Italian food."},
+  {"question": "Що ти знаєш про інші культури?", "q_translate": "What do you know about other cultures?", "answer": "У різних країнах різні звичаї.", "a_translate": "Different countries have different customs."},
+  {"question": "Чи важливо знати про інші культури?", "q_translate": "Is it important to know about other cultures?", "answer": "Так, це допомагає розуміти людей.", "a_translate": "Yes, it helps to understand people."},
+  {"question": "Чи є різниця між культурами?", "q_translate": "Are there differences between cultures?", "answer": "Так, у кожної культури свої традиції.", "a_translate": "Yes, each culture has its own traditions."}
+],
+
+//LESSON 17
+//Weather & Seasons – Talk about favorite seasons and how weather affects daily life.
+
+[
+  {"question": "Яка твоя улюблена пора року?", "q_translate": "What is your favorite season?", "answer": "Мені подобається літо.", "a_translate": "I like summer."},
+  {"question": "Яка сьогодні погода?", "q_translate": "What’s the weather like today?", "answer": "Сонячно і тепло.", "a_translate": "It’s sunny and warm."},
+  {"question": "Чи любиш ти сніг?", "q_translate": "Do you like snow?", "answer": "Так, люблю гуляти, коли сніжить.", "a_translate": "Yes, I like walking when it snows."},
+  {"question": "Що ти робиш у дощ?", "q_translate": "What do you do in the rain?", "answer": "Я залишаюсь вдома і п’ю чай.", "a_translate": "I stay home and drink tea."},
+  {"question": "Чи любиш дощову погоду?", "q_translate": "Do you like rainy weather?", "answer": "Не дуже, вона сумна.", "a_translate": "Not really, it’s sad."},
+  {"question": "Чи змінюється твій день влітку?", "q_translate": "Does your day change in summer?", "answer": "Так, я більше гуляю.", "a_translate": "Yes, I walk more."},
+  {"question": "Яка погода тобі подобається?", "q_translate": "What weather do you like?", "answer": "Мені подобається тепло і сонце.", "a_translate": "I like warm and sunny weather."},
+  {"question": "Як ти готуєшся до зими?", "q_translate": "How do you prepare for winter?", "answer": "Я ношу теплий одяг.", "a_translate": "I wear warm clothes."}
+],
+
+//LESSON 18
+//Health & Wellness (Simplified)
+
+[
+  {"question": "Як ти дбаєш про своє здоров'я?", "q_translate": "How do you take care of your health?", "answer": "Я їм багато овочів і п’ю воду.", "a_translate": "I eat lots of vegetables and drink water."},
+  {"question": "Чи займаєшся спортом?", "q_translate": "Do you do sports?", "answer": "Так, я ходжу в спортзал тричі на тиждень.", "a_translate": "Yes, I go to the gym three times a week."},
+  {"question": "Як ти борешся зі стресом?", "q_translate": "How do you deal with stress?", "answer": "Я слухаю музику і медитую.", "a_translate": "I listen to music and meditate."},
+  {"question": "Скільки годин ти спиш щоночі?", "q_translate": "How many hours do you sleep each night?", "answer": "Я сплю близько восьми годин.", "a_translate": "I sleep about eight hours."},
+  {"question": "Чи любиш ти ходити на прогулянки?", "q_translate": "Do you like walking?", "answer": "Так, це допомагає мені розслабитись.", "a_translate": "Yes, it helps me relax."},
+  {"question": "Що ти робиш, коли почуваєшся втомленим?", "q_translate": "What do you do when you feel tired?", "answer": "Я відпочиваю і п’ю чай.", "a_translate": "I rest and drink tea."},
+  {"question": "Чи їсиш ти здорову їжу?", "q_translate": "Do you eat healthy food?", "answer": "Так, я стараюсь уникати фастфуду.", "a_translate": "Yes, I try to avoid fast food."},
+  {"question": "Як ти підтримуєш гарний настрій?", "q_translate": "How do you keep a good mood?", "answer": "Я спілкуюсь з друзями і займаюсь хобі.", "a_translate": "I talk to friends and do hobbies."}
+],
+
+
+//LESSON 19
+//Personal Experiences & Stories (Simplified)
+[
+  {"question": "Розкажи про цікавий випадок з твого життя.", "q_translate": "Tell me an interesting event from your life.", "answer": "Одного разу я загубився в новому місті.", "a_translate": "Once, I got lost in a new city."},
+  {"question": "Чи траплялися з тобою смішні ситуації?", "q_translate": "Have you had funny situations?", "answer": "Так, я впав на вулиці і всі сміялись.", "a_translate": "Yes, I fell on the street and everyone laughed."},
+  {"question": "Розкажи про твою найкращу поїздку.", "q_translate": "Tell me about your best trip.", "answer": "Я їздив до моря з друзями.", "a_translate": "I went to the sea with friends."},
+  {"question": "Чи допомагав ти комусь колись?", "q_translate": "Have you ever helped someone?", "answer": "Так, я допоміг сусіду з ремонтом.", "a_translate": "Yes, I helped my neighbor with repairs."},
+  {"question": "Який твій найщасливіший спогад?", "q_translate": "What is your happiest memory?", "answer": "Коли я отримав першу роботу.", "a_translate": "When I got my first job."},
+  {"question": "Розкажи про свій день народження.", "q_translate": "Tell me about your birthday.", "answer": "Ми святкували з сім'єю і друзями.", "a_translate": "We celebrated with family and friends."},
+  {"question": "Чи було у тебе цікаве хобі?", "q_translate": "Have you had an interesting hobby?", "answer": "Так, я колись грав на гітарі.", "a_translate": "Yes, I used to play guitar."},
+  {"question": "Розкажи про свій улюблений фільм.", "q_translate": "Tell me about your favorite movie.", "answer": "Мій улюблений фільм — комедія.", "a_translate": "My favorite movie is a comedy."}
+],
+
+
+//LESSON 20
+// If You Could... (Simplified)
+[
+  {"question": "Якби ти міг поїхати куди завгодно, куди б ти поїхав?", "q_translate": "If you could travel anywhere, where would you go?", "answer": "Я б поїхав до Парижа.", "a_translate": "I would go to Paris."},
+  {"question": "Якби ти міг мати будь-яку роботу, яку б обрав?", "q_translate": "If you could have any job, what would you choose?", "answer": "Я б хотів бути вчителем.", "a_translate": "I would like to be a teacher."},
+  {"question": "Якби ти міг жити в іншій країні, де б ти жив?", "q_translate": "If you could live in another country, where would you live?", "answer": "Я б жив у Італії.", "a_translate": "I would live in Italy."},
+  {"question": "Якби ти міг змінити щось у світі, що б це було?", "q_translate": "If you could change something in the world, what would it be?", "answer": "Я б хотів, щоб не було війни.", "a_translate": "I would want there to be no war."},
+  {"question": "Якби ти міг зустріти відому людину, кого б ти вибрав?", "q_translate": "If you could meet a famous person, who would you choose?", "answer": "Я б зустрів Білла Гейтса.", "a_translate": "I would meet Bill Gates."},
+  {"question": "Якби ти міг мати суперсилу, яку б обрав?", "q_translate": "If you could have a superpower, which one would you choose?", "answer": "Я б хотів літати.", "a_translate": "I would like to fly."},
+  {"question": "Якби ти міг їсти тільки одну страву, що б це було?", "q_translate": "If you could eat only one dish, what would it be?", "answer": "Я б обрав піцу.", "a_translate": "I would choose pizza."},
+  {"question": "Якби ти міг вивчити будь-яку мову, яку б вибрав?", "q_translate": "If you could learn any language, which one would you choose?", "answer": "Я б хотів вивчити іспанську.", "a_translate": "I would like to learn Spanish."}
+],
+
+
+//LESSON 21
+//Books & Reading (Simplified)
+[
+  {"question": "Яка твоя улюблена книга?", "q_translate": "What is your favorite book?", "answer": "Моя улюблена книга — казки.", "a_translate": "My favorite book is fairy tales."},
+  {"question": "Ти любиш читати?", "q_translate": "Do you like to read?", "answer": "Так, я читаю кожен день.", "a_translate": "Yes, I read every day."},
+  {"question": "Хто твій улюблений автор?", "q_translate": "Who is your favorite author?", "answer": "Мій улюблений автор — Толстой.", "a_translate": "My favorite author is Tolstoy."},
+  {"question": "Яку книгу ти недавно читав?", "q_translate": "What book did you read recently?", "answer": "Я читав детектив.", "a_translate": "I read a detective story."},
+  {"question": "Ти читаєш книги в електронному вигляді?", "q_translate": "Do you read e-books?", "answer": "Іноді, мені подобається.", "a_translate": "Sometimes, I like it."},
+  {"question": "Яку книгу ти хочеш прочитати?", "q_translate": "What book do you want to read?", "answer": "Я хочу прочитати роман.", "a_translate": "I want to read a novel."},
+  {"question": "Ти читаєш газети чи журнали?", "q_translate": "Do you read newspapers or magazines?", "answer": "Я читаю журнали.", "a_translate": "I read magazines."},
+  {"question": "Чи любиш ти аудіокниги?", "q_translate": "Do you like audiobooks?", "answer": "Так, я слухаю їх в машині.", "a_translate": "Yes, I listen to them in the car."}
+],
+
+
+//LESSON 22
+//Pets & Animals (Simplified)
+[
+  {"question": "Чи є у тебе домашні тварини?", "q_translate": "Do you have pets?", "answer": "Так, у мене є кіт.", "a_translate": "Yes, I have a cat."},
+  {"question": "Яка твоя улюблена тварина?", "q_translate": "What is your favorite animal?", "answer": "Мій улюблений — собака.", "a_translate": "My favorite is a dog."},
+  {"question": "Ти любиш тварин?", "q_translate": "Do you like animals?", "answer": "Так, я їх дуже люблю.", "a_translate": "Yes, I love them very much."},
+  {"question": "Чи коли-небудь ти бачив диких тварин?", "q_translate": "Have you ever seen wild animals?", "answer": "Так, я бачив оленя в лісі.", "a_translate": "Yes, I saw a deer in the forest."},
+  {"question": "Як ти піклуєшся про свого пса?", "q_translate": "How do you take care of your dog?", "answer": "Я гуляю з ним кожен день.", "a_translate": "I walk with him every day."},
+  {"question": "Чи хочеш ти завести тварину?", "q_translate": "Do you want to get a pet?", "answer": "Так, я хочу кота.", "a_translate": "Yes, I want a cat."},
+  {"question": "Ти боїшся великих тварин?", "q_translate": "Are you afraid of big animals?", "answer": "Ні, я не боюсь.", "a_translate": "No, I’m not afraid."},
+  {"question": "Яка тварина живе у твоєму місті?", "q_translate": "What animals live in your city?", "answer": "У місті багато голубів.", "a_translate": "There are many pigeons in the city."}
+],
+
+
+//LESSON 23
+//Environment & Nature (Simplified)
+[
+  {"question": "Ти любиш природу?", "q_translate": "Do you like nature?", "answer": "Так, дуже люблю.", "a_translate": "Yes, I like it very much."},
+  {"question": "Чи ходиш ти на прогулянки в лісі?", "q_translate": "Do you go for walks in the forest?", "answer": "Так, іноді ходжу.", "a_translate": "Yes, I go sometimes."},
+  {"question": "Що ти робиш для захисту природи?", "q_translate": "What do you do to protect nature?", "answer": "Я сортують сміття.", "a_translate": "I sort garbage."},
+  {"question": "Чи турбує тебе забруднення?", "q_translate": "Are you worried about pollution?", "answer": "Так, це велика проблема.", "a_translate": "Yes, it is a big problem."},
+  {"question": "Ти любиш зелені парки?", "q_translate": "Do you like green parks?", "answer": "Так, вони дуже гарні.", "a_translate": "Yes, they are very nice."},
+  {"question": "Чи купуєш ти екологічні продукти?", "q_translate": "Do you buy eco-friendly products?", "answer": "Іноді, коли можу.", "a_translate": "Sometimes, when I can."},
+  {"question": "Які тварини живуть у природі поблизу тебе?", "q_translate": "What animals live near you in nature?", "answer": "Тут є птахи і білки.", "a_translate": "There are birds and squirrels here."},
+  {"question": "Чи зберігаєш ти воду вдома?", "q_translate": "Do you save water at home?", "answer": "Так, я не залишаю воду відкритою.", "a_translate": "Yes, I don’t leave water running."}
+],
+
+//LESSON 24
+//Hometown & Neighborhood (Simplified)
+[
+  {"question": "Де ти живеш?", "q_translate": "Where do you live?", "answer": "Я живу у Києві.", "a_translate": "I live in Kyiv."},
+  {"question": "Ти любиш своє місто?", "q_translate": "Do you like your city?", "answer": "Так, моє місто красиве.", "a_translate": "Yes, my city is beautiful."},
+  {"question": "Опиши свій район.", "q_translate": "Describe your neighborhood.", "answer": "У нас багато парків і кафе.", "a_translate": "We have many parks and cafes."},
+  {"question": "Де ти народився?", "q_translate": "Where were you born?", "answer": "Я народився в Харкові.", "a_translate": "I was born in Kharkiv."},
+  {"question": "Чи змінився твій район?", "q_translate": "Has your neighborhood changed?", "answer": "Так, побудували нові будинки.", "a_translate": "Yes, they built new buildings."},
+  {"question": "Що тобі подобається в твоєму місті?", "q_translate": "What do you like about your city?", "answer": "Мені подобається зелена зона.", "a_translate": "I like the green area."},
+  {"question": "Чи є у вас ринок поруч?", "q_translate": "Is there a market near you?", "answer": "Так, є великий ринок.", "a_translate": "Yes, there is a big market."},
+  {"question": "Як ти добираєшся на роботу?", "q_translate": "How do you get to work?", "answer": "Я їжджу автобусом.", "a_translate": "I go by bus."}
+],
+
+
+//LESSON 25
+//Languages & Communication (Simplified)
+[
+  {"question": "Які мови ти знаєш?", "q_translate": "What languages do you know?", "answer": "Я знаю українську і російську.", "a_translate": "I know Ukrainian and Russian."},
+  {"question": "Чи хочеш вивчити нову мову?", "q_translate": "Do you want to learn a new language?", "answer": "Так, я хочу вивчити англійську.", "a_translate": "Yes, I want to learn English."},
+  {"question": "Чи важко вчити мови?", "q_translate": "Is it hard to learn languages?", "answer": "Іноді, але цікаво.", "a_translate": "Sometimes, but it’s interesting."},
+  {"question": "Чи спілкуєшся ти з іноземцями?", "q_translate": "Do you talk with foreigners?", "answer": "Так, я розмовляю з туристами.", "a_translate": "Yes, I talk with tourists."},
+  {"question": "Яка твоя рідна мова?", "q_translate": "What is your native language?", "answer": "Моя рідна мова — українська.", "a_translate": "My native language is Ukrainian."},
+  {"question": "Чи допомагає тобі мова у роботі?", "q_translate": "Does language help you at work?", "answer": "Так, англійська дуже корисна.", "a_translate": "Yes, English is very useful."},
+  {"question": "Чи пробував ти вивчати мову онлайн?", "q_translate": "Have you tried learning a language online?", "answer": "Так, я користуюсь додатками.", "a_translate": "Yes, I use apps."},
+  {"question": "Чи легко тобі спілкуватися з іншими?", "q_translate": "Is it easy for you to communicate with others?", "answer": "Так, я стараюсь говорити просто.", "a_translate": "Yes, I try to speak simply."}
+],
+
+
+//LESSON 26
+// Fashion & Style (Simplified)
+
+[
+  {"question": "Який твій улюблений стиль одягу?", "q_translate": "What is your favorite clothing style?", "answer": "Я люблю простий і зручний стиль.", "a_translate": "I like simple and comfortable style."},
+  {"question": "Ти слідкуєш за модою?", "q_translate": "Do you follow fashion?", "answer": "Іноді дивлюсь нові тренди.", "a_translate": "Sometimes I watch new trends."},
+  {"question": "Який колір ти любиш носити?", "q_translate": "What color do you like to wear?", "answer": "Я люблю синій колір.", "a_translate": "I like blue color."},
+  {"question": "Де ти купуєш одяг?", "q_translate": "Where do you buy clothes?", "answer": "Я купую в магазині поруч.", "a_translate": "I buy at a nearby store."},
+  {"question": "Чи подобається тобі одягати капелюх?", "q_translate": "Do you like wearing hats?", "answer": "Так, особливо взимку.", "a_translate": "Yes, especially in winter."},
+  {"question": "Ти носиш більше штани чи сукні?", "q_translate": "Do you wear pants or dresses more?", "answer": "Я часто ношу штани.", "a_translate": "I often wear pants."},
+  {"question": "Які аксесуари ти любиш?", "q_translate": "What accessories do you like?", "answer": "Мені подобаються годинники.", "a_translate": "I like watches."},
+  {"question": "Чи важливо для тебе бути модним?", "q_translate": "Is it important for you to be fashionable?", "answer": "Ні, мені важливо бути комфортним.", "a_translate": "No, being comfortable is important to me."}
+],
+
+
+//LESSON 27
+// Celebrations & Festivals (Simplified)
+
+[
+  {"question": "Яке твоє улюблене свято?", "q_translate": "What is your favorite holiday?", "answer": "Моє улюблене свято — Різдво.", "a_translate": "My favorite holiday is Christmas."},
+  {"question": "Як ти святкуєш свій день народження?", "q_translate": "How do you celebrate your birthday?", "answer": "Я святкую з родиною.", "a_translate": "I celebrate with family."},
+  {"question": "Чи подобаються тобі фестивалі?", "q_translate": "Do you like festivals?", "answer": "Так, я люблю фестивалі музики.", "a_translate": "Yes, I like music festivals."},
+  {"question": "Які традиції є у вашій родині?", "q_translate": "What traditions does your family have?", "answer": "Ми готуємо святкову вечерю.", "a_translate": "We cook a holiday dinner."},
+  {"question": "Чи даруєш ти подарунки на свята?", "q_translate": "Do you give gifts on holidays?", "answer": "Так, я люблю дарувати подарунки.", "a_translate": "Yes, I like giving gifts."},
+  {"question": "Який твій улюблений національний святковий день?", "q_translate": "What is your favorite national holiday?", "answer": "Мені подобається День Незалежності.", "a_translate": "I like Independence Day."},
+  {"question": "Чи любиш ти святкові салюти?", "q_translate": "Do you like fireworks?", "answer": "Так, вони дуже гарні.", "a_translate": "Yes, they are very beautiful."},
+  {"question": "Як ти готуєшся до свят?", "q_translate": "How do you prepare for holidays?", "answer": "Я прикрашаю дім і купую подарунки.", "a_translate": "I decorate the house and buy gifts."}
+],
+
+
+//LESSON 28
+// Art & Creativity (Simplified)
+[
+  {"question": "Ти любиш малювати?", "q_translate": "Do you like to draw?", "answer": "Так, я малюю у вільний час.", "a_translate": "Yes, I draw in my free time."},
+  {"question": "Чи пробував ти робити творчі проєкти?", "q_translate": "Have you tried creative projects?", "answer": "Так, я робив колажі.", "a_translate": "Yes, I made collages."},
+  {"question": "Який твій улюблений вид мистецтва?", "q_translate": "What is your favorite kind of art?", "answer": "Мені подобається живопис.", "a_translate": "I like painting."},
+  {"question": "Чи відвідуєш ти музеї?", "q_translate": "Do you visit museums?", "answer": "Іноді ходжу з друзями.", "a_translate": "Sometimes I go with friends."},
+  {"question": "Ти любиш фотографувати?", "q_translate": "Do you like taking photos?", "answer": "Так, я фотографую природу.", "a_translate": "Yes, I take photos of nature."},
+  {"question": "Чи є у тебе хобі, пов’язане з мистецтвом?", "q_translate": "Do you have an art-related hobby?", "answer": "Так, я роблю вироби з паперу.", "a_translate": "Yes, I do paper crafts."},
+  {"question": "Ти хочеш вчитися малювати краще?", "q_translate": "Do you want to learn to draw better?", "answer": "Так, я хочу ходити на уроки.", "a_translate": "Yes, I want to take lessons."},
+  {"question": "Який твій улюблений колір?", "q_translate": "What is your favorite color?", "answer": "Мій улюблений колір — зелений.", "a_translate": "My favorite color is green."}
+],
+
+
+//LESSON 29
+//Transportation & Commuting (Simplified)
+[
+  {"question": "Як ти їдеш на роботу?", "q_translate": "How do you get to work?", "answer": "Я їжджу автобусом.", "a_translate": "I go by bus."},
+  {"question": "Скільки часу займає дорога?", "q_translate": "How long is your commute?", "answer": "Приблизно 30 хвилин.", "a_translate": "About 30 minutes."},
+  {"question": "Чи подобається тобі користуватися метро?", "q_translate": "Do you like using the subway?", "answer": "Так, це швидко.", "a_translate": "Yes, it’s fast."},
+  {"question": "Чи ти коли-небудь їздив на велосипеді?", "q_translate": "Have you ever ridden a bike?", "answer": "Так, я часто їжджу на велосипеді.", "a_translate": "Yes, I often ride a bike."},
+  {"question": "Чи любиш ти подорожувати?", "q_translate": "Do you like to travel?", "answer": "Так, я люблю подорожі.", "a_translate": "Yes, I like traveling."},
+  {"question": "Який твій улюблений вид транспорту?", "q_translate": "What is your favorite transport?", "answer": "Мені подобається поїзд.", "a_translate": "I like the train."},
+  {"question": "Чи є у тебе машина?", "q_translate": "Do you have a car?", "answer": "Ні, я користуюся громадським транспортом.", "a_translate": "No, I use public transport."},
+  {"question": "Ти коли-небудь літав літаком?", "q_translate": "Have you ever flown on a plane?", "answer": "Так, я літав минулого року.", "a_translate": "Yes, I flew last year."}
+],
+
+
+
+//LESSON 30
+//Challenges & Achievements (Simplified)
+
+[
+  {"question": "Який твій найбільший успіх?", "q_translate": "What is your biggest achievement?", "answer": "Я закінчив університет.", "a_translate": "I finished university."},
+  {"question": "Чи було тобі важко вчитися?", "q_translate": "Was it hard for you to study?", "answer": "Так, іноді було складно.", "a_translate": "Yes, sometimes it was difficult."},
+  {"question": "Яку мету ти досяг цього року?", "q_translate": "What goal did you reach this year?", "answer": "Я навчився готувати нову страву.", "a_translate": "I learned to cook a new dish."},
+  {"question": "Чи мав ти великі проблеми?", "q_translate": "Have you had big problems?", "answer": "Так, але я їх подолав.", "a_translate": "Yes, but I overcame them."},
+  {"question": "Що ти робиш, коли виникають труднощі?", "q_translate": "What do you do when you have difficulties?", "answer": "Я прошу допомоги.", "a_translate": "I ask for help."},
+  {"question": "Яке досягнення ти хочеш отримати?", "q_translate": "What achievement do you want to get?", "answer": "Я хочу вивчити іноземну мову.", "a_translate": "I want to learn a foreign language."},
+  {"question": "Чи пишаєшся ти собою?", "q_translate": "Are you proud of yourself?", "answer": "Так, я пишаюся своїми успіхами.", "a_translate": "Yes, I am proud of my achievements."},
+  {"question": "Як ти святкуєш свої успіхи?", "q_translate": "How do you celebrate your successes?", "answer": "Я зустрічаюсь з друзями.", "a_translate": "I meet with friends."}
+]
+
     
 ]
 
