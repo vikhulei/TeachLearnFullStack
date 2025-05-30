@@ -1,0 +1,33 @@
+1	Introductions & Personal Information – Talk about yourself, your background, and your interests.
+2	Daily Routines – Describe your typical day from morning to night.
+3	Hobbies & Free Time – Discuss your favorite activities, sports, or creative pursuits.
+4	Travel & Holidays – Share experiences about past trips or dream destinations.
+5	Food & Cooking – Talk about favorite dishes, recipes, and eating habits.
+6	Family & Friends – Describe your relationships and social life.
+7	School & Education – Discuss school experiences, favorite subjects, and learning methods.
+8	Work & Careers – Talk about jobs, career goals, and workplace culture.
+9	Shopping & Money – Discuss buying habits, budgeting, and favorite stores.
+10	Technology & Social Media – Talk about how you use technology and its effects on daily life.
+11	Movies & TV Shows – Share opinions on films, series, and actors.
+12	Music & Entertainment – Talk about favorite musicians, concerts, and music genres.
+13	Sports & Exercise – Discuss favorite sports, fitness routines, and staying healthy.
+14	News & Current Events – Share thoughts on recent world events and local news.
+15	Dreams & Future Plans – Talk about life goals, ambitions, and hopes for the future.
+16	Cultural Differences – Discuss traditions, customs, and cultural experiences.
+17	Weather & Seasons – Talk about favorite seasons and how weather affects daily life.
+18	Health & Wellness – Discuss habits for staying healthy and dealing with stress.
+19	Personal Experiences & Stories – Share interesting life events or funny stories.
+20	If You Could... – Imagine different scenarios like "If you could travel anywhere, where would you go?"
+21	Books & Reading – Talk about favorite books, authors, or reading habits.
+22	Pets & Animals – Discuss experiences with pets, favorite animals, or wildlife encounters.
+23	Environment & Nature – Share views on environmental issues, nature walks, or sustainable living.
+24	Hometown & Neighborhood – Describe where you live or grew up, and what makes it special.
+25	Languages & Communication – Talk about languages you know, want to learn, or language barriers.
+26	Fashion & Style – Discuss clothing preferences, trends, and personal style.
+27	Celebrations & Festivals – Share traditions around birthdays, holidays, and national celebrations.
+28	Art & Creativity – Talk about drawing, painting, design, or any creative projects you enjoy.
+29	Transportation & Commuting – Describe how you get around and experiences with travel or commuting.
+30	Challenges & Achievements – Reflect on personal obstacles and proud accomplishments.
+
+
+
