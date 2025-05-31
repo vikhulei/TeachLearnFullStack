@@ -1,0 +1,52 @@
+dialogue lesson 2
+
+[
+  {
+    question: "Що ти любиш робити у вільний час?",
+    q_translate: "What do you like to do in your free time?",
+    answer: "Я люблю малювати.",
+    a_translate: "I like to draw."
+  },
+  {
+    question: "Ти займаєшся спортом?",
+    q_translate: "Do you play any sports?",
+    answer: "Так, я граю у футбол.",
+    a_translate: "Yes, I play football."
+  },
+  {
+    question: "Тобі подобається читати?",
+    q_translate: "Do you like reading?",
+    answer: "Так, я читаю кожного вечора.",
+    a_translate: "Yes, I read every evening."
+  },
+  {
+    question: "Яке твоє улюблене хобі?",
+    q_translate: "What is your favorite hobby?",
+    answer: "Моє улюблене хобі — малювання.",
+    a_translate: "My favorite hobby is drawing."
+  },
+  {
+    question: "Ти граєш на музичному інструменті?",
+    q_translate: "Do you play a musical instrument?",
+    answer: "Так, я граю на піаніно.",
+    a_translate: "Yes, I play the piano."
+  },
+  {
+    question: "Коли ти зазвичай відпочиваєш?",
+    q_translate: "When do you usually relax?",
+    answer: "Я відпочиваю після школи.",
+    a_translate: "I relax after school."
+  },
+  {
+    question: "Ти любиш дивитися фільми?",
+    q_translate: "Do you like watching movies?",
+    answer: "Так, особливо комедії.",
+    a_translate: "Yes, especially comedies."
+  },
+  {
+    question: "Ти проводиш час з друзями у вихідні?",
+    q_translate: "Do you spend time with friends on weekends?",
+    answer: "Так, ми граємо разом у парку.",
+    a_translate: "Yes, we play together in the park."
+  }
+]
