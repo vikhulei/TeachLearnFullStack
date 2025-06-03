@@ -20,7 +20,7 @@ const sentences = [
     { sentence: "Ці люди не дружні", translat: "These people are not friendly" },
     { sentence: "Твоя робота важка?", translat: "Is your work hard?" },
     { sentence: "Фільм нецікавий", translat: "Film is not interesting" },
-    { sentence: "Це гарне місце (nice)?", translat: "Is this place nice?" },
+    { sentence: "Це місце гарне (nice)?", translat: "Is this place nice?" },
     { sentence: "Сім'я важлива?", translat: "Is family important?" },
     { sentence: "Цей бізнес нелегкий", translat: "This business is not easy" },
     // LESSON 3

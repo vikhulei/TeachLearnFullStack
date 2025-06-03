@@ -41,7 +41,7 @@ const rawQuestions = [
     //second question
     [
         { question: "Яка в нього професія?", answer: "cleaner" },
-        { question: "Що він робить в першу чергу (два слова)?", answer: " sweep mop" },
+        { question: "Що він робить в першу чергу (два слова)?", answer: "sweep mop" },
         { question: "Що він робить з вікнами?", answer: "clean" },
         { question: "Що треба покласти в туалеті, крім серветок?", answer: "soap" },
         { question: "Куди він їде в кінці дня?", answer: "home" },

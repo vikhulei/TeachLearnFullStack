@@ -13,7 +13,7 @@ export const ContentData = [
     "Prepositions of Place",
     "Time and Dates",
     "There is/there are, Articles",
-    "Singular and Plural Nouns, Comparative and Superlative Adjectives",
+    "Singular and Plural Nouns, Comparative and Superlative Adjectives, Ordinal and Cardinal Numbers",
     "Active Voice and Passive Voice",
     "Modal Verbs, Would and Used to",
     "Imperative Sentences",
