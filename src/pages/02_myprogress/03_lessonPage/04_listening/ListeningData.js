@@ -190,6 +190,366 @@ const rawQuestions = [
         { question: "На які ще сторінки я підписаний (два слова)?", answer: "travel food" },
     ],
 
+    //LESSON 10
+    //first question
+    [
+        { question: "Чим я користуюсь щодня?", answer: "phone" },
+        { question: "Які дві дії я роблю з його допомогою?", answer: "chat watch" },
+        { question: "За допомогою чого я ділюся фотографіями (два слова)?", answer: "social media" },
+        { question: "Що мені кажуть робити батьки?", answer: "breaks" },
+        { question: "Яким роблять життя технології?", answer: "easier" },
+    ],
+    //second question
+    [
+        { question: "Для чого люди використовують соціальні мережі (два слова)?", answer: "talk share" },
+        { question: "На кого я підписаний, крім друзів (два слова)?", answer: "favourite stars" },
+        { question: "Куди я йду, коли я не в онлайн?", answer: "outside" },
+        { question: "Що може бути шкідливим, якщо його забагато (два слова)?", answer: "screen time" },
+        { question: "На які ще сторінки я підписаний (два слова)?", answer: "travel food" },
+    ],
+
+    //LESSON 10
+    //first question
+    [
+        { question: "Чим я користуюсь щодня?", answer: "phone" },
+        { question: "Які дві дії я роблю з його допомогою?", answer: "chat watch" },
+        { question: "За допомогою чого я ділюся фотографіями (два слова)?", answer: "social media" },
+        { question: "Що мені кажуть робити батьки?", answer: "breaks" },
+        { question: "Яким роблять життя технології?", answer: "easier" },
+    ],
+    //second question
+    [
+        { question: "Для чого люди використовують соціальні мережі (два слова)?", answer: "talk share" },
+        { question: "На кого я підписаний, крім друзів (два слова)?", answer: "favourite stars" },
+        { question: "Куди я йду, коли я не в онлайн?", answer: "outside" },
+        { question: "Що може бути шкідливим, якщо його забагато (два слова)?", answer: "screen time" },
+        { question: "На які ще сторінки я підписаний (два слова)?", answer: "travel food" },
+    ],
+
+    //LESSON 10
+    //first question
+    [
+        { question: "Чим я користуюсь щодня?", answer: "phone" },
+        { question: "Які дві дії я роблю з його допомогою?", answer: "chat watch" },
+        { question: "За допомогою чого я ділюся фотографіями (два слова)?", answer: "social media" },
+        { question: "Що мені кажуть робити батьки?", answer: "breaks" },
+        { question: "Яким роблять життя технології?", answer: "easier" },
+    ],
+    //second question
+    [
+        { question: "Для чого люди використовують соціальні мережі (два слова)?", answer: "talk share" },
+        { question: "На кого я підписаний, крім друзів (два слова)?", answer: "favourite stars" },
+        { question: "Куди я йду, коли я не в онлайн?", answer: "outside" },
+        { question: "Що може бути шкідливим, якщо його забагато (два слова)?", answer: "screen time" },
+        { question: "На які ще сторінки я підписаний (два слова)?", answer: "travel food" },
+    ],
+
+    //LESSON 10
+    //first question
+    [
+        { question: "Чим я користуюсь щодня?", answer: "phone" },
+        { question: "Які дві дії я роблю з його допомогою?", answer: "chat watch" },
+        { question: "За допомогою чого я ділюся фотографіями (два слова)?", answer: "social media" },
+        { question: "Що мені кажуть робити батьки?", answer: "breaks" },
+        { question: "Яким роблять життя технології?", answer: "easier" },
+    ],
+    //second question
+    [
+        { question: "Для чого люди використовують соціальні мережі (два слова)?", answer: "talk share" },
+        { question: "На кого я підписаний, крім друзів (два слова)?", answer: "favourite stars" },
+        { question: "Куди я йду, коли я не в онлайн?", answer: "outside" },
+        { question: "Що може бути шкідливим, якщо його забагато (два слова)?", answer: "screen time" },
+        { question: "На які ще сторінки я підписаний (два слова)?", answer: "travel food" },
+    ],
+
+    //LESSON 10
+    //first question
+    [
+        { question: "Чим я користуюсь щодня?", answer: "phone" },
+        { question: "Які дві дії я роблю з його допомогою?", answer: "chat watch" },
+        { question: "За допомогою чого я ділюся фотографіями (два слова)?", answer: "social media" },
+        { question: "Що мені кажуть робити батьки?", answer: "breaks" },
+        { question: "Яким роблять життя технології?", answer: "easier" },
+    ],
+    //second question
+    [
+        { question: "Для чого люди використовують соціальні мережі (два слова)?", answer: "talk share" },
+        { question: "На кого я підписаний, крім друзів (два слова)?", answer: "favourite stars" },
+        { question: "Куди я йду, коли я не в онлайн?", answer: "outside" },
+        { question: "Що може бути шкідливим, якщо його забагато (два слова)?", answer: "screen time" },
+        { question: "На які ще сторінки я підписаний (два слова)?", answer: "travel food" },
+    ],
+
+    //LESSON 10
+    //first question
+    [
+        { question: "Чим я користуюсь щодня?", answer: "phone" },
+        { question: "Які дві дії я роблю з його допомогою?", answer: "chat watch" },
+        { question: "За допомогою чого я ділюся фотографіями (два слова)?", answer: "social media" },
+        { question: "Що мені кажуть робити батьки?", answer: "breaks" },
+        { question: "Яким роблять життя технології?", answer: "easier" },
+    ],
+    //second question
+    [
+        { question: "Для чого люди використовують соціальні мережі (два слова)?", answer: "talk share" },
+        { question: "На кого я підписаний, крім друзів (два слова)?", answer: "favourite stars" },
+        { question: "Куди я йду, коли я не в онлайн?", answer: "outside" },
+        { question: "Що може бути шкідливим, якщо його забагато (два слова)?", answer: "screen time" },
+        { question: "На які ще сторінки я підписаний (два слова)?", answer: "travel food" },
+    ],
+
+    //LESSON 10
+    //first question
+    [
+        { question: "Чим я користуюсь щодня?", answer: "phone" },
+        { question: "Які дві дії я роблю з його допомогою?", answer: "chat watch" },
+        { question: "За допомогою чого я ділюся фотографіями (два слова)?", answer: "social media" },
+        { question: "Що мені кажуть робити батьки?", answer: "breaks" },
+        { question: "Яким роблять життя технології?", answer: "easier" },
+    ],
+    //second question
+    [
+        { question: "Для чого люди використовують соціальні мережі (два слова)?", answer: "talk share" },
+        { question: "На кого я підписаний, крім друзів (два слова)?", answer: "favourite stars" },
+        { question: "Куди я йду, коли я не в онлайн?", answer: "outside" },
+        { question: "Що може бути шкідливим, якщо його забагато (два слова)?", answer: "screen time" },
+        { question: "На які ще сторінки я підписаний (два слова)?", answer: "travel food" },
+    ],
+
+    //LESSON 10
+    //first question
+    [
+        { question: "Чим я користуюсь щодня?", answer: "phone" },
+        { question: "Які дві дії я роблю з його допомогою?", answer: "chat watch" },
+        { question: "За допомогою чого я ділюся фотографіями (два слова)?", answer: "social media" },
+        { question: "Що мені кажуть робити батьки?", answer: "breaks" },
+        { question: "Яким роблять життя технології?", answer: "easier" },
+    ],
+    //second question
+    [
+        { question: "Для чого люди використовують соціальні мережі (два слова)?", answer: "talk share" },
+        { question: "На кого я підписаний, крім друзів (два слова)?", answer: "favourite stars" },
+        { question: "Куди я йду, коли я не в онлайн?", answer: "outside" },
+        { question: "Що може бути шкідливим, якщо його забагато (два слова)?", answer: "screen time" },
+        { question: "На які ще сторінки я підписаний (два слова)?", answer: "travel food" },
+    ],
+
+    //LESSON 10
+    //first question
+    [
+        { question: "Чим я користуюсь щодня?", answer: "phone" },
+        { question: "Які дві дії я роблю з його допомогою?", answer: "chat watch" },
+        { question: "За допомогою чого я ділюся фотографіями (два слова)?", answer: "social media" },
+        { question: "Що мені кажуть робити батьки?", answer: "breaks" },
+        { question: "Яким роблять життя технології?", answer: "easier" },
+    ],
+    //second question
+    [
+        { question: "Для чого люди використовують соціальні мережі (два слова)?", answer: "talk share" },
+        { question: "На кого я підписаний, крім друзів (два слова)?", answer: "favourite stars" },
+        { question: "Куди я йду, коли я не в онлайн?", answer: "outside" },
+        { question: "Що може бути шкідливим, якщо його забагато (два слова)?", answer: "screen time" },
+        { question: "На які ще сторінки я підписаний (два слова)?", answer: "travel food" },
+    ],
+
+    //LESSON 10
+    //first question
+    [
+        { question: "Чим я користуюсь щодня?", answer: "phone" },
+        { question: "Які дві дії я роблю з його допомогою?", answer: "chat watch" },
+        { question: "За допомогою чого я ділюся фотографіями (два слова)?", answer: "social media" },
+        { question: "Що мені кажуть робити батьки?", answer: "breaks" },
+        { question: "Яким роблять життя технології?", answer: "easier" },
+    ],
+    //second question
+    [
+        { question: "Для чого люди використовують соціальні мережі (два слова)?", answer: "talk share" },
+        { question: "На кого я підписаний, крім друзів (два слова)?", answer: "favourite stars" },
+        { question: "Куди я йду, коли я не в онлайн?", answer: "outside" },
+        { question: "Що може бути шкідливим, якщо його забагато (два слова)?", answer: "screen time" },
+        { question: "На які ще сторінки я підписаний (два слова)?", answer: "travel food" },
+    ],
+
+    //LESSON 10
+    //first question
+    [
+        { question: "Чим я користуюсь щодня?", answer: "phone" },
+        { question: "Які дві дії я роблю з його допомогою?", answer: "chat watch" },
+        { question: "За допомогою чого я ділюся фотографіями (два слова)?", answer: "social media" },
+        { question: "Що мені кажуть робити батьки?", answer: "breaks" },
+        { question: "Яким роблять життя технології?", answer: "easier" },
+    ],
+    //second question
+    [
+        { question: "Для чого люди використовують соціальні мережі (два слова)?", answer: "talk share" },
+        { question: "На кого я підписаний, крім друзів (два слова)?", answer: "favourite stars" },
+        { question: "Куди я йду, коли я не в онлайн?", answer: "outside" },
+        { question: "Що може бути шкідливим, якщо його забагато (два слова)?", answer: "screen time" },
+        { question: "На які ще сторінки я підписаний (два слова)?", answer: "travel food" },
+    ],
+
+    //LESSON 10
+    //first question
+    [
+        { question: "Чим я користуюсь щодня?", answer: "phone" },
+        { question: "Які дві дії я роблю з його допомогою?", answer: "chat watch" },
+        { question: "За допомогою чого я ділюся фотографіями (два слова)?", answer: "social media" },
+        { question: "Що мені кажуть робити батьки?", answer: "breaks" },
+        { question: "Яким роблять життя технології?", answer: "easier" },
+    ],
+    //second question
+    [
+        { question: "Для чого люди використовують соціальні мережі (два слова)?", answer: "talk share" },
+        { question: "На кого я підписаний, крім друзів (два слова)?", answer: "favourite stars" },
+        { question: "Куди я йду, коли я не в онлайн?", answer: "outside" },
+        { question: "Що може бути шкідливим, якщо його забагато (два слова)?", answer: "screen time" },
+        { question: "На які ще сторінки я підписаний (два слова)?", answer: "travel food" },
+    ],
+
+    //LESSON 10
+    //first question
+    [
+        { question: "Чим я користуюсь щодня?", answer: "phone" },
+        { question: "Які дві дії я роблю з його допомогою?", answer: "chat watch" },
+        { question: "За допомогою чого я ділюся фотографіями (два слова)?", answer: "social media" },
+        { question: "Що мені кажуть робити батьки?", answer: "breaks" },
+        { question: "Яким роблять життя технології?", answer: "easier" },
+    ],
+    //second question
+    [
+        { question: "Для чого люди використовують соціальні мережі (два слова)?", answer: "talk share" },
+        { question: "На кого я підписаний, крім друзів (два слова)?", answer: "favourite stars" },
+        { question: "Куди я йду, коли я не в онлайн?", answer: "outside" },
+        { question: "Що може бути шкідливим, якщо його забагато (два слова)?", answer: "screen time" },
+        { question: "На які ще сторінки я підписаний (два слова)?", answer: "travel food" },
+    ],
+
+    //LESSON 10
+    //first question
+    [
+        { question: "Чим я користуюсь щодня?", answer: "phone" },
+        { question: "Які дві дії я роблю з його допомогою?", answer: "chat watch" },
+        { question: "За допомогою чого я ділюся фотографіями (два слова)?", answer: "social media" },
+        { question: "Що мені кажуть робити батьки?", answer: "breaks" },
+        { question: "Яким роблять життя технології?", answer: "easier" },
+    ],
+    //second question
+    [
+        { question: "Для чого люди використовують соціальні мережі (два слова)?", answer: "talk share" },
+        { question: "На кого я підписаний, крім друзів (два слова)?", answer: "favourite stars" },
+        { question: "Куди я йду, коли я не в онлайн?", answer: "outside" },
+        { question: "Що може бути шкідливим, якщо його забагато (два слова)?", answer: "screen time" },
+        { question: "На які ще сторінки я підписаний (два слова)?", answer: "travel food" },
+    ],
+
+    //LESSON 10
+    //first question
+    [
+        { question: "Чим я користуюсь щодня?", answer: "phone" },
+        { question: "Які дві дії я роблю з його допомогою?", answer: "chat watch" },
+        { question: "За допомогою чого я ділюся фотографіями (два слова)?", answer: "social media" },
+        { question: "Що мені кажуть робити батьки?", answer: "breaks" },
+        { question: "Яким роблять життя технології?", answer: "easier" },
+    ],
+    //second question
+    [
+        { question: "Для чого люди використовують соціальні мережі (два слова)?", answer: "talk share" },
+        { question: "На кого я підписаний, крім друзів (два слова)?", answer: "favourite stars" },
+        { question: "Куди я йду, коли я не в онлайн?", answer: "outside" },
+        { question: "Що може бути шкідливим, якщо його забагато (два слова)?", answer: "screen time" },
+        { question: "На які ще сторінки я підписаний (два слова)?", answer: "travel food" },
+    ],
+
+    //LESSON 10
+    //first question
+    [
+        { question: "Чим я користуюсь щодня?", answer: "phone" },
+        { question: "Які дві дії я роблю з його допомогою?", answer: "chat watch" },
+        { question: "За допомогою чого я ділюся фотографіями (два слова)?", answer: "social media" },
+        { question: "Що мені кажуть робити батьки?", answer: "breaks" },
+        { question: "Яким роблять життя технології?", answer: "easier" },
+    ],
+    //second question
+    [
+        { question: "Для чого люди використовують соціальні мережі (два слова)?", answer: "talk share" },
+        { question: "На кого я підписаний, крім друзів (два слова)?", answer: "favourite stars" },
+        { question: "Куди я йду, коли я не в онлайн?", answer: "outside" },
+        { question: "Що може бути шкідливим, якщо його забагато (два слова)?", answer: "screen time" },
+        { question: "На які ще сторінки я підписаний (два слова)?", answer: "travel food" },
+    ],
+
+    //LESSON 10
+    //first question
+    [
+        { question: "Чим я користуюсь щодня?", answer: "phone" },
+        { question: "Які дві дії я роблю з його допомогою?", answer: "chat watch" },
+        { question: "За допомогою чого я ділюся фотографіями (два слова)?", answer: "social media" },
+        { question: "Що мені кажуть робити батьки?", answer: "breaks" },
+        { question: "Яким роблять життя технології?", answer: "easier" },
+    ],
+    //second question
+    [
+        { question: "Для чого люди використовують соціальні мережі (два слова)?", answer: "talk share" },
+        { question: "На кого я підписаний, крім друзів (два слова)?", answer: "favourite stars" },
+        { question: "Куди я йду, коли я не в онлайн?", answer: "outside" },
+        { question: "Що може бути шкідливим, якщо його забагато (два слова)?", answer: "screen time" },
+        { question: "На які ще сторінки я підписаний (два слова)?", answer: "travel food" },
+    ],
+
+    //LESSON 10
+    //first question
+    [
+        { question: "Чим я користуюсь щодня?", answer: "phone" },
+        { question: "Які дві дії я роблю з його допомогою?", answer: "chat watch" },
+        { question: "За допомогою чого я ділюся фотографіями (два слова)?", answer: "social media" },
+        { question: "Що мені кажуть робити батьки?", answer: "breaks" },
+        { question: "Яким роблять життя технології?", answer: "easier" },
+    ],
+    //second question
+    [
+        { question: "Для чого люди використовують соціальні мережі (два слова)?", answer: "talk share" },
+        { question: "На кого я підписаний, крім друзів (два слова)?", answer: "favourite stars" },
+        { question: "Куди я йду, коли я не в онлайн?", answer: "outside" },
+        { question: "Що може бути шкідливим, якщо його забагато (два слова)?", answer: "screen time" },
+        { question: "На які ще сторінки я підписаний (два слова)?", answer: "travel food" },
+    ],
+
+    //LESSON 10
+    //first question
+    [
+        { question: "Чим я користуюсь щодня?", answer: "phone" },
+        { question: "Які дві дії я роблю з його допомогою?", answer: "chat watch" },
+        { question: "За допомогою чого я ділюся фотографіями (два слова)?", answer: "social media" },
+        { question: "Що мені кажуть робити батьки?", answer: "breaks" },
+        { question: "Яким роблять життя технології?", answer: "easier" },
+    ],
+    //second question
+    [
+        { question: "Для чого люди використовують соціальні мережі (два слова)?", answer: "talk share" },
+        { question: "На кого я підписаний, крім друзів (два слова)?", answer: "favourite stars" },
+        { question: "Куди я йду, коли я не в онлайн?", answer: "outside" },
+        { question: "Що може бути шкідливим, якщо його забагато (два слова)?", answer: "screen time" },
+        { question: "На які ще сторінки я підписаний (два слова)?", answer: "travel food" },
+    ],
+
+    //LESSON 10
+    //first question
+    [
+        { question: "Чим я користуюсь щодня?", answer: "phone" },
+        { question: "Які дві дії я роблю з його допомогою?", answer: "chat watch" },
+        { question: "За допомогою чого я ділюся фотографіями (два слова)?", answer: "social media" },
+        { question: "Що мені кажуть робити батьки?", answer: "breaks" },
+        { question: "Яким роблять життя технології?", answer: "easier" },
+    ],
+    //second question
+    [
+        { question: "Для чого люди використовують соціальні мережі (два слова)?", answer: "talk share" },
+        { question: "На кого я підписаний, крім друзів (два слова)?", answer: "favourite stars" },
+        { question: "Куди я йду, коли я не в онлайн?", answer: "outside" },
+        { question: "Що може бути шкідливим, якщо його забагато (два слова)?", answer: "screen time" },
+        { question: "На які ще сторінки я підписаний (два слова)?", answer: "travel food" },
+    ],
+
 
 ]
 

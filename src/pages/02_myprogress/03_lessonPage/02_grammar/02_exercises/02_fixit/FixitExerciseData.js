@@ -99,6 +99,206 @@ const sentences = [
     { beginning: "You", bold: "see", correct: "have not seen", ending: "the real problem yet" },
     { beginning: "I", bold: "try", correct: "have not tried", ending: "various solutions yet" },
 
+        // LESSON 10
+    { beginning: "She", bold: "find", correct: "has not found", ending: "her card" },
+    { beginning: "They", bold: "face", correct: "have not faced", ending: "any difficulties so far" },
+    { beginning: "We", bold: "include", correct: "have not included", ending: "Sarah in the list" },
+    { beginning: "He", bold: "make", correct: "has not made", ending: "a list of items to buy" },
+    { beginning: "I", bold: "change", correct: "have not changed", ending: "my mind about the trip" },
+    { beginning: "She", bold: "mention", correct: "has not mentioned", ending: "any reason" },
+    { beginning: "You", bold: "see", correct: "have not seen", ending: "the real problem yet" },
+    { beginning: "I", bold: "try", correct: "have not tried", ending: "various solutions yet" },
+
+        // LESSON 10
+    { beginning: "She", bold: "find", correct: "has not found", ending: "her card" },
+    { beginning: "They", bold: "face", correct: "have not faced", ending: "any difficulties so far" },
+    { beginning: "We", bold: "include", correct: "have not included", ending: "Sarah in the list" },
+    { beginning: "He", bold: "make", correct: "has not made", ending: "a list of items to buy" },
+    { beginning: "I", bold: "change", correct: "have not changed", ending: "my mind about the trip" },
+    { beginning: "She", bold: "mention", correct: "has not mentioned", ending: "any reason" },
+    { beginning: "You", bold: "see", correct: "have not seen", ending: "the real problem yet" },
+    { beginning: "I", bold: "try", correct: "have not tried", ending: "various solutions yet" },
+
+        // LESSON 10
+    { beginning: "She", bold: "find", correct: "has not found", ending: "her card" },
+    { beginning: "They", bold: "face", correct: "have not faced", ending: "any difficulties so far" },
+    { beginning: "We", bold: "include", correct: "have not included", ending: "Sarah in the list" },
+    { beginning: "He", bold: "make", correct: "has not made", ending: "a list of items to buy" },
+    { beginning: "I", bold: "change", correct: "have not changed", ending: "my mind about the trip" },
+    { beginning: "She", bold: "mention", correct: "has not mentioned", ending: "any reason" },
+    { beginning: "You", bold: "see", correct: "have not seen", ending: "the real problem yet" },
+    { beginning: "I", bold: "try", correct: "have not tried", ending: "various solutions yet" },
+
+        // LESSON 10
+    { beginning: "She", bold: "find", correct: "has not found", ending: "her card" },
+    { beginning: "They", bold: "face", correct: "have not faced", ending: "any difficulties so far" },
+    { beginning: "We", bold: "include", correct: "have not included", ending: "Sarah in the list" },
+    { beginning: "He", bold: "make", correct: "has not made", ending: "a list of items to buy" },
+    { beginning: "I", bold: "change", correct: "have not changed", ending: "my mind about the trip" },
+    { beginning: "She", bold: "mention", correct: "has not mentioned", ending: "any reason" },
+    { beginning: "You", bold: "see", correct: "have not seen", ending: "the real problem yet" },
+    { beginning: "I", bold: "try", correct: "have not tried", ending: "various solutions yet" },
+
+        // LESSON 10
+    { beginning: "She", bold: "find", correct: "has not found", ending: "her card" },
+    { beginning: "They", bold: "face", correct: "have not faced", ending: "any difficulties so far" },
+    { beginning: "We", bold: "include", correct: "have not included", ending: "Sarah in the list" },
+    { beginning: "He", bold: "make", correct: "has not made", ending: "a list of items to buy" },
+    { beginning: "I", bold: "change", correct: "have not changed", ending: "my mind about the trip" },
+    { beginning: "She", bold: "mention", correct: "has not mentioned", ending: "any reason" },
+    { beginning: "You", bold: "see", correct: "have not seen", ending: "the real problem yet" },
+    { beginning: "I", bold: "try", correct: "have not tried", ending: "various solutions yet" },
+
+        // LESSON 10
+    { beginning: "She", bold: "find", correct: "has not found", ending: "her card" },
+    { beginning: "They", bold: "face", correct: "have not faced", ending: "any difficulties so far" },
+    { beginning: "We", bold: "include", correct: "have not included", ending: "Sarah in the list" },
+    { beginning: "He", bold: "make", correct: "has not made", ending: "a list of items to buy" },
+    { beginning: "I", bold: "change", correct: "have not changed", ending: "my mind about the trip" },
+    { beginning: "She", bold: "mention", correct: "has not mentioned", ending: "any reason" },
+    { beginning: "You", bold: "see", correct: "have not seen", ending: "the real problem yet" },
+    { beginning: "I", bold: "try", correct: "have not tried", ending: "various solutions yet" },
+
+        // LESSON 10
+    { beginning: "She", bold: "find", correct: "has not found", ending: "her card" },
+    { beginning: "They", bold: "face", correct: "have not faced", ending: "any difficulties so far" },
+    { beginning: "We", bold: "include", correct: "have not included", ending: "Sarah in the list" },
+    { beginning: "He", bold: "make", correct: "has not made", ending: "a list of items to buy" },
+    { beginning: "I", bold: "change", correct: "have not changed", ending: "my mind about the trip" },
+    { beginning: "She", bold: "mention", correct: "has not mentioned", ending: "any reason" },
+    { beginning: "You", bold: "see", correct: "have not seen", ending: "the real problem yet" },
+    { beginning: "I", bold: "try", correct: "have not tried", ending: "various solutions yet" },
+
+        // LESSON 10
+    { beginning: "She", bold: "find", correct: "has not found", ending: "her card" },
+    { beginning: "They", bold: "face", correct: "have not faced", ending: "any difficulties so far" },
+    { beginning: "We", bold: "include", correct: "have not included", ending: "Sarah in the list" },
+    { beginning: "He", bold: "make", correct: "has not made", ending: "a list of items to buy" },
+    { beginning: "I", bold: "change", correct: "have not changed", ending: "my mind about the trip" },
+    { beginning: "She", bold: "mention", correct: "has not mentioned", ending: "any reason" },
+    { beginning: "You", bold: "see", correct: "have not seen", ending: "the real problem yet" },
+    { beginning: "I", bold: "try", correct: "have not tried", ending: "various solutions yet" },
+
+        // LESSON 10
+    { beginning: "She", bold: "find", correct: "has not found", ending: "her card" },
+    { beginning: "They", bold: "face", correct: "have not faced", ending: "any difficulties so far" },
+    { beginning: "We", bold: "include", correct: "have not included", ending: "Sarah in the list" },
+    { beginning: "He", bold: "make", correct: "has not made", ending: "a list of items to buy" },
+    { beginning: "I", bold: "change", correct: "have not changed", ending: "my mind about the trip" },
+    { beginning: "She", bold: "mention", correct: "has not mentioned", ending: "any reason" },
+    { beginning: "You", bold: "see", correct: "have not seen", ending: "the real problem yet" },
+    { beginning: "I", bold: "try", correct: "have not tried", ending: "various solutions yet" },
+
+        // LESSON 10
+    { beginning: "She", bold: "find", correct: "has not found", ending: "her card" },
+    { beginning: "They", bold: "face", correct: "have not faced", ending: "any difficulties so far" },
+    { beginning: "We", bold: "include", correct: "have not included", ending: "Sarah in the list" },
+    { beginning: "He", bold: "make", correct: "has not made", ending: "a list of items to buy" },
+    { beginning: "I", bold: "change", correct: "have not changed", ending: "my mind about the trip" },
+    { beginning: "She", bold: "mention", correct: "has not mentioned", ending: "any reason" },
+    { beginning: "You", bold: "see", correct: "have not seen", ending: "the real problem yet" },
+    { beginning: "I", bold: "try", correct: "have not tried", ending: "various solutions yet" },
+
+        // LESSON 10
+    { beginning: "She", bold: "find", correct: "has not found", ending: "her card" },
+    { beginning: "They", bold: "face", correct: "have not faced", ending: "any difficulties so far" },
+    { beginning: "We", bold: "include", correct: "have not included", ending: "Sarah in the list" },
+    { beginning: "He", bold: "make", correct: "has not made", ending: "a list of items to buy" },
+    { beginning: "I", bold: "change", correct: "have not changed", ending: "my mind about the trip" },
+    { beginning: "She", bold: "mention", correct: "has not mentioned", ending: "any reason" },
+    { beginning: "You", bold: "see", correct: "have not seen", ending: "the real problem yet" },
+    { beginning: "I", bold: "try", correct: "have not tried", ending: "various solutions yet" },
+
+        // LESSON 10
+    { beginning: "She", bold: "find", correct: "has not found", ending: "her card" },
+    { beginning: "They", bold: "face", correct: "have not faced", ending: "any difficulties so far" },
+    { beginning: "We", bold: "include", correct: "have not included", ending: "Sarah in the list" },
+    { beginning: "He", bold: "make", correct: "has not made", ending: "a list of items to buy" },
+    { beginning: "I", bold: "change", correct: "have not changed", ending: "my mind about the trip" },
+    { beginning: "She", bold: "mention", correct: "has not mentioned", ending: "any reason" },
+    { beginning: "You", bold: "see", correct: "have not seen", ending: "the real problem yet" },
+    { beginning: "I", bold: "try", correct: "have not tried", ending: "various solutions yet" },
+
+        // LESSON 10
+    { beginning: "She", bold: "find", correct: "has not found", ending: "her card" },
+    { beginning: "They", bold: "face", correct: "have not faced", ending: "any difficulties so far" },
+    { beginning: "We", bold: "include", correct: "have not included", ending: "Sarah in the list" },
+    { beginning: "He", bold: "make", correct: "has not made", ending: "a list of items to buy" },
+    { beginning: "I", bold: "change", correct: "have not changed", ending: "my mind about the trip" },
+    { beginning: "She", bold: "mention", correct: "has not mentioned", ending: "any reason" },
+    { beginning: "You", bold: "see", correct: "have not seen", ending: "the real problem yet" },
+    { beginning: "I", bold: "try", correct: "have not tried", ending: "various solutions yet" },
+
+        // LESSON 10
+    { beginning: "She", bold: "find", correct: "has not found", ending: "her card" },
+    { beginning: "They", bold: "face", correct: "have not faced", ending: "any difficulties so far" },
+    { beginning: "We", bold: "include", correct: "have not included", ending: "Sarah in the list" },
+    { beginning: "He", bold: "make", correct: "has not made", ending: "a list of items to buy" },
+    { beginning: "I", bold: "change", correct: "have not changed", ending: "my mind about the trip" },
+    { beginning: "She", bold: "mention", correct: "has not mentioned", ending: "any reason" },
+    { beginning: "You", bold: "see", correct: "have not seen", ending: "the real problem yet" },
+    { beginning: "I", bold: "try", correct: "have not tried", ending: "various solutions yet" },
+
+        // LESSON 10
+    { beginning: "She", bold: "find", correct: "has not found", ending: "her card" },
+    { beginning: "They", bold: "face", correct: "have not faced", ending: "any difficulties so far" },
+    { beginning: "We", bold: "include", correct: "have not included", ending: "Sarah in the list" },
+    { beginning: "He", bold: "make", correct: "has not made", ending: "a list of items to buy" },
+    { beginning: "I", bold: "change", correct: "have not changed", ending: "my mind about the trip" },
+    { beginning: "She", bold: "mention", correct: "has not mentioned", ending: "any reason" },
+    { beginning: "You", bold: "see", correct: "have not seen", ending: "the real problem yet" },
+    { beginning: "I", bold: "try", correct: "have not tried", ending: "various solutions yet" },
+
+        // LESSON 10
+    { beginning: "She", bold: "find", correct: "has not found", ending: "her card" },
+    { beginning: "They", bold: "face", correct: "have not faced", ending: "any difficulties so far" },
+    { beginning: "We", bold: "include", correct: "have not included", ending: "Sarah in the list" },
+    { beginning: "He", bold: "make", correct: "has not made", ending: "a list of items to buy" },
+    { beginning: "I", bold: "change", correct: "have not changed", ending: "my mind about the trip" },
+    { beginning: "She", bold: "mention", correct: "has not mentioned", ending: "any reason" },
+    { beginning: "You", bold: "see", correct: "have not seen", ending: "the real problem yet" },
+    { beginning: "I", bold: "try", correct: "have not tried", ending: "various solutions yet" },
+
+        // LESSON 10
+    { beginning: "She", bold: "find", correct: "has not found", ending: "her card" },
+    { beginning: "They", bold: "face", correct: "have not faced", ending: "any difficulties so far" },
+    { beginning: "We", bold: "include", correct: "have not included", ending: "Sarah in the list" },
+    { beginning: "He", bold: "make", correct: "has not made", ending: "a list of items to buy" },
+    { beginning: "I", bold: "change", correct: "have not changed", ending: "my mind about the trip" },
+    { beginning: "She", bold: "mention", correct: "has not mentioned", ending: "any reason" },
+    { beginning: "You", bold: "see", correct: "have not seen", ending: "the real problem yet" },
+    { beginning: "I", bold: "try", correct: "have not tried", ending: "various solutions yet" },
+
+        // LESSON 10
+    { beginning: "She", bold: "find", correct: "has not found", ending: "her card" },
+    { beginning: "They", bold: "face", correct: "have not faced", ending: "any difficulties so far" },
+    { beginning: "We", bold: "include", correct: "have not included", ending: "Sarah in the list" },
+    { beginning: "He", bold: "make", correct: "has not made", ending: "a list of items to buy" },
+    { beginning: "I", bold: "change", correct: "have not changed", ending: "my mind about the trip" },
+    { beginning: "She", bold: "mention", correct: "has not mentioned", ending: "any reason" },
+    { beginning: "You", bold: "see", correct: "have not seen", ending: "the real problem yet" },
+    { beginning: "I", bold: "try", correct: "have not tried", ending: "various solutions yet" },
+
+        // LESSON 10
+    { beginning: "She", bold: "find", correct: "has not found", ending: "her card" },
+    { beginning: "They", bold: "face", correct: "have not faced", ending: "any difficulties so far" },
+    { beginning: "We", bold: "include", correct: "have not included", ending: "Sarah in the list" },
+    { beginning: "He", bold: "make", correct: "has not made", ending: "a list of items to buy" },
+    { beginning: "I", bold: "change", correct: "have not changed", ending: "my mind about the trip" },
+    { beginning: "She", bold: "mention", correct: "has not mentioned", ending: "any reason" },
+    { beginning: "You", bold: "see", correct: "have not seen", ending: "the real problem yet" },
+    { beginning: "I", bold: "try", correct: "have not tried", ending: "various solutions yet" },
+
+        // LESSON 10
+    { beginning: "She", bold: "find", correct: "has not found", ending: "her card" },
+    { beginning: "They", bold: "face", correct: "have not faced", ending: "any difficulties so far" },
+    { beginning: "We", bold: "include", correct: "have not included", ending: "Sarah in the list" },
+    { beginning: "He", bold: "make", correct: "has not made", ending: "a list of items to buy" },
+    { beginning: "I", bold: "change", correct: "have not changed", ending: "my mind about the trip" },
+    { beginning: "She", bold: "mention", correct: "has not mentioned", ending: "any reason" },
+    { beginning: "You", bold: "see", correct: "have not seen", ending: "the real problem yet" },
+    { beginning: "I", bold: "try", correct: "have not tried", ending: "various solutions yet" },
+
 ]
 
 export const FixitExerciseData = sentences.map((value, index) => (

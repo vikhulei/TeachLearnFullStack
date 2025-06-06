@@ -27,6 +27,47 @@ She woke up early. Her job didn’t start for hours. At home, she liked to read 
     '<b>THE DIGITAL MOVE</b>\nThe web is a useful tool today. Many people develop new ideas online. Every page tells a story. The media industry grows fast. Activity on the internet never stops. One thing is clear: we must move forward. To use technology well is important. It helps us connect and learn. The digital world is always changing. We all take part in this new story.',
     //LESSON 10
     '<b>THE MAIN FOCUS</b> \nIn any community, safety must matter. Every individual plays a part. The quality of life depends on kind actions. Development happens when we work together. That is what helps everyone. Sometimes, everything feels hard to manage. But the main goal is clear: Create a place where everyone feels safe and valued.',
+    //LESSON 10
+    '<b>THE MAIN FOCUS</b> \nIn any community, safety must matter. Every individual plays a part. The quality of life depends on kind actions. Development happens when we work together. That is what helps everyone. Sometimes, everything feels hard to manage. But the main goal is clear: Create a place where everyone feels safe and valued.',
+    //LESSON 10
+    '<b>THE MAIN FOCUS</b> \nIn any community, safety must matter. Every individual plays a part. The quality of life depends on kind actions. Development happens when we work together. That is what helps everyone. Sometimes, everything feels hard to manage. But the main goal is clear: Create a place where everyone feels safe and valued.',
+    //LESSON 10
+    '<b>THE MAIN FOCUS</b> \nIn any community, safety must matter. Every individual plays a part. The quality of life depends on kind actions. Development happens when we work together. That is what helps everyone. Sometimes, everything feels hard to manage. But the main goal is clear: Create a place where everyone feels safe and valued.',
+    //LESSON 10
+    '<b>THE MAIN FOCUS</b> \nIn any community, safety must matter. Every individual plays a part. The quality of life depends on kind actions. Development happens when we work together. That is what helps everyone. Sometimes, everything feels hard to manage. But the main goal is clear: Create a place where everyone feels safe and valued.',
+    //LESSON 10
+    '<b>THE MAIN FOCUS</b> \nIn any community, safety must matter. Every individual plays a part. The quality of life depends on kind actions. Development happens when we work together. That is what helps everyone. Sometimes, everything feels hard to manage. But the main goal is clear: Create a place where everyone feels safe and valued.',
+    //LESSON 10
+    '<b>THE MAIN FOCUS</b> \nIn any community, safety must matter. Every individual plays a part. The quality of life depends on kind actions. Development happens when we work together. That is what helps everyone. Sometimes, everything feels hard to manage. But the main goal is clear: Create a place where everyone feels safe and valued.',
+    //LESSON 10
+    '<b>THE MAIN FOCUS</b> \nIn any community, safety must matter. Every individual plays a part. The quality of life depends on kind actions. Development happens when we work together. That is what helps everyone. Sometimes, everything feels hard to manage. But the main goal is clear: Create a place where everyone feels safe and valued.',
+    //LESSON 10
+    '<b>THE MAIN FOCUS</b> \nIn any community, safety must matter. Every individual plays a part. The quality of life depends on kind actions. Development happens when we work together. That is what helps everyone. Sometimes, everything feels hard to manage. But the main goal is clear: Create a place where everyone feels safe and valued.',
+    //LESSON 10
+    '<b>THE MAIN FOCUS</b> \nIn any community, safety must matter. Every individual plays a part. The quality of life depends on kind actions. Development happens when we work together. That is what helps everyone. Sometimes, everything feels hard to manage. But the main goal is clear: Create a place where everyone feels safe and valued.',
+    //LESSON 10
+    '<b>THE MAIN FOCUS</b> \nIn any community, safety must matter. Every individual plays a part. The quality of life depends on kind actions. Development happens when we work together. That is what helps everyone. Sometimes, everything feels hard to manage. But the main goal is clear: Create a place where everyone feels safe and valued.',
+    //LESSON 10
+    '<b>THE MAIN FOCUS</b> \nIn any community, safety must matter. Every individual plays a part. The quality of life depends on kind actions. Development happens when we work together. That is what helps everyone. Sometimes, everything feels hard to manage. But the main goal is clear: Create a place where everyone feels safe and valued.',
+    //LESSON 10
+    '<b>THE MAIN FOCUS</b> \nIn any community, safety must matter. Every individual plays a part. The quality of life depends on kind actions. Development happens when we work together. That is what helps everyone. Sometimes, everything feels hard to manage. But the main goal is clear: Create a place where everyone feels safe and valued.',
+    //LESSON 10
+    '<b>THE MAIN FOCUS</b> \nIn any community, safety must matter. Every individual plays a part. The quality of life depends on kind actions. Development happens when we work together. That is what helps everyone. Sometimes, everything feels hard to manage. But the main goal is clear: Create a place where everyone feels safe and valued.',
+    //LESSON 10
+    '<b>THE MAIN FOCUS</b> \nIn any community, safety must matter. Every individual plays a part. The quality of life depends on kind actions. Development happens when we work together. That is what helps everyone. Sometimes, everything feels hard to manage. But the main goal is clear: Create a place where everyone feels safe and valued.',
+    //LESSON 10
+    '<b>THE MAIN FOCUS</b> \nIn any community, safety must matter. Every individual plays a part. The quality of life depends on kind actions. Development happens when we work together. That is what helps everyone. Sometimes, everything feels hard to manage. But the main goal is clear: Create a place where everyone feels safe and valued.',
+    //LESSON 10
+    '<b>THE MAIN FOCUS</b> \nIn any community, safety must matter. Every individual plays a part. The quality of life depends on kind actions. Development happens when we work together. That is what helps everyone. Sometimes, everything feels hard to manage. But the main goal is clear: Create a place where everyone feels safe and valued.',
+    //LESSON 10
+    '<b>THE MAIN FOCUS</b> \nIn any community, safety must matter. Every individual plays a part. The quality of life depends on kind actions. Development happens when we work together. That is what helps everyone. Sometimes, everything feels hard to manage. But the main goal is clear: Create a place where everyone feels safe and valued.',
+    //LESSON 10
+    '<b>THE MAIN FOCUS</b> \nIn any community, safety must matter. Every individual plays a part. The quality of life depends on kind actions. Development happens when we work together. That is what helps everyone. Sometimes, everything feels hard to manage. But the main goal is clear: Create a place where everyone feels safe and valued.',
+    //LESSON 10
+    '<b>THE MAIN FOCUS</b> \nIn any community, safety must matter. Every individual plays a part. The quality of life depends on kind actions. Development happens when we work together. That is what helps everyone. Sometimes, everything feels hard to manage. But the main goal is clear: Create a place where everyone feels safe and valued.',
+    //LESSON 10
+    '<b>THE MAIN FOCUS</b> \nIn any community, safety must matter. Every individual plays a part. The quality of life depends on kind actions. Development happens when we work together. That is what helps everyone. Sometimes, everything feels hard to manage. But the main goal is clear: Create a place where everyone feels safe and valued.',
+
 ]
 
 const images = importAll(
@@ -114,6 +155,175 @@ const rawQuestions = [
         { question: "Якою є головна ціль?", answer: "clear" },
         { question: "Як повинні себе почувати всі люди (два слова)?", answer: "safe valued" },
     ],
+    //lesson 10
+    [
+        { question: "Що має мати значення в будь-якій спільноті?", answer: "safety" },
+        { question: "Від чого залежить якість життя (два слова)?", answer: "kind actions" },
+        { question: "Як ми повинні працювати для розвитку?", answer: "together" },
+        { question: "Якою є головна ціль?", answer: "clear" },
+        { question: "Як повинні себе почувати всі люди (два слова)?", answer: "safe valued" },
+    ],
+    //lesson 10
+    [
+        { question: "Що має мати значення в будь-якій спільноті?", answer: "safety" },
+        { question: "Від чого залежить якість життя (два слова)?", answer: "kind actions" },
+        { question: "Як ми повинні працювати для розвитку?", answer: "together" },
+        { question: "Якою є головна ціль?", answer: "clear" },
+        { question: "Як повинні себе почувати всі люди (два слова)?", answer: "safe valued" },
+    ],
+    //lesson 10
+    [
+        { question: "Що має мати значення в будь-якій спільноті?", answer: "safety" },
+        { question: "Від чого залежить якість життя (два слова)?", answer: "kind actions" },
+        { question: "Як ми повинні працювати для розвитку?", answer: "together" },
+        { question: "Якою є головна ціль?", answer: "clear" },
+        { question: "Як повинні себе почувати всі люди (два слова)?", answer: "safe valued" },
+    ],
+    //lesson 10
+    [
+        { question: "Що має мати значення в будь-якій спільноті?", answer: "safety" },
+        { question: "Від чого залежить якість життя (два слова)?", answer: "kind actions" },
+        { question: "Як ми повинні працювати для розвитку?", answer: "together" },
+        { question: "Якою є головна ціль?", answer: "clear" },
+        { question: "Як повинні себе почувати всі люди (два слова)?", answer: "safe valued" },
+    ],
+    //lesson 10
+    [
+        { question: "Що має мати значення в будь-якій спільноті?", answer: "safety" },
+        { question: "Від чого залежить якість життя (два слова)?", answer: "kind actions" },
+        { question: "Як ми повинні працювати для розвитку?", answer: "together" },
+        { question: "Якою є головна ціль?", answer: "clear" },
+        { question: "Як повинні себе почувати всі люди (два слова)?", answer: "safe valued" },
+    ],
+    //lesson 10
+    [
+        { question: "Що має мати значення в будь-якій спільноті?", answer: "safety" },
+        { question: "Від чого залежить якість життя (два слова)?", answer: "kind actions" },
+        { question: "Як ми повинні працювати для розвитку?", answer: "together" },
+        { question: "Якою є головна ціль?", answer: "clear" },
+        { question: "Як повинні себе почувати всі люди (два слова)?", answer: "safe valued" },
+    ],
+    //lesson 10
+    [
+        { question: "Що має мати значення в будь-якій спільноті?", answer: "safety" },
+        { question: "Від чого залежить якість життя (два слова)?", answer: "kind actions" },
+        { question: "Як ми повинні працювати для розвитку?", answer: "together" },
+        { question: "Якою є головна ціль?", answer: "clear" },
+        { question: "Як повинні себе почувати всі люди (два слова)?", answer: "safe valued" },
+    ],
+    //lesson 10
+    [
+        { question: "Що має мати значення в будь-якій спільноті?", answer: "safety" },
+        { question: "Від чого залежить якість життя (два слова)?", answer: "kind actions" },
+        { question: "Як ми повинні працювати для розвитку?", answer: "together" },
+        { question: "Якою є головна ціль?", answer: "clear" },
+        { question: "Як повинні себе почувати всі люди (два слова)?", answer: "safe valued" },
+    ],
+    //lesson 10
+    [
+        { question: "Що має мати значення в будь-якій спільноті?", answer: "safety" },
+        { question: "Від чого залежить якість життя (два слова)?", answer: "kind actions" },
+        { question: "Як ми повинні працювати для розвитку?", answer: "together" },
+        { question: "Якою є головна ціль?", answer: "clear" },
+        { question: "Як повинні себе почувати всі люди (два слова)?", answer: "safe valued" },
+    ],
+    //lesson 10
+    [
+        { question: "Що має мати значення в будь-якій спільноті?", answer: "safety" },
+        { question: "Від чого залежить якість життя (два слова)?", answer: "kind actions" },
+        { question: "Як ми повинні працювати для розвитку?", answer: "together" },
+        { question: "Якою є головна ціль?", answer: "clear" },
+        { question: "Як повинні себе почувати всі люди (два слова)?", answer: "safe valued" },
+    ],
+    //lesson 10
+    [
+        { question: "Що має мати значення в будь-якій спільноті?", answer: "safety" },
+        { question: "Від чого залежить якість життя (два слова)?", answer: "kind actions" },
+        { question: "Як ми повинні працювати для розвитку?", answer: "together" },
+        { question: "Якою є головна ціль?", answer: "clear" },
+        { question: "Як повинні себе почувати всі люди (два слова)?", answer: "safe valued" },
+    ],
+    //lesson 10
+    [
+        { question: "Що має мати значення в будь-якій спільноті?", answer: "safety" },
+        { question: "Від чого залежить якість життя (два слова)?", answer: "kind actions" },
+        { question: "Як ми повинні працювати для розвитку?", answer: "together" },
+        { question: "Якою є головна ціль?", answer: "clear" },
+        { question: "Як повинні себе почувати всі люди (два слова)?", answer: "safe valued" },
+    ],
+    //lesson 10
+    [
+        { question: "Що має мати значення в будь-якій спільноті?", answer: "safety" },
+        { question: "Від чого залежить якість життя (два слова)?", answer: "kind actions" },
+        { question: "Як ми повинні працювати для розвитку?", answer: "together" },
+        { question: "Якою є головна ціль?", answer: "clear" },
+        { question: "Як повинні себе почувати всі люди (два слова)?", answer: "safe valued" },
+    ],
+    //lesson 10
+    [
+        { question: "Що має мати значення в будь-якій спільноті?", answer: "safety" },
+        { question: "Від чого залежить якість життя (два слова)?", answer: "kind actions" },
+        { question: "Як ми повинні працювати для розвитку?", answer: "together" },
+        { question: "Якою є головна ціль?", answer: "clear" },
+        { question: "Як повинні себе почувати всі люди (два слова)?", answer: "safe valued" },
+    ],
+    //lesson 10
+    [
+        { question: "Що має мати значення в будь-якій спільноті?", answer: "safety" },
+        { question: "Від чого залежить якість життя (два слова)?", answer: "kind actions" },
+        { question: "Як ми повинні працювати для розвитку?", answer: "together" },
+        { question: "Якою є головна ціль?", answer: "clear" },
+        { question: "Як повинні себе почувати всі люди (два слова)?", answer: "safe valued" },
+    ],
+    //lesson 10
+    [
+        { question: "Що має мати значення в будь-якій спільноті?", answer: "safety" },
+        { question: "Від чого залежить якість життя (два слова)?", answer: "kind actions" },
+        { question: "Як ми повинні працювати для розвитку?", answer: "together" },
+        { question: "Якою є головна ціль?", answer: "clear" },
+        { question: "Як повинні себе почувати всі люди (два слова)?", answer: "safe valued" },
+    ],
+    //lesson 10
+    [
+        { question: "Що має мати значення в будь-якій спільноті?", answer: "safety" },
+        { question: "Від чого залежить якість життя (два слова)?", answer: "kind actions" },
+        { question: "Як ми повинні працювати для розвитку?", answer: "together" },
+        { question: "Якою є головна ціль?", answer: "clear" },
+        { question: "Як повинні себе почувати всі люди (два слова)?", answer: "safe valued" },
+    ],
+    //lesson 10
+    [
+        { question: "Що має мати значення в будь-якій спільноті?", answer: "safety" },
+        { question: "Від чого залежить якість життя (два слова)?", answer: "kind actions" },
+        { question: "Як ми повинні працювати для розвитку?", answer: "together" },
+        { question: "Якою є головна ціль?", answer: "clear" },
+        { question: "Як повинні себе почувати всі люди (два слова)?", answer: "safe valued" },
+    ],
+    //lesson 10
+    [
+        { question: "Що має мати значення в будь-якій спільноті?", answer: "safety" },
+        { question: "Від чого залежить якість життя (два слова)?", answer: "kind actions" },
+        { question: "Як ми повинні працювати для розвитку?", answer: "together" },
+        { question: "Якою є головна ціль?", answer: "clear" },
+        { question: "Як повинні себе почувати всі люди (два слова)?", answer: "safe valued" },
+    ],
+    //lesson 10
+    [
+        { question: "Що має мати значення в будь-якій спільноті?", answer: "safety" },
+        { question: "Від чого залежить якість життя (два слова)?", answer: "kind actions" },
+        { question: "Як ми повинні працювати для розвитку?", answer: "together" },
+        { question: "Якою є головна ціль?", answer: "clear" },
+        { question: "Як повинні себе почувати всі люди (два слова)?", answer: "safe valued" },
+    ],
+    //lesson 10
+    [
+        { question: "Що має мати значення в будь-якій спільноті?", answer: "safety" },
+        { question: "Від чого залежить якість життя (два слова)?", answer: "kind actions" },
+        { question: "Як ми повинні працювати для розвитку?", answer: "together" },
+        { question: "Якою є головна ціль?", answer: "clear" },
+        { question: "Як повинні себе почувати всі люди (два слова)?", answer: "safe valued" },
+    ],
+
 ]
 
 const questionsArray = rawQuestions.map((value, index) => (
