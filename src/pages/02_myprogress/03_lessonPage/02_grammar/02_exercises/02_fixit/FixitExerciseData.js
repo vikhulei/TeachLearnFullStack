@@ -99,17 +99,57 @@ const sentences = [
     { beginning: "You", bold: "see", correct: "have not seen", ending: "the real problem yet" },
     { beginning: "I", bold: "try", correct: "have not tried", ending: "various solutions yet" },
 
-        // LESSON 11
-  { "beginning": "The chefs", "bold": "cook (present)", "correct": "are cooking", "ending": "dinner right now" },
-  { "beginning": "The scientists", "bold": "determine (past)", "correct": "were determining", "ending": "the cause of the issue yesterday" },
-  { "beginning": "People", "bold": "discuss (future)", "correct": "will be discussing", "ending": "the future during the meeting" },
-  { "beginning": "The engineers", "bold": "visit (present)", "correct": "are visiting", "ending": "the construction site today" },
-  { "beginning": "The team", "bold": "look (past)", "correct": "were looking", "ending": "for an alternative to the broken part" },
-  { "beginning": "They", "bold": "meet (future)", "correct": "will be meeting", "ending": "the demand by next month" },
-  { "beginning": "The girl", "bold": "wonder (present)", "correct": "is wondering", "ending": "if she ever tells the truth" },
-  { "beginning": "The athletes", "bold": "exercise (future)", "correct": "will be exercising", "ending": "early tomorrow morning" },
+    // LESSON 11
+    { "beginning": "The chefs", "bold": "cook (present)", "correct": "are cooking", "ending": "dinner right now" },
+    { "beginning": "The scientists", "bold": "determine (past)", "correct": "were determining", "ending": "the cause of the issue yesterday" },
+    { "beginning": "People", "bold": "discuss (future)", "correct": "will be discussing", "ending": "the future during the meeting" },
+    { "beginning": "The engineers", "bold": "visit (present)", "correct": "are visiting", "ending": "the construction site today" },
+    { "beginning": "The team", "bold": "look (past)", "correct": "were looking", "ending": "for an alternative to the broken part" },
+    { "beginning": "They", "bold": "meet (future)", "correct": "will be meeting", "ending": "the demand by next month" },
+    { "beginning": "The girl", "bold": "wonder (present)", "correct": "is wondering", "ending": "if she ever tells the truth" },
+    { "beginning": "The athletes", "bold": "exercise (future)", "correct": "will be exercising", "ending": "early tomorrow morning" },
 
-        // LESSON 12
+    // LESSON 12
+    { beginning: "The books are", bold: "під", correct: "under", ending: "the bed" },
+    { beginning: "The picture is", bold: "за", correct: "behind", ending: "the door" },
+    { beginning: "The shoes are", bold: "перед", correct: "in front of", ending: "the closet" },
+    { beginning: "The keys are", bold: "між", correct: "between", ending: "the sofa and the chair" },
+    { beginning: "The clock is", bold: "над", correct: "above", ending: "the fireplace" },
+    { beginning: "The garden is", bold: "поруч із", correct: "near", ending: "the house" },
+    { beginning: "The ball is", bold: "всередині", correct: "inside", ending: "the box" },
+    { beginning: "The car is", bold: "позаду", correct: "behind", ending: "the building" },
+
+    // LESSON 13
+    { beginning: "Her birthday is", bold: "in", correct: "in", ending: "July" },
+    { beginning: "The meeting is", bold: "in", correct: "at", ending: "3 o’clock" },
+    { beginning: "The festival happens", bold: "in", correct: "in", ending: "2025" },
+    { beginning: "The event is", bold: "in", correct: "on", ending: "Monday" },
+    { beginning: "The train leaves", bold: "in", correct: "at", ending: "7 o’clock" },
+    { beginning: "We travel", bold: "in", correct: "in", ending: "December" },
+    { beginning: "The appointment is", bold: "in", correct: "on", ending: "Friday" },
+    { beginning: "The anniversary is", bold: "in", correct: "in", ending: "1999" },
+
+    // LESSON 14
+    { beginning: "", bold: "There is (є)", correct: "There is", ending: "a book on the table" },
+    { beginning: "", bold: "There is (будуть)", correct: "There will be", ending: "three cats in the garden" },
+    { beginning: "", bold: "There is (була)", correct: "There was", ending: "a problem we need to solve" },
+    { beginning: "", bold: "There is (були)", correct: "There were", ending: "many people at the party" },
+    { beginning: "", bold: "There is (є)", correct: "There is", ending: "a restaurant nearby" },
+    { beginning: "", bold: "There is (були)", correct: "There were", ending: "two cars in the parking lot" },
+    { beginning: "", bold: "There is (буде)", correct: "There will be", ending: "a message for you" },
+    { beginning: "", bold: "There is (є)", correct: "There are", ending: "several options to choose from" },
+
+    // LESSON 15
+    { beginning: "She asked", bold: "question", correct: "questions", ending: "about the assignment" },
+    { beginning: "He applied to", bold: "university", correct: "universities", ending: "across the country" },
+    { beginning: "They collected", bold: "rock", correct: "rocks", ending: "from the riverbank" },
+    { beginning: "She shared", bold: "story", correct: "stories", ending: "from her childhood" },
+    { beginning: "I read", bold: "article", correct: "articles", ending: "on climate change" },
+    { beginning: "We saw three", bold: "собак", correct: "dogs", ending: "on the street" },
+    { beginning: "He saw", bold: "gallery", correct: "galleries", ending: "full of beautiful paintings" },
+    { beginning: "They enjoyed", bold: "party", correct: "parties", ending: "every weekend during summer" },
+
+    // LESSON 10
     { beginning: "She", bold: "find", correct: "has not found", ending: "her card" },
     { beginning: "They", bold: "face", correct: "have not faced", ending: "any difficulties so far" },
     { beginning: "We", bold: "include", correct: "have not included", ending: "Sarah in the list" },
@@ -119,7 +159,7 @@ const sentences = [
     { beginning: "You", bold: "see", correct: "have not seen", ending: "the real problem yet" },
     { beginning: "I", bold: "try", correct: "have not tried", ending: "various solutions yet" },
 
-        // LESSON 10
+    // LESSON 10
     { beginning: "She", bold: "find", correct: "has not found", ending: "her card" },
     { beginning: "They", bold: "face", correct: "have not faced", ending: "any difficulties so far" },
     { beginning: "We", bold: "include", correct: "have not included", ending: "Sarah in the list" },
@@ -129,7 +169,7 @@ const sentences = [
     { beginning: "You", bold: "see", correct: "have not seen", ending: "the real problem yet" },
     { beginning: "I", bold: "try", correct: "have not tried", ending: "various solutions yet" },
 
-        // LESSON 10
+    // LESSON 10
     { beginning: "She", bold: "find", correct: "has not found", ending: "her card" },
     { beginning: "They", bold: "face", correct: "have not faced", ending: "any difficulties so far" },
     { beginning: "We", bold: "include", correct: "have not included", ending: "Sarah in the list" },
@@ -139,7 +179,7 @@ const sentences = [
     { beginning: "You", bold: "see", correct: "have not seen", ending: "the real problem yet" },
     { beginning: "I", bold: "try", correct: "have not tried", ending: "various solutions yet" },
 
-        // LESSON 10
+    // LESSON 10
     { beginning: "She", bold: "find", correct: "has not found", ending: "her card" },
     { beginning: "They", bold: "face", correct: "have not faced", ending: "any difficulties so far" },
     { beginning: "We", bold: "include", correct: "have not included", ending: "Sarah in the list" },
@@ -149,7 +189,7 @@ const sentences = [
     { beginning: "You", bold: "see", correct: "have not seen", ending: "the real problem yet" },
     { beginning: "I", bold: "try", correct: "have not tried", ending: "various solutions yet" },
 
-        // LESSON 10
+    // LESSON 10
     { beginning: "She", bold: "find", correct: "has not found", ending: "her card" },
     { beginning: "They", bold: "face", correct: "have not faced", ending: "any difficulties so far" },
     { beginning: "We", bold: "include", correct: "have not included", ending: "Sarah in the list" },
@@ -159,7 +199,7 @@ const sentences = [
     { beginning: "You", bold: "see", correct: "have not seen", ending: "the real problem yet" },
     { beginning: "I", bold: "try", correct: "have not tried", ending: "various solutions yet" },
 
-        // LESSON 10
+    // LESSON 10
     { beginning: "She", bold: "find", correct: "has not found", ending: "her card" },
     { beginning: "They", bold: "face", correct: "have not faced", ending: "any difficulties so far" },
     { beginning: "We", bold: "include", correct: "have not included", ending: "Sarah in the list" },
@@ -169,7 +209,7 @@ const sentences = [
     { beginning: "You", bold: "see", correct: "have not seen", ending: "the real problem yet" },
     { beginning: "I", bold: "try", correct: "have not tried", ending: "various solutions yet" },
 
-        // LESSON 10
+    // LESSON 10
     { beginning: "She", bold: "find", correct: "has not found", ending: "her card" },
     { beginning: "They", bold: "face", correct: "have not faced", ending: "any difficulties so far" },
     { beginning: "We", bold: "include", correct: "have not included", ending: "Sarah in the list" },
@@ -179,7 +219,7 @@ const sentences = [
     { beginning: "You", bold: "see", correct: "have not seen", ending: "the real problem yet" },
     { beginning: "I", bold: "try", correct: "have not tried", ending: "various solutions yet" },
 
-        // LESSON 10
+    // LESSON 10
     { beginning: "She", bold: "find", correct: "has not found", ending: "her card" },
     { beginning: "They", bold: "face", correct: "have not faced", ending: "any difficulties so far" },
     { beginning: "We", bold: "include", correct: "have not included", ending: "Sarah in the list" },
@@ -189,7 +229,7 @@ const sentences = [
     { beginning: "You", bold: "see", correct: "have not seen", ending: "the real problem yet" },
     { beginning: "I", bold: "try", correct: "have not tried", ending: "various solutions yet" },
 
-        // LESSON 10
+    // LESSON 10
     { beginning: "She", bold: "find", correct: "has not found", ending: "her card" },
     { beginning: "They", bold: "face", correct: "have not faced", ending: "any difficulties so far" },
     { beginning: "We", bold: "include", correct: "have not included", ending: "Sarah in the list" },
@@ -199,7 +239,7 @@ const sentences = [
     { beginning: "You", bold: "see", correct: "have not seen", ending: "the real problem yet" },
     { beginning: "I", bold: "try", correct: "have not tried", ending: "various solutions yet" },
 
-        // LESSON 10
+    // LESSON 10
     { beginning: "She", bold: "find", correct: "has not found", ending: "her card" },
     { beginning: "They", bold: "face", correct: "have not faced", ending: "any difficulties so far" },
     { beginning: "We", bold: "include", correct: "have not included", ending: "Sarah in the list" },
@@ -209,7 +249,7 @@ const sentences = [
     { beginning: "You", bold: "see", correct: "have not seen", ending: "the real problem yet" },
     { beginning: "I", bold: "try", correct: "have not tried", ending: "various solutions yet" },
 
-        // LESSON 10
+    // LESSON 10
     { beginning: "She", bold: "find", correct: "has not found", ending: "her card" },
     { beginning: "They", bold: "face", correct: "have not faced", ending: "any difficulties so far" },
     { beginning: "We", bold: "include", correct: "have not included", ending: "Sarah in the list" },
@@ -219,7 +259,7 @@ const sentences = [
     { beginning: "You", bold: "see", correct: "have not seen", ending: "the real problem yet" },
     { beginning: "I", bold: "try", correct: "have not tried", ending: "various solutions yet" },
 
-        // LESSON 10
+    // LESSON 10
     { beginning: "She", bold: "find", correct: "has not found", ending: "her card" },
     { beginning: "They", bold: "face", correct: "have not faced", ending: "any difficulties so far" },
     { beginning: "We", bold: "include", correct: "have not included", ending: "Sarah in the list" },
@@ -229,7 +269,7 @@ const sentences = [
     { beginning: "You", bold: "see", correct: "have not seen", ending: "the real problem yet" },
     { beginning: "I", bold: "try", correct: "have not tried", ending: "various solutions yet" },
 
-        // LESSON 10
+    // LESSON 10
     { beginning: "She", bold: "find", correct: "has not found", ending: "her card" },
     { beginning: "They", bold: "face", correct: "have not faced", ending: "any difficulties so far" },
     { beginning: "We", bold: "include", correct: "have not included", ending: "Sarah in the list" },
@@ -239,7 +279,7 @@ const sentences = [
     { beginning: "You", bold: "see", correct: "have not seen", ending: "the real problem yet" },
     { beginning: "I", bold: "try", correct: "have not tried", ending: "various solutions yet" },
 
-        // LESSON 10
+    // LESSON 10
     { beginning: "She", bold: "find", correct: "has not found", ending: "her card" },
     { beginning: "They", bold: "face", correct: "have not faced", ending: "any difficulties so far" },
     { beginning: "We", bold: "include", correct: "have not included", ending: "Sarah in the list" },
@@ -249,47 +289,7 @@ const sentences = [
     { beginning: "You", bold: "see", correct: "have not seen", ending: "the real problem yet" },
     { beginning: "I", bold: "try", correct: "have not tried", ending: "various solutions yet" },
 
-        // LESSON 10
-    { beginning: "She", bold: "find", correct: "has not found", ending: "her card" },
-    { beginning: "They", bold: "face", correct: "have not faced", ending: "any difficulties so far" },
-    { beginning: "We", bold: "include", correct: "have not included", ending: "Sarah in the list" },
-    { beginning: "He", bold: "make", correct: "has not made", ending: "a list of items to buy" },
-    { beginning: "I", bold: "change", correct: "have not changed", ending: "my mind about the trip" },
-    { beginning: "She", bold: "mention", correct: "has not mentioned", ending: "any reason" },
-    { beginning: "You", bold: "see", correct: "have not seen", ending: "the real problem yet" },
-    { beginning: "I", bold: "try", correct: "have not tried", ending: "various solutions yet" },
-
-        // LESSON 10
-    { beginning: "She", bold: "find", correct: "has not found", ending: "her card" },
-    { beginning: "They", bold: "face", correct: "have not faced", ending: "any difficulties so far" },
-    { beginning: "We", bold: "include", correct: "have not included", ending: "Sarah in the list" },
-    { beginning: "He", bold: "make", correct: "has not made", ending: "a list of items to buy" },
-    { beginning: "I", bold: "change", correct: "have not changed", ending: "my mind about the trip" },
-    { beginning: "She", bold: "mention", correct: "has not mentioned", ending: "any reason" },
-    { beginning: "You", bold: "see", correct: "have not seen", ending: "the real problem yet" },
-    { beginning: "I", bold: "try", correct: "have not tried", ending: "various solutions yet" },
-
-        // LESSON 10
-    { beginning: "She", bold: "find", correct: "has not found", ending: "her card" },
-    { beginning: "They", bold: "face", correct: "have not faced", ending: "any difficulties so far" },
-    { beginning: "We", bold: "include", correct: "have not included", ending: "Sarah in the list" },
-    { beginning: "He", bold: "make", correct: "has not made", ending: "a list of items to buy" },
-    { beginning: "I", bold: "change", correct: "have not changed", ending: "my mind about the trip" },
-    { beginning: "She", bold: "mention", correct: "has not mentioned", ending: "any reason" },
-    { beginning: "You", bold: "see", correct: "have not seen", ending: "the real problem yet" },
-    { beginning: "I", bold: "try", correct: "have not tried", ending: "various solutions yet" },
-
-        // LESSON 10
-    { beginning: "She", bold: "find", correct: "has not found", ending: "her card" },
-    { beginning: "They", bold: "face", correct: "have not faced", ending: "any difficulties so far" },
-    { beginning: "We", bold: "include", correct: "have not included", ending: "Sarah in the list" },
-    { beginning: "He", bold: "make", correct: "has not made", ending: "a list of items to buy" },
-    { beginning: "I", bold: "change", correct: "have not changed", ending: "my mind about the trip" },
-    { beginning: "She", bold: "mention", correct: "has not mentioned", ending: "any reason" },
-    { beginning: "You", bold: "see", correct: "have not seen", ending: "the real problem yet" },
-    { beginning: "I", bold: "try", correct: "have not tried", ending: "various solutions yet" },
-
-        // LESSON 10
+    // LESSON 10
     { beginning: "She", bold: "find", correct: "has not found", ending: "her card" },
     { beginning: "They", bold: "face", correct: "have not faced", ending: "any difficulties so far" },
     { beginning: "We", bold: "include", correct: "have not included", ending: "Sarah in the list" },
