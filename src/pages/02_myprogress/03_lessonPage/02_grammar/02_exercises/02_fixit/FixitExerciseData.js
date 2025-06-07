@@ -99,17 +99,17 @@ const sentences = [
     { beginning: "You", bold: "see", correct: "have not seen", ending: "the real problem yet" },
     { beginning: "I", bold: "try", correct: "have not tried", ending: "various solutions yet" },
 
-        // LESSON 10
-    { beginning: "She", bold: "find", correct: "has not found", ending: "her card" },
-    { beginning: "They", bold: "face", correct: "have not faced", ending: "any difficulties so far" },
-    { beginning: "We", bold: "include", correct: "have not included", ending: "Sarah in the list" },
-    { beginning: "He", bold: "make", correct: "has not made", ending: "a list of items to buy" },
-    { beginning: "I", bold: "change", correct: "have not changed", ending: "my mind about the trip" },
-    { beginning: "She", bold: "mention", correct: "has not mentioned", ending: "any reason" },
-    { beginning: "You", bold: "see", correct: "have not seen", ending: "the real problem yet" },
-    { beginning: "I", bold: "try", correct: "have not tried", ending: "various solutions yet" },
+        // LESSON 11
+  { "beginning": "The chefs", "bold": "cook (present)", "correct": "are cooking", "ending": "dinner right now" },
+  { "beginning": "The scientists", "bold": "determine (past)", "correct": "were determining", "ending": "the cause of the issue yesterday" },
+  { "beginning": "People", "bold": "discuss (future)", "correct": "will be discussing", "ending": "the future during the meeting" },
+  { "beginning": "The engineers", "bold": "visit (present)", "correct": "are visiting", "ending": "the construction site today" },
+  { "beginning": "The team", "bold": "look (past)", "correct": "were looking", "ending": "for an alternative to the broken part" },
+  { "beginning": "They", "bold": "meet (future)", "correct": "will be meeting", "ending": "the demand by next month" },
+  { "beginning": "The girl", "bold": "wonder (present)", "correct": "is wondering", "ending": "if she ever tells the truth" },
+  { "beginning": "The athletes", "bold": "exercise (future)", "correct": "will be exercising", "ending": "early tomorrow morning" },
 
-        // LESSON 10
+        // LESSON 12
     { beginning: "She", bold: "find", correct: "has not found", ending: "her card" },
     { beginning: "They", bold: "face", correct: "have not faced", ending: "any difficulties so far" },
     { beginning: "We", bold: "include", correct: "have not included", ending: "Sarah in the list" },

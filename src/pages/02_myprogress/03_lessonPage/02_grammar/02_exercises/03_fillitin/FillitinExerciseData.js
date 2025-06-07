@@ -120,19 +120,19 @@ const sentences = [
     { sentence: "Чи зробив я багато за сьогодні?", translat: "Have I done a lot today?" },
     { sentence: "Вона закінчила навчання (тренінг)?", translat: "Has she completed the training?" },
 
-    // LESSON 10
-    { sentence: "Чи впала темперетура?", translat: "Has the temperature dropped?" },
-    { sentence: "Вони об'єдналися з іншою командою?", translat: "Have they united with another team?" },
-    { sentence: "Ви чули це слово раніше?", translat: "Have you heard this word before?" },
-    { sentence: "Вона додала ваги?", translat: "Has she gained weight?" },
-    { sentence: "Чи використовував він силу?", translat: "Has he used force?" },
-    { sentence: "Ти загубив ключ від моєї комірки?", translat: "Have you lost the key to my locker?" },
-    { sentence: "Чи бачили ми світло?", translat: "Have we seen the light?" },
-    { sentence: "Вони проігнорували всі попередження?", translat: "Have they ignored all warnings?" },
-    { sentence: "Чи зробив я багато за сьогодні?", translat: "Have I done a lot today?" },
-    { sentence: "Вона закінчила навчання (тренінг)?", translat: "Has she completed the training?" },
+    // LESSON 11
+  { "sentence": "Вона швидко закінчила свою роботу", "translat": "She has quickly finished her work" },
+  { "sentence": "Вони не знайшли нічого особливого", "translat": "They haven't found anything special" },
+  { "sentence": "Ти працював увесь день?", "translat": "Have you been working all day?" },
+  { "sentence": "Він ще не розкрив справу", "translat": "He has not solved the case yet" },
+  { "sentence": "Шторм спричинив багато шкоди", "translat": "The storm has caused a lot of damage" },
+  { "sentence": "Ми не відвідували узбережжя цього року", "translat": "We haven't visited the coast this year" },
+  { "sentence": "Вона, ймовірно, забула про зустріч", "translat": "She has probably forgotten the meeting" },
+  { "sentence": "Вони не покращили систему безпеки", "translat": "They haven't improved the security system" },
+  { "sentence": "Я прочитав всю книгу", "translat": "I have read the whole book" },
+  { "sentence": "Ви вже вжили якісь заходи?", "translat": "Have you taken any action yet?" },
 
-        // LESSON 10
+        // LESSON 12
     { sentence: "Чи впала темперетура?", translat: "Has the temperature dropped?" },
     { sentence: "Вони об'єдналися з іншою командою?", translat: "Have they united with another team?" },
     { sentence: "Ви чули це слово раніше?", translat: "Have you heard this word before?" },
