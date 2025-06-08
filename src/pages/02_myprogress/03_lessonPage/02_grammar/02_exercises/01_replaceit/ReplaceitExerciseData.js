@@ -172,8 +172,8 @@ const sentences = [
     { beginning: "This solution is", word: "краща", translat: "better", ending: "than the first one" },
 
     //lesson 16
-    { beginning: "The cake", word: "був спечена", translat: "was baked", ending: "by my mom" },
-    { beginning: "The house", word: "був побудована", translat: "was built", ending: "in 1995" },
+    { beginning: "The cake", word: "був спечений", translat: "was baked", ending: "by my mom" },
+    { beginning: "The house", word: "був побудований", translat: "was built", ending: "in 1995" },
     { beginning: "The letters", word: "були надіслані", translat: "were sent", ending: "yesterday" },
     { beginning: "The documents", word: "були підписані", translat: "were signed", ending: "by the manager" },
     { beginning: "The window", word: "було розбите", translat: "was broken", ending: "during the storm" },
