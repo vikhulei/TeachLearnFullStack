@@ -320,15 +320,12 @@ const sentences = [
     { beginning: "Many", word: "чоловіки", translat: "men", ending: "are working in the city" },
     { beginning: "Several", word: "жінки", translat: "women", ending: "are attending the conference" },
     { beginning: "The", word: "діти", translat: "children", ending: "are playing outside" },
-    { beginning: "These", word: "зуби", translat: "teeth", ending: "need to be cleaned regularly" },
-    { beginning: "Their", word: "ноги", translat: "feet", ending: "were sore after the race" },
+    { beginning: "Our", word: "зуби", translat: "teeth", ending: "need to be cleaned regularly" },
+    { beginning: "His", word: "ноги", translat: "feet", ending: "were sore after the race" },
     { beginning: "A group of", word: "миші", translat: "mice", ending: "are hiding in the attic" },
     { beginning: "The", word: "гуси", translat: "geese", ending: "are migrating south" },
     { beginning: "Several", word: "люди", translat: "people", ending: "were waiting in line" },
-    { beginning: "The", word: "воли", translat: "oxen", ending: "are pulling the heavy cart" },
-    { beginning: "Those", word: "воші", translat: "lice", ending: "are causing itching" },
     { beginning: "The", word: "вівці", translat: "sheep", ending: "are grazing in the field" },
-    { beginning: "Many", word: "олені", translat: "deer", ending: "crossed the road" },
     { beginning: "Some", word: "риби", translat: "fish", ending: "are swimming in the pond" },
 
     //lesson 29
