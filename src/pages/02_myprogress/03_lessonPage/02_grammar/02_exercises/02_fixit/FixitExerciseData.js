@@ -249,55 +249,55 @@ const sentences = [
     { beginning: "I", bold: "know", correct: "knew", ending: "the answer to the question" },
     { beginning: "She", bold: "think", correct: "thought", ending: "about the offer carefully" },
 
-    // LESSON 10
-    { beginning: "She", bold: "find", correct: "has not found", ending: "her card" },
-    { beginning: "They", bold: "face", correct: "have not faced", ending: "any difficulties so far" },
-    { beginning: "We", bold: "include", correct: "have not included", ending: "Sarah in the list" },
-    { beginning: "He", bold: "make", correct: "has not made", ending: "a list of items to buy" },
-    { beginning: "I", bold: "change", correct: "have not changed", ending: "my mind about the trip" },
-    { beginning: "She", bold: "mention", correct: "has not mentioned", ending: "any reason" },
-    { beginning: "You", bold: "see", correct: "have not seen", ending: "the real problem yet" },
-    { beginning: "I", bold: "try", correct: "have not tried", ending: "various solutions yet" },
+    // LESSON 26
+    { beginning: "The meeting starts", bold: "on", correct: "at", ending: "3 o'clock." },
+    { beginning: "She was born", bold: "at", correct: "on", ending: "Monday." },
+    { beginning: "We always go skiing", bold: "in", correct: "in", ending: "January." },
+    { beginning: "I saw him", bold: "in", correct: "on", ending: "Friday afternoon." },
+    { beginning: "They moved here", bold: "on", correct: "in", ending: "2015." },
+    { beginning: "The concert is", bold: "in", correct: "at", ending: "7 o'clock sharp." },
+    { beginning: "She graduated", bold: "at", correct: "in", ending: "2020." },
+    { beginning: "The party is", bold: "at", correct: "on", ending: "Saturday night." },
 
-    // LESSON 10
-    { beginning: "She", bold: "find", correct: "has not found", ending: "her card" },
-    { beginning: "They", bold: "face", correct: "have not faced", ending: "any difficulties so far" },
-    { beginning: "We", bold: "include", correct: "have not included", ending: "Sarah in the list" },
-    { beginning: "He", bold: "make", correct: "has not made", ending: "a list of items to buy" },
-    { beginning: "I", bold: "change", correct: "have not changed", ending: "my mind about the trip" },
-    { beginning: "She", bold: "mention", correct: "has not mentioned", ending: "any reason" },
-    { beginning: "You", bold: "see", correct: "have not seen", ending: "the real problem yet" },
-    { beginning: "I", bold: "try", correct: "have not tried", ending: "various solutions yet" },
+    // LESSON 27
+    { beginning: "The car is parked", bold: "behind (перед)", correct: "in front of", ending: "the house." },
+    { beginning: "The keys are", bold: "next to (позаду)", correct: "behind", ending: "the sofa." },
+    { beginning: "She sat", bold: "under (поруч з)", correct: "next to", ending: "her friend in class." },
+    { beginning: "The book is", bold: "under (на)", correct: "on", ending: "the table." },
+    { beginning: "The cat is", bold: "on (під)", correct: "under", ending: "the bed." },
+    { beginning: "The school is", bold: "next to (між)", correct: "between", ending: "the library and the park." },
+    { beginning: "The shoes are", bold: "on (під)", correct: "under", ending: "the chair." },
+    { beginning: "The lamp is", bold: "under (на)", correct: "on", ending: "the desk." },
 
-    // LESSON 10
-    { beginning: "She", bold: "find", correct: "has not found", ending: "her card" },
-    { beginning: "They", bold: "face", correct: "have not faced", ending: "any difficulties so far" },
-    { beginning: "We", bold: "include", correct: "have not included", ending: "Sarah in the list" },
-    { beginning: "He", bold: "make", correct: "has not made", ending: "a list of items to buy" },
-    { beginning: "I", bold: "change", correct: "have not changed", ending: "my mind about the trip" },
-    { beginning: "She", bold: "mention", correct: "has not mentioned", ending: "any reason" },
-    { beginning: "You", bold: "see", correct: "have not seen", ending: "the real problem yet" },
-    { beginning: "I", bold: "try", correct: "have not tried", ending: "various solutions yet" },
+    // LESSON 28
+    { beginning: "The", bold: "sheeps", correct: "sheep", ending: "are grazing in the field." },
+    { beginning: "We saw three", bold: "deers", correct: "deer", ending: "in the forest." },
+    { beginning: "He caught five", bold: "fishes", correct: "fish", ending: "this morning." },
+    { beginning: "Several", bold: "aircrafts", correct: "aircraft", ending: "were parked at the airport." },
+    { beginning: "The river is full of", bold: "salmons", correct: "salmon", ending: "during this season." },
+    { beginning: "This tool has many", bold: "meanses", correct: "means", ending: "of use." },
+    { beginning: "The desert is home to many", bold: "cactuses", correct: "cactus", ending: "of different shapes." },
+    { beginning: "Her", bold: "foots", correct: "feet", ending: "were tired after walking all day." },
 
-    // LESSON 10
-    { beginning: "She", bold: "find", correct: "has not found", ending: "her card" },
-    { beginning: "They", bold: "face", correct: "have not faced", ending: "any difficulties so far" },
-    { beginning: "We", bold: "include", correct: "have not included", ending: "Sarah in the list" },
-    { beginning: "He", bold: "make", correct: "has not made", ending: "a list of items to buy" },
-    { beginning: "I", bold: "change", correct: "have not changed", ending: "my mind about the trip" },
-    { beginning: "She", bold: "mention", correct: "has not mentioned", ending: "any reason" },
-    { beginning: "You", bold: "see", correct: "have not seen", ending: "the real problem yet" },
-    { beginning: "I", bold: "try", correct: "have not tried", ending: "various solutions yet" },
+    // LESSON 29
+  { beginning: "The documents", bold: "send (past)", correct: "were sent", ending: "yesterday." },
+  { beginning: "The letter", bold: "write (present)", correct: "is written", ending: "by the manager." },
+  { beginning: "The project", bold: "complete (future)", correct: "will be completed", ending: "by next week." },
+  { beginning: "The package", bold: "deliver (past)", correct: "was delivered", ending: "this morning." },
+  { beginning: "The invitations", bold: "print (present)", correct: "are printed", ending: "every Friday." },
+  { beginning: "The results", bold: "announce (future)", correct: "will be announced", ending: "tomorrow." },
+  { beginning: "The car", bold: "wash (past)", correct: "was washed", ending: "by Tom." },
+  { beginning: "The bills", bold: "pay (present)", correct: "are paid", ending: "at the end of each month." },
 
-    // LESSON 10
-    { beginning: "She", bold: "find", correct: "has not found", ending: "her card" },
-    { beginning: "They", bold: "face", correct: "have not faced", ending: "any difficulties so far" },
-    { beginning: "We", bold: "include", correct: "have not included", ending: "Sarah in the list" },
-    { beginning: "He", bold: "make", correct: "has not made", ending: "a list of items to buy" },
-    { beginning: "I", bold: "change", correct: "have not changed", ending: "my mind about the trip" },
-    { beginning: "She", bold: "mention", correct: "has not mentioned", ending: "any reason" },
-    { beginning: "You", bold: "see", correct: "have not seen", ending: "the real problem yet" },
-    { beginning: "I", bold: "try", correct: "have not tried", ending: "various solutions yet" },
+    // LESSON 30
+  { beginning: "She", bold: "finish (past)", correct: "had finished", ending: "her work before dinner." },
+  { beginning: "They", bold: "leave (future)", correct: "will have left", ending: "by the time we arrive." },
+  { beginning: "I", bold: "read (past)", correct: "had read", ending: "the book before the test." },
+  { beginning: "We", bold: "build (future)", correct: "will have built", ending: "the house by next year." },
+  { beginning: "He", bold: "eat (past)", correct: "had eaten", ending: "before the guests came." },
+  { beginning: "The team", bold: "win (future)", correct: "will have won", ending: "five games by then." },
+  { beginning: "She", bold: "leave (past)", correct: "had left", ending: "when I called her." },
+  { beginning: "They", bold: "complete (future)", correct: "will have completed", ending: "the project by Friday." }
 
 ]
 
