@@ -1,18 +1,15 @@
 const sentences = [
     // LESSON 1
-    { sentence: "M-A-K-E", translat: "" },
     { sentence: "W-O-R-K", translat: "" },
     { sentence: "G-O-O-D", translat: "" },
     { sentence: "U-S-E-D", translat: "" },
     { sentence: "O-N-L-Y", translat: "" },
     { sentence: "L-I-K-E", translat: "" },
-    { sentence: "U-S-E-D", translat: "" },
     { sentence: "W-A-T-E-R", translat: "" },
     { sentence: "T-I-M-E", translat: "" },
     { sentence: "your name", translat: "" },
 
     // LESSON 2
-
     { sentence: "Як тебе звати?", translat: "What is your name?" },
     { sentence: "Ти не американець", translat: "You are not American" },
     { sentence: "Вони були в місті (city)?", translat: "Were they in city?" },
@@ -20,9 +17,8 @@ const sentences = [
     { sentence: "Ці люди не дружні", translat: "These people are not friendly" },
     { sentence: "Твоя робота важка?", translat: "Is your work hard?" },
     { sentence: "Фільм нецікавий", translat: "Film is not interesting" },
-    { sentence: "Це місце гарне (nice)?", translat: "Is this place nice?" },
     { sentence: "Сім'я важлива?", translat: "Is family important?" },
-    { sentence: "Цей бізнес нелегкий", translat: "This business is not easy" },
+
     // LESSON 3
     { sentence: "Він завжди миє свої руки", translat: "He always washes his hands" },
     { sentence: "Вони допомагають своїм друзям", translat: "They help their friends" },
@@ -32,8 +28,9 @@ const sentences = [
     { sentence: "Мій батько бігає вранці", translat: "My father runs in the mornings" },
     { sentence: "У цьому місці подають гарну каву", translat: "This place serves good coffee" },
     { sentence: "Мені потрібна інша ручка", translat: "I need another pen" },
-    { sentence: "Ви мусите подумати про здоров'я", translat: "You must think about your health" },
-    { sentence: "Ми їздимо на тому ж автобусі", translat: "We take the same bus" },
+    //{ sentence: "Ви мусите подумати про здоров'я", translat: "You must think about your health" },
+    //{ sentence: "Ми їздимо на тому ж автобусі", translat: "We take the same bus" },
+
     // LESSON 4
     { sentence: "Ми зараз почнемо збори", translat: "We will start the meeting now" },
     { sentence: "Вона подвонить тобі на перерві", translat: "She will call you during the break" },
@@ -43,8 +40,8 @@ const sentences = [
     { sentence: "Він сформує нову команду", translat: "He will form a new team" },
     { sentence: "Я приготую м'со на вечерю", translat: "I will cook meat for dinner" },
     { sentence: "Вона відвідає це місце знову", translat: "She will visit this place again" },
-    { sentence: "Повітря буде відчуватися холоднішим", translat: "The air will feel cooler" },
-    { sentence: "Ми проведемо день разом", translat: "Wt will spend the day together" },
+    //{ sentence: "Повітря буде відчуватися холоднішим", translat: "The air will feel cooler" },
+    //{ sentence: "Ми проведемо день разом", translat: "Wt will spend the day together" },
 
     // LESSON 5
     { sentence: "Вона говорила меньше перед зустріччю", translat: "She talked less during the meeting" },
@@ -55,8 +52,8 @@ const sentences = [
     { sentence: "Вона вимкнула світло", translat: "She turned off the lights" },
     { sentence: "Він скучив за дружиною дуже сильно", translat: "He missed her wife very much" },
     { sentence: "Вони підготували звіт", translat: "They prepared the report" },
-    { sentence: "Я дивився, як він йде геть", translat: "I watched him going away" },
-    { sentence: "Ми приготували їжу для всієї сім'ї", translat: "We cooked food for the whole family" },
+    //{ sentence: "Я дивився, як він йде геть", translat: "I watched him going away" },
+    //{ sentence: "Ми приготували їжу для всієї сім'ї", translat: "We cooked food for the whole family" },
 
     // LESSON 6
     { sentence: "Я зустрів свого друга в кафе", translat: "I met my friend at the café" },
@@ -67,8 +64,8 @@ const sentences = [
     { sentence: "Я відправив емейл вчора ввечері", translat: "I sent the email last night" },
     { sentence: "Діти співали пісню в школі", translat: "The children sang a song at the school " },
     { sentence: "Він зняв фото заходу сонця", translat: "He took a photo of the sunset" },
-    { sentence: "Я прокинувся рано сьогодні", translat: "I woke up early today" },
-    { sentence: "Вона написала листа бабусі", translat: "She wrote a letter to her grandmother" },
+    //{ sentence: "Я прокинувся рано сьогодні", translat: "I woke up early today" },
+    //{ sentence: "Вона написала листа бабусі", translat: "She wrote a letter to her grandmother" },
 
     // LESSON 7
     { sentence: "Ти поставиш будильник?", translat: "Will you set the alarm?" },
@@ -79,8 +76,8 @@ const sentences = [
     { sentence: "Чи цікавить музика багатьох людей?", translat: "Does music interest many people?" },
     { sentence: "Чи вивчав він літературу в університеті?", translat: "Did he study literature at university?" },
     { sentence: "Ви ходите пішки на роботу?", translat: "Do you walk to work?" },
-    { sentence: "Ми вирішимо проблему разом?", translat: "Will we solve the problem together?" },
-    { sentence: "Чи вітаються вони кожного дня?", translat: "Do they say hello every day?" },
+    //{ sentence: "Ми вирішимо проблему разом?", translat: "Will we solve the problem together?" },
+    //{ sentence: "Чи вітаються вони кожного дня?", translat: "Do they say hello every day?" },
 
     // LESSON 8
     { sentence: "Вона слухатиме концерт", translat: "She will be listening to the concert" },
@@ -91,8 +88,8 @@ const sentences = [
     { sentence: "Ми робитимемо все можливе", translat: "We will be doing everything possible" },
     { sentence: "Вони дивитимуться телевізор", translat: "They will be watching TV" },
     { sentence: "Ви вивчатимете це наступного тижня", translat: "You will be learning it next week" },
-    { sentence: "Вчитель пояснюватиме нову тему", translat: "The teacher will be explaining the new topic" },
-    { sentence: "Пані будуть пити вино", translat: "The ladies will be drinking wine" },
+    //{ sentence: "Вчитель пояснюватиме нову тему", translat: "The teacher will be explaining the new topic" },
+    //{ sentence: "Пані будуть пити вино", translat: "The ladies will be drinking wine" },
 
 
     // LESSON 9
@@ -104,8 +101,8 @@ const sentences = [
     { sentence: "Чи практикуватимуться студенти?", translat: "Will the students be practicing?" },
     { sentence: "Чи проводять вчені дослідження?", translat: "Are the scientists conducting research?" },
     { sentence: "Чи було спекотно людям вчора?", translat: "Were people feeling hot yesterday?" },
-    { sentence: "Вона користується смсками?", translat: "Is she using text messages?" },
-    { sentence: "Чи робитимуть вони 3 проекти?", translat: "Will they be doing 3 projects?" },
+    //{ sentence: "Вона користується смсками?", translat: "Is she using text messages?" },
+    //{ sentence: "Чи робитимуть вони 3 проекти?", translat: "Will they be doing 3 projects?" },
 
 
     // LESSON 10
@@ -117,22 +114,70 @@ const sentences = [
     { sentence: "Ти загубив ключ від моєї комірки?", translat: "Have you lost the key to my locker?" },
     { sentence: "Чи бачили ми світло?", translat: "Have we seen the light?" },
     { sentence: "Вони проігнорували всі попередження?", translat: "Have they ignored all warnings?" },
-    { sentence: "Чи зробив я багато за сьогодні?", translat: "Have I done a lot today?" },
-    { sentence: "Вона закінчила навчання (тренінг)?", translat: "Has she completed the training?" },
+    //{ sentence: "Чи зробив я багато за сьогодні?", translat: "Have I done a lot today?" },
+    //{ sentence: "Вона закінчила навчання (тренінг)?", translat: "Has she completed the training?" },
 
     // LESSON 11
-  { "sentence": "Вона швидко закінчила свою роботу", "translat": "She has quickly finished her work" },
-  { "sentence": "Вони не знайшли нічого особливого", "translat": "They haven't found anything special" },
-  { "sentence": "Ти працював увесь день?", "translat": "Have you been working all day?" },
-  { "sentence": "Він ще не розкрив справу", "translat": "He has not solved the case yet" },
-  { "sentence": "Шторм спричинив багато шкоди", "translat": "The storm has caused a lot of damage" },
-  { "sentence": "Ми не відвідували узбережжя цього року", "translat": "We haven't visited the coast this year" },
-  { "sentence": "Вона, ймовірно, забула про зустріч", "translat": "She has probably forgotten the meeting" },
-  { "sentence": "Вони не покращили систему безпеки", "translat": "They haven't improved the security system" },
-  { "sentence": "Я прочитав всю книгу", "translat": "I have read the whole book" },
-  { "sentence": "Ви вже вжили якісь заходи?", "translat": "Have you taken any action yet?" },
+    { sentence: "Я вже поїв", translat: "I have already eaten" },
+    { sentence: "Вона ще не приїхала", translat: "She hasn't arrived yet" },
+    { sentence: "Ти коли-небудь був у Франції?", translat: "Have you ever been to France?" },
+    { sentence: "Ми щойно завершили проєкт", translat: "We have just finished the project" },
+    { sentence: "Він не бачив цього фільму", translat: "He hasn't seen this movie" },
+    { sentence: "Вони вже прибули?", translat: "Have they arrived yet?" },
+    { sentence: "Я знайшов свої ключі", translat: "I have found my keys" },
+    { sentence: "Ми не чули новин", translat: "We haven't heard the news" },
 
-        // LESSON 12
+    // LESSON 12
+    { sentence: "Книга лежить на столі", translat: "The book is on the table" },
+    { sentence: "Собака спав під ліжком", translat: "The dog slept under the bed" },
+    { sentence: "Діти грають у парку", translat: "The children play in the park" },
+    { sentence: "Ми стояли біля магазину", translat: "We stood near the shop" },
+    { sentence: "Кішка сидить перед телевізором", translat: "The cat sits in front of the TV" },
+    { sentence: "Вони жили біля міста", translat: "They lived near the city" },
+    { sentence: "Моя сумка лежить позаду тебе", translat: "My bag is behind you" },
+    { sentence: "Він поклав документи в ящик", translat: "He put the documents in the drawer" },
+
+    // LESSON 13
+    { sentence: "Зараз п’ять хвилин по восьмій", translat: "It is five past eight" },
+    { sentence: "Зараз чверть по третій", translat: "It is quarter past three" },
+    { sentence: "Зараз двадцять п’ять по сьомій", translat: "It is twenty-five past seven" },
+    { sentence: "Зараз пів на одинадцяту", translat: "It is half past ten" },
+    { sentence: "Зараз без двадцяти восьма", translat: "It is twenty to eight" },
+    { sentence: "Зараз без чверті десята", translat: "It is quarter to ten" },
+    { sentence: "Зараз без п’яти шоста", translat: "It is five to six" },
+    { sentence: "Зустріч починається о другій", translat: "The meeting starts at two o’clock" },
+
+    // LESSON 14
+    { sentence: "У кімнаті є стіл", translat: "There is a table in the room" },
+    { sentence: "На полиці є книга", translat: "There is a book on the shelf" },
+    { sentence: "У саду є квіти", translat: "There are flowers in the garden" },
+    { sentence: "У коробці є іграшки", translat: "There are toys in the box" },
+    { sentence: "На столі є чашка", translat: "There is a cup on the table" },
+    { sentence: "У класі є багато учнів", translat: "There are many students in the classroom" },
+    { sentence: "У холодильнику є молоко", translat: "There is milk in the fridge" },
+    { sentence: "На стіні є картини", translat: "There are paintings on the wall" },
+
+    // LESSON 15
+    { sentence: "У мене є три олівці", translat: "I have three pencils" },
+    { sentence: "Він живе на дванадцятому поверсі", translat: "He lives on the twelfth floor" },
+    { sentence: "У класі двадцять учнів", translat: "There are twenty students in the class" },
+    { sentence: "Це мій перший день у школі", translat: "This is my first day at school" },
+    { sentence: "Ми бачили сім машин", translat: "We saw seven cars" },
+    { sentence: "Вона виграла друге місце", translat: "She won second place" },
+    { sentence: "У нього чотирнадцять книг", translat: "He has fourteen books" },
+    { sentence: "Вони приїхали десятою машиною", translat: "They arrived in the tenth car" },
+
+    // LESSON 16
+  { sentence: "Лист був написаний учителем", translat: "The letter was written by the teacher" },
+  { sentence: "Хліб печеться щодня", translat: "Bread is baked every day" },
+  { sentence: "Ця кімната була прибрана", translat: "This room was cleaned" },
+  { sentence: "Новий міст будується", translat: "A new bridge is built" },
+  { sentence: "Завдання було виконане вчасно", translat: "The task was completed on time" },
+  { sentence: "Фільм знімається в Києві", translat: "The movie is filmed in Kyiv" },
+  { sentence: "Книга була перекладена на українську", translat: "The book was translated into Ukrainian" },
+  { sentence: "Стіл зроблений з дерева", translat: "The table is made of wood" },
+
+    // LESSON 10
     { sentence: "Чи впала темперетура?", translat: "Has the temperature dropped?" },
     { sentence: "Вони об'єдналися з іншою командою?", translat: "Have they united with another team?" },
     { sentence: "Ви чули це слово раніше?", translat: "Have you heard this word before?" },
@@ -156,7 +201,7 @@ const sentences = [
     { sentence: "Чи зробив я багато за сьогодні?", translat: "Have I done a lot today?" },
     { sentence: "Вона закінчила навчання (тренінг)?", translat: "Has she completed the training?" },
 
-        // LESSON 10
+    // LESSON 10
     { sentence: "Чи впала темперетура?", translat: "Has the temperature dropped?" },
     { sentence: "Вони об'єдналися з іншою командою?", translat: "Have they united with another team?" },
     { sentence: "Ви чули це слово раніше?", translat: "Have you heard this word before?" },
@@ -168,7 +213,7 @@ const sentences = [
     { sentence: "Чи зробив я багато за сьогодні?", translat: "Have I done a lot today?" },
     { sentence: "Вона закінчила навчання (тренінг)?", translat: "Has she completed the training?" },
 
-        // LESSON 10
+    // LESSON 10
     { sentence: "Чи впала темперетура?", translat: "Has the temperature dropped?" },
     { sentence: "Вони об'єдналися з іншою командою?", translat: "Have they united with another team?" },
     { sentence: "Ви чули це слово раніше?", translat: "Have you heard this word before?" },
@@ -180,7 +225,7 @@ const sentences = [
     { sentence: "Чи зробив я багато за сьогодні?", translat: "Have I done a lot today?" },
     { sentence: "Вона закінчила навчання (тренінг)?", translat: "Has she completed the training?" },
 
-        // LESSON 10
+    // LESSON 10
     { sentence: "Чи впала темперетура?", translat: "Has the temperature dropped?" },
     { sentence: "Вони об'єдналися з іншою командою?", translat: "Have they united with another team?" },
     { sentence: "Ви чули це слово раніше?", translat: "Have you heard this word before?" },
@@ -192,7 +237,7 @@ const sentences = [
     { sentence: "Чи зробив я багато за сьогодні?", translat: "Have I done a lot today?" },
     { sentence: "Вона закінчила навчання (тренінг)?", translat: "Has she completed the training?" },
 
-        // LESSON 10
+    // LESSON 10
     { sentence: "Чи впала темперетура?", translat: "Has the temperature dropped?" },
     { sentence: "Вони об'єдналися з іншою командою?", translat: "Have they united with another team?" },
     { sentence: "Ви чули це слово раніше?", translat: "Have you heard this word before?" },
@@ -204,7 +249,7 @@ const sentences = [
     { sentence: "Чи зробив я багато за сьогодні?", translat: "Have I done a lot today?" },
     { sentence: "Вона закінчила навчання (тренінг)?", translat: "Has she completed the training?" },
 
-        // LESSON 10
+    // LESSON 10
     { sentence: "Чи впала темперетура?", translat: "Has the temperature dropped?" },
     { sentence: "Вони об'єдналися з іншою командою?", translat: "Have they united with another team?" },
     { sentence: "Ви чули це слово раніше?", translat: "Have you heard this word before?" },
@@ -216,7 +261,7 @@ const sentences = [
     { sentence: "Чи зробив я багато за сьогодні?", translat: "Have I done a lot today?" },
     { sentence: "Вона закінчила навчання (тренінг)?", translat: "Has she completed the training?" },
 
-        // LESSON 10
+    // LESSON 10
     { sentence: "Чи впала темперетура?", translat: "Has the temperature dropped?" },
     { sentence: "Вони об'єдналися з іншою командою?", translat: "Have they united with another team?" },
     { sentence: "Ви чули це слово раніше?", translat: "Have you heard this word before?" },
@@ -228,7 +273,7 @@ const sentences = [
     { sentence: "Чи зробив я багато за сьогодні?", translat: "Have I done a lot today?" },
     { sentence: "Вона закінчила навчання (тренінг)?", translat: "Has she completed the training?" },
 
-        // LESSON 10
+    // LESSON 10
     { sentence: "Чи впала темперетура?", translat: "Has the temperature dropped?" },
     { sentence: "Вони об'єдналися з іншою командою?", translat: "Have they united with another team?" },
     { sentence: "Ви чули це слово раніше?", translat: "Have you heard this word before?" },
@@ -240,7 +285,7 @@ const sentences = [
     { sentence: "Чи зробив я багато за сьогодні?", translat: "Have I done a lot today?" },
     { sentence: "Вона закінчила навчання (тренінг)?", translat: "Has she completed the training?" },
 
-        // LESSON 10
+    // LESSON 10
     { sentence: "Чи впала темперетура?", translat: "Has the temperature dropped?" },
     { sentence: "Вони об'єдналися з іншою командою?", translat: "Have they united with another team?" },
     { sentence: "Ви чули це слово раніше?", translat: "Have you heard this word before?" },
@@ -252,7 +297,7 @@ const sentences = [
     { sentence: "Чи зробив я багато за сьогодні?", translat: "Have I done a lot today?" },
     { sentence: "Вона закінчила навчання (тренінг)?", translat: "Has she completed the training?" },
 
-        // LESSON 10
+    // LESSON 10
     { sentence: "Чи впала темперетура?", translat: "Has the temperature dropped?" },
     { sentence: "Вони об'єдналися з іншою командою?", translat: "Have they united with another team?" },
     { sentence: "Ви чули це слово раніше?", translat: "Have you heard this word before?" },
@@ -264,7 +309,7 @@ const sentences = [
     { sentence: "Чи зробив я багато за сьогодні?", translat: "Have I done a lot today?" },
     { sentence: "Вона закінчила навчання (тренінг)?", translat: "Has she completed the training?" },
 
-        // LESSON 10
+    // LESSON 10
     { sentence: "Чи впала темперетура?", translat: "Has the temperature dropped?" },
     { sentence: "Вони об'єдналися з іншою командою?", translat: "Have they united with another team?" },
     { sentence: "Ви чули це слово раніше?", translat: "Have you heard this word before?" },
@@ -276,7 +321,7 @@ const sentences = [
     { sentence: "Чи зробив я багато за сьогодні?", translat: "Have I done a lot today?" },
     { sentence: "Вона закінчила навчання (тренінг)?", translat: "Has she completed the training?" },
 
-        // LESSON 10
+    // LESSON 10
     { sentence: "Чи впала темперетура?", translat: "Has the temperature dropped?" },
     { sentence: "Вони об'єдналися з іншою командою?", translat: "Have they united with another team?" },
     { sentence: "Ви чули це слово раніше?", translat: "Have you heard this word before?" },
@@ -288,67 +333,7 @@ const sentences = [
     { sentence: "Чи зробив я багато за сьогодні?", translat: "Have I done a lot today?" },
     { sentence: "Вона закінчила навчання (тренінг)?", translat: "Has she completed the training?" },
 
-        // LESSON 10
-    { sentence: "Чи впала темперетура?", translat: "Has the temperature dropped?" },
-    { sentence: "Вони об'єдналися з іншою командою?", translat: "Have they united with another team?" },
-    { sentence: "Ви чули це слово раніше?", translat: "Have you heard this word before?" },
-    { sentence: "Вона додала ваги?", translat: "Has she gained weight?" },
-    { sentence: "Чи використовував він силу?", translat: "Has he used force?" },
-    { sentence: "Ти загубив ключ від моєї комірки?", translat: "Have you lost the key to my locker?" },
-    { sentence: "Чи бачили ми світло?", translat: "Have we seen the light?" },
-    { sentence: "Вони проігнорували всі попередження?", translat: "Have they ignored all warnings?" },
-    { sentence: "Чи зробив я багато за сьогодні?", translat: "Have I done a lot today?" },
-    { sentence: "Вона закінчила навчання (тренінг)?", translat: "Has she completed the training?" },
-
-        // LESSON 10
-    { sentence: "Чи впала темперетура?", translat: "Has the temperature dropped?" },
-    { sentence: "Вони об'єдналися з іншою командою?", translat: "Have they united with another team?" },
-    { sentence: "Ви чули це слово раніше?", translat: "Have you heard this word before?" },
-    { sentence: "Вона додала ваги?", translat: "Has she gained weight?" },
-    { sentence: "Чи використовував він силу?", translat: "Has he used force?" },
-    { sentence: "Ти загубив ключ від моєї комірки?", translat: "Have you lost the key to my locker?" },
-    { sentence: "Чи бачили ми світло?", translat: "Have we seen the light?" },
-    { sentence: "Вони проігнорували всі попередження?", translat: "Have they ignored all warnings?" },
-    { sentence: "Чи зробив я багато за сьогодні?", translat: "Have I done a lot today?" },
-    { sentence: "Вона закінчила навчання (тренінг)?", translat: "Has she completed the training?" },
-
-        // LESSON 10
-    { sentence: "Чи впала темперетура?", translat: "Has the temperature dropped?" },
-    { sentence: "Вони об'єдналися з іншою командою?", translat: "Have they united with another team?" },
-    { sentence: "Ви чули це слово раніше?", translat: "Have you heard this word before?" },
-    { sentence: "Вона додала ваги?", translat: "Has she gained weight?" },
-    { sentence: "Чи використовував він силу?", translat: "Has he used force?" },
-    { sentence: "Ти загубив ключ від моєї комірки?", translat: "Have you lost the key to my locker?" },
-    { sentence: "Чи бачили ми світло?", translat: "Have we seen the light?" },
-    { sentence: "Вони проігнорували всі попередження?", translat: "Have they ignored all warnings?" },
-    { sentence: "Чи зробив я багато за сьогодні?", translat: "Have I done a lot today?" },
-    { sentence: "Вона закінчила навчання (тренінг)?", translat: "Has she completed the training?" },
-
-        // LESSON 10
-    { sentence: "Чи впала темперетура?", translat: "Has the temperature dropped?" },
-    { sentence: "Вони об'єдналися з іншою командою?", translat: "Have they united with another team?" },
-    { sentence: "Ви чули це слово раніше?", translat: "Have you heard this word before?" },
-    { sentence: "Вона додала ваги?", translat: "Has she gained weight?" },
-    { sentence: "Чи використовував він силу?", translat: "Has he used force?" },
-    { sentence: "Ти загубив ключ від моєї комірки?", translat: "Have you lost the key to my locker?" },
-    { sentence: "Чи бачили ми світло?", translat: "Have we seen the light?" },
-    { sentence: "Вони проігнорували всі попередження?", translat: "Have they ignored all warnings?" },
-    { sentence: "Чи зробив я багато за сьогодні?", translat: "Have I done a lot today?" },
-    { sentence: "Вона закінчила навчання (тренінг)?", translat: "Has she completed the training?" },
-
-        // LESSON 10
-    { sentence: "Чи впала темперетура?", translat: "Has the temperature dropped?" },
-    { sentence: "Вони об'єдналися з іншою командою?", translat: "Have they united with another team?" },
-    { sentence: "Ви чули це слово раніше?", translat: "Have you heard this word before?" },
-    { sentence: "Вона додала ваги?", translat: "Has she gained weight?" },
-    { sentence: "Чи використовував він силу?", translat: "Has he used force?" },
-    { sentence: "Ти загубив ключ від моєї комірки?", translat: "Have you lost the key to my locker?" },
-    { sentence: "Чи бачили ми світло?", translat: "Have we seen the light?" },
-    { sentence: "Вони проігнорували всі попередження?", translat: "Have they ignored all warnings?" },
-    { sentence: "Чи зробив я багато за сьогодні?", translat: "Have I done a lot today?" },
-    { sentence: "Вона закінчила навчання (тренінг)?", translat: "Has she completed the training?" },
-
-        // LESSON 10
+    // LESSON 10
     { sentence: "Чи впала темперетура?", translat: "Has the temperature dropped?" },
     { sentence: "Вони об'єдналися з іншою командою?", translat: "Have they united with another team?" },
     { sentence: "Ви чули це слово раніше?", translat: "Have you heard this word before?" },
@@ -365,7 +350,7 @@ const sentences = [
 export const FillitinExerciseData = sentences.map((value, index) => (
     {
         id: index + 1,
-        lesson: Math.floor(index / 10) + 1,
+        lesson: Math.floor(index / 8) + 1,
         visibility: "hidden",
         input: "",
         sentence: {
