@@ -18,7 +18,7 @@ const text = [
 She woke up early. Her job didn’t start for hours. At home, she liked to read with music playing. The food was simple but warm. She never skipped breakfast. It was really peaceful. She wasn\’t certain what the day would be like. But she hoped it would include something kind. To her, that was enough. She smiled and felt ready.`,
 
     //LESSON 6
-    '<b>TWO IN LOVE</b> \nThey walked to the market together. A bird sang from a nearby tree. Sometimes, small things bring joy. He tried to create a simple life. She was his quiet guide. They would say little, but understand much. Change didn\’t scare them anymore. Their interest was in each day, not just the future. They stayed close, even in silence. And that was enough. ',
+    "<b>TWO IN LOVE</b> \nThey walked to the market together. A bird sang from a nearby tree. Sometimes, small things bring joy. He tried to create a simple life. She was his quiet guide. They would say little, but understand much. Change didn’t scare them anymore. Their interest was in each day, not just the future. They stayed close, even in silence. And that was enough. ",
     //LESSON 7
     '<b>A DAY OF LEARNING</b> \n It is possible to learn something new every day. Gail visited the library to read about various topics. One card gave her access to all the books. Some ideas were difficult to understand. But she liked to consider different views. The beauty of nature always inspired her. In fact, she often wrote poems about it. She found a product that helped her study better. She met a small group of students every week. Together, they shared thoughts and helped each other grow.',
     //LESSON 8
@@ -27,18 +27,21 @@ She woke up early. Her job didn’t start for hours. At home, she liked to read 
     '<b>THE DIGITAL MOVE</b>\nThe web is a useful tool today. Many people develop new ideas online. Every page tells a story. The media industry grows fast. Activity on the internet never stops. One thing is clear: we must move forward. To use technology well is important. It helps us connect and learn. The digital world is always changing. We all take part in this new story.',
     //LESSON 10
     '<b>THE MAIN FOCUS</b> \nIn any community, safety must matter. Every individual plays a part. The quality of life depends on kind actions. Development happens when we work together. That is what helps everyone. Sometimes, everything feels hard to manage. But the main goal is clear: Create a place where everyone feels safe and valued.',
-    //LESSON 10
-    '<b>THE MAIN FOCUS</b> \nIn any community, safety must matter. Every individual plays a part. The quality of life depends on kind actions. Development happens when we work together. That is what helps everyone. Sometimes, everything feels hard to manage. But the main goal is clear: Create a place where everyone feels safe and valued.',
-    //LESSON 10
-    '<b>THE MAIN FOCUS</b> \nIn any community, safety must matter. Every individual plays a part. The quality of life depends on kind actions. Development happens when we work together. That is what helps everyone. Sometimes, everything feels hard to manage. But the main goal is clear: Create a place where everyone feels safe and valued.',
-    //LESSON 10
-    '<b>THE MAIN FOCUS</b> \nIn any community, safety must matter. Every individual plays a part. The quality of life depends on kind actions. Development happens when we work together. That is what helps everyone. Sometimes, everything feels hard to manage. But the main goal is clear: Create a place where everyone feels safe and valued.',
-    //LESSON 10
-    '<b>THE MAIN FOCUS</b> \nIn any community, safety must matter. Every individual plays a part. The quality of life depends on kind actions. Development happens when we work together. That is what helps everyone. Sometimes, everything feels hard to manage. But the main goal is clear: Create a place where everyone feels safe and valued.',
-    //LESSON 10
-    '<b>THE MAIN FOCUS</b> \nIn any community, safety must matter. Every individual plays a part. The quality of life depends on kind actions. Development happens when we work together. That is what helps everyone. Sometimes, everything feels hard to manage. But the main goal is clear: Create a place where everyone feels safe and valued.',
-    //LESSON 10
-    '<b>THE MAIN FOCUS</b> \nIn any community, safety must matter. Every individual plays a part. The quality of life depends on kind actions. Development happens when we work together. That is what helps everyone. Sometimes, everything feels hard to manage. But the main goal is clear: Create a place where everyone feels safe and valued.',
+    //LESSON 11
+    "<b>A DAY AT THE COAST</b>\nAccording to the weather report, it was going to be a sunny day. The family packed their things and quickly got ready. Following the path to the beach, they smiled at the beautiful view.\nThe sea was calm and bright. The children ran into the water, full of energy and action. They played games and built sandcastles the whole afternoon.\nIt was a perfect day at the coast.",
+    //LESSON 12
+    "<b>A MOUSE'S NEW HOME</b>\nThe mouse wanted to find a new place to live. It was already tired of the old hole in the wall. One day, it found a dry and quiet corner in the barn. It was easy to get in, and the farmer didn’t block the way, which seemed to allow the mouse to stay. The mouse made a small nest and felt happy. From then on, it had a safe home.",
+
+    //LESSON 13
+    "<b>CHANGING WEATHER</b>\nThe weather was colder than usual for this time of year. An old man who lived in the village noticed the low temperature and knew it was time to prepare. He checked his stock of firewood and food. There was not much left, so he decided to purchase more. \nAt the store, the supply of warm clothes was also low. Luckily, he found space in his home to keep everything he bought and stayed warm all season.",
+
+    //LESSON 14
+    "<b>THE LITTLE CHICKEN</b>\nA boy got a chicken as a present from his grandparents. He named it Sunny and took care of it every day.\nThe chicken lived in a small, clean coop and had healthy food and water. For every instance when Sunny clucked loudly, the boy would check if it needed something. The truth was, they quickly became best friends.",
+    //LESSON 15
+    "<b>GOOD NEWS</b>\nAnna got some exciting news. She had been accepted to the university she always dreamed of. Her goal was to become a doctor, and this was the first big step. She couldn't wait to tell her family.\nThe only problem was the cost of travel, so her parents helped her buy a small car. With their support, Anna was ready to begin her new journey.",
+    //LESSON 16
+    "<b>A SMART PLAN</b>\nLeo wanted to open a small shop in his town. First, he went to the bank to ask for a loan. He knew that the proper way to succeed was to plan carefully. \nWith a combination of hard work and smart choices, his business began to grow. The speed of success surprised even him. Soon, he was making a strong profit and feeling proud of what he had built.",
+
     //LESSON 10
     '<b>THE MAIN FOCUS</b> \nIn any community, safety must matter. Every individual plays a part. The quality of life depends on kind actions. Development happens when we work together. That is what helps everyone. Sometimes, everything feels hard to manage. But the main goal is clear: Create a place where everyone feels safe and valued.',
     //LESSON 10
@@ -155,54 +158,56 @@ const rawQuestions = [
         { question: "Якою є головна ціль?", answer: "clear" },
         { question: "Як повинні себе почувати всі люди (два слова)?", answer: "safe valued" },
     ],
-    //lesson 10
+    //lesson 11
     [
-        { question: "Що має мати значення в будь-якій спільноті?", answer: "safety" },
-        { question: "Від чого залежить якість життя (два слова)?", answer: "kind actions" },
-        { question: "Як ми повинні працювати для розвитку?", answer: "together" },
-        { question: "Якою є головна ціль?", answer: "clear" },
-        { question: "Як повинні себе почувати всі люди (два слова)?", answer: "safe valued" },
+        { question: "Якою днем мала бути погода?", answer: "sunny" },
+        { question: "Куди пішла родина?", answer: "beach" },
+        { question: "Як швидко родина приготувалась?", answer: "quickly" },
+        { question: "Що було спокійним і яскравим?", answer: "sea" },
+        { question: "Що будували діти?", answer: "sandcastles" }
     ],
-    //lesson 10
+
+    //lesson 12
     [
-        { question: "Що має мати значення в будь-якій спільноті?", answer: "safety" },
-        { question: "Від чого залежить якість життя (два слова)?", answer: "kind actions" },
-        { question: "Як ми повинні працювати для розвитку?", answer: "together" },
-        { question: "Якою є головна ціль?", answer: "clear" },
-        { question: "Як повинні себе почувати всі люди (два слова)?", answer: "safe valued" },
+        { question: "Хто шукав нове місце для життя?", answer: "mouse" },
+        { question: "Який куток знайшло мишеня?", answer: "dry" },
+        { question: "Було важко чи легко потрапити всередину?", answer: "easy" },
+        { question: "Де мишеня хотіло жити?", answer: "barn" },
+        { question: "Яку домівку знайшло мишеня?", answer: "safe" },
     ],
-    //lesson 10
+    //lesson 13
     [
-        { question: "Що має мати значення в будь-якій спільноті?", answer: "safety" },
-        { question: "Від чого залежить якість життя (два слова)?", answer: "kind actions" },
-        { question: "Як ми повинні працювати для розвитку?", answer: "together" },
-        { question: "Якою є головна ціль?", answer: "clear" },
-        { question: "Як повинні себе почувати всі люди (два слова)?", answer: "safe valued" },
+        { question: "Хто помітив, що погода холодна (два слова)?", answer: "old man" },
+        { question: "Яка була температура?", answer: "low" },
+        { question: "Чого було мало у нього вдома (два слова)?", answer: "firewood food" },
+        { question: "Чого було мало у магазині?", answer: "clothes" },
+        { question: "Що знайшов чоловік у своєму домі?", answer: "space" },
     ],
-    //lesson 10
+    //lesson 14
     [
-        { question: "Що має мати значення в будь-якій спільноті?", answer: "safety" },
-        { question: "Від чого залежить якість життя (два слова)?", answer: "kind actions" },
-        { question: "Як ми повинні працювати для розвитку?", answer: "together" },
-        { question: "Якою є головна ціль?", answer: "clear" },
-        { question: "Як повинні себе почувати всі люди (два слова)?", answer: "safe valued" },
+        { question: "Що отримав хлопчик в подарунок?", answer: "chicken" },
+        { question: "Від кого він його отримав?", answer: "grandparents" },
+        { question: "Якою була їжа курчати?", answer: "healthy" },
+        { question: "Що робило курча?", answer: "clucked" },
+        { question: "Ким вони стали один для одного (два слова)?", answer: "best friends" }
     ],
-    //lesson 10
+    //lesson 15
     [
-        { question: "Що має мати значення в будь-якій спільноті?", answer: "safety" },
-        { question: "Від чого залежить якість життя (два слова)?", answer: "kind actions" },
-        { question: "Як ми повинні працювати для розвитку?", answer: "together" },
-        { question: "Якою є головна ціль?", answer: "clear" },
-        { question: "Як повинні себе почувати всі люди (два слова)?", answer: "safe valued" },
+        { question: "Куди вступила Анна?", answer: "university" },
+        { question: "Ким вона хотіла стати?", answer: "doctor" },
+        { question: "Що вона не могла дочекатися сказати родині?", answer: "news" },
+        { question: "Що допомогли купити батьки?", answer: "car" },
+        { question: "Що було для неї проблемою (3 слова)?", answer: "cost of travel" }
     ],
-    //lesson 10
+    //lesson 16
     [
-        { question: "Що має мати значення в будь-якій спільноті?", answer: "safety" },
-        { question: "Від чого залежить якість життя (два слова)?", answer: "kind actions" },
-        { question: "Як ми повинні працювати для розвитку?", answer: "together" },
-        { question: "Якою є головна ціль?", answer: "clear" },
-        { question: "Як повинні себе почувати всі люди (два слова)?", answer: "safe valued" },
+        { question: "Куди пішов Лео за позикою?", answer: "bank" },
+        { question: "Що було запорукою успіху?", answer: "plan" },
+        { question: "Що стало для нього несподіванкою (3 слова)?", answer: "speed" },
+        { question: "Який прибуток він отримував?", answer: "strong" },
+        { question: "Як він себе почував?", answer: "proud" }
     ],
+
     //lesson 10
     [
         { question: "Що має мати значення в будь-якій спільноті?", answer: "safety" },
