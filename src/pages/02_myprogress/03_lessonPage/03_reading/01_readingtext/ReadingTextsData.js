@@ -54,23 +54,22 @@ She woke up early. Her job didn’t start for hours. At home, she liked to read 
     "<b>WINTER SHOPPING</b>\nSophie was out shopping on a cold morning. The streets were covered in ice, so she walked carefully. \nShe was currently looking for a special kind of egg for a recipe. The shop owner told her the final box had just been sold. \nDespite the condition of the weather and her long search, Sophie smiled and decided to try a different store.",
     //LESSON 22
     "<b>THE LITTLE BIRD</b>\nA young bird sat on a high branch, afraid to fly. Its mother watched with concern but did not stop it. She wanted to teach the bird how to be strong. \nFor a while, the bird stayed alone, thinking. Then, it finally opened its wings and took off into the sky, feeling free.",
-    //LESSON 10
-    '<b>THE MAIN FOCUS</b> \nIn any community, safety must matter. Every individual plays a part. The quality of life depends on kind actions. Development happens when we work together. That is what helps everyone. Sometimes, everything feels hard to manage. But the main goal is clear: Create a place where everyone feels safe and valued.',
-    //LESSON 10
-    '<b>THE MAIN FOCUS</b> \nIn any community, safety must matter. Every individual plays a part. The quality of life depends on kind actions. Development happens when we work together. That is what helps everyone. Sometimes, everything feels hard to manage. But the main goal is clear: Create a place where everyone feels safe and valued.',
-    //LESSON 10
-    '<b>THE MAIN FOCUS</b> \nIn any community, safety must matter. Every individual plays a part. The quality of life depends on kind actions. Development happens when we work together. That is what helps everyone. Sometimes, everything feels hard to manage. But the main goal is clear: Create a place where everyone feels safe and valued.',
-    //LESSON 10
-    '<b>THE MAIN FOCUS</b> \nIn any community, safety must matter. Every individual plays a part. The quality of life depends on kind actions. Development happens when we work together. That is what helps everyone. Sometimes, everything feels hard to manage. But the main goal is clear: Create a place where everyone feels safe and valued.',
-    //LESSON 10
-    '<b>THE MAIN FOCUS</b> \nIn any community, safety must matter. Every individual plays a part. The quality of life depends on kind actions. Development happens when we work together. That is what helps everyone. Sometimes, everything feels hard to manage. But the main goal is clear: Create a place where everyone feels safe and valued.',
-    //LESSON 10
-    '<b>THE MAIN FOCUS</b> \nIn any community, safety must matter. Every individual plays a part. The quality of life depends on kind actions. Development happens when we work together. That is what helps everyone. Sometimes, everything feels hard to manage. But the main goal is clear: Create a place where everyone feels safe and valued.',
-    //LESSON 10
-    '<b>THE MAIN FOCUS</b> \nIn any community, safety must matter. Every individual plays a part. The quality of life depends on kind actions. Development happens when we work together. That is what helps everyone. Sometimes, everything feels hard to manage. But the main goal is clear: Create a place where everyone feels safe and valued.',
-    //LESSON 10
-    '<b>THE MAIN FOCUS</b> \nIn any community, safety must matter. Every individual plays a part. The quality of life depends on kind actions. Development happens when we work together. That is what helps everyone. Sometimes, everything feels hard to manage. But the main goal is clear: Create a place where everyone feels safe and valued.',
-
+    //LESSON 23
+    "<b>SAFE ON THE ROAD</b>\nLiam was a careful driver who followed the rules. Despite the loud music in the car next to him, he stayed focused. He constantly reminded his best friend to wear a seatbelt. \nLiam believed that small habits could prevent accidents. Being safe was more important to him than speed.",
+    //LESSON 24
+    "<b>THE SCHOOL DISCUSSION</b>\nDuring their daily class, the students had a debate about rules at school. One student tried to exit the room early without asking. The teacher didn’t expect that and asked him to return immediately. \nShe explained that following rules doesn’t mean you fail, but helps you grow.",
+    //LESSON 25
+    "<b>THE RIGHT WORDS</b>\nTom used to worry when he had to speak in class. He wanted every answer to be correct, but that pressure made him nervous. \nHis teacher told him to slow down and speak slowly. Over time, his worry began to reduce. He learned that every voice is valuable, even if the answer isn’t perfect.",
+    //LESSON 26
+    "<b>SMART CHOICES</b>\nEmma primarily visited the local market to find fresh food. One shop was selling something she needed, but it was too expensive. She walked away with a slow step, thinking about her budget. \nA kind seller gave her advice about where to find better prices. Emma smiled and agreed — it’s important to buy only what you can afford.",
+    //LESSON 27
+    "<b>SAVING IS WISE</b>\nNoah had a strong opinion about spending money. He believed it was smart to build savings before making any big payment. \nHis skill with budgeting helped him remain calm, even during expensive months. He often shared tips with friends to help them do the same.",
+    //LESSON 28
+    "<b>THE LOST FRIEND</b>\nLila found a small animal near the forest. It was cold and hungry, and she couldn’t forget its sad eyes. She took it home and gave it food, even though she didn’t have much. A cheap blanket and a warm heart were enough. \nThe animal quickly became part of her life.",
+    //LESSON 29
+    "<b>THE CONTEST ENTRY</b>\nAnna took a photo of the sunset for a school contest. She gave it the title “Evening Light” and wrote a short reference about why the moment was special. \nTo enter, she had to register online and secure her spot before the deadline. She felt proud of her work.",
+    //LESSON 30
+    "<b>THE STORY IDEA</b>\nMark stood at the edge of the lake, feeling nearly ready to write again. After weeks of depression, his imagination began to return. \nHe wanted to create something meaningful. To obtain peace, he needed to believe in his words and take the first step.",
 ]
 
 const images = importAll(
@@ -256,79 +255,70 @@ const rawQuestions = [
         { question: "З яким відчуттям вона це робила?", answer: "concern" },
         { question: "Що зрештою зробила героїня тексту?", answer: "fly" },
     ],
-    //lesson 10
+    //lesson 23
     [
-        { question: "Що має мати значення в будь-якій спільноті?", answer: "safety" },
-        { question: "Від чого залежить якість життя (два слова)?", answer: "kind actions" },
-        { question: "Як ми повинні працювати для розвитку?", answer: "together" },
-        { question: "Якою є головна ціль?", answer: "clear" },
-        { question: "Як повинні себе почувати всі люди (два слова)?", answer: "safe valued" },
+        { question: "Хто був обережним на дорозі?", answer: "Liam" },
+        { question: "Що було гучним в іншій машині?", answer: "music" },
+        { question: "Що Ліам нагадував другові пристебувати?", answer: "seatbelt" },
+        { question: "Чому можуть запобігти маленькі звички?", answer: "accidents" },
+        { question: "Про що Ліам дбав більше, ніж про швидкість?", answer: "safety" }
     ],
-    //lesson 10
+    //lesson 24
     [
-        { question: "Що має мати значення в будь-якій спільноті?", answer: "safety" },
-        { question: "Від чого залежить якість життя (два слова)?", answer: "kind actions" },
-        { question: "Як ми повинні працювати для розвитку?", answer: "together" },
-        { question: "Якою є головна ціль?", answer: "clear" },
-        { question: "Як повинні себе почувати всі люди (два слова)?", answer: "safe valued" },
+        { question: "Як часто у студенртів були уроки?", answer: "daily" },
+        { question: "Яку тему обговорювали учні?", answer: "rules" },
+        { question: "Хто намагався вийти з кімнати без дозволу?", answer: "student" },
+        { question: "Що вчителька попросила його зробити?", answer: "return" },
+        { question: "Що, за словами вчительки, допомагає нам зростати?", answer: "rules" }
     ],
-    //lesson 10
+    //lesson 25
     [
-        { question: "Що має мати значення в будь-якій спільноті?", answer: "safety" },
-        { question: "Від чого залежить якість життя (два слова)?", answer: "kind actions" },
-        { question: "Як ми повинні працювати для розвитку?", answer: "together" },
-        { question: "Якою є головна ціль?", answer: "clear" },
-        { question: "Як повинні себе почувати всі люди (два слова)?", answer: "safe valued" },
+        { question: "Хто боявся говорити в класі?", answer: "Tom" },
+        { question: "Якими він хотів, щоб були його відповіді?", answer: "correct" },
+        { question: "Що йому порадила вчителька (два слова)?", answer: "slow down" },
+        { question: "Що у нього почало зменшуватись з часом?", answer: "worry" },
+        { question: "Якою є думка (голос) кожної людини?", answer: "valuable" }
     ],
-    //lesson 10
+    //lesson 26
     [
-        { question: "Що має мати значення в будь-якій спільноті?", answer: "safety" },
-        { question: "Від чого залежить якість життя (два слова)?", answer: "kind actions" },
-        { question: "Як ми повинні працювати для розвитку?", answer: "together" },
-        { question: "Якою є головна ціль?", answer: "clear" },
-        { question: "Як повинні себе почувати всі люди (два слова)?", answer: "safe valued" },
+        { question: "Хто пішов на місцевий ринок?", answer: "Emma" },
+        { question: "Яким для неї був товар в крамниці (2 слова)?", answer: "too expensive" },
+        { question: "Про що думала Емма, ідучи від магазину?", answer: "budget" },
+        { question: "Що дав їй добрий продавець?", answer: "advice" },
+        { question: "Потрібно купувати лише те, що можеш ...", answer: "afford" }
     ],
-    //lesson 10
+    //lesson 27
     [
-        { question: "Що має мати значення в будь-якій спільноті?", answer: "safety" },
-        { question: "Від чого залежить якість життя (два слова)?", answer: "kind actions" },
-        { question: "Як ми повинні працювати для розвитку?", answer: "together" },
-        { question: "Якою є головна ціль?", answer: "clear" },
-        { question: "Як повинні себе почувати всі люди (два слова)?", answer: "safe valued" },
+        { question: "Про що Ной мав тверду думку (два слова)?", answer: "spending money" },
+        { question: "Що він хотів накопичити?", answer: "savings" },
+        { question: "Що допомагало йому залишатися спокійним?", answer: "skill" },
+        { question: "Яке рішення він приймав перед витратами?", answer: "payment" },
+        { question: "Що він намагався робити під час дорогих місяців?", answer: "remain" }
     ],
-    //lesson 10
+    //lesson 28
     [
-        { question: "Що має мати значення в будь-якій спільноті?", answer: "safety" },
-        { question: "Від чого залежить якість життя (два слова)?", answer: "kind actions" },
-        { question: "Як ми повинні працювати для розвитку?", answer: "together" },
-        { question: "Якою є головна ціль?", answer: "clear" },
-        { question: "Як повинні себе почувати всі люди (два слова)?", answer: "safe valued" },
+        { question: "Хто знайшов тваринку?", answer: "Lila" },
+        { question: "БІля чого вона її знайшла?", answer: "forest" },
+        { question: "Які очі були у тваринки?", answer: "sad" },
+        { question: "Що вона дала тваринці?", answer: "food" },
+        { question: "Яке серце було у Ліли?", answer: "warm" }
     ],
-    //lesson 10
+    //lesson 29
     [
-        { question: "Що має мати значення в будь-якій спільноті?", answer: "safety" },
-        { question: "Від чого залежить якість життя (два слова)?", answer: "kind actions" },
-        { question: "Як ми повинні працювати для розвитку?", answer: "together" },
-        { question: "Якою є головна ціль?", answer: "clear" },
-        { question: "Як повинні себе почувати всі люди (два слова)?", answer: "safe valued" },
+        { question: "Хто зробив фото?", answer: "Anna" },
+        { question: "Що було зображено на фото?", answer: "sunset" },
+        { question: "Яка була назва фото (2 слова)?", answer: "Evening Light" },
+        { question: "Де Анна зареєструвалася?", answer: "online" },
+        { question: "Що їй потрібно було зарезервувати?", answer: "spot" }
     ],
-    //lesson 10
+    //lesson 30
     [
-        { question: "Що має мати значення в будь-якій спільноті?", answer: "safety" },
-        { question: "Від чого залежить якість життя (два слова)?", answer: "kind actions" },
-        { question: "Як ми повинні працювати для розвитку?", answer: "together" },
-        { question: "Якою є головна ціль?", answer: "clear" },
-        { question: "Як повинні себе почувати всі люди (два слова)?", answer: "safe valued" },
+        { question: "Біля чого стояв Марк?", answer: "lake" },
+        { question: "Що він майже був готовий робити?", answer: "write" },
+        { question: "Що повернулося після депресії?", answer: "imagination" },
+        { question: "Що хотів отримати Марк?", answer: "peace" },
+        { question: "Що йому для цього було потрібно?", answer: "believe" }
     ],
-    //lesson 10
-    [
-        { question: "Що має мати значення в будь-якій спільноті?", answer: "safety" },
-        { question: "Від чого залежить якість життя (два слова)?", answer: "kind actions" },
-        { question: "Як ми повинні працювати для розвитку?", answer: "together" },
-        { question: "Якою є головна ціль?", answer: "clear" },
-        { question: "Як повинні себе почувати всі люди (два слова)?", answer: "safe valued" },
-    ],
-
 ]
 
 const questionsArray = rawQuestions.map((value, index) => (
