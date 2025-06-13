@@ -202,7 +202,7 @@ const rawQuestions = [
     [
         { question: "Куди пішов Лео за позикою?", answer: "bank" },
         { question: "Що було запорукою успіху?", answer: "plan" },
-        { question: "Що стало для нього несподіванкою (3 слова)?", answer: "speed" },
+        { question: "Що стало для нього несподіванкою (3 слова)?", answer: "speed of success" },
         { question: "Який прибуток він отримував?", answer: "strong" },
         { question: "Як він себе почував?", answer: "proud" }
     ],
@@ -218,9 +218,9 @@ const rawQuestions = [
     //lesson 18
     [
         { question: "Яку енергію важливо зберігати?", answer: "electrical" },
-        { question: "Що використовують прилади?", answer: "power" },
+        { question: "Що використовували прилади?", answer: "power" },
         { question: "Які були ці прилади?", answer: "expensive" },
-        { question: "Що відбувалося з індикаторами, коли було багато включених пристроїв?", answer: "blinked" },
+        { question: "Що відбувалося з індикаторами, коли було забагато включених пристроїв?", answer: "blinked" },
         { question: "Яку зміну допомогла зробити Міла у родині (2 слова)?", answer: "small significant" }
     ],
     //lesson 19
