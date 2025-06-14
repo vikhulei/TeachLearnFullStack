@@ -65,7 +65,7 @@ She woke up early. Her job didn’t start for hours. At home, she liked to read 
     //LESSON 27
     "<b>SAVING IS WISE</b>\nNoah had a strong opinion about spending money. He believed it was smart to build savings before making any big payment. \nHis skill with budgeting helped him remain calm, even during expensive months. He often shared tips with friends to help them do the same.",
     //LESSON 28
-    "<b>THE LOST FRIEND</b>\nLila found a small animal near the forest. It was cold and hungry, and she couldn’t forget its sad eyes. She took it home and gave it food, even though she didn’t have much. A cheap blanket and a warm heart were enough. \nThe animal quickly became part of her life.",
+    "<b>THE NEW FRIEND</b>\nLila found a small animal near the forest. It was cold and hungry, and she couldn’t forget its sad eyes. She took it home and gave it food, even though she didn’t have much. A cheap blanket and a warm heart were enough. \nThe animal quickly became part of her life.",
     //LESSON 29
     "<b>THE CONTEST ENTRY</b>\nAnna took a photo of the sunset for a school contest. She gave it the title “Evening Light” and wrote a short reference about why the moment was special. \nTo enter, she had to register online and secure her spot before the deadline. She felt proud of her work.",
     //LESSON 30
