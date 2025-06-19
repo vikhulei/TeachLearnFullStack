@@ -1,3 +1,8 @@
+1) Select all
+2) Compress
+3) Sample rate 16000
+
+
 LESSON 2
 A shop assistant starts their day early in the morning. They arrive at the shop before it opens to prepare everything. When the shop opens, the assistant greets customers with a smile. They help people find what they need and answer their questions. In the afternoon, they may take a short lunch break. At the end of the day, they clean up, count the money, and lock the doors before going home.
 
@@ -264,7 +269,7 @@ Liam likes simple clothes. He wears jeans and T-shirts most days. His favorite c
 Emma loves her birthday. Her family throws a party every year. She gets balloons, cake, and gifts. Her favorite part is the music. All her friends come to celebrate. They play games and dance. Emma wears a crown for fun. She feels special all day. Her family takes many photos. Birthdays are her favorite celebration.
 
 **Story 2:**
-Raj celebrates Diwali with his family. They clean the house and light lamps. His mom makes sweet food. Raj wears new clothes and gives gifts. They visit family and neighbors. Fireworks light up the sky. Everyone smiles and laughs. Raj loves the colors and joy. He feels close to his culture. Diwali is a bright and happy time.
+Raj celebrates the holiday with his family. They clean the house and light lamps. His mom makes sweet food. Raj wears new clothes and gives gifts. They visit family and neighbors. Fireworks light up the sky. Everyone smiles and laughs. Raj loves the colors and celebration. He feels close to his culture. This is a bright and happy time.
 
 ---
 
