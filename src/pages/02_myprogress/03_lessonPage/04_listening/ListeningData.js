@@ -377,33 +377,33 @@ const rawQuestions = [
 { question: "Який її улюблений жанр?", answer: "fantasy" },
 { question: "Ким вона хоче стати?", answer: "writer" },
 { question: "Де вона читає на вихідних?", answer: "library" },
-{ question: "Що роблять її друзі з книжками?", answer: "share" },
+{ question: "Що обговорюють її друзі?", answer: "stories" },
 ],
 // second story
 [
 { question: "Які книжки читає Лукас?", answer: "comic" },
-{ question: "Хто його улюблений герой?", answer: "hero" },
-{ question: "Коли він читає у школі?", answer: "lunch" },
+{ question: "Яким є його улюблений герой (2 слова)?", answer: "strong kind" },
+{ question: "Під час чого він читає у школі?", answer: "lunch" },
+{ question: "Що інколи він робить під час читання?", answer: "laughs" },
 { question: "Хто ще читає комікси з ним?", answer: "sister" },
-{ question: "Що роблять історії для Лукаса?", answer: "fun" },
 ],
 
 // LESSON 22
 // first story
 [
-{ question: "Як звати собаку Меї?", answer: "toby" },
-{ question: "Якого кольору він?", answer: "white" },
-{ question: "Коли вона його вигулює?", answer: "day" },
+{ question: "Як звати собаку Меї?", answer: "Toby" },
+{ question: "Якого він кольору?", answer: "white" },
+{ question: "Коли вона його годує?", answer: "morning" },
+{ question: "Як часто вона його вигулює (2 слова)?", answer: "every day" },
 { question: "Де він спить вночі?", answer: "bed" },
-{ question: "Хто її найкращий друг?", answer: "toby" },
 ],
 // second story
 [
 { question: "Кого побачив Ітан у лісі?", answer: "deer" },
-{ question: "З ким він гуляв?", answer: "dad" },
-{ question: "Де стояла тварина?", answer: "tree" },
+{ question: "З ким гуляв Ітан?", answer: "Dad" },
+{ question: "Біля чого стояла тварина?", answer: "tree" },
 { question: "Що зробив Ітан з твариною?", answer: "photo" },
-{ question: "Яке слово описує природу?", answer: "surprises" },
+{ question: "Чим наповнена природа?", answer: "surprises" },
 ],
 
 // LESSON 23
@@ -412,30 +412,30 @@ const rawQuestions = [
 { question: "Куди Олівія ходить щовихідних?", answer: "park" },
 { question: "Що вона прибирає?", answer: "trash" },
 { question: "Що вона вимикає вдома?", answer: "lights" },
-{ question: "Що вона робить вдома для природи?", answer: "recycles" },
-{ question: "Кому вона каже допомагати?", answer: "friends" },
+{ question: "Що вона робить вдома для збереження довкілля?", answer: "recycles" },
+{ question: "Кого вона просить допомагати?.", answer: "friends" },
 ],
 // second story
 [
-{ question: "Про що дізнався Ной у школі?", answer: "climate" },
+{ question: "Про що дізнався Ной у школі (2 слова)?", answer: "climate change" },
 { question: "Що він використовує замість автобуса?", answer: "bike" },
 { question: "З чого зроблена його пляшка?", answer: "metal" },
 { question: "З ким він саджає квіти?", answer: "mom" },
-{ question: "Яке слово описує його дії?", answer: "greener" },
+{ question: "Про що він говорить сім'ї?", answer: "nature" },
 ],
 
 // LESSON 24
 // first story
 [
-{ question: "Де живе Лена?", answer: "town" },
+{ question: "Де живе Лена (2 слова)?", answer: "small town" },
 { question: "Що знаходиться біля її будинку?", answer: "bakery" },
 { question: "Куди вона ходить на вихідних?", answer: "park" },
-{ question: "Яке почуття викликає її місто?", answer: "warm" },
-{ question: "Чим їй подобається її місто?", answer: "friendly" },
+{ question: "Яке почуття викликає її містечко (2 слова)?", answer: "warm friendly" },
+{ question: "Що їй подобається в ньому (2 слова)?", answer: "calm safety" },
 ],
 // second story
 [
-{ question: "У якому місці виріс Зак?", answer: "city" },
+{ question: "У якому місці виріс Зак (2 слова)?", answer: "big city" },
 { question: "Що він чув щодня?", answer: "horns" },
 { question: "Куди він ходив з друзями у вихідні?", answer: "museum" },
 { question: "Що він любив у місті вночі?", answer: "lights" },
@@ -445,19 +445,19 @@ const rawQuestions = [
 // LESSON 25
 // first story
 [
-{ question: "Які дві мови знає Ава?", answer: "english" },
-{ question: "Хто навчив її іспанської?", answer: "mom" },
+{ question: "Які дві мови знає Ава?", answer: "English Spanish" },
+{ question: "Хто навчив її іспанської?", answer: "Mom" },
 { question: "З ким вона розмовляє в школі?", answer: "friends" },
-{ question: "Яку мову вона хоче вивчити?", answer: "french" },
+{ question: "Яку мову вона хоче вивчити?", answer: "French" },
 { question: "Що вона думає про мови?", answer: "fun" },
 ],
 // second story
 [
-{ question: "Куди переїхав Лео?", answer: "country" },
-{ question: "Що він використовував для спілкування?", answer: "pictures" },
+{ question: "Куди переїхав Лео (2 слова)?", answer: "new country" },
+{ question: "Що він використовував для спілкування крім жестів?", answer: "pictures" },
 { question: "Хто йому допомагав?", answer: "teacher" },
 { question: "Що він відчуває тепер?", answer: "proud" },
-{ question: "Що він продовжує робити?", answer: "trying" },
+{ question: "Що він продовжує робити (2 слова)?", answer: "trying learning" },
 ],
 
 // LESSON 26
@@ -489,18 +489,18 @@ const rawQuestions = [
 ],
 // second story
 [
-{ question: "Хто готує солодощі для Раджа?", answer: "mom" },
-{ question: "Що він одягає на свято?", answer: "clothes" },
+{ question: "Хто готує солодощі для Раджа?", answer: "Mom" },
+{ question: "Що він одягає на свято (2 слова)?", answer: "new clothes" },
 { question: "Що освітлює небо?", answer: "fireworks" },
-{ question: "Що він відчуває до своєї культури?", answer: "close" },
-{ question: "Яке слово описує цей період?", answer: "happy" },
+{ question: "Як він почувається по відношенню до своєї культури?", answer: "close" },
+{ question: "Який це для нього час (2 слова)?", answer: "bright happy" },
 ],
 
 // LESSON 28
 // first story
 [
 { question: "Що любить робити Олівія?", answer: "paint" },
-{ question: "Які її улюблені кольори?", answer: "green" },
+{ question: "Які її улюблені кольори (2 слова)?", answer: "green yellow" },
 { question: "Чим вона іноді малює, крім пензля?", answer: "fingers" },
 { question: "Що висить на її стінах?", answer: "art" },
 { question: "Ким вона мріє стати?", answer: "artist" },
@@ -520,24 +520,24 @@ const rawQuestions = [
 { question: "Чим добирається до школи Анна?", answer: "bus" },
 { question: "Де вона чекає вранці?", answer: "stop" },
 { question: "Що вона читає під час очікування?", answer: "book" },
-{ question: "З ким вона їде?", answer: "friend" },
-{ question: "Що вона думає про автобус?", answer: "easy" },
+{ question: "З ким вона їде (2 слова)?", answer: "best friend" },
+{ question: "Що вона думає про подорож автобусом?", answer: "easy" },
 ],
 // second story
 [
-{ question: "Чим їздить Омар до парку?", answer: "bike" },
+{ question: "На чому їздить Омар до парку?", answer: "bike" },
 { question: "Що він носить для безпеки?", answer: "helmet" },
-{ question: "Куди веде його маршрут?", answer: "trees" },
-{ question: "Що він робить після відпочинку?", answer: "rides" },
+{ question: "Між чим пролягає його маршрут?", answer: "trees" },
+{ question: "Що він робить після відпочинку (3 слова)?", answer: "rides back home" },
 { question: "Яке слово описує його почуття?", answer: "free" },
 ],
 
 // LESSON 30
 // first story
 [
-{ question: "Чого боялась Лілі?", answer: "swim" },
-{ question: "Хто записав її на уроки?", answer: "mom" },
-{ question: "Який тренер був?", answer: "kind" },
+{ question: "Що боялася робити Лілі?", answer: "swim" },
+{ question: "Хто записав її на уроки?", answer: "Mom" },
+{ question: "Який був її тренер?", answer: "kind" },
 { question: "Що зробили люди, коли вона пропливла?", answer: "clapped" },
 { question: "Що вона відчула після цього?", answer: "proud" },
 ],
@@ -547,7 +547,7 @@ const rawQuestions = [
 { question: "Хто йому допомагав?", answer: "teacher" },
 { question: "Скільки сторінок він читав спочатку?", answer: "one" },
 { question: "Хто ним пишається?", answer: "parents" },
-{ question: "Як він називає цей успіх?", answer: "win" },
+{ question: "Як він називає те, що навчився читати (2 слова)?", answer: "big win" },
 ]
 
 
