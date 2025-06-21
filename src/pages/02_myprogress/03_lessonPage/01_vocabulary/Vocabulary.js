@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react"
 import { useSelector } from "react-redux"
 import { Wrapper, Heading, Frame, Word, EngWord, UkrWord } from "./VocabularyStyle"
-import { TwoThousand } from "../../../03_vocabulary/TwoThousand"
+import { TwoThousand } from "./TwoThousand"
 
 
 const Vocabulary = () => {
