@@ -1,2004 +1,6003 @@
-export const TwoThousandActualWords = [
-    { word: "more", word_context: "money", translat: "більше", translat_context: "грошей"},
-    { word: "some", translat: "деякі"},
-    { word: "there", translat: "там"},
-    { word: "what", translat: "що"},
-    { word: "about", translat: "про"},
-    { word: "all", translat: "все"},
-    { word: "also", translat: "також"},
-    { word: "many", translat: "багато"},
-    { word: "do", translat: "робити"},
-    { word: "most", translat: "більшість"},
-    { word: "people", translat: "люди"},
-    { word: "other", translat: "інші"},
-    { word: "time", translat: "час"},
-    { word: "so", translat: "так"},
-    { word: "like", translat: "подобається"},
-    { word: "use", translat: "використовувати"},
-    { word: "make", translat: "зробити"},
-    { word: "because", translat: "тому що"},
-    { word: "such", translat: "такий"},
-    { word: "through", translat: "через"},
-    { word: "get", translat: "отримати"},
-    { word: "work", translat: "працювати"},
-    { word: "even", translat: "навіть"},
-    { word: "different", translat: "різні"},
-    { word: "new", translat: "новий"},
-    { word: "film", translat: "фільм"},
-    { word: "just", translat: "просто"},
-    { word: "only", translat: "тільки"},
-    { word: "see", translat: "побачити"},
-    { word: "used", translat: "використовується"},
-    { word: "good", translat: "добре"},
-    { word: "water", translat: "води"},
-    { word: "been", translat: "був"},
-    { word: "need", translat: "потреба"},
-    { word: "should", translat: "повинен"},
-    { word: "very", translat: "дуже"},
-    { word: "any", translat: "будь-який"},
-    { word: "history", translat: "історії"},
-    { word: "often", translat: "часто"},
-    { word: "way", translat: "спосіб"},
-    { word: "well", translat: "добре"},
-    { word: "art", translat: "мистецтво"},
-    { word: "know", translat: "знати"},
-    { word: "then", translat: "тоді"},
-    { word: "my", translat: "мій"},
-    { word: "first", translat: "перший"},
-    { word: "would", translat: "би"},
-    { word: "money", translat: "гроші"},
-    { word: "each", translat: "кожен"},
-    { word: "over", translat: "кінець"},
-    { word: "world", translat: "світ"},
-    { word: "information", translat: "інформація"},
-    { word: "map", translat: "карта"},
-    { word: "find", translat: "знайти"},
-    { word: "much", translat: "багато"},
-    { word: "take", translat: "взяти"},
-    { word: "want", translat: "хотіти"},
-    { word: "important", translat: "важливо"},
-    { word: "family", translat: "родина"},
-    { word: "example", translat: "приклад"},
-    { word: "while", translat: "поки"},
-    { word: "look", translat: "дивитися"},
-    { word: "government", translat: "уряд"},
-    { word: "before", translat: "раніше"},
-    { word: "help", translat: "допомогти"},
-    { word: "go", translat: "йти"},
-    { word: "own", translat: "власні"},
-    { word: "however", translat: "проте"},
-    { word: "business", translat: "бізнес"},
-    { word: "great", translat: "чудово"},
-    { word: "another", translat: "інший"},
-    { word: "health", translat: "здоров'я"},
-    { word: "same", translat: "те саме"},
-    { word: "study", translat: "вивчення"},
-    { word: "few", translat: "мало"},
-    { word: "game", translat: "гра"},
-    { word: "might", translat: "міг би"},
-    { word: "think", translat: "думати"},
-    { word: "free", translat: "безкоштовно"},
-    { word: "too", translat: "теж"},
-    { word: "hi", translat: "привіт"},
-    { word: "right", translat: "правильно"},
-    { word: "still", translat: "досі"},
-    { word: "system", translat: "система"},
-    { word: "after", translat: "після"},
-    { word: "computer", translat: "комп'ютер"},
-    { word: "best", translat: "найкращий"},
-    { word: "life", translat: "життя"},
-    { word: "since", translat: "оскільки"},
-    { word: "could", translat: "міг би"},
-    { word: "does", translat: "робить"},
-    { word: "now", translat: "зараз"},
-    { word: "during", translat: "протягом"},
-    { word: "learn", translat: "навчитися"},
-    { word: "around", translat: "навколо"},
-    { word: "usually", translat: "зазвичай"},
-    { word: "form", translat: "форму"},
-    { word: "meat", translat: "м'ясо"},
-    { word: "air", translat: "повітря"},
-    { word: "day", translat: "день"},
-    { word: "place", translat: "місце"},
-    { word: "become", translat: "стати"},
-    { word: "number", translat: "номер"},
-    { word: "public", translat: "громадськість"},
-    { word: "read", translat: "читати"},
-    { word: "keep", translat: "зберегти"},
-    { word: "part", translat: "частина"},
-    { word: "start", translat: "початок"},
-    { word: "year", translat: "рік"},
-    { word: "every", translat: "кожен"},
-    { word: "field", translat: "поле"},
-    { word: "large", translat: "великий"},
-    { word: "once", translat: "один раз"},
-    { word: "available", translat: "доступний"},
-    { word: "down", translat: "вниз"},
-    { word: "give", translat: "дати"},
-    { word: "fish", translat: "риба"},
-    { word: "human", translat: "людина"},
-    { word: "both", translat: "обидва"},
-    { word: "local", translat: "місцевий"},
-    { word: "sure", translat: "впевнений"},
-    { word: "something", translat: "щось"},
-    { word: "without", translat: "без"},
-    { word: "come", translat: "прийти"},
-    { word: "me", translat: "мене"},
-    { word: "back", translat: "назад"},
-    { word: "better", translat: "краще"},
-    { word: "general", translat: "загальний"},
-    { word: "process", translat: "процес"},
-    { word: "heat", translat: "тепло"},
-    { word: "thanks", translat: "дякую"},
-    { word: "specific", translat: "конкретні"},
-    { word: "enough", translat: "досить"},
-    { word: "long", translat: "довго"},
-    { word: "lot", translat: "багато"},
-    { word: "hand", translat: "руку"},
-    { word: "popular", translat: "популярний"},
-    { word: "small", translat: "маленький"},
-    { word: "though", translat: "хоча"},
-    { word: "experience", translat: "досвід"},
-    { word: "include", translat: "включити"},
-    { word: "job", translat: "робота"},
-    { word: "music", translat: "музика"},
-    { word: "person", translat: "особа"},
-    { word: "really", translat: "насправді"},
-    { word: "although", translat: "хоча"},
-    { word: "book", translat: "книга"},
-    { word: "early", translat: "рано"},
-    { word: "read", translat: "читати"},
-    { word: "end", translat: "кінець"},
-    { word: "method", translat: "метод"},
-    { word: "never", translat: "ніколи"},
-    { word: "less", translat: "менше"},
-    { word: "play", translat: "грати"},
-    { word: "able", translat: "здатний"},
-    { word: "data", translat: "даних"},
-    { word: "feel", translat: "відчувати"},
-    { word: "high", translat: "високий"},
-    { word: "off", translat: "вимкнено"},
-    { word: "point", translat: "точка"},
-    { word: "type", translat: "тип"},
-    { word: "whether", translat: "чи"},
-    { word: "food", translat: "їжа"},
-    { word: "understanding", translat: "розуміння"},
-    { word: "home", translat: "дім"},
-    { word: "certain", translat: "певний"},
-    { word: "economy", translat: "економіка"},
-    { word: "little", translat: "малий"},
-    { word: "theory", translat: "теорія"},
-    { word: "tonight", translat: "сьогодні ввечері"},
-    { word: "law", translat: "закон"},
-    { word: "put", translat: "поставити"},
-    { word: "value", translat: "значення"},
-    { word: "always", translat: "завжди"},
-    { word: "body", translat: "тіло"},
-    { word: "common", translat: "поширений"},
-    { word: "market", translat: "ринку"},
-    { word: "set", translat: "встановити"},
-    { word: "bird", translat: "птах"},
-    { word: "guide", translat: "керівництво"},
-    { word: "provide", translat: "забезпечити"},
-    { word: "change", translat: "змінити"},
-    { word: "interest", translat: "інтерес"},
-    { word: "literature", translat: "література"},
-    { word: "sometimes", translat: "іноді"},
-    { word: "problem", translat: "проблема"},
-    { word: "say", translat: "казати"},
-    { word: "next", translat: "наступний"},
-    { word: "create", translat: "творити"},
-    { word: "simple", translat: "простий"},
-    { word: "software", translat: "програма"},
-    { word: "state", translat: "стан"},
-    { word: "together", translat: "разом"},
-    { word: "control", translat: "контроль"},
-    { word: "knowledge", translat: "знання"},
-    { word: "power", translat: "потужність"},
-    { word: "radio", translat: "радіо"},
-    { word: "ability", translat: "здатність"},
-    { word: "basic", translat: "основний"},
-    { word: "course", translat: "курс"},
-    { word: "economics", translat: "економіка"},
-    { word: "hard", translat: "важкий"},
-    { word: "add", translat: "додати"},
-    { word: "company", translat: "компанія"},
-    { word: "known", translat: "відомий"},
-    { word: "love", translat: "любов"},
-    { word: "past", translat: "минуле"},
-    { word: "price", translat: "ціна"},
-    { word: "size", translat: "розмір"},
-    { word: "away", translat: "геть"},
-    { word: "big", translat: "великий"},
-    { word: "possible", translat: "можливо"},
-    { word: "television", translat: "телебачення"},
-    { word: "understand", translat: "розуміти"},
-    { word: "various", translat: "різні"},
-    { word: "card", translat: "картка"},
-    { word: "difficult", translat: "важко"},
-    { word: "including", translat: "включно"},
-    { word: "list", translat: "список"},
-    { word: "mind", translat: "розум"},
-    { word: "particular", translat: "зокрема"},
-    { word: "real", translat: "справжній"},
-    { word: "science", translat: "наука"},
-    { word: "trade", translat: "торгівля"},
-    { word: "consider", translat: "розглянути"},
-    { word: "either", translat: "або"},
-    { word: "library", translat: "бібліотека"},
-    { word: "likely", translat: "ймовірно"},
-    { word: "nature", translat: "природа"},
-    { word: "fact", translat: "факт"},
-    { word: "line", translat: "лінія"},
-    { word: "product", translat: "продукт"},
-    { word: "care", translat: "догляд"},
-    { word: "group", translat: "група"},
-    { word: "idea", translat: "ідея"},
-    { word: "risk", translat: "ризик"},
-    { word: "several", translat: "декілька"},
-    { word: "someone", translat: "хтось"},
-    { word: "temperature", translat: "температура"},
-    { word: "united", translat: "об'єднані"},
-    { word: "word", translat: "слово"},
-    { word: "fat", translat: "жиру"},
-    { word: "force", translat: "сила"},
-    { word: "key", translat: "ключ"},
-    { word: "light", translat: "світло"},
-    { word: "simply", translat: "просто"},
-    { word: "today", translat: "сьогодні"},
-    { word: "training", translat: "навчання"},
-    { word: "until", translat: "поки"},
-    { word: "major", translat: "головний"},
-    { word: "name", translat: "назва"},
-    { word: "personal", translat: "особистий"},
-    { word: "school", translat: "школа"},
-    { word: "top", translat: "верх"},
-    { word: "current", translat: "поточний"},
-    { word: "generally", translat: "загалом"},
-    { word: "historical", translat: "історичний"},
-    { word: "investment", translat: "інвестиції"},
-    { word: "left", translat: "зліва"},
-    { word: "national", translat: "національний"},
-    { word: "amount", translat: "сума"},
-    { word: "level", translat: "рівень"},
-    { word: "order", translat: "порядок"},
-    { word: "practice", translat: "практика"},
-    { word: "research", translat: "дослідження"},
-    { word: "sense", translat: "сенс"},
-    { word: "service", translat: "обслуговування"},
-    { word: "area", translat: "площа"},
-    { word: "cut", translat: "вирізати"},
-    { word: "hot", translat: "гарячий"},
-    { word: "instead", translat: "замість"},
-    { word: "least", translat: "найменший"},
-    { word: "natural", translat: "природний"},
-    { word: "physical", translat: "фізичний"},
-    { word: "piece", translat: "шматок"},
-    { word: "show", translat: "шоу"},
-    { word: "society", translat: "суспільство"},
-    { word: "try", translat: "пробувати"},
-    { word: "check", translat: "перевірити"},
-    { word: "choose", translat: "вибрати"},
-    { word: "develop", translat: "розвивати"},
-    { word: "useful", translat: "корисний"},
-    { word: "web", translat: "павутина"},
-    { word: "activity", translat: "діяльність"},
-    { word: "short", translat: "короткий"},
-    { word: "story", translat: "історія"},
-    { word: "call", translat: "виклик"},
-    { word: "industry", translat: "промисловість"},
-    { word: "last", translat: "останній"},
-    { word: "media", translat: "ЗМІ"},
-    { word: "mental", translat: "психічний"},
-    { word: "move", translat: "рухатися"},
-    { word: "pay", translat: "платити"},
-    { word: "sport", translat: "спорт"},
-    { word: "thing", translat: "річ"},
-    { word: "actually", translat: "насправді"},
-    { word: "against", translat: "проти"},
-    { word: "far", translat: "далеко"},
-    { word: "fun", translat: "веселощі"},
-    { word: "house", translat: "будинок"},
-    { word: "let", translat: "нехай"},
-    { word: "page", translat: "сторінки"},
-    { word: "remember", translat: "запам'ятати"},
-    { word: "term", translat: "термін"},
-    { word: "test", translat: "тест"},
-    { word: "within", translat: "в межах"},
-    { word: "along", translat: "уздовж"},
-    { word: "answer", translat: "відповідь"},
-    { word: "increase", translat: "збільшення"},
-    { word: "oven", translat: "піч"},
-    { word: "quite", translat: "цілком"},
-    { word: "scared", translat: "наляканий"},
-    { word: "single", translat: "неодружений"},
-    { word: "sound", translat: "звук"},
-    { word: "again", translat: "знову"},
-    { word: "community", translat: "громада"},
-    { word: "definition", translat: "визначення"},
-    { word: "focus", translat: "фокус"},
-    { word: "individual", translat: "індивідуальний"},
-    { word: "matter", translat: "справа"},
-    { word: "safety", translat: "безпеки"},
-    { word: "turn", translat: "поворот"},
-    { word: "everything", translat: "все"},
-    { word: "kind", translat: "вид"},
-    { word: "quality", translat: "якість"},
-    { word: "soil", translat: "ґрунт"},
-    { word: "ask", translat: "запитати"},
-    { word: "board", translat: "дошка"},
-    { word: "buy", translat: "купити"},
-    { word: "development", translat: "розвитку"},
-    { word: "guard", translat: "сторожовий"},
-    { word: "hold", translat: "утримувати"},
-    { word: "language", translat: "мова"},
-    { word: "later", translat: "пізніше"},
-    { word: "main", translat: "основний"},
-    { word: "offer", translat: "пропозиція"},
-    { word: "oil", translat: "масло"},
-    { word: "picture", translat: "малюнок"},
-    { word: "potential", translat: "потенціал"},
-    { word: "professional", translat: "професійний"},
-    { word: "rather", translat: "швидше"},
-    { word: "access", translat: "доступу"},
-    { word: "additional", translat: "додатковий"},
-    { word: "almost", translat: "майже"},
-    { word: "especially", translat: "особливо"},
-    { word: "garden", translat: "сад"},
-    { word: "international", translat: "міжнародний"},
-    { word: "lower", translat: "нижче"},
-    { word: "management", translat: "управління"},
-    { word: "open", translat: "ВІДЧИНЕНО"},
-    { word: "player", translat: "гравець"},
-    { word: "range", translat: "діапазон"},
-    { word: "rate", translat: "швидкість"},
-    { word: "reason", translat: "причина"},
-    { word: "travel", translat: "подорожі"},
-    { word: "variety", translat: "різноманітність"},
-    { word: "video", translat: "відео"},
-    { word: "week", translat: "тиждень"},
-    { word: "above", translat: "вище"},
-    { word: "according", translat: "відповідно"},
-    { word: "cook", translat: "готувати"},
-    { word: "determine", translat: "визначити"},
-    { word: "future", translat: "майбутнє"},
-    { word: "site", translat: "сайт"},
-    { word: "alternative", translat: "альтернатива"},
-    { word: "demand", translat: "попит"},
-    { word: "ever", translat: "будь-коли"},
-    { word: "exercise", translat: "вправи"},
-    { word: "following", translat: "наступні"},
-    { word: "image", translat: "зображення"},
-    { word: "quickly", translat: "швидко"},
-    { word: "special", translat: "спеціальні"},
-    { word: "working", translat: "працює"},
-    { word: "case", translat: "справа"},
-    { word: "cause", translat: "причина"},
-    { word: "coast", translat: "узбережжя"},
-    { word: "probably", translat: "ймовірно"},
-    { word: "security", translat: "безпеки"},
-    { word: "whole", translat: "ціле"},
-    { word: "action", translat: "дію"},
-    { word: "age", translat: "вік"},
-    { word: "among", translat: "серед"},
-    { word: "bad", translat: "погано"},
-    { word: "boat", translat: "човен"},
-    { word: "country", translat: "країна"},
-    { word: "dance", translat: "танець"},
-    { word: "exam", translat: "екзамен"},
-    { word: "excuse", translat: "вибачте"},
-    { word: "grow", translat: "рости"},
-    { word: "movie", translat: "фільм"},
-    { word: "organization", translat: "організації"},
-    { word: "record", translat: "запис"},
-    { word: "result", translat: "результат"},
-    { word: "section", translat: "розділ"},
-    { word: "across", translat: "поперек"},
-    { word: "already", translat: "вже"},
-    { word: "below", translat: "нижче"},
-    { word: "building", translat: "будівля"},
-    { word: "mouse", translat: "миша"},
-    { word: "allow", translat: "дозволяють"},
-    { word: "cash", translat: "готівкою"},
-    { word: "class", translat: "клас"},
-    { word: "clear", translat: "ясно"},
-    { word: "dry", translat: "сухий"},
-    { word: "easy", translat: "легко"},
-    { word: "emotional", translat: "емоційний"},
-    { word: "equipment", translat: "обладнання"},
-    { word: "live", translat: "жити"},
-    { word: "nothing", translat: "нічого"},
-    { word: "period", translat: "період"},
-    { word: "physics", translat: "фізика"},
-    { word: "plan", translat: "планувати"},
-    { word: "store", translat: "зберігати"},
-    { word: "tax", translat: "податок"},
-    { word: "analysis", translat: "аналіз"},
-    { word: "cold", translat: "холодний"},
-    { word: "commercial", translat: "комерційний"},
-    { word: "directly", translat: "безпосередньо"},
-    { word: "full", translat: "повний"},
-    { word: "involved", translat: "залучений"},
-    { word: "itself", translat: "себе"},
-    { word: "low", translat: "низький"},
-    { word: "old", translat: "старий"},
-    { word: "policy", translat: "політики"},
-    { word: "political", translat: "політичні"},
-    { word: "purchase", translat: "покупка"},
-    { word: "series", translat: "серії"},
-    { word: "side", translat: "бік"},
-    { word: "subject", translat: "тема"},
-    { word: "supply", translat: "постачання"},
-    { word: "therefore", translat: "тому"},
-    { word: "thought", translat: "думав"},
-    { word: "basis", translat: "основа"},
-    { word: "boyfriend", translat: "хлопець"},
-    { word: "deal", translat: "справа"},
-    { word: "direction", translat: "напрямок"},
-    { word: "mean", translat: "означає"},
-    { word: "primary", translat: "первинний"},
-    { word: "space", translat: "простір"},
-    { word: "strategy", translat: "стратегія"},
-    { word: "technology", translat: "технології"},
-    { word: "worth", translat: "варто"},
-    { word: "army", translat: "армії"},
-    { word: "camera", translat: "камера"},
-    { word: "fall", translat: "падіння"},
-    { word: "freedom", translat: "свобода"},
-    { word: "paper", translat: "папір"},
-    { word: "rule", translat: "правило"},
-    { word: "similar", translat: "подібні"},
-    { word: "stock", translat: "запас"},
-    { word: "weather", translat: "погода"},
-    { word: "yet", translat: "ще"},
-    { word: "bring", translat: "принести"},
-    { word: "chance", translat: "шанс"},
-    { word: "environment", translat: "середовище"},
-    { word: "everyone", translat: "кожен"},
-    { word: "figure", translat: "фігура"},
-    { word: "improve", translat: "покращити"},
-    { word: "man", translat: "людина"},
-    { word: "model", translat: "модель"},
-    { word: "necessary", translat: "необхідно"},
-    { word: "positive", translat: "позитивний"},
-    { word: "produce", translat: "виробляти"},
-    { word: "search", translat: "пошук"},
-    { word: "source", translat: "джерело"},
-    { word: "beginning", translat: "початок"},
-    { word: "child", translat: "дитина"},
-    { word: "earth", translat: "землі"},
-    { word: "else", translat: "інше"},
-    { word: "healthy", translat: "здоровий"},
-    { word: "instance", translat: "екземпляр"},
-    { word: "maintain", translat: "підтримувати"},
-    { word: "month", translat: "місяць"},
-    { word: "present", translat: "присутній"},
-    { word: "program", translat: "програма"},
-    { word: "spend", translat: "витрачати"},
-    { word: "talk", translat: "говорити"},
-    { word: "truth", translat: "правда"},
-    { word: "upset", translat: "засмучений"},
-    { word: "begin", translat: "почати"},
-    { word: "chicken", translat: "курка"},
-    { word: "close", translat: "закрити"},
-    { word: "creative", translat: "творчий"},
-    { word: "design", translat: "дизайн"},
-    { word: "feature", translat: "функція"},
-    { word: "financial", translat: "фінансовий"},
-    { word: "head", translat: "голова"},
-    { word: "marketing", translat: "маркетинг"},
-    { word: "material", translat: "матеріал"},
-    { word: "medical", translat: "медичний"},
-    { word: "purpose", translat: "мета"},
-    { word: "question", translat: "запитання"},
-    { word: "rock", translat: "рок"},
-    { word: "salt", translat: "сіль"},
-    { word: "tell", translat: "розповідати"},
-    { word: "themselves", translat: "себе"},
-    { word: "traditional", translat: "традиційний"},
-    { word: "university", translat: "університет"},
-    { word: "writing", translat: "написання"},
-    { word: "act", translat: "діяти"},
-    { word: "article", translat: "стаття"},
-    { word: "birth", translat: "народження"},
-    { word: "car", translat: "автомобіль"},
-    { word: "cost", translat: "вартість"},
-    { word: "department", translat: "відділ"},
-    { word: "difference", translat: "різниця"},
-    { word: "dog", translat: "собака"},
-    { word: "drive", translat: "диск"},
-    { word: "exist", translat: "існують"},
-    { word: "federal", translat: "федеральний"},
-    { word: "goal", translat: "мета"},
-    { word: "green", translat: "зелений"},
-    { word: "late", translat: "пізно"},
-    { word: "news", translat: "новини"},
-    { word: "object", translat: "об'єкт"},
-    { word: "scale", translat: "масштаб"},
-    { word: "sun", translat: "сонце"},
-    { word: "support", translat: "підтримка"},
-    { word: "tend", translat: "прагнути"},
-    { word: "thus", translat: "таким чином"},
-    { word: "audience", translat: "аудиторія"},
-    { word: "enjoy", translat: "насолоджуватися"},
-    { word: "entire", translat: "цілий"},
-    { word: "fishing", translat: "риболовля"},
-    { word: "fit", translat: "підходить"},
-    { word: "glad", translat: "радий"},
-    { word: "growth", translat: "зростання"},
-    { word: "income", translat: "дохід"},
-    { word: "marriage", translat: "одруження"},
-    { word: "note", translat: "примітка"},
-    { word: "perform", translat: "виконувати"},
-    { word: "profit", translat: "прибуток"},
-    { word: "proper", translat: "належне"},
-    { word: "related", translat: "пов'язані"},
-    { word: "remove", translat: "видалити"},
-    { word: "rent", translat: "орендна плата"},
-    { word: "return", translat: "повернення"},
-    { word: "run", translat: "бігти"},
-    { word: "speed", translat: "швидкість"},
-    { word: "strong", translat: "сильний"},
-    { word: "style", translat: "стиль"},
-    { word: "throughout", translat: "всюди"},
-    { word: "user", translat: "користувача"},
-    { word: "war", translat: "війна"},
-    { word: "actual", translat: "фактичний"},
-    { word: "appropriate", translat: "відповідний"},
-    { word: "bank", translat: "банку"},
-    { word: "combination", translat: "поєднання"},
-    { word: "complex", translat: "складні"},
-    { word: "content", translat: "вміст"},
-    { word: "craft", translat: "ремесло"},
-    { word: "due", translat: "через"},
-    { word: "easily", translat: "легко"},
-    { word: "effective", translat: "ефективний"},
-    { word: "eventually", translat: "зрештою"},
-    { word: "exactly", translat: "точно"},
-    { word: "failure", translat: "невдача"},
-    { word: "half", translat: "половина"},
-    { word: "inside", translat: "всередині"},
-    { word: "meaning", translat: "значення"},
-    { word: "medicine", translat: "ліки"},
-    { word: "middle", translat: "середина"},
-    { word: "outside", translat: "назовні"},
-    { word: "philosophy", translat: "філософія"},
-    { word: "regular", translat: "регулярний"},
-    { word: "reserve", translat: "резерв"},
-    { word: "standard", translat: "стандарт"},
-    { word: "bus", translat: "автобус"},
-    { word: "decide", translat: "вирішити"},
-    { word: "exchange", translat: "обмін"},
-    { word: "eye", translat: "око"},
-    { word: "fast", translat: "швидко"},
-    { word: "fire", translat: "вогонь"},
-    { word: "identify", translat: "ідентифікувати"},
-    { word: "independent", translat: "незалежний"},
-    { word: "leave", translat: "залишити"},
-    { word: "original", translat: "оригінальний"},
-    { word: "position", translat: "положення"},
-    { word: "pressure", translat: "тиск"},
-    { word: "reach", translat: "досяжність"},
-    { word: "rest", translat: "відпочинок"},
-    { word: "serve", translat: "служити"},
-    { word: "stress", translat: "стрес"},
-    { word: "teacher", translat: "викладач"},
-    { word: "watch", translat: "дивитися"},
-    { word: "wide", translat: "широкий"},
-    { word: "advantage", translat: "перевага"},
-    { word: "beautiful", translat: "красива"},
-    { word: "benefit", translat: "користь"},
-    { word: "box", translat: "коробка"},
-    { word: "charge", translat: "заряд"},
-    { word: "communication", translat: "спілкування"},
-    { word: "complete", translat: "повний"},
-    { word: "continue", translat: "продовжувати"},
-    { word: "frame", translat: "рамка"},
-    { word: "issue", translat: "питання"},
-    { word: "limited", translat: "обмежений"},
-    { word: "night", translat: "ніч"},
-    { word: "protect", translat: "захистити"},
-    { word: "require", translat: "вимагати"},
-    { word: "significant", translat: "значний"},
-    { word: "step", translat: "крок"},
-    { word: "successful", translat: "успішний"},
-    { word: "unless", translat: "хіба що"},
-    { word: "active", translat: "активний"},
-    { word: "break", translat: "перерва"},
-    { word: "chemistry", translat: "хімія"},
-    { word: "cycle", translat: "цикл"},
-    { word: "disease", translat: "захворювання"},
-    { word: "disk", translat: "диск"},
-    { word: "electrical", translat: "електричні"},
-    { word: "energy", translat: "енергії"},
-    { word: "expensive", translat: "дорогий"},
-    { word: "face", translat: "обличчя"},
-    { word: "interested", translat: "зацікавлений"},
-    { word: "item", translat: "пункт"},
-    { word: "metal", translat: "метал"},
-    { word: "nation", translat: "нація"},
-    { word: "negative", translat: "негативний"},
-    { word: "occur", translat: "відбуваються"},
-    { word: "paint", translat: "фарба"},
-    { word: "pregnant", translat: "вагітна"},
-    { word: "review", translat: "огляд"},
-    { word: "road", translat: "дорога"},
-    { word: "role", translat: "роль"},
-    { word: "room", translat: "кімната"},
-    { word: "safe", translat: "безпечний"},
-    { word: "screen", translat: "екран"},
-    { word: "soup", translat: "суп"},
-    { word: "stay", translat: "залишитися"},
-    { word: "structure", translat: "структура"},
-    { word: "view", translat: "переглянути"},
-    { word: "visit", translat: "відвідати"},
-    { word: "visual", translat: "візуальний"},
-    { word: "write", translat: "писати"},
-    { word: "wrong", translat: "неправильно"},
-    { word: "account", translat: "рахунок"},
-    { word: "advertising", translat: "реклама"},
-    { word: "affect", translat: "впливати"},
-    { word: "ago", translat: "тому"},
-    { word: "anyone", translat: "хто завгодно"},
-    { word: "approach", translat: "підхід"},
-    { word: "avoid", translat: "уникати"},
-    { word: "ball", translat: "м'яч"},
-    { word: "behind", translat: "ззаду"},
-    { word: "certainly", translat: "звичайно"},
-    { word: "concerned", translat: "стурбований"},
-    { word: "cover", translat: "кришка"},
-    { word: "discipline", translat: "дисциплінованість"},
-    { word: "location", translat: "розташування"},
-    { word: "medium", translat: "середній"},
-    { word: "normally", translat: "нормально"},
-    { word: "prepare", translat: "підготувати"},
-    { word: "quick", translat: "швидкий"},
-    { word: "ready", translat: "готовий"},
-    { word: "report", translat: "звіт"},
-    { word: "rise", translat: "підніматися"},
-    { word: "share", translat: "частка"},
-    { word: "success", translat: "успіх"},
-    { word: "addition", translat: "додаток"},
-    { word: "apartment", translat: "квартира"},
-    { word: "balance", translat: "баланс"},
-    { word: "bit", translat: "біт"},
-    { word: "black", translat: "чорний"},
-    { word: "bottom", translat: "дно"},
-    { word: "build", translat: "будувати"},
-    { word: "choice", translat: "вибір"},
-    { word: "education", translat: "освіти"},
-    { word: "gift", translat: "подарунок"},
-    { word: "impact", translat: "вплив"},
-    { word: "machine", translat: "машина"},
-    { word: "math", translat: "математика"},
-    { word: "moment", translat: "момент"},
-    { word: "painting", translat: "живопис"},
-    { word: "politics", translat: "політика"},
-    { word: "shape", translat: "форму"},
-    { word: "straight", translat: "прямо"},
-    { word: "tool", translat: "інструмент"},
-    { word: "walk", translat: "ходити"},
-    { word: "white", translat: "білий"},
-    { word: "wind", translat: "вітер"},
-    { word: "achieve", translat: "досягти"},
-    { word: "address", translat: "адресу"},
-    { word: "attention", translat: "уваги"},
-    { word: "average", translat: "середній"},
-    { word: "believe", translat: "вірити"},
-    { word: "beyond", translat: "поза межами"},
-    { word: "career", translat: "кар'єра"},
-    { word: "culture", translat: "культури"},
-    { word: "decision", translat: "рішення"},
-    { word: "direct", translat: "прямий"},
-    { word: "event", translat: "подія"},
-    { word: "excellent", translat: "відмінно"},
-    { word: "extra", translat: "додатковий"},
-    { word: "intelligent", translat: "розумний"},
-    { word: "interesting", translat: "цікаво"},
-    { word: "junior", translat: "молодший"},
-    { word: "morning", translat: "ранок"},
-    { word: "pick", translat: "вибрати"},
-    { word: "poor", translat: "бідний"},
-    { word: "pot", translat: "горщик"},
-    { word: "pretty", translat: "гарна"},
-    { word: "property", translat: "власність"},
-    { word: "receive", translat: "отримати"},
-    { word: "seem", translat: "здається"},
-    { word: "shopping", translat: "покупки"},
-    { word: "sign", translat: "знак"},
-    { word: "student", translat: "студент"},
-    { word: "table", translat: "стіл"},
-    { word: "task", translat: "завдання"},
-    { word: "unique", translat: "унікальний"},
-    { word: "wood", translat: "деревина"},
-    { word: "anything", translat: "що завгодно"},
-    { word: "classic", translat: "класичний"},
-    { word: "competition", translat: "змагання"},
-    { word: "condition", translat: "хвороба"},
-    { word: "contact", translat: "контакт"},
-    { word: "credit", translat: "кредит"},
-    { word: "currently", translat: "в даний час"},
-    { word: "discuss", translat: "обговорити"},
-    { word: "distribution", translat: "розподіл"},
-    { word: "egg", translat: "яйце"},
-    { word: "entertainment", translat: "розваги"},
-    { word: "final", translat: "остаточний"},
-    { word: "happy", translat: "щасливий"},
-    { word: "hope", translat: "надія"},
-    { word: "ice", translat: "лід"},
-    { word: "lift", translat: "ліфт"},
-    { word: "mix", translat: "змішувати"},
-    { word: "network", translat: "мережі"},
-    { word: "north", translat: "північ"},
-    { word: "office", translat: "офіс"},
-    { word: "overall", translat: "в цілому"},
-    { word: "population", translat: "населення"},
-    { word: "president", translat: "президент"},
-    { word: "private", translat: "приватний"},
-    { word: "realize", translat: "усвідомити"},
-    { word: "responsible", translat: "відповідальний"},
-    { word: "separate", translat: "окремо"},
-    { word: "square", translat: "площі"},
-    { word: "stop", translat: "СТІЙ"},
-    { word: "teach", translat: "навчати"},
-    { word: "unit", translat: "одиниця"},
-    { word: "western", translat: "західний"},
-    { word: "yes", translat: "так"},
-    { word: "alone", translat: "поодинці"},
-    { word: "attempt", translat: "спроба"},
-    { word: "category", translat: "категорія"},
-    { word: "cigarette", translat: "сигарета"},
-    { word: "concern", translat: "занепокоєння"},
-    { word: "contain", translat: "містять"},
-    { word: "context", translat: "контекст"},
-    { word: "cute", translat: "милий"},
-    { word: "date", translat: "дата"},
-    { word: "effect", translat: "ефект"},
-    { word: "extremely", translat: "надзвичайно"},
-    { word: "familiar", translat: "знайомий"},
-    { word: "finally", translat: "нарешті"},
-    { word: "fly", translat: "літати"},
-    { word: "follow", translat: "слідувати"},
-    { word: "helpful", translat: "корисний"},
-    { word: "introduction", translat: "вступ"},
-    { word: "link", translat: "посилання"},
-    { word: "official", translat: "офіційний"},
-    { word: "opportunity", translat: "можливість"},
-    { word: "perfect", translat: "ідеальний"},
-    { word: "performance", translat: "продуктивність"},
-    { word: "post", translat: "пост"},
-    { word: "recent", translat: "останній"},
-    { word: "refer", translat: "посилатися"},
-    { word: "solve", translat: "вирішити"},
-    { word: "star", translat: "зірка"},
-    { word: "voice", translat: "голос"},
-    { word: "willing", translat: "бажаючий"},
-    { word: "born", translat: "народився"},
-    { word: "bright", translat: "яскравий"},
-    { word: "broad", translat: "широкий"},
-    { word: "capital", translat: "капітал"},
-    { word: "challenge", translat: "виклик"},
-    { word: "comfortable", translat: "комфортно"},
-    { word: "constantly", translat: "постійно"},
-    { word: "describe", translat: "описати"},
-    { word: "despite", translat: "незважаючи на"},
-    { word: "driver", translat: "водій"},
-    { word: "flat", translat: "плоский"},
-    { word: "flight", translat: "політ"},
-    { word: "friend", translat: "друг"},
-    { word: "gain", translat: "посилення"},
-    { word: "him", translat: "його"},
-    { word: "length", translat: "довжина"},
-    { word: "magazine", translat: "журнал"},
-    { word: "maybe", translat: "можливо"},
-    { word: "newspaper", translat: "газета"},
-    { word: "nice", translat: "приємно"},
-    { word: "prefer", translat: "віддають перевагу"},
-    { word: "prevent", translat: "запобігти"},
-    { word: "properly", translat: "належним чином"},
-    { word: "relationship", translat: "відносини"},
-    { word: "rich", translat: "багатий"},
-    { word: "save", translat: "зберегти"},
-    { word: "self", translat: "себе"},
-    { word: "shot", translat: "постріл"},
-    { word: "soon", translat: "скоро"},
-    { word: "specifically", translat: "конкретно"},
-    { word: "stand", translat: "стояти"},
-    { word: "teaching", translat: "навчання"},
-    { word: "warm", translat: "теплий"},
-    { word: "wonderful", translat: "чудовий"},
-    { word: "young", translat: "молодий"},
-    { word: "ahead", translat: "попереду"},
-    { word: "brush", translat: "пензлик"},
-    { word: "cell", translat: "клітина"},
-    { word: "couple", translat: "пара"},
-    { word: "daily", translat: "щодня"},
-    { word: "dealer", translat: "дилер"},
-    { word: "debate", translat: "дебати"},
-    { word: "discover", translat: "виявити"},
-    { word: "ensure", translat: "забезпечити"},
-    { word: "exit", translat: "вихід"},
-    { word: "expect", translat: "очікувати"},
-    { word: "experienced", translat: "досвідчений"},
-    { word: "fail", translat: "провал"},
-    { word: "finding", translat: "знахідка"},
-    { word: "front", translat: "спереду"},
-    { word: "function", translat: "функція"},
-    { word: "heavy", translat: "важкий"},
-    { word: "hello", translat: "привіт"},
-    { word: "highly", translat: "високо"},
-    { word: "immediately", translat: "негайно"},
-    { word: "impossible", translat: "неможливо"},
-    { word: "invest", translat: "інвестувати"},
-    { word: "lack", translat: "відсутність"},
-    { word: "lake", translat: "озеро"},
-    { word: "lead", translat: "привести"},
-    { word: "listen", translat: "слухати"},
-    { word: "living", translat: "проживання"},
-    { word: "member", translat: "член"},
-    { word: "message", translat: "повідомлення"},
-    { word: "phone", translat: "телефон"},
-    { word: "plant", translat: "завод"},
-    { word: "plastic", translat: "пластик"},
-    { word: "reduce", translat: "зменшити"},
-    { word: "relatively", translat: "відносно"},
-    { word: "scene", translat: "сцена"},
-    { word: "serious", translat: "серйозний"},
-    { word: "slowly", translat: "повільно"},
-    { word: "speak", translat: "говорити"},
-    { word: "spot", translat: "пляма"},
-    { word: "summer", translat: "літо"},
-    { word: "taste", translat: "смак"},
-    { word: "theme", translat: "тема"},
-    { word: "towards", translat: "назустріч"},
-    { word: "track", translat: "трек"},
-    { word: "valuable", translat: "цінний"},
-    { word: "whatever", translat: "що завгодно"},
-    { word: "wing", translat: "крило"},
-    { word: "worry", translat: "турбуватися"},
-    { word: "appear", translat: "з'являтися"},
-    { word: "appearance", translat: "зовнішній вигляд"},
-    { word: "association", translat: "об'єднання"},
-    { word: "brain", translat: "мозок"},
-    { word: "button", translat: "кнопку"},
-    { word: "click", translat: "натисніть"},
-    { word: "concept", translat: "концепція"},
-    { word: "correct", translat: "правильно"},
-    { word: "customer", translat: "клієнт"},
-    { word: "death", translat: "смерть"},
-    { word: "desire", translat: "бажання"},
-    { word: "discussion", translat: "обговорення"},
-    { word: "explain", translat: "пояснити"},
-    { word: "explore", translat: "досліджувати"},
-    { word: "express", translat: "експрес"},
-    { word: "fairly", translat: "справедливо"},
-    { word: "fixed", translat: "фіксований"},
-    { word: "foot", translat: "стопа"},
-    { word: "gas", translat: "газ"},
-    { word: "handle", translat: "ручка"},
-    { word: "housing", translat: "житло"},
-    { word: "huge", translat: "величезний"},
-    { word: "inflation", translat: "інфляція"},
-    { word: "influence", translat: "вплив"},
-    { word: "insurance", translat: "страхування"},
-    { word: "involve", translat: "залучати"},
-    { word: "leading", translat: "провідний"},
-    { word: "lose", translat: "втратити"},
-    { word: "meet", translat: "зустріти"},
-    { word: "mood", translat: "настрій"},
-    { word: "notice", translat: "повідомлення"},
-    { word: "primarily", translat: "в першу чергу"},
-    { word: "rain", translat: "дощ"},
-    { word: "rare", translat: "рідкісний"},
-    { word: "release", translat: "реліз"},
-    { word: "sell", translat: "продавати"},
-    { word: "slow", translat: "повільний"},
-    { word: "technical", translat: "технічний"},
-    { word: "typical", translat: "типовий"},
-    { word: "upon", translat: "на"},
-    { word: "wall", translat: "стіна"},
-    { word: "woman", translat: "жінка"},
-    { word: "advice", translat: "поради"},
-    { word: "afford", translat: "дозволити собі"},
-    { word: "agree", translat: "згоден"},
-    { word: "base", translat: "база"},
-    { word: "blood", translat: "кров"},
-    { word: "clean", translat: "чистий"},
-    { word: "competitive", translat: "змагальний"},
-    { word: "completely", translat: "повністю"},
-    { word: "critical", translat: "критичний"},
-    { word: "damage", translat: "пошкодження"},
-    { word: "distance", translat: "відстань"},
-    { word: "effort", translat: "зусилля"},
-    { word: "electronic", translat: "електронні"},
-    { word: "expression", translat: "вираз"},
-    { word: "feeling", translat: "почуття"},
-    { word: "finish", translat: "закінчити"},
-    { word: "fresh", translat: "свіжий"},
-    { word: "hear", translat: "чути"},
-    { word: "immediate", translat: "негайний"},
-    { word: "importance", translat: "важливість"},
-    { word: "normal", translat: "нормально"},
-    { word: "opinion", translat: "думка"},
-    { word: "otherwise", translat: "інакше"},
-    { word: "pair", translat: "пара"},
-    { word: "payment", translat: "оплата"},
-    { word: "plus", translat: "плюс"},
-    { word: "press", translat: "преса"},
-    { word: "reality", translat: "реальність"},
-    { word: "remain", translat: "залишаються"},
-    { word: "represent", translat: "представляють"},
-    { word: "responsibility", translat: "відповідальність"},
-    { word: "ride", translat: "їздити"},
-    { word: "savings", translat: "заощадження"},
-    { word: "secret", translat: "секрет"},
-    { word: "situation", translat: "ситуації"},
-    { word: "skill", translat: "майстерність"},
-    { word: "spread", translat: "поширення"},
-    { word: "spring", translat: "весна"},
-    { word: "staff", translat: "персонал"},
-    { word: "statement", translat: "заява"},
-    { word: "sugar", translat: "цукор"},
-    { word: "target", translat: "мета"},
-    { word: "text", translat: "текст"},
-    { word: "tough", translat: "жорсткий"},
-    { word: "ultimately", translat: "зрештою"},
-    { word: "wait", translat: "чекати"},
-    { word: "wealth", translat: "багатство"},
-    { word: "whenever", translat: "будь-коли"},
-    { word: "whose", translat: "чий"},
-    { word: "widely", translat: "широко"},
-    { word: "animal", translat: "тварина"},
-    { word: "application", translat: "додаток"},
-    { word: "apply", translat: "застосувати"},
-    { word: "author", translat: "автор"},
-    { word: "aware", translat: "в курсі"},
-    { word: "brown", translat: "коричневий"},
-    { word: "budget", translat: "бюджет"},
-    { word: "cheap", translat: "дешевий"},
-    { word: "city", translat: "місто"},
-    { word: "complicated", translat: "складний"},
-    { word: "county", translat: "повіт"},
-    { word: "deep", translat: "глибокий"},
-    { word: "depth", translat: "глибина"},
-    { word: "discount", translat: "знижка"},
-    { word: "display", translat: "дисплей"},
-    { word: "educational", translat: "навчальний"},
-    { word: "environmental", translat: "екологічні"},
-    { word: "estate", translat: "маєток"},
-    { word: "file", translat: "файл"},
-    { word: "flow", translat: "потік"},
-    { word: "forget", translat: "забути"},
-    { word: "foundation", translat: "основа"},
-    { word: "global", translat: "глобальний"},
-    { word: "grandmother", translat: "бабуся"},
-    { word: "ground", translat: "землю"},
-    { word: "heart", translat: "серце"},
-    { word: "hit", translat: "удар"},
-    { word: "legal", translat: "правовий"},
-    { word: "lesson", translat: "урок"},
-    { word: "minute", translat: "хвилина"},
-    { word: "near", translat: "поблизу"},
-    { word: "objective", translat: "об'єктивний"},
-    { word: "officer", translat: "офіцер"},
-    { word: "perspective", translat: "перспектива"},
-    { word: "phase", translat: "фаза"},
-    { word: "photo", translat: "фото"},
-    { word: "recently", translat: "недавно"},
-    { word: "recipe", translat: "рецепт"},
-    { word: "recommend", translat: "рекомендую"},
-    { word: "reference", translat: "посилання"},
-    { word: "register", translat: "зареєструватися"},
-    { word: "relevant", translat: "актуальні"},
-    { word: "rely", translat: "покладатися"},
-    { word: "secure", translat: "безпечний"},
-    { word: "seriously", translat: "серйозно"},
-    { word: "shoot", translat: "стріляти"},
-    { word: "sky", translat: "небо"},
-    { word: "stage", translat: "етап"},
-    { word: "stick", translat: "палка"},
-    { word: "studio", translat: "студія"},
-    { word: "thin", translat: "тонкий"},
-    { word: "title", translat: "назва"},
-    { word: "topic", translat: "тема"},
-    { word: "touch", translat: "дотик"},
-    { word: "trouble", translat: "біда"},
-    { word: "vary", translat: "змінюватися"},
-    { word: "accurate", translat: "точні"},
-    { word: "advanced", translat: "просунутий"},
-    { word: "bowl", translat: "чаша"},
-    { word: "bridge", translat: "міст"},
-    { word: "campaign", translat: "кампанія"},
-    { word: "cancel", translat: "скасувати"},
-    { word: "capable", translat: "здатний"},
-    { word: "character", translat: "характер"},
-    { word: "chemical", translat: "хімічний"},
-    { word: "club", translat: "клуб"},
-    { word: "collection", translat: "колекція"},
-    { word: "cool", translat: "круто"},
-    { word: "cry", translat: "плакати"},
-    { word: "dangerous", translat: "небезпечний"},
-    { word: "depression", translat: "депресія"},
-    { word: "dump", translat: "звалище"},
-    { word: "edge", translat: "краю"},
-    { word: "evidence", translat: "докази"},
-    { word: "extreme", translat: "екстремальний"},
-    { word: "fan", translat: "вентилятор"},
-    { word: "frequently", translat: "часто"},
-    { word: "fully", translat: "повністю"},
-    { word: "generate", translat: "генерувати"},
-    { word: "imagination", translat: "уява"},
-    { word: "letter", translat: "лист"},
-    { word: "lock", translat: "замок"},
-    { word: "maximum", translat: "максимум"},
-    { word: "mostly", translat: "в основному"},
-    { word: "myself", translat: "себе"},
-    { word: "naturally", translat: "природно"},
-    { word: "nearly", translat: "майже"},
-    { word: "novel", translat: "роман"},
-    { word: "obtain", translat: "отримати"},
-    { word: "occasionally", translat: "час від часу"},
-    { word: "option", translat: "варіант"},
-    { word: "organized", translat: "організовано"},
-    { word: "pack", translat: "упаковка"},
-    { word: "park", translat: "парк"},
-    { word: "passion", translat: "пристрасть"},
-    { word: "percentage", translat: "відсоток"},
-    { word: "plenty", translat: "багато"},
-    { word: "push", translat: "штовхати"},
-    { word: "quarter", translat: "квартал"},
-    { word: "resource", translat: "ресурс"},
-    { word: "select", translat: "вибрати"},
-    { word: "setting", translat: "налаштування"},
-    { word: "skin", translat: "шкіри"},
-    { word: "sort", translat: "сортувати"},
-    { word: "weight", translat: "вага"},
-    { word: "accept", translat: "прийняти"},
-    { word: "ad", translat: "оголошення"},
-    { word: "agency", translat: "агентство"},
-    { word: "baby", translat: "дитина"},
-    { word: "background", translat: "фон"},
-    { word: "carefully", translat: "ретельно"},
-    { word: "carry", translat: "нести"},
-    { word: "clearly", translat: "ясно"},
-    { word: "college", translat: "коледж"},
-    { word: "communicate", translat: "спілкуватися"},
-    { word: "complain", translat: "скаржитися"},
-    { word: "conflict", translat: "конфлікт"},
-    { word: "connection", translat: "підключення"},
-    { word: "criticism", translat: "критика"},
-    { word: "debt", translat: "борг"},
-    { word: "depend", translat: "залежати"},
-    { word: "description", translat: "опис"},
-    { word: "die", translat: "померти"},
-    { word: "dish", translat: "блюдо"},
-    { word: "dramatic", translat: "драматичний"},
-    { word: "eat", translat: "їсти"},
-    { word: "efficient", translat: "ефективний"},
-    { word: "enter", translat: "введіть"},
-    { word: "essentially", translat: "по суті"},
-    { word: "exact", translat: "точний"},
-    { word: "factor", translat: "фактор"},
-    { word: "fair", translat: "ярмарок"},
-    { word: "fill", translat: "заповнити"},
-    { word: "fine", translat: "добре"},
-    { word: "formal", translat: "формальний"},
-    { word: "forward", translat: "вперед"},
-    { word: "fruit", translat: "фрукти"},
-    { word: "glass", translat: "скло"},
-    { word: "happen", translat: "статися"},
-    { word: "indicate", translat: "вказати"},
-    { word: "joint", translat: "суглоб"},
-    { word: "jump", translat: "стрибати"},
-    { word: "kick", translat: "удар ногою"},
-    { word: "master", translat: "майстер"},
-    { word: "memory", translat: "пам'ять"},
-    { word: "muscle", translat: "м'яз"},
-    { word: "opposite", translat: "протилежність"},
-    { word: "pass", translat: "пропуск"},
-    { word: "patience", translat: "терпіння"},
-    { word: "pitch", translat: "крок"},
-    { word: "possibly", translat: "можливо"},
-    { word: "powerful", translat: "потужний"},
-    { word: "red", translat: "червоний"},
-    { word: "remote", translat: "дистанційний"},
-    { word: "secretary", translat: "секретар"},
-    { word: "slightly", translat: "злегка"},
-    { word: "solution", translat: "рішення"},
-    { word: "somewhat", translat: "дещо"},
-    { word: "strength", translat: "сила"},
-    { word: "suggest", translat: "пропонувати"},
-    { word: "survive", translat: "вижити"},
-    { word: "total", translat: "всього"},
-    { word: "traffic", translat: "трафік"},
-    { word: "treat", translat: "лікувати"},
-    { word: "trip", translat: "поїздка"},
-    { word: "vast", translat: "величезний"},
-    { word: "vegetable", translat: "рослинний"},
-    { word: "abuse", translat: "зловживання"},
-    { word: "administration", translat: "адміністрування"},
-    { word: "appeal", translat: "звернення"},
-    { word: "appreciate", translat: "цінувати"},
-    { word: "aspect", translat: "аспект"},
-    { word: "attitude", translat: "ставлення"},
-    { word: "beat", translat: "бити"},
-    { word: "burn", translat: "спалювати"},
-    { word: "chart", translat: "діаграма"},
-    { word: "compare", translat: "порівняти"},
-    { word: "deposit", translat: "депозит"},
-    { word: "director", translat: "директор"},
-    { word: "equally", translat: "порівну"},
-    { word: "foreign", translat: "іноземні"},
-    { word: "gear", translat: "спорядження"},
-    { word: "greatly", translat: "сильно"},
-    { word: "hungry", translat: "голодний"},
-    { word: "ideal", translat: "ідеал"},
-    { word: "imagine", translat: "уявіть собі"},
-    { word: "kitchen", translat: "кухня"},
-    { word: "land", translat: "землі"},
-    { word: "log", translat: "журнал"},
-    { word: "lost", translat: "втрачено"},
-    { word: "manage", translat: "управляти"},
-    { word: "mother", translat: "мати"},
-    { word: "necessarily", translat: "обов'язково"},
-    { word: "net", translat: "чистий"},
-    { word: "party", translat: "вечірка"},
-    { word: "personality", translat: "особистості"},
-    { word: "personally", translat: "особисто"},
-    { word: "practical", translat: "практичний"},
-    { word: "principle", translat: "принцип"},
-    { word: "print", translat: "друкувати"},
-    { word: "psychological", translat: "психологічний"},
-    { word: "psychology", translat: "психологія"},
-    { word: "raise", translat: "підняти"},
-    { word: "rarely", translat: "рідко"},
-    { word: "recommendation", translat: "рекомендація"},
-    { word: "regularly", translat: "регулярно"},
-    { word: "relative", translat: "відносний"},
-    { word: "response", translat: "відповідь"},
-    { word: "sale", translat: "продаж"},
-    { word: "season", translat: "сезон"},
-    { word: "selection", translat: "вибір"},
-    { word: "severe", translat: "сильний"},
-    { word: "signal", translat: "сигнал"},
-    { word: "similarly", translat: "так само"},
-    { word: "sleep", translat: "сон"},
-    { word: "smooth", translat: "гладкий"},
-    { word: "somewhere", translat: "десь"},
-    { word: "spirit", translat: "дух"},
-    { word: "storage", translat: "зберігання"},
-    { word: "street", translat: "вулиця"},
-    { word: "suitable", translat: "підходить"},
-    { word: "tree", translat: "дерево"},
-    { word: "version", translat: "версія"},
-    { word: "wave", translat: "хвиля"},
-    { word: "advance", translat: "заздалегідь"},
-    { word: "alcohol", translat: "алкоголь"},
-    { word: "anywhere", translat: "де завгодно"},
-    { word: "argument", translat: "аргумент"},
-    { word: "basically", translat: "в основному"},
-    { word: "belt", translat: "ремінь"},
-    { word: "bench", translat: "лавка"},
-    { word: "closed", translat: "ЗАЧИНЕНО"},
-    { word: "closely", translat: "тісно"},
-    { word: "commission", translat: "комісія"},
-    { word: "complaint", translat: "скарга"},
-    { word: "connect", translat: "підключити"},
-    { word: "consist", translat: "складаються"},
-    { word: "contract", translat: "договір"},
-    { word: "contribute", translat: "сприяти"},
-    { word: "copy", translat: "копія"},
-    { word: "dark", translat: "темний"},
-    { word: "differ", translat: "відрізняються"},
-    { word: "double", translat: "подвійний"},
-    { word: "draw", translat: "малювати"},
-    { word: "drop", translat: "падіння"},
-    { word: "effectively", translat: "ефективно"},
-    { word: "emphasis", translat: "наголос"},
-    { word: "encourage", translat: "заохочувати"},
-    { word: "equal", translat: "рівні"},
-    { word: "everybody", translat: "всі"},
-    { word: "expand", translat: "розширити"},
-    { word: "firm", translat: "фірма"},
-    { word: "fix", translat: "виправити"},
-    { word: "frequent", translat: "частий"},
-    { word: "highway", translat: "шосе"},
-    { word: "hire", translat: "найняти"},
-    { word: "initially", translat: "спочатку"},
-    { word: "internal", translat: "внутрішній"},
-    { word: "join", translat: "приєднатися"},
-    { word: "kill", translat: "вбити"},
-    { word: "literally", translat: "буквально"},
-    { word: "loss", translat: "втрата"},
-    { word: "mainly", translat: "в основному"},
-    { word: "membership", translat: "членство"},
-    { word: "merely", translat: "просто"},
-    { word: "minimum", translat: "мінімум"},
-    { word: "numerous", translat: "численні"},
-    { word: "path", translat: "шлях"},
-    { word: "possession", translat: "володіння"},
-    { word: "preparation", translat: "підготовка"},
-    { word: "progress", translat: "прогрес"},
-    { word: "project", translat: "демонструвати"},
-    { word: "prove", translat: "довести"},
-    { word: "react", translat: "реагувати"},
-    { word: "recognize", translat: "розпізнати"},
-    { word: "relax", translat: "розслабитися"},
-    { word: "replace", translat: "замінити"},
-    { word: "sea", translat: "море"},
-    { word: "sensitive", translat: "чутливий"},
-    { word: "sit", translat: "сидіти"},
-    { word: "south", translat: "південь"},
-    { word: "status", translat: "статус"},
-    { word: "steak", translat: "стейк"},
-    { word: "stuff", translat: "речі"},
-    { word: "sufficient", translat: "достатній"},
-    { word: "tap", translat: "кран"},
-    { word: "ticket", translat: "квиток"},
-    { word: "tour", translat: "тур"},
-    { word: "union", translat: "спілка"},
-    { word: "unusual", translat: "незвичайний"},
-    { word: "win", translat: "виграти"},
-    { word: "agreement", translat: "угода"},
-    { word: "angle", translat: "кут"},
-    { word: "attack", translat: "напад"},
-    { word: "blue", translat: "блакитний"},
-    { word: "borrow", translat: "позичати"},
-    { word: "breakfast", translat: "сніданок"},
-    { word: "cancer", translat: "рак"},
-    { word: "claim", translat: "позов"},
-    { word: "confidence", translat: "впевненість"},
-    { word: "consistent", translat: "послідовний"},
-    { word: "constant", translat: "постійний"},
-    { word: "cultural", translat: "культурний"},
-    { word: "currency", translat: "валюта"},
-    { word: "daughter", translat: "дочка"},
-    { word: "degree", translat: "ступінь"},
-    { word: "doctor", translat: "лікар"},
-    { word: "dot", translat: "точка"},
-    { word: "drag", translat: "перетягнути"},
-    { word: "dream", translat: "сон"},
-    { word: "drink", translat: "пити"},
-    { word: "duty", translat: "борг"},
-    { word: "earn", translat: "заробити"},
-    { word: "emphasize", translat: "підкреслити"},
-    { word: "employment", translat: "працевлаштування"},
-    { word: "enable", translat: "включити"},
-    { word: "engineering", translat: "інженерія"},
-    { word: "entry", translat: "запис"},
-    { word: "essay", translat: "есе"},
-    { word: "existing", translat: "існуючі"},
-    { word: "famous", translat: "відомий"},
-    { word: "father", translat: "батько"},
-    { word: "fee", translat: "гонорар"},
-    { word: "finance", translat: "фінанси"},
-    { word: "gently", translat: "обережно"},
-    { word: "guess", translat: "вгадати"},
-    { word: "hopefully", translat: "сподіваюся"},
-    { word: "hour", translat: "година"},
-    { word: "interaction", translat: "взаємодія"},
-    { word: "juice", translat: "сік"},
-    { word: "limit", translat: "обмеження"},
-    { word: "luck", translat: "удача"},
-    { word: "milk", translat: "молоко"},
-    { word: "minor", translat: "другорядний"},
-    { word: "mixed", translat: "змішаний"},
-    { word: "mixture", translat: "суміш"},
-    { word: "mouth", translat: "рот"},
-    { word: "nor", translat: "ні"},
-    { word: "operate", translat: "оперувати"},
-    { word: "originally", translat: "спочатку"},
-    { word: "peace", translat: "спокій"},
-    { word: "pipe", translat: "труба"},
-    { word: "please", translat: "будь ласка"},
-    { word: "preference", translat: "перевага"},
-    { word: "previous", translat: "попередній"},
-    { word: "pull", translat: "тягнути"},
-    { word: "pure", translat: "чистий"},
-    { word: "raw", translat: "сирий"},
-    { word: "reflect", translat: "відображати"},
-    { word: "region", translat: "область"},
-    { word: "republic", translat: "республіка"},
-    { word: "roughly", translat: "приблизно"},
-    { word: "seat", translat: "сидіння"},
-    { word: "send", translat: "відправити"},
-    { word: "significantly", translat: "значно"},
-    { word: "soft", translat: "м'який"},
-    { word: "solid", translat: "твердий"},
-    { word: "stable", translat: "стабільний"},
-    { word: "storm", translat: "шторм"},
-    { word: "substance", translat: "речовина"},
-    { word: "team", translat: "команда"},
-    { word: "tradition", translat: "традиція"},
-    { word: "trick", translat: "трюк"},
-    { word: "virus", translat: "вірус"},
-    { word: "wear", translat: "знос"},
-    { word: "weird", translat: "дивно"},
-    { word: "wonder", translat: "дивуватися"},
-    { word: "actor", translat: "актор"},
-    { word: "afraid", translat: "боїться"},
-    { word: "afternoon", translat: "полудень"},
-    { word: "amazing", translat: "дивовижний"},
-    { word: "annual", translat: "річний"},
-    { word: "anticipate", translat: "передбачити"},
-    { word: "assume", translat: "припустити"},
-    { word: "bat", translat: "кажан"},
-    { word: "beach", translat: "пляж"},
-    { word: "blank", translat: "порожній"},
-    { word: "busy", translat: "зайнятий"},
-    { word: "catch", translat: "зловити"},
-    { word: "chain", translat: "ланцюг"},
-    { word: "classroom", translat: "класна кімната"},
-    { word: "consideration", translat: "розгляд"},
-    { word: "count", translat: "розраховувати"},
-    { word: "cream", translat: "крем"},
-    { word: "crew", translat: "екіпаж"},
-    { word: "dead", translat: "мертвий"},
-    { word: "delivery", translat: "доставка"},
-    { word: "detail", translat: "деталь"},
-    { word: "detailed", translat: "докладно"},
-    { word: "device", translat: "пристрій"},
-    { word: "difficulty", translat: "труднощі"},
-    { word: "doubt", translat: "сумнів"},
-    { word: "drama", translat: "драма"},
-    { word: "election", translat: "вибори"},
-    { word: "engage", translat: "займатися"},
-    { word: "engine", translat: "двигун"},
-    { word: "enhance", translat: "покращити"},
-    { word: "examine", translat: "оглядати"},
-    { word: "feed", translat: "годувати"},
-    { word: "football", translat: "футбол"},
-    { word: "forever", translat: "назавжди"},
-    { word: "gold", translat: "золото"},
-    { word: "guidance", translat: "керівництво"},
-    { word: "hotel", translat: "готель"},
-    { word: "impress", translat: "справити враження"},
-    { word: "install", translat: "встановити"},
-    { word: "interview", translat: "інтерв'ю"},
-    { word: "kid", translat: "дитина"},
-    { word: "mark", translat: "знак"},
-    { word: "match", translat: "матч"},
-    { word: "mission", translat: "місія"},
-    { word: "nobody", translat: "ніхто"},
-    { word: "obvious", translat: "очевидний"},
-    { word: "ourselves", translat: "ми самі"},
-    { word: "owner", translat: "власник"},
-    { word: "pain", translat: "біль"},
-    { word: "participate", translat: "брати участь"},
-    { word: "pleasure", translat: "задоволення"},
-    { word: "priority", translat: "пріоритет"},
-    { word: "protection", translat: "захисту"},
-    { word: "repeat", translat: "повторити"},
-    { word: "round", translat: "круглий"},
-    { word: "score", translat: "рахунок"},
-    { word: "screw", translat: "гвинт"},
-    { word: "seek", translat: "шукати"},
-    { word: "sex", translat: "секс"},
-    { word: "sharp", translat: "різкий"},
-    { word: "shop", translat: "магазин"},
-    { word: "shower", translat: "душ"},
-    { word: "sing", translat: "співати"},
-    { word: "slide", translat: "слайд"},
-    { word: "strip", translat: "смужка"},
-    { word: "suggestion", translat: "пропозиція"},
-    { word: "suit", translat: "костюм"},
-    { word: "tension", translat: "напруга"},
-    { word: "thick", translat: "товстий"},
-    { word: "tone", translat: "тон"},
-    { word: "totally", translat: "повністю"},
-    { word: "twice", translat: "двічі"},
-    { word: "variation", translat: "варіація"},
-    { word: "whereas", translat: "тоді як"},
-    { word: "window", translat: "вікно"},
-    { word: "wise", translat: "мудрий"},
-    { word: "wish", translat: "бажання"},
-    { word: "agent", translat: "агент"},
-    { word: "anxiety", translat: "занепокоєння"},
-    { word: "atmosphere", translat: "атмосфера"},
-    { word: "awareness", translat: "обізнаність"},
-    { word: "band", translat: "гурт"},
-    { word: "bath", translat: "ванна"},
-    { word: "block", translat: "блокувати"},
-    { word: "bone", translat: "кістка"},
-    { word: "bread", translat: "хліб"},
-    { word: "calendar", translat: "календар"},
-    { word: "candidate", translat: "кандидат"},
-    { word: "cap", translat: "шапка"},
-    { word: "careful", translat: "обережний"},
-    { word: "climate", translat: "клімат"},
-    { word: "coat", translat: "пальто"},
-    { word: "collect", translat: "збирати"},
-    { word: "combine", translat: "комбайн"},
-    { word: "command", translat: "команда"},
-    { word: "comparison", translat: "порівняння"},
-    { word: "confusion", translat: "спантеличеність"},
-    { word: "construction", translat: "будівництво"},
-    { word: "contest", translat: "конкурс"},
-    { word: "corner", translat: "куточок"},
-    { word: "court", translat: "суд"},
-    { word: "cup", translat: "чашка"},
-    { word: "dig", translat: "копати"},
-    { word: "district", translat: "район"},
-    { word: "divide", translat: "розділяти"},
-    { word: "door", translat: "двері"},
-    { word: "east", translat: "схід"},
-    { word: "elevator", translat: "ліфт"},
-    { word: "elsewhere", translat: "в іншому місці"},
-    { word: "emotion", translat: "емоція"},
-    { word: "employee", translat: "працівник"},
-    { word: "employer", translat: "роботодавець"},
-    { word: "equivalent", translat: "еквівалент"},
-    { word: "everywhere", translat: "всюди"},
-    { word: "except", translat: "крім"},
-    { word: "finger", translat: "палець"},
-    { word: "garage", translat: "гараж"},
-    { word: "guarantee", translat: "гарантія"},
-    { word: "guest", translat: "гість"},
-    { word: "hang", translat: "повісити"},
-    { word: "height", translat: "висота"},
-    { word: "himself", translat: "себе"},
-    { word: "hole", translat: "отвір"},
-    { word: "hook", translat: "гачок"},
-    { word: "hunt", translat: "полювати"},
-    { word: "implement", translat: "реалізувати"},
-    { word: "initial", translat: "початковий"},
-    { word: "intend", translat: "мають намір"},
-    { word: "introduce", translat: "представити"},
-    { word: "latter", translat: "останній"},
-    { word: "layer", translat: "шар"},
-    { word: "leadership", translat: "керівництво"},
-    { word: "lecture", translat: "лекція"},
-    { word: "lie", translat: "брехня"},
-    { word: "mall", translat: "торговий центр"},
-    { word: "manager", translat: "менеджер"},
-    { word: "manner", translat: "спосіб"},
-    { word: "march", translat: "марш"},
-    { word: "married", translat: "одружений"},
-    { word: "meeting", translat: "засідання"},
-    { word: "mention", translat: "згадка"},
-    { word: "narrow", translat: "вузькі"},
-    { word: "nearby", translat: "поруч"},
-    { word: "neither", translat: "ні"},
-    { word: "nose", translat: "ніс"},
-    { word: "obviously", translat: "очевидно"},
-    { word: "operation", translat: "операція"},
-    { word: "parking", translat: "парковка"},
-    { word: "partner", translat: "партнер"},
-    { word: "perfectly", translat: "ідеально"},
-    { word: "physically", translat: "фізично"},
-    { word: "profile", translat: "профіль"},
-    { word: "proud", translat: "гордий"},
-    { word: "recording", translat: "запис"},
-    { word: "relate", translat: "стосуватися"},
-    { word: "respect", translat: "повага"},
-    { word: "rice", translat: "рис"},
-    { word: "routine", translat: "рутина"},
-    { word: "sample", translat: "зразок"},
-    { word: "schedule", translat: "графік"},
-    { word: "settle", translat: "розраховуватися"},
-    { word: "smell", translat: "запах"},
-    { word: "somehow", translat: "якось"},
-    { word: "spiritual", translat: "духовний"},
-    { word: "survey", translat: "опитування"},
-    { word: "swimming", translat: "плавання"},
-    { word: "telephone", translat: "телефон"},
-    { word: "tie", translat: "краватка"},
-    { word: "tip", translat: "чайові"},
-    { word: "transportation", translat: "транспортування"},
-    { word: "unhappy", translat: "нещасний"},
-    { word: "wild", translat: "дикий"},
-    { word: "winter", translat: "зима"},
-    { word: "absolutely", translat: "абсолютно"},
-    { word: "acceptable", translat: "прийнятний"},
-    { word: "adult", translat: "дорослий"},
-    { word: "aggressive", translat: "агресивний"},
-    { word: "airline", translat: "авіакомпанія"},
-    { word: "apart", translat: "окремо"},
-    { word: "assure", translat: "запевняти"},
-    { word: "attract", translat: "приваблювати"},
-    { word: "bag", translat: "сумка"},
-    { word: "battle", translat: "бій"},
-    { word: "bed", translat: "ліжко"},
-    { word: "bill", translat: "рахунок"},
-    { word: "boring", translat: "нудно"},
-    { word: "bother", translat: "турбувати"},
-    { word: "brief", translat: "короткий"},
-    { word: "cake", translat: "торт"},
-    { word: "charity", translat: "благодійність"},
-    { word: "code", translat: "код"},
-    { word: "cousin", translat: "двоюрідний брат"},
-    { word: "crazy", translat: "божевільний"},
-    { word: "curve", translat: "крива"},
-    { word: "designer", translat: "дизайнер"},
-    { word: "dimension", translat: "вимір"},
-    { word: "disaster", translat: "катастрофа"},
-    { word: "distinct", translat: "виразний"},
-    { word: "distribute", translat: "поширювати"},
-    { word: "dress", translat: "плаття"},
-    { word: "ease", translat: "легкість"},
-    { word: "eastern", translat: "східний"},
-    { word: "editor", translat: "редактор"},
-    { word: "efficiency", translat: "ефективність"},
-    { word: "emergency", translat: "надзвичайна ситуація"},
-    { word: "escape", translat: "втеча"},
-    { word: "evening", translat: "вечір"},
-    { word: "excitement", translat: "хвилювання"},
-    { word: "expose", translat: "викрити"},
-    { word: "extension", translat: "розширення"},
-    { word: "extent", translat: "ступінь"},
-    { word: "farm", translat: "ферма"},
-    { word: "feedback", translat: "зворотній зв'язок"},
-    { word: "fight", translat: "боротися"},
-    { word: "gap", translat: "розрив"},
-    { word: "gather", translat: "збиратися"},
-    { word: "grade", translat: "клас"},
-    { word: "guitar", translat: "гітара"},
-    { word: "hate", translat: "ненависть"},
-    { word: "holiday", translat: "свято"},
-    { word: "homework", translat: "домашнє завдання"},
-    { word: "horror", translat: "жах"},
-    { word: "horse", translat: "кінь"},
-    { word: "host", translat: "господар"},
-    { word: "husband", translat: "чоловік"},
-    { word: "leader", translat: "керівник"},
-    { word: "loan", translat: "кредит"},
-    { word: "logical", translat: "логічний"},
-    { word: "mistake", translat: "помилка"},
-    { word: "mom", translat: "мама"},
-    { word: "mountain", translat: "гора"},
-    { word: "nail", translat: "цвях"},
-    { word: "noise", translat: "шум"},
-    { word: "none", translat: "немає"},
-    { word: "occasion", translat: "нагода"},
-    { word: "outcome", translat: "результат"},
-    { word: "overcome", translat: "подолати"},
-    { word: "owe", translat: "заборгувати"},
-    { word: "package", translat: "пакет"},
-    { word: "patient", translat: "пацієнт"},
-    { word: "pause", translat: "пауза"},
-    { word: "permission", translat: "дозвіл"},
-    { word: "phrase", translat: "фраза"},
-    { word: "presentation", translat: "презентація"},
-    { word: "prior", translat: "попередній"},
-    { word: "promotion", translat: "просування по службі"},
-    { word: "proof", translat: "доказ"},
-    { word: "race", translat: "гонка"},
-    { word: "reasonable", translat: "розумно"},
-    { word: "reflection", translat: "рефлексія"},
-    { word: "refrigerator", translat: "холодильник"},
-    { word: "relief", translat: "полегшення"},
-    { word: "repair", translat: "ремонт"},
-    { word: "resolution", translat: "дозвіл"},
-    { word: "revenue", translat: "дохід"},
-    { word: "rough", translat: "грубий"},
-    { word: "sad", translat: "сумний"},
-    { word: "sand", translat: "пісок"},
-    { word: "scratch", translat: "подряпина"},
-    { word: "sentence", translat: "речення"},
-    { word: "session", translat: "сесії"},
-    { word: "shoulder", translat: "плече"},
-    { word: "sick", translat: "хворий"},
-    { word: "singer", translat: "співачка"},
-    { word: "smoke", translat: "дим"},
-    { word: "stomach", translat: "живіт"},
-    { word: "strange", translat: "дивно"},
-    { word: "strict", translat: "строгий"},
-    { word: "strike", translat: "страйк"},
-    { word: "string", translat: "рядок"},
-    { word: "succeed", translat: "досягти успіху"},
-    { word: "successfully", translat: "успішно"},
-    { word: "suddenly", translat: "раптово"},
-    { word: "suffer", translat: "страждати"},
-    { word: "surprised", translat: "здивований"},
-    { word: "tennis", translat: "теніс"},
-    { word: "throw", translat: "кинути"},
-    { word: "tourist", translat: "туристичний"},
-    { word: "towel", translat: "рушник"},
-    { word: "truly", translat: "по-справжньому"},
-    { word: "vacation", translat: "відпустка"},
-    { word: "virtually", translat: "практично"},
-    { word: "west", translat: "захід"},
-    { word: "wheel", translat: "колесо"},
-    { word: "wine", translat: "вино"},
-    { word: "acquire", translat: "придбати"},
-    { word: "adapt", translat: "адаптуватися"},
-    { word: "adjust", translat: "налаштувати"},
-    { word: "administrative", translat: "адміністративний"},
-    { word: "altogether", translat: "взагалі"},
-    { word: "anyway", translat: "все одно"},
-    { word: "argue", translat: "сперечатися"},
-    { word: "arise", translat: "виникають"},
-    { word: "arm", translat: "рука"},
-    { word: "aside", translat: "вбік"},
-    { word: "associate", translat: "асоційований"},
-    { word: "automatic", translat: "автоматичний"},
-    { word: "automatically", translat: "автоматично"},
-    { word: "basket", translat: "кошик"},
-    { word: "bet", translat: "ставка"},
-    { word: "blow", translat: "удар"},
-    { word: "bonus", translat: "бонус"},
-    { word: "border", translat: "кордону"},
-    { word: "branch", translat: "відділення"},
-    { word: "breast", translat: "груди"},
-    { word: "brother", translat: "брат"},
-    { word: "buddy", translat: "приятель"},
-    { word: "bunch", translat: "пучок"},
-    { word: "cabinet", translat: "кабінет"},
-    { word: "childhood", translat: "дитинство"},
-    { word: "chip", translat: "чіп"},
-    { word: "church", translat: "церква"},
-    { word: "civil", translat: "цивільний"},
-    { word: "clothes", translat: "одяг"},
-    { word: "coach", translat: "тренер"},
-    { word: "coffee", translat: "кава"},
-    { word: "confirm", translat: "підтвердити"},
-    { word: "cross", translat: "хрестик"},
-    { word: "deeply", translat: "глибоко"},
-    { word: "definitely", translat: "однозначно"},
-    { word: "deliberately", translat: "свідомо"},
-    { word: "dinner", translat: "вечеря"},
-    { word: "document", translat: "документ"},
-    { word: "draft", translat: "проект"},
-    { word: "drawing", translat: "малювання"},
-    { word: "dust", translat: "пил"},
-    { word: "employ", translat: "найняти"},
-    { word: "encouraging", translat: "заохочення"},
-    { word: "expert", translat: "експерт"},
-    { word: "external", translat: "зовнішній"},
-    { word: "floor", translat: "поверх"},
-    { word: "former", translat: "колишній"},
-    { word: "god", translat: "бог"},
-    { word: "golf", translat: "гольф"},
-    { word: "habit", translat: "звичка"},
-    { word: "hair", translat: "волосся"},
-    { word: "hardly", translat: "навряд чи"},
-    { word: "hearing", translat: "слухання"},
-    { word: "hurt", translat: "боляче"},
-    { word: "illegal", translat: "незаконний"},
-    { word: "incorporate", translat: "включати"},
-    { word: "initiative", translat: "ініціатива"},
-    { word: "iron", translat: "залізо"},
-    { word: "judge", translat: "судити"},
-    { word: "judgment", translat: "судження"},
-    { word: "justify", translat: "виправдати"},
-    { word: "knife", translat: "ніж"},
-    { word: "lab", translat: "лабораторія"},
-    { word: "landscape", translat: "пейзаж"},
-    { word: "laugh", translat: "сміятися"},
-    { word: "lay", translat: "лежати"},
-    { word: "league", translat: "ліга"},
-    { word: "loud", translat: "голосно"},
-    { word: "mail", translat: "пошта"},
-    { word: "massive", translat: "масивний"},
-    { word: "measurement", translat: "вимірювання"},
-    { word: "mess", translat: "безлад"},
-    { word: "mobile", translat: "мобільний"},
-    { word: "mode", translat: "режим"},
-    { word: "mud", translat: "грязь"},
-    { word: "nasty", translat: "противний"},
-    { word: "native", translat: "рідний"},
-    { word: "opening", translat: "відкриття"},
-    { word: "orange", translat: "помаранчевий"},
-    { word: "ordinary", translat: "звичайний"},
-    { word: "organize", translat: "організовувати"},
-    { word: "ought", translat: "повинен"},
-    { word: "parent", translat: "батькові"},
-    { word: "pattern", translat: "візерунок"},
-    { word: "pin", translat: "шпилька"},
-    { word: "poetry", translat: "поезії"},
-    { word: "police", translat: "поліція"},
-    { word: "pool", translat: "басейн"},
-    { word: "possess", translat: "володіти"},
-    { word: "possibility", translat: "можливість"},
-    { word: "pound", translat: "фунт"},
-    { word: "procedure", translat: "процедура"},
-    { word: "queen", translat: "королева"},
-    { word: "ratio", translat: "співвідношення"},
-    { word: "readily", translat: "легко"},
-    { word: "relation", translat: "відношення"},
-    { word: "relieve", translat: "полегшувати"},
-    { word: "request", translat: "запит"},
-    { word: "respond", translat: "відповідати"},
-    { word: "restaurant", translat: "ресторан"},
-    { word: "retain", translat: "зберегти"},
-    { word: "royal", translat: "королівський"},
-    { word: "salary", translat: "зарплата"},
-    { word: "satisfaction", translat: "задоволення"},
-    { word: "sector", translat: "сектора"},
-    { word: "senior", translat: "старший"},
-    { word: "shame", translat: "сором"},
-    { word: "shelter", translat: "притулок"},
-    { word: "shoe", translat: "взуття"},
-    { word: "shut", translat: "закрити"},
-    { word: "signature", translat: "підпис"},
-    { word: "significance", translat: "значення"},
-    { word: "silver", translat: "срібло"},
-    { word: "somebody", translat: "хтось"},
-    { word: "song", translat: "пісня"},
-    { word: "southern", translat: "південний"},
-    { word: "split", translat: "розкол"},
-    { word: "strain", translat: "процідити"},
-    { word: "struggle", translat: "боротьба"},
-    { word: "super", translat: "супер"},
-    { word: "swim", translat: "плавати"},
-    { word: "tackle", translat: "снасті"},
-    { word: "tank", translat: "танк"},
-    { word: "terribly", translat: "жахливо"},
-    { word: "tight", translat: "туго"},
-    { word: "tooth", translat: "зуб"},
-    { word: "town", translat: "місто"},
-    { word: "train", translat: "поїзд"},
-    { word: "trust", translat: "довіра"},
-    { word: "unfair", translat: "несправедливо"},
-    { word: "unfortunately", translat: "на жаль"},
-    { word: "upper", translat: "верхній"},
-    { word: "vehicle", translat: "транспортний засіб"},
-    { word: "visible", translat: "видно"},
-    { word: "volume", translat: "обсяг"},
-    { word: "wash", translat: "мити"},
-    { word: "waste", translat: "відходи"},
-    { word: "wife", translat: "дружина"},
-    { word: "yellow", translat: "жовтий"},
-    { word: "yours", translat: "твоя"},
-    { word: "accident", translat: "нещасний випадок"},
-    { word: "airport", translat: "аеропорт"},
-    { word: "alive", translat: "живий"},
-    { word: "angry", translat: "злий"},
-    { word: "appointment", translat: "призначення"},
-    { word: "arrival", translat: "прибуття"},
-    { word: "assist", translat: "допомогти"},
-    { word: "assumption", translat: "припущення"},
-    { word: "bake", translat: "випікати"},
-    { word: "bar", translat: "бар"},
-    { word: "baseball", translat: "бейсбол"},
-    { word: "bell", translat: "дзвоник"},
-    { word: "bike", translat: "велосипед"},
-    { word: "blame", translat: "звинувачувати"},
-    { word: "boy", translat: "хлопчик"},
-    { word: "brick", translat: "цегла"},
-    { word: "calculate", translat: "розрахувати"},
-    { word: "chair", translat: "стілець"},
-    { word: "chapter", translat: "розділ"},
-    { word: "closet", translat: "шафа"},
-    { word: "clue", translat: "підказка"},
-    { word: "collar", translat: "комір"},
-    { word: "comment", translat: "коментар"},
-    { word: "committee", translat: "комітет"},
-    { word: "compete", translat: "конкурувати"},
-    { word: "concerning", translat: "щодо"},
-    { word: "conference", translat: "конференції"},
-    { word: "consult", translat: "проконсультуватися"},
-    { word: "conversation", translat: "розмова"},
-    { word: "convert", translat: "конвертувати"},
-    { word: "crash", translat: "аварія"},
-    { word: "database", translat: "бази даних"},
-    { word: "deliver", translat: "доставити"},
-    { word: "dependent", translat: "залежний"},
-    { word: "desperate", translat: "відчайдушний"},
-    { word: "devil", translat: "диявол"},
-    { word: "diet", translat: "дієта"},
-    { word: "enthusiasm", translat: "ентузіазм"},
-    { word: "error", translat: "помилка"},
-    { word: "exciting", translat: "захоплюючий"},
-    { word: "explanation", translat: "пояснення"},
-    { word: "extend", translat: "розширити"},
-    { word: "farmer", translat: "фермер"},
-    { word: "fear", translat: "страх"},
-    { word: "fold", translat: "складка"},
-    { word: "forth", translat: "вперед"},
-    { word: "friendly", translat: "дружній"},
-    { word: "fuel", translat: "пальне"},
-    { word: "funny", translat: "смішно"},
-    { word: "gate", translat: "ворота"},
-    { word: "girl", translat: "дівчина"},
-    { word: "glove", translat: "рукавичка"},
-    { word: "grab", translat: "схопити"},
-    { word: "gross", translat: "брутто"},
-    { word: "hall", translat: "зал"},
-    { word: "herself", translat: "себе"},
-    { word: "hide", translat: "приховати"},
-    { word: "historian", translat: "історик"},
-    { word: "hospital", translat: "лікарня"},
-    { word: "ill", translat: "хворий"},
-    { word: "injury", translat: "травма"},
-    { word: "instruction", translat: "інструкція"},
-    { word: "investigate", translat: "розслідувати"},
-    { word: "jacket", translat: "піджак"},
-    { word: "lucky", translat: "пощастило"},
-    { word: "lunch", translat: "обід"},
-    { word: "maintenance", translat: "обслуговування"},
-    { word: "manufacturer", translat: "виробник"},
-    { word: "meal", translat: "їжа"},
-    { word: "miss", translat: "міс"},
-    { word: "monitor", translat: "монітор"},
-    { word: "mortgage", translat: "іпотека"},
-    { word: "negotiate", translat: "вести переговори"},
-    { word: "nurse", translat: "медсестра"},
-    { word: "pace", translat: "темп"},
-    { word: "panic", translat: "паніка"},
-    { word: "peak", translat: "пік"},
-    { word: "perception", translat: "сприйняття"},
-    { word: "permit", translat: "дозвіл"},
-    { word: "pie", translat: "пиріг"},
-    { word: "plane", translat: "літак"},
-    { word: "poem", translat: "вірш"},
-    { word: "presence", translat: "наявність"},
-    { word: "proposal", translat: "пропозиція"},
-    { word: "provided", translat: "надається"},
-    { word: "qualify", translat: "кваліфікуватися"},
-    { word: "quote", translat: "цитата"},
-    { word: "realistic", translat: "реалістичний"},
-    { word: "reception", translat: "прийом"},
-    { word: "recover", translat: "одужати"},
-    { word: "replacement", translat: "заміна"},
-    { word: "resolve", translat: "вирішити"},
-    { word: "retire", translat: "вийти на пенсію"},
-    { word: "revolution", translat: "революція"},
-    { word: "reward", translat: "винагорода"},
-    { word: "rid", translat: "позбутися"},
-    { word: "river", translat: "річка"},
-    { word: "roll", translat: "рулон"},
-    { word: "row", translat: "рядок"},
-    { word: "sandwich", translat: "бутерброд"},
-    { word: "shock", translat: "шок"},
-    { word: "sink", translat: "раковина"},
-    { word: "slip", translat: "ковзати"},
-    { word: "son", translat: "син"},
-    { word: "sorry", translat: "вибачте"},
-    { word: "spare", translat: "запасний"},
-    { word: "speech", translat: "мова"},
-    { word: "spite", translat: "на зло"},
-    { word: "spray", translat: "спрей"},
-    { word: "surprise", translat: "сюрприз"},
-    { word: "suspect", translat: "підозрюваний"},
-    { word: "sweet", translat: "солодкий"},
-    { word: "swing", translat: "гойдалка"},
-    { word: "tea", translat: "чай"},
-    { word: "till", translat: "до"},
-    { word: "transition", translat: "перехід"},
-    { word: "twist", translat: "крутити"},
-    { word: "ugly", translat: "потворний"},
-    { word: "unlikely", translat: "малоймовірно"},
-    { word: "upstairs", translat: "нагорі"},
-    { word: "usual", translat: "звичайний"},
-    { word: "village", translat: "село"},
-    { word: "warning", translat: "УВАГА"},
-    { word: "weekend", translat: "вихідні"},
-    { word: "weigh", translat: "зважувати"},
-    { word: "welcome", translat: "Ласкаво просимо"},
-    { word: "winner", translat: "переможець"},
-    { word: "worker", translat: "робітник"},
-    { word: "writer", translat: "письменник"},
-    { word: "yard", translat: "ярд"},
-    { word: "abroad", translat: "за кордоном"},
-    { word: "alarm", translat: "тривога"},
-    { word: "anxious", translat: "тривожний"},
-    { word: "arrive", translat: "прибути"},
-    { word: "assistance", translat: "допомогу"},
-    { word: "attach", translat: "прикріпити"},
-    { word: "behave", translat: "поводитися"},
-    { word: "bend", translat: "зігнути"},
-    { word: "bicycle", translat: "велосипед"},
-    { word: "bite", translat: "укус"},
-    { word: "blind", translat: "сліпий"},
-    { word: "bottle", translat: "пляшка"},
-    { word: "brave", translat: "хоробрий"},
-    { word: "breath", translat: "дихання"},
-    { word: "briefly", translat: "коротко"},
-    { word: "buyer", translat: "покупець"},
-    { word: "cable", translat: "кабель"},
-    { word: "calm", translat: "спокійний"},
-    { word: "candle", translat: "свічка"},
-    { word: "celebrate", translat: "святкувати"},
-    { word: "chest", translat: "груди"},
-    { word: "chocolate", translat: "шоколад"},
-    { word: "clerk", translat: "службовець"},
-    { word: "cloud", translat: "хмара"},
-    { word: "comprehensive", translat: "комплексний"},
-    { word: "concentrate", translat: "концентрат"},
-    { word: "concert", translat: "концерт"},
-    { word: "conclusion", translat: "висновок"},
-    { word: "contribution", translat: "внесок"},
-    { word: "convince", translat: "переконати"},
-    { word: "cookie", translat: "печиво"},
-    { word: "counter", translat: "лічильник"},
-    { word: "courage", translat: "мужність"},
-    { word: "curious", translat: "допитливий"},
-    { word: "dad", translat: "тато"},
-    { word: "desk", translat: "письмовий стіл"},
-    { word: "dirty", translat: "брудний"},
-    { word: "disagree", translat: "не згоден"},
-    { word: "downtown", translat: "центр міста"},
-    { word: "drawer", translat: "ящик"},
-    { word: "establish", translat: "встановити"},
-    { word: "establishment", translat: "заклад"},
-    { word: "estimate", translat: "кошторис"},
-    { word: "examination", translat: "обстеження"},
-    { word: "flower", translat: "квітка"},
-    { word: "garbage", translat: "сміття"},
-    { word: "grand", translat: "великий"},
-    { word: "grandfather", translat: "дідусь"},
-    { word: "grocery", translat: "продуктовий магазин"},
-    { word: "harm", translat: "шкода"},
-    { word: "honest", translat: "чесний"},
-    { word: "honey", translat: "мед"},
-    { word: "ignore", translat: "ігнорувати"},
-    { word: "imply", translat: "мають на увазі"},
-    { word: "impression", translat: "враження"},
-    { word: "impressive", translat: "вражає"},
-    { word: "improvement", translat: "поліпшення"},
-    { word: "independence", translat: "незалежність"},
-    { word: "informal", translat: "неформальний"},
-    { word: "inner", translat: "внутрішній"},
-    { word: "insect", translat: "комаха"},
-    { word: "insist", translat: "наполягати"},
-    { word: "inspection", translat: "огляд"},
-    { word: "inspector", translat: "інспектор"},
-    { word: "king", translat: "король"},
-    { word: "knee", translat: "коліно"},
-    { word: "ladder", translat: "драбина"},
-    { word: "lawyer", translat: "адвокат"},
-    { word: "leather", translat: "шкіра"},
-    { word: "load", translat: "навантаження"},
-    { word: "loose", translat: "пухкий"},
-    { word: "male", translat: "чоловічий"},
-    { word: "menu", translat: "меню"},
-    { word: "mine", translat: "мій"},
-    { word: "mirror", translat: "дзеркало"},
-    { word: "moreover", translat: "крім того"},
-    { word: "neck", translat: "шия"},
-    { word: "penalty", translat: "пенальті"},
-    { word: "pension", translat: "пенсія"},
-    { word: "piano", translat: "піаніно"},
-    { word: "plate", translat: "плита"},
-    { word: "pleasant", translat: "приємний"},
-    { word: "pleased", translat: "задоволений"},
-    { word: "potato", translat: "картопля"},
-    { word: "profession", translat: "професія"},
-    { word: "professor", translat: "професор"},
-    { word: "prompt", translat: "підказка"},
-    { word: "proposed", translat: "запропонований"},
-    { word: "purple", translat: "фіолетовий"},
-    { word: "pursue", translat: "переслідувати"},
-    { word: "quantity", translat: "кількість"},
-    { word: "quiet", translat: "тихий"},
-    { word: "reaction", translat: "реакція"},
-    { word: "refuse", translat: "відмовити"},
-    { word: "regret", translat: "жаль"},
-    { word: "remaining", translat: "залишилося"},
-    { word: "requirement", translat: "вимога"},
-    { word: "reveal", translat: "розкрити"},
-    { word: "ruin", translat: "руїна"},
-    { word: "rush", translat: "поспіх"},
-    { word: "salad", translat: "салат"},
-    { word: "sexual", translat: "статевий"},
-    { word: "shake", translat: "струсити"},
-    { word: "shift", translat: "зміна"},
-    { word: "shine", translat: "блиск"},
-    { word: "ship", translat: "корабель"},
-    { word: "sister", translat: "сестра"},
-    { word: "skirt", translat: "спідниця"},
-    { word: "slice", translat: "шматочок"},
-    { word: "snow", translat: "сніг"},
-    { word: "specialist", translat: "фахівець"},
-    { word: "specify", translat: "вказати"},
-    { word: "steal", translat: "красти"},
-    { word: "stroke", translat: "інсульт"},
-    { word: "strongly", translat: "сильно"},
-    { word: "suck", translat: "смоктати"},
-    { word: "sudden", translat: "раптовий"},
-    { word: "supermarket", translat: "супермаркет"},
-    { word: "surround", translat: "оточують"},
-    { word: "switch", translat: "перемикач"},
-    { word: "terrible", translat: "жахливий"},
-    { word: "tired", translat: "втомився"},
-    { word: "tongue", translat: "язик"},
-    { word: "trash", translat: "сміття"},
-    { word: "tune", translat: "мелодія"},
-    { word: "unable", translat: "не в змозі"},
-    { word: "warn", translat: "попередити"},
-    { word: "weak", translat: "слабкий"},
-    { word: "weakness", translat: "слабкість"},
-    
-
+export const TwoThousandActualWords = 
+[
+  {
+    "word": "life",
+    "word_context": "is beautiful",
+    "translat": "життя",
+    "translat_context": "прекрасне"
+  },
+  {
+    "word": "run",
+    "word_context": "fast",
+    "translat": "бігти",
+    "translat_context": "швидко"
+  },
+  {
+    "word": "idea",
+    "word_context": "is great",
+    "translat": "ідея",
+    "translat_context": "чудова"
+  },
+  {
+    "word": "problem",
+    "word_context": "is serious",
+    "translat": "проблема",
+    "translat_context": "серйозна"
+  },
+  {
+    "word": "child",
+    "word_context": "is playing",
+    "translat": "дитина",
+    "translat_context": "грає"
+  },
+  {
+    "word": "time",
+    "word_context": "flies",
+    "translat": "час",
+    "translat_context": "летить"
+  },
+  {
+    "word": "voice",
+    "word_context": "is soft",
+    "translat": "голос",
+    "translat_context": "м’який"
+  },
+  {
+    "word": "light",
+    "word_context": "shines",
+    "translat": "світло",
+    "translat_context": "сяє"
+  },
+  {
+    "word": "river",
+    "word_context": "flows",
+    "translat": "річка",
+    "translat_context": "тече"
+  },
+  {
+    "word": "book",
+    "word_context": "is interesting",
+    "translat": "книга",
+    "translat_context": "цікава"
+  },
+  {
+    "word": "wind",
+    "word_context": "blows",
+    "translat": "вітер",
+    "translat_context": "дує"
+  },
+  {
+    "word": "eye",
+    "word_context": "sees",
+    "translat": "око",
+    "translat_context": "бачить"
+  },
+  {
+    "word": "thought",
+    "word_context": "is deep",
+    "translat": "думка",
+    "translat_context": "глибокий"
+  },
+  {
+    "word": "question",
+    "word_context": "remains unanswered",
+    "translat": "питання",
+    "translat_context": "залишається без відповіді"
+  },
+  {
+    "word": "dream",
+    "word_context": "came true",
+    "translat": "мрія",
+    "translat_context": "здійснилася"
+  },
+  {
+    "word": "tree",
+    "word_context": "is tall",
+    "translat": "дерево",
+    "translat_context": "високе"
+  },
+  {
+    "word": "snow",
+    "word_context": "falls",
+    "translat": "сніг",
+    "translat_context": "падає"
+  },
+  {
+    "word": "music",
+    "word_context": "plays",
+    "translat": "музика",
+    "translat_context": "грає"
+  },
+  {
+    "word": "car",
+    "word_context": "drives fast",
+    "translat": "автомобіль",
+    "translat_context": "їде швидко"
+  },
+  {
+    "word": "truth",
+    "word_context": "hurts",
+    "translat": "правда",
+    "translat_context": "боляче"
+  },
+  {
+    "word": "heart",
+    "word_context": "beats",
+    "translat": "серце",
+    "translat_context": "б’ється"
+  },
+  {
+    "word": "dog",
+    "word_context": "barks",
+    "translat": "собака",
+    "translat_context": "гавкає"
+  },
+  {
+    "word": "sky",
+    "word_context": "is blue",
+    "translat": "небо",
+    "translat_context": "синє"
+  },
+  {
+    "word": "road",
+    "word_context": "is long",
+    "translat": "дорога",
+    "translat_context": "довга"
+  },
+  {
+    "word": "work",
+    "word_context": "is hard",
+    "translat": "робота",
+    "translat_context": "важка"
+  },
+  {
+    "word": "flower",
+    "word_context": "is blooming",
+    "translat": "квітка",
+    "translat_context": "цвіте"
+  },
+  {
+    "word": "fire",
+    "word_context": "burns",
+    "translat": "вогонь",
+    "translat_context": "горить"
+  },
+  {
+    "word": "hope",
+    "word_context": "remains",
+    "translat": "надія",
+    "translat_context": "залишається"
+  },
+  {
+    "word": "glass",
+    "word_context": "broke",
+    "translat": "скло",
+    "translat_context": "розбилось"
+  },
+  {
+    "word": "sun",
+    "word_context": "is shining",
+    "translat": "сонце",
+    "translat_context": "світить"
+  },
+  {
+    "word": "star",
+    "word_context": "twinkles",
+    "translat": "star",
+    "translat_context": "мерехтить"
+  },
+  {
+    "word": "cloud",
+    "word_context": "moves slowly",
+    "translat": "cloud",
+    "translat_context": "повільно рухається"
+  },
+  {
+    "word": "stone",
+    "word_context": "is heavy",
+    "translat": "stone",
+    "translat_context": "важкий"
+  },
+  {
+    "word": "bird",
+    "word_context": "sings",
+    "translat": "bird",
+    "translat_context": "співає"
+  },
+  {
+    "word": "game",
+    "word_context": "is fun",
+    "translat": "game",
+    "translat_context": "весела"
+  },
+  {
+    "word": "plan",
+    "word_context": "is working",
+    "translat": "plan",
+    "translat_context": "працює"
+  },
+  {
+    "word": "story",
+    "word_context": "is touching",
+    "translat": "story",
+    "translat_context": "зворушлива"
+  },
+  {
+    "word": "note",
+    "word_context": "is written",
+    "translat": "note",
+    "translat_context": "написана"
+  },
+  {
+    "word": "wave",
+    "word_context": "crashes",
+    "translat": "wave",
+    "translat_context": "розбивається"
+  },
+  {
+    "word": "sound",
+    "word_context": "is loud",
+    "translat": "sound",
+    "translat_context": "гучний"
+  },
+  {
+    "word": "chance",
+    "word_context": "is rare",
+    "translat": "chance",
+    "translat_context": "рідкісний"
+  },
+  {
+    "word": "smile",
+    "word_context": "is bright",
+    "translat": "smile",
+    "translat_context": "яскрава"
+  },
+  {
+    "word": "cry",
+    "word_context": "was loud",
+    "translat": "cry",
+    "translat_context": "була гучна"
+  },
+  {
+    "word": "dance",
+    "word_context": "was graceful",
+    "translat": "dance",
+    "translat_context": "була граційна"
+  },
+  {
+    "word": "song",
+    "word_context": "is catchy",
+    "translat": "song",
+    "translat_context": "запам’ятовується"
+  },
+  {
+    "word": "memory",
+    "word_context": "is fading",
+    "translat": "memory",
+    "translat_context": "згасає"
+  },
+  {
+    "word": "shadow",
+    "word_context": "follows",
+    "translat": "shadow",
+    "translat_context": "слідує"
+  },
+  {
+    "word": "storm",
+    "word_context": "is coming",
+    "translat": "storm",
+    "translat_context": "наближається"
+  },
+  {
+    "word": "wish",
+    "word_context": "is granted",
+    "translat": "wish",
+    "translat_context": "виконано"
+  },
+  {
+    "word": "forest",
+    "word_context": "is dense",
+    "translat": "forest",
+    "translat_context": "густий"
+  },
+  {
+    "word": "ocean",
+    "word_context": "is deep",
+    "translat": "ocean",
+    "translat_context": "глибокий"
+  },
+  {
+    "word": "mountain",
+    "word_context": "is high",
+    "translat": "mountain",
+    "translat_context": "високий"
+  },
+  {
+    "word": "friend",
+    "word_context": "is loyal",
+    "translat": "friend",
+    "translat_context": "вірний"
+  },
+  {
+    "word": "family",
+    "word_context": "is everything",
+    "translat": "family",
+    "translat_context": "це все"
+  },
+  {
+    "word": "city",
+    "word_context": "never sleeps",
+    "translat": "city",
+    "translat_context": "ніколи не спить"
+  },
+  {
+    "word": "home",
+    "word_context": "is warm",
+    "translat": "home",
+    "translat_context": "теплий"
+  },
+  {
+    "word": "voice",
+    "word_context": "is soft",
+    "translat": "голос",
+    "translat_context": "м’який"
+  },
+  {
+    "word": "letter",
+    "word_context": "is written",
+    "translat": "letter",
+    "translat_context": "написана"
+  },
+  {
+    "word": "answer",
+    "word_context": "is correct",
+    "translat": "answer",
+    "translat_context": "правильна"
+  },
+  {
+    "word": "thought",
+    "word_context": "is deep",
+    "translat": "думка",
+    "translat_context": "глибокий"
+  },
+  {
+    "word": "dream",
+    "word_context": "came true",
+    "translat": "мрія",
+    "translat_context": "здійснилася"
+  },
+  {
+    "word": "journey",
+    "word_context": "begins",
+    "translat": "journey",
+    "translat_context": "починається"
+  },
+  {
+    "word": "lesson",
+    "word_context": "is learned",
+    "translat": "lesson",
+    "translat_context": "вивчено"
+  },
+  {
+    "word": "message",
+    "word_context": "arrived",
+    "translat": "message",
+    "translat_context": "прибула"
+  },
+  {
+    "word": "goal",
+    "word_context": "is clear",
+    "translat": "goal",
+    "translat_context": "ясна"
+  },
+  {
+    "word": "victory",
+    "word_context": "is sweet",
+    "translat": "victory",
+    "translat_context": "солодкий"
+  },
+  {
+    "word": "failure",
+    "word_context": "hurts",
+    "translat": "failure",
+    "translat_context": "боляче"
+  },
+  {
+    "word": "moment",
+    "word_context": "is gone",
+    "translat": "moment",
+    "translat_context": "зник"
+  },
+  {
+    "word": "gift",
+    "word_context": "is wrapped",
+    "translat": "gift",
+    "translat_context": "запакований"
+  },
+  {
+    "word": "emotion",
+    "word_context": "is strong",
+    "translat": "emotion",
+    "translat_context": "сильна"
+  },
+  {
+    "word": "enemy",
+    "word_context": "attacks",
+    "translat": "enemy",
+    "translat_context": "атакує"
+  },
+  {
+    "word": "path",
+    "word_context": "is chosen",
+    "translat": "path",
+    "translat_context": "обраний"
+  },
+  {
+    "word": "reason",
+    "word_context": "is unclear",
+    "translat": "reason",
+    "translat_context": "незрозумілий"
+  },
+  {
+    "word": "season",
+    "word_context": "changes",
+    "translat": "season",
+    "translat_context": "змінюється"
+  },
+  {
+    "word": "signal",
+    "word_context": "is lost",
+    "translat": "signal",
+    "translat_context": "зник"
+  },
+  {
+    "word": "smoke",
+    "word_context": "rises",
+    "translat": "smoke",
+    "translat_context": "піднімається"
+  },
+  {
+    "word": "screen",
+    "word_context": "is broken",
+    "translat": "screen",
+    "translat_context": "зламаний"
+  },
+  {
+    "word": "reflection",
+    "word_context": "is visible",
+    "translat": "reflection",
+    "translat_context": "видимий"
+  },
+  {
+    "word": "silence",
+    "word_context": "is peaceful",
+    "translat": "silence",
+    "translat_context": "мирна"
+  },
+  {
+    "word": "strength",
+    "word_context": "is needed",
+    "translat": "strength",
+    "translat_context": "потрібна"
+  },
+  {
+    "word": "weakness",
+    "word_context": "is revealed",
+    "translat": "weakness",
+    "translat_context": "виявлено"
+  },
+  {
+    "word": "vision",
+    "word_context": "is clear",
+    "translat": "vision",
+    "translat_context": "ясна"
+  },
+  {
+    "word": "mission",
+    "word_context": "is accomplished",
+    "translat": "mission",
+    "translat_context": "виконано"
+  },
+  {
+    "word": "noise",
+    "word_context": "is constant",
+    "translat": "noise",
+    "translat_context": "постійний"
+  },
+  {
+    "word": "whisper",
+    "word_context": "is soft",
+    "translat": "whisper",
+    "translat_context": "м’який"
+  },
+  {
+    "word": "touch",
+    "word_context": "is gentle",
+    "translat": "touch",
+    "translat_context": "ніжний"
+  },
+  {
+    "word": "hug",
+    "word_context": "is warm",
+    "translat": "hug",
+    "translat_context": "теплий"
+  },
+  {
+    "word": "kiss",
+    "word_context": "is sweet",
+    "translat": "kiss",
+    "translat_context": "солодкий"
+  },
+  {
+    "word": "smell",
+    "word_context": "is pleasant",
+    "translat": "smell",
+    "translat_context": "приємний"
+  },
+  {
+    "word": "taste",
+    "word_context": "is amazing",
+    "translat": "taste",
+    "translat_context": "дивовижний"
+  },
+  {
+    "word": "freedom",
+    "word_context": "is precious",
+    "translat": "freedom",
+    "translat_context": "цінна"
+  },
+  {
+    "word": "peace",
+    "word_context": "is possible",
+    "translat": "peace",
+    "translat_context": "можлива"
+  },
+  {
+    "word": "love",
+    "word_context": "is unconditional",
+    "translat": "love",
+    "translat_context": "безумовне"
+  },
+  {
+    "word": "anger",
+    "word_context": "is dangerous",
+    "translat": "anger",
+    "translat_context": "небезпечний"
+  },
+  {
+    "word": "joy",
+    "word_context": "is overwhelming",
+    "translat": "joy",
+    "translat_context": "переважна"
+  },
+  {
+    "word": "fear",
+    "word_context": "is real",
+    "translat": "fear",
+    "translat_context": "справжній"
+  },
+  {
+    "word": "pain",
+    "word_context": "is sharp",
+    "translat": "pain",
+    "translat_context": "гострий"
+  },
+  {
+    "word": "energy",
+    "word_context": "is low",
+    "translat": "energy",
+    "translat_context": "низька"
+  },
+  {
+    "word": "thought",
+    "word_context": "is deep",
+    "translat": "думка",
+    "translat_context": "глибокий"
+  },
+  {
+    "word": "action",
+    "word_context": "is needed",
+    "translat": "action",
+    "translat_context": "потрібна"
+  },
+  {
+    "word": "life",
+    "word_context": "is beautiful",
+    "translat": "життя",
+    "translat_context": "прекрасне"
+  },
+  {
+    "word": "run",
+    "word_context": "fast",
+    "translat": "бігти",
+    "translat_context": "швидко"
+  },
+  {
+    "word": "idea",
+    "word_context": "is great",
+    "translat": "ідея",
+    "translat_context": "чудова"
+  },
+  {
+    "word": "problem",
+    "word_context": "is serious",
+    "translat": "проблема",
+    "translat_context": "серйозна"
+  },
+  {
+    "word": "child",
+    "word_context": "is playing",
+    "translat": "дитина",
+    "translat_context": "грає"
+  },
+  {
+    "word": "time",
+    "word_context": "flies",
+    "translat": "час",
+    "translat_context": "летить"
+  },
+  {
+    "word": "voice",
+    "word_context": "is soft",
+    "translat": "голос",
+    "translat_context": "м’який"
+  },
+  {
+    "word": "light",
+    "word_context": "shines",
+    "translat": "світло",
+    "translat_context": "сяє"
+  },
+  {
+    "word": "river",
+    "word_context": "flows",
+    "translat": "річка",
+    "translat_context": "тече"
+  },
+  {
+    "word": "book",
+    "word_context": "is interesting",
+    "translat": "книга",
+    "translat_context": "цікава"
+  },
+  {
+    "word": "wind",
+    "word_context": "blows",
+    "translat": "вітер",
+    "translat_context": "дує"
+  },
+  {
+    "word": "eye",
+    "word_context": "sees",
+    "translat": "око",
+    "translat_context": "бачить"
+  },
+  {
+    "word": "thought",
+    "word_context": "is deep",
+    "translat": "думка",
+    "translat_context": "глибокий"
+  },
+  {
+    "word": "question",
+    "word_context": "remains unanswered",
+    "translat": "питання",
+    "translat_context": "залишається без відповіді"
+  },
+  {
+    "word": "dream",
+    "word_context": "came true",
+    "translat": "мрія",
+    "translat_context": "здійснилася"
+  },
+  {
+    "word": "tree",
+    "word_context": "is tall",
+    "translat": "дерево",
+    "translat_context": "високе"
+  },
+  {
+    "word": "snow",
+    "word_context": "falls",
+    "translat": "сніг",
+    "translat_context": "падає"
+  },
+  {
+    "word": "music",
+    "word_context": "plays",
+    "translat": "музика",
+    "translat_context": "грає"
+  },
+  {
+    "word": "car",
+    "word_context": "drives fast",
+    "translat": "автомобіль",
+    "translat_context": "їде швидко"
+  },
+  {
+    "word": "truth",
+    "word_context": "hurts",
+    "translat": "правда",
+    "translat_context": "боляче"
+  },
+  {
+    "word": "heart",
+    "word_context": "beats",
+    "translat": "серце",
+    "translat_context": "б’ється"
+  },
+  {
+    "word": "dog",
+    "word_context": "barks",
+    "translat": "собака",
+    "translat_context": "гавкає"
+  },
+  {
+    "word": "sky",
+    "word_context": "is blue",
+    "translat": "небо",
+    "translat_context": "синє"
+  },
+  {
+    "word": "road",
+    "word_context": "is long",
+    "translat": "дорога",
+    "translat_context": "довга"
+  },
+  {
+    "word": "work",
+    "word_context": "is hard",
+    "translat": "робота",
+    "translat_context": "важка"
+  },
+  {
+    "word": "flower",
+    "word_context": "is blooming",
+    "translat": "квітка",
+    "translat_context": "цвіте"
+  },
+  {
+    "word": "fire",
+    "word_context": "burns",
+    "translat": "вогонь",
+    "translat_context": "горить"
+  },
+  {
+    "word": "hope",
+    "word_context": "remains",
+    "translat": "надія",
+    "translat_context": "залишається"
+  },
+  {
+    "word": "glass",
+    "word_context": "broke",
+    "translat": "скло",
+    "translat_context": "розбилось"
+  },
+  {
+    "word": "sun",
+    "word_context": "is shining",
+    "translat": "сонце",
+    "translat_context": "світить"
+  },
+  {
+    "word": "star",
+    "word_context": "twinkles",
+    "translat": "star",
+    "translat_context": "мерехтить"
+  },
+  {
+    "word": "cloud",
+    "word_context": "moves slowly",
+    "translat": "cloud",
+    "translat_context": "повільно рухається"
+  },
+  {
+    "word": "stone",
+    "word_context": "is heavy",
+    "translat": "stone",
+    "translat_context": "важкий"
+  },
+  {
+    "word": "bird",
+    "word_context": "sings",
+    "translat": "bird",
+    "translat_context": "співає"
+  },
+  {
+    "word": "game",
+    "word_context": "is fun",
+    "translat": "game",
+    "translat_context": "весела"
+  },
+  {
+    "word": "plan",
+    "word_context": "is working",
+    "translat": "plan",
+    "translat_context": "працює"
+  },
+  {
+    "word": "story",
+    "word_context": "is touching",
+    "translat": "story",
+    "translat_context": "зворушлива"
+  },
+  {
+    "word": "note",
+    "word_context": "is written",
+    "translat": "note",
+    "translat_context": "написана"
+  },
+  {
+    "word": "wave",
+    "word_context": "crashes",
+    "translat": "wave",
+    "translat_context": "розбивається"
+  },
+  {
+    "word": "sound",
+    "word_context": "is loud",
+    "translat": "sound",
+    "translat_context": "гучний"
+  },
+  {
+    "word": "chance",
+    "word_context": "is rare",
+    "translat": "chance",
+    "translat_context": "рідкісний"
+  },
+  {
+    "word": "smile",
+    "word_context": "is bright",
+    "translat": "smile",
+    "translat_context": "яскрава"
+  },
+  {
+    "word": "cry",
+    "word_context": "was loud",
+    "translat": "cry",
+    "translat_context": "була гучна"
+  },
+  {
+    "word": "dance",
+    "word_context": "was graceful",
+    "translat": "dance",
+    "translat_context": "була граційна"
+  },
+  {
+    "word": "song",
+    "word_context": "is catchy",
+    "translat": "song",
+    "translat_context": "запам’ятовується"
+  },
+  {
+    "word": "memory",
+    "word_context": "is fading",
+    "translat": "memory",
+    "translat_context": "згасає"
+  },
+  {
+    "word": "shadow",
+    "word_context": "follows",
+    "translat": "shadow",
+    "translat_context": "слідує"
+  },
+  {
+    "word": "storm",
+    "word_context": "is coming",
+    "translat": "storm",
+    "translat_context": "наближається"
+  },
+  {
+    "word": "wish",
+    "word_context": "is granted",
+    "translat": "wish",
+    "translat_context": "виконано"
+  },
+  {
+    "word": "forest",
+    "word_context": "is dense",
+    "translat": "forest",
+    "translat_context": "густий"
+  },
+  {
+    "word": "ocean",
+    "word_context": "is deep",
+    "translat": "ocean",
+    "translat_context": "глибокий"
+  },
+  {
+    "word": "mountain",
+    "word_context": "is high",
+    "translat": "mountain",
+    "translat_context": "високий"
+  },
+  {
+    "word": "friend",
+    "word_context": "is loyal",
+    "translat": "friend",
+    "translat_context": "вірний"
+  },
+  {
+    "word": "family",
+    "word_context": "is everything",
+    "translat": "family",
+    "translat_context": "це все"
+  },
+  {
+    "word": "city",
+    "word_context": "never sleeps",
+    "translat": "city",
+    "translat_context": "ніколи не спить"
+  },
+  {
+    "word": "home",
+    "word_context": "is warm",
+    "translat": "home",
+    "translat_context": "теплий"
+  },
+  {
+    "word": "voice",
+    "word_context": "is soft",
+    "translat": "голос",
+    "translat_context": "м’який"
+  },
+  {
+    "word": "letter",
+    "word_context": "is written",
+    "translat": "letter",
+    "translat_context": "написана"
+  },
+  {
+    "word": "answer",
+    "word_context": "is correct",
+    "translat": "answer",
+    "translat_context": "правильна"
+  },
+  {
+    "word": "thought",
+    "word_context": "is deep",
+    "translat": "думка",
+    "translat_context": "глибокий"
+  },
+  {
+    "word": "dream",
+    "word_context": "came true",
+    "translat": "мрія",
+    "translat_context": "здійснилася"
+  },
+  {
+    "word": "journey",
+    "word_context": "begins",
+    "translat": "journey",
+    "translat_context": "починається"
+  },
+  {
+    "word": "lesson",
+    "word_context": "is learned",
+    "translat": "lesson",
+    "translat_context": "вивчено"
+  },
+  {
+    "word": "message",
+    "word_context": "arrived",
+    "translat": "message",
+    "translat_context": "прибула"
+  },
+  {
+    "word": "goal",
+    "word_context": "is clear",
+    "translat": "goal",
+    "translat_context": "ясна"
+  },
+  {
+    "word": "victory",
+    "word_context": "is sweet",
+    "translat": "victory",
+    "translat_context": "солодкий"
+  },
+  {
+    "word": "failure",
+    "word_context": "hurts",
+    "translat": "failure",
+    "translat_context": "боляче"
+  },
+  {
+    "word": "moment",
+    "word_context": "is gone",
+    "translat": "moment",
+    "translat_context": "зник"
+  },
+  {
+    "word": "gift",
+    "word_context": "is wrapped",
+    "translat": "gift",
+    "translat_context": "запакований"
+  },
+  {
+    "word": "emotion",
+    "word_context": "is strong",
+    "translat": "emotion",
+    "translat_context": "сильна"
+  },
+  {
+    "word": "enemy",
+    "word_context": "attacks",
+    "translat": "enemy",
+    "translat_context": "атакує"
+  },
+  {
+    "word": "path",
+    "word_context": "is chosen",
+    "translat": "path",
+    "translat_context": "обраний"
+  },
+  {
+    "word": "reason",
+    "word_context": "is unclear",
+    "translat": "reason",
+    "translat_context": "незрозумілий"
+  },
+  {
+    "word": "season",
+    "word_context": "changes",
+    "translat": "season",
+    "translat_context": "змінюється"
+  },
+  {
+    "word": "signal",
+    "word_context": "is lost",
+    "translat": "signal",
+    "translat_context": "зник"
+  },
+  {
+    "word": "smoke",
+    "word_context": "rises",
+    "translat": "smoke",
+    "translat_context": "піднімається"
+  },
+  {
+    "word": "screen",
+    "word_context": "is broken",
+    "translat": "screen",
+    "translat_context": "зламаний"
+  },
+  {
+    "word": "reflection",
+    "word_context": "is visible",
+    "translat": "reflection",
+    "translat_context": "видимий"
+  },
+  {
+    "word": "silence",
+    "word_context": "is peaceful",
+    "translat": "silence",
+    "translat_context": "мирна"
+  },
+  {
+    "word": "strength",
+    "word_context": "is needed",
+    "translat": "strength",
+    "translat_context": "потрібна"
+  },
+  {
+    "word": "weakness",
+    "word_context": "is revealed",
+    "translat": "weakness",
+    "translat_context": "виявлено"
+  },
+  {
+    "word": "vision",
+    "word_context": "is clear",
+    "translat": "vision",
+    "translat_context": "ясна"
+  },
+  {
+    "word": "mission",
+    "word_context": "is accomplished",
+    "translat": "mission",
+    "translat_context": "виконано"
+  },
+  {
+    "word": "noise",
+    "word_context": "is constant",
+    "translat": "noise",
+    "translat_context": "постійний"
+  },
+  {
+    "word": "whisper",
+    "word_context": "is soft",
+    "translat": "whisper",
+    "translat_context": "м’який"
+  },
+  {
+    "word": "touch",
+    "word_context": "is gentle",
+    "translat": "touch",
+    "translat_context": "ніжний"
+  },
+  {
+    "word": "hug",
+    "word_context": "is warm",
+    "translat": "hug",
+    "translat_context": "теплий"
+  },
+  {
+    "word": "kiss",
+    "word_context": "is sweet",
+    "translat": "kiss",
+    "translat_context": "солодкий"
+  },
+  {
+    "word": "smell",
+    "word_context": "is pleasant",
+    "translat": "smell",
+    "translat_context": "приємний"
+  },
+  {
+    "word": "taste",
+    "word_context": "is amazing",
+    "translat": "taste",
+    "translat_context": "дивовижний"
+  },
+  {
+    "word": "freedom",
+    "word_context": "is precious",
+    "translat": "freedom",
+    "translat_context": "цінна"
+  },
+  {
+    "word": "peace",
+    "word_context": "is possible",
+    "translat": "peace",
+    "translat_context": "можлива"
+  },
+  {
+    "word": "love",
+    "word_context": "is unconditional",
+    "translat": "love",
+    "translat_context": "безумовне"
+  },
+  {
+    "word": "anger",
+    "word_context": "is dangerous",
+    "translat": "anger",
+    "translat_context": "небезпечний"
+  },
+  {
+    "word": "joy",
+    "word_context": "is overwhelming",
+    "translat": "joy",
+    "translat_context": "переважна"
+  },
+  {
+    "word": "fear",
+    "word_context": "is real",
+    "translat": "fear",
+    "translat_context": "справжній"
+  },
+  {
+    "word": "pain",
+    "word_context": "is sharp",
+    "translat": "pain",
+    "translat_context": "гострий"
+  },
+  {
+    "word": "energy",
+    "word_context": "is low",
+    "translat": "energy",
+    "translat_context": "низька"
+  },
+  {
+    "word": "thought",
+    "word_context": "is deep",
+    "translat": "думка",
+    "translat_context": "глибокий"
+  },
+  {
+    "word": "action",
+    "word_context": "is needed",
+    "translat": "action",
+    "translat_context": "потрібна"
+  },
+  {
+    "word": "life",
+    "word_context": "is beautiful",
+    "translat": "життя",
+    "translat_context": "прекрасне"
+  },
+  {
+    "word": "run",
+    "word_context": "fast",
+    "translat": "бігти",
+    "translat_context": "швидко"
+  },
+  {
+    "word": "idea",
+    "word_context": "is great",
+    "translat": "ідея",
+    "translat_context": "чудова"
+  },
+  {
+    "word": "problem",
+    "word_context": "is serious",
+    "translat": "проблема",
+    "translat_context": "серйозна"
+  },
+  {
+    "word": "child",
+    "word_context": "is playing",
+    "translat": "дитина",
+    "translat_context": "грає"
+  },
+  {
+    "word": "time",
+    "word_context": "flies",
+    "translat": "час",
+    "translat_context": "летить"
+  },
+  {
+    "word": "voice",
+    "word_context": "is soft",
+    "translat": "голос",
+    "translat_context": "м’який"
+  },
+  {
+    "word": "light",
+    "word_context": "shines",
+    "translat": "світло",
+    "translat_context": "сяє"
+  },
+  {
+    "word": "river",
+    "word_context": "flows",
+    "translat": "річка",
+    "translat_context": "тече"
+  },
+  {
+    "word": "book",
+    "word_context": "is interesting",
+    "translat": "книга",
+    "translat_context": "цікава"
+  },
+  {
+    "word": "wind",
+    "word_context": "blows",
+    "translat": "вітер",
+    "translat_context": "дує"
+  },
+  {
+    "word": "eye",
+    "word_context": "sees",
+    "translat": "око",
+    "translat_context": "бачить"
+  },
+  {
+    "word": "thought",
+    "word_context": "is deep",
+    "translat": "думка",
+    "translat_context": "глибокий"
+  },
+  {
+    "word": "question",
+    "word_context": "remains unanswered",
+    "translat": "питання",
+    "translat_context": "залишається без відповіді"
+  },
+  {
+    "word": "dream",
+    "word_context": "came true",
+    "translat": "мрія",
+    "translat_context": "здійснилася"
+  },
+  {
+    "word": "tree",
+    "word_context": "is tall",
+    "translat": "дерево",
+    "translat_context": "високе"
+  },
+  {
+    "word": "snow",
+    "word_context": "falls",
+    "translat": "сніг",
+    "translat_context": "падає"
+  },
+  {
+    "word": "music",
+    "word_context": "plays",
+    "translat": "музика",
+    "translat_context": "грає"
+  },
+  {
+    "word": "car",
+    "word_context": "drives fast",
+    "translat": "автомобіль",
+    "translat_context": "їде швидко"
+  },
+  {
+    "word": "truth",
+    "word_context": "hurts",
+    "translat": "правда",
+    "translat_context": "боляче"
+  },
+  {
+    "word": "heart",
+    "word_context": "beats",
+    "translat": "серце",
+    "translat_context": "б’ється"
+  },
+  {
+    "word": "dog",
+    "word_context": "barks",
+    "translat": "собака",
+    "translat_context": "гавкає"
+  },
+  {
+    "word": "sky",
+    "word_context": "is blue",
+    "translat": "небо",
+    "translat_context": "синє"
+  },
+  {
+    "word": "road",
+    "word_context": "is long",
+    "translat": "дорога",
+    "translat_context": "довга"
+  },
+  {
+    "word": "work",
+    "word_context": "is hard",
+    "translat": "робота",
+    "translat_context": "важка"
+  },
+  {
+    "word": "flower",
+    "word_context": "is blooming",
+    "translat": "квітка",
+    "translat_context": "цвіте"
+  },
+  {
+    "word": "fire",
+    "word_context": "burns",
+    "translat": "вогонь",
+    "translat_context": "горить"
+  },
+  {
+    "word": "hope",
+    "word_context": "remains",
+    "translat": "надія",
+    "translat_context": "залишається"
+  },
+  {
+    "word": "glass",
+    "word_context": "broke",
+    "translat": "скло",
+    "translat_context": "розбилось"
+  },
+  {
+    "word": "sun",
+    "word_context": "is shining",
+    "translat": "сонце",
+    "translat_context": "світить"
+  },
+  {
+    "word": "star",
+    "word_context": "twinkles",
+    "translat": "star",
+    "translat_context": "мерехтить"
+  },
+  {
+    "word": "cloud",
+    "word_context": "moves slowly",
+    "translat": "cloud",
+    "translat_context": "повільно рухається"
+  },
+  {
+    "word": "stone",
+    "word_context": "is heavy",
+    "translat": "stone",
+    "translat_context": "важкий"
+  },
+  {
+    "word": "bird",
+    "word_context": "sings",
+    "translat": "bird",
+    "translat_context": "співає"
+  },
+  {
+    "word": "game",
+    "word_context": "is fun",
+    "translat": "game",
+    "translat_context": "весела"
+  },
+  {
+    "word": "plan",
+    "word_context": "is working",
+    "translat": "plan",
+    "translat_context": "працює"
+  },
+  {
+    "word": "story",
+    "word_context": "is touching",
+    "translat": "story",
+    "translat_context": "зворушлива"
+  },
+  {
+    "word": "note",
+    "word_context": "is written",
+    "translat": "note",
+    "translat_context": "написана"
+  },
+  {
+    "word": "wave",
+    "word_context": "crashes",
+    "translat": "wave",
+    "translat_context": "розбивається"
+  },
+  {
+    "word": "sound",
+    "word_context": "is loud",
+    "translat": "sound",
+    "translat_context": "гучний"
+  },
+  {
+    "word": "chance",
+    "word_context": "is rare",
+    "translat": "chance",
+    "translat_context": "рідкісний"
+  },
+  {
+    "word": "smile",
+    "word_context": "is bright",
+    "translat": "smile",
+    "translat_context": "яскрава"
+  },
+  {
+    "word": "cry",
+    "word_context": "was loud",
+    "translat": "cry",
+    "translat_context": "була гучна"
+  },
+  {
+    "word": "dance",
+    "word_context": "was graceful",
+    "translat": "dance",
+    "translat_context": "була граційна"
+  },
+  {
+    "word": "song",
+    "word_context": "is catchy",
+    "translat": "song",
+    "translat_context": "запам’ятовується"
+  },
+  {
+    "word": "memory",
+    "word_context": "is fading",
+    "translat": "memory",
+    "translat_context": "згасає"
+  },
+  {
+    "word": "shadow",
+    "word_context": "follows",
+    "translat": "shadow",
+    "translat_context": "слідує"
+  },
+  {
+    "word": "storm",
+    "word_context": "is coming",
+    "translat": "storm",
+    "translat_context": "наближається"
+  },
+  {
+    "word": "wish",
+    "word_context": "is granted",
+    "translat": "wish",
+    "translat_context": "виконано"
+  },
+  {
+    "word": "forest",
+    "word_context": "is dense",
+    "translat": "forest",
+    "translat_context": "густий"
+  },
+  {
+    "word": "ocean",
+    "word_context": "is deep",
+    "translat": "ocean",
+    "translat_context": "глибокий"
+  },
+  {
+    "word": "mountain",
+    "word_context": "is high",
+    "translat": "mountain",
+    "translat_context": "високий"
+  },
+  {
+    "word": "friend",
+    "word_context": "is loyal",
+    "translat": "friend",
+    "translat_context": "вірний"
+  },
+  {
+    "word": "family",
+    "word_context": "is everything",
+    "translat": "family",
+    "translat_context": "це все"
+  },
+  {
+    "word": "city",
+    "word_context": "never sleeps",
+    "translat": "city",
+    "translat_context": "ніколи не спить"
+  },
+  {
+    "word": "home",
+    "word_context": "is warm",
+    "translat": "home",
+    "translat_context": "теплий"
+  },
+  {
+    "word": "voice",
+    "word_context": "is soft",
+    "translat": "голос",
+    "translat_context": "м’який"
+  },
+  {
+    "word": "letter",
+    "word_context": "is written",
+    "translat": "letter",
+    "translat_context": "написана"
+  },
+  {
+    "word": "answer",
+    "word_context": "is correct",
+    "translat": "answer",
+    "translat_context": "правильна"
+  },
+  {
+    "word": "thought",
+    "word_context": "is deep",
+    "translat": "думка",
+    "translat_context": "глибокий"
+  },
+  {
+    "word": "dream",
+    "word_context": "came true",
+    "translat": "мрія",
+    "translat_context": "здійснилася"
+  },
+  {
+    "word": "journey",
+    "word_context": "begins",
+    "translat": "journey",
+    "translat_context": "починається"
+  },
+  {
+    "word": "lesson",
+    "word_context": "is learned",
+    "translat": "lesson",
+    "translat_context": "вивчено"
+  },
+  {
+    "word": "message",
+    "word_context": "arrived",
+    "translat": "message",
+    "translat_context": "прибула"
+  },
+  {
+    "word": "goal",
+    "word_context": "is clear",
+    "translat": "goal",
+    "translat_context": "ясна"
+  },
+  {
+    "word": "victory",
+    "word_context": "is sweet",
+    "translat": "victory",
+    "translat_context": "солодкий"
+  },
+  {
+    "word": "failure",
+    "word_context": "hurts",
+    "translat": "failure",
+    "translat_context": "боляче"
+  },
+  {
+    "word": "moment",
+    "word_context": "is gone",
+    "translat": "moment",
+    "translat_context": "зник"
+  },
+  {
+    "word": "gift",
+    "word_context": "is wrapped",
+    "translat": "gift",
+    "translat_context": "запакований"
+  },
+  {
+    "word": "emotion",
+    "word_context": "is strong",
+    "translat": "emotion",
+    "translat_context": "сильна"
+  },
+  {
+    "word": "enemy",
+    "word_context": "attacks",
+    "translat": "enemy",
+    "translat_context": "атакує"
+  },
+  {
+    "word": "path",
+    "word_context": "is chosen",
+    "translat": "path",
+    "translat_context": "обраний"
+  },
+  {
+    "word": "reason",
+    "word_context": "is unclear",
+    "translat": "reason",
+    "translat_context": "незрозумілий"
+  },
+  {
+    "word": "season",
+    "word_context": "changes",
+    "translat": "season",
+    "translat_context": "змінюється"
+  },
+  {
+    "word": "signal",
+    "word_context": "is lost",
+    "translat": "signal",
+    "translat_context": "зник"
+  },
+  {
+    "word": "smoke",
+    "word_context": "rises",
+    "translat": "smoke",
+    "translat_context": "піднімається"
+  },
+  {
+    "word": "screen",
+    "word_context": "is broken",
+    "translat": "screen",
+    "translat_context": "зламаний"
+  },
+  {
+    "word": "reflection",
+    "word_context": "is visible",
+    "translat": "reflection",
+    "translat_context": "видимий"
+  },
+  {
+    "word": "silence",
+    "word_context": "is peaceful",
+    "translat": "silence",
+    "translat_context": "мирна"
+  },
+  {
+    "word": "strength",
+    "word_context": "is needed",
+    "translat": "strength",
+    "translat_context": "потрібна"
+  },
+  {
+    "word": "weakness",
+    "word_context": "is revealed",
+    "translat": "weakness",
+    "translat_context": "виявлено"
+  },
+  {
+    "word": "vision",
+    "word_context": "is clear",
+    "translat": "vision",
+    "translat_context": "ясна"
+  },
+  {
+    "word": "mission",
+    "word_context": "is accomplished",
+    "translat": "mission",
+    "translat_context": "виконано"
+  },
+  {
+    "word": "noise",
+    "word_context": "is constant",
+    "translat": "noise",
+    "translat_context": "постійний"
+  },
+  {
+    "word": "whisper",
+    "word_context": "is soft",
+    "translat": "whisper",
+    "translat_context": "м’який"
+  },
+  {
+    "word": "touch",
+    "word_context": "is gentle",
+    "translat": "touch",
+    "translat_context": "ніжний"
+  },
+  {
+    "word": "hug",
+    "word_context": "is warm",
+    "translat": "hug",
+    "translat_context": "теплий"
+  },
+  {
+    "word": "kiss",
+    "word_context": "is sweet",
+    "translat": "kiss",
+    "translat_context": "солодкий"
+  },
+  {
+    "word": "smell",
+    "word_context": "is pleasant",
+    "translat": "smell",
+    "translat_context": "приємний"
+  },
+  {
+    "word": "taste",
+    "word_context": "is amazing",
+    "translat": "taste",
+    "translat_context": "дивовижний"
+  },
+  {
+    "word": "freedom",
+    "word_context": "is precious",
+    "translat": "freedom",
+    "translat_context": "цінна"
+  },
+  {
+    "word": "peace",
+    "word_context": "is possible",
+    "translat": "peace",
+    "translat_context": "можлива"
+  },
+  {
+    "word": "love",
+    "word_context": "is unconditional",
+    "translat": "love",
+    "translat_context": "безумовне"
+  },
+  {
+    "word": "anger",
+    "word_context": "is dangerous",
+    "translat": "anger",
+    "translat_context": "небезпечний"
+  },
+  {
+    "word": "joy",
+    "word_context": "is overwhelming",
+    "translat": "joy",
+    "translat_context": "переважна"
+  },
+  {
+    "word": "fear",
+    "word_context": "is real",
+    "translat": "fear",
+    "translat_context": "справжній"
+  },
+  {
+    "word": "pain",
+    "word_context": "is sharp",
+    "translat": "pain",
+    "translat_context": "гострий"
+  },
+  {
+    "word": "energy",
+    "word_context": "is low",
+    "translat": "energy",
+    "translat_context": "низька"
+  },
+  {
+    "word": "thought",
+    "word_context": "is deep",
+    "translat": "думка",
+    "translat_context": "глибокий"
+  },
+  {
+    "word": "action",
+    "word_context": "is needed",
+    "translat": "action",
+    "translat_context": "потрібна"
+  },
+  {
+    "word": "life",
+    "word_context": "is beautiful",
+    "translat": "життя",
+    "translat_context": "прекрасне"
+  },
+  {
+    "word": "run",
+    "word_context": "fast",
+    "translat": "бігти",
+    "translat_context": "швидко"
+  },
+  {
+    "word": "idea",
+    "word_context": "is great",
+    "translat": "ідея",
+    "translat_context": "чудова"
+  },
+  {
+    "word": "problem",
+    "word_context": "is serious",
+    "translat": "проблема",
+    "translat_context": "серйозна"
+  },
+  {
+    "word": "child",
+    "word_context": "is playing",
+    "translat": "дитина",
+    "translat_context": "грає"
+  },
+  {
+    "word": "time",
+    "word_context": "flies",
+    "translat": "час",
+    "translat_context": "летить"
+  },
+  {
+    "word": "voice",
+    "word_context": "is soft",
+    "translat": "голос",
+    "translat_context": "м’який"
+  },
+  {
+    "word": "light",
+    "word_context": "shines",
+    "translat": "світло",
+    "translat_context": "сяє"
+  },
+  {
+    "word": "river",
+    "word_context": "flows",
+    "translat": "річка",
+    "translat_context": "тече"
+  },
+  {
+    "word": "book",
+    "word_context": "is interesting",
+    "translat": "книга",
+    "translat_context": "цікава"
+  },
+  {
+    "word": "wind",
+    "word_context": "blows",
+    "translat": "вітер",
+    "translat_context": "дує"
+  },
+  {
+    "word": "eye",
+    "word_context": "sees",
+    "translat": "око",
+    "translat_context": "бачить"
+  },
+  {
+    "word": "thought",
+    "word_context": "is deep",
+    "translat": "думка",
+    "translat_context": "глибокий"
+  },
+  {
+    "word": "question",
+    "word_context": "remains unanswered",
+    "translat": "питання",
+    "translat_context": "залишається без відповіді"
+  },
+  {
+    "word": "dream",
+    "word_context": "came true",
+    "translat": "мрія",
+    "translat_context": "здійснилася"
+  },
+  {
+    "word": "tree",
+    "word_context": "is tall",
+    "translat": "дерево",
+    "translat_context": "високе"
+  },
+  {
+    "word": "snow",
+    "word_context": "falls",
+    "translat": "сніг",
+    "translat_context": "падає"
+  },
+  {
+    "word": "music",
+    "word_context": "plays",
+    "translat": "музика",
+    "translat_context": "грає"
+  },
+  {
+    "word": "car",
+    "word_context": "drives fast",
+    "translat": "автомобіль",
+    "translat_context": "їде швидко"
+  },
+  {
+    "word": "truth",
+    "word_context": "hurts",
+    "translat": "правда",
+    "translat_context": "боляче"
+  },
+  {
+    "word": "heart",
+    "word_context": "beats",
+    "translat": "серце",
+    "translat_context": "б’ється"
+  },
+  {
+    "word": "dog",
+    "word_context": "barks",
+    "translat": "собака",
+    "translat_context": "гавкає"
+  },
+  {
+    "word": "sky",
+    "word_context": "is blue",
+    "translat": "небо",
+    "translat_context": "синє"
+  },
+  {
+    "word": "road",
+    "word_context": "is long",
+    "translat": "дорога",
+    "translat_context": "довга"
+  },
+  {
+    "word": "work",
+    "word_context": "is hard",
+    "translat": "робота",
+    "translat_context": "важка"
+  },
+  {
+    "word": "flower",
+    "word_context": "is blooming",
+    "translat": "квітка",
+    "translat_context": "цвіте"
+  },
+  {
+    "word": "fire",
+    "word_context": "burns",
+    "translat": "вогонь",
+    "translat_context": "горить"
+  },
+  {
+    "word": "hope",
+    "word_context": "remains",
+    "translat": "надія",
+    "translat_context": "залишається"
+  },
+  {
+    "word": "glass",
+    "word_context": "broke",
+    "translat": "скло",
+    "translat_context": "розбилось"
+  },
+  {
+    "word": "sun",
+    "word_context": "is shining",
+    "translat": "сонце",
+    "translat_context": "світить"
+  },
+  {
+    "word": "star",
+    "word_context": "twinkles",
+    "translat": "star",
+    "translat_context": "мерехтить"
+  },
+  {
+    "word": "cloud",
+    "word_context": "moves slowly",
+    "translat": "cloud",
+    "translat_context": "повільно рухається"
+  },
+  {
+    "word": "stone",
+    "word_context": "is heavy",
+    "translat": "stone",
+    "translat_context": "важкий"
+  },
+  {
+    "word": "bird",
+    "word_context": "sings",
+    "translat": "bird",
+    "translat_context": "співає"
+  },
+  {
+    "word": "game",
+    "word_context": "is fun",
+    "translat": "game",
+    "translat_context": "весела"
+  },
+  {
+    "word": "plan",
+    "word_context": "is working",
+    "translat": "plan",
+    "translat_context": "працює"
+  },
+  {
+    "word": "story",
+    "word_context": "is touching",
+    "translat": "story",
+    "translat_context": "зворушлива"
+  },
+  {
+    "word": "note",
+    "word_context": "is written",
+    "translat": "note",
+    "translat_context": "написана"
+  },
+  {
+    "word": "wave",
+    "word_context": "crashes",
+    "translat": "wave",
+    "translat_context": "розбивається"
+  },
+  {
+    "word": "sound",
+    "word_context": "is loud",
+    "translat": "sound",
+    "translat_context": "гучний"
+  },
+  {
+    "word": "chance",
+    "word_context": "is rare",
+    "translat": "chance",
+    "translat_context": "рідкісний"
+  },
+  {
+    "word": "smile",
+    "word_context": "is bright",
+    "translat": "smile",
+    "translat_context": "яскрава"
+  },
+  {
+    "word": "cry",
+    "word_context": "was loud",
+    "translat": "cry",
+    "translat_context": "була гучна"
+  },
+  {
+    "word": "dance",
+    "word_context": "was graceful",
+    "translat": "dance",
+    "translat_context": "була граційна"
+  },
+  {
+    "word": "song",
+    "word_context": "is catchy",
+    "translat": "song",
+    "translat_context": "запам’ятовується"
+  },
+  {
+    "word": "memory",
+    "word_context": "is fading",
+    "translat": "memory",
+    "translat_context": "згасає"
+  },
+  {
+    "word": "shadow",
+    "word_context": "follows",
+    "translat": "shadow",
+    "translat_context": "слідує"
+  },
+  {
+    "word": "storm",
+    "word_context": "is coming",
+    "translat": "storm",
+    "translat_context": "наближається"
+  },
+  {
+    "word": "wish",
+    "word_context": "is granted",
+    "translat": "wish",
+    "translat_context": "виконано"
+  },
+  {
+    "word": "forest",
+    "word_context": "is dense",
+    "translat": "forest",
+    "translat_context": "густий"
+  },
+  {
+    "word": "ocean",
+    "word_context": "is deep",
+    "translat": "ocean",
+    "translat_context": "глибокий"
+  },
+  {
+    "word": "mountain",
+    "word_context": "is high",
+    "translat": "mountain",
+    "translat_context": "високий"
+  },
+  {
+    "word": "friend",
+    "word_context": "is loyal",
+    "translat": "friend",
+    "translat_context": "вірний"
+  },
+  {
+    "word": "family",
+    "word_context": "is everything",
+    "translat": "family",
+    "translat_context": "це все"
+  },
+  {
+    "word": "city",
+    "word_context": "never sleeps",
+    "translat": "city",
+    "translat_context": "ніколи не спить"
+  },
+  {
+    "word": "home",
+    "word_context": "is warm",
+    "translat": "home",
+    "translat_context": "теплий"
+  },
+  {
+    "word": "voice",
+    "word_context": "is soft",
+    "translat": "голос",
+    "translat_context": "м’який"
+  },
+  {
+    "word": "letter",
+    "word_context": "is written",
+    "translat": "letter",
+    "translat_context": "написана"
+  },
+  {
+    "word": "answer",
+    "word_context": "is correct",
+    "translat": "answer",
+    "translat_context": "правильна"
+  },
+  {
+    "word": "thought",
+    "word_context": "is deep",
+    "translat": "думка",
+    "translat_context": "глибокий"
+  },
+  {
+    "word": "dream",
+    "word_context": "came true",
+    "translat": "мрія",
+    "translat_context": "здійснилася"
+  },
+  {
+    "word": "journey",
+    "word_context": "begins",
+    "translat": "journey",
+    "translat_context": "починається"
+  },
+  {
+    "word": "lesson",
+    "word_context": "is learned",
+    "translat": "lesson",
+    "translat_context": "вивчено"
+  },
+  {
+    "word": "message",
+    "word_context": "arrived",
+    "translat": "message",
+    "translat_context": "прибула"
+  },
+  {
+    "word": "goal",
+    "word_context": "is clear",
+    "translat": "goal",
+    "translat_context": "ясна"
+  },
+  {
+    "word": "victory",
+    "word_context": "is sweet",
+    "translat": "victory",
+    "translat_context": "солодкий"
+  },
+  {
+    "word": "failure",
+    "word_context": "hurts",
+    "translat": "failure",
+    "translat_context": "боляче"
+  },
+  {
+    "word": "moment",
+    "word_context": "is gone",
+    "translat": "moment",
+    "translat_context": "зник"
+  },
+  {
+    "word": "gift",
+    "word_context": "is wrapped",
+    "translat": "gift",
+    "translat_context": "запакований"
+  },
+  {
+    "word": "emotion",
+    "word_context": "is strong",
+    "translat": "emotion",
+    "translat_context": "сильна"
+  },
+  {
+    "word": "enemy",
+    "word_context": "attacks",
+    "translat": "enemy",
+    "translat_context": "атакує"
+  },
+  {
+    "word": "path",
+    "word_context": "is chosen",
+    "translat": "path",
+    "translat_context": "обраний"
+  },
+  {
+    "word": "reason",
+    "word_context": "is unclear",
+    "translat": "reason",
+    "translat_context": "незрозумілий"
+  },
+  {
+    "word": "season",
+    "word_context": "changes",
+    "translat": "season",
+    "translat_context": "змінюється"
+  },
+  {
+    "word": "signal",
+    "word_context": "is lost",
+    "translat": "signal",
+    "translat_context": "зник"
+  },
+  {
+    "word": "smoke",
+    "word_context": "rises",
+    "translat": "smoke",
+    "translat_context": "піднімається"
+  },
+  {
+    "word": "screen",
+    "word_context": "is broken",
+    "translat": "screen",
+    "translat_context": "зламаний"
+  },
+  {
+    "word": "reflection",
+    "word_context": "is visible",
+    "translat": "reflection",
+    "translat_context": "видимий"
+  },
+  {
+    "word": "silence",
+    "word_context": "is peaceful",
+    "translat": "silence",
+    "translat_context": "мирна"
+  },
+  {
+    "word": "strength",
+    "word_context": "is needed",
+    "translat": "strength",
+    "translat_context": "потрібна"
+  },
+  {
+    "word": "weakness",
+    "word_context": "is revealed",
+    "translat": "weakness",
+    "translat_context": "виявлено"
+  },
+  {
+    "word": "vision",
+    "word_context": "is clear",
+    "translat": "vision",
+    "translat_context": "ясна"
+  },
+  {
+    "word": "mission",
+    "word_context": "is accomplished",
+    "translat": "mission",
+    "translat_context": "виконано"
+  },
+  {
+    "word": "noise",
+    "word_context": "is constant",
+    "translat": "noise",
+    "translat_context": "постійний"
+  },
+  {
+    "word": "whisper",
+    "word_context": "is soft",
+    "translat": "whisper",
+    "translat_context": "м’який"
+  },
+  {
+    "word": "touch",
+    "word_context": "is gentle",
+    "translat": "touch",
+    "translat_context": "ніжний"
+  },
+  {
+    "word": "hug",
+    "word_context": "is warm",
+    "translat": "hug",
+    "translat_context": "теплий"
+  },
+  {
+    "word": "kiss",
+    "word_context": "is sweet",
+    "translat": "kiss",
+    "translat_context": "солодкий"
+  },
+  {
+    "word": "smell",
+    "word_context": "is pleasant",
+    "translat": "smell",
+    "translat_context": "приємний"
+  },
+  {
+    "word": "taste",
+    "word_context": "is amazing",
+    "translat": "taste",
+    "translat_context": "дивовижний"
+  },
+  {
+    "word": "freedom",
+    "word_context": "is precious",
+    "translat": "freedom",
+    "translat_context": "цінна"
+  },
+  {
+    "word": "peace",
+    "word_context": "is possible",
+    "translat": "peace",
+    "translat_context": "можлива"
+  },
+  {
+    "word": "love",
+    "word_context": "is unconditional",
+    "translat": "love",
+    "translat_context": "безумовне"
+  },
+  {
+    "word": "anger",
+    "word_context": "is dangerous",
+    "translat": "anger",
+    "translat_context": "небезпечний"
+  },
+  {
+    "word": "joy",
+    "word_context": "is overwhelming",
+    "translat": "joy",
+    "translat_context": "переважна"
+  },
+  {
+    "word": "fear",
+    "word_context": "is real",
+    "translat": "fear",
+    "translat_context": "справжній"
+  },
+  {
+    "word": "pain",
+    "word_context": "is sharp",
+    "translat": "pain",
+    "translat_context": "гострий"
+  },
+  {
+    "word": "energy",
+    "word_context": "is low",
+    "translat": "energy",
+    "translat_context": "низька"
+  },
+  {
+    "word": "thought",
+    "word_context": "is deep",
+    "translat": "думка",
+    "translat_context": "глибокий"
+  },
+  {
+    "word": "action",
+    "word_context": "is needed",
+    "translat": "action",
+    "translat_context": "потрібна"
+  },
+  {
+    "word": "life",
+    "word_context": "is beautiful",
+    "translat": "життя",
+    "translat_context": "прекрасне"
+  },
+  {
+    "word": "run",
+    "word_context": "fast",
+    "translat": "бігти",
+    "translat_context": "швидко"
+  },
+  {
+    "word": "idea",
+    "word_context": "is great",
+    "translat": "ідея",
+    "translat_context": "чудова"
+  },
+  {
+    "word": "problem",
+    "word_context": "is serious",
+    "translat": "проблема",
+    "translat_context": "серйозна"
+  },
+  {
+    "word": "child",
+    "word_context": "is playing",
+    "translat": "дитина",
+    "translat_context": "грає"
+  },
+  {
+    "word": "time",
+    "word_context": "flies",
+    "translat": "час",
+    "translat_context": "летить"
+  },
+  {
+    "word": "voice",
+    "word_context": "is soft",
+    "translat": "голос",
+    "translat_context": "м’який"
+  },
+  {
+    "word": "light",
+    "word_context": "shines",
+    "translat": "світло",
+    "translat_context": "сяє"
+  },
+  {
+    "word": "river",
+    "word_context": "flows",
+    "translat": "річка",
+    "translat_context": "тече"
+  },
+  {
+    "word": "book",
+    "word_context": "is interesting",
+    "translat": "книга",
+    "translat_context": "цікава"
+  },
+  {
+    "word": "wind",
+    "word_context": "blows",
+    "translat": "вітер",
+    "translat_context": "дує"
+  },
+  {
+    "word": "eye",
+    "word_context": "sees",
+    "translat": "око",
+    "translat_context": "бачить"
+  },
+  {
+    "word": "thought",
+    "word_context": "is deep",
+    "translat": "думка",
+    "translat_context": "глибокий"
+  },
+  {
+    "word": "question",
+    "word_context": "remains unanswered",
+    "translat": "питання",
+    "translat_context": "залишається без відповіді"
+  },
+  {
+    "word": "dream",
+    "word_context": "came true",
+    "translat": "мрія",
+    "translat_context": "здійснилася"
+  },
+  {
+    "word": "tree",
+    "word_context": "is tall",
+    "translat": "дерево",
+    "translat_context": "високе"
+  },
+  {
+    "word": "snow",
+    "word_context": "falls",
+    "translat": "сніг",
+    "translat_context": "падає"
+  },
+  {
+    "word": "music",
+    "word_context": "plays",
+    "translat": "музика",
+    "translat_context": "грає"
+  },
+  {
+    "word": "car",
+    "word_context": "drives fast",
+    "translat": "автомобіль",
+    "translat_context": "їде швидко"
+  },
+  {
+    "word": "truth",
+    "word_context": "hurts",
+    "translat": "правда",
+    "translat_context": "боляче"
+  },
+  {
+    "word": "heart",
+    "word_context": "beats",
+    "translat": "серце",
+    "translat_context": "б’ється"
+  },
+  {
+    "word": "dog",
+    "word_context": "barks",
+    "translat": "собака",
+    "translat_context": "гавкає"
+  },
+  {
+    "word": "sky",
+    "word_context": "is blue",
+    "translat": "небо",
+    "translat_context": "синє"
+  },
+  {
+    "word": "road",
+    "word_context": "is long",
+    "translat": "дорога",
+    "translat_context": "довга"
+  },
+  {
+    "word": "work",
+    "word_context": "is hard",
+    "translat": "робота",
+    "translat_context": "важка"
+  },
+  {
+    "word": "flower",
+    "word_context": "is blooming",
+    "translat": "квітка",
+    "translat_context": "цвіте"
+  },
+  {
+    "word": "fire",
+    "word_context": "burns",
+    "translat": "вогонь",
+    "translat_context": "горить"
+  },
+  {
+    "word": "hope",
+    "word_context": "remains",
+    "translat": "надія",
+    "translat_context": "залишається"
+  },
+  {
+    "word": "glass",
+    "word_context": "broke",
+    "translat": "скло",
+    "translat_context": "розбилось"
+  },
+  {
+    "word": "sun",
+    "word_context": "is shining",
+    "translat": "сонце",
+    "translat_context": "світить"
+  },
+  {
+    "word": "star",
+    "word_context": "twinkles",
+    "translat": "star",
+    "translat_context": "мерехтить"
+  },
+  {
+    "word": "cloud",
+    "word_context": "moves slowly",
+    "translat": "cloud",
+    "translat_context": "повільно рухається"
+  },
+  {
+    "word": "stone",
+    "word_context": "is heavy",
+    "translat": "stone",
+    "translat_context": "важкий"
+  },
+  {
+    "word": "bird",
+    "word_context": "sings",
+    "translat": "bird",
+    "translat_context": "співає"
+  },
+  {
+    "word": "game",
+    "word_context": "is fun",
+    "translat": "game",
+    "translat_context": "весела"
+  },
+  {
+    "word": "plan",
+    "word_context": "is working",
+    "translat": "plan",
+    "translat_context": "працює"
+  },
+  {
+    "word": "story",
+    "word_context": "is touching",
+    "translat": "story",
+    "translat_context": "зворушлива"
+  },
+  {
+    "word": "note",
+    "word_context": "is written",
+    "translat": "note",
+    "translat_context": "написана"
+  },
+  {
+    "word": "wave",
+    "word_context": "crashes",
+    "translat": "wave",
+    "translat_context": "розбивається"
+  },
+  {
+    "word": "sound",
+    "word_context": "is loud",
+    "translat": "sound",
+    "translat_context": "гучний"
+  },
+  {
+    "word": "chance",
+    "word_context": "is rare",
+    "translat": "chance",
+    "translat_context": "рідкісний"
+  },
+  {
+    "word": "smile",
+    "word_context": "is bright",
+    "translat": "smile",
+    "translat_context": "яскрава"
+  },
+  {
+    "word": "cry",
+    "word_context": "was loud",
+    "translat": "cry",
+    "translat_context": "була гучна"
+  },
+  {
+    "word": "dance",
+    "word_context": "was graceful",
+    "translat": "dance",
+    "translat_context": "була граційна"
+  },
+  {
+    "word": "song",
+    "word_context": "is catchy",
+    "translat": "song",
+    "translat_context": "запам’ятовується"
+  },
+  {
+    "word": "memory",
+    "word_context": "is fading",
+    "translat": "memory",
+    "translat_context": "згасає"
+  },
+  {
+    "word": "shadow",
+    "word_context": "follows",
+    "translat": "shadow",
+    "translat_context": "слідує"
+  },
+  {
+    "word": "storm",
+    "word_context": "is coming",
+    "translat": "storm",
+    "translat_context": "наближається"
+  },
+  {
+    "word": "wish",
+    "word_context": "is granted",
+    "translat": "wish",
+    "translat_context": "виконано"
+  },
+  {
+    "word": "forest",
+    "word_context": "is dense",
+    "translat": "forest",
+    "translat_context": "густий"
+  },
+  {
+    "word": "ocean",
+    "word_context": "is deep",
+    "translat": "ocean",
+    "translat_context": "глибокий"
+  },
+  {
+    "word": "mountain",
+    "word_context": "is high",
+    "translat": "mountain",
+    "translat_context": "високий"
+  },
+  {
+    "word": "friend",
+    "word_context": "is loyal",
+    "translat": "friend",
+    "translat_context": "вірний"
+  },
+  {
+    "word": "family",
+    "word_context": "is everything",
+    "translat": "family",
+    "translat_context": "це все"
+  },
+  {
+    "word": "city",
+    "word_context": "never sleeps",
+    "translat": "city",
+    "translat_context": "ніколи не спить"
+  },
+  {
+    "word": "home",
+    "word_context": "is warm",
+    "translat": "home",
+    "translat_context": "теплий"
+  },
+  {
+    "word": "voice",
+    "word_context": "is soft",
+    "translat": "голос",
+    "translat_context": "м’який"
+  },
+  {
+    "word": "letter",
+    "word_context": "is written",
+    "translat": "letter",
+    "translat_context": "написана"
+  },
+  {
+    "word": "answer",
+    "word_context": "is correct",
+    "translat": "answer",
+    "translat_context": "правильна"
+  },
+  {
+    "word": "thought",
+    "word_context": "is deep",
+    "translat": "думка",
+    "translat_context": "глибокий"
+  },
+  {
+    "word": "dream",
+    "word_context": "came true",
+    "translat": "мрія",
+    "translat_context": "здійснилася"
+  },
+  {
+    "word": "journey",
+    "word_context": "begins",
+    "translat": "journey",
+    "translat_context": "починається"
+  },
+  {
+    "word": "lesson",
+    "word_context": "is learned",
+    "translat": "lesson",
+    "translat_context": "вивчено"
+  },
+  {
+    "word": "message",
+    "word_context": "arrived",
+    "translat": "message",
+    "translat_context": "прибула"
+  },
+  {
+    "word": "goal",
+    "word_context": "is clear",
+    "translat": "goal",
+    "translat_context": "ясна"
+  },
+  {
+    "word": "victory",
+    "word_context": "is sweet",
+    "translat": "victory",
+    "translat_context": "солодкий"
+  },
+  {
+    "word": "failure",
+    "word_context": "hurts",
+    "translat": "failure",
+    "translat_context": "боляче"
+  },
+  {
+    "word": "moment",
+    "word_context": "is gone",
+    "translat": "moment",
+    "translat_context": "зник"
+  },
+  {
+    "word": "gift",
+    "word_context": "is wrapped",
+    "translat": "gift",
+    "translat_context": "запакований"
+  },
+  {
+    "word": "emotion",
+    "word_context": "is strong",
+    "translat": "emotion",
+    "translat_context": "сильна"
+  },
+  {
+    "word": "enemy",
+    "word_context": "attacks",
+    "translat": "enemy",
+    "translat_context": "атакує"
+  },
+  {
+    "word": "path",
+    "word_context": "is chosen",
+    "translat": "path",
+    "translat_context": "обраний"
+  },
+  {
+    "word": "reason",
+    "word_context": "is unclear",
+    "translat": "reason",
+    "translat_context": "незрозумілий"
+  },
+  {
+    "word": "season",
+    "word_context": "changes",
+    "translat": "season",
+    "translat_context": "змінюється"
+  },
+  {
+    "word": "signal",
+    "word_context": "is lost",
+    "translat": "signal",
+    "translat_context": "зник"
+  },
+  {
+    "word": "smoke",
+    "word_context": "rises",
+    "translat": "smoke",
+    "translat_context": "піднімається"
+  },
+  {
+    "word": "screen",
+    "word_context": "is broken",
+    "translat": "screen",
+    "translat_context": "зламаний"
+  },
+  {
+    "word": "reflection",
+    "word_context": "is visible",
+    "translat": "reflection",
+    "translat_context": "видимий"
+  },
+  {
+    "word": "silence",
+    "word_context": "is peaceful",
+    "translat": "silence",
+    "translat_context": "мирна"
+  },
+  {
+    "word": "strength",
+    "word_context": "is needed",
+    "translat": "strength",
+    "translat_context": "потрібна"
+  },
+  {
+    "word": "weakness",
+    "word_context": "is revealed",
+    "translat": "weakness",
+    "translat_context": "виявлено"
+  },
+  {
+    "word": "vision",
+    "word_context": "is clear",
+    "translat": "vision",
+    "translat_context": "ясна"
+  },
+  {
+    "word": "mission",
+    "word_context": "is accomplished",
+    "translat": "mission",
+    "translat_context": "виконано"
+  },
+  {
+    "word": "noise",
+    "word_context": "is constant",
+    "translat": "noise",
+    "translat_context": "постійний"
+  },
+  {
+    "word": "whisper",
+    "word_context": "is soft",
+    "translat": "whisper",
+    "translat_context": "м’який"
+  },
+  {
+    "word": "touch",
+    "word_context": "is gentle",
+    "translat": "touch",
+    "translat_context": "ніжний"
+  },
+  {
+    "word": "hug",
+    "word_context": "is warm",
+    "translat": "hug",
+    "translat_context": "теплий"
+  },
+  {
+    "word": "kiss",
+    "word_context": "is sweet",
+    "translat": "kiss",
+    "translat_context": "солодкий"
+  },
+  {
+    "word": "smell",
+    "word_context": "is pleasant",
+    "translat": "smell",
+    "translat_context": "приємний"
+  },
+  {
+    "word": "taste",
+    "word_context": "is amazing",
+    "translat": "taste",
+    "translat_context": "дивовижний"
+  },
+  {
+    "word": "freedom",
+    "word_context": "is precious",
+    "translat": "freedom",
+    "translat_context": "цінна"
+  },
+  {
+    "word": "peace",
+    "word_context": "is possible",
+    "translat": "peace",
+    "translat_context": "можлива"
+  },
+  {
+    "word": "love",
+    "word_context": "is unconditional",
+    "translat": "love",
+    "translat_context": "безумовне"
+  },
+  {
+    "word": "anger",
+    "word_context": "is dangerous",
+    "translat": "anger",
+    "translat_context": "небезпечний"
+  },
+  {
+    "word": "joy",
+    "word_context": "is overwhelming",
+    "translat": "joy",
+    "translat_context": "переважна"
+  },
+  {
+    "word": "fear",
+    "word_context": "is real",
+    "translat": "fear",
+    "translat_context": "справжній"
+  },
+  {
+    "word": "pain",
+    "word_context": "is sharp",
+    "translat": "pain",
+    "translat_context": "гострий"
+  },
+  {
+    "word": "energy",
+    "word_context": "is low",
+    "translat": "energy",
+    "translat_context": "низька"
+  },
+  {
+    "word": "thought",
+    "word_context": "is deep",
+    "translat": "думка",
+    "translat_context": "глибокий"
+  },
+  {
+    "word": "action",
+    "word_context": "is needed",
+    "translat": "action",
+    "translat_context": "потрібна"
+  },
+  {
+    "word": "life",
+    "word_context": "is beautiful",
+    "translat": "життя",
+    "translat_context": "прекрасне"
+  },
+  {
+    "word": "run",
+    "word_context": "fast",
+    "translat": "бігти",
+    "translat_context": "швидко"
+  },
+  {
+    "word": "idea",
+    "word_context": "is great",
+    "translat": "ідея",
+    "translat_context": "чудова"
+  },
+  {
+    "word": "problem",
+    "word_context": "is serious",
+    "translat": "проблема",
+    "translat_context": "серйозна"
+  },
+  {
+    "word": "child",
+    "word_context": "is playing",
+    "translat": "дитина",
+    "translat_context": "грає"
+  },
+  {
+    "word": "time",
+    "word_context": "flies",
+    "translat": "час",
+    "translat_context": "летить"
+  },
+  {
+    "word": "voice",
+    "word_context": "is soft",
+    "translat": "голос",
+    "translat_context": "м’який"
+  },
+  {
+    "word": "light",
+    "word_context": "shines",
+    "translat": "світло",
+    "translat_context": "сяє"
+  },
+  {
+    "word": "river",
+    "word_context": "flows",
+    "translat": "річка",
+    "translat_context": "тече"
+  },
+  {
+    "word": "book",
+    "word_context": "is interesting",
+    "translat": "книга",
+    "translat_context": "цікава"
+  },
+  {
+    "word": "wind",
+    "word_context": "blows",
+    "translat": "вітер",
+    "translat_context": "дує"
+  },
+  {
+    "word": "eye",
+    "word_context": "sees",
+    "translat": "око",
+    "translat_context": "бачить"
+  },
+  {
+    "word": "thought",
+    "word_context": "is deep",
+    "translat": "думка",
+    "translat_context": "глибокий"
+  },
+  {
+    "word": "question",
+    "word_context": "remains unanswered",
+    "translat": "питання",
+    "translat_context": "залишається без відповіді"
+  },
+  {
+    "word": "dream",
+    "word_context": "came true",
+    "translat": "мрія",
+    "translat_context": "здійснилася"
+  },
+  {
+    "word": "tree",
+    "word_context": "is tall",
+    "translat": "дерево",
+    "translat_context": "високе"
+  },
+  {
+    "word": "snow",
+    "word_context": "falls",
+    "translat": "сніг",
+    "translat_context": "падає"
+  },
+  {
+    "word": "music",
+    "word_context": "plays",
+    "translat": "музика",
+    "translat_context": "грає"
+  },
+  {
+    "word": "car",
+    "word_context": "drives fast",
+    "translat": "автомобіль",
+    "translat_context": "їде швидко"
+  },
+  {
+    "word": "truth",
+    "word_context": "hurts",
+    "translat": "правда",
+    "translat_context": "боляче"
+  },
+  {
+    "word": "heart",
+    "word_context": "beats",
+    "translat": "серце",
+    "translat_context": "б’ється"
+  },
+  {
+    "word": "dog",
+    "word_context": "barks",
+    "translat": "собака",
+    "translat_context": "гавкає"
+  },
+  {
+    "word": "sky",
+    "word_context": "is blue",
+    "translat": "небо",
+    "translat_context": "синє"
+  },
+  {
+    "word": "road",
+    "word_context": "is long",
+    "translat": "дорога",
+    "translat_context": "довга"
+  },
+  {
+    "word": "work",
+    "word_context": "is hard",
+    "translat": "робота",
+    "translat_context": "важка"
+  },
+  {
+    "word": "flower",
+    "word_context": "is blooming",
+    "translat": "квітка",
+    "translat_context": "цвіте"
+  },
+  {
+    "word": "fire",
+    "word_context": "burns",
+    "translat": "вогонь",
+    "translat_context": "горить"
+  },
+  {
+    "word": "hope",
+    "word_context": "remains",
+    "translat": "надія",
+    "translat_context": "залишається"
+  },
+  {
+    "word": "glass",
+    "word_context": "broke",
+    "translat": "скло",
+    "translat_context": "розбилось"
+  },
+  {
+    "word": "sun",
+    "word_context": "is shining",
+    "translat": "сонце",
+    "translat_context": "світить"
+  },
+  {
+    "word": "star",
+    "word_context": "twinkles",
+    "translat": "star",
+    "translat_context": "мерехтить"
+  },
+  {
+    "word": "cloud",
+    "word_context": "moves slowly",
+    "translat": "cloud",
+    "translat_context": "повільно рухається"
+  },
+  {
+    "word": "stone",
+    "word_context": "is heavy",
+    "translat": "stone",
+    "translat_context": "важкий"
+  },
+  {
+    "word": "bird",
+    "word_context": "sings",
+    "translat": "bird",
+    "translat_context": "співає"
+  },
+  {
+    "word": "game",
+    "word_context": "is fun",
+    "translat": "game",
+    "translat_context": "весела"
+  },
+  {
+    "word": "plan",
+    "word_context": "is working",
+    "translat": "plan",
+    "translat_context": "працює"
+  },
+  {
+    "word": "story",
+    "word_context": "is touching",
+    "translat": "story",
+    "translat_context": "зворушлива"
+  },
+  {
+    "word": "note",
+    "word_context": "is written",
+    "translat": "note",
+    "translat_context": "написана"
+  },
+  {
+    "word": "wave",
+    "word_context": "crashes",
+    "translat": "wave",
+    "translat_context": "розбивається"
+  },
+  {
+    "word": "sound",
+    "word_context": "is loud",
+    "translat": "sound",
+    "translat_context": "гучний"
+  },
+  {
+    "word": "chance",
+    "word_context": "is rare",
+    "translat": "chance",
+    "translat_context": "рідкісний"
+  },
+  {
+    "word": "smile",
+    "word_context": "is bright",
+    "translat": "smile",
+    "translat_context": "яскрава"
+  },
+  {
+    "word": "cry",
+    "word_context": "was loud",
+    "translat": "cry",
+    "translat_context": "була гучна"
+  },
+  {
+    "word": "dance",
+    "word_context": "was graceful",
+    "translat": "dance",
+    "translat_context": "була граційна"
+  },
+  {
+    "word": "song",
+    "word_context": "is catchy",
+    "translat": "song",
+    "translat_context": "запам’ятовується"
+  },
+  {
+    "word": "memory",
+    "word_context": "is fading",
+    "translat": "memory",
+    "translat_context": "згасає"
+  },
+  {
+    "word": "shadow",
+    "word_context": "follows",
+    "translat": "shadow",
+    "translat_context": "слідує"
+  },
+  {
+    "word": "storm",
+    "word_context": "is coming",
+    "translat": "storm",
+    "translat_context": "наближається"
+  },
+  {
+    "word": "wish",
+    "word_context": "is granted",
+    "translat": "wish",
+    "translat_context": "виконано"
+  },
+  {
+    "word": "forest",
+    "word_context": "is dense",
+    "translat": "forest",
+    "translat_context": "густий"
+  },
+  {
+    "word": "ocean",
+    "word_context": "is deep",
+    "translat": "ocean",
+    "translat_context": "глибокий"
+  },
+  {
+    "word": "mountain",
+    "word_context": "is high",
+    "translat": "mountain",
+    "translat_context": "високий"
+  },
+  {
+    "word": "friend",
+    "word_context": "is loyal",
+    "translat": "friend",
+    "translat_context": "вірний"
+  },
+  {
+    "word": "family",
+    "word_context": "is everything",
+    "translat": "family",
+    "translat_context": "це все"
+  },
+  {
+    "word": "city",
+    "word_context": "never sleeps",
+    "translat": "city",
+    "translat_context": "ніколи не спить"
+  },
+  {
+    "word": "home",
+    "word_context": "is warm",
+    "translat": "home",
+    "translat_context": "теплий"
+  },
+  {
+    "word": "voice",
+    "word_context": "is soft",
+    "translat": "голос",
+    "translat_context": "м’який"
+  },
+  {
+    "word": "letter",
+    "word_context": "is written",
+    "translat": "letter",
+    "translat_context": "написана"
+  },
+  {
+    "word": "answer",
+    "word_context": "is correct",
+    "translat": "answer",
+    "translat_context": "правильна"
+  },
+  {
+    "word": "thought",
+    "word_context": "is deep",
+    "translat": "думка",
+    "translat_context": "глибокий"
+  },
+  {
+    "word": "dream",
+    "word_context": "came true",
+    "translat": "мрія",
+    "translat_context": "здійснилася"
+  },
+  {
+    "word": "journey",
+    "word_context": "begins",
+    "translat": "journey",
+    "translat_context": "починається"
+  },
+  {
+    "word": "lesson",
+    "word_context": "is learned",
+    "translat": "lesson",
+    "translat_context": "вивчено"
+  },
+  {
+    "word": "message",
+    "word_context": "arrived",
+    "translat": "message",
+    "translat_context": "прибула"
+  },
+  {
+    "word": "goal",
+    "word_context": "is clear",
+    "translat": "goal",
+    "translat_context": "ясна"
+  },
+  {
+    "word": "victory",
+    "word_context": "is sweet",
+    "translat": "victory",
+    "translat_context": "солодкий"
+  },
+  {
+    "word": "failure",
+    "word_context": "hurts",
+    "translat": "failure",
+    "translat_context": "боляче"
+  },
+  {
+    "word": "moment",
+    "word_context": "is gone",
+    "translat": "moment",
+    "translat_context": "зник"
+  },
+  {
+    "word": "gift",
+    "word_context": "is wrapped",
+    "translat": "gift",
+    "translat_context": "запакований"
+  },
+  {
+    "word": "emotion",
+    "word_context": "is strong",
+    "translat": "emotion",
+    "translat_context": "сильна"
+  },
+  {
+    "word": "enemy",
+    "word_context": "attacks",
+    "translat": "enemy",
+    "translat_context": "атакує"
+  },
+  {
+    "word": "path",
+    "word_context": "is chosen",
+    "translat": "path",
+    "translat_context": "обраний"
+  },
+  {
+    "word": "reason",
+    "word_context": "is unclear",
+    "translat": "reason",
+    "translat_context": "незрозумілий"
+  },
+  {
+    "word": "season",
+    "word_context": "changes",
+    "translat": "season",
+    "translat_context": "змінюється"
+  },
+  {
+    "word": "signal",
+    "word_context": "is lost",
+    "translat": "signal",
+    "translat_context": "зник"
+  },
+  {
+    "word": "smoke",
+    "word_context": "rises",
+    "translat": "smoke",
+    "translat_context": "піднімається"
+  },
+  {
+    "word": "screen",
+    "word_context": "is broken",
+    "translat": "screen",
+    "translat_context": "зламаний"
+  },
+  {
+    "word": "reflection",
+    "word_context": "is visible",
+    "translat": "reflection",
+    "translat_context": "видимий"
+  },
+  {
+    "word": "silence",
+    "word_context": "is peaceful",
+    "translat": "silence",
+    "translat_context": "мирна"
+  },
+  {
+    "word": "strength",
+    "word_context": "is needed",
+    "translat": "strength",
+    "translat_context": "потрібна"
+  },
+  {
+    "word": "weakness",
+    "word_context": "is revealed",
+    "translat": "weakness",
+    "translat_context": "виявлено"
+  },
+  {
+    "word": "vision",
+    "word_context": "is clear",
+    "translat": "vision",
+    "translat_context": "ясна"
+  },
+  {
+    "word": "mission",
+    "word_context": "is accomplished",
+    "translat": "mission",
+    "translat_context": "виконано"
+  },
+  {
+    "word": "noise",
+    "word_context": "is constant",
+    "translat": "noise",
+    "translat_context": "постійний"
+  },
+  {
+    "word": "whisper",
+    "word_context": "is soft",
+    "translat": "whisper",
+    "translat_context": "м’який"
+  },
+  {
+    "word": "touch",
+    "word_context": "is gentle",
+    "translat": "touch",
+    "translat_context": "ніжний"
+  },
+  {
+    "word": "hug",
+    "word_context": "is warm",
+    "translat": "hug",
+    "translat_context": "теплий"
+  },
+  {
+    "word": "kiss",
+    "word_context": "is sweet",
+    "translat": "kiss",
+    "translat_context": "солодкий"
+  },
+  {
+    "word": "smell",
+    "word_context": "is pleasant",
+    "translat": "smell",
+    "translat_context": "приємний"
+  },
+  {
+    "word": "taste",
+    "word_context": "is amazing",
+    "translat": "taste",
+    "translat_context": "дивовижний"
+  },
+  {
+    "word": "freedom",
+    "word_context": "is precious",
+    "translat": "freedom",
+    "translat_context": "цінна"
+  },
+  {
+    "word": "peace",
+    "word_context": "is possible",
+    "translat": "peace",
+    "translat_context": "можлива"
+  },
+  {
+    "word": "love",
+    "word_context": "is unconditional",
+    "translat": "love",
+    "translat_context": "безумовне"
+  },
+  {
+    "word": "anger",
+    "word_context": "is dangerous",
+    "translat": "anger",
+    "translat_context": "небезпечний"
+  },
+  {
+    "word": "joy",
+    "word_context": "is overwhelming",
+    "translat": "joy",
+    "translat_context": "переважна"
+  },
+  {
+    "word": "fear",
+    "word_context": "is real",
+    "translat": "fear",
+    "translat_context": "справжній"
+  },
+  {
+    "word": "pain",
+    "word_context": "is sharp",
+    "translat": "pain",
+    "translat_context": "гострий"
+  },
+  {
+    "word": "energy",
+    "word_context": "is low",
+    "translat": "energy",
+    "translat_context": "низька"
+  },
+  {
+    "word": "thought",
+    "word_context": "is deep",
+    "translat": "думка",
+    "translat_context": "глибокий"
+  },
+  {
+    "word": "action",
+    "word_context": "is needed",
+    "translat": "action",
+    "translat_context": "потрібна"
+  },
+  {
+    "word": "life",
+    "word_context": "is beautiful",
+    "translat": "життя",
+    "translat_context": "прекрасне"
+  },
+  {
+    "word": "run",
+    "word_context": "fast",
+    "translat": "бігти",
+    "translat_context": "швидко"
+  },
+  {
+    "word": "idea",
+    "word_context": "is great",
+    "translat": "ідея",
+    "translat_context": "чудова"
+  },
+  {
+    "word": "problem",
+    "word_context": "is serious",
+    "translat": "проблема",
+    "translat_context": "серйозна"
+  },
+  {
+    "word": "child",
+    "word_context": "is playing",
+    "translat": "дитина",
+    "translat_context": "грає"
+  },
+  {
+    "word": "time",
+    "word_context": "flies",
+    "translat": "час",
+    "translat_context": "летить"
+  },
+  {
+    "word": "voice",
+    "word_context": "is soft",
+    "translat": "голос",
+    "translat_context": "м’який"
+  },
+  {
+    "word": "light",
+    "word_context": "shines",
+    "translat": "світло",
+    "translat_context": "сяє"
+  },
+  {
+    "word": "river",
+    "word_context": "flows",
+    "translat": "річка",
+    "translat_context": "тече"
+  },
+  {
+    "word": "book",
+    "word_context": "is interesting",
+    "translat": "книга",
+    "translat_context": "цікава"
+  },
+  {
+    "word": "wind",
+    "word_context": "blows",
+    "translat": "вітер",
+    "translat_context": "дує"
+  },
+  {
+    "word": "eye",
+    "word_context": "sees",
+    "translat": "око",
+    "translat_context": "бачить"
+  },
+  {
+    "word": "thought",
+    "word_context": "is deep",
+    "translat": "думка",
+    "translat_context": "глибокий"
+  },
+  {
+    "word": "question",
+    "word_context": "remains unanswered",
+    "translat": "питання",
+    "translat_context": "залишається без відповіді"
+  },
+  {
+    "word": "dream",
+    "word_context": "came true",
+    "translat": "мрія",
+    "translat_context": "здійснилася"
+  },
+  {
+    "word": "tree",
+    "word_context": "is tall",
+    "translat": "дерево",
+    "translat_context": "високе"
+  },
+  {
+    "word": "snow",
+    "word_context": "falls",
+    "translat": "сніг",
+    "translat_context": "падає"
+  },
+  {
+    "word": "music",
+    "word_context": "plays",
+    "translat": "музика",
+    "translat_context": "грає"
+  },
+  {
+    "word": "car",
+    "word_context": "drives fast",
+    "translat": "автомобіль",
+    "translat_context": "їде швидко"
+  },
+  {
+    "word": "truth",
+    "word_context": "hurts",
+    "translat": "правда",
+    "translat_context": "боляче"
+  },
+  {
+    "word": "heart",
+    "word_context": "beats",
+    "translat": "серце",
+    "translat_context": "б’ється"
+  },
+  {
+    "word": "dog",
+    "word_context": "barks",
+    "translat": "собака",
+    "translat_context": "гавкає"
+  },
+  {
+    "word": "sky",
+    "word_context": "is blue",
+    "translat": "небо",
+    "translat_context": "синє"
+  },
+  {
+    "word": "road",
+    "word_context": "is long",
+    "translat": "дорога",
+    "translat_context": "довга"
+  },
+  {
+    "word": "work",
+    "word_context": "is hard",
+    "translat": "робота",
+    "translat_context": "важка"
+  },
+  {
+    "word": "flower",
+    "word_context": "is blooming",
+    "translat": "квітка",
+    "translat_context": "цвіте"
+  },
+  {
+    "word": "fire",
+    "word_context": "burns",
+    "translat": "вогонь",
+    "translat_context": "горить"
+  },
+  {
+    "word": "hope",
+    "word_context": "remains",
+    "translat": "надія",
+    "translat_context": "залишається"
+  },
+  {
+    "word": "glass",
+    "word_context": "broke",
+    "translat": "скло",
+    "translat_context": "розбилось"
+  },
+  {
+    "word": "sun",
+    "word_context": "is shining",
+    "translat": "сонце",
+    "translat_context": "світить"
+  },
+  {
+    "word": "star",
+    "word_context": "twinkles",
+    "translat": "star",
+    "translat_context": "мерехтить"
+  },
+  {
+    "word": "cloud",
+    "word_context": "moves slowly",
+    "translat": "cloud",
+    "translat_context": "повільно рухається"
+  },
+  {
+    "word": "stone",
+    "word_context": "is heavy",
+    "translat": "stone",
+    "translat_context": "важкий"
+  },
+  {
+    "word": "bird",
+    "word_context": "sings",
+    "translat": "bird",
+    "translat_context": "співає"
+  },
+  {
+    "word": "game",
+    "word_context": "is fun",
+    "translat": "game",
+    "translat_context": "весела"
+  },
+  {
+    "word": "plan",
+    "word_context": "is working",
+    "translat": "plan",
+    "translat_context": "працює"
+  },
+  {
+    "word": "story",
+    "word_context": "is touching",
+    "translat": "story",
+    "translat_context": "зворушлива"
+  },
+  {
+    "word": "note",
+    "word_context": "is written",
+    "translat": "note",
+    "translat_context": "написана"
+  },
+  {
+    "word": "wave",
+    "word_context": "crashes",
+    "translat": "wave",
+    "translat_context": "розбивається"
+  },
+  {
+    "word": "sound",
+    "word_context": "is loud",
+    "translat": "sound",
+    "translat_context": "гучний"
+  },
+  {
+    "word": "chance",
+    "word_context": "is rare",
+    "translat": "chance",
+    "translat_context": "рідкісний"
+  },
+  {
+    "word": "smile",
+    "word_context": "is bright",
+    "translat": "smile",
+    "translat_context": "яскрава"
+  },
+  {
+    "word": "cry",
+    "word_context": "was loud",
+    "translat": "cry",
+    "translat_context": "була гучна"
+  },
+  {
+    "word": "dance",
+    "word_context": "was graceful",
+    "translat": "dance",
+    "translat_context": "була граційна"
+  },
+  {
+    "word": "song",
+    "word_context": "is catchy",
+    "translat": "song",
+    "translat_context": "запам’ятовується"
+  },
+  {
+    "word": "memory",
+    "word_context": "is fading",
+    "translat": "memory",
+    "translat_context": "згасає"
+  },
+  {
+    "word": "shadow",
+    "word_context": "follows",
+    "translat": "shadow",
+    "translat_context": "слідує"
+  },
+  {
+    "word": "storm",
+    "word_context": "is coming",
+    "translat": "storm",
+    "translat_context": "наближається"
+  },
+  {
+    "word": "wish",
+    "word_context": "is granted",
+    "translat": "wish",
+    "translat_context": "виконано"
+  },
+  {
+    "word": "forest",
+    "word_context": "is dense",
+    "translat": "forest",
+    "translat_context": "густий"
+  },
+  {
+    "word": "ocean",
+    "word_context": "is deep",
+    "translat": "ocean",
+    "translat_context": "глибокий"
+  },
+  {
+    "word": "mountain",
+    "word_context": "is high",
+    "translat": "mountain",
+    "translat_context": "високий"
+  },
+  {
+    "word": "friend",
+    "word_context": "is loyal",
+    "translat": "friend",
+    "translat_context": "вірний"
+  },
+  {
+    "word": "family",
+    "word_context": "is everything",
+    "translat": "family",
+    "translat_context": "це все"
+  },
+  {
+    "word": "city",
+    "word_context": "never sleeps",
+    "translat": "city",
+    "translat_context": "ніколи не спить"
+  },
+  {
+    "word": "home",
+    "word_context": "is warm",
+    "translat": "home",
+    "translat_context": "теплий"
+  },
+  {
+    "word": "voice",
+    "word_context": "is soft",
+    "translat": "голос",
+    "translat_context": "м’який"
+  },
+  {
+    "word": "letter",
+    "word_context": "is written",
+    "translat": "letter",
+    "translat_context": "написана"
+  },
+  {
+    "word": "answer",
+    "word_context": "is correct",
+    "translat": "answer",
+    "translat_context": "правильна"
+  },
+  {
+    "word": "thought",
+    "word_context": "is deep",
+    "translat": "думка",
+    "translat_context": "глибокий"
+  },
+  {
+    "word": "dream",
+    "word_context": "came true",
+    "translat": "мрія",
+    "translat_context": "здійснилася"
+  },
+  {
+    "word": "journey",
+    "word_context": "begins",
+    "translat": "journey",
+    "translat_context": "починається"
+  },
+  {
+    "word": "lesson",
+    "word_context": "is learned",
+    "translat": "lesson",
+    "translat_context": "вивчено"
+  },
+  {
+    "word": "message",
+    "word_context": "arrived",
+    "translat": "message",
+    "translat_context": "прибула"
+  },
+  {
+    "word": "goal",
+    "word_context": "is clear",
+    "translat": "goal",
+    "translat_context": "ясна"
+  },
+  {
+    "word": "victory",
+    "word_context": "is sweet",
+    "translat": "victory",
+    "translat_context": "солодкий"
+  },
+  {
+    "word": "failure",
+    "word_context": "hurts",
+    "translat": "failure",
+    "translat_context": "боляче"
+  },
+  {
+    "word": "moment",
+    "word_context": "is gone",
+    "translat": "moment",
+    "translat_context": "зник"
+  },
+  {
+    "word": "gift",
+    "word_context": "is wrapped",
+    "translat": "gift",
+    "translat_context": "запакований"
+  },
+  {
+    "word": "emotion",
+    "word_context": "is strong",
+    "translat": "emotion",
+    "translat_context": "сильна"
+  },
+  {
+    "word": "enemy",
+    "word_context": "attacks",
+    "translat": "enemy",
+    "translat_context": "атакує"
+  },
+  {
+    "word": "path",
+    "word_context": "is chosen",
+    "translat": "path",
+    "translat_context": "обраний"
+  },
+  {
+    "word": "reason",
+    "word_context": "is unclear",
+    "translat": "reason",
+    "translat_context": "незрозумілий"
+  },
+  {
+    "word": "season",
+    "word_context": "changes",
+    "translat": "season",
+    "translat_context": "змінюється"
+  },
+  {
+    "word": "signal",
+    "word_context": "is lost",
+    "translat": "signal",
+    "translat_context": "зник"
+  },
+  {
+    "word": "smoke",
+    "word_context": "rises",
+    "translat": "smoke",
+    "translat_context": "піднімається"
+  },
+  {
+    "word": "screen",
+    "word_context": "is broken",
+    "translat": "screen",
+    "translat_context": "зламаний"
+  },
+  {
+    "word": "reflection",
+    "word_context": "is visible",
+    "translat": "reflection",
+    "translat_context": "видимий"
+  },
+  {
+    "word": "silence",
+    "word_context": "is peaceful",
+    "translat": "silence",
+    "translat_context": "мирна"
+  },
+  {
+    "word": "strength",
+    "word_context": "is needed",
+    "translat": "strength",
+    "translat_context": "потрібна"
+  },
+  {
+    "word": "weakness",
+    "word_context": "is revealed",
+    "translat": "weakness",
+    "translat_context": "виявлено"
+  },
+  {
+    "word": "vision",
+    "word_context": "is clear",
+    "translat": "vision",
+    "translat_context": "ясна"
+  },
+  {
+    "word": "mission",
+    "word_context": "is accomplished",
+    "translat": "mission",
+    "translat_context": "виконано"
+  },
+  {
+    "word": "noise",
+    "word_context": "is constant",
+    "translat": "noise",
+    "translat_context": "постійний"
+  },
+  {
+    "word": "whisper",
+    "word_context": "is soft",
+    "translat": "whisper",
+    "translat_context": "м’який"
+  },
+  {
+    "word": "touch",
+    "word_context": "is gentle",
+    "translat": "touch",
+    "translat_context": "ніжний"
+  },
+  {
+    "word": "hug",
+    "word_context": "is warm",
+    "translat": "hug",
+    "translat_context": "теплий"
+  },
+  {
+    "word": "kiss",
+    "word_context": "is sweet",
+    "translat": "kiss",
+    "translat_context": "солодкий"
+  },
+  {
+    "word": "smell",
+    "word_context": "is pleasant",
+    "translat": "smell",
+    "translat_context": "приємний"
+  },
+  {
+    "word": "taste",
+    "word_context": "is amazing",
+    "translat": "taste",
+    "translat_context": "дивовижний"
+  },
+  {
+    "word": "freedom",
+    "word_context": "is precious",
+    "translat": "freedom",
+    "translat_context": "цінна"
+  },
+  {
+    "word": "peace",
+    "word_context": "is possible",
+    "translat": "peace",
+    "translat_context": "можлива"
+  },
+  {
+    "word": "love",
+    "word_context": "is unconditional",
+    "translat": "love",
+    "translat_context": "безумовне"
+  },
+  {
+    "word": "anger",
+    "word_context": "is dangerous",
+    "translat": "anger",
+    "translat_context": "небезпечний"
+  },
+  {
+    "word": "joy",
+    "word_context": "is overwhelming",
+    "translat": "joy",
+    "translat_context": "переважна"
+  },
+  {
+    "word": "fear",
+    "word_context": "is real",
+    "translat": "fear",
+    "translat_context": "справжній"
+  },
+  {
+    "word": "pain",
+    "word_context": "is sharp",
+    "translat": "pain",
+    "translat_context": "гострий"
+  },
+  {
+    "word": "energy",
+    "word_context": "is low",
+    "translat": "energy",
+    "translat_context": "низька"
+  },
+  {
+    "word": "thought",
+    "word_context": "is deep",
+    "translat": "думка",
+    "translat_context": "глибокий"
+  },
+  {
+    "word": "action",
+    "word_context": "is needed",
+    "translat": "action",
+    "translat_context": "потрібна"
+  },
+  {
+    "word": "life",
+    "word_context": "is beautiful",
+    "translat": "життя",
+    "translat_context": "прекрасне"
+  },
+  {
+    "word": "run",
+    "word_context": "fast",
+    "translat": "бігти",
+    "translat_context": "швидко"
+  },
+  {
+    "word": "idea",
+    "word_context": "is great",
+    "translat": "ідея",
+    "translat_context": "чудова"
+  },
+  {
+    "word": "problem",
+    "word_context": "is serious",
+    "translat": "проблема",
+    "translat_context": "серйозна"
+  },
+  {
+    "word": "child",
+    "word_context": "is playing",
+    "translat": "дитина",
+    "translat_context": "грає"
+  },
+  {
+    "word": "time",
+    "word_context": "flies",
+    "translat": "час",
+    "translat_context": "летить"
+  },
+  {
+    "word": "voice",
+    "word_context": "is soft",
+    "translat": "голос",
+    "translat_context": "м’який"
+  },
+  {
+    "word": "light",
+    "word_context": "shines",
+    "translat": "світло",
+    "translat_context": "сяє"
+  },
+  {
+    "word": "river",
+    "word_context": "flows",
+    "translat": "річка",
+    "translat_context": "тече"
+  },
+  {
+    "word": "book",
+    "word_context": "is interesting",
+    "translat": "книга",
+    "translat_context": "цікава"
+  },
+  {
+    "word": "wind",
+    "word_context": "blows",
+    "translat": "вітер",
+    "translat_context": "дує"
+  },
+  {
+    "word": "eye",
+    "word_context": "sees",
+    "translat": "око",
+    "translat_context": "бачить"
+  },
+  {
+    "word": "thought",
+    "word_context": "is deep",
+    "translat": "думка",
+    "translat_context": "глибокий"
+  },
+  {
+    "word": "question",
+    "word_context": "remains unanswered",
+    "translat": "питання",
+    "translat_context": "залишається без відповіді"
+  },
+  {
+    "word": "dream",
+    "word_context": "came true",
+    "translat": "мрія",
+    "translat_context": "здійснилася"
+  },
+  {
+    "word": "tree",
+    "word_context": "is tall",
+    "translat": "дерево",
+    "translat_context": "високе"
+  },
+  {
+    "word": "snow",
+    "word_context": "falls",
+    "translat": "сніг",
+    "translat_context": "падає"
+  },
+  {
+    "word": "music",
+    "word_context": "plays",
+    "translat": "музика",
+    "translat_context": "грає"
+  },
+  {
+    "word": "car",
+    "word_context": "drives fast",
+    "translat": "автомобіль",
+    "translat_context": "їде швидко"
+  },
+  {
+    "word": "truth",
+    "word_context": "hurts",
+    "translat": "правда",
+    "translat_context": "боляче"
+  },
+  {
+    "word": "heart",
+    "word_context": "beats",
+    "translat": "серце",
+    "translat_context": "б’ється"
+  },
+  {
+    "word": "dog",
+    "word_context": "barks",
+    "translat": "собака",
+    "translat_context": "гавкає"
+  },
+  {
+    "word": "sky",
+    "word_context": "is blue",
+    "translat": "небо",
+    "translat_context": "синє"
+  },
+  {
+    "word": "road",
+    "word_context": "is long",
+    "translat": "дорога",
+    "translat_context": "довга"
+  },
+  {
+    "word": "work",
+    "word_context": "is hard",
+    "translat": "робота",
+    "translat_context": "важка"
+  },
+  {
+    "word": "flower",
+    "word_context": "is blooming",
+    "translat": "квітка",
+    "translat_context": "цвіте"
+  },
+  {
+    "word": "fire",
+    "word_context": "burns",
+    "translat": "вогонь",
+    "translat_context": "горить"
+  },
+  {
+    "word": "hope",
+    "word_context": "remains",
+    "translat": "надія",
+    "translat_context": "залишається"
+  },
+  {
+    "word": "glass",
+    "word_context": "broke",
+    "translat": "скло",
+    "translat_context": "розбилось"
+  },
+  {
+    "word": "sun",
+    "word_context": "is shining",
+    "translat": "сонце",
+    "translat_context": "світить"
+  },
+  {
+    "word": "star",
+    "word_context": "twinkles",
+    "translat": "star",
+    "translat_context": "мерехтить"
+  },
+  {
+    "word": "cloud",
+    "word_context": "moves slowly",
+    "translat": "cloud",
+    "translat_context": "повільно рухається"
+  },
+  {
+    "word": "stone",
+    "word_context": "is heavy",
+    "translat": "stone",
+    "translat_context": "важкий"
+  },
+  {
+    "word": "bird",
+    "word_context": "sings",
+    "translat": "bird",
+    "translat_context": "співає"
+  },
+  {
+    "word": "game",
+    "word_context": "is fun",
+    "translat": "game",
+    "translat_context": "весела"
+  },
+  {
+    "word": "plan",
+    "word_context": "is working",
+    "translat": "plan",
+    "translat_context": "працює"
+  },
+  {
+    "word": "story",
+    "word_context": "is touching",
+    "translat": "story",
+    "translat_context": "зворушлива"
+  },
+  {
+    "word": "note",
+    "word_context": "is written",
+    "translat": "note",
+    "translat_context": "написана"
+  },
+  {
+    "word": "wave",
+    "word_context": "crashes",
+    "translat": "wave",
+    "translat_context": "розбивається"
+  },
+  {
+    "word": "sound",
+    "word_context": "is loud",
+    "translat": "sound",
+    "translat_context": "гучний"
+  },
+  {
+    "word": "chance",
+    "word_context": "is rare",
+    "translat": "chance",
+    "translat_context": "рідкісний"
+  },
+  {
+    "word": "smile",
+    "word_context": "is bright",
+    "translat": "smile",
+    "translat_context": "яскрава"
+  },
+  {
+    "word": "cry",
+    "word_context": "was loud",
+    "translat": "cry",
+    "translat_context": "була гучна"
+  },
+  {
+    "word": "dance",
+    "word_context": "was graceful",
+    "translat": "dance",
+    "translat_context": "була граційна"
+  },
+  {
+    "word": "song",
+    "word_context": "is catchy",
+    "translat": "song",
+    "translat_context": "запам’ятовується"
+  },
+  {
+    "word": "memory",
+    "word_context": "is fading",
+    "translat": "memory",
+    "translat_context": "згасає"
+  },
+  {
+    "word": "shadow",
+    "word_context": "follows",
+    "translat": "shadow",
+    "translat_context": "слідує"
+  },
+  {
+    "word": "storm",
+    "word_context": "is coming",
+    "translat": "storm",
+    "translat_context": "наближається"
+  },
+  {
+    "word": "wish",
+    "word_context": "is granted",
+    "translat": "wish",
+    "translat_context": "виконано"
+  },
+  {
+    "word": "forest",
+    "word_context": "is dense",
+    "translat": "forest",
+    "translat_context": "густий"
+  },
+  {
+    "word": "ocean",
+    "word_context": "is deep",
+    "translat": "ocean",
+    "translat_context": "глибокий"
+  },
+  {
+    "word": "mountain",
+    "word_context": "is high",
+    "translat": "mountain",
+    "translat_context": "високий"
+  },
+  {
+    "word": "friend",
+    "word_context": "is loyal",
+    "translat": "friend",
+    "translat_context": "вірний"
+  },
+  {
+    "word": "family",
+    "word_context": "is everything",
+    "translat": "family",
+    "translat_context": "це все"
+  },
+  {
+    "word": "city",
+    "word_context": "never sleeps",
+    "translat": "city",
+    "translat_context": "ніколи не спить"
+  },
+  {
+    "word": "home",
+    "word_context": "is warm",
+    "translat": "home",
+    "translat_context": "теплий"
+  },
+  {
+    "word": "voice",
+    "word_context": "is soft",
+    "translat": "голос",
+    "translat_context": "м’який"
+  },
+  {
+    "word": "letter",
+    "word_context": "is written",
+    "translat": "letter",
+    "translat_context": "написана"
+  },
+  {
+    "word": "answer",
+    "word_context": "is correct",
+    "translat": "answer",
+    "translat_context": "правильна"
+  },
+  {
+    "word": "thought",
+    "word_context": "is deep",
+    "translat": "думка",
+    "translat_context": "глибокий"
+  },
+  {
+    "word": "dream",
+    "word_context": "came true",
+    "translat": "мрія",
+    "translat_context": "здійснилася"
+  },
+  {
+    "word": "journey",
+    "word_context": "begins",
+    "translat": "journey",
+    "translat_context": "починається"
+  },
+  {
+    "word": "lesson",
+    "word_context": "is learned",
+    "translat": "lesson",
+    "translat_context": "вивчено"
+  },
+  {
+    "word": "message",
+    "word_context": "arrived",
+    "translat": "message",
+    "translat_context": "прибула"
+  },
+  {
+    "word": "goal",
+    "word_context": "is clear",
+    "translat": "goal",
+    "translat_context": "ясна"
+  },
+  {
+    "word": "victory",
+    "word_context": "is sweet",
+    "translat": "victory",
+    "translat_context": "солодкий"
+  },
+  {
+    "word": "failure",
+    "word_context": "hurts",
+    "translat": "failure",
+    "translat_context": "боляче"
+  },
+  {
+    "word": "moment",
+    "word_context": "is gone",
+    "translat": "moment",
+    "translat_context": "зник"
+  },
+  {
+    "word": "gift",
+    "word_context": "is wrapped",
+    "translat": "gift",
+    "translat_context": "запакований"
+  },
+  {
+    "word": "emotion",
+    "word_context": "is strong",
+    "translat": "emotion",
+    "translat_context": "сильна"
+  },
+  {
+    "word": "enemy",
+    "word_context": "attacks",
+    "translat": "enemy",
+    "translat_context": "атакує"
+  },
+  {
+    "word": "path",
+    "word_context": "is chosen",
+    "translat": "path",
+    "translat_context": "обраний"
+  },
+  {
+    "word": "reason",
+    "word_context": "is unclear",
+    "translat": "reason",
+    "translat_context": "незрозумілий"
+  },
+  {
+    "word": "season",
+    "word_context": "changes",
+    "translat": "season",
+    "translat_context": "змінюється"
+  },
+  {
+    "word": "signal",
+    "word_context": "is lost",
+    "translat": "signal",
+    "translat_context": "зник"
+  },
+  {
+    "word": "smoke",
+    "word_context": "rises",
+    "translat": "smoke",
+    "translat_context": "піднімається"
+  },
+  {
+    "word": "screen",
+    "word_context": "is broken",
+    "translat": "screen",
+    "translat_context": "зламаний"
+  },
+  {
+    "word": "reflection",
+    "word_context": "is visible",
+    "translat": "reflection",
+    "translat_context": "видимий"
+  },
+  {
+    "word": "silence",
+    "word_context": "is peaceful",
+    "translat": "silence",
+    "translat_context": "мирна"
+  },
+  {
+    "word": "strength",
+    "word_context": "is needed",
+    "translat": "strength",
+    "translat_context": "потрібна"
+  },
+  {
+    "word": "weakness",
+    "word_context": "is revealed",
+    "translat": "weakness",
+    "translat_context": "виявлено"
+  },
+  {
+    "word": "vision",
+    "word_context": "is clear",
+    "translat": "vision",
+    "translat_context": "ясна"
+  },
+  {
+    "word": "mission",
+    "word_context": "is accomplished",
+    "translat": "mission",
+    "translat_context": "виконано"
+  },
+  {
+    "word": "noise",
+    "word_context": "is constant",
+    "translat": "noise",
+    "translat_context": "постійний"
+  },
+  {
+    "word": "whisper",
+    "word_context": "is soft",
+    "translat": "whisper",
+    "translat_context": "м’який"
+  },
+  {
+    "word": "touch",
+    "word_context": "is gentle",
+    "translat": "touch",
+    "translat_context": "ніжний"
+  },
+  {
+    "word": "hug",
+    "word_context": "is warm",
+    "translat": "hug",
+    "translat_context": "теплий"
+  },
+  {
+    "word": "kiss",
+    "word_context": "is sweet",
+    "translat": "kiss",
+    "translat_context": "солодкий"
+  },
+  {
+    "word": "smell",
+    "word_context": "is pleasant",
+    "translat": "smell",
+    "translat_context": "приємний"
+  },
+  {
+    "word": "taste",
+    "word_context": "is amazing",
+    "translat": "taste",
+    "translat_context": "дивовижний"
+  },
+  {
+    "word": "freedom",
+    "word_context": "is precious",
+    "translat": "freedom",
+    "translat_context": "цінна"
+  },
+  {
+    "word": "peace",
+    "word_context": "is possible",
+    "translat": "peace",
+    "translat_context": "можлива"
+  },
+  {
+    "word": "love",
+    "word_context": "is unconditional",
+    "translat": "love",
+    "translat_context": "безумовне"
+  },
+  {
+    "word": "anger",
+    "word_context": "is dangerous",
+    "translat": "anger",
+    "translat_context": "небезпечний"
+  },
+  {
+    "word": "joy",
+    "word_context": "is overwhelming",
+    "translat": "joy",
+    "translat_context": "переважна"
+  },
+  {
+    "word": "fear",
+    "word_context": "is real",
+    "translat": "fear",
+    "translat_context": "справжній"
+  },
+  {
+    "word": "pain",
+    "word_context": "is sharp",
+    "translat": "pain",
+    "translat_context": "гострий"
+  },
+  {
+    "word": "energy",
+    "word_context": "is low",
+    "translat": "energy",
+    "translat_context": "низька"
+  },
+  {
+    "word": "thought",
+    "word_context": "is deep",
+    "translat": "думка",
+    "translat_context": "глибокий"
+  },
+  {
+    "word": "action",
+    "word_context": "is needed",
+    "translat": "action",
+    "translat_context": "потрібна"
+  },
+  {
+    "word": "life",
+    "word_context": "is beautiful",
+    "translat": "життя",
+    "translat_context": "прекрасне"
+  },
+  {
+    "word": "run",
+    "word_context": "fast",
+    "translat": "бігти",
+    "translat_context": "швидко"
+  },
+  {
+    "word": "idea",
+    "word_context": "is great",
+    "translat": "ідея",
+    "translat_context": "чудова"
+  },
+  {
+    "word": "problem",
+    "word_context": "is serious",
+    "translat": "проблема",
+    "translat_context": "серйозна"
+  },
+  {
+    "word": "child",
+    "word_context": "is playing",
+    "translat": "дитина",
+    "translat_context": "грає"
+  },
+  {
+    "word": "time",
+    "word_context": "flies",
+    "translat": "час",
+    "translat_context": "летить"
+  },
+  {
+    "word": "voice",
+    "word_context": "is soft",
+    "translat": "голос",
+    "translat_context": "м’який"
+  },
+  {
+    "word": "light",
+    "word_context": "shines",
+    "translat": "світло",
+    "translat_context": "сяє"
+  },
+  {
+    "word": "river",
+    "word_context": "flows",
+    "translat": "річка",
+    "translat_context": "тече"
+  },
+  {
+    "word": "book",
+    "word_context": "is interesting",
+    "translat": "книга",
+    "translat_context": "цікава"
+  },
+  {
+    "word": "wind",
+    "word_context": "blows",
+    "translat": "вітер",
+    "translat_context": "дує"
+  },
+  {
+    "word": "eye",
+    "word_context": "sees",
+    "translat": "око",
+    "translat_context": "бачить"
+  },
+  {
+    "word": "thought",
+    "word_context": "is deep",
+    "translat": "думка",
+    "translat_context": "глибокий"
+  },
+  {
+    "word": "question",
+    "word_context": "remains unanswered",
+    "translat": "питання",
+    "translat_context": "залишається без відповіді"
+  },
+  {
+    "word": "dream",
+    "word_context": "came true",
+    "translat": "мрія",
+    "translat_context": "здійснилася"
+  },
+  {
+    "word": "tree",
+    "word_context": "is tall",
+    "translat": "дерево",
+    "translat_context": "високе"
+  },
+  {
+    "word": "snow",
+    "word_context": "falls",
+    "translat": "сніг",
+    "translat_context": "падає"
+  },
+  {
+    "word": "music",
+    "word_context": "plays",
+    "translat": "музика",
+    "translat_context": "грає"
+  },
+  {
+    "word": "car",
+    "word_context": "drives fast",
+    "translat": "автомобіль",
+    "translat_context": "їде швидко"
+  },
+  {
+    "word": "truth",
+    "word_context": "hurts",
+    "translat": "правда",
+    "translat_context": "боляче"
+  },
+  {
+    "word": "heart",
+    "word_context": "beats",
+    "translat": "серце",
+    "translat_context": "б’ється"
+  },
+  {
+    "word": "dog",
+    "word_context": "barks",
+    "translat": "собака",
+    "translat_context": "гавкає"
+  },
+  {
+    "word": "sky",
+    "word_context": "is blue",
+    "translat": "небо",
+    "translat_context": "синє"
+  },
+  {
+    "word": "road",
+    "word_context": "is long",
+    "translat": "дорога",
+    "translat_context": "довга"
+  },
+  {
+    "word": "work",
+    "word_context": "is hard",
+    "translat": "робота",
+    "translat_context": "важка"
+  },
+  {
+    "word": "flower",
+    "word_context": "is blooming",
+    "translat": "квітка",
+    "translat_context": "цвіте"
+  },
+  {
+    "word": "fire",
+    "word_context": "burns",
+    "translat": "вогонь",
+    "translat_context": "горить"
+  },
+  {
+    "word": "hope",
+    "word_context": "remains",
+    "translat": "надія",
+    "translat_context": "залишається"
+  },
+  {
+    "word": "glass",
+    "word_context": "broke",
+    "translat": "скло",
+    "translat_context": "розбилось"
+  },
+  {
+    "word": "sun",
+    "word_context": "is shining",
+    "translat": "сонце",
+    "translat_context": "світить"
+  },
+  {
+    "word": "star",
+    "word_context": "twinkles",
+    "translat": "star",
+    "translat_context": "мерехтить"
+  },
+  {
+    "word": "cloud",
+    "word_context": "moves slowly",
+    "translat": "cloud",
+    "translat_context": "повільно рухається"
+  },
+  {
+    "word": "stone",
+    "word_context": "is heavy",
+    "translat": "stone",
+    "translat_context": "важкий"
+  },
+  {
+    "word": "bird",
+    "word_context": "sings",
+    "translat": "bird",
+    "translat_context": "співає"
+  },
+  {
+    "word": "game",
+    "word_context": "is fun",
+    "translat": "game",
+    "translat_context": "весела"
+  },
+  {
+    "word": "plan",
+    "word_context": "is working",
+    "translat": "plan",
+    "translat_context": "працює"
+  },
+  {
+    "word": "story",
+    "word_context": "is touching",
+    "translat": "story",
+    "translat_context": "зворушлива"
+  },
+  {
+    "word": "note",
+    "word_context": "is written",
+    "translat": "note",
+    "translat_context": "написана"
+  },
+  {
+    "word": "wave",
+    "word_context": "crashes",
+    "translat": "wave",
+    "translat_context": "розбивається"
+  },
+  {
+    "word": "sound",
+    "word_context": "is loud",
+    "translat": "sound",
+    "translat_context": "гучний"
+  },
+  {
+    "word": "chance",
+    "word_context": "is rare",
+    "translat": "chance",
+    "translat_context": "рідкісний"
+  },
+  {
+    "word": "smile",
+    "word_context": "is bright",
+    "translat": "smile",
+    "translat_context": "яскрава"
+  },
+  {
+    "word": "cry",
+    "word_context": "was loud",
+    "translat": "cry",
+    "translat_context": "була гучна"
+  },
+  {
+    "word": "dance",
+    "word_context": "was graceful",
+    "translat": "dance",
+    "translat_context": "була граційна"
+  },
+  {
+    "word": "song",
+    "word_context": "is catchy",
+    "translat": "song",
+    "translat_context": "запам’ятовується"
+  },
+  {
+    "word": "memory",
+    "word_context": "is fading",
+    "translat": "memory",
+    "translat_context": "згасає"
+  },
+  {
+    "word": "shadow",
+    "word_context": "follows",
+    "translat": "shadow",
+    "translat_context": "слідує"
+  },
+  {
+    "word": "storm",
+    "word_context": "is coming",
+    "translat": "storm",
+    "translat_context": "наближається"
+  },
+  {
+    "word": "wish",
+    "word_context": "is granted",
+    "translat": "wish",
+    "translat_context": "виконано"
+  },
+  {
+    "word": "forest",
+    "word_context": "is dense",
+    "translat": "forest",
+    "translat_context": "густий"
+  },
+  {
+    "word": "ocean",
+    "word_context": "is deep",
+    "translat": "ocean",
+    "translat_context": "глибокий"
+  },
+  {
+    "word": "mountain",
+    "word_context": "is high",
+    "translat": "mountain",
+    "translat_context": "високий"
+  },
+  {
+    "word": "friend",
+    "word_context": "is loyal",
+    "translat": "friend",
+    "translat_context": "вірний"
+  },
+  {
+    "word": "family",
+    "word_context": "is everything",
+    "translat": "family",
+    "translat_context": "це все"
+  },
+  {
+    "word": "city",
+    "word_context": "never sleeps",
+    "translat": "city",
+    "translat_context": "ніколи не спить"
+  },
+  {
+    "word": "home",
+    "word_context": "is warm",
+    "translat": "home",
+    "translat_context": "теплий"
+  },
+  {
+    "word": "voice",
+    "word_context": "is soft",
+    "translat": "голос",
+    "translat_context": "м’який"
+  },
+  {
+    "word": "letter",
+    "word_context": "is written",
+    "translat": "letter",
+    "translat_context": "написана"
+  },
+  {
+    "word": "answer",
+    "word_context": "is correct",
+    "translat": "answer",
+    "translat_context": "правильна"
+  },
+  {
+    "word": "thought",
+    "word_context": "is deep",
+    "translat": "думка",
+    "translat_context": "глибокий"
+  },
+  {
+    "word": "dream",
+    "word_context": "came true",
+    "translat": "мрія",
+    "translat_context": "здійснилася"
+  },
+  {
+    "word": "journey",
+    "word_context": "begins",
+    "translat": "journey",
+    "translat_context": "починається"
+  },
+  {
+    "word": "lesson",
+    "word_context": "is learned",
+    "translat": "lesson",
+    "translat_context": "вивчено"
+  },
+  {
+    "word": "message",
+    "word_context": "arrived",
+    "translat": "message",
+    "translat_context": "прибула"
+  },
+  {
+    "word": "goal",
+    "word_context": "is clear",
+    "translat": "goal",
+    "translat_context": "ясна"
+  },
+  {
+    "word": "victory",
+    "word_context": "is sweet",
+    "translat": "victory",
+    "translat_context": "солодкий"
+  },
+  {
+    "word": "failure",
+    "word_context": "hurts",
+    "translat": "failure",
+    "translat_context": "боляче"
+  },
+  {
+    "word": "moment",
+    "word_context": "is gone",
+    "translat": "moment",
+    "translat_context": "зник"
+  },
+  {
+    "word": "gift",
+    "word_context": "is wrapped",
+    "translat": "gift",
+    "translat_context": "запакований"
+  },
+  {
+    "word": "emotion",
+    "word_context": "is strong",
+    "translat": "emotion",
+    "translat_context": "сильна"
+  },
+  {
+    "word": "enemy",
+    "word_context": "attacks",
+    "translat": "enemy",
+    "translat_context": "атакує"
+  },
+  {
+    "word": "path",
+    "word_context": "is chosen",
+    "translat": "path",
+    "translat_context": "обраний"
+  },
+  {
+    "word": "reason",
+    "word_context": "is unclear",
+    "translat": "reason",
+    "translat_context": "незрозумілий"
+  },
+  {
+    "word": "season",
+    "word_context": "changes",
+    "translat": "season",
+    "translat_context": "змінюється"
+  },
+  {
+    "word": "signal",
+    "word_context": "is lost",
+    "translat": "signal",
+    "translat_context": "зник"
+  },
+  {
+    "word": "smoke",
+    "word_context": "rises",
+    "translat": "smoke",
+    "translat_context": "піднімається"
+  },
+  {
+    "word": "screen",
+    "word_context": "is broken",
+    "translat": "screen",
+    "translat_context": "зламаний"
+  },
+  {
+    "word": "reflection",
+    "word_context": "is visible",
+    "translat": "reflection",
+    "translat_context": "видимий"
+  },
+  {
+    "word": "silence",
+    "word_context": "is peaceful",
+    "translat": "silence",
+    "translat_context": "мирна"
+  },
+  {
+    "word": "strength",
+    "word_context": "is needed",
+    "translat": "strength",
+    "translat_context": "потрібна"
+  },
+  {
+    "word": "weakness",
+    "word_context": "is revealed",
+    "translat": "weakness",
+    "translat_context": "виявлено"
+  },
+  {
+    "word": "vision",
+    "word_context": "is clear",
+    "translat": "vision",
+    "translat_context": "ясна"
+  },
+  {
+    "word": "mission",
+    "word_context": "is accomplished",
+    "translat": "mission",
+    "translat_context": "виконано"
+  },
+  {
+    "word": "noise",
+    "word_context": "is constant",
+    "translat": "noise",
+    "translat_context": "постійний"
+  },
+  {
+    "word": "whisper",
+    "word_context": "is soft",
+    "translat": "whisper",
+    "translat_context": "м’який"
+  },
+  {
+    "word": "touch",
+    "word_context": "is gentle",
+    "translat": "touch",
+    "translat_context": "ніжний"
+  },
+  {
+    "word": "hug",
+    "word_context": "is warm",
+    "translat": "hug",
+    "translat_context": "теплий"
+  },
+  {
+    "word": "kiss",
+    "word_context": "is sweet",
+    "translat": "kiss",
+    "translat_context": "солодкий"
+  },
+  {
+    "word": "smell",
+    "word_context": "is pleasant",
+    "translat": "smell",
+    "translat_context": "приємний"
+  },
+  {
+    "word": "taste",
+    "word_context": "is amazing",
+    "translat": "taste",
+    "translat_context": "дивовижний"
+  },
+  {
+    "word": "freedom",
+    "word_context": "is precious",
+    "translat": "freedom",
+    "translat_context": "цінна"
+  },
+  {
+    "word": "peace",
+    "word_context": "is possible",
+    "translat": "peace",
+    "translat_context": "можлива"
+  },
+  {
+    "word": "love",
+    "word_context": "is unconditional",
+    "translat": "love",
+    "translat_context": "безумовне"
+  },
+  {
+    "word": "anger",
+    "word_context": "is dangerous",
+    "translat": "anger",
+    "translat_context": "небезпечний"
+  },
+  {
+    "word": "joy",
+    "word_context": "is overwhelming",
+    "translat": "joy",
+    "translat_context": "переважна"
+  },
+  {
+    "word": "fear",
+    "word_context": "is real",
+    "translat": "fear",
+    "translat_context": "справжній"
+  },
+  {
+    "word": "pain",
+    "word_context": "is sharp",
+    "translat": "pain",
+    "translat_context": "гострий"
+  },
+  {
+    "word": "energy",
+    "word_context": "is low",
+    "translat": "energy",
+    "translat_context": "низька"
+  },
+  {
+    "word": "thought",
+    "word_context": "is deep",
+    "translat": "думка",
+    "translat_context": "глибокий"
+  },
+  {
+    "word": "action",
+    "word_context": "is needed",
+    "translat": "action",
+    "translat_context": "потрібна"
+  },
+  {
+    "word": "life",
+    "word_context": "is beautiful",
+    "translat": "життя",
+    "translat_context": "прекрасне"
+  },
+  {
+    "word": "run",
+    "word_context": "fast",
+    "translat": "бігти",
+    "translat_context": "швидко"
+  },
+  {
+    "word": "idea",
+    "word_context": "is great",
+    "translat": "ідея",
+    "translat_context": "чудова"
+  },
+  {
+    "word": "problem",
+    "word_context": "is serious",
+    "translat": "проблема",
+    "translat_context": "серйозна"
+  },
+  {
+    "word": "child",
+    "word_context": "is playing",
+    "translat": "дитина",
+    "translat_context": "грає"
+  },
+  {
+    "word": "time",
+    "word_context": "flies",
+    "translat": "час",
+    "translat_context": "летить"
+  },
+  {
+    "word": "voice",
+    "word_context": "is soft",
+    "translat": "голос",
+    "translat_context": "м’який"
+  },
+  {
+    "word": "light",
+    "word_context": "shines",
+    "translat": "світло",
+    "translat_context": "сяє"
+  },
+  {
+    "word": "river",
+    "word_context": "flows",
+    "translat": "річка",
+    "translat_context": "тече"
+  },
+  {
+    "word": "book",
+    "word_context": "is interesting",
+    "translat": "книга",
+    "translat_context": "цікава"
+  },
+  {
+    "word": "wind",
+    "word_context": "blows",
+    "translat": "вітер",
+    "translat_context": "дує"
+  },
+  {
+    "word": "eye",
+    "word_context": "sees",
+    "translat": "око",
+    "translat_context": "бачить"
+  },
+  {
+    "word": "thought",
+    "word_context": "is deep",
+    "translat": "думка",
+    "translat_context": "глибокий"
+  },
+  {
+    "word": "question",
+    "word_context": "remains unanswered",
+    "translat": "питання",
+    "translat_context": "залишається без відповіді"
+  },
+  {
+    "word": "dream",
+    "word_context": "came true",
+    "translat": "мрія",
+    "translat_context": "здійснилася"
+  },
+  {
+    "word": "tree",
+    "word_context": "is tall",
+    "translat": "дерево",
+    "translat_context": "високе"
+  },
+  {
+    "word": "snow",
+    "word_context": "falls",
+    "translat": "сніг",
+    "translat_context": "падає"
+  },
+  {
+    "word": "music",
+    "word_context": "plays",
+    "translat": "музика",
+    "translat_context": "грає"
+  },
+  {
+    "word": "car",
+    "word_context": "drives fast",
+    "translat": "автомобіль",
+    "translat_context": "їде швидко"
+  },
+  {
+    "word": "truth",
+    "word_context": "hurts",
+    "translat": "правда",
+    "translat_context": "боляче"
+  },
+  {
+    "word": "heart",
+    "word_context": "beats",
+    "translat": "серце",
+    "translat_context": "б’ється"
+  },
+  {
+    "word": "dog",
+    "word_context": "barks",
+    "translat": "собака",
+    "translat_context": "гавкає"
+  },
+  {
+    "word": "sky",
+    "word_context": "is blue",
+    "translat": "небо",
+    "translat_context": "синє"
+  },
+  {
+    "word": "road",
+    "word_context": "is long",
+    "translat": "дорога",
+    "translat_context": "довга"
+  },
+  {
+    "word": "work",
+    "word_context": "is hard",
+    "translat": "робота",
+    "translat_context": "важка"
+  },
+  {
+    "word": "flower",
+    "word_context": "is blooming",
+    "translat": "квітка",
+    "translat_context": "цвіте"
+  },
+  {
+    "word": "fire",
+    "word_context": "burns",
+    "translat": "вогонь",
+    "translat_context": "горить"
+  },
+  {
+    "word": "hope",
+    "word_context": "remains",
+    "translat": "надія",
+    "translat_context": "залишається"
+  },
+  {
+    "word": "glass",
+    "word_context": "broke",
+    "translat": "скло",
+    "translat_context": "розбилось"
+  },
+  {
+    "word": "sun",
+    "word_context": "is shining",
+    "translat": "сонце",
+    "translat_context": "світить"
+  },
+  {
+    "word": "star",
+    "word_context": "twinkles",
+    "translat": "star",
+    "translat_context": "мерехтить"
+  },
+  {
+    "word": "cloud",
+    "word_context": "moves slowly",
+    "translat": "cloud",
+    "translat_context": "повільно рухається"
+  },
+  {
+    "word": "stone",
+    "word_context": "is heavy",
+    "translat": "stone",
+    "translat_context": "важкий"
+  },
+  {
+    "word": "bird",
+    "word_context": "sings",
+    "translat": "bird",
+    "translat_context": "співає"
+  },
+  {
+    "word": "game",
+    "word_context": "is fun",
+    "translat": "game",
+    "translat_context": "весела"
+  },
+  {
+    "word": "plan",
+    "word_context": "is working",
+    "translat": "plan",
+    "translat_context": "працює"
+  },
+  {
+    "word": "story",
+    "word_context": "is touching",
+    "translat": "story",
+    "translat_context": "зворушлива"
+  },
+  {
+    "word": "note",
+    "word_context": "is written",
+    "translat": "note",
+    "translat_context": "написана"
+  },
+  {
+    "word": "wave",
+    "word_context": "crashes",
+    "translat": "wave",
+    "translat_context": "розбивається"
+  },
+  {
+    "word": "sound",
+    "word_context": "is loud",
+    "translat": "sound",
+    "translat_context": "гучний"
+  },
+  {
+    "word": "chance",
+    "word_context": "is rare",
+    "translat": "chance",
+    "translat_context": "рідкісний"
+  },
+  {
+    "word": "smile",
+    "word_context": "is bright",
+    "translat": "smile",
+    "translat_context": "яскрава"
+  },
+  {
+    "word": "cry",
+    "word_context": "was loud",
+    "translat": "cry",
+    "translat_context": "була гучна"
+  },
+  {
+    "word": "dance",
+    "word_context": "was graceful",
+    "translat": "dance",
+    "translat_context": "була граційна"
+  },
+  {
+    "word": "song",
+    "word_context": "is catchy",
+    "translat": "song",
+    "translat_context": "запам’ятовується"
+  },
+  {
+    "word": "memory",
+    "word_context": "is fading",
+    "translat": "memory",
+    "translat_context": "згасає"
+  },
+  {
+    "word": "shadow",
+    "word_context": "follows",
+    "translat": "shadow",
+    "translat_context": "слідує"
+  },
+  {
+    "word": "storm",
+    "word_context": "is coming",
+    "translat": "storm",
+    "translat_context": "наближається"
+  },
+  {
+    "word": "wish",
+    "word_context": "is granted",
+    "translat": "wish",
+    "translat_context": "виконано"
+  },
+  {
+    "word": "forest",
+    "word_context": "is dense",
+    "translat": "forest",
+    "translat_context": "густий"
+  },
+  {
+    "word": "ocean",
+    "word_context": "is deep",
+    "translat": "ocean",
+    "translat_context": "глибокий"
+  },
+  {
+    "word": "mountain",
+    "word_context": "is high",
+    "translat": "mountain",
+    "translat_context": "високий"
+  },
+  {
+    "word": "friend",
+    "word_context": "is loyal",
+    "translat": "friend",
+    "translat_context": "вірний"
+  },
+  {
+    "word": "family",
+    "word_context": "is everything",
+    "translat": "family",
+    "translat_context": "це все"
+  },
+  {
+    "word": "city",
+    "word_context": "never sleeps",
+    "translat": "city",
+    "translat_context": "ніколи не спить"
+  },
+  {
+    "word": "home",
+    "word_context": "is warm",
+    "translat": "home",
+    "translat_context": "теплий"
+  },
+  {
+    "word": "voice",
+    "word_context": "is soft",
+    "translat": "голос",
+    "translat_context": "м’який"
+  },
+  {
+    "word": "letter",
+    "word_context": "is written",
+    "translat": "letter",
+    "translat_context": "написана"
+  },
+  {
+    "word": "answer",
+    "word_context": "is correct",
+    "translat": "answer",
+    "translat_context": "правильна"
+  },
+  {
+    "word": "thought",
+    "word_context": "is deep",
+    "translat": "думка",
+    "translat_context": "глибокий"
+  },
+  {
+    "word": "dream",
+    "word_context": "came true",
+    "translat": "мрія",
+    "translat_context": "здійснилася"
+  },
+  {
+    "word": "journey",
+    "word_context": "begins",
+    "translat": "journey",
+    "translat_context": "починається"
+  },
+  {
+    "word": "lesson",
+    "word_context": "is learned",
+    "translat": "lesson",
+    "translat_context": "вивчено"
+  },
+  {
+    "word": "message",
+    "word_context": "arrived",
+    "translat": "message",
+    "translat_context": "прибула"
+  },
+  {
+    "word": "goal",
+    "word_context": "is clear",
+    "translat": "goal",
+    "translat_context": "ясна"
+  },
+  {
+    "word": "victory",
+    "word_context": "is sweet",
+    "translat": "victory",
+    "translat_context": "солодкий"
+  },
+  {
+    "word": "failure",
+    "word_context": "hurts",
+    "translat": "failure",
+    "translat_context": "боляче"
+  },
+  {
+    "word": "moment",
+    "word_context": "is gone",
+    "translat": "moment",
+    "translat_context": "зник"
+  },
+  {
+    "word": "gift",
+    "word_context": "is wrapped",
+    "translat": "gift",
+    "translat_context": "запакований"
+  },
+  {
+    "word": "emotion",
+    "word_context": "is strong",
+    "translat": "emotion",
+    "translat_context": "сильна"
+  },
+  {
+    "word": "enemy",
+    "word_context": "attacks",
+    "translat": "enemy",
+    "translat_context": "атакує"
+  },
+  {
+    "word": "path",
+    "word_context": "is chosen",
+    "translat": "path",
+    "translat_context": "обраний"
+  },
+  {
+    "word": "reason",
+    "word_context": "is unclear",
+    "translat": "reason",
+    "translat_context": "незрозумілий"
+  },
+  {
+    "word": "season",
+    "word_context": "changes",
+    "translat": "season",
+    "translat_context": "змінюється"
+  },
+  {
+    "word": "signal",
+    "word_context": "is lost",
+    "translat": "signal",
+    "translat_context": "зник"
+  },
+  {
+    "word": "smoke",
+    "word_context": "rises",
+    "translat": "smoke",
+    "translat_context": "піднімається"
+  },
+  {
+    "word": "screen",
+    "word_context": "is broken",
+    "translat": "screen",
+    "translat_context": "зламаний"
+  },
+  {
+    "word": "reflection",
+    "word_context": "is visible",
+    "translat": "reflection",
+    "translat_context": "видимий"
+  },
+  {
+    "word": "silence",
+    "word_context": "is peaceful",
+    "translat": "silence",
+    "translat_context": "мирна"
+  },
+  {
+    "word": "strength",
+    "word_context": "is needed",
+    "translat": "strength",
+    "translat_context": "потрібна"
+  },
+  {
+    "word": "weakness",
+    "word_context": "is revealed",
+    "translat": "weakness",
+    "translat_context": "виявлено"
+  },
+  {
+    "word": "vision",
+    "word_context": "is clear",
+    "translat": "vision",
+    "translat_context": "ясна"
+  },
+  {
+    "word": "mission",
+    "word_context": "is accomplished",
+    "translat": "mission",
+    "translat_context": "виконано"
+  },
+  {
+    "word": "noise",
+    "word_context": "is constant",
+    "translat": "noise",
+    "translat_context": "постійний"
+  },
+  {
+    "word": "whisper",
+    "word_context": "is soft",
+    "translat": "whisper",
+    "translat_context": "м’який"
+  },
+  {
+    "word": "touch",
+    "word_context": "is gentle",
+    "translat": "touch",
+    "translat_context": "ніжний"
+  },
+  {
+    "word": "hug",
+    "word_context": "is warm",
+    "translat": "hug",
+    "translat_context": "теплий"
+  },
+  {
+    "word": "kiss",
+    "word_context": "is sweet",
+    "translat": "kiss",
+    "translat_context": "солодкий"
+  },
+  {
+    "word": "smell",
+    "word_context": "is pleasant",
+    "translat": "smell",
+    "translat_context": "приємний"
+  },
+  {
+    "word": "taste",
+    "word_context": "is amazing",
+    "translat": "taste",
+    "translat_context": "дивовижний"
+  },
+  {
+    "word": "freedom",
+    "word_context": "is precious",
+    "translat": "freedom",
+    "translat_context": "цінна"
+  },
+  {
+    "word": "peace",
+    "word_context": "is possible",
+    "translat": "peace",
+    "translat_context": "можлива"
+  },
+  {
+    "word": "love",
+    "word_context": "is unconditional",
+    "translat": "love",
+    "translat_context": "безумовне"
+  },
+  {
+    "word": "anger",
+    "word_context": "is dangerous",
+    "translat": "anger",
+    "translat_context": "небезпечний"
+  },
+  {
+    "word": "joy",
+    "word_context": "is overwhelming",
+    "translat": "joy",
+    "translat_context": "переважна"
+  },
+  {
+    "word": "fear",
+    "word_context": "is real",
+    "translat": "fear",
+    "translat_context": "справжній"
+  },
+  {
+    "word": "pain",
+    "word_context": "is sharp",
+    "translat": "pain",
+    "translat_context": "гострий"
+  },
+  {
+    "word": "energy",
+    "word_context": "is low",
+    "translat": "energy",
+    "translat_context": "низька"
+  },
+  {
+    "word": "thought",
+    "word_context": "is deep",
+    "translat": "думка",
+    "translat_context": "глибокий"
+  },
+  {
+    "word": "action",
+    "word_context": "is needed",
+    "translat": "action",
+    "translat_context": "потрібна"
+  }
 ]

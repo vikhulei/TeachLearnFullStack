@@ -21,15 +21,15 @@ const Word = styled.div`
     user-select: none;
     font-size: 1.3rem;
     -webkit-tap-highlight-color: transparent;
-    &:nth-of-type(12n+2) {
-        font-size: 1.8rem;
-        font-weight: bold;
-        color: ${colors.myprogress};
-    }
-    &:nth-of-type(6n+5) {
-        font-size: 1.8rem;
-        font-style: italic;
-    }
+    // &:nth-of-type(12n+2) {
+    //     font-size: 1.8rem;
+    //     font-weight: bold;
+    //     color: ${colors.myprogress};
+    // }
+    // &:nth-of-type(6n+5) {
+    //     font-size: 1.8rem;
+    //     font-style: italic;
+    // }
 `
 
 const EngWord = styled.div`

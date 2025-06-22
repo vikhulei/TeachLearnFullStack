@@ -32,12 +32,12 @@ useEffect(() => {
         </Heading>
         <Frame>
         {selectedWords.map((value, index) => (
-                    <Word key={index} onClick={clickWord}>
+                    <Word key={index}>
                       <EngWord id={value.id}>
-                      {value.word}
+                      <span style={{fontWeight: "bold"}} id={value.id} onClick={clickWord}>{value.word}</span> {value.word_context}
                       </EngWord>
                       <UkrWord style={{display: value.display_translat}}>
-                        {value.translat}
+                        <span style={{fontWeight: "bold"}}>{value.translat}</span> {value.translat_context}
                       </UkrWord>
                     </Word>
                 ))}
