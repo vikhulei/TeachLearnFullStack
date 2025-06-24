@@ -12,6 +12,8 @@ const Heading = styled(MainHeading)`
 
 const Frame = styled(MainFrame)`
     // width: 60%;
+    justify-content: left;
+    // align-items: left;
 `
 
 const Word = styled.div`

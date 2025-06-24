@@ -39,7 +39,7 @@ useEffect(() => {
         {selectedWords.map((value, index) => (
                     <Word key={index}>
                       <EngWord id={value.id}>
-                      <span style={{fontWeight: "bold"}} id={value.id} onClick={clickWord}>{value.word}</span> <span style={{visibility: value.visibility_translate}}>{value.word_context}</span>
+                      <span style={{fontWeight: "bold"}} id={value.id} onClick={clickWord}>{value.word}</span> <span>{value.word_context}</span>
                       </EngWord>
                       <UkrWord style={{visibility: value.visibility_translate}}>
                         <span style={{fontWeight: "bold"}}>{value.translat}</span> {value.translat_context}
