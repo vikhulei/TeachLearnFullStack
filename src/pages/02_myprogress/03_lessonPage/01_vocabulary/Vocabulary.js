@@ -15,9 +15,14 @@ const Vocabulary = () => {
 
   const clickWord = (e) => {
     setSelectedWords(selectedWords.map(val =>
-        val.id === Number(e.target.id) ? { ...val, display_translat: val.display_translat === "none" ? "block" : "none" } : val
+        val.id === Number(e.target.id) ? { ...val, visibility_translate: val.visibility_translate === "hidden" ? "visible" : "hidden" } : val
     ))
 }
+//   const clickWord = (e) => {
+//     setSelectedWords(selectedWords.map(val =>
+//         val.id === Number(e.target.id) ? { ...val, display_translat: val.display_translat === "none" ? "inline-block" : "none" } : val
+//     ))
+// }
 
 useEffect(() => {
   setSelectedWords(
@@ -34,9 +39,9 @@ useEffect(() => {
         {selectedWords.map((value, index) => (
                     <Word key={index}>
                       <EngWord id={value.id}>
-                      <span style={{fontWeight: "bold"}} id={value.id} onClick={clickWord}>{value.word}</span> {value.word_context}
+                      <span style={{fontWeight: "bold"}} id={value.id} onClick={clickWord}>{value.word}</span> <span style={{visibility: value.visibility_translate}}>{value.word_context}</span>
                       </EngWord>
-                      <UkrWord style={{display: value.display_translat}}>
+                      <UkrWord style={{visibility: value.visibility_translate}}>
                         <span style={{fontWeight: "bold"}}>{value.translat}</span> {value.translat_context}
                       </UkrWord>
                     </Word>

@@ -38,7 +38,7 @@ const EngWord = styled.div`
 
 const UkrWord = styled.div`
     position: relative;
-    width: 2px;
+    // width: 2px;
     color: red;
     overflow: visible;
         &:nth-of-type(12n+2) {

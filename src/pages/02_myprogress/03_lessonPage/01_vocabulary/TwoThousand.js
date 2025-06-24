@@ -7,6 +7,7 @@ export const TwoThousand = TwoThousandActualWords.map((value, index) => ({
     translat: value.translat,
     translat_context: value.translat_context,
     display_translat: "none",
+    visibility_translate: "hidden",
     display_word: "block",
     tobeChecked: false,
     correctTutor: false,
