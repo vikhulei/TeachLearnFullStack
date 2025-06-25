@@ -12,17 +12,23 @@ const Heading = styled(MainHeading)`
 
 const Frame = styled(MainFrame)`
     // width: 60%;
-    justify-content: left;
+    justify-content: center;
     // align-items: left;
 `
 
 const Word = styled.div`
     position: relative;
-    height: 45px;
+    height: 30px;
+    width: 100%;
     cursor: pointer;
     user-select: none;
     font-size: 1.3rem;
+    text-align: center;
     -webkit-tap-highlight-color: transparent;
+    &:nth-of-type(10n) {
+        height: 55px;
+        border-bottom: solid 1px black;
+    }
     // &:nth-of-type(12n+2) {
     //     font-size: 1.8rem;
     //     font-weight: bold;
