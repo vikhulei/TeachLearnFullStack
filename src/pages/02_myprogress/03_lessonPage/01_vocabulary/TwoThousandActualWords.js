@@ -864,7 +864,6 @@ export const TwoThousandActualWords = [
     "translat": "група",
     "translat_context": "друзів"
   },
-//CHECK
 
   {
     "word": "always",
@@ -881,7 +880,7 @@ export const TwoThousandActualWords = [
   {
     "word": "mark",
     "word_context": "the spot",
-    "translat": "мітка",
+    "translat": "відмітити",
     "translat_context": "місце"
   },
   {
@@ -898,15 +897,15 @@ export const TwoThousandActualWords = [
   },
   {
     "word": "river",
-    "word_context": "bank",
-    "translat": "ріка",
-    "translat_context": "берег"
+    "word_context": "Thames",
+    "translat": "річка",
+    "translat_context": "Темза"
   },
   {
     "word": "car",
-    "word_context": "ride",
+    "word_context": "is blue",
     "translat": "машина",
-    "translat_context": "їзда"
+    "translat_context": "синя"
   },
   {
     "word": "feet",
@@ -934,15 +933,15 @@ export const TwoThousandActualWords = [
   },
   {
     "word": "took",
-    "word_context": "a photo",
-    "translat": "зробив",
-    "translat_context": "фото"
+    "word_context": "a book",
+    "translat": "взяв",
+    "translat_context": "книгу"
   },
   {
     "word": "science",
-    "word_context": "class",
+    "word_context": "is fun",
     "translat": "наука",
-    "translat_context": "урок"
+    "translat_context": "це весело"
   },
   {
     "word": "eat",
@@ -976,15 +975,15 @@ export const TwoThousandActualWords = [
   },
   {
     "word": "fish",
-    "word_context": "swimming",
+    "word_context": "is swimming",
     "translat": "риба",
     "translat_context": "плаває"
   },
   {
     "word": "mountain",
-    "word_context": "climb",
+    "word_context": "is high",
     "translat": "гора",
-    "translat_context": "сходження"
+    "translat_context": "висока"
   },
   {
     "word": "stop",
@@ -1006,9 +1005,9 @@ export const TwoThousandActualWords = [
   },
   {
     "word": "horse",
-    "word_context": "rider",
+    "word_context": "is fast",
     "translat": "кінь",
-    "translat_context": "вершник"
+    "translat_context": ""
   },
   {
     "word": "cut",
@@ -1030,9 +1029,9 @@ export const TwoThousandActualWords = [
   },
   {
     "word": "color",
-    "word_context": "blue sky",
+    "word_context": "is blue",
     "translat": "колір",
-    "translat_context": "синє небо"
+    "translat_context": "синій"
   },
   {
     "word": "face",
@@ -1068,7 +1067,7 @@ export const TwoThousandActualWords = [
     "word": "girl",
     "word_context": "next door",
     "translat": "дівчина",
-    "translat_context": "поруч"
+    "translat_context": "по сусідству"
   },
   {
     "word": "usual",
@@ -1078,9 +1077,9 @@ export const TwoThousandActualWords = [
   },
   {
     "word": "young",
-    "word_context": "child",
-    "translat": "молода",
-    "translat_context": "дитина"
+    "word_context": "man",
+    "translat": "молодий",
+    "translat_context": "чоловік"
   },
   {
     "word": "ready",
@@ -1097,8 +1096,8 @@ export const TwoThousandActualWords = [
   {
     "word": "ever",
     "word_context": "since then",
-    "translat": "відтоді",
-    "translat_context": ""
+    "translat": "завжди",
+    "translat_context": "відтоді"
   },
   {
     "word": "red",
@@ -1126,7 +1125,7 @@ export const TwoThousandActualWords = [
   },
   {
     "word": "bird",
-    "word_context": "song",
+    "word_context": "is singing",
     "translat": "пташка",
     "translat_context": "співає"
   },
@@ -1193,9 +1192,10 @@ export const TwoThousandActualWords = [
   {
     "word": "product",
     "word_context": "launch",
-    "translat": "продукт",
+    "translat": "продукту",
     "translat_context": "запуск"
   },
+  //200
   {
     "word": "black",
     "word_context": "coffee",
@@ -2391,6 +2391,7 @@ export const TwoThousandActualWords = [
     "translat": "ймовірна",
     "translat_context": "причина"
   },
+  //400
   {
     "word": "bed",
     "word_context": "is soft",
