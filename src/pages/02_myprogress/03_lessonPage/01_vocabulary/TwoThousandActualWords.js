@@ -395,7 +395,6 @@ export const TwoThousandActualWords = [
     "translat": "порт",
     "translat_context": "в'їзду"
   },
-  //CHECKED
   {
     "word": "large",
     "word_context": "city",
@@ -601,7 +600,7 @@ export const TwoThousandActualWords = [
     "translat_context": "рослину"
   },
 
- {
+  {
     "word": "study",
     "word_context": "hard",
     "translat": "навчатися",
@@ -613,7 +612,6 @@ export const TwoThousandActualWords = [
     "translat": "вивчати",
     "translat_context": "нові навички"
   },
-  //CHECK
   {
     "word": "plant",
     "word_context": "a seed",
@@ -658,9 +656,9 @@ export const TwoThousandActualWords = [
   },
   {
     "word": "eye",
-    "word_context": "contact",
-    "translat": "очний",
-    "translat_context": "контакт"
+    "word_context": "of the tiger",
+    "translat": "око",
+    "translat_context": "тигра"
   },
   {
     "word": "last",
@@ -670,9 +668,9 @@ export const TwoThousandActualWords = [
   },
   {
     "word": "thought",
-    "word_context": "process",
+    "word_context": "of the day",
     "translat": "думка",
-    "translat_context": "процес"
+    "translat_context": "дня"
   },
   {
     "word": "city",
@@ -688,15 +686,15 @@ export const TwoThousandActualWords = [
   },
   {
     "word": "cross",
-    "word_context": "the street",
-    "translat": "переходити",
-    "translat_context": "вулицю"
+    "word_context": "is red",
+    "translat": "хрест",
+    "translat_context": "червоний"
   },
   {
     "word": "farm",
-    "word_context": "animals",
+    "word_context": "for sheep",
     "translat": "ферма",
-    "translat_context": "тварини"
+    "translat_context": "для овець"
   },
   {
     "word": "hard",
@@ -712,9 +710,9 @@ export const TwoThousandActualWords = [
   },
   {
     "word": "story",
-    "word_context": "telling",
+    "word_context": "of my life",
     "translat": "історія",
-    "translat_context": "оповідання"
+    "translat_context": "мого життя"
   },
   {
     "word": "saw",
@@ -730,9 +728,9 @@ export const TwoThousandActualWords = [
   },
   {
     "word": "sea",
-    "word_context": "waves",
+    "word_context": "of doubts",
     "translat": "море",
-    "translat_context": "хвилі"
+    "translat_context": "сумнівів"
   },
   {
     "word": "draw",
@@ -803,7 +801,7 @@ export const TwoThousandActualWords = [
   {
     "word": "seem",
     "word_context": "strange",
-    "translat": "здається",
+    "translat": "здаватися",
     "translat_context": "дивним"
   },
   {
@@ -857,8 +855,8 @@ export const TwoThousandActualWords = [
   {
     "word": "paper",
     "word_context": "sheet",
-    "translat": "аркуш",
-    "translat_context": "паперу"
+    "translat": "паперу",
+    "translat_context": "аркуш"
   },
   {
     "word": "group",
@@ -866,6 +864,8 @@ export const TwoThousandActualWords = [
     "translat": "група",
     "translat_context": "друзів"
   },
+//CHECK
+
   {
     "word": "always",
     "word_context": "on time",
@@ -1203,7 +1203,7 @@ export const TwoThousandActualWords = [
     "translat_context": "кава"
   },
 
-    {
+  {
     "word": "short",
     "word_context": "story time",
     "translat": "коротка",
@@ -1803,7 +1803,7 @@ export const TwoThousandActualWords = [
     "translat": "швидка",
     "translat_context": "відповідь"
   },
-    {
+  {
     "word": "develop",
     "word_context": "new skills",
     "translat": "розвивати",
@@ -3003,7 +3003,7 @@ export const TwoThousandActualWords = [
     "translat": "досить",
     "translat_context": "впевнено"
   },
-    {
+  {
     "word": "broke",
     "word_context": "the glass",
     "translat": "розбив",
@@ -3603,7 +3603,7 @@ export const TwoThousandActualWords = [
     "translat": "будь ласка",
     "translat_context": "сідайте"
   },
-    {
+  {
     "word": "protect",
     "word_context": "the environment",
     "translat": "захищати",
@@ -4203,7 +4203,7 @@ export const TwoThousandActualWords = [
     "translat": "семестр",
     "translat_context": "завершується"
   },
-    {
+  {
     "word": "opposite",
     "word_context": "direction",
     "translat": "протилежний",
@@ -4803,7 +4803,7 @@ export const TwoThousandActualWords = [
     "translat": "радий",
     "translat_context": "допомогти"
   },
-    {
+  {
     "word": "original",
     "word_context": "idea",
     "translat": "оригінальна",
@@ -5403,7 +5403,7 @@ export const TwoThousandActualWords = [
     "translat": "сповзти",
     "translat_context": "вниз"
   },
-    {
+  {
     "word": "cheer",
     "word_context": "the team",
     "translat": "підбадьорити",
@@ -6003,7 +6003,7 @@ export const TwoThousandActualWords = [
     "translat": "налякати",
     "translat_context": "дітей"
   },
-    {
+  {
     "word": "sort",
     "word_context": "by size",
     "translat": "сортувати",
