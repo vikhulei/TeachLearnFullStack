@@ -11,9 +11,13 @@ const Heading = styled(MainHeading)`
 `
 
 const Frame = styled(MainFrame)`
-    // width: 60%;
-    justify-content: center;
-    // align-items: left;
+justify-content: center;
+// align-items: left;
+@media (min-width: 800px) {
+    width: 60%;
+    // display: grid;
+    // grid-template-colums: 1fr 1fr 1fr;
+}
 `
 
 const Word = styled.div`
@@ -25,9 +29,14 @@ const Word = styled.div`
     font-size: 1.3rem;
     text-align: center;
     -webkit-tap-highlight-color: transparent;
+    @media (max-width: 800px) {
     &:nth-of-type(10n) {
         height: 55px;
         border-bottom: solid 1px black;
+    }
+    }
+    @media (min-width: 800px) {
+       width: fit-content;
     }
     // &:nth-of-type(12n+2) {
     //     font-size: 1.8rem;
