@@ -6,8 +6,10 @@ const FrameWrapper = styled(MainFrameWrapper)`
 `
 
 const Frame = styled(MainFrame)`
+    height: 600px;
     height: fit-content;
-    width: 600px;
+    width: 400px;
+    padding: 0;
 `
 
 const Image = styled(MainImage)`
