@@ -13,7 +13,11 @@ const Grammar = () => {
             <Heading>
                 Grammar
             </Heading>
-            <HeadingColor>{ContentData[currentLesson - 1]}</HeadingColor>
+            <HeadingColor>
+                <div>{ContentData[currentLesson - 1].eng}</div>
+                <div>{ContentData[currentLesson - 1].ukr}</div>
+                
+                </HeadingColor>
             <Rules />
             <Exercises />
         </Wrapper>

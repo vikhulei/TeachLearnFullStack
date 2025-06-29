@@ -10,7 +10,7 @@ const Heading = styled(MainHeading)`
 `
 
 const HeadingColor = styled(MainHeadingColor)`
-
+text-align: center;
 `
 
 export { Wrapper, Heading, HeadingColor }
