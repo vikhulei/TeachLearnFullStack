@@ -6,7 +6,7 @@ const FrameWrapper = styled(MainFrameWrapper)`
 `
 
 const Frame = styled(MainFrame)`
-    height: 600px;
+    height: 400px;
     height: fit-content;
     width: 400px;
     padding: 0;

@@ -24,6 +24,7 @@ export const RulesData = images.map((image, index) => (
         image,
         // title: lessons[index].title,
         // lesson: 2,
+        // lesson: 1
         lesson: Number(image.match(/lesson(\d+)/i)[1])
         // lesson: lessons[index].lesson,
         // lesson: Math.floor(index / 3) + 1
