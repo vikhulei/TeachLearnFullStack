@@ -112,11 +112,11 @@ export const ContentData = [
     "ukr": "Повторення всіх часів"
   },
   {
+    "eng": "Rarely Used Tenses",
+    "ukr": "Рідковживані часи"
+  },
+  {
     "eng": "Irregular Verbs Part II",
     "ukr": "Неправильні дієслова - частина 2"
   },
-  {
-    "eng": "Rarely Used Tenses",
-    "ukr": "Рідковживані часи"
-  }
 ]
