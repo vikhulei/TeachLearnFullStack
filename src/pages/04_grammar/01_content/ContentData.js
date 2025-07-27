@@ -92,20 +92,16 @@ export const ContentData = [
     "ukr": "8 основних правил граматики (частина 2)"
   },
   {
-    "eng": "Simple Tense Recap",
-    "ukr": "Простий час: повторення"
+    "eng": "Simple Tense Recap. Irregular Verbs Part II",
+    "ukr": "Простий час: повторення. Неправильні дієслова - частина 2"
   },
   {
     "eng": "Continues Tense Recap",
     "ukr": "Тривалий час: повторення"
   },
   {
-    "eng": "Present Perfect Recap",
-    "ukr": "Теперішній доконаний: повторення"
-  },
-  {
-    "eng": "Present Perfect Continuous Recap",
-    "ukr": "Теперішній доконаний тривалий: повторення"
+    "eng": "Present Perfect and Present Perfect Continuous Recap",
+    "ukr": "Теперішній доконаний і Теперішній доконаний тривалий: повторення"
   },
   {
     "eng": "All Tenses Recap",
@@ -116,7 +112,11 @@ export const ContentData = [
     "ukr": "Рідковживані часи"
   },
   {
-    "eng": "Irregular Verbs Part II",
-    "ukr": "Неправильні дієслова - частина 2"
+    "eng": "Relative Clauses",
+    "ukr": "Підрядні речення"
+  },
+  {
+    "eng": "Reported Speech",
+    "ukr": "Непряма мова"
   },
 ]
