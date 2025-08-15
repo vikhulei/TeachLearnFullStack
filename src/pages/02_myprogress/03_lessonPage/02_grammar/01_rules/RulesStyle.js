@@ -6,10 +6,13 @@ const FrameWrapper = styled(MainFrameWrapper)`
 `
 
 const Frame = styled(MainFrame)`
-    height: 400px;
-    height: fit-content;
-    width: 400px;
-    padding: 0;
+    // height: 400px;
+    // height: fit-content;
+    width: 40%;
+    padding: 10px;
+    @media(max-width: 800px) {
+        width: 90%;
+    }
 `
 
 const Image = styled(MainImage)`
