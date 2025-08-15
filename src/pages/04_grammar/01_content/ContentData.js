@@ -20,12 +20,12 @@ export const ContentData = [
     "ukr": "Минулий простий час"
   },
   {
-    "eng": "Irregular Verbs",
-    "ukr": "Неправильні дієслова"
-  },
-  {
     "eng": "Simple Tenses: Summary",
     "ukr": "Прості часи: підсумок"
+  },
+  {
+    "eng": "Irregular Verbs",
+    "ukr": "Неправильні дієслова"
   },
   {
     "eng": "Present Continuous Tense",
@@ -92,6 +92,10 @@ export const ContentData = [
     "ukr": "8 основних правил граматики (частина 2)"
   },
   {
+    "eng": "Relative Clauses",
+    "ukr": "Підрядні речення"
+  },
+  {
     "eng": "Simple Tense Recap. Irregular Verbs Part II",
     "ukr": "Простий час: повторення. Неправильні дієслова - частина 2"
   },
@@ -110,10 +114,6 @@ export const ContentData = [
   {
     "eng": "Rarely Used Tenses",
     "ukr": "Рідковживані часи"
-  },
-  {
-    "eng": "Relative Clauses",
-    "ukr": "Підрядні речення"
   },
   {
     "eng": "Reported Speech",
