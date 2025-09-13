@@ -21,7 +21,7 @@ body:
   - type: input
     id: section
     attributes:
-      label: Section
+      label: -> Section
       description: Enter the section name (e.g., Welcome, Lesson 1, etc.)
       placeholder: Welcome
     validations:
@@ -30,14 +30,14 @@ body:
   - type: input
     id: subsection
     attributes:
-      label: Subsection
+      label: -> Subsection
       description: Enter the subsection name if applicable (e.g., Login, Exercise #1)
       placeholder: Login
 
   - type: input
     id: task
     attributes:
-      label: Task
+      label: -> Task
       description: What needs to be done?
       placeholder: Change font
     validations:
