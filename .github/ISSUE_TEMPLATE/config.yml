@@ -4,3 +4,65 @@ contact_links:
   - name: ❓ Questions / Help
     url: https://github.com/<your-username>/<your-repo>/discussions
     about: Please ask questions in Discussions, not as issues.
+name: Task
+description: Create a new task linked to a Page → Section → Subsection
+title: "[Page] Section → Subsection → Task"
+labels: ["task"]
+body:
+  - type: dropdown
+    id: page
+    attributes:
+      label: Page
+      description: Which page does this belong to?
+      options:
+        - Home page
+        - My Progress
+        - Vocabulary
+        - Grammar
+        - Speaking
+        - Contacts
+    validations:
+      required: true
+
+  - type: input
+    id: section
+    attributes:
+      label: Section
+      description: Enter the section name (e.g., Welcome, Lesson 1, etc.)
+      placeholder: Welcome
+    validations:
+      required: true
+
+  - type: input
+    id: subsection
+    attributes:
+      label: Subsection
+      description: Enter the subsection name if applicable (e.g., Login, Exercise #1)
+      placeholder: Login
+
+  - type: input
+    id: task
+    attributes:
+      label: Task
+      description: What needs to be done?
+      placeholder: Change font
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Why does this matter? Add links, screenshots, design specs
+      placeholder: Current font does not match style guide. Update to Inter 18px...
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance Criteria
+      description: List the checkboxes that define when this task is done
+      value: |
+        - [ ] Matches design specs
+        - [ ] Responsive on mobile/tablet/desktop
+        - [ ] No console errors
+        - [ ] Passes a11y checks
