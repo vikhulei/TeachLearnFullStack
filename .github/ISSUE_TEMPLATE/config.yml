@@ -2,7 +2,7 @@ blank_issues_enabled: false   # hides the default "Open a blank issue" option
 
 contact_links:
   - name: ❓ Questions / Help
-    url: https://github.com/vikhulei/TeachLearnFront/discussions
+    url: https://github.com/vikhulei/TeachLearnFront/issues
     about: Please ask questions in Discussions, not as issues.
 name: Task
 description: Create a new task linked to a Page → Section → Subsection
