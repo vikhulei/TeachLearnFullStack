@@ -26,7 +26,7 @@ export const TwoThousandActualWords = [
   {
     "word": "long",
     "word_context": "journey",
-    "translat": "довгий",
+    "translat": "довга",
     "translat_context": "подорож"
   },
   {
