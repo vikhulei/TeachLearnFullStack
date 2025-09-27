@@ -3,15 +3,19 @@ import { MainFrame, MainFrameWrapper, MainImage } from "../../../../../component
 
 
 const FrameWrapper = styled(MainFrameWrapper)`
+    // background-color: lightgray;
+    width: 100%;
 `
 
 const Frame = styled(MainFrame)`
     // height: 400px;
-    // height: fit-content;
+    // min-height: fit-content;
     width: 40%;
+    // height: 800px;
     padding: 10px;
     @media(max-width: 800px) {
         width: 90%;
+        height: fit-content;
     }
 `
 

@@ -146,6 +146,7 @@ const MainFrameImage = styled(MainFrame)`
 
 const MainImage = styled.img`
     width: 100%;
+    // height: 100%;
 `
 
 const MainText = styled.div`
