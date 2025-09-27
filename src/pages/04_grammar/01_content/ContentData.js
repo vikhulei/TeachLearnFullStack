@@ -84,39 +84,39 @@ export const ContentData = [
     "ukr": "Наказові речення"
   },
   {
-    "eng": "8 basic rules of Grammar (part 1)",
-    "ukr": "8 основних правил граматики (частина 1)"
-  },
-  {
-    "eng": "8 basic rules of Grammar (part 2)",
-    "ukr": "8 основних правил граматики (частина 2)"
-  },
-  {
-    "eng": "Relative Clauses",
+    "eng": "Relative Clauses", //22
     "ukr": "Підрядні речення"
   },
   {
-    "eng": "Simple Tense Recap. Irregular Verbs Part II",
+    "eng": "Reported Speech", //23
+    "ukr": "Непряма мова"
+  },
+  {
+    "eng": "Simple Tense Recap. Irregular Verbs Part II", //24
     "ukr": "Простий час: повторення. Неправильні дієслова - частина 2"
   },
   {
-    "eng": "Continues Tense Recap",
+    "eng": "Continues Tense Recap", //25
     "ukr": "Тривалий час: повторення"
   },
   {
-    "eng": "Present Perfect and Present Perfect Continuous Recap",
+    "eng": "Present Perfect and Present Perfect Continuous Recap", //26
     "ukr": "Теперішній доконаний і Теперішній доконаний тривалий: повторення"
   },
   {
-    "eng": "All Tenses Recap",
+    "eng": "All Tenses Recap", //27
     "ukr": "Повторення всіх часів"
   },
   {
-    "eng": "Rarely Used Tenses",
+    "eng": "Rarely Used Tenses", //28
     "ukr": "Рідковживані часи"
   },
   {
-    "eng": "Reported Speech",
-    "ukr": "Непряма мова"
+    "eng": "8 basic rules of Grammar (part 1)",  //29
+    "ukr": "8 основних правил граматики (частина 1)"
+  },
+  {
+    "eng": "8 basic rules of Grammar (part 2)", //30
+    "ukr": "8 основних правил граматики (частина 2)"
   },
 ]
