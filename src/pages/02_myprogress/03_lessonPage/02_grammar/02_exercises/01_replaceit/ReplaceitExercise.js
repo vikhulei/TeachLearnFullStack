@@ -19,6 +19,8 @@ const ReplaceitExercise = () => {
     ))
 }
 
+console.log(replaceitExerciseData[0].lesson)
+
 useEffect(() => {
     setReplaceitExerciseData(ReplaceitExerciseData.filter(val => val.lesson === currentLesson))
 }, [currentLesson])
@@ -28,6 +30,7 @@ useEffect(() => {
         <Frame>
             <FrameHeading>replace it</FrameHeading>
             <Icon src={replace} />
+            <div>{replaceitExerciseData[0].instruction}</div>
             {replaceitExerciseData.map((value, index) => (
                 <SentenceWrapper key={index}>
                     <Text>{value.sentence.beginning}&nbsp;</Text>

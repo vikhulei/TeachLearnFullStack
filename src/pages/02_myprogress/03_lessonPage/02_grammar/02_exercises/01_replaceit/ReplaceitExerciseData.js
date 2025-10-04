@@ -5,6 +5,7 @@ const sentences = [
     // Підрядні речення 22
     // Майбутній тривалий 9
     // Минулий тривалий 10
+    //lesson 13 Теперішній доконаний тривалий час
 
 
 
@@ -63,17 +64,7 @@ const sentences = [
     { beginning: "They", word: "вивчали", translat: "studied", ending: "history" },
     { beginning: "He", word: "хотів", translat: "wanted", ending: "some water" },
     { beginning: "I", word: "дзвонив", translat: "called", ending: ", but no one answered" },
-    //lesson 7 Неправильні дієслова
-    { beginning: "I", word: "дивився", translat: "saw", ending: "a new film" },
-    { beginning: "She just", word: "пішла", translat: "went", ending: "home" },
-    { beginning: "He only", word: "дала", translat: "gave", ending: "one answer" },
-    { beginning: "We", word: "випили", translat: "drank", ending: "water" },
-    { beginning: "They", word: "були", translat: "were", ending: "very happy" },
-    { beginning: "I", word: "мали", translat: "had", ending: "a good time" },
-    { beginning: "He", word: "прийшов", translat: "came", ending: "early" },
-    { beginning: "She", word: "взяла", translat: "took", ending: "some bread" },
-    { beginning: "I", word: "думав", translat: "thought", ending: "about that" },
-    { beginning: "They", word: "склали", translat: "made", ending: "a plan" },
+
     //lesson 6 Прості часи: підсумок
     { beginning: "I", word: "знаю", translat: "know", ending: "the way" },
     { beginning: "She", word: "почуватиметься", translat: "will feel", ending: "well" },
@@ -85,6 +76,19 @@ const sentences = [
     { beginning: "Then we", word: "пішли", translat: "walked", ending: "home" },
     { beginning: "Each child", word: "може", translat: "can", ending: "read" },
     { beginning: "They", word: "любили", translat: "loved", ending: "art" },
+
+    //lesson 7 Неправильні дієслова
+    { beginning: "I", word: "дивився", translat: "saw", ending: "a new film" },
+    { beginning: "She just", word: "пішла", translat: "went", ending: "home" },
+    { beginning: "He only", word: "дала", translat: "gave", ending: "one answer" },
+    { beginning: "We", word: "випили", translat: "drank", ending: "water" },
+    { beginning: "They", word: "були", translat: "were", ending: "very happy" },
+    { beginning: "I", word: "мали", translat: "had", ending: "a good time" },
+    { beginning: "He", word: "прийшов", translat: "came", ending: "early" },
+    { beginning: "She", word: "взяла", translat: "took", ending: "some bread" },
+    { beginning: "I", word: "думав", translat: "thought", ending: "about that" },
+    { beginning: "They", word: "склали", translat: "made", ending: "a plan" },
+
     //lesson 8 Теперішній тривалий час
     { beginning: "She", word: "дивиться", translat: "is looking", ending: "at the wall" },
     { beginning: "People", word: "подорожують", translat: "are travelling", ending: "around the world" },
@@ -96,6 +100,30 @@ const sentences = [
     { beginning: "He", word: "каже", translat: "is saying", ending: "he wants more food" },
     { beginning: "We", word: "говоримо", translat: "are talking", ending: "about something important" },
     { beginning: "My family", word: "обідає", translat: "is having", ending: "dinner" },
+    // lesson 9 Майбутній тривалий
+    { beginning: "Future Cont", word: "Future Cont", translat: "Future Cont", ending: "Future Cont" },
+    { beginning: "Future Cont", word: "Future Cont", translat: "Future Cont", ending: "Future Cont" },
+    { beginning: "Future Cont", word: "Future Cont", translat: "Future Cont", ending: "Future Cont" },
+    { beginning: "Future Cont", word: "Future Cont", translat: "Future Cont", ending: "Future Cont" },
+    { beginning: "Future Cont", word: "Future Cont", translat: "Future Cont", ending: "Future Cont" },
+    { beginning: "Future Cont", word: "Future Cont", translat: "Future Cont", ending: "Future Cont" },
+    { beginning: "Future Cont", word: "Future Cont", translat: "Future Cont", ending: "Future Cont" },
+    { beginning: "Future Cont", word: "Future Cont", translat: "Future Cont", ending: "Future Cont" },
+    { beginning: "Future Cont", word: "Future Cont", translat: "Future Cont", ending: "Future Cont" },
+    { beginning: "Future Cont", word: "Future Cont", translat: "Future Cont", ending: "Future Cont" },
+    
+    // lesson 10 Минулий тривалий
+    { beginning: "Past Cont", word: "Past Cont", translat: "Past Cont", ending: "Past Cont" },
+    { beginning: "Past Cont", word: "Past Cont", translat: "Past Cont", ending: "Past Cont" },
+    { beginning: "Past Cont", word: "Past Cont", translat: "Past Cont", ending: "Past Cont" },
+    { beginning: "Past Cont", word: "Past Cont", translat: "Past Cont", ending: "Past Cont" },
+    { beginning: "Past Cont", word: "Past Cont", translat: "Past Cont", ending: "Past Cont" },
+    { beginning: "Past Cont", word: "Past Cont", translat: "Past Cont", ending: "Past Cont" },
+    { beginning: "Past Cont", word: "Past Cont", translat: "Past Cont", ending: "Past Cont" },
+    { beginning: "Past Cont", word: "Past Cont", translat: "Past Cont", ending: "Past Cont" },
+    { beginning: "Past Cont", word: "Past Cont", translat: "Past Cont", ending: "Past Cont" },
+    { beginning: "Past Cont", word: "Past Cont", translat: "Past Cont", ending: "Past Cont" },
+
     //lesson 11  Тривалі часи: підсумок
     { beginning: "She", word: "читає", translat: "is reading", ending: "a new book" },
     { beginning: "They", word: "не тримали", translat: "were not keeping", ending: "the door open" },
@@ -118,6 +146,17 @@ const sentences = [
     { beginning: "She", word: "знайшла", translat: "has found", ending: "something interesting" },
     { beginning: "They", word: "прийшли", translat: "have come", ending: "to visit us" },
     { beginning: "We", word: "зустріли", translat: "have met", ending: "the local guide" },
+     //lesson 13 Теперішній доконаний тривалий час   
+    { beginning: "Present Perf Cont", word: "Present Perf Cont", translat: "Present Perf Cont", ending: "Present Perf Cont" },  
+    { beginning: "Present Perf Cont", word: "Present Perf Cont", translat: "Present Perf Cont", ending: "Present Perf Cont" },  
+    { beginning: "Present Perf Cont", word: "Present Perf Cont", translat: "Present Perf Cont", ending: "Present Perf Cont" },  
+    { beginning: "Present Perf Cont", word: "Present Perf Cont", translat: "Present Perf Cont", ending: "Present Perf Cont" },  
+    { beginning: "Present Perf Cont", word: "Present Perf Cont", translat: "Present Perf Cont", ending: "Present Perf Cont" },  
+    { beginning: "Present Perf Cont", word: "Present Perf Cont", translat: "Present Perf Cont", ending: "Present Perf Cont" },  
+    { beginning: "Present Perf Cont", word: "Present Perf Cont", translat: "Present Perf Cont", ending: "Present Perf Cont" },  
+    { beginning: "Present Perf Cont", word: "Present Perf Cont", translat: "Present Perf Cont", ending: "Present Perf Cont" },  
+    { beginning: "Present Perf Cont", word: "Present Perf Cont", translat: "Present Perf Cont", ending: "Present Perf Cont" },  
+    { beginning: "Present Perf Cont", word: "Present Perf Cont", translat: "Present Perf Cont", ending: "Present Perf Cont" },  
     //lesson 14 Порівняння всіх часів 
     { beginning: "He", word: "буде", translat: "will be", ending: "a great player" },
     { beginning: "We", word: "використали", translat: "used", ending: "a wide range of tools" },
@@ -213,30 +252,29 @@ const sentences = [
     { beginning: "", word: "Говори", translat: "Speak", ending: "more slowly" },
     { beginning: "", word: "Закрий", translat: "Close", ending: "the door" },
     { beginning: "", word: "Допоможи", translat: "Help", ending: "your friend" },
+    // lesson 22 Підрядні речення
+    { beginning: "Relative Clauses", word: "Relative Clauses", translat: "Relative Clauses", ending: "Relative Clauses" },
+    { beginning: "Relative Clauses", word: "Relative Clauses", translat: "Relative Clauses", ending: "Relative Clauses" },
+    { beginning: "Relative Clauses", word: "Relative Clauses", translat: "Relative Clauses", ending: "Relative Clauses" },
+    { beginning: "Relative Clauses", word: "Relative Clauses", translat: "Relative Clauses", ending: "Relative Clauses" },
+    { beginning: "Relative Clauses", word: "Relative Clauses", translat: "Relative Clauses", ending: "Relative Clauses" },
+    { beginning: "Relative Clauses", word: "Relative Clauses", translat: "Relative Clauses", ending: "Relative Clauses" },
+    { beginning: "Relative Clauses", word: "Relative Clauses", translat: "Relative Clauses", ending: "Relative Clauses" },
+    { beginning: "Relative Clauses", word: "Relative Clauses", translat: "Relative Clauses", ending: "Relative Clauses" },
+    { beginning: "Relative Clauses", word: "Relative Clauses", translat: "Relative Clauses", ending: "Relative Clauses" },
+    { beginning: "Relative Clauses", word: "Relative Clauses", translat: "Relative Clauses", ending: "Relative Clauses" },
 
-    //lesson 29 8 rules
-    { beginning: "She said the store", word: "працює", translat: "was open", ending: "" },
-    { beginning: "He told me they", word: "проводять (мають)", translat: "were having", ending: "a good time" },
-    { beginning: "They mentioned they", word: "зустріли", translat: "met", ending: "their friends last week" },
-    { beginning: "I said I", word: "зробив", translat: "did", ending: "my homework" },
-    { beginning: "She told us she", word: "прийшла", translat: "came", ending: "home late" },
-    { beginning: "He said he", word: "прочитав", translat: "read", ending: "the book last month" },
-    { beginning: "They said they", word: "поїхали", translat: "went", ending: "on vacation" },
-    { beginning: "I told him I", word: "працював", translat: "worked", ending: "all day" },
-    { beginning: "She mentioned she", word: "спілкувалася", translat: "talked", ending: "to her teacher" },
-    { beginning: "He said he", word: "знайшов", translat: "found", ending: "the keys" },
-
-    //lesson 30 8 rules
-    { beginning: "He", word: "грає", translat: "plays", ending: "football every weekend" },
-    { beginning: "", word: "грає", translat: "Does he play", ending: "football every weekend?" },
-    { beginning: "She", word: "читає", translat: "reads", ending: "a book every evening" },
-    { beginning: "", word: "читає", translat: "Does she read", ending: "a book every evening?" },
-    { beginning: "They", word: "живуть", translat: "live", ending: "in this house" },
-    { beginning: "", word: "живуть", translat: "Do they live", ending: "in this house?" },
-    { beginning: "We", word: "ходили", translat: "went", ending: "to the zoo yesterday" },
-    { beginning: "", word: "ходили", translat: "Did we go", ending: "to the zoo yesterday?" },
-    { beginning: "I", word: "готую", translat: "cook", ending: "dinner every day" },
-    { beginning: "", word: "готую", translat: "Do I cook", ending: "dinner every day?" },
+    // lesson 23 Непряма мова
+    { beginning: "Reported Speech", word: "Reported Speech", translat: "Reported Speech", ending: "Reported Speech" },
+    { beginning: "Reported Speech", word: "Reported Speech", translat: "Reported Speech", ending: "Reported Speech" },
+    { beginning: "Reported Speech", word: "Reported Speech", translat: "Reported Speech", ending: "Reported Speech" },
+    { beginning: "Reported Speech", word: "Reported Speech", translat: "Reported Speech", ending: "Reported Speech" },
+    { beginning: "Reported Speech", word: "Reported Speech", translat: "Reported Speech", ending: "Reported Speech" },
+    { beginning: "Reported Speech", word: "Reported Speech", translat: "Reported Speech", ending: "Reported Speech" },
+    { beginning: "Reported Speech", word: "Reported Speech", translat: "Reported Speech", ending: "Reported Speech" },
+    { beginning: "Reported Speech", word: "Reported Speech", translat: "Reported Speech", ending: "Reported Speech" },
+    { beginning: "Reported Speech", word: "Reported Speech", translat: "Reported Speech", ending: "Reported Speech" },
+    { beginning: "Reported Speech", word: "Reported Speech", translat: "Reported Speech", ending: "Reported Speech" },
 
     //lesson 24 Прості часи: повторення
     { beginning: "I", word: "піду", translat: "will go", ending: "to the gym tomorrow" },
@@ -285,6 +323,100 @@ const sentences = [
     { beginning: "", word: "приготували", translat: "Did we cook", ending: "dinner?" },
     { beginning: "I", word: "не написав", translat: "did not write", ending: "the letter" },
     { beginning: "", word: "написав", translat: "Did I write", ending: "the letter?" },
+
+    //lesson 28 Рідковживані часи
+    { beginning: "I", word: "закінчу", translat: "will have finished", ending: "my homework by 8 PM" },
+    { beginning: "She", word: "вже поїхала", translat: "had already left", ending: "when I arrived" },
+    { beginning: "They", word: "зроблять", translat: "will have done", ending: "the work by tomorrow" },
+    { beginning: "We", word: "закінчили", translat: "had finished", ending: "dinner before the guests came" },
+    { beginning: "He", word: "прочитає", translat: "will have read", ending: "the book by next week" },
+    { beginning: "I", word: "вже зробив", translat: "had already done", ending: "my chores before noon" },
+    { beginning: "You", word: "закінчиш", translat: "will have completed", ending: "the project by Friday" },
+    { beginning: "They", word: "завершили", translat: "had completed", ending: "the task earlier" },
+    { beginning: "We", word: "побачимо", translat: "will have seen", ending: "the movie by Sunday" },
+    { beginning: "He", word: "вже пішов", translat: "had already gone", ending: "when we called" },
+
+        //lesson 29 8 rules
+    { beginning: "She said the store", word: "працює", translat: "was open", ending: "" },
+    { beginning: "He told me they", word: "проводять (мають)", translat: "were having", ending: "a good time" },
+    { beginning: "They mentioned they", word: "зустріли", translat: "met", ending: "their friends last week" },
+    { beginning: "I said I", word: "зробив", translat: "did", ending: "my homework" },
+    { beginning: "She told us she", word: "прийшла", translat: "came", ending: "home late" },
+    { beginning: "He said he", word: "прочитав", translat: "read", ending: "the book last month" },
+    { beginning: "They said they", word: "поїхали", translat: "went", ending: "on vacation" },
+    { beginning: "I told him I", word: "працював", translat: "worked", ending: "all day" },
+    { beginning: "She mentioned she", word: "спілкувалася", translat: "talked", ending: "to her teacher" },
+    { beginning: "He said he", word: "знайшов", translat: "found", ending: "the keys" },
+
+    //lesson 30 8 rules
+    { beginning: "He", word: "грає", translat: "plays", ending: "football every weekend" },
+    { beginning: "", word: "грає", translat: "Does he play", ending: "football every weekend?" },
+    { beginning: "She", word: "читає", translat: "reads", ending: "a book every evening" },
+    { beginning: "", word: "читає", translat: "Does she read", ending: "a book every evening?" },
+    { beginning: "They", word: "живуть", translat: "live", ending: "in this house" },
+    { beginning: "", word: "живуть", translat: "Do they live", ending: "in this house?" },
+    { beginning: "We", word: "ходили", translat: "went", ending: "to the zoo yesterday" },
+    { beginning: "", word: "ходили", translat: "Did we go", ending: "to the zoo yesterday?" },
+    { beginning: "I", word: "готую", translat: "cook", ending: "dinner every day" },
+    { beginning: "", word: "готую", translat: "Do I cook", ending: "dinner every day?" },
+
+]
+
+const instructions = [
+  "Вимова. Правила читання",
+  "Займенники. Дієслово To Be",
+  "Огляд всіх часів. Теперішній простий час",
+  "Майбутній простий час",
+  "Минулий простий час",
+  "Прості часи: підсумок",
+  "Неправильні дієслова",
+  "Теперішній тривалий час",
+  "Майбутній тривалий час",
+  "Минулий тривалий час",
+  "Тривалі часи: підсумок",
+  "Теперішній доконаний час",
+  "Теперішній доконаний тривалий час",
+  "Порівняння всіх часів",
+  "Прийменники місця",
+  "Час і дата",
+  "Артиклі. Конструкція There is/There are",
+  "Однина і множина. Ступені порівняння. Порядкові й кількісні числівники",
+  "Активний і пасивний стан",
+  "Модальні дієслова, конструкції Would і Used to",
+  "Наказові речення",
+  "Підрядні речення",
+  "Непряма мова",
+  "Прості часи: повторення. Неправильні дієслова - частина 2",
+  "Тривалі часи: повторення",
+  "Теперішній доконаний і Теперішній доконаний тривалий: повторення",
+  "Повторення всіх часів",
+  "Рідковживані часи",
+  "8 основних правил граматики (частина 1)",
+  "8 основних правил граматики (частина 2)"
+];
+
+
+
+export const ReplaceitExerciseData = sentences.map((value, index) => (
+    {
+        id: index + 1,
+        lesson: Math.floor(index / 10) + 1,
+        display_word: "block",
+        display_translat: "none",
+        instruction: instructions[Math.floor(index / 10)],
+        sentence: {
+            beginning: value.beginning,
+            word: value.word,
+            translat: value.translat,
+            ending: value.ending
+        }
+    }
+))
+
+
+
+
+/*
 
     //lesson 27 Повторення всіх часів
     { beginning: "I", word: "побачив", translat: "saw", ending: "a shooting star last night" },
@@ -347,32 +479,4 @@ const sentences = [
     { beginning: "The floors", word: "були миті", translat: "were being cleaned", ending: "all day" },
     { beginning: "The orders", word: "були виконані", translat: "have been completed", ending: "on time" },
 
-    //lesson 28 Рідковживані часи
-    { beginning: "I", word: "закінчу", translat: "will have finished", ending: "my homework by 8 PM" },
-    { beginning: "She", word: "вже поїхала", translat: "had already left", ending: "when I arrived" },
-    { beginning: "They", word: "зроблять", translat: "will have done", ending: "the work by tomorrow" },
-    { beginning: "We", word: "закінчили", translat: "had finished", ending: "dinner before the guests came" },
-    { beginning: "He", word: "прочитає", translat: "will have read", ending: "the book by next week" },
-    { beginning: "I", word: "вже зробив", translat: "had already done", ending: "my chores before noon" },
-    { beginning: "You", word: "закінчиш", translat: "will have completed", ending: "the project by Friday" },
-    { beginning: "They", word: "завершили", translat: "had completed", ending: "the task earlier" },
-    { beginning: "We", word: "побачимо", translat: "will have seen", ending: "the movie by Sunday" },
-    { beginning: "He", word: "вже пішов", translat: "had already gone", ending: "when we called" }
-
-]
-
-
-export const ReplaceitExerciseData = sentences.map((value, index) => (
-    {
-        id: index + 1,
-        lesson: Math.floor(index / 10) + 1,
-        display_word: "block",
-        display_translat: "none",
-        sentence: {
-            beginning: value.beginning,
-            word: value.word,
-            translat: value.translat,
-            ending: value.ending
-        }
-    }
-))
+*/
