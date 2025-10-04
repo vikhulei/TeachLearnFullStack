@@ -93,11 +93,11 @@ export const ContentData = [
   },
   {
     "eng": "Simple Tense Recap. Irregular Verbs Part II", //24
-    "ukr": "Простий час: повторення. Неправильні дієслова - частина 2"
+    "ukr": "Прості часи: повторення. Неправильні дієслова - частина 2"
   },
   {
     "eng": "Continues Tense Recap", //25
-    "ukr": "Тривалий час: повторення"
+    "ukr": "Тривалі часи: повторення"
   },
   {
     "eng": "Present Perfect and Present Perfect Continuous Recap", //26

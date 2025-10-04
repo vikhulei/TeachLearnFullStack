@@ -1,5 +1,14 @@
 const sentences = [
-    //lesson 1
+    // 8 основних правил граматики (частина 1) lesson 29
+    // 8 основних правил граматики (частина 2) lesson 30
+    // Непряма мова lesson 23
+    // Підрядні речення 22
+    // Майбутній тривалий 9
+    // Минулий тривалий 10
+
+
+
+    //lesson 1 Вимова. Правила читання
     { beginning: "", word: "date", translat: "[deit]", ending: "" },
     { beginning: "", word: "man", translat: "[mæn]", ending: "" },
     { beginning: "", word: "home", translat: "[houm]", ending: "" },
@@ -10,9 +19,7 @@ const sentences = [
     { beginning: "", word: "cup", translat: "[kʌp]", ending: "" },
     { beginning: "", word: "time", translat: "[taim]", ending: "" },
     { beginning: "", word: "cry", translat: "[krai]", ending: "" },
-
-    //lesson 2
-
+    //lesson 2 Pronouns. To Be
     { beginning: "", word: "Я", translat: "I", ending: "love Ukraine" },
     { beginning: "", word: "Він", translat: "He", ending: "likes ice-cream" },
     { beginning: "", word: "Ми", translat: "We", ending: "learn English" },
@@ -23,7 +30,7 @@ const sentences = [
     { beginning: "", word: "Воно", translat: "It", ending: "knows something" },
     { beginning: "", word: "Ми", translat: "We", ending: "want peace" },
     { beginning: "", word: "Вони", translat: "They", ending: "take our time" },
-    //lesson 3
+    //lesson 3 Теперішній простий час
     { beginning: "I", word: "хочу", translat: "want", ending: "more juice" },
     { beginning: "She", word: "має", translat: "has", ending: "many friends" },
     { beginning: "What do you", word: "їсте", translat: "eat", ending: "?" },
@@ -34,7 +41,7 @@ const sentences = [
     { beginning: "They", word: "роблять", translat: "do", ending: "homework" },
     { beginning: "Most people", word: "посміхаються", translat: "smile", ending: "" },
     { beginning: "Time", word: "йде", translat: "goes", ending: "fast" },
-    //lesson 4
+    //lesson 4 Майбутній простий час
     { beginning: "I", word: "прочитаю", translat: "will read", ending: "this book" },
     { beginning: "She", word: "використає", translat: "will use", ending: "that pan" },
     { beginning: "They", word: "зроблять", translat: "will make", ending: "a cake" },
@@ -45,7 +52,7 @@ const sentences = [
     { beginning: "I", word: "працюватиму", translat: "will work", ending: "tomorrow" },
     { beginning: "They", word: "допоможуть", translat: "will help", ending: "us" },
     { beginning: "This", word: "буде", translat: "will be", ending: "a different story" },
-    //lesson 5
+    //lesson 5 Минулий простий час
     { beginning: "I", word: "потребував", translat: "needed", ending: "help" },
     { beginning: "They", word: "дивилися", translat: "watched", ending: "a new film" },
     { beginning: "She just", word: "прибув", translat: "arrived", ending: "" },
@@ -56,7 +63,7 @@ const sentences = [
     { beginning: "They", word: "вивчали", translat: "studied", ending: "history" },
     { beginning: "He", word: "хотів", translat: "wanted", ending: "some water" },
     { beginning: "I", word: "дзвонив", translat: "called", ending: ", but no one answered" },
-    //lesson 6    
+    //lesson 7 Неправильні дієслова
     { beginning: "I", word: "дивився", translat: "saw", ending: "a new film" },
     { beginning: "She just", word: "пішла", translat: "went", ending: "home" },
     { beginning: "He only", word: "дала", translat: "gave", ending: "one answer" },
@@ -67,7 +74,7 @@ const sentences = [
     { beginning: "She", word: "взяла", translat: "took", ending: "some bread" },
     { beginning: "I", word: "думав", translat: "thought", ending: "about that" },
     { beginning: "They", word: "склали", translat: "made", ending: "a plan" },
-    //lesson 7
+    //lesson 6 Прості часи: підсумок
     { beginning: "I", word: "знаю", translat: "know", ending: "the way" },
     { beginning: "She", word: "почуватиметься", translat: "will feel", ending: "well" },
     { beginning: "He", word: "пішов", translat: "went", ending: "first" },
@@ -78,7 +85,7 @@ const sentences = [
     { beginning: "Then we", word: "пішли", translat: "walked", ending: "home" },
     { beginning: "Each child", word: "може", translat: "can", ending: "read" },
     { beginning: "They", word: "любили", translat: "loved", ending: "art" },
-    //lesson 8
+    //lesson 8 Теперішній тривалий час
     { beginning: "She", word: "дивиться", translat: "is looking", ending: "at the wall" },
     { beginning: "People", word: "подорожують", translat: "are travelling", ending: "around the world" },
     { beginning: "He", word: "читає", translat: "is reading", ending: "a newspaper" },
@@ -89,7 +96,7 @@ const sentences = [
     { beginning: "He", word: "каже", translat: "is saying", ending: "he wants more food" },
     { beginning: "We", word: "говоримо", translat: "are talking", ending: "about something important" },
     { beginning: "My family", word: "обідає", translat: "is having", ending: "dinner" },
-    //lesson 9
+    //lesson 11  Тривалі часи: підсумок
     { beginning: "She", word: "читає", translat: "is reading", ending: "a new book" },
     { beginning: "They", word: "не тримали", translat: "were not keeping", ending: "the door open" },
     { beginning: "We", word: "приєднаємося", translat: "will be joining", ending: "this project" },
@@ -100,7 +107,7 @@ const sentences = [
     { beginning: "We", word: "будемо будувати", translat: "will be building", ending: "a large house" },
     { beginning: "She", word: "кликала", translat: "was calling", ending: "us" },
     { beginning: "He", word: "робив", translat: "was making", ending: "the files available" },
-    //lesson 10
+    //lesson 12 Теперішній доконаний час
     { beginning: "I", word: "прожив", translat: "have lived", ending: "here for 10 years" },
     { beginning: "We both", word: "працювали", translat: "have worked", ending: "here since Summer" },
     { beginning: "They", word: "віддали", translat: "have given", ending: "us the keys" },
@@ -111,7 +118,7 @@ const sentences = [
     { beginning: "She", word: "знайшла", translat: "has found", ending: "something interesting" },
     { beginning: "They", word: "прийшли", translat: "have come", ending: "to visit us" },
     { beginning: "We", word: "зустріли", translat: "have met", ending: "the local guide" },
-    //lesson 11
+    //lesson 14 Порівняння всіх часів 
     { beginning: "He", word: "буде", translat: "will be", ending: "a great player" },
     { beginning: "We", word: "використали", translat: "used", ending: "a wide range of tools" },
     { beginning: "She", word: "підвищить", translat: "will increase", ending: "the interest rate tomorrow" },
@@ -123,7 +130,7 @@ const sentences = [
     { beginning: "I", word: "буду", translat: "will be", ending: "above the required level" },
     { beginning: "They", word: "діяли", translat: "acted", ending: "according to the plan" },
 
-    //lesson 12
+    //lesson 15 Прийменники місця
     { beginning: "The book is", word: "на", translat: "on", ending: "the table" },
     { beginning: "The cat is", word: "під", translat: "under", ending: "the chair" },
     { beginning: "The keys are", word: "в", translat: "in", ending: "my bag" },
@@ -135,7 +142,7 @@ const sentences = [
     { beginning: "The picture is", word: "на", translat: "on", ending: "the wall" },
     { beginning: "The bag is", word: "перед", translat: "in front of", ending: "the door" },
 
-    //lesson 13
+    //lesson 16 Час і дата
     { beginning: "The meeting is", word: "о", translat: "at", ending: "3 PM" },
     { beginning: "The party is", word: "в", translat: "at", ending: "midnight" },
     { beginning: "The exam is", word: "в", translat: "on", ending: "Monday" },
@@ -147,7 +154,7 @@ const sentences = [
     { beginning: "The flowers bloom", word: "в", translat: "in", ending: "spring" },
     { beginning: "I usually wake up", word: "о", translat: "at", ending: "7 AM" },
 
-    //lesson 14
+    //lesson 17 Артиклі. Конструкція There is/There are
     { beginning: "", word: "Є", translat: "There is", ending: "a book on the table" },
     { beginning: "", word: "Був", translat: "There was", ending: "a cat in the box" },
     { beginning: "", word: "Буде", translat: "There will be", ending: "a letter for you" },
@@ -159,7 +166,7 @@ const sentences = [
     { beginning: "", word: "Є", translat: "There are", ending: "two windows in the room" },
     { beginning: "", word: "Були", translat: "There were", ending: "books on the desk" },
 
-    //lesson 15
+    //lesson 18 Однина і множина. Ступені порівняння. Порядкові й кількісні числівники
     { beginning: "This task is", word: "легший", translat: "easier", ending: "than the previous one" },
     { beginning: "He is", word: "вищий", translat: "taller", ending: "than his brother" },
     { beginning: "Today is", word: "холодніший", translat: "colder", ending: "than yesterday" },
@@ -171,7 +178,7 @@ const sentences = [
     { beginning: "It was", word: "найгірший", translat: "the worst", ending: "day of my life" },
     { beginning: "This solution is", word: "краща", translat: "better", ending: "than the first one" },
 
-    //lesson 16
+    //lesson 19 Активний і пасивний стан
     { beginning: "The cake", word: "був спечений", translat: "was baked", ending: "by my mom" },
     { beginning: "The house", word: "був побудований", translat: "was built", ending: "in 1995" },
     { beginning: "The letters", word: "були надіслані", translat: "were sent", ending: "yesterday" },
@@ -183,7 +190,7 @@ const sentences = [
     { beginning: "The email", word: "був надісланий", translat: "was sent", ending: "to the client" },
     { beginning: "The pictures", word: "були зроблені", translat: "were taken", ending: "during the trip" },
 
-    //lesson 17
+    //lesson 20 Модальні дієслова, конструкції Would і Used to
     { beginning: "You", word: "можеш", translat: "can", ending: "finish this task later" },
     { beginning: "She", word: "повинна", translat: "must", ending: "wear a uniform at school" },
     { beginning: "We", word: "маємо", translat: "have to", ending: "leave early today" },
@@ -195,7 +202,7 @@ const sentences = [
     { beginning: "He", word: "може", translat: "may", ending: "arrive later" },
     { beginning: "We", word: "могли б", translat: "might", ending: "go hiking this weekend" },
 
-    //lesson 18
+    //lesson 21 Наказові речення
     { beginning: "", word: "Зроби", translat: "Do", ending: "your homework" },
     { beginning: "", word: "Слухай", translat: "Listen", ending: "carefully" },
     { beginning: "", word: "Приходь", translat: "Come", ending: "here" },
@@ -207,7 +214,7 @@ const sentences = [
     { beginning: "", word: "Закрий", translat: "Close", ending: "the door" },
     { beginning: "", word: "Допоможи", translat: "Help", ending: "your friend" },
 
-    //lesson 19
+    //lesson 29 8 rules
     { beginning: "She said the store", word: "працює", translat: "was open", ending: "" },
     { beginning: "He told me they", word: "проводять (мають)", translat: "were having", ending: "a good time" },
     { beginning: "They mentioned they", word: "зустріли", translat: "met", ending: "their friends last week" },
@@ -219,7 +226,7 @@ const sentences = [
     { beginning: "She mentioned she", word: "спілкувалася", translat: "talked", ending: "to her teacher" },
     { beginning: "He said he", word: "знайшов", translat: "found", ending: "the keys" },
 
-    //lesson 20
+    //lesson 30 8 rules
     { beginning: "He", word: "грає", translat: "plays", ending: "football every weekend" },
     { beginning: "", word: "грає", translat: "Does he play", ending: "football every weekend?" },
     { beginning: "She", word: "читає", translat: "reads", ending: "a book every evening" },
@@ -231,7 +238,7 @@ const sentences = [
     { beginning: "I", word: "готую", translat: "cook", ending: "dinner every day" },
     { beginning: "", word: "готую", translat: "Do I cook", ending: "dinner every day?" },
 
-    //lesson 21
+    //lesson 24 Прості часи: повторення
     { beginning: "I", word: "піду", translat: "will go", ending: "to the gym tomorrow" },
     { beginning: "I", word: "пішов", translat: "went", ending: "to the gym yesterday" },
     { beginning: "She", word: "приготує", translat: "will cook", ending: "dinner tonight" },
@@ -243,7 +250,7 @@ const sentences = [
     { beginning: "He", word: "побачить", translat: "will see", ending: "the doctor tomorrow" },
     { beginning: "He", word: "побачив", translat: "saw", ending: "the doctor yesterday" },
 
-    //lesson 22
+    //lesson 25 Тривалі часи: повторення
     { beginning: "I", word: "буду працювати", translat: "will be working", ending: "at 5 PM tomorrow" },
     { beginning: "I", word: "працював", translat: "was working", ending: "at 5 PM yesterday" },
     { beginning: "She", word: "буде читати", translat: "will be reading", ending: "a book in the evening" },
@@ -255,7 +262,7 @@ const sentences = [
     { beginning: "He", word: "буде писати", translat: "will be writing", ending: "an email in the morning" },
     { beginning: "He", word: "писав", translat: "was writing", ending: "an email when I called" },
 
-    //lesson 23
+    //lesson 26 Теперішній доконаний і Теперішній доконаний тривалий: повторення
     { beginning: "I", word: "зробив", translat: "have done", ending: "my homework" },
     { beginning: "She", word: "прочитала", translat: "has read", ending: "the book" },
     { beginning: "They", word: "відвідали", translat: "have visited", ending: "Paris twice" },
@@ -267,7 +274,7 @@ const sentences = [
     { beginning: "They", word: "прийшли", translat: "have come", ending: "back from vacation" },
     { beginning: "He", word: "поїв", translat: "has eaten", ending: "already" },
 
-    //lesson 24
+    //lesson 27 Повторення всіх часів
     { beginning: "He", word: "не пішов", translat: "did not go", ending: "to school yesterday" },
     { beginning: "", word: "пішов", translat: "Did he go", ending: "to school yesterday?" },
     { beginning: "They", word: "не грали", translat: "did not play", ending: "football on Sunday" },
@@ -279,7 +286,7 @@ const sentences = [
     { beginning: "I", word: "не написав", translat: "did not write", ending: "the letter" },
     { beginning: "", word: "написав", translat: "Did I write", ending: "the letter?" },
 
-    //lesson 25
+    //lesson 27 Повторення всіх часів
     { beginning: "I", word: "побачив", translat: "saw", ending: "a shooting star last night" },
     { beginning: "She", word: "написала", translat: "wrote", ending: "a poem for the contest" },
     { beginning: "They", word: "пішли", translat: "went", ending: "to the new museum" },
@@ -291,7 +298,7 @@ const sentences = [
     { beginning: "They", word: "забули", translat: "forgot", ending: "his birthday" },
     { beginning: "He", word: "приніс", translat: "brought", ending: "his guitar to the party" },
 
-    //lesson 26
+    //lesson  Час і дата
     { beginning: "The train arrives", word: "о", translat: "at", ending: "7 o'clock" },
     { beginning: "The party is", word: "в", translat: "on", ending: "Saturday" },
     { beginning: "The flowers bloom", word: "в", translat: "in", ending: "April" },
@@ -304,7 +311,7 @@ const sentences = [
     { beginning: "The store is closed", word: "по", translat: "on", ending: "Mondays" },
 
 
-    //lesson 27
+    //lesson Прийменники місця
     { beginning: "The cat is", word: "на", translat: "on", ending: "the table" },
     { beginning: "The keys are", word: "під", translat: "under", ending: "the sofa" },
     { beginning: "The painting hangs", word: "над", translat: "above", ending: "the fireplace" },
@@ -316,7 +323,7 @@ const sentences = [
     { beginning: "The book fell", word: "з", translat: "off", ending: "the shelf" },
     { beginning: "The picture is", word: "на", translat: "on", ending: "the wall" },
 
-    //lesson 28
+    //lesson Множина
     { beginning: "Many", word: "чоловіки", translat: "men", ending: "are working in the city" },
     { beginning: "Several", word: "жінки", translat: "women", ending: "are attending the conference" },
     { beginning: "The", word: "діти", translat: "children", ending: "are playing outside" },
@@ -328,7 +335,7 @@ const sentences = [
     { beginning: "The", word: "вівці", translat: "sheep", ending: "are grazing in the field" },
     { beginning: "Some", word: "риби", translat: "fish", ending: "are swimming in the pond" },
 
-    //lesson 29
+    //lesson Доконані часи
     { beginning: "The letters", word: "були надіслані", translat: "have been sent", ending: "by the office" },
     { beginning: "The house", word: "був побудований", translat: "was built", ending: "last year" },
     { beginning: "The cars", word: "ремонтувалися", translat: "were being repaired", ending: "all morning" },
@@ -340,7 +347,7 @@ const sentences = [
     { beginning: "The floors", word: "були миті", translat: "were being cleaned", ending: "all day" },
     { beginning: "The orders", word: "були виконані", translat: "have been completed", ending: "on time" },
 
-    //lesson 30
+    //lesson 28 Рідковживані часи
     { beginning: "I", word: "закінчу", translat: "will have finished", ending: "my homework by 8 PM" },
     { beginning: "She", word: "вже поїхала", translat: "had already left", ending: "when I arrived" },
     { beginning: "They", word: "зроблять", translat: "will have done", ending: "the work by tomorrow" },
