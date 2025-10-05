@@ -1,6 +1,16 @@
+//lesson 8 Теперішній тривалий час
+// lesson 9 Майбутній тривалий
+//lesson 13 Теперішній доконаний тривалий час 
+// Підрядні речення 22
+// Непряма мова lesson 23
+// 8 основних правил граматики (частина 1) lesson 29
+// 8 основних правил граматики (частина 2) lesson 30
+
+
+
 
 const sentences = [
-    // LESSON 1
+    //lesson 1 Вимова. Правила читання
     { beginning: "", bold: "do - [dou]?", correct: "ду [du:]", ending: "" },
     { beginning: "", bold: "some - [soum]?", correct: "сам [sʌm]", ending: "" },
     { beginning: "", bold: "people - ?", correct: "піпл [pi:pl]", ending: "" },
@@ -9,9 +19,7 @@ const sentences = [
     { beginning: "", bold: "what - [whæt]?", correct: "увот [wot]", ending: "" },
     { beginning: "", bold: "through - ?", correct: "тсру [θru:]", ending: "" },
     { beginning: "", bold: "also - [ælsou]?", correct: "олсоу [olsou]", ending: "" },
-
-    //LESSON 2
-
+    //lesson 2 Pronouns. To Be
     { beginning: "I", bold: "to be (зараз)", correct: "am", ending: "a student " },
     { beginning: "You", bold: "to be (в минулому)", correct: "were", ending: "a worker" },
     { beginning: "He", bold: "to be (завтра)", correct: "will be", ending: "at school" },
@@ -20,8 +28,7 @@ const sentences = [
     { beginning: "Students", bold: "to be not (зараз)", correct: "are not", ending: "in the class" },
     { beginning: "The boy", bold: "to be not (завтра)", correct: "will not be", ending: "at work" },
     { beginning: "We", bold: "to be (зараз)", correct: "are", ending: "friends" },
-
-    //LESSON 3
+    //lesson 3 Теперішній простий час
     { beginning: "I", bold: "find", correct: "find", ending: "this book interesting" },
     { beginning: "She", bold: "eat", correct: "eats", ending: "too much sugar" },
     { beginning: "It", bold: "take", correct: "takes", ending: "a lot of time" },
@@ -30,7 +37,7 @@ const sentences = [
     { beginning: "My family", bold: "live", correct: "lives", ending: "in the city" },
     { beginning: "He", bold: "give", correct: "gives", ending: "a good example" },
     { beginning: "I", bold: "listen", correct: "listen", ending: "to the music" },
-    //LESSON 4
+    //lesson 4 Майбутній простий час
     { beginning: "You", bold: "make", correct: "will make", ending: "the right decision" },
     { beginning: "She", bold: "support", correct: "will support", ending: "you" },
     { beginning: "They", bold: "install", correct: "will install", ending: "a new system" },
@@ -39,7 +46,7 @@ const sentences = [
     { beginning: "I", bold: "do", correct: "will do", ending: "my best to help you" },
     { beginning: "Your life", bold: "change", correct: "will change", ending: "for the better" },
     { beginning: "Since you are here, we", bold: "start", correct: "will start", ending: "the new project" },
-    // LESSON 5
+    //lesson 5 Минулий простий час
     { beginning: "They", bold: "end", correct: "ended", ending: "the meeting" },
     { beginning: "She", bold: "follow", correct: "followed", ending: "the new method" },
     { beginning: "He never", bold: "imagine", correct: "imagined", ending: "such a result" },
@@ -49,17 +56,7 @@ const sentences = [
     { beginning: "They", bold: "clime", correct: "climed", ending: "the hilltop" },
     { beginning: "He", bold: "point", correct: "pointed", ending: "at the map" },
 
-    // LESSON 6
-    { beginning: "She", bold: "bring", correct: "brought", ending: "her book" },
-    { beginning: "He", bold: "choose", correct: "chose", ending: "the red shirt" },
-    { beginning: "They", bold: "come", correct: "came", ending: "to the concert late" },
-    { beginning: "I", bold: "drink", correct: "drank", ending: "a glass of water" },
-    { beginning: "We", bold: "drive", correct: "drove", ending: "to the city" },
-    { beginning: "The bird", bold: "fly", correct: "flew", ending: "over the trees" },
-    { beginning: "He", bold: "forget", correct: "forgot", ending: "to do his homework" },
-    { beginning: "She", bold: "give", correct: "gave", ending: "me a nice gift" },
-
-    // LESSON 7
+    //lesson 6 Прості часи: підсумок
     { beginning: "The girl", bold: "get (past)", correct: "did not get", ending: "the job" },
     { beginning: "They", bold: "play (future)", correct: "will not play", ending: "at the party" },
     { beginning: "He", bold: "meet (present)", correct: "do not meet", ending: "every day" },
@@ -69,7 +66,20 @@ const sentences = [
     { beginning: "I", bold: "read (past)", correct: "did not read", ending: "the message carefully" },
     { beginning: "He", bold: "arrive (future)", correct: "will not arrive", ending: "for the meeting" },
 
-    // LESSON 8
+    //lesson 7 Неправильні дієслова
+    { beginning: "She", bold: "bring", correct: "brought", ending: "her book" },
+    { beginning: "He", bold: "choose", correct: "chose", ending: "the red shirt" },
+    { beginning: "They", bold: "come", correct: "came", ending: "to the concert late" },
+    { beginning: "I", bold: "drink", correct: "drank", ending: "a glass of water" },
+    { beginning: "We", bold: "drive", correct: "drove", ending: "to the city" },
+    { beginning: "The bird", bold: "fly", correct: "flew", ending: "over the trees" },
+    { beginning: "He", bold: "forget", correct: "forgot", ending: "to do his homework" },
+    { beginning: "She", bold: "give", correct: "gave", ending: "me a nice gift" },
+
+    //lesson 8 Теперішній тривалий час
+    // lesson 9 Майбутній тривалий
+
+    // lesson 10 Минулий тривалий
     { beginning: "They", bold: "stay", correct: "were staying", ending: "at home all weekend" },
     { beginning: "He", bold: "feel", correct: "was feeling", ending: "bad about his decision" },
     { beginning: "I", bold: "eat", correct: "was eating", ending: "the cake when they arrived" },
@@ -79,7 +89,7 @@ const sentences = [
     { beginning: "She", bold: "cook", correct: "was cooking", ending: "food when I called" },
     { beginning: "The boys", bold: "put", correct: "were putting", ending: "the books on the shelf" },
 
-    // LESSON 9
+    //lesson 11  Тривалі часи: підсумок
     { beginning: "The bird", bold: "sing (past)", correct: "was not singing", ending: "in the morning" },
     { beginning: "The guide", bold: "explain (present)", correct: "is not explaining", ending: "it clearly" },
     { beginning: "They", bold: "provide (future)", correct: "will not be providing", ending: "enough information" },
@@ -89,7 +99,7 @@ const sentences = [
     { beginning: "I", bold: "visit (past)", correct: "was not visiting", ending: "them last month" },
     { beginning: "They", bold: "solve (future)", correct: "will not be solving", ending: "the problem correctly" },
 
-    // LESSON 10
+    //lesson 12 Теперішній доконаний час
     { beginning: "She", bold: "find", correct: "has not found", ending: "her card" },
     { beginning: "They", bold: "face", correct: "have not faced", ending: "any difficulties so far" },
     { beginning: "We", bold: "include", correct: "have not included", ending: "Sarah in the list" },
@@ -99,7 +109,9 @@ const sentences = [
     { beginning: "You", bold: "see", correct: "have not seen", ending: "the real problem yet" },
     { beginning: "I", bold: "try", correct: "have not tried", ending: "various solutions yet" },
 
-    // LESSON 11
+    //lesson 13 Теперішній доконаний тривалий час 
+
+    //lesson 14 Порівняння всіх часів 
     { "beginning": "The chefs", "bold": "cook (present)", "correct": "are cooking", "ending": "dinner right now" },
     { "beginning": "The scientists", "bold": "determine (past)", "correct": "were determining", "ending": "the cause of the issue yesterday" },
     { "beginning": "People", "bold": "discuss (future)", "correct": "will be discussing", "ending": "the future during the meeting" },
@@ -109,7 +121,7 @@ const sentences = [
     { "beginning": "The girl", "bold": "wonder (present)", "correct": "is wondering", "ending": "if she ever tells the truth" },
     { "beginning": "The athletes", "bold": "exercise (future)", "correct": "will be exercising", "ending": "early tomorrow morning" },
 
-    // LESSON 12
+    //lesson 15 Прийменники місця
     { beginning: "The books are", bold: "під", correct: "under", ending: "the bed" },
     { beginning: "The picture is", bold: "за", correct: "behind", ending: "the door" },
     { beginning: "The shoes are", bold: "перед", correct: "in front of", ending: "the closet" },
@@ -119,7 +131,7 @@ const sentences = [
     { beginning: "The ball is", bold: "всередині", correct: "inside", ending: "the box" },
     { beginning: "The car is", bold: "позаду", correct: "behind", ending: "the building" },
 
-    // LESSON 13
+    //lesson 16 Час і дата
     { beginning: "Her birthday is", bold: "in", correct: "in", ending: "July" },
     { beginning: "The meeting is", bold: "in", correct: "at", ending: "3 o’clock" },
     { beginning: "The festival happens", bold: "in", correct: "in", ending: "2025" },
@@ -129,7 +141,7 @@ const sentences = [
     { beginning: "The appointment is", bold: "in", correct: "on", ending: "Friday" },
     { beginning: "The anniversary is", bold: "in", correct: "in", ending: "1999" },
 
-    // LESSON 14
+    //lesson 17 Артиклі. Конструкція There is/There are
     { beginning: "", bold: "There is (є)", correct: "There is", ending: "a book on the table" },
     { beginning: "", bold: "There is (будуть)", correct: "There will be", ending: "three cats in the garden" },
     { beginning: "", bold: "There is (була)", correct: "There was", ending: "a problem we need to solve" },
@@ -139,7 +151,7 @@ const sentences = [
     { beginning: "", bold: "There is (буде)", correct: "There will be", ending: "a message for you" },
     { beginning: "", bold: "There is (є)", correct: "There are", ending: "several options to choose from" },
 
-    // LESSON 15
+    //lesson 18 Однина і множина. Ступені порівняння. Порядкові й кількісні числівники
     { beginning: "She asked", bold: "question", correct: "questions", ending: "about the assignment" },
     { beginning: "He applied to", bold: "university", correct: "universities", ending: "across the country" },
     { beginning: "They collected", bold: "rock", correct: "rocks", ending: "from the riverbank" },
@@ -149,7 +161,7 @@ const sentences = [
     { beginning: "He saw", bold: "gallery", correct: "galleries", ending: "full of beautiful paintings" },
     { beginning: "They enjoyed", bold: "party", correct: "parties", ending: "every weekend during summer" },
 
-    // LESSON 16
+    //lesson 19 Активний і пасивний стан
     { beginning: "The report", bold: "prepare (present)", correct: "is prepared", ending: "by the assistant every morning" },
     { beginning: "The packages", bold: "deliver (future)", correct: "will be delivered", ending: "by the courier" },
     { beginning: "The bridge", bold: "build (past)", correct: "was built", ending: "in just six months" },
@@ -159,7 +171,7 @@ const sentences = [
     { beginning: "The book", bold: "write (future)", correct: "will be written", ending: "in 2030" },
     { beginning: "The invitations", bold: "send (past)", correct: "were sent", ending: "yesterday" },
 
-    // LESSON 17
+    //lesson 20 Модальні дієслова, конструкції Would і Used to
     { beginning: "You", bold: "may (можеш)", correct: "can", ending: "borrow my pen" },
     { beginning: "He", bold: "should (мусиш)", correct: "must", ending: "finish his homework" },
     { beginning: "They", bold: "can (можуть)", correct: "may", ending: "leave early today" },
@@ -169,7 +181,7 @@ const sentences = [
     { beginning: "You", bold: "must (повинен був)", correct: "should have", ending: "called me earlier" },
     { beginning: "They", bold: "should (мають)", correct: "have to", ending: "wear uniforms at school" },
 
-    // LESSON 18
+    //lesson 21 Наказові речення
     { beginning: "", bold: "Іди", correct: "Go", ending: "to your room" },
     { beginning: "", bold: "Слухай", correct: "Listen", ending: "to the teacher" },
     { beginning: "", bold: "Відкрий", correct: "Open", ending: "the window" },
@@ -179,27 +191,30 @@ const sentences = [
     { beginning: "", bold: "Читайте", correct: "Read", ending: "this paragraph carefully" },
     { beginning: "", bold: "Скажи", correct: "Tell", ending: "me the truth" },
 
+    // lesson 22 Підрядні речення    
+    // lesson 23 Непряма мова
+
     // LESSON 19
-    { beginning: "I saw", bold: "(конкретну)", correct: "the", ending: "book on the desk" },
-    { beginning: "He opened", bold: "(найближче)", correct: "the", ending: "window to let fresh air in" },
-    { beginning: "She bought", bold: "(невідомо яке)", correct: "a", ending: "new dress yesterday" },
-    { beginning: "We saw", bold: "(якусь)", correct: "a", ending: "bird in the garden" },
-    { beginning: "They visited", bold: "(той)", correct: "the", ending: "museum downtown" },
-    { beginning: "She adopted", bold: "(не знаємо яке)", correct: "a", ending: "puppy from the shelter" },
-    { beginning: "I found", bold: "(ті, які загубив)", correct: "the", ending: "keys under the couch" },
-    { beginning: "He ate", bold: "(якийсь)", correct: "a", ending: "sandwich for lunch" },
+    // { beginning: "I saw", bold: "(конкретну)", correct: "the", ending: "book on the desk" },
+    // { beginning: "He opened", bold: "(найближче)", correct: "the", ending: "window to let fresh air in" },
+    // { beginning: "She bought", bold: "(невідомо яке)", correct: "a", ending: "new dress yesterday" },
+    // { beginning: "We saw", bold: "(якусь)", correct: "a", ending: "bird in the garden" },
+    // { beginning: "They visited", bold: "(той)", correct: "the", ending: "museum downtown" },
+    // { beginning: "She adopted", bold: "(не знаємо яке)", correct: "a", ending: "puppy from the shelter" },
+    // { beginning: "I found", bold: "(ті, які загубив)", correct: "the", ending: "keys under the couch" },
+    // { beginning: "He ate", bold: "(якийсь)", correct: "a", ending: "sandwich for lunch" },
 
     // LESSON 20
-    { beginning: "Do you want tea", bold: "(або)", correct: "or", ending: "coffee?" },
-    { beginning: "She bought apples", bold: "(і)", correct: "and", ending: "oranges at the market." },
-    { beginning: "He is smart", bold: "(але)", correct: "but", ending: "sometimes careless." },
-    { beginning: "It's cold", bold: "(але все ж)", correct: "yet", ending: "he went swimming." },
-    { beginning: "He was tired", bold: "(тому)", correct: "so", ending: "he went to bed early." },
-    { beginning: "We can go hiking", bold: "(або)", correct: "or", ending: "stay home and rest." },
-    { beginning: "They danced", bold: "(і)", correct: "and", ending: "sang all night." },
-    { beginning: "She studied hard", bold: "(тому)", correct: "so", ending: "she passed the test." },
+    // { beginning: "Do you want tea", bold: "(або)", correct: "or", ending: "coffee?" },
+    // { beginning: "She bought apples", bold: "(і)", correct: "and", ending: "oranges at the market." },
+    // { beginning: "He is smart", bold: "(але)", correct: "but", ending: "sometimes careless." },
+    // { beginning: "It's cold", bold: "(але все ж)", correct: "yet", ending: "he went swimming." },
+    // { beginning: "He was tired", bold: "(тому)", correct: "so", ending: "he went to bed early." },
+    // { beginning: "We can go hiking", bold: "(або)", correct: "or", ending: "stay home and rest." },
+    // { beginning: "They danced", bold: "(і)", correct: "and", ending: "sang all night." },
+    // { beginning: "She studied hard", bold: "(тому)", correct: "so", ending: "she passed the test." },
 
-    // LESSON 21
+    //lesson 24 Прості часи: повторення
     { beginning: "She", bold: "visit (future)", correct: "will visit", ending: "her grandmother tomorrow" },
     { beginning: "They", bold: "arrive (past)", correct: "arrived", ending: "late last night" },
     { beginning: "I", bold: "call (future)", correct: "will call", ending: "you when I get home" },
@@ -209,7 +224,7 @@ const sentences = [
     { beginning: "They", bold: "travel (future)", correct: "will travel", ending: "to Spain next summer" },
     { beginning: "I", bold: "see (past)", correct: "saw", ending: "that movie last weekend" },
 
-    // LESSON 22
+    //lesson 25 Тривалі часи: повторення
     { beginning: "She", bold: "cook (future)", correct: "will be cooking", ending: "dinner at 7 p.m." },
     { beginning: "They", bold: "watch (past)", correct: "were watching", ending: "a movie when I called" },
     { beginning: "He", bold: "read (present)", correct: "is reading", ending: "an interesting book now" },
@@ -219,7 +234,7 @@ const sentences = [
     { beginning: "They", bold: "move (future)", correct: "will be moving", ending: "to a new apartment soon" },
     { beginning: "You", bold: "sleep (past)", correct: "were sleeping", ending: "when I got home" },
 
-    // LESSON 23
+    //lesson 26 Теперішній доконаний і Теперішній доконаний тривалий: повторення - доробити
     { beginning: "She", bold: "visit", correct: "has visited", ending: "Paris several times" },
     { beginning: "They", bold: "finish", correct: "have finished", ending: "their homework already" },
     { beginning: "He", bold: "break", correct: "has broken", ending: "his phone again" },
@@ -229,7 +244,7 @@ const sentences = [
     { beginning: "She", bold: "write", correct: "has written", ending: "a great story" },
     { beginning: "They", bold: "travel", correct: "have traveled", ending: "to many countries" },
 
-    // LESSON 24
+    //lesson 27 Повторення всіх часів - перевірити
     { beginning: "He", bold: "run", correct: "is not running", ending: "in the park today" },
     { beginning: "", bold: "play", correct: "Are they playing", ending: "football now?" },
     { beginning: "She", bold: "study", correct: "is not studying", ending: "for the test tonight" },
@@ -240,56 +255,56 @@ const sentences = [
     { beginning: "", bold: "drive", correct: "Will she be driving", ending: "to the party later?" },
 
     // LESSON 25
-    { beginning: "I", bold: "have", correct: "had", ending: "a great time at the party" },
-    { beginning: "She", bold: "do", correct: "did", ending: "all her homework yesterday" },
-    { beginning: "He", bold: "say", correct: "said", ending: "hello to everyone" },
-    { beginning: "They", bold: "go", correct: "went", ending: "to the beach last weekend" },
-    { beginning: "We", bold: "get", correct: "got", ending: "new phones last month" },
-    { beginning: "He", bold: "make", correct: "made", ending: "a cake for her birthday" },
-    { beginning: "I", bold: "know", correct: "knew", ending: "the answer to the question" },
-    { beginning: "She", bold: "think", correct: "thought", ending: "about the offer carefully" },
+    // { beginning: "I", bold: "have", correct: "had", ending: "a great time at the party" },
+    // { beginning: "She", bold: "do", correct: "did", ending: "all her homework yesterday" },
+    // { beginning: "He", bold: "say", correct: "said", ending: "hello to everyone" },
+    // { beginning: "They", bold: "go", correct: "went", ending: "to the beach last weekend" },
+    // { beginning: "We", bold: "get", correct: "got", ending: "new phones last month" },
+    // { beginning: "He", bold: "make", correct: "made", ending: "a cake for her birthday" },
+    // { beginning: "I", bold: "know", correct: "knew", ending: "the answer to the question" },
+    // { beginning: "She", bold: "think", correct: "thought", ending: "about the offer carefully" },
 
     // LESSON 26
-    { beginning: "The meeting starts", bold: "on", correct: "at", ending: "3 o'clock." },
-    { beginning: "She was born", bold: "at", correct: "on", ending: "Monday." },
-    { beginning: "We always go skiing", bold: "in", correct: "in", ending: "January." },
-    { beginning: "I saw him", bold: "in", correct: "on", ending: "Friday afternoon." },
-    { beginning: "They moved here", bold: "on", correct: "in", ending: "2015." },
-    { beginning: "The concert is", bold: "in", correct: "at", ending: "7 o'clock sharp." },
-    { beginning: "She graduated", bold: "at", correct: "in", ending: "2020." },
-    { beginning: "The party is", bold: "at", correct: "on", ending: "Saturday night." },
+    // { beginning: "The meeting starts", bold: "on", correct: "at", ending: "3 o'clock." },
+    // { beginning: "She was born", bold: "at", correct: "on", ending: "Monday." },
+    // { beginning: "We always go skiing", bold: "in", correct: "in", ending: "January." },
+    // { beginning: "I saw him", bold: "in", correct: "on", ending: "Friday afternoon." },
+    // { beginning: "They moved here", bold: "on", correct: "in", ending: "2015." },
+    // { beginning: "The concert is", bold: "in", correct: "at", ending: "7 o'clock sharp." },
+    // { beginning: "She graduated", bold: "at", correct: "in", ending: "2020." },
+    // { beginning: "The party is", bold: "at", correct: "on", ending: "Saturday night." },
 
     // LESSON 27
-    { beginning: "The car is parked", bold: "behind (перед)", correct: "in front of", ending: "the house." },
-    { beginning: "The keys are", bold: "next to (позаду)", correct: "behind", ending: "the sofa." },
-    { beginning: "She sat", bold: "under (поруч з)", correct: "next to", ending: "her friend in class." },
-    { beginning: "The book is", bold: "under (на)", correct: "on", ending: "the table." },
-    { beginning: "The cat is", bold: "on (під)", correct: "under", ending: "the bed." },
-    { beginning: "The school is", bold: "next to (між)", correct: "between", ending: "the library and the park." },
-    { beginning: "The shoes are", bold: "on (під)", correct: "under", ending: "the chair." },
-    { beginning: "The lamp is", bold: "under (на)", correct: "on", ending: "the desk." },
+    // { beginning: "The car is parked", bold: "behind (перед)", correct: "in front of", ending: "the house." },
+    // { beginning: "The keys are", bold: "next to (позаду)", correct: "behind", ending: "the sofa." },
+    // { beginning: "She sat", bold: "under (поруч з)", correct: "next to", ending: "her friend in class." },
+    // { beginning: "The book is", bold: "under (на)", correct: "on", ending: "the table." },
+    // { beginning: "The cat is", bold: "on (під)", correct: "under", ending: "the bed." },
+    // { beginning: "The school is", bold: "next to (між)", correct: "between", ending: "the library and the park." },
+    // { beginning: "The shoes are", bold: "on (під)", correct: "under", ending: "the chair." },
+    // { beginning: "The lamp is", bold: "under (на)", correct: "on", ending: "the desk." },
 
     // LESSON 28
-    { beginning: "The", bold: "sheeps", correct: "sheep", ending: "are grazing in the field." },
-    { beginning: "We saw three", bold: "deers", correct: "deer", ending: "in the forest." },
-    { beginning: "He caught five", bold: "fishes", correct: "fish", ending: "this morning." },
-    { beginning: "Several", bold: "aircrafts", correct: "aircraft", ending: "were parked at the airport." },
-    { beginning: "The river is full of", bold: "salmons", correct: "salmon", ending: "during this season." },
-    { beginning: "This tool has many", bold: "meanses", correct: "means", ending: "of use." },
-    { beginning: "The desert is home to many", bold: "cactuses", correct: "cactus", ending: "of different shapes." },
-    { beginning: "Her", bold: "foots", correct: "feet", ending: "were tired after walking all day." },
+    // { beginning: "The", bold: "sheeps", correct: "sheep", ending: "are grazing in the field." },
+    // { beginning: "We saw three", bold: "deers", correct: "deer", ending: "in the forest." },
+    // { beginning: "He caught five", bold: "fishes", correct: "fish", ending: "this morning." },
+    // { beginning: "Several", bold: "aircrafts", correct: "aircraft", ending: "were parked at the airport." },
+    // { beginning: "The river is full of", bold: "salmons", correct: "salmon", ending: "during this season." },
+    // { beginning: "This tool has many", bold: "meanses", correct: "means", ending: "of use." },
+    // { beginning: "The desert is home to many", bold: "cactuses", correct: "cactus", ending: "of different shapes." },
+    // { beginning: "Her", bold: "foots", correct: "feet", ending: "were tired after walking all day." },
 
     // LESSON 29
-  { beginning: "The documents", bold: "send (past)", correct: "were sent", ending: "yesterday." },
-  { beginning: "The letter", bold: "write (present)", correct: "is written", ending: "by the manager." },
-  { beginning: "The project", bold: "complete (future)", correct: "will be completed", ending: "by next week." },
-  { beginning: "The package", bold: "deliver (past)", correct: "was delivered", ending: "this morning." },
-  { beginning: "The invitations", bold: "print (present)", correct: "are printed", ending: "every Friday." },
-  { beginning: "The results", bold: "announce (future)", correct: "will be announced", ending: "tomorrow." },
-  { beginning: "The car", bold: "wash (past)", correct: "was washed", ending: "by Tom." },
-  { beginning: "The bills", bold: "pay (present)", correct: "are paid", ending: "at the end of each month." },
+  // { beginning: "The documents", bold: "send (past)", correct: "were sent", ending: "yesterday." },
+  // { beginning: "The letter", bold: "write (present)", correct: "is written", ending: "by the manager." },
+  // { beginning: "The project", bold: "complete (future)", correct: "will be completed", ending: "by next week." },
+  // { beginning: "The package", bold: "deliver (past)", correct: "was delivered", ending: "this morning." },
+  // { beginning: "The invitations", bold: "print (present)", correct: "are printed", ending: "every Friday." },
+  // { beginning: "The results", bold: "announce (future)", correct: "will be announced", ending: "tomorrow." },
+  // { beginning: "The car", bold: "wash (past)", correct: "was washed", ending: "by Tom." },
+  // { beginning: "The bills", bold: "pay (present)", correct: "are paid", ending: "at the end of each month." },
 
-    // LESSON 30
+    //lesson 28 Рідковживані часи
   { beginning: "She", bold: "finish (past)", correct: "had finished", ending: "her work before dinner." },
   { beginning: "They", bold: "leave (future)", correct: "will have left", ending: "by the time we arrive." },
   { beginning: "I", bold: "read (past)", correct: "had read", ending: "the book before the test." },
@@ -297,7 +312,31 @@ const sentences = [
   { beginning: "He", bold: "eat (past)", correct: "had eaten", ending: "before the guests came." },
   { beginning: "The team", bold: "win (future)", correct: "will have won", ending: "five games by then." },
   { beginning: "She", bold: "leave (past)", correct: "had left", ending: "when I called her." },
-  { beginning: "They", bold: "complete (future)", correct: "will have completed", ending: "the project by Friday." }
+  { beginning: "They", bold: "complete (future)", correct: "will have completed", ending: "the project by Friday." },
+  //lesson 29 8 rules
+    { beginning: "8 rules-1", word: "8 rules", translat: "8 rules", ending: "" },
+    { beginning: "8 rules-1", word: "8 rules", translat: "8 rules", ending: "" },
+    { beginning: "8 rules-1", word: "8 rules", translat: "8 rules", ending: "" },
+    { beginning: "8 rules-1", word: "8 rules", translat: "8 rules", ending: "" },
+    { beginning: "8 rules-1", word: "8 rules", translat: "8 rules", ending: "" },
+    { beginning: "8 rules-1", word: "8 rules", translat: "8 rules", ending: "" },
+    { beginning: "8 rules-1", word: "8 rules", translat: "8 rules", ending: "" },
+    { beginning: "8 rules-1", word: "8 rules", translat: "8 rules", ending: "" },
+    { beginning: "8 rules-1", word: "8 rules", translat: "8 rules", ending: "" },
+    { beginning: "8 rules-1", word: "8 rules", translat: "8 rules", ending: "" },
+    
+  //lesson 30 8 rules
+    { beginning: "8 rules-2", word: "8 rules", translat: "8 rules", ending: "" },
+    { beginning: "8 rules-2", word: "8 rules", translat: "8 rules", ending: "" },
+    { beginning: "8 rules-2", word: "8 rules", translat: "8 rules", ending: "" },
+    { beginning: "8 rules-2", word: "8 rules", translat: "8 rules", ending: "" },
+    { beginning: "8 rules-2", word: "8 rules", translat: "8 rules", ending: "" },
+    { beginning: "8 rules-2", word: "8 rules", translat: "8 rules", ending: "" },
+    { beginning: "8 rules-2", word: "8 rules", translat: "8 rules", ending: "" },
+    { beginning: "8 rules-2", word: "8 rules", translat: "8 rules", ending: "" },
+    { beginning: "8 rules-2", word: "8 rules", translat: "8 rules", ending: "" },
+    { beginning: "8 rules-2", word: "8 rules", translat: "8 rules", ending: "" },
+
 
 ]
 

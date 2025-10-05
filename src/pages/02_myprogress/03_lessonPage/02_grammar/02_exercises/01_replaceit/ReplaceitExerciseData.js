@@ -1,11 +1,13 @@
+// 8 основних правил граматики (частина 1) lesson 29
+// 8 основних правил граматики (частина 2) lesson 30
+// Непряма мова lesson 23
+// Підрядні речення 22
+// Майбутній тривалий 9
+// Минулий тривалий 10
+//lesson 13 Теперішній доконаний тривалий час
+
+
 const sentences = [
-    // 8 основних правил граматики (частина 1) lesson 29
-    // 8 основних правил граматики (частина 2) lesson 30
-    // Непряма мова lesson 23
-    // Підрядні речення 22
-    // Майбутній тривалий 9
-    // Минулий тривалий 10
-    //lesson 13 Теперішній доконаний тривалий час
 
 
 
@@ -300,7 +302,7 @@ const sentences = [
     { beginning: "He", word: "буде писати", translat: "will be writing", ending: "an email in the morning" },
     { beginning: "He", word: "писав", translat: "was writing", ending: "an email when I called" },
 
-    //lesson 26 Теперішній доконаний і Теперішній доконаний тривалий: повторення
+    //lesson 26 Теперішній доконаний і Теперішній доконаний тривалий: повторення - доробити
     { beginning: "I", word: "зробив", translat: "have done", ending: "my homework" },
     { beginning: "She", word: "прочитала", translat: "has read", ending: "the book" },
     { beginning: "They", word: "відвідали", translat: "have visited", ending: "Paris twice" },
@@ -312,7 +314,7 @@ const sentences = [
     { beginning: "They", word: "прийшли", translat: "have come", ending: "back from vacation" },
     { beginning: "He", word: "поїв", translat: "has eaten", ending: "already" },
 
-    //lesson 27 Повторення всіх часів
+    //lesson 27 Повторення всіх часів - перевірити
     { beginning: "He", word: "не пішов", translat: "did not go", ending: "to school yesterday" },
     { beginning: "", word: "пішов", translat: "Did he go", ending: "to school yesterday?" },
     { beginning: "They", word: "не грали", translat: "did not play", ending: "football on Sunday" },
@@ -337,29 +339,28 @@ const sentences = [
     { beginning: "He", word: "вже пішов", translat: "had already gone", ending: "when we called" },
 
         //lesson 29 8 rules
-    { beginning: "She said the store", word: "працює", translat: "was open", ending: "" },
-    { beginning: "He told me they", word: "проводять (мають)", translat: "were having", ending: "a good time" },
-    { beginning: "They mentioned they", word: "зустріли", translat: "met", ending: "their friends last week" },
-    { beginning: "I said I", word: "зробив", translat: "did", ending: "my homework" },
-    { beginning: "She told us she", word: "прийшла", translat: "came", ending: "home late" },
-    { beginning: "He said he", word: "прочитав", translat: "read", ending: "the book last month" },
-    { beginning: "They said they", word: "поїхали", translat: "went", ending: "on vacation" },
-    { beginning: "I told him I", word: "працював", translat: "worked", ending: "all day" },
-    { beginning: "She mentioned she", word: "спілкувалася", translat: "talked", ending: "to her teacher" },
-    { beginning: "He said he", word: "знайшов", translat: "found", ending: "the keys" },
-
+    { beginning: "8 rules-1", word: "8 rules", translat: "8 rules", ending: "" },
+    { beginning: "8 rules-1", word: "8 rules", translat: "8 rules", ending: "" },
+    { beginning: "8 rules-1", word: "8 rules", translat: "8 rules", ending: "" },
+    { beginning: "8 rules-1", word: "8 rules", translat: "8 rules", ending: "" },
+    { beginning: "8 rules-1", word: "8 rules", translat: "8 rules", ending: "" },
+    { beginning: "8 rules-1", word: "8 rules", translat: "8 rules", ending: "" },
+    { beginning: "8 rules-1", word: "8 rules", translat: "8 rules", ending: "" },
+    { beginning: "8 rules-1", word: "8 rules", translat: "8 rules", ending: "" },
+    { beginning: "8 rules-1", word: "8 rules", translat: "8 rules", ending: "" },
+    { beginning: "8 rules-1", word: "8 rules", translat: "8 rules", ending: "" },
+    
     //lesson 30 8 rules
-    { beginning: "He", word: "грає", translat: "plays", ending: "football every weekend" },
-    { beginning: "", word: "грає", translat: "Does he play", ending: "football every weekend?" },
-    { beginning: "She", word: "читає", translat: "reads", ending: "a book every evening" },
-    { beginning: "", word: "читає", translat: "Does she read", ending: "a book every evening?" },
-    { beginning: "They", word: "живуть", translat: "live", ending: "in this house" },
-    { beginning: "", word: "живуть", translat: "Do they live", ending: "in this house?" },
-    { beginning: "We", word: "ходили", translat: "went", ending: "to the zoo yesterday" },
-    { beginning: "", word: "ходили", translat: "Did we go", ending: "to the zoo yesterday?" },
-    { beginning: "I", word: "готую", translat: "cook", ending: "dinner every day" },
-    { beginning: "", word: "готую", translat: "Do I cook", ending: "dinner every day?" },
-
+    { beginning: "8 rules-2", word: "8 rules", translat: "8 rules", ending: "" },
+    { beginning: "8 rules-2", word: "8 rules", translat: "8 rules", ending: "" },
+    { beginning: "8 rules-2", word: "8 rules", translat: "8 rules", ending: "" },
+    { beginning: "8 rules-2", word: "8 rules", translat: "8 rules", ending: "" },
+    { beginning: "8 rules-2", word: "8 rules", translat: "8 rules", ending: "" },
+    { beginning: "8 rules-2", word: "8 rules", translat: "8 rules", ending: "" },
+    { beginning: "8 rules-2", word: "8 rules", translat: "8 rules", ending: "" },
+    { beginning: "8 rules-2", word: "8 rules", translat: "8 rules", ending: "" },
+    { beginning: "8 rules-2", word: "8 rules", translat: "8 rules", ending: "" },
+    { beginning: "8 rules-2", word: "8 rules", translat: "8 rules", ending: "" },
 ]
 
 const instructions = [

@@ -1,5 +1,5 @@
 const sentences = [
-    // LESSON 1
+    //lesson 1 Вимова. Правила читання
     { sentence: "W-O-R-K", translat: "" },
     { sentence: "G-O-O-D", translat: "" },
     { sentence: "U-S-E-D", translat: "" },
@@ -9,7 +9,7 @@ const sentences = [
     { sentence: "T-I-M-E", translat: "" },
     { sentence: "your name", translat: "" },
 
-    // LESSON 2
+    //lesson 2 Pronouns. To Be
     { sentence: "Як тебе звати?", translat: "What is your name?" },
     { sentence: "Ти не американець", translat: "You are not American" },
     { sentence: "Вони були в місті (city)?", translat: "Were they in city?" },
@@ -19,7 +19,7 @@ const sentences = [
     { sentence: "Фільм нецікавий", translat: "Film is not interesting" },
     { sentence: "Сім'я важлива?", translat: "Is family important?" },
 
-    // LESSON 3
+    //lesson 3 Теперішній простий час
     { sentence: "Він завжди миє свої руки", translat: "He always washes his hands" },
     { sentence: "Вони допомагають своїм друзям", translat: "They help their friends" },
     { sentence: "Я ходжу в зал по понеділкам", translat: "I go to the gym on Mondays" },
@@ -31,7 +31,7 @@ const sentences = [
     //{ sentence: "Ви мусите подумати про здоров'я", translat: "You must think about your health" },
     //{ sentence: "Ми їздимо на тому ж автобусі", translat: "We take the same bus" },
 
-    // LESSON 4
+    //lesson 4 Майбутній простий час
     { sentence: "Ми зараз почнемо збори", translat: "We will start the meeting now" },
     { sentence: "Вона подвонить тобі на перерві", translat: "She will call you during the break" },
     { sentence: "Ти багато вивчиш у цьому курсі", translat: "You will learn a lot in this course" },
@@ -43,7 +43,7 @@ const sentences = [
     //{ sentence: "Повітря буде відчуватися холоднішим", translat: "The air will feel cooler" },
     //{ sentence: "Ми проведемо день разом", translat: "Wt will spend the day together" },
 
-    // LESSON 5
+    //lesson 5 Минулий простий час
     { sentence: "Вона говорила меньше перед зустріччю", translat: "She talked less during the meeting" },
     { sentence: "Вони грали у футбол в парку", translat: "They played football in the park" },
     { sentence: "Він закінчив проект вчасно", translat: "He finished the project on time" },
@@ -52,22 +52,8 @@ const sentences = [
     { sentence: "Вона вимкнула світло", translat: "She turned off the lights" },
     { sentence: "Він скучив за дружиною дуже сильно", translat: "He missed her wife very much" },
     { sentence: "Вони підготували звіт", translat: "They prepared the report" },
-    //{ sentence: "Я дивився, як він йде геть", translat: "I watched him going away" },
-    //{ sentence: "Ми приготували їжу для всієї сім'ї", translat: "We cooked food for the whole family" },
 
-    // LESSON 6
-    { sentence: "Я зустрів свого друга в кафе", translat: "I met my friend at the café" },
-    { sentence: "Вона прочитала 3 книги", translat: "She read 3 books" },
-    { sentence: "Він поклав ключі на стіл", translat: "He put his keys on the table" },
-    { sentence: "Вони пробігли 5 миль вранці", translat: "They ran 5 miles in the morning" },
-    { sentence: "Вона продала свій старий велосипед", translat: "She sold her old bicycle" },
-    { sentence: "Я відправив емейл вчора ввечері", translat: "I sent the email last night" },
-    { sentence: "Діти співали пісню в школі", translat: "The children sang a song at the school " },
-    { sentence: "Він зняв фото заходу сонця", translat: "He took a photo of the sunset" },
-    //{ sentence: "Я прокинувся рано сьогодні", translat: "I woke up early today" },
-    //{ sentence: "Вона написала листа бабусі", translat: "She wrote a letter to her grandmother" },
-
-    // LESSON 7
+    //lesson 6 Прості часи: підсумок
     { sentence: "Ти поставиш будильник?", translat: "Will you set the alarm?" },
     { sentence: "Чи співали пташки вранці?", translat: "Did the birds sing in the morning?" },
     { sentence: "Вона працює гідом?", translat: "Does she work as a guide?" },
@@ -76,10 +62,20 @@ const sentences = [
     { sentence: "Чи цікавить музика багатьох людей?", translat: "Does music interest many people?" },
     { sentence: "Чи вивчав він літературу в університеті?", translat: "Did he study literature at university?" },
     { sentence: "Ви ходите пішки на роботу?", translat: "Do you walk to work?" },
-    //{ sentence: "Ми вирішимо проблему разом?", translat: "Will we solve the problem together?" },
-    //{ sentence: "Чи вітаються вони кожного дня?", translat: "Do they say hello every day?" },
 
-    // LESSON 8
+    //lesson 7 Неправильні дієслова
+    { sentence: "Я зустрів свого друга в кафе", translat: "I met my friend at the café" },
+    { sentence: "Вона прочитала 3 книги", translat: "She read 3 books" },
+    { sentence: "Він поклав ключі на стіл", translat: "He put his keys on the table" },
+    { sentence: "Вони пробігли 5 миль вранці", translat: "They ran 5 miles in the morning" },
+    { sentence: "Вона продала свій старий велосипед", translat: "She sold her old bicycle" },
+    { sentence: "Я відправив емейл вчора ввечері", translat: "I sent the email last night" },
+    { sentence: "Діти співали пісню в школі", translat: "The children sang a song at the school " },
+    { sentence: "Він зняв фото заходу сонця", translat: "He took a photo of the sunset" },
+
+    //lesson 8 Теперішній тривалий час
+
+    // lesson 9 Майбутній тривалий
     { sentence: "Вона слухатиме концерт", translat: "She will be listening to the concert" },
     { sentence: "Ми будемо говорити про це завтра", translat: "We will be talking about it tomorrow" },
     { sentence: "Вони перевірятимуть розмір", translat: "They will be checking the size" },
@@ -91,8 +87,9 @@ const sentences = [
     //{ sentence: "Вчитель пояснюватиме нову тему", translat: "The teacher will be explaining the new topic" },
     //{ sentence: "Пані будуть пити вино", translat: "The ladies will be drinking wine" },
 
+    // lesson 10 Минулий тривалий
 
-    // LESSON 9
+    //lesson 11  Тривалі часи: підсумок
     { sentence: "Чи працює вона допізна цими днями?", translat: "Is she working late these days?" },
     { sentence: "Вони відмічали свято сьогодні?", translat: "Were they celebrating a holday today?" },
     { sentence: "Чи зменьшуватиме компанія відходи?", translat: "Will company be reducing the waste?" },
@@ -105,7 +102,7 @@ const sentences = [
     //{ sentence: "Чи робитимуть вони 3 проекти?", translat: "Will they be doing 3 projects?" },
 
 
-    // LESSON 10
+    //lesson 12 Теперішній доконаний час
     { sentence: "Чи впала темперетура?", translat: "Has the temperature dropped?" },
     { sentence: "Вони об'єдналися з іншою командою?", translat: "Have they united with another team?" },
     { sentence: "Ви чули це слово раніше?", translat: "Have you heard this word before?" },
@@ -118,16 +115,19 @@ const sentences = [
     //{ sentence: "Вона закінчила навчання (тренінг)?", translat: "Has she completed the training?" },
 
     // LESSON 11
-    { sentence: "Я вже поїв", translat: "I have already eaten" },
-    { sentence: "Вона ще не приїхала", translat: "She hasn't arrived yet" },
-    { sentence: "Ти коли-небудь був у Франції?", translat: "Have you ever been to France?" },
-    { sentence: "Ми щойно завершили проєкт", translat: "We have just finished the project" },
-    { sentence: "Він не бачив цього фільму", translat: "He hasn't seen this movie" },
-    { sentence: "Вони вже прибули?", translat: "Have they arrived yet?" },
-    { sentence: "Я знайшов свої ключі", translat: "I have found my keys" },
-    { sentence: "Ми не чули новин", translat: "We haven't heard the news" },
+    // { sentence: "Я вже поїв", translat: "I have already eaten" },
+    // { sentence: "Вона ще не приїхала", translat: "She hasn't arrived yet" },
+    // { sentence: "Ти коли-небудь був у Франції?", translat: "Have you ever been to France?" },
+    // { sentence: "Ми щойно завершили проєкт", translat: "We have just finished the project" },
+    // { sentence: "Він не бачив цього фільму", translat: "He hasn't seen this movie" },
+    // { sentence: "Вони вже прибули?", translat: "Have they arrived yet?" },
+    // { sentence: "Я знайшов свої ключі", translat: "I have found my keys" },
+    // { sentence: "Ми не чули новин", translat: "We haven't heard the news" },
 
-    // LESSON 12
+    //lesson 13 Теперішній доконаний тривалий час   
+    //lesson 14 Порівняння всіх часів 
+
+    //lesson 15 Прийменники місця
     { sentence: "Книга лежить на столі", translat: "The book is on the table" },
     { sentence: "Собака спав під ліжком", translat: "The dog slept under the bed" },
     { sentence: "Діти грають у парку", translat: "The children play in the park" },
@@ -137,7 +137,7 @@ const sentences = [
     { sentence: "Моя сумка лежить позаду тебе", translat: "My bag is behind you" },
     { sentence: "Він поклав документи в ящик", translat: "He put the documents in the drawer" },
 
-    // LESSON 13
+    //lesson 16 Час і дата
     { sentence: "Зараз п’ять хвилин по восьмій", translat: "It is five past eight" },
     { sentence: "Зараз чверть по третій", translat: "It is quarter past three" },
     { sentence: "Зараз двадцять п’ять по сьомій", translat: "It is twenty-five past seven" },
@@ -147,7 +147,7 @@ const sentences = [
     { sentence: "Зараз без п’яти шоста", translat: "It is five to six" },
     { sentence: "Зустріч починається о другій", translat: "The meeting starts at two o’clock" },
 
-    // LESSON 14
+    //lesson 17 Артиклі. Конструкція There is/There are
     { sentence: "У кімнаті є стіл", translat: "There is a table in the room" },
     { sentence: "На полиці є книга", translat: "There is a book on the shelf" },
     { sentence: "У саду є квіти", translat: "There are flowers in the garden" },
@@ -157,7 +157,7 @@ const sentences = [
     { sentence: "У холодильнику є молоко", translat: "There is milk in the fridge" },
     { sentence: "На стіні є картини", translat: "There are paintings on the wall" },
 
-    // LESSON 15
+    //lesson 18 Однина і множина. Ступені порівняння. Порядкові й кількісні числівники
     { sentence: "У мене є три олівці", translat: "I have three pencils" },
     { sentence: "Він живе на дванадцятому поверсі", translat: "He lives on the twelfth floor" },
     { sentence: "У класі двадцять учнів", translat: "There are twenty students in the class" },
@@ -167,7 +167,7 @@ const sentences = [
     { sentence: "У нього чотирнадцять книг", translat: "He has fourteen books" },
     { sentence: "Вони приїхали десятою машиною", translat: "They arrived in the tenth car" },
 
-    // LESSON 16
+    //lesson 19 Активний і пасивний стан
     { sentence: "Лист був написаний учителем", translat: "The letter was written by the teacher" },
     { sentence: "Хліб печеться щодня", translat: "Bread is baked every day" },
     { sentence: "Ця кімната була прибрана", translat: "This room was cleaned" },
@@ -177,7 +177,7 @@ const sentences = [
     { sentence: "Книга була перекладена на українську", translat: "The book was translated into Ukrainian" },
     { sentence: "Стіл зроблений з дерева", translat: "The table is made of wood" },
 
-    // LESSON 17
+    //lesson 20 Модальні дієслова, конструкції Would і Used to
     { sentence: "Я можу допомогти тобі з домашнім завданням", translat: "I can help you with your homework" },
     { sentence: "Ти мусиш носити шолом під час їзди на велосипеді", translat: "You must wear a helmet when cycling" },
     { sentence: "Вона може співати дуже добре", translat: "She can sing very well" },
@@ -187,7 +187,7 @@ const sentences = [
     { sentence: "Я мав би (мусив би) подзвонити їй раніше", translat: "I should have called her earlier" },
     { sentence: "Вони можуть піти з нами", translat: "They can come with us" },
 
-    // LESSON 18
+    //lesson 21 Наказові речення
     { sentence: "Закрий двері", translat: "Close the door" },
     { sentence: "Сідай", translat: "Sit down" },
     { sentence: "Не говори", translat: "Don't speak" },
@@ -197,17 +197,20 @@ const sentences = [
     { sentence: "Відкрий вікно", translat: "Open the window" },
     { sentence: "Будь уважним", translat: "Be careful" },
 
-    // LESSON 19
-    { sentence: "Я бачу собаку (якогось)", translat: "I see a dog" },
-    { sentence: "Собака біля дерева великий", translat: "The dog near the tree is big" },
-    { sentence: "Вона купила книгу (якусь)", translat: "She bought a book" },
-    { sentence: "Книга на столі цікава (саме ця)", translat: "The book on the table is interesting" },
-    { sentence: "Він хоче з’їсти яблуко (неважливо, яке)", translat: "He wants to eat an apple" },
-    { sentence: "Яблуко в моїй руці стигле (саме це)", translat: "The apple in my hand is ripe" },
-    { sentence: "Вони побудували будинок (невідомо який)", translat: "They built a house" },
-    { sentence: "Будинок біля озера новий (саме цей)", translat: "The house near the lake is new" },
+    // lesson 22 Підрядні речення
+    // lesson 23 Непряма мова    
 
-    // LESSON 20
+    // LESSON 19
+    // { sentence: "Я бачу собаку (якогось)", translat: "I see a dog" },
+    // { sentence: "Собака біля дерева великий", translat: "The dog near the tree is big" },
+    // { sentence: "Вона купила книгу (якусь)", translat: "She bought a book" },
+    // { sentence: "Книга на столі цікава (саме ця)", translat: "The book on the table is interesting" },
+    // { sentence: "Він хоче з’їсти яблуко (неважливо, яке)", translat: "He wants to eat an apple" },
+    // { sentence: "Яблуко в моїй руці стигле (саме це)", translat: "The apple in my hand is ripe" },
+    // { sentence: "Вони побудували будинок (невідомо який)", translat: "They built a house" },
+    // { sentence: "Будинок біля озера новий (саме цей)", translat: "The house near the lake is new" },
+
+    //lesson 24 Прості часи: повторення
     { sentence: "Ти бачив цей фільм?", translat: "Did you see this movie?" },
     { sentence: "Чи вона ходить до школи щодня?", translat: "Does she go to school every day?" },
     { sentence: "Ти завтра підеш на роботу?", translat: "Will you go to work tomorrow?" },
@@ -217,7 +220,7 @@ const sentences = [
     { sentence: "Чи вона допомогла тобі з цим?", translat: "Did she help you with this?" },
     { sentence: "Ви часто їздите на автобусі?", translat: "Do you often take the bus?" },
 
-    // LESSON 21
+    //lesson 24 Прості часи: повторення
     { sentence: "Він приїхав учора", translat: "He arrived yesterday" },
     { sentence: "Я завтра зателефоную тобі", translat: "I will call you tomorrow" },
     { sentence: "Ми зустрілися біля школи", translat: "We met near the school" },
@@ -227,7 +230,7 @@ const sentences = [
     { sentence: "Я зробив домашнє завдання", translat: "I did my homework" },
     { sentence: "Він купить новий телефон наступного тижня", translat: "He will buy a new phone next week" },
 
-    // LESSON 22
+    //lesson 25 Тривалі часи: повторення
     { sentence: "Я читав газету", translat: "I was reading newspaper" },
     { sentence: "Я буду працювати", translat: "I will be working" },
     { sentence: "Вони грали на вулиці", translat: "They were playing outside" },
@@ -237,7 +240,7 @@ const sentences = [
     { sentence: "Діти спали", translat: "The children were sleeping" },
     { sentence: "Він буде летіти завтра", translat: "He will be flying tomorrow" },
 
-    // LESSON 23
+    //lesson 26 Теперішній доконаний і Теперішній доконаний тривалий: повторення
     { sentence: "Я вже поїв", translat: "I have already eaten" },
     { sentence: "Вона написала листа", translat: "She has written a letter" },
     { sentence: "Ми щойно приїхали", translat: "We have just arrived" },
@@ -247,7 +250,7 @@ const sentences = [
     { sentence: "Я загубив ключі", translat: "I have lost the keys" },
     { sentence: "Ми бачили цей фільм", translat: "We have seen this movie" },
 
-    // LESSON 24
+    //lesson 26 Теперішній доконаний і Теперішній доконаний тривалий: повторення
     { sentence: "Я ще не закінчив роботу", translat: "I haven’t finished the work yet" },
     { sentence: "Вона вже прочитала цю книгу?", translat: "Has she read this book yet?" },
     { sentence: "Вони не бачили цей фільм", translat: "They haven’t seen this movie" },
@@ -257,7 +260,7 @@ const sentences = [
     { sentence: "Ти не зробив домашнє завдання", translat: "You haven’t done your homework" },
     { sentence: "Вони вже приїхали?", translat: "Have they arrived yet?" },
 
-    // LESSON 25
+    //lesson 27 Повторення всіх часів - перевірити
     { sentence: "Я взяв ключі", translat: "I have taken the keys" },
     { sentence: "Вона бачила цей фільм", translat: "She has seen this movie" },
     { sentence: "Вони прийшли рано", translat: "They have come early" },
@@ -268,46 +271,46 @@ const sentences = [
     { sentence: "Вони показали новий проект", translat: "They have shown a new project" },
 
     // LESSON 26
-    { sentence: "Зараз без п’яти п’ять", translat: "It’s five to five now" },
-    { sentence: "Пора йти, бо вже без чверті шоста", translat: "It’s time to go because it’s quarter to six" },
-    { sentence: "Зустріч почнеться без двадцяти сім", translat: "The meeting will start at twenty to seven" },
-    { sentence: "О пів на восьму я прийду", translat: "I will come at half past seven" },
-    { sentence: "Зараз двадцять п’ять хвилин на шосту", translat: "It’s twenty-five past five now" },
-    { sentence: "Урок починається о чверті на дев’яту", translat: "The lesson starts at quarter past eight" },
-    { sentence: "Поїзд відправляється о десятій десять", translat: "The train leaves at ten past ten" },
-    { sentence: "Матч почнеться о п’ятій", translat: "The match will start at five o’clock" },
+    // { sentence: "Зараз без п’яти п’ять", translat: "It’s five to five now" },
+    // { sentence: "Пора йти, бо вже без чверті шоста", translat: "It’s time to go because it’s quarter to six" },
+    // { sentence: "Зустріч почнеться без двадцяти сім", translat: "The meeting will start at twenty to seven" },
+    // { sentence: "О пів на восьму я прийду", translat: "I will come at half past seven" },
+    // { sentence: "Зараз двадцять п’ять хвилин на шосту", translat: "It’s twenty-five past five now" },
+    // { sentence: "Урок починається о чверті на дев’яту", translat: "The lesson starts at quarter past eight" },
+    // { sentence: "Поїзд відправляється о десятій десять", translat: "The train leaves at ten past ten" },
+    // { sentence: "Матч почнеться о п’ятій", translat: "The match will start at five o’clock" },
 
     // LESSON 27
-    { sentence: "Кіт сидить перед будинком", translat: "The cat is sitting in front of the house" },
-    { sentence: "Він стоїть за деревом", translat: "He is standing behind the tree" },
-    { sentence: "Ми сиділи поруч з друзями", translat: "We sat next to our friends" },
-    { sentence: "Книга лежить на столі", translat: "The book is on the table" },
-    { sentence: "Собака спить під диваном", translat: "The dog is sleeping under the sofa" },
-    { sentence: "Вона стоїть між двома будинками", translat: "She is standing between two houses" },
-    { sentence: "Пташки літають серед дерев", translat: "The birds are flying among the trees" },
-    { sentence: "Ключі знаходяться в сумці", translat: "The keys are in the bag" },
+    // { sentence: "Кіт сидить перед будинком", translat: "The cat is sitting in front of the house" },
+    // { sentence: "Він стоїть за деревом", translat: "He is standing behind the tree" },
+    // { sentence: "Ми сиділи поруч з друзями", translat: "We sat next to our friends" },
+    // { sentence: "Книга лежить на столі", translat: "The book is on the table" },
+    // { sentence: "Собака спить під диваном", translat: "The dog is sleeping under the sofa" },
+    // { sentence: "Вона стоїть між двома будинками", translat: "She is standing between two houses" },
+    // { sentence: "Пташки літають серед дерев", translat: "The birds are flying among the trees" },
+    // { sentence: "Ключі знаходяться в сумці", translat: "The keys are in the bag" },
 
     // LESSON 28
-    { sentence: "Цей будинок більший за той", translat: "This house is bigger than that one" },
-    { sentence: "Це найвищий будинок у місті", translat: "This is the tallest building in the city" },
-    { sentence: "Вона швидша за брата", translat: "She is faster than her brother" },
-    { sentence: "Він найрозумніший учень у класі", translat: "He is the smartest student in the class" },
-    { sentence: "Ця книга цікавіша за ту", translat: "This book is more interesting than that one" },
-    { sentence: "Це найцікавіша книга, яку я читав", translat: "This is the most interesting book I have read" },
-    { sentence: "Моя машина новіша за твою", translat: "My car is newer than yours" },
-    { sentence: "Це найновіша модель телефону", translat: "This is the newest phone model" },
+    // { sentence: "Цей будинок більший за той", translat: "This house is bigger than that one" },
+    // { sentence: "Це найвищий будинок у місті", translat: "This is the tallest building in the city" },
+    // { sentence: "Вона швидша за брата", translat: "She is faster than her brother" },
+    // { sentence: "Він найрозумніший учень у класі", translat: "He is the smartest student in the class" },
+    // { sentence: "Ця книга цікавіша за ту", translat: "This book is more interesting than that one" },
+    // { sentence: "Це найцікавіша книга, яку я читав", translat: "This is the most interesting book I have read" },
+    // { sentence: "Моя машина новіша за твою", translat: "My car is newer than yours" },
+    // { sentence: "Це найновіша модель телефону", translat: "This is the newest phone model" },
 
     // LESSON 29
-    { sentence: "Лист пишеться зараз", translat: "The letter is being written now" },
-    { sentence: "Фільм був знятий минулого року", translat: "The film was made last year" },
-    { sentence: "Завдання буде виконане завтра", translat: "The task will be done tomorrow" },
-    { sentence: "Документ зараз перевіряється", translat: "The document is being checked now" },
-    { sentence: "Вікна були відкриті вчора", translat: "The windows were opened yesterday" },
-    { sentence: "Проект буде завершено скоро", translat: "The project will be completed soon" },
-    { sentence: "Обід готується на кухні", translat: "The lunch is prepared in the kitchen" },
-    { sentence: "Будинок побудований десять років тому", translat: "The house was built ten years ago" },
+    // { sentence: "Лист пишеться зараз", translat: "The letter is being written now" },
+    // { sentence: "Фільм був знятий минулого року", translat: "The film was made last year" },
+    // { sentence: "Завдання буде виконане завтра", translat: "The task will be done tomorrow" },
+    // { sentence: "Документ зараз перевіряється", translat: "The document is being checked now" },
+    // { sentence: "Вікна були відкриті вчора", translat: "The windows were opened yesterday" },
+    // { sentence: "Проект буде завершено скоро", translat: "The project will be completed soon" },
+    // { sentence: "Обід готується на кухні", translat: "The lunch is prepared in the kitchen" },
+    // { sentence: "Будинок побудований десять років тому", translat: "The house was built ten years ago" },
 
-    // LESSON 30
+    //lesson 28 Рідковживані часи
     { sentence: "Він поїв до того", translat: "He had eaten before that" },
     { sentence: "Я закінчу роботу до 2-ї ранку", translat: "I will have finished the work by 2am" },
     { sentence: "Вона прочитала книгу до 8-ї вечора", translat: "She had read the book by 8pm" },
@@ -315,7 +318,31 @@ const sentences = [
     { sentence: "Вони пішли раніше", translat: "They had left earlier" },
     { sentence: "Ти отримаєш лист", translat: "You will have received the letter" },
     { sentence: "Я закрив двері до того часу", translat: "I had closed the door by that time" },
-    { sentence: "Вона поїде до 6 ранку", translat: "She will have left by 6am" }
+    { sentence: "Вона поїде до 6 ранку", translat: "She will have left by 6am" },
+
+        //lesson 29 8 rules
+    { beginning: "8 rules-1", word: "8 rules", translat: "8 rules", ending: "" },
+    { beginning: "8 rules-1", word: "8 rules", translat: "8 rules", ending: "" },
+    { beginning: "8 rules-1", word: "8 rules", translat: "8 rules", ending: "" },
+    { beginning: "8 rules-1", word: "8 rules", translat: "8 rules", ending: "" },
+    { beginning: "8 rules-1", word: "8 rules", translat: "8 rules", ending: "" },
+    { beginning: "8 rules-1", word: "8 rules", translat: "8 rules", ending: "" },
+    { beginning: "8 rules-1", word: "8 rules", translat: "8 rules", ending: "" },
+    { beginning: "8 rules-1", word: "8 rules", translat: "8 rules", ending: "" },
+    { beginning: "8 rules-1", word: "8 rules", translat: "8 rules", ending: "" },
+    { beginning: "8 rules-1", word: "8 rules", translat: "8 rules", ending: "" },
+    
+    //lesson 30 8 rules
+    { beginning: "8 rules-2", word: "8 rules", translat: "8 rules", ending: "" },
+    { beginning: "8 rules-2", word: "8 rules", translat: "8 rules", ending: "" },
+    { beginning: "8 rules-2", word: "8 rules", translat: "8 rules", ending: "" },
+    { beginning: "8 rules-2", word: "8 rules", translat: "8 rules", ending: "" },
+    { beginning: "8 rules-2", word: "8 rules", translat: "8 rules", ending: "" },
+    { beginning: "8 rules-2", word: "8 rules", translat: "8 rules", ending: "" },
+    { beginning: "8 rules-2", word: "8 rules", translat: "8 rules", ending: "" },
+    { beginning: "8 rules-2", word: "8 rules", translat: "8 rules", ending: "" },
+    { beginning: "8 rules-2", word: "8 rules", translat: "8 rules", ending: "" },
+    { beginning: "8 rules-2", word: "8 rules", translat: "8 rules", ending: "" },
 
 ]
 
