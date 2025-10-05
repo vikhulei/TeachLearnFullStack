@@ -65,6 +65,18 @@ const sentences = [
     { beginning: "He", word: "хотів", translat: "wanted", ending: "some water" },
     { beginning: "I", word: "дзвонив", translat: "called", ending: ", but no one answered" },
 
+        //lesson 7 Неправильні дієслова
+    { beginning: "I", word: "дивився", translat: "saw", ending: "a new film" },
+    { beginning: "She just", word: "пішла", translat: "went", ending: "home" },
+    { beginning: "He only", word: "дала", translat: "gave", ending: "one answer" },
+    { beginning: "We", word: "випили", translat: "drank", ending: "water" },
+    { beginning: "They", word: "були", translat: "were", ending: "very happy" },
+    { beginning: "I", word: "мали", translat: "had", ending: "a good time" },
+    { beginning: "He", word: "прийшов", translat: "came", ending: "early" },
+    { beginning: "She", word: "взяла", translat: "took", ending: "some bread" },
+    { beginning: "I", word: "думав", translat: "thought", ending: "about that" },
+    { beginning: "They", word: "склали", translat: "made", ending: "a plan" },
+
     //lesson 6 Прості часи: підсумок
     { beginning: "I", word: "знаю", translat: "know", ending: "the way" },
     { beginning: "She", word: "почуватиметься", translat: "will feel", ending: "well" },
@@ -76,18 +88,6 @@ const sentences = [
     { beginning: "Then we", word: "пішли", translat: "walked", ending: "home" },
     { beginning: "Each child", word: "може", translat: "can", ending: "read" },
     { beginning: "They", word: "любили", translat: "loved", ending: "art" },
-
-    //lesson 7 Неправильні дієслова
-    { beginning: "I", word: "дивився", translat: "saw", ending: "a new film" },
-    { beginning: "She just", word: "пішла", translat: "went", ending: "home" },
-    { beginning: "He only", word: "дала", translat: "gave", ending: "one answer" },
-    { beginning: "We", word: "випили", translat: "drank", ending: "water" },
-    { beginning: "They", word: "були", translat: "were", ending: "very happy" },
-    { beginning: "I", word: "мали", translat: "had", ending: "a good time" },
-    { beginning: "He", word: "прийшов", translat: "came", ending: "early" },
-    { beginning: "She", word: "взяла", translat: "took", ending: "some bread" },
-    { beginning: "I", word: "думав", translat: "thought", ending: "about that" },
-    { beginning: "They", word: "склали", translat: "made", ending: "a plan" },
 
     //lesson 8 Теперішній тривалий час
     { beginning: "She", word: "дивиться", translat: "is looking", ending: "at the wall" },
