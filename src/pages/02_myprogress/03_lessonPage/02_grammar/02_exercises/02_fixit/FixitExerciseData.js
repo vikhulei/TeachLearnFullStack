@@ -56,16 +56,6 @@ const sentences = [
     { beginning: "They", bold: "clime", correct: "climed", ending: "the hilltop" },
     { beginning: "He", bold: "point", correct: "pointed", ending: "at the map" },
 
-    //lesson 6 Прості часи: підсумок
-    { beginning: "The girl", bold: "get (past)", correct: "did not get", ending: "the job" },
-    { beginning: "They", bold: "play (future)", correct: "will not play", ending: "at the party" },
-    { beginning: "He", bold: "meet (present)", correct: "do not meet", ending: "every day" },
-    { beginning: "I", bold: "understand (past)", correct: "did not understand", ending: "the question" },
-    { beginning: "We", bold: "stop (future)", correct: "will not stop", ending: "there" },
-    { beginning: "She", bold: "bring", correct: "does not bring", ending: "the books to school" },
-    { beginning: "I", bold: "read (past)", correct: "did not read", ending: "the message carefully" },
-    { beginning: "He", bold: "arrive (future)", correct: "will not arrive", ending: "for the meeting" },
-
     //lesson 7 Неправильні дієслова
     { beginning: "She", bold: "bring", correct: "brought", ending: "her book" },
     { beginning: "He", bold: "choose", correct: "chose", ending: "the red shirt" },
@@ -75,6 +65,16 @@ const sentences = [
     { beginning: "The bird", bold: "fly", correct: "flew", ending: "over the trees" },
     { beginning: "He", bold: "forget", correct: "forgot", ending: "to do his homework" },
     { beginning: "She", bold: "give", correct: "gave", ending: "me a nice gift" },
+
+    //lesson 6 Прості часи: підсумок
+    { beginning: "The girl", bold: "get (past)", correct: "did not get", ending: "the job" },
+    { beginning: "They", bold: "play (future)", correct: "will not play", ending: "at the party" },
+    { beginning: "He", bold: "meet (present)", correct: "do not meet", ending: "every day" },
+    { beginning: "I", bold: "understand (past)", correct: "did not understand", ending: "the question" },
+    { beginning: "We", bold: "stop (future)", correct: "will not stop", ending: "there" },
+    { beginning: "She", bold: "bring", correct: "does not bring", ending: "the books to school" },
+    { beginning: "I", bold: "read (past)", correct: "did not read", ending: "the message carefully" },
+    { beginning: "He", bold: "arrive (future)", correct: "will not arrive", ending: "for the meeting" },
 
     //lesson 8 Теперішній тривалий час
     // lesson 9 Майбутній тривалий
