@@ -39,6 +39,7 @@ const FillitinExercise = () => {
             <Icon
                 src={fillin}
             />
+             <div>{fillitinExerciseData[0].instruction}</div>
             {fillitinExerciseData.map((value, index) => (
                 <SentenceWrapper
                     key={index}

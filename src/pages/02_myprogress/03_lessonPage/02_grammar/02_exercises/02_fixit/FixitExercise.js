@@ -35,6 +35,7 @@ const FixitExercise = () => {
         <Frame>
             <FrameHeading>fix it</FrameHeading>
             <Icon src={fixit} />
+             <div>{grammarFixit[0].instruction}</div>
             {grammarFixit.map((value, index) => (
                 <SentenceWrapper key={index}>
                     <Text id={value.id} onClick={clickFixitWord}>{value.sentence.beginning}&nbsp;</Text>
