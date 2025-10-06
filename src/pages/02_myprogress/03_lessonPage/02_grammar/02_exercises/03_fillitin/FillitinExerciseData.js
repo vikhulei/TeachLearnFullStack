@@ -53,17 +53,7 @@ const sentences = [
     { sentence: "Він скучив за дружиною дуже сильно", translat: "He missed her wife very much" },
     { sentence: "Вони підготували звіт", translat: "They prepared the report" },
 
-    //lesson 6 Прості часи: підсумок
-    { sentence: "Ти поставиш будильник?", translat: "Will you set the alarm?" },
-    { sentence: "Чи співали пташки вранці?", translat: "Did the birds sing in the morning?" },
-    { sentence: "Вона працює гідом?", translat: "Does she work as a guide?" },
-    { sentence: "Чи допоможе вчитель студентам?", translat: "Will the teacher help the students?" },
-    { sentence: "Чи змініються сезони кожні 4 місяці?", translat: "Do seasons change every 4 months?" },
-    { sentence: "Чи цікавить музика багатьох людей?", translat: "Does music interest many people?" },
-    { sentence: "Чи вивчав він літературу в університеті?", translat: "Did he study literature at university?" },
-    { sentence: "Ви ходите пішки на роботу?", translat: "Do you walk to work?" },
-
-    //lesson 7 Неправильні дієслова
+        //lesson 6 Неправильні дієслова
     { sentence: "Я зустрів свого друга в кафе", translat: "I met my friend at the café" },
     { sentence: "Вона прочитала 3 книги", translat: "She read 3 books" },
     { sentence: "Він поклав ключі на стіл", translat: "He put his keys on the table" },
@@ -73,7 +63,26 @@ const sentences = [
     { sentence: "Діти співали пісню в школі", translat: "The children sang a song at the school " },
     { sentence: "Він зняв фото заходу сонця", translat: "He took a photo of the sunset" },
 
+    //lesson 7 Прості часи: підсумок
+    { sentence: "Ти поставиш будильник?", translat: "Will you set the alarm?" },
+    { sentence: "Чи співали пташки вранці?", translat: "Did the birds sing in the morning?" },
+    { sentence: "Вона працює гідом?", translat: "Does she work as a guide?" },
+    { sentence: "Чи допоможе вчитель студентам?", translat: "Will the teacher help the students?" },
+    { sentence: "Чи змініються сезони кожні 4 місяці?", translat: "Do seasons change every 4 months?" },
+    { sentence: "Чи цікавить музика багатьох людей?", translat: "Does music interest many people?" },
+    { sentence: "Чи вивчав він літературу в університеті?", translat: "Did he study literature at university?" },
+    { sentence: "Ви ходите пішки на роботу?", translat: "Do you walk to work?" },
+
     //lesson 8 Теперішній тривалий час
+
+    { sentence: "Вона слухає концерт", translat: "She is listening to the concert" },
+    { sentence: "Ми говоримо про це зараз", translat: "We are talking about it now" },
+    { sentence: "Вони перевіряють розмір", translat: "They are checking the size" },
+    { sentence: "Я переїжджаю зараз", translat: "I am moving now" },
+    { sentence: "Він будує великий будинок", translat: "He is building a big house" },
+    { sentence: "Ми робимо все можливе", translat: "We are doing everything possible" },
+    { sentence: "Вони дивляться телевізор", translat: "They are watching TV" },
+    { sentence: "Ви вивчаєте це зараз", translat: "You are learning it now" },
 
     // lesson 9 Майбутній тривалий
     { sentence: "Вона слухатиме концерт", translat: "She will be listening to the concert" },
@@ -88,6 +97,15 @@ const sentences = [
     //{ sentence: "Пані будуть пити вино", translat: "The ladies will be drinking wine" },
 
     // lesson 10 Минулий тривалий
+
+    { sentence: "Вона слухала концерт", translat: "She was listening to the concert" },
+    { sentence: "Ми говорили про це", translat: "We were talking about it" },
+    { sentence: "Вони перевіряли розмір", translat: "They were checking the size" },
+    { sentence: "Я переїжджав", translat: "I was moving" },
+    { sentence: "Він будував великий будинок", translat: "He was building a big house" },
+    { sentence: "Ми робили все можливе", translat: "We were doing everything possible" },
+    { sentence: "Вони дивилися телевізор", translat: "They were watching TV" },
+    { sentence: "Ви вивчали це", translat: "You were learning it" },
 
     //lesson 11  Тривалі часи: підсумок
     { sentence: "Чи працює вона допізна цими днями?", translat: "Is she working late these days?" },

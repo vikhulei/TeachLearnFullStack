@@ -20,13 +20,14 @@ export const ContentData = [
     "ukr": "Минулий простий час"
   },
   {
-    "eng": "Simple Tenses: Summary",
-    "ukr": "Прості часи: підсумок"
-  },
-  {
     "eng": "Irregular Verbs",
     "ukr": "Неправильні дієслова"
   },
+  {
+    "eng": "Simple Tenses: Summary",
+    "ukr": "Прості часи: підсумок"
+  },
+
   {
     "eng": "Present Continuous Tense",
     "ukr": "Теперішній тривалий час"

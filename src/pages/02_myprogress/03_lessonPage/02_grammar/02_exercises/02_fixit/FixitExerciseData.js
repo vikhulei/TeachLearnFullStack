@@ -56,7 +56,7 @@ const sentences = [
     { beginning: "They", bold: "clime", correct: "climed", ending: "the hilltop" },
     { beginning: "He", bold: "point", correct: "pointed", ending: "at the map" },
 
-    //lesson 7 Неправильні дієслова
+    //lesson 6 Неправильні дієслова
     { beginning: "She", bold: "bring", correct: "brought", ending: "her book" },
     { beginning: "He", bold: "choose", correct: "chose", ending: "the red shirt" },
     { beginning: "They", bold: "come", correct: "came", ending: "to the concert late" },
@@ -66,7 +66,7 @@ const sentences = [
     { beginning: "He", bold: "forget", correct: "forgot", ending: "to do his homework" },
     { beginning: "She", bold: "give", correct: "gave", ending: "me a nice gift" },
 
-    //lesson 6 Прості часи: підсумок
+    //lesson 7 Прості часи: підсумок
     { beginning: "The girl", bold: "get (past)", correct: "did not get", ending: "the job" },
     { beginning: "They", bold: "play (future)", correct: "will not play", ending: "at the party" },
     { beginning: "He", bold: "meet (present)", correct: "do not meet", ending: "every day" },
@@ -77,7 +77,25 @@ const sentences = [
     { beginning: "He", bold: "arrive (future)", correct: "will not arrive", ending: "for the meeting" },
 
     //lesson 8 Теперішній тривалий час
+    { beginning: "They", bold: "are staying", correct: "are staying", ending: "at home all weekend" },
+    { beginning: "He", bold: "is feeling", correct: "is feeling", ending: "bad about his decision" },
+    { beginning: "I", bold: "am eating", correct: "am eating", ending: "the cake right now" },
+    { beginning: "We", bold: "are discussing", correct: "are discussing", ending: "the theory in the class" },
+    { beginning: "She", bold: "is preparing", correct: "is preparing", ending: "dinner for her friends" },
+    { beginning: "The students", bold: "are studying", correct: "are studying", ending: "law this evening" },
+    { beginning: "She", bold: "is cooking", correct: "is cooking", ending: "food right now" },
+    { beginning: "The boys", bold: "are putting", correct: "are putting", ending: "the books on the shelf" },
+    
     // lesson 9 Майбутній тривалий
+
+    { beginning: "They", bold: "will be staying", correct: "will be staying", ending: "at home all weekend" },
+    { beginning: "He", bold: "will be feeling", correct: "will be feeling", ending: "bad about his decision" },
+    { beginning: "I", bold: "will be eating", correct: "will be eating", ending: "the cake when they arrive" },
+    { beginning: "We", bold: "will be discussing", correct: "will be discussing", ending: "the theory in the class" },
+    { beginning: "She", bold: "will be preparing", correct: "will be preparing", ending: "dinner for her friends" },
+    { beginning: "The students", bold: "will be studying", correct: "will be studying", ending: "law this evening" },
+    { beginning: "She", bold: "will be cooking", correct: "will be cooking", ending: "food when I call" },
+    { beginning: "The boys", bold: "will be putting", correct: "will be putting", ending: "the books on the shelf" },
 
     // lesson 10 Минулий тривалий
     { beginning: "They", bold: "stay", correct: "were staying", ending: "at home all weekend" },
