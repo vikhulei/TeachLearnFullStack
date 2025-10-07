@@ -53,7 +53,7 @@ const sentences = [
     { sentence: "Він скучив за дружиною дуже сильно", translat: "He missed her wife very much" },
     { sentence: "Вони підготували звіт", translat: "They prepared the report" },
 
-        //lesson 6 Неправильні дієслова
+    //lesson 6 Неправильні дієслова
     { sentence: "Я зустрів свого друга в кафе", translat: "I met my friend at the café" },
     { sentence: "Вона прочитала 3 книги", translat: "She read 3 books" },
     { sentence: "Він поклав ключі на стіл", translat: "He put his keys on the table" },
@@ -143,7 +143,28 @@ const sentences = [
     // { sentence: "Ми не чули новин", translat: "We haven't heard the news" },
 
     //lesson 13 Теперішній доконаний тривалий час   
+
+    { sentence: "Температура падає зранку?", translat: "Has the temperature been dropping since morning?" },
+    { sentence: "Вони об'єднуються з іншою командою останнім часом?", translat: "Have they been uniting with another team lately?" },
+    { sentence: "Ви чуєте це слово вже деякий час?", translat: "Have you been hearing this word for some time?" },
+    { sentence: "Вона набирає вагу з минулого місяця?", translat: "Has she been gaining weight since last month?" },
+    { sentence: "Він використовує силу останнім часом?", translat: "Has he been using force lately?" },
+    { sentence: "Ти губиш ключ від моєї комірки зранку?", translat: "Have you been losing the key to my locker since morning?" },
+    { sentence: "Ми бачимо світло вже кілька хвилин?", translat: "Have we been seeing the light for a few minutes?" },
+    { sentence: "Вони ігнорують усі попередження останнім часом?", translat: "Have they been ignoring all warnings lately?" },
+
+
     //lesson 14 Порівняння всіх часів 
+
+    { sentence: "Я закінчив роботу", translat: "I have finished the work" },
+    { sentence: "Вона приготувала вечерю", translat: "She has prepared dinner" },
+    { sentence: "Ми знайшли ключі", translat: "We have found the keys" },
+    { sentence: "Вони відвідали музей", translat: "They have visited the museum" },
+    { sentence: "Я працюю зранку", translat: "I have been working since morning" },
+    { sentence: "Вона читає книгу дві години", translat: "She has been reading the book for two hours" },
+    { sentence: "Ми граємо у футбол з обіду", translat: "We have been playing football since lunch" },
+    { sentence: "Вони чекають уже півгодини", translat: "They have been waiting for half an hour" },
+
 
     //lesson 15 Прийменники місця
     { sentence: "Книга лежить на столі", translat: "The book is on the table" },
@@ -216,6 +237,16 @@ const sentences = [
     { sentence: "Будь уважним", translat: "Be careful" },
 
     // lesson 22 Підрядні речення
+
+    { sentence: "Дівчина, яка співає на сцені, моя сестра", translat: "The girl who is singing on the stage is my sister" },
+    { sentence: "Книга, яку я читаю, дуже цікава", translat: "The book that I am reading is very interesting" },
+    { sentence: "Чоловік, який працює в банку, допоміг мені", translat: "The man who works in the bank helped me" },
+    { sentence: "Дім, який збудував мій дідусь, ще стоїть", translat: "The house that my grandfather built is still standing" },
+    { sentence: "Дитина, яка грається у дворі, моя племінниця", translat: "The child who is playing in the yard is my niece" },
+    { sentence: "Автомобіль, який стоїть біля будинку, належить їй", translat: "The car that is parked near the house belongs to her" },
+    { sentence: "Вчитель, який пояснює урок, дуже терплячий", translat: "The teacher who is explaining the lesson is very patient" },
+    { sentence: "Фільм, який ми дивилися вчора, був захоплюючим", translat: "The movie that we watched yesterday was exciting" },
+
     // lesson 23 Непряма мова    
 
     // LESSON 19
@@ -338,7 +369,7 @@ const sentences = [
     { sentence: "Я закрив двері до того часу", translat: "I had closed the door by that time" },
     { sentence: "Вона поїде до 6 ранку", translat: "She will have left by 6am" },
 
-        //lesson 29 8 rules
+    //lesson 29 8 rules
     { beginning: "8 rules-1", word: "8 rules", translat: "8 rules", ending: "" },
     { beginning: "8 rules-1", word: "8 rules", translat: "8 rules", ending: "" },
     { beginning: "8 rules-1", word: "8 rules", translat: "8 rules", ending: "" },
@@ -349,7 +380,7 @@ const sentences = [
     { beginning: "8 rules-1", word: "8 rules", translat: "8 rules", ending: "" },
     { beginning: "8 rules-1", word: "8 rules", translat: "8 rules", ending: "" },
     { beginning: "8 rules-1", word: "8 rules", translat: "8 rules", ending: "" },
-    
+
     //lesson 30 8 rules
     { beginning: "8 rules-2", word: "8 rules", translat: "8 rules", ending: "" },
     { beginning: "8 rules-2", word: "8 rules", translat: "8 rules", ending: "" },
@@ -364,36 +395,36 @@ const sentences = [
 ]
 
 const instructions = [
-  "1 Вимова. Правила читання",
-  "2 Займенники. Дієслово To Be",
-  "3 Огляд всіх часів. Теперішній простий час",
-  "4 Майбутній простий час",
-  "5 Минулий простий час",
-  "6 Прості часи: підсумок",
-  "7 Неправильні дієслова",
-  "8 Теперішній тривалий час",
-  "9 Майбутній тривалий час",
-  "10 Минулий тривалий час",
-  "Зробіть переклад питальних речень у тривалому часі",
-  "Зробіть переклад питальних речень у теперішньому доконаному часі",
-  "13 Теперішній доконаний тривалий час",
-  "14 Порівняння всіх часів",
-  "15 Прийменники місця",
-  "16 Час і дата",
-  "17 Артиклі. Конструкція There is/There are",
-  "18 Однина і множина. Ступені порівняння. Порядкові й кількісні числівники",
-  "19 Активний і пасивний стан",
-  "20 Модальні дієслова, конструкції Would і Used to",
-  "21 Наказові речення",
-  "22 ідрядні речення",
-  "23 Непряма мова",
-  "24 Прості часи: повторення. Неправильні дієслова - частина 2",
-  "25 Тривалі часи: повторення",
-  "26 Теперішній доконаний і Теперішній доконаний тривалий: повторення",
-  "27 Повторення всіх часів",
-  "28 Рідковживані часи",
-  "29 8 основних правил граматики (частина 1)",
-  "30 8 основних правил граматики (частина 2)"
+    "1 Вимова. Правила читання",
+    "2 Займенники. Дієслово To Be",
+    "3 Огляд всіх часів. Теперішній простий час",
+    "4 Майбутній простий час",
+    "5 Минулий простий час",
+    "6 Прості часи: підсумок",
+    "7 Неправильні дієслова",
+    "8 Теперішній тривалий час",
+    "9 Майбутній тривалий час",
+    "10 Минулий тривалий час",
+    "Зробіть переклад питальних речень у тривалому часі",
+    "Зробіть переклад питальних речень у теперішньому доконаному часі",
+    "13 Теперішній доконаний тривалий час",
+    "14 Порівняння всіх часів",
+    "15 Прийменники місця",
+    "16 Час і дата",
+    "17 Артиклі. Конструкція There is/There are",
+    "18 Однина і множина. Ступені порівняння. Порядкові й кількісні числівники",
+    "19 Активний і пасивний стан",
+    "20 Модальні дієслова, конструкції Would і Used to",
+    "21 Наказові речення",
+    "22 ідрядні речення",
+    "23 Непряма мова",
+    "24 Прості часи: повторення. Неправильні дієслова - частина 2",
+    "25 Тривалі часи: повторення",
+    "26 Теперішній доконаний і Теперішній доконаний тривалий: повторення",
+    "27 Повторення всіх часів",
+    "28 Рідковживані часи",
+    "29 8 основних правил граматики (частина 1)",
+    "30 8 основних правил граматики (частина 2)"
 ];
 
 
