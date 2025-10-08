@@ -228,30 +228,39 @@ const sentences = [
   { beginning: "The student", bold: "який", correct: "who", ending: "answered first got a prize" },
   { beginning: "The river", bold: "яка", correct: "which", ending: "flows through the city is wide" },
 
-    // lesson 23 Непряма мова
+  // lesson 23 Непряма мова
+  { beginning: "She said that she", bold: "закінчила", correct: "had finished", ending: "her homework" },
+  { beginning: "He said that he", bold: "прочитав", correct: "had read", ending: "the letter" },
+  { beginning: "They said that they", bold: "поїхали", correct: "had gone", ending: "to the park" },
+  { beginning: "I said that I", bold: "загубив", correct: "had lost", ending: "my keys" },
+  { beginning: "We said that we", bold: "зустрічали", correct: "had met", ending: "her before" },
+  { beginning: "She said that she", bold: "написала", correct: "had written", ending: "a message" },
+  { beginning: "He said that he", bold: "зробив", correct: "had done", ending: "his best" },
+  { beginning: "They said that they", bold: "прибули", correct: "had arrived", ending: "early" },
 
-    // LESSON 19
-    // { beginning: "I saw", bold: "(конкретну)", correct: "the", ending: "book on the desk" },
-    // { beginning: "He opened", bold: "(найближче)", correct: "the", ending: "window to let fresh air in" },
-    // { beginning: "She bought", bold: "(невідомо яке)", correct: "a", ending: "new dress yesterday" },
-    // { beginning: "We saw", bold: "(якусь)", correct: "a", ending: "bird in the garden" },
-    // { beginning: "They visited", bold: "(той)", correct: "the", ending: "museum downtown" },
-    // { beginning: "She adopted", bold: "(не знаємо яке)", correct: "a", ending: "puppy from the shelter" },
-    // { beginning: "I found", bold: "(ті, які загубив)", correct: "the", ending: "keys under the couch" },
-    // { beginning: "He ate", bold: "(якийсь)", correct: "a", ending: "sandwich for lunch" },
 
-    // LESSON 20
-    // { beginning: "Do you want tea", bold: "(або)", correct: "or", ending: "coffee?" },
-    // { beginning: "She bought apples", bold: "(і)", correct: "and", ending: "oranges at the market." },
-    // { beginning: "He is smart", bold: "(але)", correct: "but", ending: "sometimes careless." },
-    // { beginning: "It's cold", bold: "(але все ж)", correct: "yet", ending: "he went swimming." },
-    // { beginning: "He was tired", bold: "(тому)", correct: "so", ending: "he went to bed early." },
-    // { beginning: "We can go hiking", bold: "(або)", correct: "or", ending: "stay home and rest." },
-    // { beginning: "They danced", bold: "(і)", correct: "and", ending: "sang all night." },
-    // { beginning: "She studied hard", bold: "(тому)", correct: "so", ending: "she passed the test." },
+  // LESSON 19
+  // { beginning: "I saw", bold: "(конкретну)", correct: "the", ending: "book on the desk" },
+  // { beginning: "He opened", bold: "(найближче)", correct: "the", ending: "window to let fresh air in" },
+  // { beginning: "She bought", bold: "(невідомо яке)", correct: "a", ending: "new dress yesterday" },
+  // { beginning: "We saw", bold: "(якусь)", correct: "a", ending: "bird in the garden" },
+  // { beginning: "They visited", bold: "(той)", correct: "the", ending: "museum downtown" },
+  // { beginning: "She adopted", bold: "(не знаємо яке)", correct: "a", ending: "puppy from the shelter" },
+  // { beginning: "I found", bold: "(ті, які загубив)", correct: "the", ending: "keys under the couch" },
+  // { beginning: "He ate", bold: "(якийсь)", correct: "a", ending: "sandwich for lunch" },
 
-    //lesson 24 Прості часи: повторення
-    { beginning: "She", bold: "visit (future)", correct: "will visit", ending: "her grandmother tomorrow" },
+  // LESSON 20
+  // { beginning: "Do you want tea", bold: "(або)", correct: "or", ending: "coffee?" },
+  // { beginning: "She bought apples", bold: "(і)", correct: "and", ending: "oranges at the market." },
+  // { beginning: "He is smart", bold: "(але)", correct: "but", ending: "sometimes careless." },
+  // { beginning: "It's cold", bold: "(але все ж)", correct: "yet", ending: "he went swimming." },
+  // { beginning: "He was tired", bold: "(тому)", correct: "so", ending: "he went to bed early." },
+  // { beginning: "We can go hiking", bold: "(або)", correct: "or", ending: "stay home and rest." },
+  // { beginning: "They danced", bold: "(і)", correct: "and", ending: "sang all night." },
+  // { beginning: "She studied hard", bold: "(тому)", correct: "so", ending: "she passed the test." },
+
+  //lesson 24 Прості часи: повторення
+  { beginning: "She", bold: "visit (future)", correct: "will visit", ending: "her grandmother tomorrow" },
   { beginning: "They", bold: "arrive (past)", correct: "arrived", ending: "late last night" },
   { beginning: "I", bold: "call (future)", correct: "will call", ending: "you when I get home" },
   { beginning: "He", bold: "finish (past)", correct: "finished", ending: "his homework before dinner" },
@@ -271,25 +280,30 @@ const sentences = [
   { beginning: "You", bold: "sleep (past)", correct: "were sleeping", ending: "when I got home" },
 
   //lesson 26 Теперішній доконаний і Теперішній доконаний тривалий: повторення - доробити
-  { beginning: "She", bold: "visit", correct: "has visited", ending: "Paris several times" },
-  { beginning: "They", bold: "finish", correct: "have finished", ending: "their homework already" },
-  { beginning: "He", bold: "break", correct: "has broken", ending: "his phone again" },
-  { beginning: "We", bold: "see", correct: "have seen", ending: "that movie before" },
-  { beginning: "I", bold: "eat", correct: "have eaten", ending: "too much today" },
-  { beginning: "You", bold: "win", correct: "have won", ending: "the competition!" },
-  { beginning: "She", bold: "write", correct: "has written", ending: "a great story" },
-  { beginning: "They", bold: "travel", correct: "have traveled", ending: "to many countries" },
+  { beginning: "Tom and Anna", bold: "play", correct: "have been playing", ending: "football for two hours" },
+  { beginning: "Mark", bold: "read", correct: "has been reading", ending: "this book all day" },
+  { beginning: "Sarah", bold: "cook", correct: "has been cooking", ending: "dinner since 5 p.m." },
+  { beginning: "Emma and I", bold: "study", correct: "have been studying", ending: "English since Monday" },
+  { beginning: "Alex", bold: "talk", correct: "has been talking", ending: "on the phone for half an hour" },
+  { beginning: "Sophia", bold: "paint", correct: "has been painting", ending: "the wall since noon" },
+  { beginning: "Tom and John", bold: "wait", correct: "have been waiting", ending: "for the bus for ten minutes" },
+  { beginning: "David", bold: "listen", correct: "has been listening", ending: "to music since morning" },
 
   //lesson 27 Повторення всіх часів - перевірити
-  { beginning: "He", bold: "run", correct: "is not running", ending: "in the park today" },
-  { beginning: "", bold: "play", correct: "Are they playing", ending: "football now?" },
-  { beginning: "She", bold: "study", correct: "is not studying", ending: "for the test tonight" },
-  { beginning: "", bold: "cook", correct: "Was he cooking", ending: "dinner when you arrived?" },
-  { beginning: "We", bold: "watch", correct: "are not watching", ending: "TV right now" },
-  { beginning: "", bold: "talk", correct: "Were they talking", ending: "about the meeting?" },
-  { beginning: "I", bold: "work", correct: "am not working", ending: "this weekend" },
-  { beginning: "", bold: "drive", correct: "Will she be driving", ending: "to the party later?" },
+  { beginning: "Tom", bold: "not go (present)", correct: "is not going", ending: "to the park today" },
+  { beginning: "Tom", bold: "go (present)", correct: "Is Tom going", ending: "to the park today?" },
 
+  // 🟡 Past Continuous
+  { beginning: "Lyz", bold: "not study (past)", correct: "was not studying", ending: "for the test yesterday" },
+  { beginning: "Lyz", bold: "study (past)", correct: "Was Lyz studying", ending: "for the test yesterday?" },
+
+  // 🔵 Future Continuous
+  { beginning: "Mark", bold: "not work (future)", correct: "will not be working", ending: "tomorrow evening" },
+  { beginning: "Mark", bold: "work (future)", correct: "Will Mark be working", ending: "tomorrow evening?" },
+
+  // 🟣 Present Continuous (another example)
+  { beginning: "Emma and John", bold: "not watch (present)", correct: "are not watching", ending: "TV right now" },
+  { beginning: "Emma and John", bold: "watch (present)", correct: "Are Emma and John watching", ending: "TV right now?" },
   // LESSON 25
   // { beginning: "I", bold: "have", correct: "had", ending: "a great time at the party" },
   // { beginning: "She", bold: "do", correct: "did", ending: "all her homework yesterday" },

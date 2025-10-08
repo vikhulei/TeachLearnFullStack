@@ -238,16 +238,25 @@ const sentences = [
 
     // lesson 22 Підрядні речення
 
-    { sentence: "Дівчина, яка співає на сцені, моя сестра", translat: "The girl who is singing on the stage is my sister" },
-    { sentence: "Книга, яку я читаю, дуже цікава", translat: "The book that I am reading is very interesting" },
-    { sentence: "Чоловік, який працює в банку, допоміг мені", translat: "The man who works in the bank helped me" },
-    { sentence: "Дім, який збудував мій дідусь, ще стоїть", translat: "The house that my grandfather built is still standing" },
-    { sentence: "Дитина, яка грається у дворі, моя племінниця", translat: "The child who is playing in the yard is my niece" },
-    { sentence: "Автомобіль, який стоїть біля будинку, належить їй", translat: "The car that is parked near the house belongs to her" },
-    { sentence: "Вчитель, який пояснює урок, дуже терплячий", translat: "The teacher who is explaining the lesson is very patient" },
-    { sentence: "Фільм, який ми дивилися вчора, був захоплюючим", translat: "The movie that we watched yesterday was exciting" },
+    { sentence: "Дівчина, ЯКА СПІВАЄ НА СЦЕНІ, моя сестра", translat: "who is singing on the stage" },
+    { sentence: "Книга, ЯКУ Я ЧИТАЮ дуже цікава", translat: "that I am reading" },
+    { sentence: "Чоловік, ЯКИЙ ПРАЦЮЄ В БАНКУ, допоміг мені", translat: "who works in the bank" },
+    { sentence: "Дім, ЯКИЙ ЗБУДУВАВ МІЙ ДІДУСЬ, ще стоїть", translat: "that my grandfather built" },
+    { sentence: "Дитина, ЯКА ГРАЄТЬСЯ У ДВОРІ, моя племінниця", translat: "who is playing in the yard" },
+    { sentence: "Автомобіль, ЯКИЙ СТОІТЬ БІЛЯ БУДИНКУ, належить їй", translat: "that is parked near the house" },
+    { sentence: "Вчитель, ЯКИЙ ПОЯСНЮЄ УРОК, дуже терплячий", translat: "who is explaining the lesson" },
+    { sentence: "Фільм, ЯКИЙ МИ ДИВИЛИСЯ ВЧОРА, був захоплюючим", translat: "that we watched yesterday" },
 
     // lesson 23 Непряма мова    
+  { sentence: "Том каже, що піде в кіно завтра", translat: "Tom says that he will go to the cinema tomorrow" },
+  { sentence: "Вона каже, що купить нову сукню", translat: "She says that she will buy a new dress" },
+  { sentence: "Я кажу, що я допоможу тобі", translat: "I say that I will help you" },
+  { sentence: "Ми кажемо, що ми відвідаємо музей", translat: "We say that we will visit the museum" },
+  { sentence: "Він каже, що зателефонує пізніше", translat: "He says that he will call later" },
+  { sentence: "Учитель каже, що він пояснить завдання пізніше", translat: "The teacher says that he will explain the task later" },
+  { sentence: "Ти кажеш, що почнеш нову роботу", translat: "You say that you will start a new job" },
+  { sentence: "Вона каже, що приготує вечерю", translat: "She says that she will cook dinner" },
+
 
     // LESSON 19
     // { sentence: "Я бачу собаку (якогось)", translat: "I see a dog" },
@@ -269,16 +278,6 @@ const sentences = [
     { sentence: "Чи вона допомогла тобі з цим?", translat: "Did she help you with this?" },
     { sentence: "Ви часто їздите на автобусі?", translat: "Do you often take the bus?" },
 
-    //lesson 24 Прості часи: повторення
-    { sentence: "Він приїхав учора", translat: "He arrived yesterday" },
-    { sentence: "Я завтра зателефоную тобі", translat: "I will call you tomorrow" },
-    { sentence: "Ми зустрілися біля школи", translat: "We met near the school" },
-    { sentence: "Вона напише листа пізніше", translat: "She will write a letter later" },
-    { sentence: "Вони грали у футбол у парку", translat: "They played football in the park" },
-    { sentence: "Ми поїдемо на море влітку", translat: "We will go to the sea in summer" },
-    { sentence: "Я зробив домашнє завдання", translat: "I did my homework" },
-    { sentence: "Він купить новий телефон наступного тижня", translat: "He will buy a new phone next week" },
-
     //lesson 25 Тривалі часи: повторення
     { sentence: "Я читав газету", translat: "I was reading newspaper" },
     { sentence: "Я буду працювати", translat: "I will be working" },
@@ -298,16 +297,6 @@ const sentences = [
     { sentence: "Ти був у Лондоні", translat: "You have been to London" },
     { sentence: "Я загубив ключі", translat: "I have lost the keys" },
     { sentence: "Ми бачили цей фільм", translat: "We have seen this movie" },
-
-    //lesson 26 Теперішній доконаний і Теперішній доконаний тривалий: повторення
-    { sentence: "Я ще не закінчив роботу", translat: "I haven’t finished the work yet" },
-    { sentence: "Вона вже прочитала цю книгу?", translat: "Has she read this book yet?" },
-    { sentence: "Вони не бачили цей фільм", translat: "They haven’t seen this movie" },
-    { sentence: "Ти коли-небудь був у Парижі?", translat: "Have you ever been to Paris?" },
-    { sentence: "Ми не отримали листа", translat: "We haven’t received the letter" },
-    { sentence: "Він уже поїв?", translat: "Has he eaten already?" },
-    { sentence: "Ти не зробив домашнє завдання", translat: "You haven’t done your homework" },
-    { sentence: "Вони вже приїхали?", translat: "Have they arrived yet?" },
 
     //lesson 27 Повторення всіх часів - перевірити
     { sentence: "Я взяв ключі", translat: "I have taken the keys" },
