@@ -337,28 +337,28 @@ const sentences = [
   { beginning: "He", word: "вже пішов", translat: "had already gone", ending: "when we called" },
 
   //lesson 29 8 rules
-  { beginning: "8 rules-1", word: "8 rules", translat: "8 rules", ending: "" },
-  { beginning: "8 rules-1", word: "8 rules", translat: "8 rules", ending: "" },
-  { beginning: "8 rules-1", word: "8 rules", translat: "8 rules", ending: "" },
-  { beginning: "8 rules-1", word: "8 rules", translat: "8 rules", ending: "" },
-  { beginning: "8 rules-1", word: "8 rules", translat: "8 rules", ending: "" },
-  { beginning: "8 rules-1", word: "8 rules", translat: "8 rules", ending: "" },
-  { beginning: "8 rules-1", word: "8 rules", translat: "8 rules", ending: "" },
-  { beginning: "8 rules-1", word: "8 rules", translat: "8 rules", ending: "" },
-  { beginning: "8 rules-1", word: "8 rules", translat: "8 rules", ending: "" },
-  { beginning: "8 rules-1", word: "8 rules", translat: "8 rules", ending: "" },
+  { beginning: "Tom watched the movie where the hero", word: "jumps", translat: "jumped", ending: "from the cliff" },
+  { beginning: "Rachel read the story where the princess", word: "meets", translat: "met", ending: "a dragon" },
+  { beginning: "Liam and Emma saw the game where the player", word: "scores", translat: "scored", ending: "the winning goal" },
+  { beginning: "Olivia told Mark about a man who", word: "lives", translat: "lived", ending: "in the forest" },
+  { beginning: "Ethan liked the book where the detective", word: "solves", translat: "solved", ending: "the mystery" },
+  { beginning: "Sophie visited the museum where the artist", word: "paints", translat: "painted", ending: "famous landscapes" },
+  { beginning: "Noah heard the story where the boy", word: "finds", translat: "found", ending: "a treasure" },
+  { beginning: "Isabella watched the show where the singer", word: "sings", translat: "sang", ending: "a beautiful song" },
+  { beginning: "Lily remembers the day when the sun", word: "shines", translat: "shone", ending: "so brightly" },
+  { beginning: "Jack and Mia read the article where the scientist", word: "discovers", translat: "discovered", ending: "a new planet" },
 
   //lesson 30 8 rules
-  { beginning: "8 rules-2", word: "8 rules", translat: "8 rules", ending: "" },
-  { beginning: "8 rules-2", word: "8 rules", translat: "8 rules", ending: "" },
-  { beginning: "8 rules-2", word: "8 rules", translat: "8 rules", ending: "" },
-  { beginning: "8 rules-2", word: "8 rules", translat: "8 rules", ending: "" },
-  { beginning: "8 rules-2", word: "8 rules", translat: "8 rules", ending: "" },
-  { beginning: "8 rules-2", word: "8 rules", translat: "8 rules", ending: "" },
-  { beginning: "8 rules-2", word: "8 rules", translat: "8 rules", ending: "" },
-  { beginning: "8 rules-2", word: "8 rules", translat: "8 rules", ending: "" },
-  { beginning: "8 rules-2", word: "8 rules", translat: "8 rules", ending: "" },
-  { beginning: "8 rules-2", word: "8 rules", translat: "8 rules", ending: "" },
+  { beginning: "She", word: "play", translat: "plays", ending: "the piano" },
+  { beginning: "Tom", word: "read", translat: "reads", ending: "a newspaper in the morning" },
+  { beginning: "I", word: "drive", translat: "drive", ending: "to work" },
+  { beginning: "The dog", word: "like", translat: "likes", ending: "bones" },
+  { beginning: "He", word: "watch", translat: "watches", ending: "TV in the evening" },
+  { beginning: "Sarah", word: "teach", translat: "teaches", ending: "English" },
+  { beginning: "The train", word: "leave", translat: "leaves", ending: "at 7 a.m." },
+  { beginning: "They", word: "go", translat: "go", ending: "to school by bus" },
+  { beginning: "It", word: "rain", translat: "rains", ending: "a lot in autumn" },
+  { beginning: "John", word: "miss", translat: "misses", ending: "his family" }
 ]
 
 const instructions = [
