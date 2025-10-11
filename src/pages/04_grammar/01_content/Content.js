@@ -7,7 +7,7 @@ const Content = () => {
         <FrameHeading>List of Topics</FrameHeading>
         {ContentData.map((value, index) => (
             <Text key={index}>
-                {index+1}. {value}
+                {index+1}. {value.eng}
             </Text>
         ))}
     </FrameContent>
