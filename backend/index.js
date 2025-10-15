@@ -49,6 +49,31 @@ app.get("/todos/:id", async(req, res) => {
 
  //update a todo
 
+app.put("./todos/:id", async(req, res) => {
+   try {
+      const id = Number(req.params.id)
+      const { description } = req.body
+
+      if (!Number.isInteger(id)) return res.status(400).json({error: "Invalid id"});
+      if (typeof description !== "string" || !description.trim()) {
+         return res.status(400).json({error: "Description is required"})
+      } 
+
+      const result = await pool.query(
+         "UPDATE todo SET description = $1 WHERE todo_id = $2 RETURNING *",
+         [description.trim(), id]
+      )
+
+      const updated = result.rows[0]
+      if(!updated) return res.status(400).json({error: "Todo not found"})
+
+      res.json(updated)
+
+   } catch (error) {
+      
+   }
+})
+
  //delete a todo
 
 

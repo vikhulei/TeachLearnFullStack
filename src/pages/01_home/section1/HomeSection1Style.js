@@ -1,6 +1,7 @@
 import styled from "styled-components";
-import { OutlineButton } from "../../../components/01_config/MainStyles";
+import { OutlineButton, MainInput } from "../../../components/01_config/MainStyles";
 import { sizes } from "../../../components/01_config/Sizes";
+import { colors } from "../../../components/01_config/Colors";
 
 
 const Wrapper = styled.div`
@@ -78,34 +79,102 @@ const Subheader = styled.div`
     line-height: 2rem;
 `
 
-const ButtonsWrapper = styled.div`
+const SigninForm = styled.form`
     display: flex;
     flex-direction: column;
-    gap: 2vh;
+    justify-content: space-between;
+    gap: 20px;
+    // height: 200px;
+    width: 90%;
+    text-align: left;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.3);
+`
+
+const InputWrapper = styled.div`
+    width: 100%;
+    line-height: 1.4;
+`
+
+const Username = styled(MainInput)`
+    width: 100%;
+    height: 35px;
+`
+
+const Password = styled(Username)`
+
+`
+
+const Caption = styled.div`
+    font-size: 1.3rem;
+`
+
+const LostPassword = styled.div`
+    margin-top: 5px;
+    font-style: italic;
+    font-size: 0.7rem;
+    cursor: pointer;
+    &:active {
+        color: grey;
+    }
+`
+
+const ButtonsWrapper = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // flex-direction: column;
+    gap: 100px;
     @media(max-width: 800px) {
         width: 100%;
         align-items: center;
     }
 `
 
-const SignUp = styled(OutlineButton)`
-    width: 240px;
-    height: 70px;
-    font-size: 1.1rem;
+const SignUp = styled.button`
+    // width: 140px;
+    // height: 40px;
+    // font-size: 1.3rem;
+    // color: white;
+    // border: #D34E4E solid 2px;
+    // border-radius: 5px;
+    // cursor: pointer;
+    // background-color: rgba(255, 255, 255, 0);
+    // @media(max-width: 800px) {
+    //     width: calc(30px + 60vw);
+    //     height: 8vh;
+    // }
+    
+`
+
+const LogIn = styled(SignUp)`
+    width: 140px;
+    height: 40px;
+    font-size: 1.3rem;
     color: white;
-    border: #D34E4E solid 4px;
+    border: none;
     border-radius: 5px;
     cursor: pointer;
-    background-color: rgba(255, 255, 255, 0);
+    background-color: #5B4ED3;
     @media(max-width: 800px) {
         width: calc(30px + 60vw);
         height: 8vh;
     }
-    
+    &:active {
+        transform: translate(2px, 2px);
+    }
 `
 
-const LogIn = styled(OutlineButton)`
-    border: #5B4ED3 solid 1px;
+const Register = styled.div`
+    font-size: 1.3rem;
+    color: ${colors.grammar};
+    color: darkblue;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    &:active {
+        transform: translate(2px, 2px);
+    }
 `
 
 const BlockTwoWrapper = styled.div`
@@ -119,9 +188,9 @@ const BlockTwoWrapper = styled.div`
 `
 
 const BlockTwoGroup = styled.div`
-width: 300px;
-height: 700px;
-background-color: darkblue;
+    width: 300px;
+    height: 700px;
+    background-color: darkblue;
 `
 const BlockTwoImageWrapper = styled.div`
     position: relative;
@@ -136,4 +205,15 @@ const BlockTwoImage = styled.img`
     object-fit: cover;
 `
 
-export { Image, Wrapper, TextButtonsWrapper, Header, Subheader, ButtonsWrapper, SignUp, LogIn,  BlockTwoWrapper, ImageWrapper, ColorLayer, BlockTwoGroup, BlockTwoImageWrapper, BlockTwoImage,  }
+const RegisterWrapper = styled.div`
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    // z-index: 100;
+`
+
+export { Image, Wrapper, SigninForm, InputWrapper, Username, Password, Caption, LostPassword, TextButtonsWrapper, Header, Subheader, ButtonsWrapper, SignUp, LogIn, Register,  BlockTwoWrapper, ImageWrapper, ColorLayer, BlockTwoGroup, BlockTwoImageWrapper, BlockTwoImage, RegisterWrapper  }
