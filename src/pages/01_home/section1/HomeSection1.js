@@ -1,39 +1,51 @@
-import { Image, Wrapper, SigninForm, Username, TextButtonsWrapper, Header, Subheader, ButtonsWrapper, RegisterWrapper, LogIn, ImageWrapper, ColorLayer, Password, Caption, InputWrapper, LostPassword, Register } from "./HomeSection1Style"
-import RegisterForm from "./RegisterForm"
+import { useState } from "react"
+import { PreWrapper, Image, Wrapper, TextButtonsWrapper, Header, Subheader, ButtonsWrapper, SignUp, LogIn, ImageWrapper } from "./HomeSection1Styles"
 import home from "./01_images/home.jpg"
+import test from "../section2/01_images/tutor.jpg"
 import Svg from "./Svg"
+import LoginForm from "./02_forms/LoginForm"
 
 
 const HomeSection1 = () => {
+
+  const [loginVisible, setLoginVisible] = useState(false)
+  const [registerVisible, setRegisterVisible] = useState(false)
+
+  const makeRegisterVisible = () => {
+    setRegisterVisible(!registerVisible)
+  }
+  const makeLoginVisible = (e) => {
+    e.preventDefault()
+    setLoginVisible(!loginVisible)
+  }
+
   return (
-    <Wrapper>
-      <RegisterForm/>
-      <ImageWrapper>
-        <Image src={home} />
-      </ImageWrapper>
-      <ColorLayer />
-      <Svg />
-      <TextButtonsWrapper>
-        <Header>ARE YOU LOOKING FOR AN EFFECTIVE WAY TO LEARN ENGLISH?</Header>
-        <Subheader>We offer an efficient and user-friendly platform designed to support individual language learning</Subheader>
-        <SigninForm>
-          <InputWrapper>
-            <Caption>Username:</Caption>
-            <Username />
-          </InputWrapper>
-          <InputWrapper>
-            <Caption>Password:</Caption>
-            <Password />
-            <LostPassword>Lost password?</LostPassword>
-          </InputWrapper>
+    <PreWrapper>
+      <LoginForm
+        loginVisible={loginVisible}
+        makeLoginVisible={makeLoginVisible}
+      />
+      <Wrapper
+        loginVisible={loginVisible}
+      >
+        <ImageWrapper>
+          <Image src={home} />
+        </ImageWrapper>
+        <Svg />
+        <TextButtonsWrapper>
+          <Header>ARE YOU LOOKING FOR AN EFFECTIVE WAY TO LEARN ENGLISH?</Header>
+          <Subheader>We offer an efficient and user-friendly platform designed to support individual language learning</Subheader>
           <ButtonsWrapper>
-            <LogIn>Log in</LogIn>
-            <Register>Register</Register>
-            {/* <SignUp>SIGN UP</SignUp> */}
+            <SignUp>SIGN UP</SignUp>
+            <LogIn
+              onClick={makeLoginVisible}
+            >
+              LOG IN
+            </LogIn>
           </ButtonsWrapper>
-        </SigninForm>
-      </TextButtonsWrapper>
-    </Wrapper>
+        </TextButtonsWrapper>
+      </Wrapper>
+    </PreWrapper>
   )
 }
 

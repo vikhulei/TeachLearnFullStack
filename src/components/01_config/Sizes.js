@@ -8,7 +8,9 @@ export const sizes = {
     headerheight: "90px",
     headerhight_mobile: "70px",
     home1_desk_height: "75vh",
+    // home1_desk_height: "700px",
     home1_mob_height: "calc(90vh - 90px)",  //minus headerheight
     colorgreenalpha: "green",
     blockOneHeight: "75vh",
+    // blockOneHeight: "700px",
 }

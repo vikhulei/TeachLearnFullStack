@@ -89,6 +89,7 @@ const SigninForm = styled.form`
     text-align: left;
     padding: 15px;
     background-color: rgba(0, 0, 0, 0.3);
+    // display: none;
 `
 
 const InputWrapper = styled.div`
@@ -216,4 +217,4 @@ const RegisterWrapper = styled.div`
     // z-index: 100;
 `
 
-export { Image, Wrapper, SigninForm, InputWrapper, Username, Password, Caption, LostPassword, TextButtonsWrapper, Header, Subheader, ButtonsWrapper, SignUp, LogIn, Register,  BlockTwoWrapper, ImageWrapper, ColorLayer, BlockTwoGroup, BlockTwoImageWrapper, BlockTwoImage, RegisterWrapper  }
+export { Image, Wrapper, TextButtonsWrapper, Header, Subheader, ImageWrapper, ColorLayer }

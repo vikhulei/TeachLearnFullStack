@@ -5,11 +5,12 @@ const RegisterFormWrapper = styled.div`
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 400px;
-    height: 300px;
+    width: 600px;
+    height: 600px;
+    display: ${({registerVisible}) => (registerVisible) ? "block" : "none"};
     z-index: 100;
-    background-color: white;
-    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.7);
+    // visibility: hidden;
 `
 
 export { RegisterFormWrapper }
