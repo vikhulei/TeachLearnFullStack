@@ -1,9 +1,7 @@
 import { useState } from "react"
 import { LoginFormWrapper, InputWrapper, Username, Password, Caption, LostPassword, ButtonsWrapper, SignUp, LogIn, Cancel, ResetLinkWrapper, SendResetLink, EmailResetLink, Register, RegisterWrapper } from "./LoginFormStyles"
 
-const LoginForm = ({ loginVisible, makeLoginVisible }) => {
-
-    const [showResetLink, setShowResetLink] = useState(false)
+const LoginForm = ({ showResetLink, setShowResetLink, loginVisible, makeLoginVisible }) => {
 
     const clickShowResetLink = (e) => {
         e.preventDefault()

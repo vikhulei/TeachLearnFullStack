@@ -9,6 +9,7 @@ import LoginForm from "./02_forms/LoginForm"
 const HomeSection1 = () => {
 
   const [loginVisible, setLoginVisible] = useState(false)
+  const [showResetLink, setShowResetLink] = useState(false)
   const [registerVisible, setRegisterVisible] = useState(false)
 
   const makeRegisterVisible = () => {
@@ -17,6 +18,7 @@ const HomeSection1 = () => {
   const makeLoginVisible = (e) => {
     e.preventDefault()
     setLoginVisible(!loginVisible)
+    setShowResetLink(false)
   }
 
   return (
@@ -24,6 +26,8 @@ const HomeSection1 = () => {
       <LoginForm
         loginVisible={loginVisible}
         makeLoginVisible={makeLoginVisible}
+        showResetLink={showResetLink}
+        setShowResetLink={setShowResetLink}
       />
       <Wrapper
         loginVisible={loginVisible}
