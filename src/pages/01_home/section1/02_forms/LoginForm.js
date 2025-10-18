@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { LoginFormWrapper, InputWrapper, Username, Password, Caption, LostPassword, EmailSent, ButtonsWrapper, SignUp, LogIn, Cancel, ResetLinkWrapper, SendResetLink, EmailResetLink, Register, RegisterWrapper, WrongLogin } from "./LoginFormStyles"
 
-const LoginForm = ({ loginVisible, setLoginVisible }) => {
+const LoginForm = ({ loginVisible, setLoginVisible, setHomeSectionDimmed }) => {
 
     const [usernameValue, setUsernameValue] = useState("")
     const [passwordValue, setPasswordValue] = useState("")
@@ -35,6 +35,7 @@ const LoginForm = ({ loginVisible, setLoginVisible }) => {
         setLoginVisible(false)
         setShowWrongLogin(false)
         setEmailValue("")
+        setHomeSectionDimmed(false)
     }
 
     return (

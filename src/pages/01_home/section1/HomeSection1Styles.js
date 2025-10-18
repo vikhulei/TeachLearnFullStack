@@ -14,8 +14,8 @@ const PreWrapper = styled.div`
 const Wrapper = styled.div`
     position: relative;
     height: ${sizes.home1_desk_height};
-    pointer-events: ${({loginVisible}) => loginVisible ? "none" : "auto"};
-    opacity: ${({loginVisible}) => loginVisible ? "0.5" : "1"};
+    pointer-events: ${({homeSectionDimmed}) => homeSectionDimmed ? "none" : "auto"};
+    opacity: ${({homeSectionDimmed}) => homeSectionDimmed ? "0.5" : "1"};
     @media(max-width: 800px) {
         height: ${sizes.home1_mob_height};
     }

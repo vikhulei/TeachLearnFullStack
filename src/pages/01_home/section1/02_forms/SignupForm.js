@@ -1,18 +1,24 @@
 import { useState } from "react"
-import { LoginFormWrapper, InputWrapper, Username, Password, Caption, LostPassword, ButtonsWrapper, SignUp, LogIn, Cancel, ResetLinkWrapper, SendResetLink, EmailResetLink, Register, RegisterWrapper } from "./LoginFormStyles"
+import { SignupFormWrapper, InputWrapper, Username, Password, Caption, LostPassword, EmailSent, ButtonsWrapper, SignUp, Cancel,  ResetLinkWrapper, SendResetLink, EmailResetLink, Register } from "./SignupFormStyles"
 
-const SignupForm = ({ loginVisible, makeLoginVisible }) => {
+const SignupForm = ({ signupVisible, setSignupVisible }) => {
 
-    const [showResetLink, setShowResetLink] = useState(false)
+    const [usernameValue, setUsernameValue] = useState("")
+    const [passwordValue, setPasswordValue] = useState("")
+    const [emailValue, setEmailValue] = useState("")
 
-    const clickShowResetLink = (e) => {
+    const clickLogin = (e) => {
         e.preventDefault()
-        setShowResetLink(!showResetLink)
+    }
+
+    const clickCancel = (e) => {
+        e.preventDefault()
+        setSignupVisible(false)
     }
 
     return (
-        <LoginFormWrapper
-            loginVisible={loginVisible}
+        <SignupFormWrapper
+            signupVisible={signupVisible}
         >
             <InputWrapper>
                 <Caption>Username:</Caption>
@@ -21,36 +27,15 @@ const SignupForm = ({ loginVisible, makeLoginVisible }) => {
             <InputWrapper>
                 <Caption>Password:</Caption>
                 <Password type="password" />
-                <LostPassword
-                    onClick={clickShowResetLink}
-                >
-                    Lost password?
-                </LostPassword>
-                <ResetLinkWrapper
-                    showResetLink={showResetLink}
-                >
-                    <EmailResetLink
-                    type="email"
-                    placeholder="Enter your email"
-                    />
-                    <SendResetLink
-                        onClick={makeLoginVisible}
-                    >
-                        Send Reset Link
-                    </SendResetLink>
-                </ResetLinkWrapper>
             </InputWrapper>
             <ButtonsWrapper>
-                <LogIn onClick={makeLoginVisible}>Log in</LogIn>
-                <Cancel onClick={makeLoginVisible}>Cancel</Cancel>
-                {/* <Register
-                    onClick={makeRegisterVisible}
+                <SignUp
+                    onClick={clickLogin}
                 >
-                    Register
-                </Register> */}
-
+                    Log in</SignUp>
+                <Cancel onClick={clickCancel}>Cancel</Cancel>
             </ButtonsWrapper>
-        </LoginFormWrapper>
+        </SignupFormWrapper>
     )
 }
 

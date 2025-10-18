@@ -11,15 +11,18 @@ const HomeSection1 = () => {
 
   const [loginVisible, setLoginVisible] = useState(false)
   const [signupVisible, setSignupVisible] = useState(false)
+  const [homeSectionDimmed, setHomeSectionDimmed] = useState(false)
 
   const makeLoginVisible = (e) => {
     e.preventDefault()
     setLoginVisible(true)
+    setHomeSectionDimmed(true)
   }
 
   const makeSignupVisible = (e) => {
     e.preventDefault()
     setSignupVisible(true)
+    setHomeSectionDimmed(true)
   }
 
   return (
@@ -27,12 +30,15 @@ const HomeSection1 = () => {
       <LoginForm
         loginVisible={loginVisible}
         setLoginVisible={setLoginVisible}
+        setHomeSectionDimmed={setHomeSectionDimmed}
       />
-      <SignupForm>
-        
-      </SignupForm>
+      <SignupForm
+        signupVisible={signupVisible}
+        setSignupVisible={setSignupVisible}
+        homeSectionDimmed={homeSectionDimmed}
+      />
       <Wrapper
-        loginVisible={loginVisible}
+        homeSectionDimmed={homeSectionDimmed}
       >
         <ImageWrapper>
           <Image src={home} />
@@ -42,7 +48,9 @@ const HomeSection1 = () => {
           <Header>ARE YOU LOOKING FOR AN EFFECTIVE WAY TO LEARN ENGLISH?</Header>
           <Subheader>We offer an efficient and user-friendly platform designed to support individual language learning</Subheader>
           <ButtonsWrapper>
-            <SignUp>SIGN UP</SignUp>
+            <SignUp
+              onClick={makeSignupVisible}
+            >SIGN UP</SignUp>
             <LogIn
               onClick={makeLoginVisible}
             >
