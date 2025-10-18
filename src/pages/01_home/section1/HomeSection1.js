@@ -4,21 +4,22 @@ import home from "./01_images/home.jpg"
 import test from "../section2/01_images/tutor.jpg"
 import Svg from "./Svg"
 import LoginForm from "./02_forms/LoginForm"
+import SignupForm from "./02_forms/SignupForm"
 
 
 const HomeSection1 = () => {
 
   const [loginVisible, setLoginVisible] = useState(false)
-  const [showResetLink, setShowResetLink] = useState(false)
-  const [registerVisible, setRegisterVisible] = useState(false)
+  const [signupVisible, setSignupVisible] = useState(false)
 
-  const makeRegisterVisible = () => {
-    setRegisterVisible(!registerVisible)
-  }
   const makeLoginVisible = (e) => {
     e.preventDefault()
-    setLoginVisible(!loginVisible)
-    setShowResetLink(false)
+    setLoginVisible(true)
+  }
+
+  const makeSignupVisible = (e) => {
+    e.preventDefault()
+    setSignupVisible(true)
   }
 
   return (
@@ -26,10 +27,10 @@ const HomeSection1 = () => {
       <LoginForm
         loginVisible={loginVisible}
         setLoginVisible={setLoginVisible}
-        makeLoginVisible={makeLoginVisible}
-        showResetLink={showResetLink}
-        setShowResetLink={setShowResetLink}
       />
+      <SignupForm>
+        
+      </SignupForm>
       <Wrapper
         loginVisible={loginVisible}
       >

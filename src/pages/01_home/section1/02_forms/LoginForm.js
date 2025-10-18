@@ -1,11 +1,13 @@
 import { useState } from "react"
 import { LoginFormWrapper, InputWrapper, Username, Password, Caption, LostPassword, EmailSent, ButtonsWrapper, SignUp, LogIn, Cancel, ResetLinkWrapper, SendResetLink, EmailResetLink, Register, RegisterWrapper, WrongLogin } from "./LoginFormStyles"
 
-const LoginForm = ({ showResetLink, setShowResetLink, loginVisible, setLoginVisible, makeLoginVisible }) => {
+const LoginForm = ({ loginVisible, setLoginVisible }) => {
 
     const [usernameValue, setUsernameValue] = useState("")
     const [passwordValue, setPasswordValue] = useState("")
     const [emailValue, setEmailValue] = useState("")
+
+    const [showResetLink, setShowResetLink] = useState(false)
 
     const [emailSent, setEmailSent] = useState(false)
 

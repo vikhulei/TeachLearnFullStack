@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { LoginFormWrapper, InputWrapper, Username, Password, Caption, LostPassword, ButtonsWrapper, SignUp, LogIn, Cancel, ResetLinkWrapper, SendResetLink, EmailResetLink, Register, RegisterWrapper } from "./LoginFormStyles"
 
-const LoginForm = ({ loginVisible, makeLoginVisible }) => {
+const SignupForm = ({ loginVisible, makeLoginVisible }) => {
 
     const [showResetLink, setShowResetLink] = useState(false)
 
@@ -54,4 +54,4 @@ const LoginForm = ({ loginVisible, makeLoginVisible }) => {
     )
 }
 
-export default LoginForm
+export default SignupForm
