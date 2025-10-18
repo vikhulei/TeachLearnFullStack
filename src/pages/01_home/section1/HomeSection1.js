@@ -25,6 +25,7 @@ const HomeSection1 = () => {
     <PreWrapper>
       <LoginForm
         loginVisible={loginVisible}
+        setLoginVisible={setLoginVisible}
         makeLoginVisible={makeLoginVisible}
         showResetLink={showResetLink}
         setShowResetLink={setShowResetLink}

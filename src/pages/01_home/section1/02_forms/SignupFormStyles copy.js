@@ -49,19 +49,8 @@ const LostPassword = styled.div`
 `
 
 const EmailSent = styled.span`
-    margin-left: 10px;
-    font-style: normal;
-    // font-size: 0.7rem;
-    color: yellow;
-    cursor: default;
-    display: ${({emailSent}) => emailSent ? "inline" : "none"}
-`
-
-const WrongLogin = styled.div`
-    color: yellow;
-    font-size: 0.8rem;
-    text-align: center;
-    visibility: ${({showWrongLogin}) => showWrongLogin ? "visible" : "hidden"};
+    font-size: 0.7rem;
+    color: darkred;
 `
 
 const ButtonsWrapper = styled.div`
@@ -125,4 +114,4 @@ const Register = styled.div`
     }
 `
 
-export { LoginFormWrapper, InputWrapper, Username, Password, Caption, LostPassword, EmailSent, ButtonsWrapper, LogIn, WrongLogin, Cancel,  ResetLinkWrapper, SendResetLink, EmailResetLink, Register  }
+export { LoginFormWrapper, InputWrapper, Username, Password, Caption, LostPassword, EmailSent, ButtonsWrapper, LogIn, Cancel,  ResetLinkWrapper, SendResetLink, EmailResetLink, Register  }

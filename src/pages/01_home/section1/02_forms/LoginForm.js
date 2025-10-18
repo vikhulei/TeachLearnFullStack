@@ -1,11 +1,33 @@
 import { useState } from "react"
-import { LoginFormWrapper, InputWrapper, Username, Password, Caption, LostPassword, ButtonsWrapper, SignUp, LogIn, Cancel, ResetLinkWrapper, SendResetLink, EmailResetLink, Register, RegisterWrapper } from "./LoginFormStyles"
+import { LoginFormWrapper, InputWrapper, Username, Password, Caption, LostPassword, EmailSent, ButtonsWrapper, SignUp, LogIn, Cancel, ResetLinkWrapper, SendResetLink, EmailResetLink, Register, RegisterWrapper, WrongLogin } from "./LoginFormStyles"
 
-const LoginForm = ({ showResetLink, setShowResetLink, loginVisible, makeLoginVisible }) => {
+const LoginForm = ({ showResetLink, setShowResetLink, loginVisible, setLoginVisible, makeLoginVisible }) => {
+
+    const [emailSent, setEmailSent] = useState(false)
+
+    const [showWrongLogin, setShowWrongLogin] = useState(false)
 
     const clickShowResetLink = (e) => {
         e.preventDefault()
-        setShowResetLink(!showResetLink)
+        setShowResetLink(true)
+    }
+
+    const clickSendResetLink = (e) => {
+        e.preventDefault()
+        setEmailSent(true)
+    }
+
+    const clickLogin = (e) => {
+        e.preventDefault()
+        setShowWrongLogin(true)
+    }
+
+    const clickCancel = (e) => {
+        e.preventDefault()
+        setShowResetLink(false)
+        setEmailSent(false)
+        setLoginVisible(false)
+        setShowWrongLogin(false)
     }
 
     return (
@@ -23,24 +45,35 @@ const LoginForm = ({ showResetLink, setShowResetLink, loginVisible, makeLoginVis
                     onClick={clickShowResetLink}
                 >
                     Lost password?
+                    <EmailSent
+                        emailSent={emailSent}
+                    >
+                        Link sent — it may take a moment.</EmailSent>
                 </LostPassword>
                 <ResetLinkWrapper
                     showResetLink={showResetLink}
                 >
                     <EmailResetLink
-                    type="email"
-                    placeholder="Enter your email"
+                        type="email"
+                        placeholder="Enter your email"
                     />
                     <SendResetLink
-                        onClick={makeLoginVisible}
+                        onClick={clickSendResetLink}
                     >
                         Send Reset Link
                     </SendResetLink>
                 </ResetLinkWrapper>
             </InputWrapper>
+            <WrongLogin
+                showWrongLogin={showWrongLogin}
+            >
+                Please check your login details and try again</WrongLogin>
             <ButtonsWrapper>
-                <LogIn onClick={makeLoginVisible}>Log in</LogIn>
-                <Cancel onClick={makeLoginVisible}>Cancel</Cancel>
+                <LogIn
+                    onClick={clickLogin}
+                >
+                    Log in</LogIn>
+                <Cancel onClick={clickCancel}>Cancel</Cancel>
                 {/* <Register
                     onClick={makeRegisterVisible}
                 >
