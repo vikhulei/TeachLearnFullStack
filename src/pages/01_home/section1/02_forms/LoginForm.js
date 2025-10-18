@@ -3,6 +3,10 @@ import { LoginFormWrapper, InputWrapper, Username, Password, Caption, LostPasswo
 
 const LoginForm = ({ showResetLink, setShowResetLink, loginVisible, setLoginVisible, makeLoginVisible }) => {
 
+    const [usernameValue, setUsernameValue] = useState("")
+    const [passwordValue, setPasswordValue] = useState("")
+    const [emailValue, setEmailValue] = useState("")
+
     const [emailSent, setEmailSent] = useState(false)
 
     const [showWrongLogin, setShowWrongLogin] = useState(false)
@@ -28,6 +32,7 @@ const LoginForm = ({ showResetLink, setShowResetLink, loginVisible, setLoginVisi
         setEmailSent(false)
         setLoginVisible(false)
         setShowWrongLogin(false)
+        setEmailValue("")
     }
 
     return (
@@ -56,6 +61,8 @@ const LoginForm = ({ showResetLink, setShowResetLink, loginVisible, setLoginVisi
                     <EmailResetLink
                         type="email"
                         placeholder="Enter your email"
+                        value={emailValue}
+                        onChange={(e) => setEmailValue(e.target.value)}
                     />
                     <SendResetLink
                         onClick={clickSendResetLink}
